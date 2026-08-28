@@ -5,3 +5,5 @@ Chào anh, đây là báo cáo affiliate chủ đề <b>Tài chính</b> hôm nay
 Em cũng có xét qua Krak — thẻ debit cashback crypto của Kraken vừa ra mắt giữa tháng 8/2026, nhưng chương trình affiliate của Kraken thì đã tồn tại từ lâu chứ không phải mới công bố, nên em loại khỏi báo cáo hôm nay và chỉ ghi vào lịch sử để lần sau không xét lại.
 
 Báo cáo Tài chính hôm nay của em tới đây thôi ạ, anh xem qua rồi quyết định có đào sâu thêm YWO không nhé.
+
+<!-- verify fix -->
