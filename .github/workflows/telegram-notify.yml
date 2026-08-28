@@ -2,7 +2,7 @@ name: telegram-notify
 on:
   push:
     paths:
-      - 'latest_report.md'
+      - 'latest_report*.md'
 jobs:
   notify:
     runs-on: ubuntu-latest
@@ -13,9 +13,10 @@ jobs:
           BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          python3 -c "
-          import json, os, urllib.request
-          text = open('latest_report.md', encoding='utf-8').read().strip()
+          for f in $(git diff --name-only HEAD~1 HEAD -- 'latest_report*.md'); do
+            python3 -c "
+          import json, os, urllib.request, sys
+          text = open('$f', encoding='utf-8').read().strip()
           if len(text) > 4000:
               text = text[:3990] + '\n\n...(cắt bớt, xem repo để đọc đầy đủ)'
           payload = json.dumps({
@@ -32,3 +33,4 @@ jobs:
           with urllib.request.urlopen(req) as resp:
               print(resp.read().decode())
           "
+          done
