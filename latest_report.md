@@ -1,14 +1,14 @@
-<b>Answrr (AI Receptionist / Voice Automation)</b>
-Domain: tryanswrr.com
-Sản phẩm của AIQ Labs, ra mắt 03/02/2026; chương trình affiliate công bố 06/02/2026.
-Google Ads brand bidding: ⚠️ Chưa tìm thấy điều khoản cấm brand bidding trong các kết quả tìm kiếm, nhưng KHÔNG tìm được trang điều khoản affiliate đầy đủ (chỉ dựa trên tóm tắt tìm kiếm, sandbox chặn truy cập web trực tiếp) — anh cần tự vào tryanswrr.com/affiliate đọc kỹ điều khoản trước khi chạy Google Ads trên từ khóa thương hiệu "Answrr".
+Chào anh, vòng rà soát tiếp theo hôm nay em tìm thêm được 1 chương trình affiliate AI mới đáng chú ý, sau khi loại khá nhiều ứng viên khác vì hoặc chưa có affiliate chính thức, hoặc sản phẩm thực ra ra mắt trước 2026.
 
-1. Traffic: không tìm thấy dữ liệu công khai (không truy cập được công cụ đo traffic do sandbox chặn web).
-2. Giá bán: gói khởi điểm từ $99/tháng (14 ngày dùng thử miễn phí, 60 phút gọi, đầy đủ tính năng). Gói Enterprise/white-label: $699/tháng. Các gói giữa (được đề cập nhưng chưa xác nhận số cụ thể qua tìm kiếm) — cần kiểm tra trực tiếp trên trang giá.
-3. Hoa hồng: 30% trọn đời (lifetime recurring) trên mọi khoản thanh toán subscription VÀ account top-up của khách được giới thiệu — không giới hạn, không giảm bậc, không hết hạn.
-4. Ngưỡng/ngày thanh toán: không tìm thấy dữ liệu công khai.
-5. Cổng thanh toán: không tìm thấy dữ liệu công khai (nền tảng affiliate cụ thể — Rewardful/PartnerStack/Impact — chưa xác nhận được qua tìm kiếm).
+<b>Viktor – AI Coworker sống trong Slack/Teams</b> (getviktor.com)
+Đây là "nhân viên AI ảo" nằm ngay trong Slack hoặc Microsoft Teams của công ty, kết nối hơn 3.000 công cụ làm việc và tự thực thi tác vụ thật — viết báo cáo, code, phân tích dữ liệu — trong một sandbox riêng. Viktor ra mắt công khai tháng 2/2026, rồi chỉ 10 tuần sau đã đạt doanh thu chạy khoảng 15 triệu USD/năm và gọi thành công vòng Series A 75 triệu USD do Accel dẫn dắt — đúng kiểu sản phẩm "nóng" mới toanh của 2026.
 
-Nguồn: thông cáo báo chí "Answrr Launches Best AI SaaS Affiliate Program with 30% Lifetime Recurring Commissions" (openpr.com, barchart.com, financialcontent.com, 02/2026); "AIQ Labs Launches Answrr" (openpr.com, 02/2026).
+Về brand bidding: em search khá kỹ các cụm liên quan đến trademark/PPC/branded keywords nhưng không tìm thấy điều khoản affiliate công khai nào đề cập đến việc cấm hay cho phép chạy Google Ads trên từ khóa thương hiệu "Viktor"/"getviktor". Trang T&C chi tiết của chương trình có vẻ chỉ hiện ra sau khi đăng ký làm affiliate trên nền tảng Dub, mà sandbox của em thì không vào được các trang ngoài. Nên anh cứ coi đây là "đèn vàng" — tự đăng ký thử ở partners.dub.co/getviktor và đọc kỹ điều khoản trước khi đổ ngân sách vào brand keyword.
 
-⚠️ Lưu ý chung: dữ liệu trên chỉ tổng hợp qua WebSearch (không đọc được toàn văn trang), anh nên xác minh lại trực tiếp trên tryanswrr.com trước khi triển khai chiến dịch.
+Về số liệu: giá bán có gói Starter miễn phí kèm $100 credit dùng thử, gói Team $50/tháng cho mỗi workspace (20.000 credit/tháng), còn Enterprise thì liên hệ báo giá riêng.
+Hoa hồng affiliate là 15% trên mọi khoản thanh toán của khách được giới thiệu, tăng lên 20% sau khi affiliate đạt 15 lượt chuyển đổi, cửa sổ cookie theo dõi 90 ngày.
+Chương trình vận hành qua nền tảng Dub nên thanh toán qua Stripe hoặc PayPal, nhưng ngưỡng rút tối thiểu và ngày trả cụ thể là do từng chương trình tự cấu hình trên Dub — em chưa tìm được con số riêng của Viktor. Traffic website hiện cũng chưa có dữ liệu công khai đáng tin cậy qua tìm kiếm, anh có thể check nhanh bằng Similarweb trước khi ước lượng quy mô thị trường từ khóa.
+
+Các ứng viên khác em xem qua rồi loại: ChatCut (video editor AI, nhưng công ty founded từ 2024 và chưa thấy affiliate chính thức), Voibe (dictation app cho Mac, sản phẩm launch từ 09/2025 chứ không phải 2026), Blym (AI SEO writer, founded 2024), Yasmine Works và Mispher (2 AI coworker/dictation tool mới trên Product Hunt nhưng chưa tìm thấy affiliate program nào), Rhoda AI (robot foundation model 450 triệu USD, không phải mô hình affiliate marketing truyền thống).
+
+Em đã lưu domain getviktor.com vào lịch sử để mai không báo trùng, mấy ứng viên bị loại cũng đã ghi chú lại rồi. Hẹn anh vòng rà soát tiếp theo nhé.
