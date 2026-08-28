@@ -17,7 +17,7 @@ jobs:
         run: |
           for f in $(git diff --name-only HEAD~1 HEAD -- 'latest_report*.md'); do
             python3 -c "
-          import json, os, urllib.request, sys
+          import json, os, urllib.request, urllib.error, sys
           text = open('$f', encoding='utf-8').read().strip()
           if len(text) > 4000:
               text = text[:3990] + '\n\n...(cắt bớt, xem repo để đọc đầy đủ)'
@@ -32,7 +32,12 @@ jobs:
               data=payload,
               headers={'Content-Type': 'application/json'},
           )
-          with urllib.request.urlopen(req) as resp:
-              print(resp.read().decode())
+          try:
+              with urllib.request.urlopen(req) as resp:
+                  print(resp.read().decode())
+          except urllib.error.HTTPError as e:
+              print(e.code, file=sys.stderr)
+              print(e.read().decode(), file=sys.stderr)
+              sys.exit(1)
           "
           done
