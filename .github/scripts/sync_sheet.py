@@ -4,9 +4,9 @@ import json
 import os
 import re
 import subprocess
+import urllib.error
 import urllib.request
 
-import google.auth.transport.requests
 from google.oauth2.service_account import Credentials
 
 SHEET_ID = os.environ["GOOGLE_SHEET_ID"]
@@ -14,6 +14,28 @@ SA_EMAIL = os.environ["GOOGLE_SA_EMAIL"]
 SA_KEY = os.environ["GOOGLE_SA_PRIVATE_KEY"]
 
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
+
+
+class _UrllibAuthRequest:
+    """Minimal google.auth.transport.Request implementation using urllib.
+
+    Avoids depending on the `requests` package (google.auth.transport.requests
+    requires it), which the workflow's `pip install google-auth` does not install.
+    """
+
+    def __call__(self, url, method="GET", body=None, headers=None, timeout=None, **kwargs):
+        req = urllib.request.Request(url, data=body, method=method, headers=headers or {})
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                return _UrllibAuthResponse(resp.status, resp.read())
+        except urllib.error.HTTPError as exc:
+            return _UrllibAuthResponse(exc.code, exc.read())
+
+
+class _UrllibAuthResponse:
+    def __init__(self, status, data):
+        self.status = status
+        self.data = data
 
 
 def get_access_token():
@@ -24,7 +46,7 @@ def get_access_token():
         "token_uri": "https://oauth2.googleapis.com/token",
     }
     creds = Credentials.from_service_account_info(info, scopes=SCOPES)
-    creds.refresh(google.auth.transport.requests.Request())
+    creds.refresh(_UrllibAuthRequest())
     return creds.token
 
 
