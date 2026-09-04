@@ -38,3 +38,42 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | hostagetape.com | Hostage Tape | 2026-09-04 | AR14714308195157803009 |
 | answrbeauty.com | ANSWR Beauty | 2026-09-04 | AR14714308195157803009 |
 | aboxofstories.com | A Box of Stories | 2026-09-04 | AR14714308195157803009 |
+| unikeyboards.com | Unikeyboards | 2026-09-04 | AR14714308195157803009 |
+| naturenatesllc.com | Nature Nate's | 2026-09-04 | AR14714308195157803009 |
+| travelingmailbox.com | Traveling Mailbox | 2026-09-04 | AR14714308195157803009 |
+| oneisall.com | Oneisall | 2026-09-04 | AR14714308195157803009 |
+| rhythmandbeat.com | Rhythm and Beat | 2026-09-04 | AR14714308195157803009 |
+| placid.app | Placid | 2026-09-04 | AR14714308195157803009 |
+| flamekingproducts.com | Flame King | 2026-09-04 | AR14714308195157803009 |
+| bookingkoala.com | BookingKoala | 2026-09-04 | AR14714308195157803009 |
+| carbonaddons.com | Carbonaddons | 2026-09-04 | AR14714308195157803009 |
+| siraya.tech | Siraya Tech | 2026-09-04 | AR14714308195157803009 |
+| rogershood.com | RogersHood | 2026-09-04 | AR14714308195157803009 |
+| opendoortea.com | OpenDoorTea | 2026-09-04 | AR14714308195157803009 |
+| oddsox.com | ODD SOX | 2026-09-04 | AR14714308195157803009 |
+| mamavscandy.com | Mamavscandy | 2026-09-04 | AR14714308195157803009 |
+| hesacore.com | Hesacore | 2026-09-04 | AR14714308195157803009 |
+| dangercoffee.com | Danger Coffee | 2026-09-04 | AR14714308195157803009 |
+| rawfountainjuice.com | Raw Fountain Juice | 2026-09-04 | AR14714308195157803009 |
+| bounce.com | Bounce | 2026-09-04 | AR14714308195157803009 |
+| erbaviva.com | Erbaviva | 2026-09-04 | AR14714308195157803009 |
+| memorymagnetsco.com | Memory Magnets Co | 2026-09-04 | AR14714308195157803009 |
+| decoexchange.com | Decoexchange | 2026-09-04 | AR14714308195157803009 |
+| period.co | The Period Company | 2026-09-04 | AR14714308195157803009 |
+| jutoliving.com | Juto Living | 2026-09-04 | AR14714308195157803009 |
+| postscanmail.com | PostScan Mail | 2026-09-04 | AR14714308195157803009 |
+| worldfamoustattooink.com | World Famous Tattoo Ink | 2026-09-04 | AR14714308195157803009 |
+| joycat.com | Joycat | 2026-09-04 | AR14714308195157803009 |
+| mykaraoke.video | Mykaraoke | 2026-09-04 | AR14714308195157803009 |
+| onlysocial.io | OnlySocial | 2026-09-04 | AR14714308195157803009 |
+| protopie.io | ProtoPie | 2026-09-04 | AR14714308195157803009 |
+| nhsa.com | NHSA | 2026-09-04 | AR14714308195157803009 |
+| seedtime.us | Seedtime | 2026-09-04 | AR14714308195157803009 |
+| newarc.ai | NewArc.AI | 2026-09-04 | AR14714308195157803009 |
+| campnab.com | Campnab | 2026-09-04 | AR14714308195157803009 |
+| tealife.com.au | Tea Life | 2026-09-04 | AR14714308195157803009 |
+| gingtto.com | GINGTTO | 2026-09-04 | AR14714308195157803009 |
+| envylashespro.com | Envy Lashes Pro | 2026-09-04 | AR14714308195157803009 |
+| chubbycable.com | ChubbyCable | 2026-09-04 | AR14714308195157803009 |
+| devonandlang.com | Devon & Lang | 2026-09-04 | AR14714308195157803009 |
+| 8sheep.com | 8 Sheep | 2026-09-04 | AR14714308195157803009 |
