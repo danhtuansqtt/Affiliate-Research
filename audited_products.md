@@ -84,3 +84,15 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | fomo.family | fomo.family | 2026-09-04 | AR03736823256364089345 |
 | rlaarlo.com | Rlaarlo | 2026-09-04 | AR03736823256364089345 |
 | solarisjapan.com | Solaris Japan | 2026-09-04 | AR03736823256364089345 |
+| magica.com | Magica | 2026-09-04 | AR04149012083804995585 |
+| vmoscloud.com | VMOS Cloud | 2026-09-04 | AR04149012083804995585 |
+| tatum.io | Tatum | 2026-09-04 | AR04149012083804995585 |
+| instantly.ai | Instantly | 2026-09-04 | AR04149012083804995585 |
+| glam.ai | Glam.ai | 2026-09-04 | AR04149012083804995585 |
+| blancvpn.com | BlancVPN | 2026-09-04 | AR04149012083804995585 |
+| folk.app | folk.app (Folk CRM) | 2026-09-04 | AR04149012083804995585 |
+| wisprflow.ai | Wispr Flow | 2026-09-04 | AR04149012083804995585 |
+| hero-sms.com | Hero SMS | 2026-09-04 | AR04149012083804995585 |
+| brightdata.com | Bright Data | 2026-09-04 | AR04149012083804995585 |
+| cloudways.com | Cloudways | 2026-09-04 | AR04149012083804995585 |
+| firecrawl.dev | Firecrawl | 2026-09-04 | AR04149012083804995585 |
