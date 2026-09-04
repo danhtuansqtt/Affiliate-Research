@@ -77,3 +77,10 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | chubbycable.com | ChubbyCable | 2026-09-04 | AR14714308195157803009 |
 | devonandlang.com | Devon & Lang | 2026-09-04 | AR14714308195157803009 |
 | 8sheep.com | 8 Sheep | 2026-09-04 | AR14714308195157803009 |
+| trophi.ai | Trophi.ai | 2026-09-04 | AR03736823256364089345 |
+| lumibricks.com | Lumibricks | 2026-09-04 | AR03736823256364089345 |
+| orzgk.com | OrzGK | 2026-09-04 | AR03736823256364089345 |
+| hosthavoc.com | Host Havoc | 2026-09-04 | AR03736823256364089345 |
+| fomo.family | fomo.family | 2026-09-04 | AR03736823256364089345 |
+| rlaarlo.com | Rlaarlo | 2026-09-04 | AR03736823256364089345 |
+| solarisjapan.com | Solaris Japan | 2026-09-04 | AR03736823256364089345 |
