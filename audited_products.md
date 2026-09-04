@@ -96,3 +96,32 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | brightdata.com | Bright Data | 2026-09-04 | AR04149012083804995585 |
 | cloudways.com | Cloudways | 2026-09-04 | AR04149012083804995585 |
 | firecrawl.dev | Firecrawl | 2026-09-04 | AR04149012083804995585 |
+| binance.bh | Binance | 2026-09-05 | AR02901523688627109889 |
+| innovv.com | INNOVV | 2026-09-05 | AR02901523688627109889 |
+| syntx.ai | Syntx.ai | 2026-09-05 | AR02901523688627109889 |
+| trozk.com | Trozk | 2026-09-05 | AR02901523688627109889 |
+| theweedzard.com | Theweedzard | 2026-09-05 | AR02901523688627109889 |
+| monday.com | Monday.com | 2026-09-05 | AR02901523688627109889 |
+| leadpages.com | Leadpages | 2026-09-05 | AR02901523688627109889 |
+| softr.io | Softr | 2026-09-05 | AR02901523688627109889 |
+| sandcastles.ai | Sandcastles.ai | 2026-09-05 | AR02901523688627109889 |
+| coinstore.com | Coinstore | 2026-09-05 | AR02901523688627109889 |
+| deribit.com | Deribit | 2026-09-05 | AR02901523688627109889 |
+| magiclight.ai | Magiclight.ai | 2026-09-05 | AR02901523688627109889 |
+| lbank.com | LBank | 2026-09-05 | AR02901523688627109889 |
+| wubenlight.com | Wuben | 2026-09-05 | AR02901523688627109889 |
+| blofin.com | Blofin | 2026-09-05 | AR02901523688627109889 |
+| protoarc.com | ProtoArc | 2026-09-05 | AR02901523688627109889 |
+| close.com | Close (CRM) | 2026-09-05 | AR02901523688627109889 |
+| lindy.ai | Lindy | 2026-09-05 | AR02901523688627109889 |
+| spotgamma.com | SpotGamma | 2026-09-05 | AR02901523688627109889 |
+| svbony.com | SVBONY | 2026-09-05 | AR02901523688627109889 |
+| gate.com | Gate.io | 2026-09-05 | AR02901523688627109889 |
+| consensus.app | Consensus | 2026-09-05 | AR02901523688627109889 |
+| mexc.com | MEXC | 2026-09-05 | AR02901523688627109889 |
+| amotopart.com | Amotopart | 2026-09-05 | AR02901523688627109889 |
+| unbounce.com | Unbounce | 2026-09-05 | AR02901523688627109889 |
+| spadaroma.com | SPADA Roma | 2026-09-05 | AR02901523688627109889 |
+| axiom.trade | Axiom | 2026-09-05 | AR02901523688627109889 |
+| tradeday.com | TradeDay | 2026-09-05 | AR02901523688627109889 |
+| app.hyperliquid.xyz | Hyperliquid | 2026-09-05 | AR02901523688627109889 |
