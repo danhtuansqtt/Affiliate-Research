@@ -134,3 +134,10 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | followr.ai | Followr.ai | 2026-09-05 | AR02601393847883792385 |
 | finlywealth.com | FinlyWealth | 2026-09-05 | AR02601393847883792385 |
 | systeme.io | Systeme.io | 2026-09-05 | AR02601393847883792385 |
+| truthscan.com | TruthScan | 2026-09-06 | AR09975305645131300865 |
+| gumroad.com | Gumroad | 2026-09-06 | AR09975305645131300865 |
+| vast.ai | Vast.ai | 2026-09-06 | AR09975305645131300865 |
+| paperpal.com | Paperpal | 2026-09-06 | AR09975305645131300865 |
+| skool.com | Skool | 2026-09-06 | AR09975305645131300865 |
+| blotato.com | Blotato | 2026-09-06 | AR09975305645131300865 |
+| teachable.com | Teachable | 2026-09-06 | AR09975305645131300865 |
