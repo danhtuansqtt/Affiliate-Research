@@ -125,3 +125,12 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | axiom.trade | Axiom | 2026-09-05 | AR02901523688627109889 |
 | tradeday.com | TradeDay | 2026-09-05 | AR02901523688627109889 |
 | app.hyperliquid.xyz | Hyperliquid | 2026-09-05 | AR02901523688627109889 |
+| proxy-seller.com | Proxy-Seller | 2026-09-05 | AR02601393847883792385 |
+| trackdesk.com | Trackdesk | 2026-09-05 | AR02601393847883792385 |
+| trade-copier.com | Duplikium (Trade Copier) | 2026-09-05 | AR02601393847883792385 |
+| smartsupp.com | Smartsupp | 2026-09-05 | AR02601393847883792385 |
+| collaborator.pro | Collaborator | 2026-09-05 | AR02601393847883792385 |
+| zap-hosting.com | ZAP-Hosting | 2026-09-05 | AR02601393847883792385 |
+| followr.ai | Followr.ai | 2026-09-05 | AR02601393847883792385 |
+| finlywealth.com | FinlyWealth | 2026-09-05 | AR02601393847883792385 |
+| systeme.io | Systeme.io | 2026-09-05 | AR02601393847883792385 |
