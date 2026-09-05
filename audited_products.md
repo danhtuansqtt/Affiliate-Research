@@ -141,3 +141,50 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | skool.com | Skool | 2026-09-06 | AR09975305645131300865 |
 | blotato.com | Blotato | 2026-09-06 | AR09975305645131300865 |
 | teachable.com | Teachable | 2026-09-06 | AR09975305645131300865 |
+| fitcamx.com | FITCAMX | 2026-09-06 | AR16387915955222609921 |
+| gaithappens.com | Gait Happens | 2026-09-06 | AR16387915955222609921 |
+| inzo.co | INZO | 2026-09-06 | AR16387915955222609921 |
+| ledger.com | Ledger | 2026-09-06 | AR16387915955222609921 |
+| yosepower.com | YOSE POWER | 2026-09-06 | AR16387915955222609921 |
+| skywork.ai | Skywork AI | 2026-09-06 | AR16387915955222609921 |
+| getleveraged.com | Leveraged | 2026-09-06 | AR16387915955222609921 |
+| tesery.com | Tesery | 2026-09-06 | AR16387915955222609921 |
+| addiesdivewatches.com | Addiesdive Watches | 2026-09-06 | AR16387915955222609921 |
+| lankeleisi-bikes.com | Lankeleisi | 2026-09-06 | AR16387915955222609921 |
+| f-secure.com | F-Secure | 2026-09-06 | AR16387915955222609921 |
+| krisp.ai | Krisp | 2026-09-06 | AR16387915955222609921 |
+| ulike.com | Ulike | 2026-09-06 | AR16387915955222609921 |
+| veed.io | VEED.io | 2026-09-06 | AR16387915955222609921 |
+| z.ai | Z.ai | 2026-09-06 | AR16387915955222609921 |
+| jessupbeauty.com | Jessup Beauty | 2026-09-06 | AR16387915955222609921 |
+| sunlu.com | SUNLU | 2026-09-06 | AR16387915955222609921 |
+| ottocast.com | Ottocast | 2026-09-06 | AR16387915955222609921 |
+| soundeo.com | Soundeo | 2026-09-06 | AR16387915955222609921 |
+| gethookd.ai | GetHookd | 2026-09-06 | AR16387915955222609921 |
+| maventrading.com | Maven Trading | 2026-09-06 | AR16387915955222609921 |
+| frizzlife.co.uk | Frizzlife | 2026-09-06 | AR16387915955222609921 |
+| goldavenue.com | Gold Avenue | 2026-09-06 | AR16387915955222609921 |
+| pagepilot.ai | PagePilot | 2026-09-06 | AR16387915955222609921 |
+| postermywall.com | PosterMyWall | 2026-09-06 | AR16387915955222609921 |
+| hailuoai.video | Hailuo AI Video | 2026-09-06 | AR16387915955222609921 |
+| sunfounder.com | SunFounder | 2026-09-06 | AR16387915955222609921 |
+| transkriptor.com | Transkriptor | 2026-09-06 | AR16387915955222609921 |
+| motion.so | Motion | 2026-09-06 | AR16387915955222609921 |
+| carlinkitcarplay.com | CarlinKit | 2026-09-06 | AR16387915955222609921 |
+| easeus-software.com | EaseUS | 2026-09-06 | AR16387915955222609921 |
+| vecteezy.com | Vecteezy | 2026-09-06 | AR16387915955222609921 |
+| kingcampoutdoors.com | KingCamp | 2026-09-06 | AR16387915955222609921 |
+| carpuride.com | Carpuride | 2026-09-06 | AR16387915955222609921 |
+| funwaterboard.com | Funwater | 2026-09-06 | AR16387915955222609921 |
+| switch-bot.com | SwitchBot | 2026-09-06 | AR16387915955222609921 |
+| groundingessentials.com | Grounding Essentials | 2026-09-06 | AR16387915955222609921 |
+| zoviz.com | Zoviz | 2026-09-06 | AR16387915955222609921 |
+| swedishcandyland.com | Swedish Candy Land | 2026-09-06 | AR16387915955222609921 |
+| anbernic.com | Anbernic | 2026-09-06 | AR16387915955222609921 |
+| arrtx.com | Arrtx | 2026-09-06 | AR16387915955222609921 |
+| pluginboutique.com | Plugin Boutique | 2026-09-06 | AR16387915955222609921 |
+| talosbo.com | Talosbo | 2026-09-06 | AR16387915955222609921 |
+| motopart.com | Motopart | 2026-09-06 | AR16387915955222609921 |
+| bernywatch.com | Berny Watch | 2026-09-06 | AR16387915955222609921 |
+| jenni.ai | Jenni | 2026-09-06 | AR16387915955222609921 |
+| bornpretty.com | BornPrettyStore | 2026-09-06 | AR16387915955222609921 |
