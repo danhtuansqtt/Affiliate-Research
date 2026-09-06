@@ -188,3 +188,12 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | bernywatch.com | Berny Watch | 2026-09-06 | AR16387915955222609921 |
 | jenni.ai | Jenni | 2026-09-06 | AR16387915955222609921 |
 | bornpretty.com | BornPrettyStore | 2026-09-06 | AR16387915955222609921 |
+| quo.com | Quo | 2026-09-06 | AR02901523688627109889 |
+| octabroker.com | Octa (OctaFX) | 2026-09-06 | AR02901523688627109889 |
+| btse.com | BTSE | 2026-09-06 | AR02901523688627109889 |
+| deriv.com | Deriv | 2026-09-06 | AR02901523688627109889 |
+| lostgenclub.com | Lostgenclub | 2026-09-06 | AR02901523688627109889 |
+| heathwel.shop | Heathwel (ABSlim) | 2026-09-06 | AR02901523688627109889 |
+| commomy.com | Commomy | 2026-09-06 | AR02901523688627109889 |
+| apollo.io | Apollo.io | 2026-09-06 | AR02901523688627109889 |
+| attackshark.com | Attack Shark | 2026-09-06 | AR02901523688627109889 |
