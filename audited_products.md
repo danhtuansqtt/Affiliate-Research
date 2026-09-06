@@ -197,3 +197,7 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | commomy.com | Commomy | 2026-09-06 | AR02901523688627109889 |
 | apollo.io | Apollo.io | 2026-09-06 | AR02901523688627109889 |
 | attackshark.com | Attack Shark | 2026-09-06 | AR02901523688627109889 |
+| footballinsiders.com | Football Insiders | 2026-09-07 | AR07419030145224146945 |
+| playsense.nl | PlaySense.nl | 2026-09-07 | AR07419030145224146945 |
+| insiderssports.com | Insiders Sports | 2026-09-07 | AR07419030145224146945 |
+| finaria.it | Finaria.it | 2026-09-07 | AR07419030145224146945 |
