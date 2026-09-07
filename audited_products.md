@@ -201,3 +201,25 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | playsense.nl | PlaySense.nl | 2026-09-07 | AR07419030145224146945 |
 | insiderssports.com | Insiders Sports | 2026-09-07 | AR07419030145224146945 |
 | finaria.it | Finaria.it | 2026-09-07 | AR07419030145224146945 |
+| dipgate.com | Dipgate | 2026-09-07 | AR07636392418530557953 |
+| bookmap.com | Bookmap | 2026-09-07 | AR07636392418530557953 |
+| propr.xyz | Propr | 2026-09-07 | AR07636392418530557953 |
+| tallguytycoon.pro | TallGuyTycoon (CNC) | 2026-09-07 | AR07636392418530557953 |
+| pipdance.com | PipDance | 2026-09-07 | AR07636392418530557953 |
+| winprofxpartner.com | WinProFX | 2026-09-07 | AR07636392418530557953 |
+| livechat.com | LiveChat | 2026-09-07 | AR07636392418530557953 |
+| flowbots.ninja | FlowBots (NinjaTrader) | 2026-09-07 | AR07636392418530557953 |
+| benchmarkemail.com | Benchmark Email | 2026-09-07 | AR07636392418530557953 |
+| loopmasters.com | Loopmasters | 2026-09-07 | AR07636392418530557953 |
+| locktrip.com | LockTrip | 2026-09-07 | AR07636392418530557953 |
+| dooprime.com | DooPrime | 2026-09-07 | AR07636392418530557953 |
+| travala.com | Travala.com | 2026-09-07 | AR07636392418530557953 |
+| hyperdash.com | HyperDash | 2026-09-07 | AR07636392418530557953 |
+| driftfund.io | Drift Fund | 2026-09-07 | AR07636392418530557953 |
+| metastock.com | MetaStock | 2026-09-07 | AR07636392418530557953 |
+| mrktedge.ai | MRKTedge.ai | 2026-09-07 | AR07636392418530557953 |
+| beehiiv.com | beehiiv | 2026-09-07 | AR07636392418530557953 |
+| zapmail.ai | Zapmail.ai | 2026-09-07 | AR07636392418530557953 |
+| whop.com/deal_soldier | Deal Soldier (Whop) | 2026-09-07 | AR07636392418530557953 |
+| whop.com/jdubtrades | JDub Trades (Whop) | 2026-09-07 | AR07636392418530557953 |
+| toponetrader.com | TopOneTrader | 2026-09-07 | AR07636392418530557953 |
