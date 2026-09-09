@@ -223,3 +223,84 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | whop.com/deal_soldier | Deal Soldier (Whop) | 2026-09-07 | AR07636392418530557953 |
 | whop.com/jdubtrades | JDub Trades (Whop) | 2026-09-07 | AR07636392418530557953 |
 | toponetrader.com | TopOneTrader | 2026-09-07 | AR07636392418530557953 |
+| allegra-k.com | Allegra K (allegra-k.com) | 2026-09-09 | AR02577591164899164161 |
+| altfins.com | AltFINS (altfins.com) | 2026-09-09 | AR02577591164899164161 |
+| animaapp.com | Anima (animaapp.com) | 2026-09-09 | AR02577591164899164161 |
+| bagsmart.com | BAGSMART (bagsmart.com) | 2026-09-09 | AR02577591164899164161 |
+| apos.audio | Apos Audio (apos.audio) | 2026-09-09 | AR02577591164899164161 |
+| atoms.dev | Atoms (atoms.dev) | 2026-09-09 | AR02577591164899164161 |
+| baseus.com | Baseus (baseus.com) | 2026-09-09 | AR02577591164899164161 |
+| bookretreats.com | BookRetreats (bookretreats.com) | 2026-09-09 | AR02577591164899164161 |
+| buddha3bodhi.com | Buddha3Bodhi (buddha3bodhi.com) | 2026-09-09 | AR02577591164899164161 |
+| bulletprooffitnessequipment.com | Bulletproof Fitness Equipment | 2026-09-09 | AR02577591164899164161 |
+| chicme.com | ChicMe | 2026-09-09 | AR02577591164899164161 |
+| cigman.com | CIGMAN | 2026-09-09 | AR02577591164899164161 |
+| clickguard.com | ClickGuard | 2026-09-09 | AR02577591164899164161 |
+| comfier.com | Comfier | 2026-09-09 | AR02577591164899164161 |
+| creatify.ai | Creatify | 2026-09-09 | AR02577591164899164161 |
+| dchousepower.com | DC House Power | 2026-09-09 | AR02577591164899164161 |
+| decadastore.com | CaDA (decadastore.com) | 2026-09-09 | AR02577591164899164161 |
+| doubleoakessentials.com | Double Oak Essentials | 2026-09-09 | AR02577591164899164161 |
+| dynadot.com | Dynadot | 2026-09-09 | AR02577591164899164161 |
+| eiotclub.com | EIOTCLUB (eiotclub.com) | 2026-09-09 | AR02577591164899164161 |
+| elevenlabs.io | ElevenLabs | 2026-09-09 | AR02577591164899164161 |
+| fabric.so | Fabric (fabric.so) | 2026-09-09 | AR02577591164899164161 |
+| fafreesebike.com | Fafrees (fafreesebike.com) | 2026-09-09 | AR02577591164899164161 |
+| fanatiz.com | Fanatiz (fanatiz.com) | 2026-09-09 | AR02577591164899164161 |
+| fiido.com | Fiido | 2026-09-09 | AR02577591164899164161 |
+| fliki.ai | Fliki | 2026-09-09 | AR02577591164899164161 |
+| freebeat.ai | freebeat.ai | 2026-09-09 | AR02577591164899164161 |
+| globlinker.com | GlobLinker (globlinker.com) | 2026-09-09 | AR02577591164899164161 |
+| googoohair.com | GOO GOO Hair (googoohair.com) | 2026-09-09 | AR02577591164899164161 |
+| haloknights.com | HALO KNIGHT (haloknights.com) | 2026-09-09 | AR02577591164899164161 |
+| hifigo.com | HiFiGo (hifigo.com) | 2026-09-09 | AR02577591164899164161 |
+| htvront.com | HTVRONT (htvront.com) | 2026-09-09 | AR02577591164899164161 |
+| i10x.ai | i10X (i10x.ai) | 2026-09-09 | AR02577591164899164161 |
+| ikapestore.com | IKAPE (ikapestore.com) | 2026-09-09 | AR02577591164899164161 |
+| invideo.io | InVideo (invideo.io) | 2026-09-09 | AR02577591164899164161 |
+| justcall.io | JustCall (justcall.io) | 2026-09-09 | AR02577591164899164161 |
+| klaiyihair.com | Klaiyi Hair (klaiyihair.com) | 2026-09-09 | AR02577591164899164161 |
+| klap.app | Klap (klap.app) | 2026-09-09 | AR02577591164899164161 |
+| kopy.app | Kopy (kopy.app) | 2026-09-09 | AR02577591164899164161 |
+| literatureandlatte.com | Scrivener - Literature %26 Latte (literatureandlatte.com) | 2026-09-09 | AR02577591164899164161 |
+| litime.com | LiTime (litime.com) | 2026-09-09 | AR02577591164899164161 |
+| longer3d.com | Longer 3D (longer3d.com, hiện redirect sang longer.net) | 2026-09-09 | AR02577591164899164161 |
+| magicjohn.com | MAGIC JOHN (magicjohn.com) | 2026-09-09 | AR02577591164899164161 |
+| menthorq.com | MenthorQ (menthorq.com) | 2026-09-09 | AR02577591164899164161 |
+| militaryshop.com.au | Military Shop (militaryshop.com.au) | 2026-09-09 | AR02577591164899164161 |
+| monroeinstitute.org | Monroe Institute (monroeinstitute.org) | 2026-09-09 | AR02577591164899164161 |
+| nexlev.io | NexLev (nexlev.io) | 2026-09-09 | AR02577591164899164161 |
+| obdeleven.com | OBDeleven (obdeleven.com) | 2026-09-09 | AR02577591164899164161 |
+| papique.com | Papique (papique.com) | 2026-09-09 | AR02577591164899164161 |
+| pavlok.com | Pavlok (pavlok.com) | 2026-09-09 | AR02577591164899164161 |
+| planifypro.com | Planify Pro (planifypro.com) | 2026-09-09 | AR02577591164899164161 |
+| pococo.com | POCOCO (pococo.com) | 2026-09-09 | AR02577591164899164161 |
+| preply.com | Preply (preply.com) | 2026-09-09 | AR02577591164899164161 |
+| rayneo.com | RayNeo (rayneo.com) | 2026-09-09 | AR02577591164899164161 |
+| renegadegamestudios.com | Renegade Game Studios | 2026-09-09 | AR02577591164899164161 |
+| retouch4.me | Retouch4me | 2026-09-09 | AR02577591164899164161 |
+| ridelumos.com | Lumos (Ride Lumos) | 2026-09-09 | AR02577591164899164161 |
+| rss.com | RSS.com | 2026-09-09 | AR02577591164899164161 |
+| runable.com | Runable | 2026-09-09 | AR02577591164899164161 |
+| rytr.me | Rytr | 2026-09-09 | AR02577591164899164161 |
+| sharetribe.com | Sharetribe | 2026-09-09 | AR02577591164899164161 |
+| shopbeam.com | Beam (Shopbeam.com) | 2026-09-09 | AR02577591164899164161 |
+| simube.com | Simube | 2026-09-09 | AR02577591164899164161 |
+| smartscout.com | SmartScout (smartscout.com) | 2026-09-09 | AR02577591164899164161 |
+| store.enabot.com | Enabot (store.enabot.com) | 2026-09-09 | AR02577591164899164161 |
+| store.hiby.com | HiBy (store.hiby.com) | 2026-09-09 | AR02577591164899164161 |
+| supercreator.app | Supercreator (supercreator.app) | 2026-09-09 | AR02577591164899164161 |
+| tenable.com | Tenable (tenable.com) | 2026-09-09 | AR02577591164899164161 |
+| thomas-earnshaw.com | Thomas Earnshaw (thomas-earnshaw.com) | 2026-09-09 | AR02577591164899164161 |
+| tunee.ai | Tunee (tunee.ai) | 2026-09-09 | AR02577591164899164161 |
+| us.aqara.com | Aqara (us.aqara.com) | 2026-09-09 | AR02577591164899164161 |
+| usebouncer.com | Bouncer (usebouncer.com) | 2026-09-09 | AR02577591164899164161 |
+| vapi.ai | Vapi (vapi.ai) | 2026-09-09 | AR02577591164899164161 |
+| vectorizer.ai | Vectorizer.AI (vectorizer.ai) | 2026-09-09 | AR02577591164899164161 |
+| vid.ai | Vid.AI (vid.ai) | 2026-09-09 | AR02577591164899164161 |
+| wegic.ai | Wegic (wegic.ai) | 2026-09-09 | AR02577591164899164161 |
+| weltrade.com | WELTRADE (weltrade.com) | 2026-09-09 | AR02577591164899164161 |
+| wpvivid.com | WPvivid (wpvivid.com) | 2026-09-09 | AR02577591164899164161 |
+| youworkforthem.com | YouWorkForThem (youworkforthem.com) | 2026-09-09 | AR02577591164899164161 |
+| zendure.de | Zendure (zendure.de) | 2026-09-09 | AR02577591164899164161 |
+| zyte.com | Zyte (zyte.com) | 2026-09-09 | AR02577591164899164161 |
