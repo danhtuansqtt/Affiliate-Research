@@ -304,3 +304,12 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | youworkforthem.com | YouWorkForThem (youworkforthem.com) | 2026-09-09 | AR02577591164899164161 |
 | zendure.de | Zendure (zendure.de) | 2026-09-09 | AR02577591164899164161 |
 | zyte.com | Zyte (zyte.com) | 2026-09-09 | AR02577591164899164161 |
+| kcex.com | KCEX | 2026-09-14 | AR17923451795305136129 |
+| abacus.ai | Abacus.AI | 2026-09-14 | AR17923451795305136129 |
+| foxit.com | Foxit PDF Editor | 2026-09-14 | AR17923451795305136129 |
+| vultr.com | Vultr | 2026-09-14 | AR17923451795305136129 |
+| toetots.com | Toetots | 2026-09-14 | AR17923451795305136129 |
+| tapstitch.com | Tapstitch | 2026-09-14 | AR17923451795305136129 |
+| moosend.com | Moosend | 2026-09-14 | AR17923451795305136129 |
+| holaprime.com | Hola Prime | 2026-09-14 | AR17923451795305136129 |
+| ownr.co | Ownr | 2026-09-14 | AR17923451795305136129 |
