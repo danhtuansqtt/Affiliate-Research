@@ -347,3 +347,14 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | wurkkos.com | wurkkos.com | 2026-09-15 | AR16387915955222609921 |
 | zenebricks.com | zenebricks.com | 2026-09-15 | AR16387915955222609921 |
 | zerobounce.net | zerobounce.net | 2026-09-15 | AR16387915955222609921 |
+| ai.byteplus.com | ai.byteplus.com | 2026-09-17 | AR16387915955222609921 |
+| bondandmason.com | bondandmason.com | 2026-09-17 | AR16387915955222609921 |
+| coinpanda.io | coinpanda.io | 2026-09-17 | AR16387915955222609921 |
+| fanttik.com | fanttik.com | 2026-09-17 | AR16387915955222609921 |
+| finaleinventory.com | finaleinventory.com | 2026-09-17 | AR16387915955222609921 |
+| get.optery.com | get.optery.com | 2026-09-17 | AR16387915955222609921 |
+| glbgpt.com | glbgpt.com | 2026-09-17 | AR16387915955222609921 |
+| hobibear.com | hobibear.com | 2026-09-17 | AR16387915955222609921 |
+| imoova.com | imoova.com | 2026-09-17 | AR16387915955222609921 |
+| opatra.com | opatra.com | 2026-09-17 | AR16387915955222609921 |
+| tsarbomba.com | tsarbomba.com | 2026-09-17 | AR16387915955222609921 |
