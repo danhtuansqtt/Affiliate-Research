@@ -358,3 +358,9 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | imoova.com | imoova.com | 2026-09-17 | AR16387915955222609921 |
 | opatra.com | opatra.com | 2026-09-17 | AR16387915955222609921 |
 | tsarbomba.com | tsarbomba.com | 2026-09-17 | AR16387915955222609921 |
+| emailoctopus.com | emailoctopus.com | 2026-09-22 | AR05484350014933172225 |
+| yesim.app | yesim.app | 2026-09-22 | AR05484350014933172225 |
+| stacksocial.com | stacksocial.com | 2026-09-22 | AR05484350014933172225 |
+| bunny.net | bunny.net | 2026-09-22 | AR05484350014933172225 |
+| zencastr.com | zencastr.com | 2026-09-22 | AR05484350014933172225 |
+| engagebay.com | engagebay.com | 2026-09-22 | AR05484350014933172225 |
