@@ -8,6 +8,7 @@ description: "Định dạng chuẩn các file đầu ra của repo Affiliate-Re
 Hai workflow GitHub Actions đọc trực tiếp các file này, nên sai định dạng sẽ làm hỏng tin nhắn Telegram hoặc làm dữ liệu trên Google Sheets bị lệch:
 - `telegram-notify.yml`: chạy khi `latest_report*.md` thay đổi. Nó gửi nội dung file qua Telegram với `parse_mode: HTML` và cắt ở khoảng 4000 ký tự.
 - `sheets-sync.yml`: chạy khi `reported_programs__*.md` thay đổi. Nó chỉ đọc các dòng **mới thêm** trong commit cuối cùng (`HEAD~1..HEAD`). `reported_programs.md` của chủ đề AI không có `__` nên không được đồng bộ.
+- Cả hai workflow **chỉ chạy khi push lên `master`**. Trước đây workflow chạy trên mọi nhánh, nên khi merge `master` vào một nhánh feature, commit merge chứa báo cáo cũ và báo cáo bị gửi Telegram/Sheets lần nữa (đã xảy ra ngày 2026-09-23). Không được bỏ bộ lọc `branches`.
 
 ## 1. `latest_report.md` / `latest_report__{chủ-đề}.md` — tin nhắn Telegram
 - Viết lại toàn bộ file mỗi lần chạy. Viết văn xuôi tiếng Việt, người viết xưng "em" và gọi người đọc là "anh", giọng thân mật và báo cáo thẳng.
