@@ -4,13 +4,16 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "inspect = chỉ xem; delete_rows = xóa (chỉ khi mọi dòng đều trùng dòng phía trên); create_tab = tạo tab kèm tiêu đề"
+        description: "inspect = chỉ xem; delete_rows = xóa (chỉ khi mọi dòng đều trùng dòng phía trên); create_tab = tạo tab kèm tiêu đề; rename_tab = đổi tên tab thành new_tab"
         type: choice
-        options: [inspect, delete_rows, create_tab]
+        options: [inspect, delete_rows, create_tab, rename_tab]
         default: inspect
       tab:
         description: "Tên tab"
         default: "Trang tính1"
+      new_tab:
+        description: "Tên mới (chỉ dùng cho rename_tab)"
+        required: false
       start_row:
         description: "Dòng đầu (tính cả dòng tiêu đề là dòng 1); bỏ trống khi create_tab"
         required: false
@@ -35,4 +38,5 @@ jobs:
           TAB: ${{ inputs.tab }}
           START_ROW: ${{ inputs.start_row }}
           END_ROW: ${{ inputs.end_row }}
+          NEW_TAB: ${{ inputs.new_tab }}
         run: python3 .github/scripts/sheet_maintenance.py

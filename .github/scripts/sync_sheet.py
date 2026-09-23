@@ -88,7 +88,7 @@ def topic_from_filename(path):
 # Chủ đề có hậu tố "-doi" (routine chạy bằng đội agent) ghi vào tab riêng;
 # các chủ đề khác giữ nguyên hành vi cũ: tab đầu tiên của bảng tính.
 TEAM_SUFFIX = "-doi"
-TEAM_TAB = "Đội agent"
+TEAM_TAB = "Affiliate Research"
 HEADER = ["Date", "Topic", "Product", "Domain", "Status", "Note"]
 
 

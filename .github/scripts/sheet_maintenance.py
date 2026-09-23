@@ -8,6 +8,8 @@ Chế độ (biến môi trường ACTION):
                trong cùng tab. Có dòng không trùng thì dừng, không xóa gì.
   create_tab   tạo tab TAB kèm dòng tiêu đề (Date | Topic | Product | Domain |
                Status | Note) nếu chưa có; tab đã có thì không làm gì.
+  rename_tab   đổi tên tab TAB thành NEW_TAB, giữ nguyên dữ liệu. Dừng nếu TAB
+               không tồn tại hoặc NEW_TAB đã có.
 """
 import json
 import os
@@ -20,6 +22,7 @@ ACTION = os.environ.get("ACTION", "inspect")
 TAB = os.environ["TAB"]
 START = int(os.environ.get("START_ROW") or 0)
 END = int(os.environ.get("END_ROW") or 0)
+NEW_TAB = (os.environ.get("NEW_TAB") or "").strip()
 
 
 def norm(row):
@@ -39,9 +42,28 @@ def create_tab():
     print(f"Dòng tiêu đề: {' | '.join(HEADER)}")
 
 
+def rename_tab():
+    if not NEW_TAB:
+        sys.exit("Thiếu tên mới (new_tab).")
+    token = get_access_token()
+    meta = json.loads(_api(token, "GET", "?fields=sheets.properties(sheetId,title)"))
+    by_title = {s["properties"]["title"]: s["properties"]["sheetId"] for s in meta["sheets"]}
+    if TAB not in by_title:
+        sys.exit(f"Không có tab '{TAB}'. Các tab hiện có: {list(by_title)}")
+    if NEW_TAB in by_title:
+        sys.exit(f"Đã có tab tên '{NEW_TAB}', không đổi tên. Các tab hiện có: {list(by_title)}")
+    _api(token, "POST", ":batchUpdate", {"requests": [{"updateSheetProperties": {
+        "properties": {"sheetId": by_title[TAB], "title": NEW_TAB}, "fields": "title"}}]})
+    meta = json.loads(_api(token, "GET", "?fields=sheets.properties.title"))
+    print(f"Đã đổi tên tab '{TAB}' thành '{NEW_TAB}'.")
+    print(f"Các tab hiện có: {[s['properties']['title'] for s in meta['sheets']]}")
+
+
 def main():
     if ACTION == "create_tab":
         return create_tab()
+    if ACTION == "rename_tab":
+        return rename_tab()
     if not (2 <= START <= END) or END - START >= 50:
         sys.exit(f"Vùng dòng không hợp lệ: {START}..{END} (phải 2 <= start <= end, tối đa 50 dòng)")
     token = get_access_token()
