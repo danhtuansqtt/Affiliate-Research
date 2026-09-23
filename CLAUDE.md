@@ -19,3 +19,4 @@
 | 2026-09-23 | Thêm workflow chạy tay `sheets-maintenance` (inspect / delete_rows, chỉ xóa dòng trùng dòng phía trên) | .github/workflows, .github/scripts | Cần xóa 5 dòng trùng A93:F97 trong Google Sheets mà không có quyền sửa trực tiếp |
 | 2026-09-23 | sheets-maintenance: thêm chế độ `create_tab` (tạo tab kèm dòng tiêu đề nếu chưa có) | .github/workflows, .github/scripts | Người dùng muốn tạo sẵn tab "Đội agent" |
 | 2026-09-23 | Đổi tên tab dữ liệu đội agent "Đội agent" → "Affiliate Research"; sheets-maintenance thêm `rename_tab` | .github/scripts, .github/workflows, report-format | Người dùng yêu cầu |
+| 2026-09-23 | Thêm `local-runner/` (prompt + run-scout.ps1 + register-tasks.ps1) để chạy đội agent theo lịch trên máy Windows; tắt 2 routine đội agent trên cloud | local-runner, .gitignore | Người dùng chuyển từ cloud sang chạy trên máy |

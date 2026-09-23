@@ -1,3 +1,6 @@
 # Thư mục làm việc tạm của đội agent (harness)
 _workspace/
 _workspace_*/
+
+# Log của local-runner (chạy trên máy)
+local-runner/logs/
