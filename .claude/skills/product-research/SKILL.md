@@ -25,6 +25,7 @@ Cột **Google Ads** không thuộc phạm vi skill này. Nó do `brand-bidding-
 ## Nguyên tắc dữ liệu
 1. **Mỗi con số phải có nguồn.** Ghi dòng `Nguồn:` kèm URL dưới mỗi domain trong file làm việc. Reviewer sẽ mở lại một phần các nguồn này.
 2. **Placeholder chuẩn.** Không có dữ liệu thì ghi đúng câu `không tìm thấy dữ liệu công khai`. Có thể thêm lý do ngắn, ví dụ `(chỉ hiện sau khi đăng ký)`. Dùng câu thống nhất giúp người dùng lọc nhanh trên Google Sheets.
+   Nếu chỉ **một con số** trong ô không xác minh được (các phần khác của ô vẫn có dữ liệu), thay đúng con số đó bằng `[không xác minh được số tiền]`. Với dòng viết không dấu thì dùng `[khong xac minh duoc so tien]`.
 3. **Nguồn mâu thuẫn thì ghi cả hai**, ví dụ: `nguồn A ghi 30% recurring 12 tháng; nguồn B ghi $X/khách — chưa xác minh được số liệu duy nhất`.
 4. **Chương trình chung của mạng affiliate** (ví dụ chính sách mặc định của PartnerStack) phải ghi rõ là "theo chính sách chung {mạng}", để người đọc không hiểu nhầm là điều khoản riêng của thương hiệu.
 5. **Viết bằng tiếng Việt**, nhưng giữ nguyên tên riêng, tên gói và thuật ngữ như recurring, cookie, lifetime.
