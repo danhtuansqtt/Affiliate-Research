@@ -15,3 +15,4 @@
 | 2026-09-23 | Thêm quy ước placeholder `[không xác minh được số tiền]` cho một số tiền đơn lẻ không xác minh được | product-research | Lượt sửa 20 dòng bị mất `$` cần phân biệt với ô thiếu toàn bộ dữ liệu |
 | 2026-09-23 | Giới hạn workflow telegram-notify và sheets-sync chỉ chạy trên `master` | .github/workflows, report-format | Merge master vào nhánh feature làm gửi lại 2 tin Telegram và thêm 5 dòng trùng vào Google Sheets |
 | 2026-09-23 | Tiêu chí tuổi cho mọi chủ đề: sản phẩm ra mắt từ 1/1/2025 đến nay (tính theo ngày sản phẩm ra mắt, không theo ngày công bố chương trình affiliate) | affiliate-scout | Người dùng yêu cầu |
+| 2026-09-23 | sync_sheet.py: chủ đề hậu tố `-doi` ghi vào tab riêng "Đội agent" (tự tạo nếu chưa có) | .github/scripts, report-format | Người dùng muốn tách dữ liệu routine đội agent khỏi routine cũ |
