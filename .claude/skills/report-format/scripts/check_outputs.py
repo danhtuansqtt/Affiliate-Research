@@ -32,7 +32,13 @@ DOLLAR_LOSS = [
     (re.compile(r"(?<![\d.,$€£¥])\b0/(tháng|năm|seat|user|request|phút|GB)"), "WARN",
      "giá '0/...' — có thể '$' + chữ số đầu đã bị shell nuốt"),
     (re.compile(r"(?<![\d.,$€£¥])\b0 (triệu|tỷ)"), "WARN", "số tiền '0 triệu/tỷ' — nghi mất '$'"),
+    (re.compile(r"(?<=[ (~])[.,]\d"), "WARN", "số bắt đầu bằng '.' hoặc ',' (vd ' .05', ',399') — nghi mất '$' + chữ số đầu"),
+    (re.compile(r"(ngưỡng|mức) rút tối thiểu 0\b(?![.,]\d)"), "WARN", "ngưỡng rút tối thiểu '0' — nghi mất '$'"),
 ]
+
+UNIT_NOTE = re.compile(r"(Đơn vị|Don vi|đơn vị tiền tệ)\s*:?\s*[A-Z]{3}", re.I)
+PRICE = re.compile(r"\d[\d.,]*\s*/\s*(tháng|thang|năm|nam|tuần|tuan|seat|user|chỗ|GB)")
+CURRENCY = re.compile(r"[$€£¥₫]|USD|EUR|GBP|VND|SEK|CHF|AUD|NZD|CAD|SGD|INR")
 
 problems = []
 ALL = False
@@ -128,6 +134,11 @@ def main(paths):
             check_table(path, lines, old, key_col=0)
         elif "advertiser-audits" in path:
             check_table(path, lines, old, key_col=1)
+            for i, line in enumerate(lines, 1):
+                if line in old or not line.startswith("| ") or "STT" in line:
+                    continue
+                if PRICE.search(line) and not CURRENCY.search(UNIT_NOTE.sub("", line)):
+                    report("WARN", path, i, "có giá dạng 'số/tháng' nhưng cả dòng không có đơn vị tiền tệ — nghi mất '$'")
     errors = problems.count("ERROR")
     print(f"--- {errors} ERROR, {problems.count('WARN')} WARN")
     return 1 if errors else 0

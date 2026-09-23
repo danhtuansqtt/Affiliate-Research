@@ -11,3 +11,4 @@
 |------|----------|---------|-------|
 | 2026-09-23 | Dựng harness ban đầu: 5 agent (scout, researcher, policy-checker, reporter, reviewer) + 5 skill | toàn bộ | Người dùng yêu cầu dựng harness |
 | 2026-09-23 | Thêm hướng dẫn xử lý khi mạng bị chặn (dùng WebSearch) và cách dự phòng khi agent chưa được nạp | product-research, brand-bidding-check, affiliate-orchestrator | Lượt chạy thử: proxy trả 403 với các domain affiliate |
+| 2026-09-23 | check_outputs.py: thêm các luật phát hiện mất `$` (số bắt đầu bằng `.`/`,`, ngưỡng rút 0, giá không có đơn vị tiền tệ, bỏ qua ghi chú "Đơn vị: USD") | report-format | Phát hiện 20 dòng hỏng ở 2 file audit mà luật cũ chỉ bắt được một phần |
