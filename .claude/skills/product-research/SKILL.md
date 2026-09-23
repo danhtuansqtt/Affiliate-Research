@@ -30,6 +30,12 @@ Cột **Google Ads** không thuộc phạm vi skill này. Nó do `brand-bidding-
 5. **Viết bằng tiếng Việt**, nhưng giữ nguyên tên riêng, tên gói và thuật ngữ như recurring, cookie, lifetime.
 6. **Ký tự tiền tệ.** Ghi `$20/tháng` hoặc `20 USD/tháng`. Luôn ghi file bằng Write hoặc Edit. Nếu buộc phải dùng shell, heredoc phải có dấu nháy (`<<'EOF'`). Heredoc không có nháy từng biến `$20` thành `0` và `$0.018` thành `/usr/bin/bash.018` trong repo này.
 
+## Khi mạng bị chặn
+Môi trường cloud có thể chặn WebFetch hoặc curl tới các domain bên ngoài (lỗi 403 ở bước CONNECT của proxy). Trong trường hợp đó:
+- Chuyển sang **WebSearch giới hạn theo domain chính chủ** (ví dụ `site:thetop.com pricing`). Đây là bản sao trang chính chủ mà công cụ tìm kiếm lưu lại, có giá trị hơn nguồn tổng hợp.
+- Ghi `(xác minh qua bản tìm kiếm, chưa mở trực tiếp trang)` ở dòng Nguồn, để reviewer biết cần kiểm tra lại.
+- Không coi 403 là "trang không tồn tại".
+
 ## Dấu hiệu nên đề xuất loại (ở chế độ scout)
 Hãy ghi `ĐỀ XUẤT LOẠI: {status} — {lý do}` ở đầu mục khi gặp một trong các trường hợp:
 - sản phẩm ngừng nhận khách mới (`rejected_discontinued`)

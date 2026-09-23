@@ -85,7 +85,8 @@ Gọi `Agent(subagent_type: "reporter", model: "opus")` kèm chế độ và dan
 | Tình huống | Cách xử lý |
 |---|---|
 | Một agent lỗi hoặc không trả về kết quả | Gọi lại 1 lần. Lỗi lần nữa thì tiếp tục mà không có phần đó, ghi rõ phần thiếu trong báo cáo. Riêng policy-checker lỗi thì cột Google Ads dùng giá trị mặc định kèm độ tin cậy thấp. |
-| Không truy cập được Google Ads Transparency | Dừng chế độ audit và báo người dùng. Không bịa danh sách domain. |
+| Không truy cập được Google Ads Transparency | Dừng chế độ audit và báo người dùng. Không bịa danh sách domain. Nếu người dùng gửi ảnh chụp danh sách creative, có thể đọc từ ảnh (giống chế độ marketplace). |
+| Proxy mạng chặn các domain ngoài (403) | Các agent chuyển sang WebSearch (xem product-research). Trong phần tóm tắt, báo người dùng rằng mạng bị chặn và nêu cách sửa: mở phần cài đặt môi trường cloud trên thanh tiêu đề của phiên, chọn Edit, rồi mở rộng Network access hoặc thêm các domain cần dùng. |
 | Researcher và policy-checker mâu thuẫn nhau | Giữ cả hai, ghi nguồn của từng bên. Reviewer quyết định cần xác minh lại hay không. |
 | Push bị từ chối vì có commit mới trên remote | `git pull --rebase`, chạy lại `known_domains.py` với các domain vừa thêm (một routine khác có thể đã xét chúng), sửa nếu trùng, rồi push. |
 | Hơn một nửa số lô thất bại | Dừng và báo người dùng, không commit. |

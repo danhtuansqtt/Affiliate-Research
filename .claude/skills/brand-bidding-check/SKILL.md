@@ -12,6 +12,8 @@ Người dùng kiếm hoa hồng bằng cách chạy Google Ads trỏ về link 
 2. Trang chương trình trên mạng affiliate (PartnerStack, Impact, Tolt, Rewardful, FirstPromoter, Dub, FlexOffers, ShareASale).
 3. Truy vấn gợi ý: `"{brand}" affiliate terms "brand" bidding`, `"{brand}" affiliate "PPC"`, `"{brand}" affiliate "trademark" keywords`, `"{brand}" affiliate "paid search"`.
 
+Nếu WebFetch bị proxy chặn (403), dùng WebSearch với các truy vấn trên kèm `site:{domain}` hoặc `site:partnerstack.com`. Nếu vẫn không thấy câu chữ điều khoản thì dùng kết luận mặc định kèm độ tin cậy thấp, và ghi thêm "mạng bị chặn" để orchestrator báo người dùng.
+
 Các cụm từ thường gặp trong điều khoản:
 - **Cấm:** "may not bid on", "trademark/branded keywords", "brand terms", "no PPC", "paid search is prohibited", "negative keyword".
 - **Cho phép:** "Paid ads (Google, Facebook…) are allowed".
