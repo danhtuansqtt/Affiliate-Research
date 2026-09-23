@@ -1,6 +1,10 @@
 name: telegram-notify
 on:
   push:
+    # Chỉ chạy trên master: nhánh khác (vd khi merge master vào nhánh feature)
+    # sẽ khiến diff HEAD~1..HEAD chứa báo cáo cũ -> gửi Telegram/Sheets trùng.
+    branches:
+      - master
     paths:
       - 'latest_report*.md'
 jobs:
