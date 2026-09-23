@@ -14,3 +14,4 @@
 | 2026-09-23 | check_outputs.py: thêm các luật phát hiện mất `$` (số bắt đầu bằng `.`/`,`, ngưỡng rút 0, giá không có đơn vị tiền tệ, bỏ qua ghi chú "Đơn vị: USD") | report-format | Phát hiện 20 dòng hỏng ở 2 file audit mà luật cũ chỉ bắt được một phần |
 | 2026-09-23 | Thêm quy ước placeholder `[không xác minh được số tiền]` cho một số tiền đơn lẻ không xác minh được | product-research | Lượt sửa 20 dòng bị mất `$` cần phân biệt với ô thiếu toàn bộ dữ liệu |
 | 2026-09-23 | Giới hạn workflow telegram-notify và sheets-sync chỉ chạy trên `master` | .github/workflows, report-format | Merge master vào nhánh feature làm gửi lại 2 tin Telegram và thêm 5 dòng trùng vào Google Sheets |
+| 2026-09-23 | Tiêu chí tuổi cho mọi chủ đề: sản phẩm ra mắt từ 1/1/2025 đến nay (tính theo ngày sản phẩm ra mắt, không theo ngày công bố chương trình affiliate) | affiliate-scout | Người dùng yêu cầu |
