@@ -4,19 +4,19 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "inspect = chỉ xem; delete_rows = xóa (chỉ khi mọi dòng đều trùng dòng phía trên)"
+        description: "inspect = chỉ xem; delete_rows = xóa (chỉ khi mọi dòng đều trùng dòng phía trên); create_tab = tạo tab kèm tiêu đề"
         type: choice
-        options: [inspect, delete_rows]
+        options: [inspect, delete_rows, create_tab]
         default: inspect
       tab:
         description: "Tên tab"
         default: "Trang tính1"
       start_row:
-        description: "Dòng đầu (tính cả dòng tiêu đề là dòng 1)"
-        required: true
+        description: "Dòng đầu (tính cả dòng tiêu đề là dòng 1); bỏ trống khi create_tab"
+        required: false
       end_row:
-        description: "Dòng cuối"
-        required: true
+        description: "Dòng cuối; bỏ trống khi create_tab"
+        required: false
 jobs:
   maintain:
     runs-on: ubuntu-latest
