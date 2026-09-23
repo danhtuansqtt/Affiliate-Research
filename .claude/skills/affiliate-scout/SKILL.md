@@ -17,12 +17,19 @@ Domain có kết quả `KNOWN` thì bỏ qua. Ở chế độ scout, nếu cần
 
 ## 2. Chế độ scout — tiêu chí theo chủ đề
 
-Bộ tiêu chí dưới đây được **suy ra từ lịch sử loại/chọn trong repo**. Khi người dùng đổi yêu cầu, hãy cập nhật mục này.
+Khi người dùng đổi yêu cầu, hãy cập nhật mục này và ghi vào lịch sử thay đổi trong `CLAUDE.md`.
 
-| Chủ đề | File lịch sử / báo cáo | Giữ lại khi | Hay bị loại vì |
+**Tiêu chí tuổi (áp dụng cho mọi chủ đề, người dùng chốt ngày 2026-09-23):** sản phẩm phải **ra mắt từ ngày 1/1/2025 đến nay**.
+- Mốc tính tuổi là **ngày sản phẩm ra mắt**. Ngày chương trình affiliate được công bố hay ngày được thêm lên mạng affiliate thì không dùng làm mốc. Chương trình affiliate có thể mới hay cũ đều được, miễn là đang hoạt động.
+- Sản phẩm ra mắt trước năm 2025 thì loại với status `rejected_not_new`. Sản phẩm của một công ty lâu đời cũng tính là cũ, trừ khi đó là một sản phẩm độc lập mới ra mắt từ 2025, có tên và domain riêng.
+- Không xác minh được ngày ra mắt thì loại với status `rejected_unconfirmed_launch_date`. Đừng đoán.
+- Trong các ứng viên đạt, ưu tiên sản phẩm mới hơn khi chọn 1–3 chương trình tốt nhất.
+- Nhiều domain trong lịch sử đã bị loại vì "không đủ mới" theo tiêu chí cũ (chặt hơn), dù sản phẩm ra mắt từ 2025. Theo quy tắc chống xét trùng, các domain đó vẫn không được xét lại, trừ khi người dùng yêu cầu.
+
+| Chủ đề | File lịch sử / báo cáo | Giữ lại khi (ngoài tiêu chí tuổi) | Hay bị loại vì |
 |---|---|---|---|
-| AI (mặc định) | `reported_programs.md` / `latest_report.md` | Sản phẩm AI **ra mắt trong năm hiện tại**, đang hoạt động, có chương trình affiliate công khai cho marketer, không cấm brand bidding | ra mắt năm trước (`rejected_not_new`), không có affiliate (`rejected_no_affiliate_found`), không xác nhận được ngày ra mắt (`rejected_unconfirmed_launch_date`), mô hình reseller/white-label/rev-share cho dev (`rejected_not_affiliate_model`) |
-| tai-chinh | `reported_programs__tai-chinh.md` / `latest_report__tai-chinh.md` | Chương trình affiliate/CPA **mới công bố gần đây (vài tuần)**, cho phép marketer chạy Google Ads, sản phẩm hướng người tiêu dùng | chương trình đã có từ lâu (`rejected_not_new`), B2B hoặc API không mở cho marketer (`rejected_not_applicable`), thiếu dữ liệu (`rejected_insufficient_data`), dấu hiệu lừa đảo (WHOIS ẩn, PR trả tiền, presale token) |
+| AI (mặc định) | `reported_programs.md` / `latest_report.md` | Sản phẩm AI đang hoạt động, có chương trình affiliate công khai cho marketer, không cấm brand bidding | không có affiliate (`rejected_no_affiliate_found`), mô hình reseller/white-label/rev-share cho dev (`rejected_not_affiliate_model`), đã ngừng (`rejected_discontinued`) |
+| tai-chinh | `reported_programs__tai-chinh.md` / `latest_report__tai-chinh.md` | Có chương trình affiliate/CPA mở cho marketer chạy Google Ads, sản phẩm hướng người tiêu dùng | B2B hoặc API không mở cho marketer (`rejected_not_applicable`), thiếu dữ liệu (`rejected_insufficient_data`), dấu hiệu lừa đảo (WHOIS ẩn, PR trả tiền, presale token) |
 | chủ đề mới | `reported_programs__{slug}.md` / `latest_report__{slug}.md` | Hỏi người dùng tiêu chí, hoặc áp dụng khung của tai-chinh | — |
 
 Mọi chủ đề đều bị loại nếu cấm brand bidding (`rejected_brand_bidding`, do policy-checker kết luận). Danh sách status hợp lệ đầy đủ nằm ở `report-format`.
