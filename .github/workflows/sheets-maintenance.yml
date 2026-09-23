@@ -1,0 +1,38 @@
+name: sheets-maintenance
+# Chỉ chạy khi kích hoạt tay (Actions → sheets-maintenance → Run workflow).
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "inspect = chỉ xem; delete_rows = xóa (chỉ khi mọi dòng đều trùng dòng phía trên)"
+        type: choice
+        options: [inspect, delete_rows]
+        default: inspect
+      tab:
+        description: "Tên tab"
+        default: "Trang tính1"
+      start_row:
+        description: "Dòng đầu (tính cả dòng tiêu đề là dòng 1)"
+        required: true
+      end_row:
+        description: "Dòng cuối"
+        required: true
+jobs:
+  maintain:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: pip install google-auth
+      - name: Run maintenance
+        env:
+          GOOGLE_SA_EMAIL: ${{ secrets.GOOGLE_SA_EMAIL }}
+          GOOGLE_SA_PRIVATE_KEY: ${{ secrets.GOOGLE_SA_PRIVATE_KEY }}
+          GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+          ACTION: ${{ inputs.action }}
+          TAB: ${{ inputs.tab }}
+          START_ROW: ${{ inputs.start_row }}
+          END_ROW: ${{ inputs.end_row }}
+        run: python3 .github/scripts/sheet_maintenance.py

@@ -16,3 +16,4 @@
 | 2026-09-23 | Giới hạn workflow telegram-notify và sheets-sync chỉ chạy trên `master` | .github/workflows, report-format | Merge master vào nhánh feature làm gửi lại 2 tin Telegram và thêm 5 dòng trùng vào Google Sheets |
 | 2026-09-23 | Tiêu chí tuổi cho mọi chủ đề: sản phẩm ra mắt từ 1/1/2025 đến nay (tính theo ngày sản phẩm ra mắt, không theo ngày công bố chương trình affiliate) | affiliate-scout | Người dùng yêu cầu |
 | 2026-09-23 | sync_sheet.py: chủ đề hậu tố `-doi` ghi vào tab riêng "Đội agent" (tự tạo nếu chưa có) | .github/scripts, report-format | Người dùng muốn tách dữ liệu routine đội agent khỏi routine cũ |
+| 2026-09-23 | Thêm workflow chạy tay `sheets-maintenance` (inspect / delete_rows, chỉ xóa dòng trùng dòng phía trên) | .github/workflows, .github/scripts | Cần xóa 5 dòng trùng A93:F97 trong Google Sheets mà không có quyền sửa trực tiếp |
