@@ -17,3 +17,4 @@
 | 2026-09-23 | Tiêu chí tuổi cho mọi chủ đề: sản phẩm ra mắt từ 1/1/2025 đến nay (tính theo ngày sản phẩm ra mắt, không theo ngày công bố chương trình affiliate) | affiliate-scout | Người dùng yêu cầu |
 | 2026-09-23 | sync_sheet.py: chủ đề hậu tố `-doi` ghi vào tab riêng "Đội agent" (tự tạo nếu chưa có) | .github/scripts, report-format | Người dùng muốn tách dữ liệu routine đội agent khỏi routine cũ |
 | 2026-09-23 | Thêm workflow chạy tay `sheets-maintenance` (inspect / delete_rows, chỉ xóa dòng trùng dòng phía trên) | .github/workflows, .github/scripts | Cần xóa 5 dòng trùng A93:F97 trong Google Sheets mà không có quyền sửa trực tiếp |
+| 2026-09-23 | sheets-maintenance: thêm chế độ `create_tab` (tạo tab kèm dòng tiêu đề nếu chưa có) | .github/workflows, .github/scripts | Người dùng muốn tạo sẵn tab "Đội agent" |

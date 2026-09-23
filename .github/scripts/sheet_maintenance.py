@@ -6,25 +6,42 @@ Chế độ (biến môi trường ACTION):
   delete_rows  xóa các dòng START_ROW..END_ROW, nhưng CHỈ KHI mọi dòng trong
                vùng đó trùng hoàn toàn (6 cột A:F) với một dòng nằm phía trên
                trong cùng tab. Có dòng không trùng thì dừng, không xóa gì.
+  create_tab   tạo tab TAB kèm dòng tiêu đề (Date | Topic | Product | Domain |
+               Status | Note) nếu chưa có; tab đã có thì không làm gì.
 """
 import json
 import os
 import sys
 import urllib.parse
 
-from sync_sheet import _api, get_access_token
+from sync_sheet import HEADER, _api, ensure_tab, get_access_token
 
 ACTION = os.environ.get("ACTION", "inspect")
 TAB = os.environ["TAB"]
-START = int(os.environ["START_ROW"])
-END = int(os.environ["END_ROW"])
+START = int(os.environ.get("START_ROW") or 0)
+END = int(os.environ.get("END_ROW") or 0)
 
 
 def norm(row):
     return tuple((row + [""] * 6)[:6])
 
 
+def create_tab():
+    token = get_access_token()
+    meta = json.loads(_api(token, "GET", "?fields=sheets.properties.title"))
+    titles = [s["properties"]["title"] for s in meta.get("sheets", [])]
+    if TAB in titles:
+        print(f"Tab '{TAB}' đã có sẵn, không làm gì. Các tab hiện có: {titles}")
+        return
+    ensure_tab(token, TAB)
+    meta = json.loads(_api(token, "GET", "?fields=sheets.properties.title"))
+    print(f"Các tab hiện có: {[s['properties']['title'] for s in meta['sheets']]}")
+    print(f"Dòng tiêu đề: {' | '.join(HEADER)}")
+
+
 def main():
+    if ACTION == "create_tab":
+        return create_tab()
     if not (2 <= START <= END) or END - START >= 50:
         sys.exit(f"Vùng dòng không hợp lệ: {START}..{END} (phải 2 <= start <= end, tối đa 50 dòng)")
     token = get_access_token()
