@@ -5,6 +5,7 @@ import os
 import re
 import subprocess
 import urllib.error
+import urllib.parse
 import urllib.request
 
 from google.oauth2.service_account import Credentials
@@ -84,14 +85,22 @@ def topic_from_filename(path):
     return m.group(1) if m else "unknown"
 
 
-def append_rows(token, values):
-    url = (
-        f"https://sheets.googleapis.com/v4/spreadsheets/{SHEET_ID}/values/"
-        f"A:F:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS"
-    )
-    body = json.dumps({"values": values}).encode("utf-8")
+# Chủ đề có hậu tố "-doi" (routine chạy bằng đội agent) ghi vào tab riêng;
+# các chủ đề khác giữ nguyên hành vi cũ: tab đầu tiên của bảng tính.
+TEAM_SUFFIX = "-doi"
+TEAM_TAB = "Đội agent"
+HEADER = ["Date", "Topic", "Product", "Domain", "Status", "Note"]
+
+
+def tab_for_topic(topic):
+    return TEAM_TAB if topic.endswith(TEAM_SUFFIX) else None
+
+
+def _api(token, method, path, payload=None):
+    url = f"https://sheets.googleapis.com/v4/spreadsheets/{SHEET_ID}{path}"
+    body = json.dumps(payload).encode("utf-8") if payload is not None else None
     req = urllib.request.Request(
-        url, data=body, method="POST",
+        url, data=body, method=method,
         headers={
             "Authorization": f"Bearer {token}",
             "Content-Type": "application/json",
@@ -101,24 +110,50 @@ def append_rows(token, values):
         return resp.read().decode()
 
 
+def ensure_tab(token, title):
+    """Tạo tab (kèm dòng tiêu đề) nếu bảng tính chưa có tab tên này."""
+    meta = json.loads(_api(token, "GET", "?fields=sheets.properties.title"))
+    titles = {s["properties"]["title"] for s in meta.get("sheets", [])}
+    if title in titles:
+        return
+    _api(token, "POST", ":batchUpdate",
+         {"requests": [{"addSheet": {"properties": {"title": title}}}]})
+    append_rows(token, [HEADER], title)
+    print(f"Created tab '{title}' with header row.")
+
+
+def append_rows(token, values, tab=None):
+    rng = f"'{tab}'!A:F" if tab else "A:F"
+    path = (
+        f"/values/{urllib.parse.quote(rng, safe='')}:append"
+        "?valueInputOption=RAW&insertDataOption=INSERT_ROWS"
+    )
+    return _api(token, "POST", path, {"values": values})
+
+
 def main():
     files = changed_files()
     if not files:
         print("No reported_programs__*.md changes in this push.")
         return
-    all_rows = []
+    rows_by_tab = {}
     for f in files:
         topic = topic_from_filename(f)
+        tab = tab_for_topic(topic)
         for cells in added_rows(f):
             date, product, domain, status, note = (cells + [""] * 5)[:5]
-            all_rows.append([date, topic, product, domain, status, note])
-    if not all_rows:
+            rows_by_tab.setdefault(tab, []).append(
+                [date, topic, product, domain, status, note])
+    if not rows_by_tab:
         print("No new table rows detected.")
         return
     token = get_access_token()
-    result = append_rows(token, all_rows)
-    print(f"Appended {len(all_rows)} row(s) to sheet.")
-    print(result)
+    for tab, rows in rows_by_tab.items():
+        if tab:
+            ensure_tab(token, tab)
+        result = append_rows(token, rows, tab)
+        print(f"Appended {len(rows)} row(s) to {tab or 'default tab'}.")
+        print(result)
 
 
 if __name__ == "__main__":
