@@ -443,3 +443,4 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | amplemarket.com | amplemarket.com | 2026-09-23 | MARKETPLACE-BATCH |
 | castmagic.io | castmagic.io | 2026-09-23 | MARKETPLACE-BATCH |
 | rendair.ai | Rendair AI | 2026-09-26 | PRODUCT-LINK |
+| mozify.ai | Mozify | 2026-09-26 | PRODUCT-LINK |
