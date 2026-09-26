@@ -6,10 +6,12 @@ Chế độ (biến môi trường ACTION):
   delete_rows  xóa các dòng START_ROW..END_ROW, nhưng CHỈ KHI mọi dòng trong
                vùng đó trùng hoàn toàn (6 cột A:F) với một dòng nằm phía trên
                trong cùng tab. Có dòng không trùng thì dừng, không xóa gì.
-  create_tab   tạo tab TAB kèm dòng tiêu đề (Date | Topic | Product | Domain |
-               Status | Note) nếu chưa có; tab đã có thì không làm gì.
+  create_tab   tạo tab TAB kèm dòng tiêu đề HEADER (12 cột, xem sync_sheet.py)
+               nếu chưa có; tab đã có thì không làm gì.
   rename_tab   đổi tên tab TAB thành NEW_TAB, giữ nguyên dữ liệu. Dừng nếu TAB
                không tồn tại hoặc NEW_TAB đã có.
+  update_header ghi đè dòng 1 của tab TAB thành HEADER hiện tại (12 cột). Dùng
+               khi thêm cột mới vào schema — không đụng dữ liệu từ dòng 2.
 """
 import json
 import os
@@ -26,7 +28,7 @@ NEW_TAB = (os.environ.get("NEW_TAB") or "").strip()
 
 
 def norm(row):
-    return tuple((row + [""] * 6)[:6])
+    return tuple((row + [""] * len(HEADER))[:len(HEADER)])
 
 
 def create_tab():
@@ -40,6 +42,18 @@ def create_tab():
     meta = json.loads(_api(token, "GET", "?fields=sheets.properties.title"))
     print(f"Các tab hiện có: {[s['properties']['title'] for s in meta['sheets']]}")
     print(f"Dòng tiêu đề: {' | '.join(HEADER)}")
+
+
+def update_header():
+    token = get_access_token()
+    meta = json.loads(_api(token, "GET", "?fields=sheets.properties.title"))
+    titles = [s["properties"]["title"] for s in meta.get("sheets", [])]
+    if TAB not in titles:
+        sys.exit(f"Không có tab '{TAB}'. Các tab hiện có: {titles}")
+    rng = urllib.parse.quote(f"'{TAB}'!A1:{chr(ord('A') + len(HEADER) - 1)}1", safe="")
+    _api(token, "PUT", f"/values/{rng}?valueInputOption=RAW",
+         {"values": [HEADER]})
+    print(f"Đã ghi dòng tiêu đề tab '{TAB}': {' | '.join(HEADER)}")
 
 
 def rename_tab():
@@ -64,6 +78,8 @@ def main():
         return create_tab()
     if ACTION == "rename_tab":
         return rename_tab()
+    if ACTION == "update_header":
+        return update_header()
     if not (2 <= START <= END) or END - START >= 50:
         sys.exit(f"Vùng dòng không hợp lệ: {START}..{END} (phải 2 <= start <= end, tối đa 50 dòng)")
     token = get_access_token()
@@ -75,7 +91,7 @@ def main():
         titles = [s["properties"]["title"] for s in meta["sheets"]]
         sys.exit(f"Không có tab '{TAB}'. Các tab hiện có: {titles}")
 
-    rng = urllib.parse.quote(f"'{TAB}'!A1:F{END}", safe="")
+    rng = urllib.parse.quote(f"'{TAB}'!A1:{chr(ord('A') + len(HEADER) - 1)}{END}", safe="")
     values = json.loads(_api(token, "GET", f"/values/{rng}")).get("values", [])
     if len(values) < END:
         sys.exit(f"Tab '{TAB}' chỉ có {len(values)} dòng, không tới dòng {END}.")

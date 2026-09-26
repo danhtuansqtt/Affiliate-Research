@@ -80,6 +80,11 @@ def added_rows(path):
     return rows
 
 
+# reported_programs*.md từ 2026-09-26 có 11 cột (5 cột cũ + 6 cột dữ liệu sản
+# phẩm mới); các dòng cũ hơn chỉ có 5 cột và được đệm bằng "" cho khớp.
+ROW_COLS = 11
+
+
 def topic_from_filename(path):
     m = re.match(r"reported_programs__(.+)\.md$", os.path.basename(path))
     return m.group(1) if m else "unknown"
@@ -89,7 +94,11 @@ def topic_from_filename(path):
 # các chủ đề khác giữ nguyên hành vi cũ: tab đầu tiên của bảng tính.
 TEAM_SUFFIX = "-doi"
 TEAM_TAB = "Affiliate Research"
-HEADER = ["Date", "Topic", "Product", "Domain", "Status", "Note"]
+HEADER = [
+    "Date", "Topic", "Product", "Domain", "Status", "Note",
+    "Tính Năng", "Giá Bán", "Hoa Hồng Affiliate", "Google Ads",
+    "Năm Ra Đời", "Cookie (ngày)",
+]
 
 
 def tab_for_topic(topic):
@@ -123,7 +132,7 @@ def ensure_tab(token, title):
 
 
 def append_rows(token, values, tab=None):
-    rng = f"'{tab}'!A:F" if tab else "A:F"
+    rng = f"'{tab}'!A:L" if tab else "A:L"
     path = (
         f"/values/{urllib.parse.quote(rng, safe='')}:append"
         "?valueInputOption=RAW&insertDataOption=INSERT_ROWS"
@@ -141,9 +150,12 @@ def main():
         topic = topic_from_filename(f)
         tab = tab_for_topic(topic)
         for cells in added_rows(f):
-            date, product, domain, status, note = (cells + [""] * 5)[:5]
-            rows_by_tab.setdefault(tab, []).append(
-                [date, topic, product, domain, status, note])
+            (date, product, domain, status, note, tinh_nang, gia_ban, hoa_hong,
+             google_ads, nam_ra_doi, cookie) = (cells + [""] * ROW_COLS)[:ROW_COLS]
+            rows_by_tab.setdefault(tab, []).append([
+                date, topic, product, domain, status, note,
+                tinh_nang, gia_ban, hoa_hong, google_ads, nam_ra_doi, cookie,
+            ])
     if not rows_by_tab:
         print("No new table rows detected.")
         return

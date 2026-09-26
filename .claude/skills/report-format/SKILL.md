@@ -20,8 +20,10 @@ Hai workflow GitHub Actions đọc trực tiếp các file này, nên sai địn
 
 ## 2. `reported_programs.md` / `reported_programs__{chủ-đề}.md` — lịch sử scout
 - Chỉ **nối thêm** vào cuối file, không sửa dòng cũ. Mỗi ứng viên đã xét trong lần chạy là một dòng, dù được chọn hay bị loại.
-- Định dạng: `| YYYY-MM-DD | Product | domain.com | status | Note |`, đúng 5 cột. Không để ký tự `|` trong nội dung ô.
-- Chủ đề AI viết Note bằng tiếng Anh, tai-chinh viết bằng tiếng Việt (theo lịch sử hiện có).
+- Định dạng (từ 2026-09-26, 11 cột): `| Date | Product | Domain | Status | Note | Tính Năng | Giá Bán | Hoa Hồng Affiliate | Google Ads | Năm Ra Đời | Cookie (ngày) |`. Không để ký tự `|` trong nội dung ô. Các dòng cũ trước 2026-09-26 chỉ có 5 cột (`Date | Product | Domain | Status | Note`) — **không sửa lại dòng cũ**, `check_outputs.py` chỉ so cột với dòng MỚI.
+- 6 cột thêm lấy nguyên dữ liệu từ `_workspace/02_researcher_*.md` (Tính Năng, Giá Bán, Hoa Hồng Affiliate, Năm Ra Đời, Thời Gian Cookie → ghi số ngày, vd `30`, `60`, `không tìm thấy dữ liệu công khai`) và `_workspace/02_policy_*.md` (giá trị chuẩn của cột Google Ads theo skill `brand-bidding-check`: `Bị Cấm (...)`, `Không Cấm (...)`, hoặc `không tìm thấy dữ liệu công khai — mặc định Không Cấm`).
+- Ứng viên bị loại **trước khi researcher/policy-checker từng xét** (ví dụ scout tự loại vì trùng lịch sử hoặc rõ ràng không phải sản phẩm mới) thì 6 cột này ghi `-` (không phải "không tìm thấy dữ liệu công khai", để phân biệt "chưa từng tra" với "đã tra nhưng không thấy").
+- Chủ đề AI viết Note bằng tiếng Anh, tai-chinh viết bằng tiếng Việt (theo lịch sử hiện có). 6 cột mới luôn viết tiếng Việt cho mọi chủ đề, để khớp tiêu đề cột trên Google Sheet.
 - **Status hợp lệ:** `reported`, `duplicate_already_reported`, `rejected_not_new`, `rejected_no_affiliate_found`, `rejected_not_affiliate_model`, `rejected_not_applicable`, `rejected_brand_bidding`, `rejected_insufficient_data`, `rejected_insufficient_evidence`, `rejected_unconfirmed_launch_date`, `rejected_not_ai_tool`, `rejected_not_launched_yet`, `rejected_discontinued`, `rejected_duplicate_niche`. Nếu cần thêm status mới, cập nhật đồng thời danh sách này và `STATUSES` trong `scripts/check_outputs.py`.
 
 ## 3. `advertiser-audits/*.md` — bảng audit

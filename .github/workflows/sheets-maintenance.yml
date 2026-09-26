@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       action:
-        description: "inspect = chỉ xem; delete_rows = xóa (chỉ khi mọi dòng đều trùng dòng phía trên); create_tab = tạo tab kèm tiêu đề; rename_tab = đổi tên tab thành new_tab"
+        description: "inspect = chỉ xem; delete_rows = xóa (chỉ khi mọi dòng đều trùng dòng phía trên); create_tab = tạo tab kèm tiêu đề; rename_tab = đổi tên tab thành new_tab; update_header = ghi đè dòng 1 thành HEADER hiện tại"
         type: choice
-        options: [inspect, delete_rows, create_tab, rename_tab]
+        options: [inspect, delete_rows, create_tab, rename_tab, update_header]
         default: inspect
       tab:
         description: "Tên tab"
