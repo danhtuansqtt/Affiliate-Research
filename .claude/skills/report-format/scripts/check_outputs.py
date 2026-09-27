@@ -95,9 +95,41 @@ def check_table(path, lines, old, key_col=None, status_col=None):
                 keys.setdefault(k, i)
 
 
+BLOCK_LABELS = ["• Tính năng:", "• Giá bán:", "• Hoa hồng affiliate:", "• Google Ads:",
+                "• Năm ra đời:", "• Cookie:"]
+ADS_VALUES = ("Bị Cấm", "Không Cấm", "Chưa xác minh", "không tìm thấy dữ liệu công khai", "-")
+VAGUE = [
+    (re.compile(r"[$€£]\s?\d[\d.,]*\s*-\s*[$€£]?\d"), "khoảng giá mơ hồ (vd '$95-$99') — chốt 1 giá trị/gói"),
+    (re.compile(r"mâu thuẫn|chưa rõ|chưa xác minh được số liệu", re.I), "ô chứa ghi chú mâu thuẫn/chưa rõ — chốt 1 giá trị, chuyển giải thích sang cột Note"),
+]
+COOKIE_OK = re.compile(r"^(\d+(\s*\(.+\))?|-|không tìm thấy dữ liệu công khai.*)$")
+
+
+def check_program_values(path, lines, old):
+    """Dòng `reported` (11 cột) phải có 6 cột dữ liệu đã chốt, đúng định dạng mục 2b."""
+    for i, cells in rows(lines):
+        if lines[i - 1] in old or len(cells) < 11 or cells[3] != "reported":
+            continue
+        tinh_nang, gia, hoa_hong, ads, nam, cookie = cells[5:11]
+        if not ads.startswith(ADS_VALUES):
+            report("ERROR", path, i, f"cột Google Ads '{ads[:40]}' không phải giá trị chuẩn (Bị Cấm / Không Cấm / Chưa xác minh)")
+        if not COOKIE_OK.match(cookie):
+            report("WARN", path, i, f"cột Cookie '{cookie[:40]}' phải là số ngày, vd '30' hoặc '90 (mặc định Dub)'")
+        for label, val in (("Giá Bán", gia), ("Hoa Hồng", hoa_hong), ("Năm Ra Đời", nam), ("Tính Năng", tinh_nang)):
+            for rx, msg in VAGUE:
+                if rx.search(val):
+                    report("WARN", path, i, f"cột {label}: {msg}")
+
+
 def check_telegram(path, text):
     if len(text.strip()) > 4000:
         report("ERROR", path, 0, f"{len(text.strip())} ký tự > 4000 (Telegram sẽ cắt)")
+    counts = [text.count(l) for l in BLOCK_LABELS]
+    if any(counts) and len(set(counts)) > 1:
+        missing = [l for l, c in zip(BLOCK_LABELS, counts) if c < max(counts)]
+        report("ERROR", path, 0, f"khối 6 dòng thiếu nhãn {missing} (mỗi chương trình phải đủ 6 dòng)")
+    elif not any(counts):
+        report("WARN", path, 0, "không thấy khối 6 dòng '• Tính năng: …' — chỉ hợp lệ khi không có chương trình nào được chọn")
     for m in re.finditer(r"</?([a-zA-Z-]+)[^>]*>", text):
         if m.group(1).lower() not in TG_TAGS:
             report("ERROR", path, text[:m.start()].count("\n") + 1, f"thẻ HTML '{m.group(0)}' Telegram không hỗ trợ")
@@ -130,6 +162,7 @@ def main(paths):
             check_telegram(path, text)
         elif name.startswith("reported_programs"):
             check_table(path, lines, old, key_col=2, status_col=3)
+            check_program_values(path, lines, old)
         elif name == "audited_products.md":
             check_table(path, lines, old, key_col=0)
         elif "advertiser-audits" in path:

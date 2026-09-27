@@ -15,7 +15,17 @@ Hai workflow GitHub Actions đọc trực tiếp các file này, nên sai địn
 - Viết lại toàn bộ file mỗi lần chạy. Viết văn xuôi tiếng Việt, người viết xưng "em" và gọi người đọc là "anh", giọng thân mật và báo cáo thẳng.
 - Chỉ dùng các thẻ HTML Telegram hỗ trợ, chủ yếu là `<b>tên sản phẩm</b>`. Ký tự `&`, `<`, `>` trong nội dung phải viết thành `&amp;`, `&lt;`, `&gt;`. Không dùng Markdown (`**`, `#`, bảng) vì Telegram hiển thị nguyên dạng.
 - Tối đa **4000 ký tự**.
-- Nội dung khi **có** chương trình được chọn: mở đầu nêu số ứng viên đã rà. Với mỗi chương trình: sản phẩm là gì và vì sao là hàng mới; tình trạng brand bidding (nói rõ nếu chưa xác minh chắc chắn); giá; hoa hồng; cookie; có cần duyệt không; ngưỡng rút và lịch trả; traffic. Kết thúc bằng câu cho biết đã lưu lịch sử.
+- Nội dung khi **có** chương trình được chọn: mở đầu nêu số ứng viên đã rà. Với **mỗi** chương trình được chọn, BẮT BUỘC có khối 6 dòng cố định dưới đây, đúng thứ tự, đúng nhãn, mỗi dòng một giá trị đã chốt (quy tắc chốt giá trị ở mục 2b). Người dùng đọc khối này để quyết định chạy ads, nên không được gộp các dòng vào đoạn văn, không bỏ dòng nào kể cả khi thiếu dữ liệu:
+  ```
+  <b>Tên sản phẩm (domain)</b>
+  • Tính năng: …
+  • Giá bán: …
+  • Hoa hồng affiliate: …
+  • Google Ads: …
+  • Năm ra đời: …
+  • Cookie: … ngày
+  ```
+  Sau khối 6 dòng mới đến 1-3 câu văn xuôi: vì sao chọn, có cần duyệt không, ngưỡng rút/lịch trả, traffic, rủi ro (nguồn mâu thuẫn, mạng bị chặn…). Kết thúc báo cáo bằng câu cho biết đã lưu lịch sử. Phần liệt kê ứng viên bị loại viết ngắn, chỉ tên + lý do, để dành ký tự cho khối 6 dòng (giới hạn 4000 ký tự).
 - Nội dung khi **không có** chương trình nào đạt: vẫn gửi. Kể các hướng đã tìm, các ứng viên đào sâu (`<b>Tên (domain)</b>`) và lý do loại từng cái.
 
 ## 2. `reported_programs.md` / `reported_programs__{chủ-đề}.md` — lịch sử scout
@@ -25,6 +35,20 @@ Hai workflow GitHub Actions đọc trực tiếp các file này, nên sai địn
 - Ứng viên bị loại **trước khi researcher/policy-checker từng xét** (ví dụ scout tự loại vì trùng lịch sử hoặc rõ ràng không phải sản phẩm mới) thì 6 cột này ghi `-` (không phải "không tìm thấy dữ liệu công khai", để phân biệt "chưa từng tra" với "đã tra nhưng không thấy").
 - Chủ đề AI viết Note bằng tiếng Anh, tai-chinh viết bằng tiếng Việt (theo lịch sử hiện có). 6 cột mới luôn viết tiếng Việt cho mọi chủ đề, để khớp tiêu đề cột trên Google Sheet.
 - **Status hợp lệ:** `reported`, `duplicate_already_reported`, `rejected_not_new`, `rejected_no_affiliate_found`, `rejected_not_affiliate_model`, `rejected_not_applicable`, `rejected_brand_bidding`, `rejected_insufficient_data`, `rejected_insufficient_evidence`, `rejected_unconfirmed_launch_date`, `rejected_not_ai_tool`, `rejected_not_launched_yet`, `rejected_discontinued`, `rejected_duplicate_niche`. Nếu cần thêm status mới, cập nhật đồng thời danh sách này và `STATUSES` trong `scripts/check_outputs.py`.
+
+## 2b. Chốt giá trị cụ thể cho 6 cột (dùng chung cho khối Telegram và bảng lịch sử)
+Mỗi ô chỉ chứa **một giá trị đã chốt**, theo đúng định dạng dưới đây. Không ghi khoảng giá mơ hồ ("$95-$99"), không ghi "chưa rõ thời hạn", không nhét đoạn giải thích nguồn mâu thuẫn vào ô: phần giải thích đó đưa vào cột Note (bảng lịch sử) hoặc câu văn sau khối 6 dòng (Telegram). Khi nguồn mâu thuẫn, chốt theo thứ tự ưu tiên: trang chính chủ > trang chương trình trên mạng affiliate (Dub, Tolt, Rewardful, PartnerStack, Impact…) > nguồn tổng hợp; ghi thêm nhãn tin cậy ngắn `(chính chủ)`, `(mạng affiliate)` hoặc `(nguồn phụ)` ở cuối ô.
+
+| Cột | Định dạng bắt buộc | Ví dụ đúng | Ví dụ sai |
+|---|---|---|---|
+| Tính Năng | 1 câu ≤ 25 từ: làm gì, cho ai | `AI dựng website/app/game từ mô tả, cho SMB và creator` | đoạn 3-4 câu |
+| Giá Bán | Từng gói `Tên gói $X/tháng` (hoặc `/năm`, `/lần`), cách nhau bằng `; `, có gói free/trial nếu có | `Free 70 credits; Premium $39.99/tháng; Platinum $79.99/tháng (chính chủ)` | `$95-$99/tháng (nguồn mâu thuẫn)` |
+| Hoa Hồng Affiliate | `X% recurring N tháng` / `X% recurring trọn đời` / `X% một lần` / `$X/khách` | `15% recurring 6 tháng (chính chủ)` | `25% recurring (thời hạn chưa rõ)` |
+| Google Ads | Đúng 1 trong 3 giá trị chuẩn của skill `brand-bidding-check`, trích ý chính trong ngoặc | `Không Cấm (terms chỉ cấm spam email)` · `Bị Cấm (cấm bid từ khóa "X" trên PPC)` · `Chưa xác minh — mặc định Không Cấm` | `CHƯA XÁC MINH được. Em không đọc được…` |
+| Năm Ra Đời | `YYYY` hoặc `MM/YYYY` của sản phẩm (không phải ngày ra chương trình affiliate) | `01/2025` | `ra mắt khoảng đầu năm` |
+| Cookie (ngày) | Chỉ số nguyên, có thể kèm nhãn nguồn; mặc định của mạng affiliate thì ghi rõ | `30` · `90 (mặc định Dub)` | `không rõ` khi chưa tra đủ |
+
+`không tìm thấy dữ liệu công khai` chỉ được dùng cho Giá Bán, Hoa Hồng, Năm Ra Đời, Cookie **sau khi đã tra đủ số truy vấn tối thiểu** ghi ở skill `product-research` (mục "Tra đủ trước khi bỏ trống"). Ứng viên bị loại trước khi researcher/policy-checker từng tra thì 6 cột vẫn ghi `-` như mục 2.
 
 ## 3. `advertiser-audits/*.md` — bảng audit
 Tên file:

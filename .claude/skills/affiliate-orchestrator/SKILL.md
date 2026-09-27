@@ -55,7 +55,7 @@ Gọi `Agent(subagent_type: "scout", model: "opus")` kèm chế độ và tham s
    - `Agent(subagent_type: "policy-checker", model: "opus", run_in_background: true)` → ghi `02_policy_{lô}.md`
 3. Giới hạn chung khoảng 10 agent chạy cùng lúc. Lô lớn hơn thì chạy thành nhiều đợt.
 4. Chờ tất cả xong. Ở chế độ scout, chuyển các domain "Bị Cấm" hoặc có `ĐỀ XUẤT LOẠI` sang bảng Loại (ghi chú lại trong `01_scout_candidates.md`).
-5. Ở chế độ scout, nếu sau bước lọc có nhiều hơn 3 ứng viên đạt, chọn **1–3 cái tốt nhất**. Ưu tiên theo thứ tự: brand bidding được phép rõ ràng, hoa hồng recurring cao, cookie dài, sản phẩm mới hơn. Các ứng viên còn lại ghi `reported` hay loại tùy tiêu chí; khi không chắc thì hỏi người dùng.
+5. Ở chế độ scout, nếu sau bước lọc có nhiều hơn 3 ứng viên đạt, chọn **1–3 cái tốt nhất**. Ưu tiên theo thứ tự: brand bidding được phép rõ ràng, có đủ 6 thông tin cụ thể (Tính Năng, Giá Bán, Hoa Hồng, Google Ads, Năm Ra Đời, Cookie — càng ít ô "không tìm thấy"/"Chưa xác minh" càng tốt), hoa hồng recurring cao, cookie dài, sản phẩm mới hơn. Các ứng viên còn lại ghi `reported` hay loại tùy tiêu chí; khi không chắc thì hỏi người dùng.
 
 ### Phase 4: Viết báo cáo
 Gọi `Agent(subagent_type: "reporter", model: "opus")` kèm chế độ và danh sách file `_workspace/`.

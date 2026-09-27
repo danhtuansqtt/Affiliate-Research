@@ -19,7 +19,7 @@ Người dùng chạy **Google Ads** để kéo traffic cho link affiliate. Nế
 
 ## Nguyên tắc
 - Mỗi kết luận "Bị Cấm" hoặc "Không Cấm" phải có **trích dẫn nguyên văn** (tiếng Anh cũng được) và URL.
-- Không tìm thấy điều khoản thì kết luận là "không tìm thấy dữ liệu công khai — mặc định Không Cấm", và ghi rõ mức độ tin cậy là thấp để báo cáo nhắc người dùng tự kiểm tra lại.
+- Không tìm thấy điều khoản thì kết luận là "Chưa xác minh — mặc định Không Cấm (đã tra ở đâu)", nhưng CHỈ sau khi chạy đủ 4 truy vấn bắt buộc của skill `brand-bidding-check` (ghi vào dòng `Đã tra:`), kể cả tìm điều khoản chung của mạng affiliate (Dub, Tolt, Rewardful, PartnerStack…) mà chương trình đang dùng. Ghi rõ mức độ tin cậy thấp để báo cáo nhắc người dùng tự kiểm tra lại.
 - Điều khoản chỉ hiện sau khi đăng ký thì ghi đúng như vậy, không suy diễn.
 
 ## Đầu vào / đầu ra

@@ -26,10 +26,24 @@ Cột **Google Ads** không thuộc phạm vi skill này. Nó do `brand-bidding-
 1. **Mỗi con số phải có nguồn.** Ghi dòng `Nguồn:` kèm URL dưới mỗi domain trong file làm việc. Reviewer sẽ mở lại một phần các nguồn này.
 2. **Placeholder chuẩn.** Không có dữ liệu thì ghi đúng câu `không tìm thấy dữ liệu công khai`. Có thể thêm lý do ngắn, ví dụ `(chỉ hiện sau khi đăng ký)`. Dùng câu thống nhất giúp người dùng lọc nhanh trên Google Sheets.
    Nếu chỉ **một con số** trong ô không xác minh được (các phần khác của ô vẫn có dữ liệu), thay đúng con số đó bằng `[không xác minh được số tiền]`. Với dòng viết không dấu thì dùng `[khong xac minh duoc so tien]`.
-3. **Nguồn mâu thuẫn thì ghi cả hai**, ví dụ: `nguồn A ghi 30% recurring 12 tháng; nguồn B ghi $X/khách — chưa xác minh được số liệu duy nhất`.
+3. **Nguồn mâu thuẫn: chốt 1 giá trị, ghi phương án còn lại riêng.** Giá trị của trường lấy theo nguồn ưu tiên cao nhất (chính chủ > mạng affiliate > tổng hợp); phương án còn lại ghi ở dòng `Mâu thuẫn:`, ví dụ `Mâu thuẫn: nguồn tổng hợp ghi 12 tháng recurring + giảm 5% cho khách`. Không để ô chỉ có "chưa xác minh được số liệu duy nhất".
 4. **Chương trình chung của mạng affiliate** (ví dụ chính sách mặc định của PartnerStack) phải ghi rõ là "theo chính sách chung {mạng}", để người đọc không hiểu nhầm là điều khoản riêng của thương hiệu.
 5. **Viết bằng tiếng Việt**, nhưng giữ nguyên tên riêng, tên gói và thuật ngữ như recurring, cookie, lifetime.
 6. **Ký tự tiền tệ.** Ghi `$20/tháng` hoặc `20 USD/tháng`. Luôn ghi file bằng Write hoặc Edit. Nếu buộc phải dùng shell, heredoc phải có dấu nháy (`<<'EOF'`). Heredoc không có nháy từng biến `$20` thành `0` và `$0.018` thành `/usr/bin/bash.018` trong repo này.
+
+## Tra đủ trước khi bỏ trống
+Người dùng cần 6 thông tin **cụ thể** cho mỗi chương trình được giữ lại: Tính Năng, Giá Bán, Hoa Hồng Affiliate, Google Ads (do policy-checker), Năm Ra Đời, Cookie. Chỉ được ghi `không tìm thấy dữ liệu công khai` cho một trường khi đã chạy **ít nhất 3 truy vấn khác nhau** cho riêng trường đó và ghi các truy vấn đã thử vào dòng `Đã tra:` dưới mục domain. Truy vấn gợi ý (thay `{brand}`, `{domain}`, `{slug}`):
+
+| Trường | Truy vấn nên thử theo thứ tự |
+|---|---|
+| Giá Bán | `site:{domain} pricing` · `"{brand}" pricing plans per month` · `"{brand}" price "per month" 2026` |
+| Hoa Hồng | `site:{domain} affiliate` · `site:partners.dub.co {slug}` / `site:tolt.io {brand}` / `site:partnerstack.com {brand}` · `"{brand}" affiliate program commission recurring` |
+| Năm Ra Đời | `"{brand}" launch OR launched OR "product hunt"` · `"{brand}" founded` · `"{brand}" seed OR raises` (năm gọi vốn đầu tiên) |
+| Cookie | `"{brand}" affiliate cookie days` · `"{brand}" affiliate "cookie" OR "attribution window"` · trang chương trình trên mạng affiliate |
+
+Nếu chương trình chạy trên mạng affiliate có cookie mặc định công khai (ví dụ Dub 90 ngày) mà không tìm được số riêng của hãng, ghi `90 (mặc định Dub)`, không bỏ trống.
+
+Định dạng giá trị ghi vào file làm việc phải theo đúng mục 2b của skill `report-format`: mỗi trường **một giá trị đã chốt** kèm nhãn tin cậy `(chính chủ)` / `(mạng affiliate)` / `(nguồn phụ)`. Nguồn mâu thuẫn thì vẫn chốt 1 giá trị theo thứ tự ưu tiên chính chủ > mạng affiliate > tổng hợp, rồi ghi phương án còn lại vào dòng `Mâu thuẫn:` riêng, để reporter đưa vào cột Note chứ không nhét vào ô.
 
 ## Khi mạng bị chặn
 Môi trường cloud có thể chặn WebFetch hoặc curl tới các domain bên ngoài (lỗi 403 ở bước CONNECT của proxy). Trong trường hợp đó:
@@ -54,5 +68,7 @@ Hãy ghi `ĐỀ XUẤT LOẠI: {status} — {lý do}` ở đầu mục khi gặp
 - Thời Gian Cookie: …
 - Năm Ra Đời: …
 - Thanh toán / Traffic (scout): …
+- Mâu thuẫn: … (bỏ dòng nếu không có)
+- Đã tra: (chỉ khi có trường ghi "không tìm thấy dữ liệu công khai") liệt kê ≥3 truy vấn đã thử cho từng trường đó
 - Nguồn: https://…, https://…
 ```
