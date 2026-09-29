@@ -1,31 +1,29 @@
-Em báo cáo kết quả scout affiliate hôm nay (28/9/2026) của đội agent, chủ đề Tài chính: em đã rà 14 ứng viên, chọn được 2 chương trình. Lưu ý chung: proxy chặn hoàn toàn mạng (EGRESS_BLOCKED) với mọi domain, em chưa mở được trang gốc nào; toàn bộ số liệu lấy gián tiếp qua WebSearch, nên anh cần tự đọc lại điều khoản affiliate đầy đủ trước khi chạy Google Ads.
+Em báo cáo kết quả scout affiliate hôm nay (29/9/2026) của đội agent, chủ đề Tài chính: em đã rà 26 ứng viên, chọn được 1 chương trình. Lưu ý chung: proxy chặn mạng (403, EGRESS_BLOCKED) với các domain affiliate, em chưa mở được trang gốc nào; toàn bộ số liệu lấy gián tiếp qua WebSearch, độ tin cậy thấp đến trung bình.
 
-<b>Dollarwise: Budget &amp; Tracking (dollarwise.com)</b>
-• Tính năng: App ngân sách theo quy tắc 50/30/20, kết nối ngân hàng/thẻ, theo dõi mục tiêu tài chính, cho người dùng cá nhân Mỹ
-• Giá bán: Trial 3 ngày; Monthly $9.99/tháng 3 tháng đầu, sau đó $14.99/tháng; Annual $79.99/năm đầu, sau đó $99.99/năm (chính chủ)
-• Hoa hồng affiliate: không tìm thấy dữ liệu công khai
+<b>Moneta Funded (monetafunded.com)</b>
+• Tính năng: Prop firm forex/CFD có broker đứng sau (hệ Moneta Markets): bán challenge đánh giá, trader đạt được cấp vốn, chia lợi nhuận 88% (chính chủ)
+• Giá bán: 2-Step $5K $45/lần; 2-Step $10K $105/lần; 2-Step $25K $245/lần; 2-Step $50K $526/lần; 2-Step $100K $950/lần (nguồn phụ)
+• Hoa hồng affiliate: 22% recurring trọn đời (nguồn phụ)
 • Google Ads: Chưa xác minh — mặc định Không Cấm
-• Năm ra đời: 01/2025
+• Năm ra đời: 01/2026 (nguồn phụ)
 • Cookie: không tìm thấy dữ liệu công khai
 
-App của YouTuber Caleb Hammer (khoảng 3,8 triệu subscriber), ra mắt 17/01/2025 với tên Simpler Budget rồi đổi tên thành Dollarwise. Trang dollarwise.com/affiliates chỉ ghi "High Recurring Commission Payment", tỷ lệ % và cookie có lẽ chỉ hiện sau khi đăng ký. Chương trình referral người dùng ($5/$15 mỗi lượt, trần $1,500/năm) là chương trình riêng, không phải affiliate. Cảnh báo: brand gắn với Caleb Hammer nên khả năng đáng kể điều khoản đầy đủ cấm bid từ khóa "Dollarwise"/"Caleb Hammer"; anh nên hỏi đội affiliate trước khi chạy ads.
-
-<b>TradeReview: Trading Journal (tradereview.app)</b>
-• Tính năng: Nhật ký giao dịch cổ phiếu, options, forex, futures, crypto; đồng bộ broker/MT5, phân tích win rate, P&amp;L, drawdown; web, iOS, Android
-• Giá bán: Free; Basic $9.90/tháng hoặc $99/năm; Pro $19.90/tháng hoặc $199/năm (chính chủ)
-• Hoa hồng affiliate: 30% recurring 6 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm
-• Năm ra đời: 07/2025 (nguồn phụ)
-• Cookie: 30 ngày (chính chủ)
-
-Affiliate tự đăng ký, duyệt ngay qua revshare.so, khách được giảm 10%, ngưỡng rút $50. Quan trọng: hoa hồng CHỈ tính subscription mua qua web (Stripe), không tính mua qua App Store/Google Play, nên nếu chạy Google Ads anh phải dẫn traffic về bản web tradereview.app, không trỏ về link tải app. Điều khoản chỉ yêu cầu "honest, no spam", chưa thấy mục PPC/brand bidding; nên đọc thêm tradereview.app/terms-of-use trước khi chạy.
+Ra mắt 12/1/2026 theo thông cáo FXStreet/Finance Magnates (một số nguồn ghi soft launch 12/2025), pháp nhân Moneta Funded Ltd (Saint Lucia) do founder Moneta Markets lập. Affiliate chạy trên CellXpert, đăng ký tại monetafunded.com/affiliate-sign-up-form/; 22% là mức "tối đa" lấy từ đoạn trích tìm kiếm, chưa thấy bảng tier chính chủ. CPA $1,200 và ngưỡng rút $1,000 là của Moneta Markets, không phải Moneta Funded. Lịch trả, ngưỡng rút hoa hồng và traffic: không tìm thấy dữ liệu công khai.
+Rủi ro anh cần cân nhắc:
+- Không nhận khách cư trú tại Việt Nam, Thái Lan, UAE, Iran, Afghanistan, Cuba, Myanmar, Triều Tiên, Venezuela và các nước bị FATF/OFAC/EU/UN trừng phạt; chạy ads phải loại trừ các nước này, không nhắm traffic VN.
+- Google Ads xếp prop firm/CFD vào nhóm "complex speculative financial products", yêu cầu chứng nhận dịch vụ tài chính theo quốc gia; affiliate thường không đủ điều kiện nên ads có thể bị từ chối dù điều khoản affiliate không cấm.
+- Trang "Payout Terms And Conditions" bị khóa bằng mật khẩu, bộ đếm lợi nhuận đã trả hiển thị $0, chưa có dữ liệu payout kiểm toán; giá 2-Step vừa tăng mạnh.
+- Chưa xác minh brand bidding/PPC: affiliate agreement nằm trong CellXpert, chỉ xem được sau khi đăng ký; anh nên đọc agreement hoặc hỏi affiliate manager trước khi chi ngân sách.
 
 Các ứng viên bị loại:
-- <b>Tradoshi (tradoshi.com)</b>: có affiliate 15-25% recurring trọn đời, nhưng ngày ra mắt và pháp nhân Tradoshi Ltd chỉ đến từ PR rải hàng loạt trên site tin chất lượng thấp, không xác minh độc lập được qua Companies House/WHOIS (địa chỉ văn phòng ảo), nghi PR trả tiền.
-- margex.com, kraken.com (Krak), challenges.eightcap.com: trùng lịch sử.
-- lums.ai, senticmoney.com: không có chương trình affiliate.
-- rytbank.my: chỉ có referral cho khách hàng.
-- onestopprop.com, thinkcapital.com, propw.com, tilt.com: ra mắt trước 2025.
-- leni.co: B2B, không có affiliate.
+- <b>TSG Brokers (tsgbrokers.com)</b>: không phải sản phẩm mới. Pháp nhân GWG (Cyprus) Ltd giữ giấy phép CySEC 291/16 từ 2016, chỉ đổi tên thành TSG Brokers Ltd 7/2025 (nhóm sáng lập The5ers mua cổ phần thiểu số). Nếu xét lại: là công ty CySEC nên cấm quảng cáo gây hiểu nhầm, cấm referral có thưởng/rebate/"risk-free" với khách EU, affiliate phải KYC và ký agreement, quảng cáo CFD phải kèm cảnh báo rủi ro ESMA; hoa hồng và cookie không công khai.
+- og.com: prediction market, Google Ads chỉ cho DCM/broker NFA có chứng nhận quảng cáo.
+- fxproptech.com: B2B white-label, có từ 2018.
+- propedcapital.com, usepointer.ai, stated.app, pocketclear.app, getprimemeridian.com, payy.network: không có chương trình affiliate.
+- thrust.finance: chỉ có referral cho người dùng.
+- portfoliotrackr.com: không xác định được ngày ra mắt.
+- fundingticks.com: đã ngừng hoạt động.
+- goatfundedfutures.com, futureselite.com, traderslaunch.com, x-funded.com, pinexcapital.com, tradingfunds.com, mentfunding.com, walletflo.com: ra mắt trước 2025.
+- pipcy.com, yieldclub.io, everfunded.com, plasma.org, aave.com: trùng lịch sử.
 
-Em đã lưu đủ 14 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md để các lượt sau không xét lại.
+Em đã lưu đủ 26 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md để các lượt sau không xét lại.
