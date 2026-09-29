@@ -1,42 +1,22 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 28/09/2026: em đã rà 15 ứng viên, 5 cái đạt tiêu chí, em chọn 3 cái nổi bật.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 29/09/2026: em đã rà 44 ứng viên, chỉ 1 cái đạt tiêu chí là VoiceDash.
 
-<b>FLORA (flora.ai)</b>
-• Tính năng: Canvas AI dạng node gộp 50+ model ảnh, video, âm thanh, cho designer và đội sáng tạo
-• Giá bán: Free $0; Starter $18/seat/tháng; Pro $50/seat/tháng; Max $200/seat/tháng (chính chủ)
-• Hoa hồng affiliate: 50% recurring 12 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (mạng bị chặn; trang Partners chỉ cấm spam/misleading, không có mục PPC)
+<b>VoiceDash (voicedash.ai)</b>
+• Tính năng: App AI đọc chính tả, chuyển giọng nói thành văn bản đã biên tập trên Mac/Windows/iOS/Android, cho người viết nhiều và đội nhóm
+• Giá bán: Free 1.000 từ/tháng; Pro $15/tháng; Pro trả năm $144/năm; Teams $29/tháng (tối đa 5 người); Teams trả năm $288/năm (chính chủ); AppSumo Tier 1 $59/lần (nguồn phụ)
+• Hoa hồng affiliate: không tìm thấy dữ liệu công khai
+• Google Ads: Chưa xác minh — mặc định Không Cấm (mạng bị chặn; không đọc được điều khoản Tolt)
 • Năm ra đời: 02/2025 (nguồn phụ)
-• Cookie: 90 ngày (mặc định Dub)
+• Cookie: không tìm thấy dữ liệu công khai
 
-Chọn vì hoa hồng cao nhất nhóm, mốc ra mắt chắc nhất (TechCrunch: #1 Product Hunt 02/2025; Series A $42M do Redpoint dẫn, tổng vốn $52M). Cần duyệt hồ sơ (highly selective). Trang chính chủ flora.ai/partners ghi 50% trong 12 tháng, thêm $300 cho mỗi affiliate giới thiệu được duyệt; trang Dub mới lại chia 2 hạng Ambassadors 30% / Educators 50%, anh xác nhận lại hạng trước khi chi ads.
+Chọn vì là ứng viên duy nhất vừa đạt tiêu chí tuổi (thành lập 02/2025 tại Dubai, tự bỏ vốn, theo nguồn phụ) vừa có chương trình affiliate công khai trên Tolt (voicedash.tolt.io). Mạng bị proxy chặn nên em không mở được trang Tolt, vì vậy hoa hồng, cookie, ngưỡng rút và lịch trả đều chưa có; traffic cũng không có số công khai. Sản phẩm đang bán lifetime deal trên AppSumo (nguồn phụ ghi $59, có chỗ ghi $49), nên hoa hồng recurring có thể bị ảnh hưởng. Đừng nhầm với voice-dash.com, đó là sản phẩm khác.
 
-<b>LexPrep AI (lexprep.ai)</b>
-• Tính năng: AI luyện thi LSAT bằng đề PrepTest chính thức được LSAC cấp phép, cho người ôn thi trường luật
-• Giá bán: Trial 7 ngày $29; Monthly $89/tháng; Annual $66/tháng (chính chủ)
-• Hoa hồng affiliate: 40% recurring trọn đời (mạng affiliate)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (mạng bị chặn; không có mục PPC trên Dub/site)
-• Năm ra đời: 09/2025 (chính chủ)
-• Cookie: 90 ngày (mặc định Dub)
+Rủi ro lớn nhất: mạng bị chặn nên brand bidding CHƯA xác minh. Blog của Tolt khuyên các chủ chương trình cấm chạy ads trên tên thương hiệu, nên nhiều khả năng VoiceDash cũng cấm. Anh tự đọc điều khoản tại https://voicedash.tolt.io/ (có thể phải đăng ký mới thấy) trước khi chi tiền ads, và tạm thời không bid từ khóa "VoiceDash" / "Voice Dash" nhé.
 
-Chọn vì 40% trọn đời, thời hạn dài nhất nhóm; khách giảm 15% trọn đời. "LSAT" là thương hiệu của LSAC nên Google có thể tự hạn chế quảng cáo dùng từ này (khác brand bidding). Nguồn phụ Zartonk gợi ý ra mắt công khai 01/2026, vẫn sau 1/1/2025.
+Bị loại (43):
+- Ra mắt trước 2025: Raena AI, Keptune AI, Chatbox AI, Numerous.ai, VoiceType, Voicemy.ai, Voicestars, FineVoice, Peeker AI, My AI Front Desk, Meedro AI, BasedLabs, Revid.ai, Sofer.Ai, Granola.
+- Chưa xác minh ngày ra mắt: TubeGen AI, Outvid AI, Imagine Studios AI, Aura (aura.build), ReplyAgent, Digital Maker AI, Proud Profits (thêm rủi ro ngách crypto), AITOPIA.
+- Không xác định được sản phẩm/domain chính chủ: Honest AI, Aura AI, Rendar AI.
+- Không có affiliate công khai: Macaron AI, Hemory, Eclatira, AINA, Keysake, GoodSocials.
+- Đã xét ở lần trước (11): Comp AI, OnSpace AI, Ranked AI, Demi AI, PodcastInc AI, Jeeva AI, Anything, Answrr, AITuber, Pollo AI, Wispr Flow.
 
-<b>HypeScribe (hypescribe.com)</b>
-• Tính năng: AI chép lời và tóm tắt audio/video, link YouTube/Zoom/Meet/Teams, cho creator và sinh viên
-• Giá bán: Free 3 file/tháng; Starter $6.99/tháng; Pro $7.99/tháng; Ultra $12.99/tháng (chính chủ)
-• Hoa hồng affiliate: 40% recurring 12 tháng (mạng affiliate)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (mạng bị chặn; không có mục PPC trên Dub/site)
-• Năm ra đời: 03/2026 (nguồn phụ)
-• Cookie: 90 ngày (mặc định Dub)
-
-Chọn vì dữ liệu đầy đủ, nhất quán nhất nhóm. Sản phẩm còn mới (công ty lập 2025), traffic chưa kiểm chứng được.
-
-Cũng đạt tiêu chí, có link affiliate trên Dub nhưng hoa hồng thấp hơn (30%) nên không ưu tiên: <b>Guideless (guideless.ai)</b>, AI tạo video hướng dẫn đa ngôn ngữ, 30% recurring 12 tháng; <b>Weav (weav.com)</b>, help desk AI cho SMB, 30% recurring 24 tháng, giá gói trả phí chưa xác minh được.
-
-Rủi ro chung: cả 5 chạy trên Dub Partners. Dub không có luật chung cấm brand bidding/PPC, mỗi hãng tự đặt luật, thường chỉ xem được sau khi đăng nhập; Risk Monitoring của Dub tự gắn cờ hoa hồng từ quảng cáo bid từ khóa thương hiệu. Mạng bị chặn nên chưa agent nào đọc được điều khoản gốc, kết luận Google Ads có độ tin cậy thấp. Anh đọc "program terms" trong dashboard Dub trước khi chi ads và đặt tên thương hiệu làm negative keyword tới khi xác minh xong nhé.
-
-Bị loại (10):
-- Không có affiliate công khai: Tasklet, Getalai.
-- Ra mắt trước 2025: Gensmo, MakeUGC, Vly, Caimera, Retell AI.
-- Chưa xác minh ngày ra mắt: Foundor, Brome (còn rủi ro thương hiệu vì gộp model bên thứ ba), VideoTour.
-
-Em đã lưu lịch sử cả 15 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
+Em đã lưu lịch sử cả 44 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.

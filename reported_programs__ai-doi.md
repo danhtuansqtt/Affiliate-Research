@@ -84,3 +84,47 @@
 | 2026-09-28 | Foundor | foundor.ai | rejected_unconfirmed_launch_date | Launch date could not be confirmed | - | - | - | - | - | - |
 | 2026-09-28 | Brome | brome.ai | rejected_unconfirmed_launch_date | Launch date could not be confirmed; also bundles multiple third-party AI models under its own brand, a trademark risk | - | - | - | - | - | - |
 | 2026-09-28 | VideoTour | videotour.ai | rejected_unconfirmed_launch_date | Launch date could not be confirmed | - | - | - | - | - | - |
+| 2026-09-29 | VoiceDash | voicedash.ai | reported | AI dictation app (voice to edited text, 50+ languages, Mac/Windows/iOS/Android); founded 02/2025 in Dubai, bootstrapped (secondary sources); public Tolt affiliate program at voicedash.tolt.io but commission, cookie and payout terms not visible (Tolt page blocked by proxy and not indexed); AppSumo lifetime deal may reduce recurring commission; AppSumo Tier 1 price conflicting ($59 vs $49 in secondary sources); brand bidding terms unverified (network blocked), low confidence, read terms at voicedash.tolt.io before running ads; not to be confused with voice-dash.com | App AI đọc chính tả, chuyển giọng nói thành văn bản đã biên tập trên Mac/Windows/iOS/Android, cho người viết nhiều và đội nhóm | Free 1.000 từ/tháng; Pro $15/tháng; Pro trả năm $144/năm; Teams $29/tháng (tối đa 5 người); Teams trả năm $288/năm (chính chủ); AppSumo Tier 1 $59/lần (nguồn phụ) | không tìm thấy dữ liệu công khai | Chưa xác minh — mặc định Không Cấm (mạng bị chặn; không đọc được điều khoản Tolt) | 02/2025 (nguồn phụ) | không tìm thấy dữ liệu công khai |
+| 2026-09-29 | TubeGen AI | tubegen.ai | rejected_unconfirmed_launch_date | Faceless YouTube video generator, Tolt affiliate up to 15% lifetime recurring; only indirect evidence (X account created 07/2025), launch date not found; low commission | - | - | - | - | - | - |
+| 2026-09-29 | Raena AI | raena.ai | rejected_not_new | AI study app; company founded 2023, 07/2025 app is a relaunch | - | - | - | - | - | - |
+| 2026-09-29 | Keptune AI | keptune.ai | rejected_not_new | AI data analysis; entered Gemini API Developer Competition 07/2024 | - | - | - | - | - | - |
+| 2026-09-29 | Outvid AI | outvid.ai | rejected_unconfirmed_launch_date | AI SDR sending video outreach with an AI clone, Tolt affiliate; launch date not found, tiny revenue per TrustMRR | - | - | - | - | - | - |
+| 2026-09-29 | Imagine Studios AI | imaginestudios.ai | rejected_unconfirmed_launch_date | AI image/music/video suite, 15% recurring affiliate; launch year unverifiable (many companies named Imagine) | - | - | - | - | - | - |
+| 2026-09-29 | Honest AI | honestai.com | rejected_insufficient_data | Has a Tolt page but several same-name products exist; official domain could not be determined | - | - | - | - | - | - |
+| 2026-09-29 | Aura AI | aura-ai.com | rejected_insufficient_data | Has a Tolt page but many Aura-branded products exist; product/domain could not be determined | - | - | - | - | - | - |
+| 2026-09-29 | Aura (AI landing page builder) | aura.build | rejected_unconfirmed_launch_date | Affiliate up to 50%; launch date unverifiable (Toolify only shows listing date 05/2026) | - | - | - | - | - | - |
+| 2026-09-29 | Chatbox AI | chatboxai.app | rejected_not_new | Open-source AI chat client available since 2023; has Tolt affiliate | - | - | - | - | - | - |
+| 2026-09-29 | Numerous.ai | numerous.ai | rejected_not_new | AI for Google Sheets/Excel, available before 2024 | - | - | - | - | - | - |
+| 2026-09-29 | VoiceType | voicetype.com | rejected_not_new | Launched on Product Hunt 19/01/2023, 650k+ users | - | - | - | - | - | - |
+| 2026-09-29 | Voicemy.ai | voicemy.ai | rejected_not_new | AI voice cloning, French startup launched 2023; celebrity voices pose trademark risk | - | - | - | - | - | - |
+| 2026-09-29 | Voicestars | voicestars.co | rejected_not_new | AI artist-voice song covers launched 05/2023; celebrity voice/trademark risk | - | - | - | - | - | - |
+| 2026-09-29 | FineVoice (FineShare) | finevoice.ai | rejected_not_new | FineVoice launched 20/03/2024; FineShare founded 2021 | - | - | - | - | - | - |
+| 2026-09-29 | ReplyAgent | replyagent.ai | rejected_unconfirmed_launch_date | AI Instagram DM auto-reply chatbot with Tolt affiliate; launch date not found | - | - | - | - | - | - |
+| 2026-09-29 | Peeker AI | peeker.ai | rejected_not_new | AI cold email/outreach infrastructure launched 2023 (getlatka) | - | - | - | - | - | - |
+| 2026-09-29 | Digital Maker AI | digitalmaker.ai | rejected_unconfirmed_launch_date | AI digital product creator with Tolt affiliate; only a 02/2026 review found, no launch date | - | - | - | - | - | - |
+| 2026-09-29 | My AI Front Desk | aifrontdesk.com | rejected_not_new | AI receptionist, 30% recurring affiliate, launched 2023 (Tracxn/PitchBook; main site myaifrontdesk.com) | - | - | - | - | - | - |
+| 2026-09-29 | Meedro AI | meedro.com | rejected_not_new | AI viral video script writer with Rewardful affiliate; promo videos since about 09/2023 | - | - | - | - | - | - |
+| 2026-09-29 | Rendar AI | rendar.ai | rejected_insufficient_data | Has a Rewardful page but official domain and product info could not be found | - | - | - | - | - | - |
+| 2026-09-29 | Proud Profits | proudprofits.com | rejected_unconfirmed_launch_date | AI crypto/stock analysis, Rewardful 20% for 12 months; launch date not found; finance/crypto niche carries Google Ads policy risk | - | - | - | - | - | - |
+| 2026-09-29 | BasedLabs | basedlabs.ai | rejected_not_new | AI video/image platform, 40% lifetime affiliate; founded 2023/2024 (official site 2024, Latka/Tracxn 2023) | - | - | - | - | - | - |
+| 2026-09-29 | Revid.ai | revid.ai | rejected_not_new | Formerly Typeframes, renamed Revid.ai 09/2024, company since 2023 | - | - | - | - | - | - |
+| 2026-09-29 | AITOPIA | aitopia.ai | rejected_unconfirmed_launch_date | AI sidebar extension (formerly ChatGPT Sidebar), Dub affiliate 20% for 1 year; launch date not found | - | - | - | - | - | - |
+| 2026-09-29 | Sofer.Ai | sofer.ai | rejected_not_new | AI transcription for Torah content, founded 2024 (Tracxn), beta 08/2024 | - | - | - | - | - | - |
+| 2026-09-29 | Granola | granola.ai | rejected_not_new | AI meeting notes launched 2024; Dub pays $20 per lead | - | - | - | - | - | - |
+| 2026-09-29 | Macaron AI | macaron.im | rejected_no_affiliate_found | Personal agent launched 18/08/2025 (meets age criteria) but only a user referral link, no public affiliate program for marketers | - | - | - | - | - | - |
+| 2026-09-29 | Hemory | hemory.com | rejected_no_affiliate_found | Conversation memory for AI agents, #1 Product Hunt 26/09/2026; no affiliate program | - | - | - | - | - | - |
+| 2026-09-29 | Eclatira | eclatira.com | rejected_no_affiliate_found | Conversational video agent API for developers, launched late 09/2026; no affiliate program | - | - | - | - | - | - |
+| 2026-09-29 | AINA | aina-tech.io | rejected_no_affiliate_found | AI job search/interview coach, #1 Product Hunt 19/09/2026; no affiliate program | - | - | - | - | - | - |
+| 2026-09-29 | Keysake | keysake.com | rejected_no_affiliate_found | Free macOS keyboard for learning English while typing Chinese (Product Hunt 19/09/2026); free, no affiliate; domain unverified | - | - | - | - | - | - |
+| 2026-09-29 | GoodSocials | goodsocials.co | rejected_no_affiliate_found | AI LinkedIn management launched 09/2026; no affiliate program | - | - | - | - | - | - |
+| 2026-09-29 | Comp AI | trycomp.ai | duplicate_already_reported | Already in reported_programs.md (reported, 2026-09-24) | - | - | - | - | - | - |
+| 2026-09-29 | OnSpace AI | onspace.ai | duplicate_already_reported | Already in reported_programs__ai-doi.md (rejected_unconfirmed_launch_date, 2026-09-26) | - | - | - | - | - | - |
+| 2026-09-29 | Ranked AI | ranked.ai | duplicate_already_reported | Already in reported_programs__ai-doi.md (rejected_not_affiliate_model, 2026-09-26) | - | - | - | - | - | - |
+| 2026-09-29 | Demi AI | demi.ai | duplicate_already_reported | Already in reported_programs__ai-doi.md (rejected_insufficient_data, 2026-09-26) | - | - | - | - | - | - |
+| 2026-09-29 | PodcastInc AI | podcastinc.ai | duplicate_already_reported | Already in reported_programs__ai-doi.md (rejected_unconfirmed_launch_date, 2026-09-26) | - | - | - | - | - | - |
+| 2026-09-29 | Jeeva AI | jeeva.ai | duplicate_already_reported | Already in reported_programs__ai-doi.md (rejected_unconfirmed_launch_date, 2026-09-26) | - | - | - | - | - | - |
+| 2026-09-29 | Anything | createanything.com | duplicate_already_reported | Already in reported_programs__ai-doi.md (rejected_not_new, 2026-09-26) | - | - | - | - | - | - |
+| 2026-09-29 | Answrr | tryanswrr.com | duplicate_already_reported | Already in reported_programs.md (reported, 2026-08-28) | - | - | - | - | - | - |
+| 2026-09-29 | AITuber | aituber.app | duplicate_already_reported | Already in reported_programs.md (reported, 2026-09-22) | - | - | - | - | - | - |
+| 2026-09-29 | Pollo AI | pollo.ai | duplicate_already_reported | Already in reported_programs.md (rejected_not_new, 2026-09-24) | - | - | - | - | - | - |
+| 2026-09-29 | Wispr Flow | wisprflow.ai | duplicate_already_reported | Already in reported_programs.md and audited_products.md | - | - | - | - | - | - |
