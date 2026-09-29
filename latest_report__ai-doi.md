@@ -1,34 +1,43 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 29/09/2026 (lượt 2): em đã rà 14 ứng viên, chọn được 2 chương trình là CorpusIQ và NoteGo.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 29/09/2026 (lượt 3): em đã rà 39 ứng viên, chọn được 3 chương trình là Howseen AI, Mira và Pancake.
 
-<b>CorpusIQ (corpusiq.io)</b>
-• Tính năng: Nối hơn 40 công cụ doanh nghiệp (QuickBooks, Shopify, Gmail...) vào ChatGPT, Claude, Perplexity để hỏi dữ liệu, cho SMB và agency
-• Giá bán: Trial 30 ngày miễn phí; Solo $29.95/tháng; Team $109.95/tháng; Business $189.95/tháng (chính chủ)
-• Hoa hồng affiliate: 25% recurring 12 tháng (mạng affiliate)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (mạng cloud bị chặn — cần đọc lại https://partners.dub.co/corpusiq-io)
-• Năm ra đời: 03/2026 (chính chủ)
+<b>Howseen AI (howseen.ai)</b>
+• Tính năng: Theo dõi mức độ thương hiệu được ChatGPT/Gemini/Perplexity/AI Overviews gợi ý và tự viết bài GEO, cho SaaS, e-commerce, agency
+• Giá bán: Audit AI visibility miễn phí; Pro €79/tháng/brand; Pro trả năm €758/năm; Agency €79/tháng/brand khách; Enterprise giá liên hệ (chính chủ)
+• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
+• Năm ra đời: 09/2026 (chính chủ)
+• Cookie: không công bố
+• Độ đầy đủ: 4/6
+
+Chọn vì mới ra mắt Product Hunt 26/09/2026 (#8 trong ngày), hoa hồng trọn đời khoảng €23.70/khách/tháng, trả hằng tháng, không cần số khách tối thiểu. Còn thiếu 2 ô: Google Ads và Cookie đều không công bố trên howseen.ai/affiliates.html và Terms, chương trình tự vận hành bằng form riêng nên anh đăng ký rồi hỏi thẳng founder về cookie và luật bid brand trước khi chạy ads.
+
+<b>Mira (mira.tg)</b>
+• Tính năng: AI agent cá nhân chạy trong Telegram, kết nối hơn 1.000 công cụ (Gmail, Notion, GitHub...) để làm việc thay người dùng, cho cá nhân và nhóm
+• Giá bán: Free; Pro 1500 Telegram Stars/tháng (nguồn phụ)
+• Hoa hồng affiliate: 25% recurring trọn đời (mạng affiliate)
+• Google Ads: Không Cấm (trang Dub chính chủ cho phép "paid ads" và "paid traffic"; không nêu riêng brand bidding)
+• Năm ra đời: 02/2026 (nguồn phụ)
+• Cookie: 90 ngày (mặc định Dub)
+• Độ đầy đủ: 6/6
+
+Chọn vì là chương trình duy nhất lượt này nói rõ cho chạy paid ads, hơn 1 triệu người dùng, duyệt tự động, thêm 5% từ partner mình giới thiệu, trả hằng tháng sau 7 ngày giữ tiền. Giá Pro mới có nguồn phụ tính bằng Telegram Stars (máy tính trên Dub giả định $30/tháng), anh mở https://mira.tg xem giá chính chủ vì mạng cloud bị chặn (lỗi TLS/503). Anh cũng đọc https://mira.tg/terms-of-use và tạm tránh bid từ khóa "Mira" cho tới khi hỏi lại.
+
+<b>Pancake (pancake.ai)</b>
+• Tính năng: Đội AI agent làm go-to-market cho founder và agency nhỏ: theo dõi buying signal, tìm lead ấm, viết bài SEO/GEO, chạy trong Slack
+• Giá bán: Trial 3 ngày (cần thẻ); Gói duy nhất $99/tháng (chính chủ)
+• Hoa hồng affiliate: 30% recurring trọn đời (mạng affiliate)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
+• Năm ra đời: 06/2026 (nguồn phụ)
 • Cookie: 90 ngày (mặc định Dub)
 • Độ đầy đủ: 5/6
 
-Chọn vì ra mắt 20/03/2026, giá cao nên hoa hồng mỗi khách tốt, trang Dub còn trả thêm $1.50 mỗi lead. Còn thiếu Google Ads: anh đọc điều khoản trong dashboard Dub tại https://partners.dub.co/corpusiq-io. Lưu ý sản phẩm tự mô tả là công cụ kết nối dữ liệu Google Ads, nên từ khóa dễ lẫn. Tiêu đề trang pricing ghi "From $19.95/Month" (có thể giá trả năm), ngưỡng rút chưa đọc được.
+Chọn vì ra mắt 05/06/2026 và đạt #1 Product Hunt trong ngày, giá $99/tháng nên mỗi khách được khoảng $29.70/tháng trọn đời, thêm thưởng $150 khi đủ 3 và $500 khi đủ 10 chuyển đổi. Chương trình cần duyệt hồ sơ; domain cũ getpancake.ai đã chuyển về pancake.ai. Còn thiếu Google Ads: anh khai rõ kênh Google Ads trong form https://partners.dub.co/pancake-ai/apply rồi đọc Affiliate Program Agreement sau khi được duyệt, vì Pancake tự làm SEO trên Google nên có thể không thích bid brand. Giá từng có nguồn ghi $49/tháng (bản cũ), em chốt theo trang chính chủ.
 
-<b>NoteGo (notego.ai)</b>
-• Tính năng: Tiện ích Chrome quay màn hình có vẽ chú thích, AI tự tạo tóm tắt và chương, cho người giao việc từ xa
-• Giá bán: mạng cloud bị chặn — cần đọc lại https://notego.ai/
-• Hoa hồng affiliate: 20% recurring 12 tháng (mạng affiliate)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (mạng cloud bị chặn — cần đọc lại https://partners.dub.co/notego)
-• Năm ra đời: 03/2026 (chính chủ)
-• Cookie: 90 ngày (mặc định Dub)
-• Độ đầy đủ: 4/6
+Bị loại (36):
+- Cấm bid brand: Nimply (nimply.io), Littlebird (littlebird.ai).
+- Ra mắt trước 2025: Superscale.
+- Không có chương trình affiliate: Naise AI, ToneBird, PostSider, AppGrowthKit, CreatorHat, Kapshot, RankControl.
+- Chưa xác minh ngày ra mắt: Ink Studio AI, Influcio.
+- Đã xét ở lần trước: 24 domain (FLORA, Viktor, Runable, OutlierKit, LexPrep AI...).
 
-Chọn vì do Social Media Examiner (Michael Stelzner) làm, ra mắt 19/03/2026, có sẵn tệp khán giả marketer lớn. Còn thiếu 2 ô: Giá bán (chỉ biết "free to start", anh mở https://notego.ai/ xem gói trả phí) và Google Ads (đọc https://partners.dub.co/notego và https://notego.ai/terms/). Nhãn hiệu NoteGo đã nộp USPTO nên khả năng cấm bid brand khá cao. Chrome Web Store chưa có đánh giá nào.
-
-Rủi ro chung: mạng cloud bị chặn nên brand bidding của cả 2 CHƯA xác minh (độ tin cậy thấp). Anh đọc điều khoản trước khi chi tiền ads và tạm thời không bid từ khóa thương hiệu nhé.
-
-Bị loại (12):
-- Thiếu dữ liệu (độ đầy đủ 3/6 sau khi đã bổ sung 1 lần): Kendo AI (kendo.ai). Ra mắt 22/01/2025, giá Pro $55/tháng/seat, nhưng chỉ thấy headline 20%, chưa rõ thời hạn hoa hồng, cookie và điều khoản Google Ads. Anh mở https://kendo.tolt.io/ hoặc https://kendo-ai.getrewardful.com/signup để đọc lại.
-- Chưa xác minh ngày ra mắt: Upfirst, BatchBot, Nych, MotionSites.
-- Ra mắt trước 2025: Laburen.com, ShortMake, RemixAI.
-- Chưa rõ có gói trả phí: Luna AI (trylunaai.com).
-- Đã xét ở lần trước: TubeAI, Euka AI, Vid.AI.
-
-Em đã lưu lịch sử cả 14 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
+Em đã lưu lịch sử cả 39 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
