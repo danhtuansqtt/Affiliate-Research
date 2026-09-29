@@ -31,6 +31,19 @@ Cột **Google Ads** không thuộc phạm vi skill này. Nó do `brand-bidding-
 5. **Viết bằng tiếng Việt**, nhưng giữ nguyên tên riêng, tên gói và thuật ngữ như recurring, cookie, lifetime.
 6. **Ký tự tiền tệ.** Ghi `$20/tháng` hoặc `20 USD/tháng`. Luôn ghi file bằng Write hoặc Edit. Nếu buộc phải dùng shell, heredoc phải có dấu nháy (`<<'EOF'`). Heredoc không có nháy từng biến `$20` thành `0` và `$0.018` thành `/usr/bin/bash.018` trong repo này.
 
+## BẮT BUỘC: vào trang chủ, tìm mục Affiliate khi còn thiếu thông tin
+Người dùng yêu cầu: nếu bất kỳ ô nào trong 6 thông tin (Tính Năng, Giá Bán, Hoa Hồng Affiliate, Google Ads, Năm Ra Đời, Cookie) còn trống, **phải vào trang chủ của chương trình, tìm mục "Affiliate" / "Affiliate Program" / "Partners" / "Referral" (thường ở menu hoặc chân trang), mở ra đọc hết và cập nhật**. Không được ghi giá trị lý do thiếu khi chưa làm bước này.
+
+1. Chạy script (nó làm hết các bước bên dưới và in nội dung ra):
+   ```bash
+   python3 .claude/skills/product-research/scripts/find_affiliate_page.py {domain}
+   ```
+   Script mở trang chủ → gom link Affiliate/Partner/Referral trên trang (cả trong `sitemap.xml`) → thử các đường dẫn hay gặp (`/affiliate`, `/affiliates`, `/p/affiliate`, `/partners`, `/referral`…) → mở trang affiliate → mở tiếp nút "Join/Sign up" sang cổng Tolt, Dub, Rewardful, PartnerStack, CellXpert… → mở các link điều khoản (terms, guidelines, FAQ) → mở trang Pricing và About.
+2. Đọc kết quả, lấy từ trang affiliate và trang điều khoản: % hoa hồng, recurring bao nhiêu tháng (vd "first 12 payments" = recurring 12 tháng), số ngày cookie, ngưỡng rút, lịch trả, và mọi câu về paid ads/PPC/brand bidding (chuyển nguyên văn cho policy-checker). Lấy Giá Bán từ Pricing, Năm Ra Đời từ About/changelog/blog đầu tiên/copyright.
+3. Nếu script báo trang cổng affiliate trống (trang render bằng JavaScript như Tolt): mở lại bằng Chromium/Playwright trong môi trường nếu có (script tự dùng khi cài sẵn `playwright`), hoặc tìm snippet `site:{slug}.tolt.io`, `site:partners.dub.co/{slug}`. Headline kiểu "Earn 20% on all paid customers" là số liệu chính chủ.
+4. Ghi vào file làm việc dòng `Đã mở:` gồm URL trang chủ, URL trang affiliate tìm được (hoặc ghi "không có link affiliate trên trang chủ và sitemap"), URL cổng affiliate và trang điều khoản đã đọc.
+5. Chỉ sau bước 1-4 mà ô vẫn trống mới được ghi giá trị lý do: cổng affiliate chỉ có form đăng nhập → `chỉ xem sau khi đăng ký ({mạng}: {link})`; trang chủ trả 403 → `site chặn truy cập (…)`; lỗi `EGRESS_BLOCKED` của sandbox → `mạng cloud bị chặn — cần đọc lại {link}`.
+
 ## Tra đủ trước khi bỏ trống
 Người dùng cần 6 thông tin **cụ thể** cho mỗi chương trình được giữ lại: Tính Năng, Giá Bán, Hoa Hồng Affiliate, Google Ads (do policy-checker), Năm Ra Đời, Cookie. Chỉ được ghi `không tìm thấy dữ liệu công khai` cho một trường khi đã chạy **ít nhất 3 truy vấn khác nhau** cho riêng trường đó và ghi các truy vấn đã thử vào dòng `Đã tra:` dưới mục domain. Truy vấn gợi ý (thay `{brand}`, `{domain}`, `{slug}`):
 
@@ -80,6 +93,7 @@ Hãy ghi `ĐỀ XUẤT LOẠI: {status} — {lý do}` ở đầu mục khi gặp
 - Năm Ra Đời: …
 - Thanh toán / Traffic (scout): …
 - Mâu thuẫn: … (bỏ dòng nếu không có)
+- Đã mở: URL trang chủ → URL trang affiliate → URL cổng affiliate / điều khoản (bắt buộc với mọi domain được giữ lại)
 - Đã tra: (chỉ khi có trường ghi giá trị lý do thiếu) liệt kê ≥3 truy vấn đã thử cho từng trường đó, gồm ít nhất 1 truy vấn nguồn dự phòng
 - Nguồn: https://…, https://…
 ```
