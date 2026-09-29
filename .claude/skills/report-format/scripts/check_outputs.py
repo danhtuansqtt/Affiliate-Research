@@ -96,13 +96,17 @@ def check_table(path, lines, old, key_col=None, status_col=None):
 
 
 BLOCK_LABELS = ["• Tính năng:", "• Giá bán:", "• Hoa hồng affiliate:", "• Google Ads:",
-                "• Năm ra đời:", "• Cookie:"]
+                "• Năm ra đời:", "• Cookie:", "• Độ đầy đủ:"]
 ADS_VALUES = ("Bị Cấm", "Không Cấm", "Chưa xác minh", "không tìm thấy dữ liệu công khai", "-")
+# 4 giá trị lý do thiếu dữ liệu (mục 2b report-format)
+REASON = r"(chỉ xem sau khi đăng ký|site chặn truy cập|mạng cloud bị chặn|không công bố)"
+REASON_RX = re.compile(r"^" + REASON)
+GENERIC_MISSING = re.compile(r"không tìm thấy dữ liệu công khai", re.I)
 VAGUE = [
     (re.compile(r"[$€£]\s?\d[\d.,]*\s*-\s*[$€£]?\d"), "khoảng giá mơ hồ (vd '$95-$99') — chốt 1 giá trị/gói"),
     (re.compile(r"mâu thuẫn|chưa rõ|chưa xác minh được số liệu", re.I), "ô chứa ghi chú mâu thuẫn/chưa rõ — chốt 1 giá trị, chuyển giải thích sang cột Note"),
 ]
-COOKIE_OK = re.compile(r"^(\d+(\s*\(.+\))?|-|không tìm thấy dữ liệu công khai.*)$")
+COOKIE_OK = re.compile(r"^(\d+(\s*\(.+\))?|-|" + REASON + r".*)$")
 
 
 def check_program_values(path, lines, old):
@@ -114,7 +118,11 @@ def check_program_values(path, lines, old):
         if not ads.startswith(ADS_VALUES):
             report("ERROR", path, i, f"cột Google Ads '{ads[:40]}' không phải giá trị chuẩn (Bị Cấm / Không Cấm / Chưa xác minh)")
         if not COOKIE_OK.match(cookie):
-            report("WARN", path, i, f"cột Cookie '{cookie[:40]}' phải là số ngày, vd '30' hoặc '90 (mặc định Dub)'")
+            report("WARN", path, i, f"cột Cookie '{cookie[:40]}' phải là số ngày (vd '30', '90 (mặc định Dub)') hoặc 1 trong 4 lý do thiếu")
+        for label, val in (("Giá Bán", gia), ("Hoa Hồng", hoa_hong), ("Google Ads", ads),
+                           ("Năm Ra Đời", nam), ("Cookie", cookie)):
+            if GENERIC_MISSING.search(val):
+                report("ERROR", path, i, f"cột {label} ghi chung chung 'không tìm thấy dữ liệu công khai' — đổi sang 1 trong 4 lý do: chỉ xem sau khi đăng ký / site chặn truy cập / mạng cloud bị chặn / không công bố")
         for label, val in (("Giá Bán", gia), ("Hoa Hồng", hoa_hong), ("Năm Ra Đời", nam), ("Tính Năng", tinh_nang)):
             for rx, msg in VAGUE:
                 if rx.search(val):
@@ -127,9 +135,13 @@ def check_telegram(path, text):
     counts = [text.count(l) for l in BLOCK_LABELS]
     if any(counts) and len(set(counts)) > 1:
         missing = [l for l, c in zip(BLOCK_LABELS, counts) if c < max(counts)]
-        report("ERROR", path, 0, f"khối 6 dòng thiếu nhãn {missing} (mỗi chương trình phải đủ 6 dòng)")
+        report("ERROR", path, 0, f"khối thiếu nhãn {missing} (mỗi chương trình phải đủ 6 dòng + dòng Độ đầy đủ)")
     elif not any(counts):
-        report("WARN", path, 0, "không thấy khối 6 dòng '• Tính năng: …' — chỉ hợp lệ khi không có chương trình nào được chọn")
+        report("WARN", path, 0, "không thấy khối '• Tính năng: …' — chỉ hợp lệ khi không có chương trình nào được chọn")
+    for m in re.finditer(r"^• (Giá bán|Hoa hồng affiliate|Năm ra đời|Cookie|Google Ads):(.*)$", text, re.M):
+        if GENERIC_MISSING.search(m.group(2)):
+            report("ERROR", path, text[:m.start()].count("\n") + 1,
+                   f"dòng '{m.group(1)}' ghi chung chung 'không tìm thấy dữ liệu công khai' — ghi rõ 1 trong 4 lý do")
     for m in re.finditer(r"</?([a-zA-Z-]+)[^>]*>", text):
         if m.group(1).lower() not in TG_TAGS:
             report("ERROR", path, text[:m.start()].count("\n") + 1, f"thẻ HTML '{m.group(0)}' Telegram không hỗ trợ")

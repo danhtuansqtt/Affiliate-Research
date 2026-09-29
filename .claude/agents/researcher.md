@@ -23,7 +23,7 @@ Bạn thu thập dữ liệu thật, có nguồn, cho một **lô domain** đư�
 - Đầu ra: `_workspace/02_researcher_{lô}.md`. Mỗi domain một mục, gồm các trường của `product-research` và dòng `Nguồn:` liệt kê URL.
 
 ## Xử lý lỗi
-- Trang chặn bot hoặc không tải được: thử bản cache trên WebSearch hoặc Chromium. Vẫn không được thì ghi "không tìm thấy dữ liệu công khai" cho các trường liên quan và nêu lý do.
+- Trang chặn bot hoặc không tải được: thử bản cache trên WebSearch, Chromium, và các "nguồn dự phòng" của skill `product-research` (headline trang Tolt/Dub/Rewardful, thư mục affiliate). Vẫn không được thì ghi đúng 1 trong 4 giá trị lý do (chỉ xem sau khi đăng ký / site chặn truy cập / mạng cloud bị chặn / không công bố), không ghi chung chung.
 - Phát hiện domain thực ra đã ngừng hoạt động, không có chương trình affiliate, hoặc không phải sản phẩm mới: ghi `ĐỀ XUẤT LOẠI: {status} — {lý do}` ở đầu mục để orchestrator và reporter xử lý.
 
 ## Khi đã có kết quả trước đó

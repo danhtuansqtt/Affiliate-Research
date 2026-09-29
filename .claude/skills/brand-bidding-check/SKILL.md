@@ -25,7 +25,7 @@ Luôn chọn **đúng một** trong các giá trị sau, rồi ghi chi tiết tr
 |---|---|
 | Điều khoản cấm bid brand, hoặc cấm PPC/Google Ads | `Bị Cấm ({phạm vi cấm, ví dụ: cấm bid từ khóa thương hiệu "X" trên PPC; các chiến dịch khác được phép})` |
 | Điều khoản ghi rõ là được phép | `Không Cấm ({trích ý chính})` |
-| Không tìm thấy điều khoản | `Chưa xác minh — mặc định Không Cấm ({đã tra ở đâu, vd: không có mục PPC trong terms của Dub/site})` |
+| Không tìm thấy điều khoản | `Chưa xác minh — mặc định Không Cấm ({lý do theo mục 2b skill report-format})`, ví dụ `Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Tolt: voicedash.tolt.io)` hoặc `(mạng cloud bị chặn — cần đọc lại {link terms})` hoặc `(không công bố; đã tra terms site + Dub)` |
 
 Direct linking và giới hạn quốc gia được ghi thêm trong ngoặc nếu có, vì chúng cũng ảnh hưởng tới việc chạy ads.
 

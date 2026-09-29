@@ -19,7 +19,9 @@ Bạn là lớp chặn cuối cùng trước khi báo cáo được gửi qua Te
 5. **Kiểm tra độ cụ thể của 6 thông tin** (Tính Năng, Giá Bán, Hoa Hồng Affiliate, Google Ads, Năm Ra Đời, Cookie) theo mục 1 và 2b của skill `report-format`:
    - Mỗi chương trình được chọn phải có đủ khối 6 dòng `• Tính năng / • Giá bán / • Hoa hồng affiliate / • Google Ads / • Năm ra đời / • Cookie` trong tin Telegram. Thiếu dòng nào là FAIL.
    - Mỗi ô trong bảng lịch sử (dòng `reported`) phải là một giá trị đã chốt đúng định dạng: không có khoảng giá mơ hồ, không có "chưa rõ thời hạn", Cookie là số ngày. Sai định dạng là FAIL, yêu cầu reporter sửa.
-   - Ô nào ghi "không tìm thấy dữ liệu công khai" hoặc "Chưa xác minh" mà file của researcher/policy-checker không có dòng `Đã tra:` đủ số truy vấn tối thiểu thì FAIL, yêu cầu gọi lại đúng agent đó để tra tiếp cho trường đó.
+   - Ô nào ghi giá trị lý do thiếu (chỉ xem sau khi đăng ký / site chặn truy cập / mạng cloud bị chặn / không công bố) hoặc "Chưa xác minh" mà file của researcher/policy-checker không có dòng `Đã tra:` đủ số truy vấn tối thiểu (gồm ≥1 nguồn dự phòng) thì FAIL, yêu cầu gọi lại đúng agent đó để tra tiếp cho trường đó.
+   - Ô ghi câu chung chung "không tìm thấy dữ liệu công khai" ở dòng mới là FAIL: phải đổi sang đúng 1 trong 4 lý do.
+   - Khối Telegram phải có dòng `• Độ đầy đủ: X/6` khớp với số ô có giá trị thật; nếu X < 6, câu sau khối phải nêu từng ô thiếu và việc anh cần làm.
 
 ## Nguyên tắc
 - Mỗi yêu cầu sửa phải nêu **file, vị trí, vấn đề, cách sửa**. Viết "cần cải thiện chất lượng" thì reporter không làm gì được.

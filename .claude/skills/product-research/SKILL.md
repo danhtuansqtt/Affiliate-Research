@@ -24,7 +24,7 @@ Cột **Google Ads** không thuộc phạm vi skill này. Nó do `brand-bidding-
 
 ## Nguyên tắc dữ liệu
 1. **Mỗi con số phải có nguồn.** Ghi dòng `Nguồn:` kèm URL dưới mỗi domain trong file làm việc. Reviewer sẽ mở lại một phần các nguồn này.
-2. **Placeholder chuẩn.** Không có dữ liệu thì ghi đúng câu `không tìm thấy dữ liệu công khai`. Có thể thêm lý do ngắn, ví dụ `(chỉ hiện sau khi đăng ký)`. Dùng câu thống nhất giúp người dùng lọc nhanh trên Google Sheets.
+2. **Placeholder có lý do.** Không có dữ liệu thì ghi 1 trong 4 giá trị lý do ở mục 2b skill `report-format` (`chỉ xem sau khi đăng ký (…)`, `site chặn truy cập (…)`, `mạng cloud bị chặn — cần đọc lại {link}`, `không công bố`). Phân biệt đúng 4 trường hợp này là bắt buộc, vì mỗi cái dẫn tới một việc khác nhau cho người dùng.
    Nếu chỉ **một con số** trong ô không xác minh được (các phần khác của ô vẫn có dữ liệu), thay đúng con số đó bằng `[không xác minh được số tiền]`. Với dòng viết không dấu thì dùng `[khong xac minh duoc so tien]`.
 3. **Nguồn mâu thuẫn: chốt 1 giá trị, ghi phương án còn lại riêng.** Giá trị của trường lấy theo nguồn ưu tiên cao nhất (chính chủ > mạng affiliate > tổng hợp); phương án còn lại ghi ở dòng `Mâu thuẫn:`, ví dụ `Mâu thuẫn: nguồn tổng hợp ghi 12 tháng recurring + giảm 5% cho khách`. Không để ô chỉ có "chưa xác minh được số liệu duy nhất".
 4. **Chương trình chung của mạng affiliate** (ví dụ chính sách mặc định của PartnerStack) phải ghi rõ là "theo chính sách chung {mạng}", để người đọc không hiểu nhầm là điều khoản riêng của thương hiệu.
@@ -40,6 +40,17 @@ Người dùng cần 6 thông tin **cụ thể** cho mỗi chương trình đư�
 | Hoa Hồng | `site:{domain} affiliate` · `site:partners.dub.co {slug}` / `site:tolt.io {brand}` / `site:partnerstack.com {brand}` · `"{brand}" affiliate program commission recurring` |
 | Năm Ra Đời | `"{brand}" launch OR launched OR "product hunt"` · `"{brand}" founded` · `"{brand}" seed OR raises` (năm gọi vốn đầu tiên) |
 | Cookie | `"{brand}" affiliate cookie days` · `"{brand}" affiliate "cookie" OR "attribution window"` · trang chương trình trên mạng affiliate |
+
+**Nguồn dự phòng khi WebFetch bị chặn** (vẫn đọc được qua snippet WebSearch, nên thử trước khi kết luận thiếu):
+- Headline trang đăng ký của mạng affiliate thường ghi sẵn mức hoa hồng, ví dụ trang Tolt của VoiceDash ghi "Earn 20% on all paid customers": `site:{slug}.tolt.io`, `site:partners.dub.co/{slug}`, `site:{slug}.getrewardful.com`, `site:{slug}.firstpromoter.com`, `"{brand}" affiliate site:partnerstack.com`.
+- Thư mục affiliate tổng hợp (ghi nhãn `(nguồn phụ)`): `"{brand}" site:referly.so`, `"{brand}" site:affililist.com`, `"{brand}" affiliate commission cookie site:taprefer.com OR site:getlasso.co OR site:openaffiliate.com`.
+- Bản tìm kiếm của trang chính chủ: `site:{domain} "affiliate" "%"`, `site:{domain} "cookie"`.
+
+**Xác định đúng lý do khi vẫn thiếu:**
+- Trang đăng ký chỉ có form đăng nhập (Tolt `/login`, CellXpert, PartnerStack) → `chỉ xem sau khi đăng ký ({mạng}: {link})`.
+- Snippet/tìm kiếm cho thấy site trả 403/chặn quốc gia, hoặc sản phẩm ghi "không nhận khách từ {nước}" → `site chặn truy cập (…)`.
+- Lỗi là `EGRESS_BLOCKED`/403 từ proxy của sandbox mà snippet cho thấy trang có nội dung công khai → `mạng cloud bị chặn — cần đọc lại {link}` (đây là lỗi hạ tầng, ghi đúng link để lượt sau/người dùng mở lại).
+- Đã tra đủ các nguồn trên mà không nơi nào công bố → `không công bố`.
 
 Nếu chương trình chạy trên mạng affiliate có cookie mặc định công khai (ví dụ Dub 90 ngày) mà không tìm được số riêng của hãng, ghi `90 (mặc định Dub)`, không bỏ trống.
 
@@ -69,6 +80,6 @@ Hãy ghi `ĐỀ XUẤT LOẠI: {status} — {lý do}` ở đầu mục khi gặp
 - Năm Ra Đời: …
 - Thanh toán / Traffic (scout): …
 - Mâu thuẫn: … (bỏ dòng nếu không có)
-- Đã tra: (chỉ khi có trường ghi "không tìm thấy dữ liệu công khai") liệt kê ≥3 truy vấn đã thử cho từng trường đó
+- Đã tra: (chỉ khi có trường ghi giá trị lý do thiếu) liệt kê ≥3 truy vấn đã thử cho từng trường đó, gồm ít nhất 1 truy vấn nguồn dự phòng
 - Nguồn: https://…, https://…
 ```

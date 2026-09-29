@@ -24,6 +24,7 @@ Hai workflow GitHub Actions đọc trực tiếp các file này, nên sai địn
   • Google Ads: …
   • Năm ra đời: …
   • Cookie: … ngày
+  • Độ đầy đủ: X/6
   ```
   Sau khối 6 dòng mới đến 1-3 câu văn xuôi: vì sao chọn, có cần duyệt không, ngưỡng rút/lịch trả, traffic, rủi ro (nguồn mâu thuẫn, mạng bị chặn…). Kết thúc báo cáo bằng câu cho biết đã lưu lịch sử. Phần liệt kê ứng viên bị loại viết ngắn, chỉ tên + lý do, để dành ký tự cho khối 6 dòng (giới hạn 4000 ký tự).
 - Nội dung khi **không có** chương trình nào đạt: vẫn gửi. Kể các hướng đã tìm, các ứng viên đào sâu (`<b>Tên (domain)</b>`) và lý do loại từng cái.
@@ -31,7 +32,7 @@ Hai workflow GitHub Actions đọc trực tiếp các file này, nên sai địn
 ## 2. `reported_programs.md` / `reported_programs__{chủ-đề}.md` — lịch sử scout
 - Chỉ **nối thêm** vào cuối file, không sửa dòng cũ. Mỗi ứng viên đã xét trong lần chạy là một dòng, dù được chọn hay bị loại.
 - Định dạng (từ 2026-09-26, 11 cột): `| Date | Product | Domain | Status | Note | Tính Năng | Giá Bán | Hoa Hồng Affiliate | Google Ads | Năm Ra Đời | Cookie (ngày) |`. Không để ký tự `|` trong nội dung ô. Các dòng cũ trước 2026-09-26 chỉ có 5 cột (`Date | Product | Domain | Status | Note`) — **không sửa lại dòng cũ**, `check_outputs.py` chỉ so cột với dòng MỚI.
-- 6 cột thêm lấy nguyên dữ liệu từ `_workspace/02_researcher_*.md` (Tính Năng, Giá Bán, Hoa Hồng Affiliate, Năm Ra Đời, Thời Gian Cookie → ghi số ngày, vd `30`, `60`, `không tìm thấy dữ liệu công khai`) và `_workspace/02_policy_*.md` (giá trị chuẩn của cột Google Ads theo skill `brand-bidding-check`: `Bị Cấm (...)`, `Không Cấm (...)`, hoặc `không tìm thấy dữ liệu công khai — mặc định Không Cấm`).
+- 6 cột thêm lấy nguyên dữ liệu từ `_workspace/02_researcher_*.md` (Tính Năng, Giá Bán, Hoa Hồng Affiliate, Năm Ra Đời, Thời Gian Cookie → ghi số ngày, vd `30`, `60`, hoặc 1 trong 4 giá trị lý do ở mục 2b) và `_workspace/02_policy_*.md` (giá trị chuẩn của cột Google Ads theo skill `brand-bidding-check`: `Bị Cấm (...)`, `Không Cấm (...)`, hoặc `Chưa xác minh — ... ({lý do theo mục 2b})`).
 - Ứng viên bị loại **trước khi researcher/policy-checker từng xét** (ví dụ scout tự loại vì trùng lịch sử hoặc rõ ràng không phải sản phẩm mới) thì 6 cột này ghi `-` (không phải "không tìm thấy dữ liệu công khai", để phân biệt "chưa từng tra" với "đã tra nhưng không thấy").
 - Chủ đề AI viết Note bằng tiếng Anh, tai-chinh viết bằng tiếng Việt (theo lịch sử hiện có). 6 cột mới luôn viết tiếng Việt cho mọi chủ đề, để khớp tiêu đề cột trên Google Sheet.
 - **Status hợp lệ:** `reported`, `duplicate_already_reported`, `rejected_not_new`, `rejected_no_affiliate_found`, `rejected_not_affiliate_model`, `rejected_not_applicable`, `rejected_brand_bidding`, `rejected_insufficient_data`, `rejected_insufficient_evidence`, `rejected_unconfirmed_launch_date`, `rejected_not_ai_tool`, `rejected_not_launched_yet`, `rejected_discontinued`, `rejected_duplicate_niche`. Nếu cần thêm status mới, cập nhật đồng thời danh sách này và `STATUSES` trong `scripts/check_outputs.py`.
@@ -48,7 +49,18 @@ Mỗi ô chỉ chứa **một giá trị đã chốt**, theo đúng định dạ
 | Năm Ra Đời | `YYYY` hoặc `MM/YYYY` của sản phẩm (không phải ngày ra chương trình affiliate) | `01/2025` | `ra mắt khoảng đầu năm` |
 | Cookie (ngày) | Chỉ số nguyên, có thể kèm nhãn nguồn; mặc định của mạng affiliate thì ghi rõ | `30` · `90 (mặc định Dub)` | `không rõ` khi chưa tra đủ |
 
-`không tìm thấy dữ liệu công khai` chỉ được dùng cho Giá Bán, Hoa Hồng, Năm Ra Đời, Cookie **sau khi đã tra đủ số truy vấn tối thiểu** ghi ở skill `product-research` (mục "Tra đủ trước khi bỏ trống"). Ứng viên bị loại trước khi researcher/policy-checker từng tra thì 6 cột vẫn ghi `-` như mục 2.
+**Ô thiếu dữ liệu phải ghi LÝ DO cụ thể, không ghi chung chung.** Người dùng cần biết thiếu vì đâu để tự đi lấy. Chỉ dùng 1 trong 4 giá trị sau (sau khi đã tra đủ số truy vấn tối thiểu ở skill `product-research`):
+
+| Giá trị | Khi nào | Người dùng làm gì |
+|---|---|---|
+| `chỉ xem sau khi đăng ký ({mạng}: {link})` | Trang affiliate có nhưng số liệu/điều khoản nằm sau form đăng ký (Tolt, CellXpert, PartnerStack…) | Đăng ký rồi đọc |
+| `site chặn truy cập ({mã lỗi, vd 403 từ VN})` | Chính site sản phẩm chặn, kể cả khi mở từ máy thật | Dùng VPN hoặc hỏi affiliate manager |
+| `mạng cloud bị chặn — cần đọc lại {link}` | Chỉ vì sandbox bị proxy chặn, trang vẫn công khai | Đợi lượt chạy trên máy/local-runner hoặc tự mở link |
+| `không công bố` | Đã tra đủ mà chủ chương trình không công khai ở đâu | Hỏi affiliate manager |
+
+Không dùng câu `không tìm thấy dữ liệu công khai` cho dòng mới nữa (dòng cũ giữ nguyên). Ứng viên bị loại trước khi researcher/policy-checker từng tra thì 6 cột vẫn ghi `-` như mục 2.
+
+**Dòng độ đầy đủ.** Trong khối 6 dòng Telegram, thêm dòng thứ 7 `• Độ đầy đủ: X/6` (X = số ô có giá trị thật, không tính 4 giá trị lý do ở trên; Google Ads "Chưa xác minh" tính là thiếu). Nếu X < 6, câu văn ngay sau khối phải liệt kê từng ô thiếu kèm việc anh cần làm (theo cột "Người dùng làm gì").
 
 ## 3. `advertiser-audits/*.md` — bảng audit
 Tên file:

@@ -55,7 +55,8 @@ Gọi `Agent(subagent_type: "scout", model: "opus")` kèm chế độ và tham s
    - `Agent(subagent_type: "policy-checker", model: "opus", run_in_background: true)` → ghi `02_policy_{lô}.md`
 3. Giới hạn chung khoảng 10 agent chạy cùng lúc. Lô lớn hơn thì chạy thành nhiều đợt.
 4. Chờ tất cả xong. Ở chế độ scout, chuyển các domain "Bị Cấm" hoặc có `ĐỀ XUẤT LOẠI` sang bảng Loại (ghi chú lại trong `01_scout_candidates.md`).
-5. Ở chế độ scout, nếu sau bước lọc có nhiều hơn 3 ứng viên đạt, chọn **1–3 cái tốt nhất**. Ưu tiên theo thứ tự: brand bidding được phép rõ ràng, có đủ 6 thông tin cụ thể (Tính Năng, Giá Bán, Hoa Hồng, Google Ads, Năm Ra Đời, Cookie — càng ít ô "không tìm thấy"/"Chưa xác minh" càng tốt), hoa hồng recurring cao, cookie dài, sản phẩm mới hơn. Các ứng viên còn lại ghi `reported` hay loại tùy tiêu chí; khi không chắc thì hỏi người dùng.
+5. **Cổng độ đầy đủ (scout).** Tính độ đầy đủ X/6 cho mỗi ứng viên còn lại (cách tính ở mục 2b skill `report-format`). Ứng viên có X < 4 chưa được đưa vào báo cáo ngay: gọi lại researcher/policy-checker **một lần** chỉ cho các ô thiếu, yêu cầu thử hết "nguồn dự phòng". Sau lần bổ sung đó, chỉ chọn ứng viên X ≥ 4; nếu không ai đạt X ≥ 4 thì vẫn chọn ứng viên có X cao nhất nhưng câu mở đầu báo cáo phải nói rõ "dữ liệu chưa đủ (X/6)" và lý do từng ô thiếu.
+6. Ở chế độ scout, nếu sau bước lọc có nhiều hơn 3 ứng viên đạt, chọn **1–3 cái tốt nhất**. Ưu tiên theo thứ tự: brand bidding được phép rõ ràng, có đủ 6 thông tin cụ thể (Tính Năng, Giá Bán, Hoa Hồng, Google Ads, Năm Ra Đời, Cookie — càng ít ô "không tìm thấy"/"Chưa xác minh" càng tốt), hoa hồng recurring cao, cookie dài, sản phẩm mới hơn. Các ứng viên còn lại ghi `reported` hay loại tùy tiêu chí; khi không chắc thì hỏi người dùng.
 
 ### Phase 4: Viết báo cáo
 Gọi `Agent(subagent_type: "reporter", model: "opus")` kèm chế độ và danh sách file `_workspace/`.
