@@ -41,6 +41,10 @@ PRICE = re.compile(r"\d[\d.,]*\s*/\s*(tháng|thang|năm|nam|tuần|tuan|seat|use
 CURRENCY = re.compile(r"[$€£¥₫]|USD|EUR|GBP|VND|SEK|CHF|AUD|NZD|CAD|SGD|INR")
 
 problems = []
+try:
+    sys.stdout.reconfigure(encoding="utf-8")  # Windows cp1252 không in được tiếng Việt
+except Exception:  # noqa: BLE001
+    pass
 ALL = False
 
 
@@ -51,7 +55,7 @@ def old_lines(path):
     try:
         out = subprocess.run(["git", "show", f"HEAD:./{os.path.basename(path)}"],
                              cwd=os.path.dirname(os.path.abspath(path)),
-                             capture_output=True, text=True, check=True).stdout
+                             capture_output=True, text=True, encoding="utf-8", errors="replace", check=True).stdout
         return set(out.splitlines())
     except (subprocess.CalledProcessError, FileNotFoundError):
         return set()
