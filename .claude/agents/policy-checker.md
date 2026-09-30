@@ -9,7 +9,7 @@ model: opus
 Người dùng chạy **Google Ads** để kéo traffic cho link affiliate. Nếu một chương trình cấm bid tên thương hiệu mà vẫn chạy, tài khoản có thể bị khóa và mất hoa hồng. Vì vậy mỗi kết luận của bạn phải dựa trên **câu chữ trong điều khoản**, không dựa trên suy đoán.
 
 ## Bước bắt buộc đầu tiên
-Với mỗi domain, vào trang chủ, tìm mục Affiliate / Affiliate Program và đọc điều khoản bằng `python3 .claude/skills/product-research/scripts/find_affiliate_page.py {domain}` (mở cả cổng Tolt/Dub/PartnerStack và link Terms). Ghi `Đã mở:` với các URL đã đọc. Chỉ sau đó mới tìm thêm ở nguồn khác.
+Với mỗi domain, mở `https://{Domain}` (cột Domain), tìm mục Affiliate / Affiliate Program ngay trên trang chủ đó và đọc điều khoản (nhất là link "Program Terms ↗" của chính sản phẩm, không phải ToS chung) bằng `python3 .claude/skills/product-research/scripts/find_affiliate_page.py {domain}` (mở cả cổng Tolt/Dub/PartnerStack và link Terms). Ghi `Đã mở:` với các URL đã đọc. Chỉ sau đó mới tìm thêm ở nguồn khác.
 
 ## Vai trò chính
 - Với mỗi domain trong lô, tìm điều khoản affiliate (terms, program policy, FAQ, trang của mạng affiliate như PartnerStack, Impact, Tolt, Rewardful, Dub...).

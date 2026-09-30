@@ -66,8 +66,18 @@ class _Links(HTMLParser):
 
 def _fetch_urllib(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=25) as r:
-        return r.geturl(), r.read().decode("utf-8", "replace")
+    try:
+        with urllib.request.urlopen(req, timeout=25) as r:
+            return r.geturl(), r.read().decode("utf-8", "replace")
+    except urllib.error.URLError as e:
+        # Site cấu hình chứng chỉ sai (thiếu chuỗi trung gian): vẫn đọc được trang công khai,
+        # chỉ dùng để ĐỌC nội dung, không gửi dữ liệu gì.
+        if "CERTIFICATE_VERIFY_FAILED" not in str(e):
+            raise
+        import ssl
+        ctx = ssl._create_unverified_context()
+        with urllib.request.urlopen(req, timeout=25, context=ctx) as r:
+            return r.geturl(), r.read().decode("utf-8", "replace")
 
 
 _browser = None
@@ -106,12 +116,51 @@ def fetch(url):
     return url, None, " | ".join(errors) or "không mở được"
 
 
+EVIDENCE = []  # (nhãn, url, text) của mọi trang đã mở, để in TÓM TẮT BẰNG CHỨNG cuối cùng
+ADS_RX = re.compile(r"paid (ads?|search|traffic|media|advertis)|\bppc\b|search ads?|google ads|adwords|bing ads|"
+                    r"brand(ed)? (keyword|term|bid)|trademark|bid(ding)? on|keyword", re.I)
+COOKIE_RX = re.compile(r"cookie|attribution window|\b\d+[- ]days?\b|\b\d+[- ]day (window|cookie)", re.I)
+COMM_RX = re.compile(r"\d+(\.\d+)?\s*%|\$\s?\d+|recurring|lifetime|commission", re.I)
+
+
 def show(title, url, text, max_chars):
+    EVIDENCE.append((title, url, text or ""))
     print(f"\n===== {title}: {url} =====")
     print(text[:max_chars] if text else "(trống — trang có thể cần JavaScript/đăng nhập)")
 
 
+def summary(domain, home, home_ok, aff_from_home):
+    print("\n\n########## TÓM TẮT BẰNG CHỨNG ##########")
+    print(f"Domain: {domain}")
+    print(f"Trang chủ {home}: {'MỞ ĐƯỢC' if home_ok else 'KHÔNG MỞ ĐƯỢC'}")
+    print(f"Link Affiliate nằm ngay trên trang chủ/sitemap của {domain}: {'CÓ' if aff_from_home else 'KHÔNG THẤY'}")
+    print("Các trang đã đọc:")
+    for title, url, text in EVIDENCE:
+        print(f"  - {title}: {url} ({len(text)} ký tự)")
+    for label, rx in (("QUẢNG CÁO / BRAND BIDDING", ADS_RX), ("COOKIE / THỜI HẠN", COOKIE_RX),
+                      ("HOA HỒNG", COMM_RX)):
+        print(f"\n[{label}] câu liên quan trong các trang affiliate/điều khoản:")
+        n = 0
+        for title, url, text in EVIDENCE:
+            if not re.match(r"TRANG AFFILIATE|ĐIỀU KHOẢN", title):
+                continue
+            for sent in re.split(r"(?<=[.!?])\s+|\n", text):
+                if 12 < len(sent) < 400 and rx.search(sent):
+                    print(f"  ({url.split('//')[-1][:40]}) {sent.strip()}")
+                    n += 1
+                    if n >= 12:
+                        break
+            if n >= 12:
+                break
+        if n == 0:
+            print("  (không có câu nào)")
+
+
 def main():
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")  # Windows cp1252 không in được tiếng Việt
+    except Exception:  # noqa: BLE001
+        pass
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     max_chars = int(sys.argv[sys.argv.index("--max-chars") + 1]) if "--max-chars" in sys.argv else 6000
     if not args:
@@ -120,6 +169,7 @@ def main():
     home = f"https://{domain}"
 
     final, links, text = fetch(home)
+    home_ok = links is not None
     if links is None:
         print(f"TRANG CHỦ KHÔNG MỞ ĐƯỢC: {home} — {text}")
         print("=> Nếu lỗi là EGRESS_BLOCKED/proxy: lý do 'mạng cloud bị chặn'. Nếu 403 từ chính site: 'site chặn truy cập'.")
@@ -188,6 +238,8 @@ def main():
             f4, l4, txt4 = fetch(pl[0])
             if l4 is not None:
                 show(label, f4, txt4, 3000)
+
+    summary(domain, home, home_ok, bool(aff))
 
     if _browser is not None:
         _browser.close()

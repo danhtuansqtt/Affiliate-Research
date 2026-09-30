@@ -8,7 +8,7 @@ description: "Soát điều khoản chương trình affiliate về quảng cáo 
 Người dùng kiếm hoa hồng bằng cách chạy Google Ads trỏ về link affiliate. Vì vậy câu hỏi quan trọng nhất cho mỗi chương trình là: **có được bid tên thương hiệu và chạy Google Ads không?**
 
 ## Tìm điều khoản ở đâu
-0. **Bắt buộc đầu tiên:** chạy `python3 .claude/skills/product-research/scripts/find_affiliate_page.py {domain}` để vào trang chủ, tìm mục Affiliate / Affiliate Program, mở trang đó, cổng affiliate và các link Terms/Guidelines/FAQ. Đọc hết nội dung in ra, tìm các câu về paid ads, PPC, Google Ads, brand/trademark keyword. Ghi dòng `Đã mở:` với các URL đã đọc. Chưa làm bước này thì không được kết luận "Chưa xác minh".
+0. **Bắt buộc đầu tiên (mở domain của chính sản phẩm, không phải trang mạng affiliate):** chạy `python3 .claude/skills/product-research/scripts/find_affiliate_page.py {domain}` để mở `https://{Domain}` (chính domain trong cột Domain của chương trình), tìm mục Affiliate / Affiliate Program ngay trên trang đó, mở trang đó, cổng affiliate và các link Terms/Guidelines/FAQ. Đọc hết nội dung in ra, tìm các câu về paid ads, PPC, Google Ads, brand/trademark keyword. Ghi dòng `Đã mở:` với các URL đã đọc. Chưa làm bước này thì không được kết luận "Chưa xác minh".
 1. Trang affiliate chính chủ (`/affiliate`, `/partners`, `/affiliate-terms`, FAQ).
 2. Trang chương trình trên mạng affiliate (PartnerStack, Impact, Tolt, Rewardful, FirstPromoter, Dub, FlexOffers, ShareASale).
 3. Truy vấn gợi ý: `"{brand}" affiliate terms "brand" bidding`, `"{brand}" affiliate "PPC"`, `"{brand}" affiliate "trademark" keywords`, `"{brand}" affiliate "paid search"`.

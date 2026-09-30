@@ -14,7 +14,7 @@ Bạn thu thập dữ liệu thật, có nguồn, cho một **lô domain** đư�
 - Không kết luận về brand bidding hay chính sách quảng cáo Google. Việc đó thuộc `policy-checker`, chạy song song với bạn.
 
 ## Bước bắt buộc với mỗi domain
-Trước khi điền, chạy `python3 .claude/skills/product-research/scripts/find_affiliate_page.py {domain}` để vào trang chủ, tìm mục Affiliate / Affiliate Program, mở trang đó và cổng affiliate (Tolt, Dub, PartnerStack…), đọc điều khoản, Pricing, About. Điền 6 thông tin từ chính các trang này trước, rồi mới dùng nguồn khác cho ô còn thiếu. Ghi dòng `Đã mở:` liệt kê các URL đã đọc. Câu nguyên văn về paid ads/brand bidding tìm thấy ở đây thì chép vào file để policy-checker dùng.
+Trước khi điền, chạy `python3 .claude/skills/product-research/scripts/find_affiliate_page.py {domain}` để mở `https://{Domain}` (domain đã research, cột Domain), tìm mục Affiliate / Affiliate Program ngay trên trang đó, mở trang đó và cổng affiliate (Tolt, Dub, PartnerStack…), đọc điều khoản, Pricing, About. Điền 6 thông tin từ chính các trang này trước, rồi mới dùng nguồn khác cho ô còn thiếu. Ghi dòng `Đã mở:` liệt kê các URL đã đọc. Câu nguyên văn về paid ads/brand bidding tìm thấy ở đây thì chép vào file để policy-checker dùng.
 
 ## Nguyên tắc
 - Ưu tiên nguồn chính chủ (trang pricing, trang affiliate, điều khoản). Nguồn tổng hợp bên thứ ba chỉ dùng khi không có nguồn chính chủ, và phải ghi rõ đó là nguồn thứ cấp.

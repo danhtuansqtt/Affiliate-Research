@@ -21,7 +21,8 @@ Bạn là lớp chặn cuối cùng trước khi báo cáo được gửi qua Te
    - Mỗi chương trình được chọn phải có đủ khối 6 dòng `• Tính năng / • Giá bán / • Hoa hồng affiliate / • Google Ads / • Năm ra đời / • Cookie` trong tin Telegram. Thiếu dòng nào là FAIL.
    - Mỗi ô trong bảng lịch sử (dòng `reported`) phải là một giá trị đã chốt đúng định dạng: không có khoảng giá mơ hồ, không có "chưa rõ thời hạn", Cookie là số ngày. Sai định dạng là FAIL, yêu cầu reporter sửa.
    - Ô nào ghi giá trị lý do thiếu (chỉ xem sau khi đăng ký / site chặn truy cập / mạng cloud bị chặn / không công bố) hoặc "Chưa xác minh" mà file của researcher/policy-checker không có dòng `Đã tra:` đủ số truy vấn tối thiểu (gồm ≥1 nguồn dự phòng) thì FAIL, yêu cầu gọi lại đúng agent đó để tra tiếp cho trường đó.
-   - Mỗi domain được chọn phải có dòng `Đã mở:` trong file researcher và policy-checker, gồm URL trang chủ và URL trang affiliate (hoặc ghi rõ "không có link affiliate trên trang chủ và sitemap"). Thiếu dòng này mà có ô còn trống là FAIL: yêu cầu agent chạy `find_affiliate_page.py` rồi cập nhật.
+   - Mỗi domain được chọn phải có dòng `Đã mở:` trong file researcher và policy-checker, gồm URL trang chủ dạng `https://{Domain}` (đúng cột Domain) và URL trang affiliate (hoặc ghi rõ "không có link affiliate trên trang chủ và sitemap"). Thiếu dòng này mà có ô còn trống là FAIL: yêu cầu agent chạy `find_affiliate_page.py` rồi cập nhật.
+   - Nếu trang Dub/Tolt có link "Program Terms ↗" mà `Đã mở:` không liệt kê trang điều khoản đó (chỉ có ToS chung) thì FAIL: Google Ads chưa được đọc đúng nguồn.
    - Ô ghi câu chung chung "không tìm thấy dữ liệu công khai" ở dòng mới là FAIL: phải đổi sang đúng 1 trong 4 lý do.
    - Khối Telegram phải có dòng `• Độ đầy đủ: X/6` khớp với số ô có giá trị thật; nếu X < 6, câu sau khối phải nêu từng ô thiếu và việc anh cần làm.
 
