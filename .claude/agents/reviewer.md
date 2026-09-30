@@ -16,7 +16,8 @@ Bạn là lớp chặn cuối cùng trước khi báo cáo được gửi qua Te
    - Mọi domain trong `01_scout_candidates.md` đã có dòng tương ứng trong file lịch sử chưa?
 3. **Kiểm tra nguồn theo mẫu**: mở lại URL nguồn của ít nhất 3 con số quan trọng (ưu tiên hoa hồng và giá) để xác nhận.
 4. **Kiểm tra nội dung**: tin nhắn Telegram có đúng giọng văn, đủ thông tin chính, không hứa hẹn thiếu căn cứ không?
-5. **Kiểm tra độ cụ thể của 6 thông tin** (Tính Năng, Giá Bán, Hoa Hồng Affiliate, Google Ads, Năm Ra Đời, Cookie) theo mục 1 và 2b của skill `report-format`:
+5. **Dòng bị loại không được để cả 6 cột là `-`**: phải có ít nhất Tính Năng và Năm Ra Đời (hoặc lý do loại nằm trong cột đúng, vd `rejected_brand_bidding` phải có Google Ads `Bị Cấm (…)`). Dòng `duplicate_already_reported` phải chép 6 ô của dòng gốc. Vi phạm là FAIL.
+6. **Kiểm tra độ cụ thể của 6 thông tin** (Tính Năng, Giá Bán, Hoa Hồng Affiliate, Google Ads, Năm Ra Đời, Cookie) theo mục 1 và 2b của skill `report-format`:
    - Mỗi chương trình được chọn phải có đủ khối 6 dòng `• Tính năng / • Giá bán / • Hoa hồng affiliate / • Google Ads / • Năm ra đời / • Cookie` trong tin Telegram. Thiếu dòng nào là FAIL.
    - Mỗi ô trong bảng lịch sử (dòng `reported`) phải là một giá trị đã chốt đúng định dạng: không có khoảng giá mơ hồ, không có "chưa rõ thời hạn", Cookie là số ngày. Sai định dạng là FAIL, yêu cầu reporter sửa.
    - Ô nào ghi giá trị lý do thiếu (chỉ xem sau khi đăng ký / site chặn truy cập / mạng cloud bị chặn / không công bố) hoặc "Chưa xác minh" mà file của researcher/policy-checker không có dòng `Đã tra:` đủ số truy vấn tối thiểu (gồm ≥1 nguồn dự phòng) thì FAIL, yêu cầu gọi lại đúng agent đó để tra tiếp cho trường đó.

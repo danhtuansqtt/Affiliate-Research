@@ -24,7 +24,7 @@ Bạn là người săn chương trình affiliate cho repo Affiliate-Research. V
 - Đầu vào: `_workspace/00_input/request.md` (chế độ, chủ đề hoặc Advertiser ID, ngày chạy).
 - Đầu ra: `_workspace/01_scout_candidates.md`, gồm:
   - bảng **Giữ lại** (domain, tên, lý do giữ, nguồn/URL chứng cứ)
-  - bảng **Loại** (domain, tên, status, lý do ngắn)
+  - bảng **Loại** (domain, tên, status, lý do ngắn, **và các cột: Tính năng (1 câu), Năm ra đời, Hoa hồng nếu đã thấy, Google Ads nếu đã đọc điều khoản**). Reporter sẽ chép các cột này vào 6 cột của file lịch sử; bảng Loại chỉ có lý do mà thiếu các cột này thì Google Sheet sẽ trống hàng loạt.
   - dòng thống kê (chế độ audit: tổng creative, số còn active, số domain độc nhất, số domain đã có trong lịch sử)
 
 ## Xử lý lỗi
