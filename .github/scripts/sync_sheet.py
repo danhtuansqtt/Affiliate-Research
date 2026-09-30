@@ -82,7 +82,7 @@ def added_rows(path):
 
 # reported_programs*.md từ 2026-09-26 có 11 cột (5 cột cũ + 6 cột dữ liệu sản
 # phẩm mới); các dòng cũ hơn chỉ có 5 cột và được đệm bằng "" cho khớp.
-ROW_COLS = 11
+ROW_COLS = 12
 
 
 def topic_from_filename(path):
@@ -95,7 +95,7 @@ def topic_from_filename(path):
 TEAM_SUFFIX = "-doi"
 TEAM_TAB = "Affiliate Research"
 HEADER = [
-    "Date", "Topic", "Product", "Domain", "Status", "Note",
+    "Date", "Topic", "Product", "Domain", "Link Đăng Ký Affiliate", "Note",
     "Tính Năng", "Giá Bán", "Hoa Hồng Affiliate", "Google Ads",
     "Năm Ra Đời", "Cookie (ngày)",
 ]
@@ -151,9 +151,9 @@ def main():
         tab = tab_for_topic(topic)
         for cells in added_rows(f):
             (date, product, domain, status, note, tinh_nang, gia_ban, hoa_hong,
-             google_ads, nam_ra_doi, cookie) = (cells + [""] * ROW_COLS)[:ROW_COLS]
+             google_ads, nam_ra_doi, cookie, link) = (cells + [""] * ROW_COLS)[:ROW_COLS]
             rows_by_tab.setdefault(tab, []).append([
-                date, topic, product, domain, status, note,
+                date, topic, product, domain, link, note,
                 tinh_nang, gia_ban, hoa_hong, google_ads, nam_ra_doi, cookie,
             ])
     if not rows_by_tab:

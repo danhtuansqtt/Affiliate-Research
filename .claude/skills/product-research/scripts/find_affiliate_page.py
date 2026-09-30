@@ -2,6 +2,7 @@
 """Vào trang chủ của sản phẩm, tìm mục Affiliate / Affiliate Program, mở và in nội dung.
 
 Dùng:  python3 find_affiliate_page.py domain.com [--max-chars 6000]
+       python3 find_affiliate_page.py domain.com --link   (chỉ in 1 dòng `LINK: <url đăng ký affiliate>`)
 
 Thứ tự:
   1. Mở trang chủ, gom các link có chữ/đường dẫn chứa affiliate, partner, referral...
@@ -165,16 +166,17 @@ def main():
     max_chars = int(sys.argv[sys.argv.index("--max-chars") + 1]) if "--max-chars" in sys.argv else 6000
     if not args:
         sys.exit(__doc__)
+    link_only = "--link" in sys.argv
     domain = re.sub(r"^https?://", "", args[0]).strip("/")
     home = f"https://{domain}"
 
     final, links, text = fetch(home)
     home_ok = links is not None
     if links is None:
-        print(f"TRANG CHỦ KHÔNG MỞ ĐƯỢC: {home} — {text}")
+        if not link_only: print(f"TRANG CHỦ KHÔNG MỞ ĐƯỢC: {home} — {text}")
         print("=> Nếu lỗi là EGRESS_BLOCKED/proxy: lý do 'mạng cloud bị chặn'. Nếu 403 từ chính site: 'site chặn truy cập'.")
         links = []
-    else:
+    elif not link_only:
         show("TRANG CHỦ", final, text, 1500)
 
     aff = [(u, t) for u, t in links if AFF_WORDS.search(u) or AFF_WORDS.search(t) or NETWORKS.search(u)]
@@ -199,21 +201,34 @@ def main():
             seen.add(key)
             candidates.append((u, t))
 
-    print("\n===== LINK AFFILIATE TÌM THẤY TRÊN TRANG CHỦ =====")
-    for u, t in aff:
-        print(f"- {t or '(không có chữ)'} -> {u}")
-    if not aff:
+    aff_keys = {u.split("#")[0].rstrip("/") for u, _ in aff}
+    if not link_only:
+        print("\n===== LINK AFFILIATE TÌM THẤY TRÊN TRANG CHỦ =====")
+        for u, t in aff:
+            print(f"- {t or '(không có chữ)'} -> {u}")
+    if not aff and not link_only:
         print("(không thấy link affiliate trên trang chủ; thử các đường dẫn hay gặp)")
 
     opened = 0
     while candidates and opened < 4:
         u, t = candidates.pop(0)
         f2, l2, txt2 = fetch(u)
+        if link_only and u.split("#")[0].rstrip("/") in aff_keys and (l2 is None or len(txt2) < 80):
+            print("LINK:", u.split("#")[0])  # link do chính site đăng, trang render bằng JS nên không đọc được
+            return
+        if l2 is not None and t == "(đường dẫn hay gặp)" and                 not urllib.parse.urlparse(f2).path.rstrip("/").endswith(urllib.parse.urlparse(u).path.rstrip("/")):
+            continue  # đường dẫn đoán bị chuyển về trang chủ: không có trang affiliate thật
         if l2 is None or len(txt2) < 80:
             if NETWORKS.search(u):
                 print(f"\n===== CỔNG AFFILIATE: {u} =====\n(không đọc được nội dung: {txt2 if l2 is None else 'trang trống — thường là form đăng nhập/đăng ký'})")
             continue
         opened += 1
+        if link_only:
+            # Chế độ --link: chỉ in link đăng ký affiliate (ưu tiên trang apply/join của mạng Dub/Tolt/...).
+            signup = next((x for x, y in l2 if NETWORKS.search(x)
+                           and re.search(r"apply|join|sign|register|become", x + " " + y, re.I)), None)
+            print("LINK:", (signup or f2).split("#")[0])
+            return
         show(f"TRANG AFFILIATE ({t})", f2, txt2, max_chars)
         # Nút "Join / Sign up" thường dẫn sang cổng Tolt/Dub/PartnerStack...: mở tiếp.
         for x, y in l2:
@@ -226,6 +241,9 @@ def main():
             f3, l3, txt3 = fetch(tu)
             if l3 is not None:
                 show(f"ĐIỀU KHOẢN ({tt})", f3, txt3, max_chars)
+    if not opened and link_only:
+        print("LINK: -")
+        return
     if not opened:
         print("\nKHÔNG MỞ ĐƯỢC TRANG AFFILIATE NÀO (có thể cần đăng ký, bị chặn, hoặc không có chương trình).")
 

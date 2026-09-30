@@ -110,11 +110,16 @@ COOKIE_OK = re.compile(r"^(\d+(\s*\(.+\))?|-|" + REASON + r".*)$")
 
 
 def check_program_values(path, lines, old):
-    """Dòng `reported` (11 cột) phải có 6 cột dữ liệu đã chốt, đúng định dạng mục 2b."""
+    """Dòng `reported` (12 cột) phải có 6 cột dữ liệu đã chốt (mục 2b) và Link Đăng Ký Affiliate."""
     for i, cells in rows(lines):
         if lines[i - 1] in old or len(cells) < 11 or cells[3] != "reported":
             continue
         tinh_nang, gia, hoa_hong, ads, nam, cookie = cells[5:11]
+        link = cells[11] if len(cells) > 11 else "-"
+        if not re.match(r"^(https?://\S+|-)$", link):
+            report("ERROR", path, i, f"cột Link Đăng Ký Affiliate '{link[:40]}' phải là URL hoặc '-'")
+        elif link == "-":
+            report("WARN", path, i, "dòng reported chưa có Link Đăng Ký Affiliate (URL trang/cổng đăng ký chương trình)")
         if not ads.startswith(ADS_VALUES):
             report("ERROR", path, i, f"cột Google Ads '{ads[:40]}' không phải giá trị chuẩn (Bị Cấm / Không Cấm / Chưa xác minh)")
         if not COOKIE_OK.match(cookie):
