@@ -1,29 +1,31 @@
-Em báo cáo kết quả scout affiliate hôm nay (30/9/2026) của đội agent, chủ đề Tài chính: em đã rà 20 ứng viên, chọn được 1 chương trình, loại 19.
+Em báo cáo kết quả scout affiliate hôm nay (1/10/2026) của đội agent, chủ đề Tài chính: em đã rà 29 ứng viên, chọn được 1 chương trình, loại 28.
 
-<b>Top One Futures (toponefutures.com)</b>
-• Tính năng: Prop firm futures (tài khoản giả lập) tại Mỹ bán challenge $25K–$150K cho trader cá nhân, chia 90% lợi nhuận (chính chủ)
-• Giá bán: Elite Access $25K $139/lần (khuyến mãi $39); Elite Daily $25K $178/tháng; Elite Daily $50K $218/tháng; Elite Daily $100K $398/tháng; Elite Daily $150K $549/tháng; không có gói free (chính chủ)
-• Hoa hồng affiliate: 10% một lần (đơn đầu) + 5% recurring trọn đời; hạng Diamond 20% + 10% (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; đã tra trang affiliate, FAQ Affiliates, T&amp;C site và GTC Trackdesk toponefutures.trackdesk.com/sign-up; thương hiệu chị em Top One Trader cấm PPC tên thương hiệu — hỏi affiliate manager trước khi chạy; mẫu quảng cáo phải được duyệt trước; loại 73 quốc gia bị cấm, gồm Việt Nam)
-• Năm ra đời: 04/2025 (nguồn phụ)
-• Cookie: 60 ngày (chính chủ)
+<b>Funded7 (funded7.com)</b>
+• Tính năng: Prop firm cấp tài khoản giả lập forex/CFD trên MT5 từ $5K đến $500K, chia lợi nhuận tới 90%, cho trader cá nhân (chính chủ)
+• Giá bán: Free Trial; Two Phase $15K $118.80/lần; Two Phase $50K $358.80/lần; Two Phase $100K $598.80/lần; Two Phase $250K $1,318.91/lần; Two Phase $500K $2,748.91/lần; One Phase $15K $238.80/lần; One Phase $200K $1,430/lần; Instant Funding $5K $274.80/lần; Instant Funding $75K $3,298.91/lần; PAYG $50K Phase 1 $79/lần (chính chủ)
+• Hoa hồng affiliate: 10% từ 10 đơn/tháng; 12% từ 30 đơn/tháng; 15% từ 100 đơn/tháng; tính trên mọi lần mua trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; T&amp;C Provision 10 không nhắc PPC/brand bidding)
+• Năm ra đời: 2025 (chính chủ)
+• Cookie: 30 ngày (chính chủ)
 • Độ đầy đủ: 5/6
 
-Ô còn thiếu là Google Ads: chương trình không công bố điều khoản PPC/brand bidding, độ tin cậy thấp. Thương hiệu chị em Top One Trader cấm rõ PPC theo tên thương hiệu, nên anh hỏi affiliate manager (Cameron Teeters theo blog Trackdesk) bằng văn bản trước khi chi tiền ads.
+Ô còn thiếu là Google Ads: điều khoản affiliate chính chủ không nói gì về PPC hay bid từ khóa "Funded7", không cấm nhưng cũng không cho phép rõ. Anh hỏi affiliate manager (LiveChat/email 24/5) bằng văn bản trước khi chi tiền ads. Mức hoa hồng cho 1–9 đơn/tháng không công bố, anh hỏi affiliate manager luôn.
 
-Anh cân nhắc giúp em: researcher đề xuất loại (rejected_not_new) vì Top One Futures cùng đội, cùng CEO Matt Morris với Top One Trader (toponetrader.com, lập 2023, đã audit 7/9/2026). Em vẫn chọn vì tiêu chí tuổi tính theo ngày ra mắt sản phẩm: ra mắt 4/2025 (một nguồn phụ ghi lập 2024, domain đăng ký 2/2024), pháp nhân riêng Top One Futures LLC (Wyoming), site riêng.
+Em chọn vì sản phẩm ra mắt năm 2025 (domain đăng ký 17/1/2025, báo chí 30/4/2025, kỷ niệm 1 năm 6/2026), CEO Todor Georgiev từng điều hành ở Exness và Traders Trust. Affiliate in-house trên my.funded7.com, kích hoạt ngay, không ngưỡng rút, rút 7 ngày/lần qua Revolut, Rise hoặc crypto (T&amp;C lại ghi xử lý trong 30 ngày). Hoa hồng chỉ tính khi đơn không bị hủy trong 14 ngày. Traffic chưa tra.
 
-Affiliate chạy trên Trackdesk (toponefutures.trackdesk.com/sign-up), có form duyệt; trả ngày 15 hằng tháng qua Tipalti, ngưỡng rút $100, mỗi đơn xác minh 30 ngày. Trang không ghi thời hạn recurring, em hiểu là trọn đời, anh nên hỏi affiliate manager để chắc chắn. Cookie: privacy policy ghi "up to 60 days", case study Trackdesk ghi 30 ngày, em chốt theo chính chủ. Traffic chưa tra.
-Yêu cầu tuân thủ và rủi ro:
-- 73 quốc gia bị cấm dùng dịch vụ, gồm Việt Nam, Indonesia, Philippines…: ads phải loại các nước này; anh nên hỏi affiliate manager xem affiliate ở VN có được tham gia không.
-- Google Ads: quảng cáo dịch vụ tài chính cần financial services verification theo quốc gia; menu site có mục CFDs nên landing page có thể dính chính sách complex speculative financial products (chỉ cho nhà cung cấp có giấy phép).
-- GTC Trackdesk buộc affiliate gửi mẫu quảng cáo cho Operator duyệt trước khi dùng.
-- WHOIS ẩn (Domains By Proxy); T&amp;C không hoàn tiền trong mọi trường hợp và cấm đánh giá tiêu cực trên site review; không thấy đăng ký CFTC/NFA; có phàn nàn về việc bắt quay video giải thích lệnh, phỏng vấn trước khi duyệt payout (Trustpilot vẫn 4.8).
+Tuân thủ pháp lý và rủi ro:
+- 16 nước/vùng bị cấm, gồm Mỹ, Nga, Iran, Síp, Belarus…: ads phải loại trừ hết (T&amp;C Provision 9 không ghi Mỹ nhưng footer có, em chốt theo danh sách chặt hơn).
+- Funded7 ghi rõ không có giấy phép cung cấp dịch vụ đầu tư, mọi giao dịch là giả lập. Quảng cáo không được hứa thu nhập hay gọi là đầu tư thật (T&amp;C 10.2 cấm quảng cáo sai lệch).
+- Google Ads: prop firm CFD/forex thuộc nhóm dịch vụ tài chính, anh cần làm xác minh dịch vụ tài chính của Google và kiểm tra chính sách complex speculative financial products ở nước nhắm tới (em chưa trích trang chính sách Google).
+- Phải KYC/CDD/EDD khi rút hoa hồng; Funded7 có quyền KYB và soát cách affiliate quảng cáo.
+- Không dùng domain hay display path chứa "Funded7" (Brand Guidelines).
+- Trustpilot 2.9/5 (51 review, 45% 1 sao, phàn nàn bị từ chối payout).
 
 Các ứng viên bị loại:
-- pay.ethena.fi: trùng lịch sử.
-- fxifyfutures.com, intellectia.ai, kavout.com, guac.com, taxzap.com, kikoff.com, petgevity.co.uk: ra mắt trước 2025.
-- swissfirmup.com, budgetgpt.io, porcfolio.com, scex.vn, cotrade.ai, Trade Copilot, TradePilot, Trading Buddy Pro, TradersCompanion: không có affiliate.
-- Budget Smart AI, roboquant.ai: có affiliate nhưng không xác định được ngày ra mắt (Budget Smart AI chưa rõ cả domain).
+- tradeify247.co, waypointbudget.com, bonsave.app: cấm bid thương hiệu. bleap.finance: chỉ có referral, cấm paid ads.
+- propxp.com, fundyourfx.io, theupsidefunding.com, pipfarm.com, dnafunded.com, wemastertrade.com, the5ers.com, fivefs.com, enkelfinans.se, soeasytravelinsurance.com, shb.com.vn, aisignalspartners.com: ra mắt trước 2025.
+- boncredit.ai, creditrefresh.ai, Bloom (Spring Financial): không có affiliate. finjet.es, finnyrute.co: chương trình đã đóng.
+- frisomenfagel.shop, discoverhiddenmoney.com, advancefundsnetwork.com: không phải sản phẩm tài chính cho cá nhân hoặc là B2B.
+- app.paisa247.in, flowasis.com: không xác minh được ngày ra mắt. atmosfunded.com: nguồn mâu thuẫn về ngày ra mắt. TCEX: chưa hoạt động.
 
-Em đã lưu đủ 20 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md để các lượt sau không xét lại.
+Em đã lưu đủ 29 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md để các lượt sau không xét lại.
