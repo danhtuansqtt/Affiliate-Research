@@ -1,44 +1,32 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 01/10/2026: em rà sitemap Dub Partners (372 chương trình, 304 domain mới), lọc ra 66 domain AI, xét sâu 25 ứng viên và chọn được 3 chương trình. Lượt này mạng không chặn Dub và site chính chủ nên em đọc trực tiếp được trang chương trình và điều khoản; riêng Product Hunt trả 403, ngày ra mắt trên PH chỉ lấy từ kết quả tìm kiếm.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 02/10/2026: em rà Dub Partners, các bản tổng hợp Product Hunt 24/09–01/10 và thư mục aifilliate.com, bỏ 26 domain đã có trong lịch sử, xét 31 domain mới, đào sâu 4 ứng viên và chọn được 2 chương trình.
 
-<b>Granular (granular.build)</b>
-• Tính năng: App desktop dạng terminal có AI agent cho người không biết code: chat để build app, thiết kế, làm content
-• Giá bán: Free (dùng AI login riêng); Pro $12.99/tháng; Pro $129/năm; Lifetime $259/lần (chính chủ)
-• Hoa hồng affiliate: 25% recurring 24 tháng (chính chủ)
+<b>Clico (tryclico.com)</b>
+• Tính năng: Studio AI sáng tạo (web, Chrome extension, app Mac): chat với 26 model, tạo ảnh/video, dựng website và game, cho creator và marketer
+• Giá bán: Free $0/tháng (200 credits); Pro $19.90/tháng (2,000 credits); Max $49.90/tháng (5,000 credits) (chính chủ)
+• Hoa hồng affiliate: 50% recurring 12 tháng (chính chủ)
 • Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 06/2026 (chính chủ)
+• Năm ra đời: 01/2026 (chính chủ)
+• Cookie: 90 ngày (mặc định Dub)
+• Độ đầy đủ: 5/6
+
+Hoa hồng cao nhất lượt này, khách được giảm 20% đơn đầu, Dub giữ tiền 30 ngày. Chương trình cần duyệt hồ sơ thủ công (Dub chưa bật tự duyệt), không công bố ngưỡng rút. Đăng ký: https://partners.dub.co/clico/apply (đừng nhầm với tryclico.com/referral, chỉ đổi credit). Trang Dub còn câu cũ "$5 mỗi lead" nhưng cấu hình thưởng chỉ có 50% theo đơn, em chốt 50%. Thiếu Google Ads: Program Terms (tryclico.com/terms) và trang Dub không có câu nào về paid ads hay brand bidding, độ tin cậy thấp; anh cần tự đọc điều khoản hoặc hỏi Clico trước khi chi tiền ads.
+
+<b>Superapp (superapp.dev)</b>
+• Tính năng: AI tạo app Swift native cho iPhone, iPad, Mac, Apple Watch từ mô tả, tự nộp App Store
+• Giá bán: Free; Pro $25/tháng (50 credits); Business $50/tháng (110 credits); Max $100/tháng (230 credits) (chính chủ)
+• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
+• Năm ra đời: 11/2025 (nguồn phụ)
 • Cookie: 60 ngày (chính chủ)
 • Độ đầy đủ: 5/6
 
-Mới, cookie 60 ngày ghi rõ trên trang chính chủ, tự duyệt partner, trả tự động qua Dub sau 30 ngày giữ tiền. Đăng ký: https://partners.dub.co/granularapp. Thiếu Google Ads: em đã đọc Program Terms và trang partners, không có câu nào về paid ads, nên độ tin cậy thấp; anh hỏi Granular trước khi chi tiền ads.
+Hoa hồng có trần $150 mỗi khách hoặc 12 tháng, tùy điều kiện nào đến trước. Trả hàng tháng, ngưỡng rút $50, duyệt trong 24 giờ. Đăng ký: https://partners.dub.co/superapp/apply. Thiếu Google Ads: /partners, /terms, /faq và Dub không nhắc tới ads, độ tin cậy thấp; anh cần tự đọc điều khoản hoặc hỏi Superapp trước khi chi tiền ads.
 
-<b>LarryBrain (larrybrain.com)</b>
-• Tính năng: Marketplace skill cho AI agent (OpenClaw, Claude Code, Cursor), một gói thuê bao dùng hơn 70 skill/API
-• Giá bán: Pro $29.99/tháng (chính chủ)
-• Hoa hồng affiliate: 50% recurring trọn đời (mạng affiliate)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 02/2026 (chính chủ)
-• Cookie: 90 ngày (mặc định Dub)
-• Độ đầy đủ: 5/6
+Bị loại (29):
+- Cấm bid brand: Appy.AI (appy.ai, FAQ trên partners.dub.co/appy-ai: "don't run paid ads on our brand terms"), Okara, Squad, AdsTurbo, AssistLoop.
+- Ra mắt trước 2025: Answering Agent (answeringagent.com, trang About: 27 cuộc gọi đầu tiên 12/2024), Wonderly (tiền thân Motion), PDF.ai, Robofy, SalesMind AI, MeinGPT, NextPhone, Hedra.
+- Chưa xác minh ngày ra mắt: Nimbus Intelligence, Hook, BeYourCover, Koke AI, MusicCreator AI, MyColoringPages AI.
+- Không có trang affiliate: IntellAgents, NiroHelp, AI Mapy, ShroomPen, Statable, CosmicUp.
+- Khác: LLM Gateway (chỉ referral 1%), Stilla (Meta mua lại 09/2026), Bustem (không phải AI), Answrr (answrr.ai, trùng Answrr tryanswrr.com đã báo 28/08).
 
-Hoa hồng cao nhất lượt này, tự duyệt, giữ tiền 30 ngày. Đăng ký đúng link https://partners.dub.co/larry-brain/apply (link larrybrain.com/affiliate là short link hỏng). Trang Terms còn ghi giá launch $9.99/tháng, em chốt $29.99 theo trang Pricing. Thiếu Google Ads: trang Dub và Terms không nhắc tới ads, độ tin cậy thấp; anh hỏi LarryBrain trước khi chi tiền ads.
-
-<b>Rankhog (rankhog.com)</b>
-• Tính năng: AI làm Reddit SEO: tìm thread Reddit lên top Google/ChatGPT, viết trả lời và tự đăng có kiểm soát, cho founder SaaS và agency
-• Giá bán: Growth $99/tháng (trial 3 ngày cần thẻ); gói credit $49/lần (50 credits); Managed Reddit Growth từ $1,000/tháng (chính chủ)
-• Hoa hồng affiliate: 40% recurring 12 tháng (mạng affiliate)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 05/2026 (chính chủ)
-• Cookie: 90 ngày (mặc định Dub)
-• Độ đầy đủ: 5/6
-
-Ra mắt 05/2026, tự duyệt, trả qua Stripe hoặc PayPal sau 30 ngày giữ tiền. Đăng ký: https://partners.dub.co/rankhog/apply. Thiếu Google Ads: không có Program Terms riêng, rankhog.com/terms không nhắc tới ads, độ tin cậy thấp; anh đọc lại điều khoản hoặc hỏi Rankhog trước khi chi tiền ads.
-
-Đạt nhưng chưa đưa lên lần này: Bloom (trybloom.ai, 30%/1 năm) và Mathify (mathify.dev, 30% trọn đời).
-
-Bị loại (13):
-- Cấm bid brand: PumpGTM (pumpgtm.com, không trả hoa hồng cho ads trên từ khóa "PumpGTM"), Markty (markty.ai, cấm bid "Markty" trên Google Ads, còn nghi ra đời 2023), Keum, Lispr, Perisclaw, Athena, TesterArmy, Zernio.
-- Ra mắt trước 2025: UpRock (công ty từ 2022).
-- Chưa xác minh ngày ra mắt: LarryLoop, Winly (đổi tên từ Revio), Oxygen (nghi relaunch).
-- Trùng lịch sử: Caimera.
-
-Em đã lưu lịch sử 18 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
+Em đã lưu lịch sử 31 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
