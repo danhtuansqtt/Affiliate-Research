@@ -1,31 +1,31 @@
-Em báo cáo kết quả scout affiliate hôm nay (1/10/2026) của đội agent, chủ đề Tài chính: em đã rà 29 ứng viên, chọn được 1 chương trình, loại 28.
+Em báo cáo kết quả scout affiliate hôm nay (2/10/2026) của đội agent, chủ đề Tài chính: em đã rà 26 ứng viên, 12 cái đã có trong lịch sử nên bỏ qua, còn 14 ứng viên mới. Em chọn được 1 chương trình, loại 13.
 
-<b>Funded7 (funded7.com)</b>
-• Tính năng: Prop firm cấp tài khoản giả lập forex/CFD trên MT5 từ $5K đến $500K, chia lợi nhuận tới 90%, cho trader cá nhân (chính chủ)
-• Giá bán: Free Trial; Two Phase $15K $118.80/lần; Two Phase $50K $358.80/lần; Two Phase $100K $598.80/lần; Two Phase $250K $1,318.91/lần; Two Phase $500K $2,748.91/lần; One Phase $15K $238.80/lần; One Phase $200K $1,430/lần; Instant Funding $5K $274.80/lần; Instant Funding $75K $3,298.91/lần; PAYG $50K Phase 1 $79/lần (chính chủ)
-• Hoa hồng affiliate: 10% từ 10 đơn/tháng; 12% từ 30 đơn/tháng; 15% từ 100 đơn/tháng; tính trên mọi lần mua trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; T&amp;C Provision 10 không nhắc PPC/brand bidding)
-• Năm ra đời: 2025 (chính chủ)
-• Cookie: 30 ngày (chính chủ)
-• Độ đầy đủ: 5/6
+<b>Tradin (tradin.com)</b>
+• Tính năng: Broker forex/CFD trên MT5 với hơn 2.000 sản phẩm, có copy trading, đòn bẩy tới 1:2000, cho trader cá nhân (chính chủ)
+• Giá bán: Standard $0 commission, nạp tối thiểu $10; Raw commission $7, nạp tối thiểu $500; Swap-Free $0 commission, nạp tối thiểu $10 (chính chủ)
+• Hoa hồng affiliate: tới $15/lot (IB, trả hằng ngày) (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký: IB Agreement chỉ gửi sau khi duyệt đơn qua partners@tradin.com)
+• Năm ra đời: 10/2025 (nguồn phụ)
+• Cookie: không công bố
+• Độ đầy đủ: 4/6
 
-Ô còn thiếu là Google Ads: điều khoản affiliate chính chủ không nói gì về PPC hay bid từ khóa "Funded7", không cấm nhưng cũng không cho phép rõ. Anh hỏi affiliate manager (LiveChat/email 24/5) bằng văn bản trước khi chi tiền ads. Mức hoa hồng cho 1–9 đơn/tháng không công bố, anh hỏi affiliate manager luôn.
+Hai ô còn thiếu: Google Ads (độ tin cậy thấp, trang /partners và 5 PDF pháp lý không nhắc PPC hay brand bidding, nhưng IB Agreement không công khai) và Cookie (không công bố). Anh gửi email partners@tradin.com hỏi bằng văn bản có được bid từ khóa "Tradin", có được chạy Google Ads/PPC, direct link không, và cookie bao nhiêu ngày, trước khi chi tiền ads.
 
-Em chọn vì sản phẩm ra mắt năm 2025 (domain đăng ký 17/1/2025, báo chí 30/4/2025, kỷ niệm 1 năm 6/2026), CEO Todor Georgiev từng điều hành ở Exness và Traders Trust. Affiliate in-house trên my.funded7.com, kích hoạt ngay, không ngưỡng rút, rút 7 ngày/lần qua Revolut, Rise hoặc crypto (T&amp;C lại ghi xử lý trong 30 ngày). Hoa hồng chỉ tính khi đơn không bị hủy trong 14 ngày. Traffic chưa tra.
+Em chọn vì sản phẩm ra mắt 10–11/2025 (FXStreet 20/10/2025, TradeInformer 13/11/2025), do CEO FundingPips Khaled A'yesh lập. Đăng ký IB bằng form gửi email tới partners@tradin.com, phải được duyệt; trả hoa hồng hằng ngày theo thân trang /partners (nhưng meta và JSON-LD của trang lại ghi trả hằng tháng, anh hỏi luôn khi email), rút qua thẻ hoặc crypto; ngưỡng rút và traffic không công bố.
 
-Tuân thủ pháp lý và rủi ro:
-- 16 nước/vùng bị cấm, gồm Mỹ, Nga, Iran, Síp, Belarus…: ads phải loại trừ hết (T&amp;C Provision 9 không ghi Mỹ nhưng footer có, em chốt theo danh sách chặt hơn).
-- Funded7 ghi rõ không có giấy phép cung cấp dịch vụ đầu tư, mọi giao dịch là giả lập. Quảng cáo không được hứa thu nhập hay gọi là đầu tư thật (T&amp;C 10.2 cấm quảng cáo sai lệch).
-- Google Ads: prop firm CFD/forex thuộc nhóm dịch vụ tài chính, anh cần làm xác minh dịch vụ tài chính của Google và kiểm tra chính sách complex speculative financial products ở nước nhắm tới (em chưa trích trang chính sách Google).
-- Phải KYC/CDD/EDD khi rút hoa hồng; Funded7 có quyền KYB và soát cách affiliate quảng cáo.
-- Không dùng domain hay display path chứa "Funded7" (Brand Guidelines).
-- Trustpilot 2.9/5 (51 review, 45% 1 sao, phàn nàn bị từ chối payout).
+Rủi ro pháp lý (cao):
+- Broker CFD offshore: chỉ có giấy phép FSC Mauritius GB25204266, pháp nhân Tradin Global Ltd đăng ký Saint Lucia; không có giấy phép EU/UK/AU. Finance Magnates Directory và FXEmpire xếp rủi ro tương đối cao.
+- Đòn bẩy tới 1:2000. Có bonus nạp tới $10,000, dễ bị coi là quảng cáo dụ dỗ.
+- Không nhận khách Mỹ, Canada, UAE, Iran, Triều Tiên, Syria, Sudan, Crimea, Myanmar: ads phải loại trừ hết các nước này.
+- Google Ads yêu cầu xác minh dịch vụ tài chính theo từng nước; affiliate không có giấy phép rất khó chạy ở UK/EU/AU. Quảng cáo phải kèm cảnh báo rủi ro phái sinh và không được tự cam kết thay Tradin (T&amp;C mục 19).
 
 Các ứng viên bị loại:
-- tradeify247.co, waypointbudget.com, bonsave.app: cấm bid thương hiệu. bleap.finance: chỉ có referral, cấm paid ads.
-- propxp.com, fundyourfx.io, theupsidefunding.com, pipfarm.com, dnafunded.com, wemastertrade.com, the5ers.com, fivefs.com, enkelfinans.se, soeasytravelinsurance.com, shb.com.vn, aisignalspartners.com: ra mắt trước 2025.
-- boncredit.ai, creditrefresh.ai, Bloom (Spring Financial): không có affiliate. finjet.es, finnyrute.co: chương trình đã đóng.
-- frisomenfagel.shop, discoverhiddenmoney.com, advancefundsnetwork.com: không phải sản phẩm tài chính cho cá nhân hoặc là B2B.
-- app.paisa247.in, flowasis.com: không xác minh được ngày ra mắt. atmosfunded.com: nguồn mâu thuẫn về ngày ra mắt. TCEX: chưa hoạt động.
+- traderise.com (Rise của INGOT): Affiliate Agreement cấm bid thương hiệu INGOT/Rise trên Google/Bing Ads, cấm direct link, mọi chiến dịch trả phí phải được duyệt trước.
+- budgetai.ai, rytm.ai, levafx.com: không có chương trình affiliate.
+- Budget Smart AI: listing Partnero đã 404, không rõ domain.
+- financialtechwiz.com, atfunded.com: không xác minh được ngày ra mắt.
+- ttpmarkets.com: chỉ nhận trader được chọn, không mở đại trà.
+- seacrestmarkets.io: đã ngừng hoạt động.
+- quanttekel.com, nemo.money, extra.app, squaredfinancial.com: ra mắt trước 2025.
 
-Em đã lưu đủ 29 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md để các lượt sau không xét lại.
+Em đã lưu đủ 14 ứng viên mới vào lịch sử reported_programs__tai-chinh-doi.md để các lượt sau không xét lại.
