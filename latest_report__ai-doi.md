@@ -1,42 +1,48 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 04/10/2026: em rà Affonso Marketplace (299 chương trình), Product Hunt tháng 9–10, Open Launch, Tiny Startups, PeerPush, Fazier và Dub Partners, bỏ 12 domain đã có trong lịch sử, xét 38 domain mới và chọn được 3 chương trình báo anh dưới đây.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 05/10/2026: em rà Open Launch, PeerPush, TinyLaunch, thư mục Refgrow và PartneroList (123 domain), xét 33 ứng viên mới, 6 cái đạt tiêu chí, chọn 3 báo anh dưới đây.
 
-<b>HeyNews (heynews.co)</b>
-• Tính năng: AI viết newsletter theo giọng người viết, cho creator, publisher và đội doanh nghiệp
-• Giá bán: Trial 14 ngày; Hobbyist $39/tháng; Starter $99/tháng; Pro $299/tháng; Team $499/tháng (chính chủ)
-• Hoa hồng affiliate: 25% recurring 18 tháng, tháng đầu 35% (chính chủ)
-• Google Ads: Không Cấm (cho phép Google Ads/Bing Ads gồm cả từ khóa thương hiệu; được bid "HeyNews")
-• Năm ra đời: 01/2025 (chính chủ)
-• Cookie: 90 ngày (chính chủ)
-• Độ đầy đủ: 6/6
-
-Đây là chương trình hợp chạy ads nhất lượt này: trang affiliate chính chủ ghi thẳng "Bid on "HeyNews" and related terms. Most programs ban this. We don't." Hoa hồng lên 30% khi có 15+ chuyển đổi, 35% khi có 30+, thêm 20% từ sub-affiliate. Không cần duyệt, ngưỡng rút $10, trả tuần đầu mỗi tháng qua PayPal/wire. Đăng ký: https://affiliates.heynews.co
-
-<b>BlogBuster (blogbuster.so)</b>
-• Tính năng: AI viết bài blog SEO và tự đăng lên WordPress, Shopify, Webflow, có hosting blog miễn phí
-• Giá bán: Free 2 bài; Starter $18.90/tháng; Growth $49.90/tháng; Booster $79.90/tháng (chính chủ)
-• Hoa hồng affiliate: 20% mỗi đơn, thời hạn recurring không công bố (mạng affiliate)
-• Google Ads: Không Cấm (cấu hình Affonso: Allowed gồm Paid Search và Brand Bidding)
-• Năm ra đời: 2025 (chính chủ)
-• Cookie: 30 ngày (mạng affiliate)
-• Độ đầy đủ: 6/6
-
-Site chính chủ không có trang affiliate, chỉ đăng ký qua Affonso (tự duyệt, ngưỡng rút $50, trả hằng tháng qua Wise): https://marketplace.affonso.io/?program=YvMef_iSj5HFAolmZ4IK68hvL3BfGrAMAhXW_-qfzCE. Quyền Google Ads lấy từ cấu hình kênh trên Affonso, không phải văn bản điều khoản chính chủ, nên độ tin cậy trung bình; anh nên chụp lại mục Restrictions trong cổng sau khi đăng ký. Thời hạn trả recurring không công bố, anh hỏi BlogBuster nếu cần.
-
-<b>Rank++ (rankplusplus.com)</b>
-• Tính năng: Nền tảng AEO giúp website được ChatGPT, Claude, Perplexity nhắc tới, cho indie hacker và founder
-• Giá bán: Free Trial $0 14 ngày (25 credits); Monthly $49/tháng (200 credits) (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 2025 (nguồn phụ)
-• Cookie: 30 ngày (mạng affiliate)
+<b>GenFaceless AI (genfaceless.com)</b>
+• Tính năng: AI tạo video faceless từ một chủ đề (kịch bản, giọng đọc, phụ đề), tự đăng YouTube/TikTok/Instagram cho creator
+• Giá bán: Free; Starter $20/tháng; Pro $35/tháng; Ultra $50/tháng (chính chủ)
+• Hoa hồng affiliate: 30% recurring trọn đời (mạng affiliate)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Partnero: genfaceless.partneroapp.com)
+• Năm ra đời: 2026 (nguồn phụ)
+• Cookie: 7 ngày (mạng affiliate)
 • Độ đầy đủ: 5/6
 
-Hoa hồng trọn đời, duyệt ngay trên Revshare: https://www.revshare.so/p/rank. Thiếu Google Ads: trang affiliate, FAQ, Terms và Revshare chỉ ghi được quảng bá "any channel you prefer", không có câu nào về paid search hay brand bidding, độ tin cậy thấp; anh cần hỏi Rank++ cho phép bằng văn bản trước khi chi tiền ads. Ngưỡng rút không hiển thị trên trang.
+Hoa hồng trọn đời, không cần duyệt, và là chương trình duy nhất trong 3 cái không bật cờ chặn traffic quảng cáo của Partnero. Thiếu Google Ads: anh đăng ký https://genfaceless.partneroapp.com rồi đọc Terms trong cổng; ToS chung cấm dùng thương hiệu khi chưa có văn bản đồng ý nên anh hỏi trước khi bid tên "GenFaceless". Ngưỡng rút không công bố.
 
-Bị loại (34):
-- Cấm bid brand trên điều khoản chính chủ: CrafterQ, Pexo, siift, CrawlRaven, Digital Interview AI, VybeScript, The Influencer AI, Alsona.
-- Cấm Brand Bidding theo cấu hình Affonso (23): Agentmatica, ArtFlicks, BlitzReels, SurfacedBy, iPulse AI, StealthWriter, Novabrand, ColorPageAI, ImagineVid, Kitful AI, TailoredCV.ai, GetIntel, Genviral, NanoPhoto.AI, BirthdayInvitation.AI, PartyInvitation.AI, ConnectMachine, ClipTrend.ai, MailBeast, Dalil AI, Vyndra AI, Refinar, Distress Meter AI.
-- Ra mắt trước 2025: Causality Engine, ZenABM.
-- Không có chương trình affiliate: Genjutsu AI (site bên thứ ba).
+<b>Analyze AI (tryanalyze.ai)</b>
+• Tính năng: Phân tích AI search cho đội marketing: ChatGPT, Gemini, Perplexity nói gì về thương hiệu, nối traffic AI với chuyển đổi GA4
+• Giá bán: Growth $99/tháng; Pro $250/tháng; Custom liên hệ; có free trial (chính chủ)
+• Hoa hồng affiliate: 20% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
+• Năm ra đời: 09/2025 (nguồn phụ)
+• Cookie: 60 ngày (mạng affiliate)
+• Độ đầy đủ: 5/6
 
-Ngoài ra có 1 chương trình nhỏ đạt tiêu chí nhưng em chỉ lưu vào lịch sử. Em đã lưu lịch sử 38 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
+Giá cao nên mỗi khách đáng tiền; ngưỡng rút $50, trả hằng tháng qua PayPal, không cần duyệt: https://analyze.partneroapp.com/register. Hoa hồng nguồn lệch nhau: trang chính chủ 20%, cổng Partnero 25%, listing Partnero 30%, em chốt 20%. Thiếu Google Ads: fine print chỉ ghi "preferred channels", anh cần hỏi Analyze cho phép bằng văn bản.
+
+<b>Aymo AI (aymo.ai)</b>
+• Tính năng: Workspace AI cho team gộp GPT, Claude, Gemini, DeepSeek, Grok và hơn 45 model, có chế độ so sánh, dùng chung credit
+• Giá bán: Free $0; Plus $4/tháng (trả năm); Premium $12/tháng (trả năm); Business $25/tháng (trả năm) (chính chủ)
+• Hoa hồng affiliate: 30% một lần (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Partnero: affiliates.aymo.ai)
+• Năm ra đời: 07/2026 (nguồn phụ)
+• Cookie: 90 ngày (chính chủ)
+• Độ đầy đủ: 5/6
+
+Mới lên Product Hunt 26/07/2026 (#5 trong ngày), không cần duyệt, tối đa $90/đơn: https://affiliates.aymo.ai/register. Cookie lệch: trang chính chủ ghi 90 ngày nhưng cấu hình tracking Partnero đặt 7 ngày last-click. Thiếu Google Ads: anh đăng ký rồi đọc Terms trong cổng. Ngưỡng rút không ghi số tiền.
+
+Rủi ro chung: Aymo và Analyze (cả Meku, ChefCall) bật cờ block_signups_from_paid_advertisement của Partnero, click có utm_medium=cpc/ppc sẽ không được ghi nhận referral. Anh tránh gắn utm cpc/ppc vào link affiliate hoặc hỏi chủ chương trình trước khi chạy ads.
+
+Đạt tiêu chí nhưng chỉ lưu lịch sử: <b>Meku (meku.dev)</b> 30% một lần, cookie 7 ngày, cũng bật cờ chặn paid ads; <b>ChefCall (chefcall.ai)</b> $100/$200 một lần, duyệt tay ưu tiên ngành hospitality; <b>Replymer (replymer.com)</b> 30% recurring nhưng site bán Reddit comments/upvotes, dễ bị Google Ads từ chối.
+
+Bị loại (27):
+- Cấm bid brand: Budget Smart AI (kèm cấm trỏ ads vào link affiliate; bản beta ra từ Q2/2024), Sequenzy, WriteRush, HeadshotHQ, Grais, Nilo, FlipMantis, Playflow, Nurturely CRM.
+- Ra mắt trước 2025: GoMarble AI, Jupitrr AI, OryonIQ.
+- Không phải công cụ AI: Ads2AI, SharkSignals, StartupSubmit, DealKeep, Slickful.
+- Chưa xác minh ngày ra mắt: Semly, Book Leopard, UltraContent AI, CNAPS.AI, Mitari, EventsAiLink, Commenter AI.
+- Chưa ra mắt: Credibility Generator.
+- Không có affiliate: LLM Search Console, Citizen Mirror.
+
+Em đã lưu lịch sử 33 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
