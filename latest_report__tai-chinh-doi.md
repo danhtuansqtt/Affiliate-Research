@@ -1,17 +1,36 @@
-Em báo cáo kết quả scout affiliate hôm nay (4/10/2026) của đội agent, chủ đề Tài chính: hôm nay không có chương trình mới nào đạt chuẩn. Em đã rà 20 ứng viên mới (thêm khoảng 18 domain gặp lại đã có trong lịch sử nên bỏ qua) và loại cả 20: không cái nào vừa ra mắt từ 1/1/2025, vừa có affiliate công khai cho marketer, vừa không cấm bid thương hiệu.
+Em báo cáo kết quả scout affiliate hôm nay (5/10/2026) của đội agent, chủ đề Tài chính: em đã rà 45 ứng viên mới, chọn được 2 chương trình và loại 43.
 
-Các hướng đã tìm: Product Hunt/hunted.space, BetaList Finance, PropFirmMap và proptradingvibes (prop firm mới), Affilitizer, Affonso, Referly, getlasso, tin neobroker Đức, sàn dự đoán Mỹ, thông cáo EIN Presswire/PR Newswire, tìm tiếng Việt (Accesstrade, ngân hàng số), LatAm, Trung Đông, Ấn Độ, Đông Nam Á. Một số site trả 403 hoặc lỗi từ sandbox (journalplus.co, eazy-c.com, alternativeto.net, marketplace.affonso.io).
+<b>CoverEdge (coveredge.io)</b>
+• Tính năng: Theo dõi và tìm cơ hội covered call / cash-secured put bằng AI, P&amp;L dạng sổ cái, phân tích roll, cho nhà đầu tư options cá nhân
+• Giá bán: Free; Pro $19.99/tháng; trial Pro 14 ngày không cần thẻ (chính chủ)
+• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; trang partner và ToS không nhắc PPC hay brand bidding)
+• Năm ra đời: 2025 (chính chủ)
+• Cookie: 60 ngày
+• Độ đầy đủ: 5/6
 
-Ứng viên đào sâu và lý do loại:
-- <b>TradeJournal.co (tradejournal.co)</b>: thành lập 2019; affiliate 25–45%, cookie trọn đời nhưng cấm bid tên thương hiệu "TradeJournal".
-- <b>Fanatics Markets (fanaticsmarkets.com)</b>: ra mắt 12/2025 nhưng affiliate Fanatics chỉ cho Sportsbook/Casino, không có Markets, và cấm bid từ khóa Fanatics.
-- <b>FanDuel Predicts (chưa rõ domain)</b>: sản phẩm con của FanDuel (2009), chỉ có affiliate chung FanDuel Partners.
-- <b>Treasury (treasury.sh)</b>, <b>tickerseer (tickerseer.com)</b>, <b>Deep Blue Alpha (deepbluealpha.io)</b>, <b>JournalPlus (journalplus.co)</b>, <b>Joe Broker (joebroker.de)</b>, <b>Eazy-C (eazy-c.com)</b>: sản phẩm mới nhưng không có chương trình affiliate công khai (Joe Broker chỉ có thưởng khách hàng mới).
-- <b>NorthLedger</b>, <b>ScreenerHub</b>, <b>GIGA Broker</b>, <b>TradeJournal AI</b> (đều chưa rõ domain): app mới, không thấy affiliate, không xác minh được website chính thức nên em không đoán domain.
-- <b>MarkeTracer (marketracer1.blogspot.com)</b>: app đã bị gỡ khỏi App Store.
-- <b>UQPAY (uqpay.com)</b>: affiliate chỉ trả khi giới thiệu doanh nghiệp (B2B), công ty lập 2015.
-- <b>OneFunded</b>, <b>Goat Funded Trader</b>, <b>Phidias Prop Firm</b>, <b>Fina Money</b>, <b>Gasti</b>: ra mắt trước 2025.
+Ô thiếu là Google Ads: không có Program Terms riêng, anh hỏi partnerships@coveredge.io trước khi chạy ads. Rủi ro: chương trình Invite-only cho creator, form bắt buộc URL kênh/podcast/newsletter nên người chỉ chạy Google Ads có thể bị từ chối; sản phẩm chủ yếu cho người dùng Mỹ nên chỉ nên target Mỹ. Duyệt thủ công 24-48 giờ, trả ngày 1 hằng tháng qua PayPal/Wise/ACH khi đủ $50, khách được giảm 10% tháng đầu. Ads chịu chính sách dịch vụ tài chính của Google (vài nước phải xác minh), cần kèm disclaimer rủi ro quyền chọn và không hứa lợi nhuận. Traffic không công bố.
 
-Ghi chú cho các lượt sau: từ 21/1/2026, Google chỉ cho quảng cáo sàn dự đoán ở Mỹ khi nhà quảng cáo có chứng nhận (DCM của CFTC hoặc broker thuộc NFA). Affiliate gần như không chạy Google Ads được cho nhóm này, nên em sẽ xếp sàn dự đoán vào diện rủi ro cao.
+<b>ZNORVA AI (znorva.com)</b>
+• Tính năng: Phân tích chart bằng AI cho crypto, forex, vàng, cổ phiếu, hàng hóa: setup vào lệnh, stop, 3 mục tiêu, cho trader cá nhân
+• Giá bán: Starter $19.99/tháng; Pro $29.99/tháng; Elite $44.99/tháng; Oracle $59.99/tháng; thử 1 lượt phân tích miễn phí (chính chủ, giá vùng Mỹ)
+• Hoa hồng affiliate: 33% một lần (lần thanh toán đầu) + 20% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; trang ambassador và ToS không nhắc PPC hay brand bidding)
+• Năm ra đời: 2026 (nguồn phụ: RDAP 04/2026)
+• Cookie: 30 ngày
+• Độ đầy đủ: 5/6
 
-Em đã lưu đủ 20 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md để các lượt sau không xét lại.
+Ô thiếu là Google Ads: chủ chương trình không công bố điều khoản cho ambassador (có thể chỉ hiện sau khi đăng nhập); anh tạo tài khoản, nộp đơn tại znorva.com/affiliate và hỏi thẳng về Google Ads/brand bidding. Rủi ro lớn nhất là chính sách Google Ads: landing có tín hiệu vào lệnh forex/vàng (nhóm forex/CFD cần chứng nhận, trang cung cấp tín hiệu trading sản phẩm đầu cơ phức tạp bị từ chối), crypto chỉ sàn/ví có chứng nhận mới được quảng cáo mua bán; nên trỏ về trang không có tín hiệu, tránh lời mời mua bán crypto và chạy thử ngân sách nhỏ. Giá lệch giữa /affiliate ($14.99–$45.99) và /pricing ($19.99–$59.99 vùng Mỹ), em chốt theo /pricing. Gói là vé 1 tháng không tự gia hạn nên 20% gia hạn chỉ có khi khách tự mua lại. Phải được duyệt, trả hằng tháng qua Whish/USDT, không công bố ngưỡng rút; công ty nhỏ, không công bố founder, ToS theo luật Pháp; cần kèm disclaimer "Not financial advice". Traffic không công bố.
+
+Ứng viên bị loại:
+- <b>GlanWick (glanwick.com)</b>, <b>VaultLeap (vaultleap.com)</b>: cấm bid từ khóa thương hiệu.
+- <b>Era (era.app)</b>, <b>Tothemoon (tothemoon.com)</b>: ra mắt trước 2025.
+- <b>ROIC AI (roic.ai)</b>: không xác minh được năm ra mắt.
+- <b>Morse (morsemoney.com)</b>: chỉ có referral cho người dùng.
+- <b>Cashflowy (cashflowy.ai)</b>, <b>Goldmine AI (goldmineai.io)</b>: không phải tài chính tiêu dùng.
+- <b>PinchStreet (pinchstreet.com)</b>: mới có waitlist.
+- <b>EdgeDojo (edgedojo.com)</b>: affiliate chưa mở.
+- <b>Index-Rank (index-rank.com)</b>: trang chủ lỗi 525, chưa kiểm tra được.
+- 32 ứng viên còn lại (Novig, Evergreen.ai, iPredicta, Vega trader, Quantle, StrikeScan…): không có chương trình affiliate công khai.
+
+Em đã lưu đủ 45 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md để các lượt sau không xét lại.
