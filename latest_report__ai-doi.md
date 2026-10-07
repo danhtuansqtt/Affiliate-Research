@@ -1,44 +1,30 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 06/10/2026: em rà Affonso Marketplace (156 chương trình), Tiny Startups (525 domain) và Uneed, xét 58 ứng viên mới, 4 cái đạt tiêu chí, chọn 3 báo anh dưới đây.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 07/10/2026: em rà Partnero List (315 chương trình), bộ dữ liệu aifilliate (275 chương trình AI) và Dub, xét kỹ 30 ứng viên mới, chọn 2 báo anh dưới đây. Cả 2 đều chưa thấy điều khoản quảng cáo nên Google Ads mới ở mức "mặc định Không Cấm", độ tin cậy thấp.
 
-<b>AdApt (adapt.heynews.co)</b>
-• Tính năng: AI viết lại ad copy nhà tài trợ theo giọng văn newsletter, cho publisher bán sponsorship và media buyer
-• Giá bán: Trial 14 ngày; Starter $12/tháng; Professional $39/tháng; Publisher $99/tháng (chính chủ)
-• Hoa hồng affiliate: 25% recurring 18 tháng (chính chủ)
-• Google Ads: Không Cấm (FAQ chính chủ cho phép paid search và bid từ khóa thương hiệu AdApt/HeyNews)
-• Năm ra đời: 01/2026
-• Cookie: 90 ngày (chính chủ)
-• Độ đầy đủ: 6/6
-
-Đây là sản phẩm riêng của HeyNews LLC, khác heynews.co đã báo ngày 04/10 (khác chức năng, bảng giá, cổng affiliate) nên em không tính trùng. Chương trình duy nhất hôm nay cho bid thẳng tên thương hiệu; tháng đầu 35%, lên 30%/35% khi đạt 25/50 conversion, duyệt tự động, rút tối thiểu $10: https://affiliates.adapt.heynews.co/. Affonso ghi 25% nhưng không ghi thời hạn, em chốt theo trang chính chủ: tối đa 18 tháng.
-
-<b>Nimbica (nimbica.com)</b>
-• Tính năng: AI biên dịch site WordPress thành site tĩnh trên edge CDN đạt PageSpeed 100, cho blogger, agency, shop WooCommerce
-• Giá bán: Trial 14 ngày; Starter $13.99/tháng; Professional $49.99/tháng; Agency $149/tháng (chính chủ)
+<b>RapidNative (rapidnative.com)</b>
+• Tính năng: AI tạo app mobile React Native/Expo từ prompt, PRD, ảnh hoặc bản phác, xuất code, cho founder, dev, agency
+• Giá bán: Free $0/tháng; Starter $20/tháng; Pro $49/tháng; Max $99/tháng; Ultra $199/tháng (chính chủ)
 • Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký)
-• Năm ra đời: 2026
-• Cookie: 90 ngày (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Rewardful: https://rapidnative.getrewardful.com/signup)
+• Năm ra đời: 06/2025
+• Cookie: 60 ngày (chính chủ)
 • Độ đầy đủ: 5/6
 
-Ra mắt 2026, đăng ký miễn phí, trả hằng tháng qua Stripe/PayPal. Thiếu Google Ads: trang công khai và ToS không có câu nào về PPC/brand bidding, anh đăng ký https://www.nimbica.com/affiliate/register rồi đọc điều khoản trong dashboard hoặc email hỏi trước khi bid tên "Nimbica". Ngưỡng rút cũng chỉ xem sau khi đăng ký.
+Sản phẩm của Shaper Studio (founder Sanket Sahu, từng làm NativeBase/gluestack), v2 lên Product Hunt 21/04/2026. Không cần duyệt, rút từ $50 qua PayPal/Wise. Thiếu Google Ads: trang /affiliates và Terms chung của Rewardful không nhắc PPC hay brand bidding, còn trang đăng ký bị Cloudflare chặn từ cloud. Anh đăng ký https://rapidnative.getrewardful.com/signup rồi đọc điều khoản trong cổng Rewardful trước khi chi tiền ads.
 
-<b>Hypello (hypello.com)</b>
-• Tính năng: Tự động hóa DM, comment, story reply Instagram/Facebook kèm AI Agent 24/7, cho doanh nghiệp và creator
-• Giá bán: Free $0; Pro Unlimited $8/tháng; Pro Unlimited trả năm $4.9/tháng (chính chủ)
-• Hoa hồng affiliate: 25% recurring 12 tháng (chính chủ)
+<b>StoryWeaver Studio (storyweavestudio.com)</b>
+• Tính năng: AI tạo sách truyện minh họa có con của người dùng làm nhân vật chính từ ảnh, có bản in bìa cứng, cho phụ huynh và giáo viên
+• Giá bán: Free $0; Starter $5.99/tháng; Storyteller $10.99/tháng; Family $19.99/tháng (chính chủ)
+• Hoa hồng affiliate: 20% một lần (chính chủ)
 • Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 08/2025
-• Cookie: không công bố
-• Độ đầy đủ: 4/6
+• Năm ra đời: 01/2026
+• Cookie: 30 ngày (chính chủ)
+• Độ đầy đủ: 5/6
 
-Rẻ hơn ManyChat, có gói free nên dễ chuyển đổi, nhưng mỗi đơn nhỏ. Hoa hồng trên chính trang /affiliate lệch nhau: headline ghi 25-50%, FAQ ghi 25% năm đầu, blog ghi tới 50% trọn đời; em chốt mức thấp 25% x 12 tháng. Thiếu Google Ads và Cookie (không công bố): anh đăng ký https://app.hypello.com/signup rồi hỏi affiliate manager về PPC, bid tên "Hypello", số ngày cookie và mức % thật. Ngưỡng rút không ghi số tiền.
+Chương trình tự vận hành, cần duyệt 2-3 ngày làm việc, ngưỡng rút $50; trang chỉ ghi "on all referred sales", không nói recurring hay một lần; anh hỏi affiliates@storyweavestudio.com xem 20% có trả cả các kỳ gia hạn không. Thiếu Google Ads: không có điều khoản quảng cáo riêng, chỉ ToS chung ghi "Our trademarks may not be used without prior written consent". Anh email affiliates@storyweavestudio.com hỏi về PPC và bid tên "StoryWeaver" trước khi chi tiền ads.
 
-Đạt tiêu chí nhưng chỉ lưu lịch sử (giới hạn 3): <b>Vibe Coding Plan (vibecoderplanner.com)</b> ra mắt 01/2026, 20% recurring, không có ngưỡng rút, Google Ads và cookie không công bố.
+Bị loại (28):
+- Cấm Google Ads/bid brand (13): Nextify AI, Cobalt, ChildrenBooks (cấm hẳn Google Ads); Productised (bắt đặt negative keyword "productised"); Artistic Birth Chart, Skubi (cấm bid tên thương hiệu, Skubi còn chỉ trả tiền qua ngân hàng Ukraine); QuickVid, Reviewhelden, Vidofy AI, FreeTTS, LucroVox, Pet Pic Portraits, Ideal House.
+- Ra mắt trước 2025 (14): Vidsell (Product Hunt 09/2024, hiện site đang rao bán cả sản phẩm), iCortex, Tamtam, mAIstermind, Real DFY, EveryAnswer, MyCVBot, Popcorn AI, AvisGood, UltimaReviews, Feel Design, Ad Alchemy, ReviewRankerAI, WorkBeaver.
+- Chưa xác minh ngày ra mắt: Hey Santa (domain từ 2007).
 
-Bị loại (54):
-- Cấm bid brand/paid ads (46): PodcastorAI, Cutroom, Fireply, BuyerSpotter, CamClo AI cấm trên trang chính chủ; 41 chương trình còn lại trên Affonso đánh dấu Brand Bidding là traffic bị hạn chế (vd Seedance 2.5, OTORANK, BlogSEO, AdKit, RankYak, PostNitro, ThumbnailCreator).
-- Ra mắt trước 2025: CardGrade (public beta 11/2024 theo thông cáo của chính CardGrade), toflow.ai, Visualizee.ai, ViralSpy.
-- Chưa xác minh ngày ra mắt: Cliptude (domain 10/2025 nhưng founder tự khai thành lập 10/2023; % hoa hồng và cookie nằm sau đăng nhập Lemon Squeezy).
-- Không phải công cụ AI: HeyPolo. Không có affiliate: Scribix. Trùng: Actvox AI Marketing OS (đã loại 30/09).
-
-Em đã lưu lịch sử 58 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
+Em đã lưu lịch sử 30 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
