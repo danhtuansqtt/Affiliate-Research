@@ -445,3 +445,25 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | rendair.ai | Rendair AI | 2026-09-26 | PRODUCT-LINK |
 | mozify.ai | Mozify | 2026-09-26 | PRODUCT-LINK |
 | intellijend.com | intellijend | 2026-09-28 | PRODUCT-LINK |
+| aimfox.com | aimfox.com | 2026-10-08 | AR09770607641242894337 |
+| airhelp.hu | airhelp.hu | 2026-10-08 | AR09770607641242894337 |
+| captivate.fm | captivate.fm | 2026-10-08 | AR09770607641242894337 |
+| commercegurus.com | commercegurus.com | 2026-10-08 | AR09770607641242894337 |
+| ggsel.net | ggsel.net | 2026-10-08 | AR09770607641242894337 |
+| govee.com | govee.com | 2026-10-08 | AR09770607641242894337 |
+| hunter.io | hunter.io | 2026-10-08 | AR09770607641242894337 |
+| hypersku.com | hypersku.com | 2026-10-08 | AR09770607641242894337 |
+| im8health.com | im8health.com | 2026-10-08 | AR09770607641242894337 |
+| incogniton.com | incogniton.com | 2026-10-08 | AR09770607641242894337 |
+| insta360.com | insta360.com | 2026-10-08 | AR09770607641242894337 |
+| iproyal.com | iproyal.com | 2026-10-08 | AR09770607641242894337 |
+| justaddbuoy.com | justaddbuoy.com | 2026-10-08 | AR09770607641242894337 |
+| listingview.io | listingview.io | 2026-10-08 | AR09770607641242894337 |
+| manning.com | manning.com | 2026-10-08 | AR09770607641242894337 |
+| meldaproduction.com | meldaproduction.com | 2026-10-08 | AR09770607641242894337 |
+| musixmatch.com | musixmatch.com | 2026-10-08 | AR09770607641242894337 |
+| ocoya.com | ocoya.com | 2026-10-08 | AR09770607641242894337 |
+| pushengage.com | pushengage.com | 2026-10-08 | AR09770607641242894337 |
+| recruitcrm.io | recruitcrm.io | 2026-10-08 | AR09770607641242894337 |
+| trancy.org | trancy.org | 2026-10-08 | AR09770607641242894337 |
+| udemy.com | udemy.com | 2026-10-08 | AR09770607641242894337 |
