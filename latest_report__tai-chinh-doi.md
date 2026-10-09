@@ -1,30 +1,30 @@
-Em báo cáo kết quả scout affiliate hôm nay (8/10/2026) của đội agent, chủ đề Tài chính. Em đã rà 18 ứng viên (16 domain mới, 2 domain trùng lịch sử) và chọn 1 chương trình là Mubite, nhưng dữ liệu chưa đủ (3/6): còn thiếu Hoa hồng, Cookie và Google Ads. Anh cần đăng ký tài khoản affiliate để đọc các mục này trước khi chi tiền chạy ads.
+Em báo cáo kết quả scout affiliate hôm nay (9/10/2026) của đội agent, chủ đề Tài chính. Em đã rà 27 ứng viên (26 domain mới, 1 domain trùng lịch sử) và chọn 1 chương trình là Chartself. Dữ liệu đạt 4/6: Google Ads chưa xác minh và Cookie không công bố. Mảng prop firm, perp DEX, prediction market và BetaList fintech gần như đã cạn vì các ngày trước đã xét hết, nên hôm nay ít ứng viên đạt.
 
-<b>Mubite (mubite.com)</b>
-• Tính năng: Prop firm crypto cấp tài khoản giả lập tới $200K trên Bybit hoặc Cleo, có 2-Step, 1-Step và Instant Funding, chia lợi nhuận 70–90%
-• Giá bán: Free Trial $0 (7 ngày); 2-Step $249/$419/$729/$1,099 /lần (25K/50K/100K/200K); 1-Step $289/$519/$819/$1,199 /lần; Instant Funding từ $79/lần, 200K $4,999/lần (chính chủ)
-• Hoa hồng affiliate: chỉ xem sau khi đăng ký (dashboard Mubite: https://mubite.com/en/register)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký; T&amp;C chung không nhắc PPC hay brand bidding)
-• Năm ra đời: 06/2025 (chính chủ)
-• Cookie: chỉ xem sau khi đăng ký (dashboard Mubite: https://mubite.com/en/register)
-• Độ đầy đủ: 3/6
+<b>Chartself (chartself.com)</b>
+• Tính năng: Nhật ký giao dịch AI cho trader cá nhân (forex, crypto, cổ phiếu, futures), tự phát hiện revenge trade và vi phạm luật rủi ro
+• Giá bán: Free $0/tháng; Pro $12/tháng; Elite $24/tháng (chính chủ)
+• Hoa hồng affiliate: 25% recurring trọn đời (15% tháng đầu, 20% tháng 2, 25% từ tháng 3) (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; affiliate.html, terms.html và form đăng ký đều không nhắc paid ads hay brand bidding)
+• Năm ra đời: 06/2026 (nguồn phụ: RDAP)
+• Cookie: không công bố
+• Độ đầy đủ: 4/6
 
-Ba ô còn thiếu và việc anh cần làm:
-- Hoa hồng: trang affiliate chỉ ghi "recurring commissions", không ghi %. Anh đăng ký ở link trên (duyệt tự động) rồi xem trong dashboard.
-- Cookie: không công bố, không qua mạng affiliate nên không có số mặc định. Anh xem dashboard hoặc hỏi affiliate manager.
-- Google Ads: không có điều khoản affiliate công khai (/en/affiliate-terms trả 404). Anh xin affiliate manager xác nhận bằng văn bản được bid từ khóa "Mubite" trước khi chạy.
+Hai ô còn thiếu và việc anh cần làm:
+- Google Ads: chương trình tự vận hành, không có điều khoản affiliate riêng, chỉ có câu "Share your link anywhere". Anh email support@chartself.com xin xác nhận bằng văn bản được bid từ khóa "Chartself" trước khi chi ngân sách.
+- Cookie: không công bố số ngày (khách còn có thể nhập mã giới thiệu ở checkout). Anh hỏi trực tiếp Chartself.
 
-Hoa hồng trả đầu mỗi tháng, không công bố ngưỡng rút, phí Reset không tính hoa hồng.
+Em chọn vì sản phẩm mới (domain 06/2026, Product Hunt 04/08/2026), hướng trader cá nhân, có link affiliate ngay trên trang chủ. Đăng ký tại https://app.chartself.com/affiliate-signup và cần được duyệt. Khách qua link được giảm 40% hai tháng đầu. Hoa hồng giữ 8 ngày rồi trả theo thỏa thuận trực tiếp, không công bố ngưỡng rút hay lịch trả. Traffic không công bố.
 
 Rủi ro:
-- Chính sách Google Ads: đây là sản phẩm crypto prop trading, thuộc nhóm dịch vụ tài chính và crypto, nên có thể phải có chứng nhận hoặc bị hạn chế theo quốc gia. Quảng cáo phải ghi rõ tài khoản giả lập, không hứa lợi nhuận.
-- VPN với Bybit: FAQ ghi Bybit không phục vụ Mỹ, Hồng Kông, Singapore, Canada, Pháp, Anh và một số nước khác, và site viết nguyên văn "accessing Bybit may require a VPN in some locations". Anh không nên nhắm các nước này, hoặc chỉ quảng bá nhánh Cleo, để tránh quảng cáo bị xem là hướng dẫn lách hạn chế. T&amp;C cấm Iran, Triều Tiên, Myanmar.
+- Sản phẩm rất nhỏ: Product Hunt chỉ 3 upvote, không công bố nhà sáng lập hay số khách hàng, cách trả hoa hồng chưa rõ ràng.
+- Chính sách Google Ads: đây là công cụ trading (forex, crypto, futures), thuộc nhóm dịch vụ tài chính/giao dịch nên có thể bị hạn chế hoặc cần chứng nhận ở một số nước. Mẫu quảng cáo không được hứa lợi nhuận, nên nói rõ đây là nhật ký và công cụ phân tích.
 
 Ứng viên bị loại:
-- <b>HUMBPROP (humbprop.com)</b>: thiếu căn cứ tin cậy. Site ghi "5000+ Funded Traders / $50M+" dù domain mới đăng ký 01/02/2026. Số LEI in trên site không tồn tại trên GLEIF. Pháp nhân là công ty giáo dục ở Singapore. Hoa hồng có tầng MLM 5%. ToS chỉ là trang giữ chỗ. PropFirmMap xếp hạng D "High Risk".
-- <b>Tradeify Crypto (tradeifycrypto.co)</b>, <b>Fold (foldapp.com)</b>: đã xét trước đây.
-- <b>WarBux (warbuxbtc.com)</b>: không có trang đăng ký hay điều khoản affiliate công khai.
-- 9 ứng viên ra mắt trước 2025 hoặc thuộc công ty lâu đời (FTMO Futures, WSFunded, LifeUp Trading, Phoenix Trader Funding, Funded Futures Network, PropShopTrader, Funded Futures Family, Vest Exchange, Credit Absolute) cùng DraftKings Predictions.
-- <b>FanDuel Predicts</b>, <b>PredicXion</b>: không có affiliate cho marketer. <b>Melee Markets</b>: chỉ chia phí cho người tạo market, không phải mô hình affiliate.
+- <b>Plasma One (plasma.to)</b>: đã xét trước đây (chuyển hướng sang plasma.org).
+- Ra mắt trước 2025: Budget Forward, TradeZella, Zypto, Bothub, CrossTrade, Tradesyncer, Carry, Prospero.ai, RockFlow, Juno, TraderSync, Tradervue, Unusual Whales.
+- Không xác minh được ngày ra mắt: TradersForge, Tradecopia, Sumday.
+- Không đọc được site: TradeStar (app JS), SimplyBudget AI và Truther (lỗi 502).
+- Không có affiliate cho marketer: CalBudget, The Card Caddie, Portfolio Genius, Consistry.
+- Sản phẩm B2B, không phù hợp: Track360, april.
 
-Em đã lưu đủ 18 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md để các lượt sau không xét lại.
+Em đã lưu đủ 27 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md để các lượt sau không xét lại.
