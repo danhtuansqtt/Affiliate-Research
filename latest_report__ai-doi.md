@@ -1,37 +1,49 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 09/10/2026: em quét aifilliate, Dub Partners, BetaList và Open Launch, xét chi tiết 60 ứng viên, 8 cái qua vòng lọc đầu, báo kỹ 2 chương trình dưới đây. Cả 2 đều chưa có điều khoản quảng cáo công khai nên Google Ads chỉ "mặc định Không Cấm", độ tin cậy thấp: anh đọc điều khoản trong dashboard hoặc hỏi chương trình trước khi chi tiền ads nhé.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 10/10/2026: em quét Open Launch, Partnero, aifilliate và WebSearch, xét 47 ứng viên mới, 10 cái qua vòng lọc đầu, báo kỹ 3 chương trình dưới đây.
 
-<b>ProofWrite (proofwrite.io)</b>
-• Tính năng: AI viết bài SEO có dẫn nguồn (review, listicle, so sánh) và fact-check từng câu, cho blogger, marketer và agency
-• Giá bán: Free Pilot (1 bài); Starter $49/tháng; Pro $139/tháng; Business $349/tháng (chính chủ)
-• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (mạng cloud bị chặn — cần đọc lại https://proofwrite.getrewardful.com; /affiliates và /terms không công bố)
-• Năm ra đời: 2025 (BetaList 12/2025)
+<b>NoCodeVista (nocodevista.com)</b>
+• Tính năng: AI tạo website hoàn chỉnh (SEO, form, mobile, CMS, blog) từ prompt rồi chỉnh bằng visual editor, cho SMB và freelancer
+• Giá bán: Starter miễn phí; Pro $9.99/website/tháng hoặc $49/website/năm (chính chủ)
+• Hoa hồng affiliate: 20% recurring trọn đời (chính chủ)
+• Google Ads: Không Cấm ("There are zero restrictions on how or where you share"; chỉ cấm tự giới thiệu)
+• Năm ra đời: 2025 (chính chủ)
+• Cookie: 90 ngày (chính chủ)
+• Độ đầy đủ: 6/6
+
+Không cần duyệt, không trần, trả ngày 1 hằng tháng từ $10 qua Wise/PayPal/ngân hàng, giữ tiền 45 ngày. Câu cho phép là câu chung, không nhắc riêng Google Ads, nên an toàn nhất anh tránh bid đúng tên "NoCodeVista".
+
+<b>Social media studio (so-me.studio)</b>
+• Tính năng: Quản lý mạng xã hội tất cả trong một: lên lịch 20 nền tảng, inbox, analytics, API và MCP cho AI agent, cho creator và agency
+• Giá bán: Trial 7 ngày; Lite $25/tháng; Standard $50/tháng; Advanced $99/tháng (chính chủ)
+• Hoa hồng affiliate: 20% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; đã tra trang affiliate, cổng Lemon Squeezy và điều khoản Lemon Squeezy)
+• Năm ra đời: 04/2025 (domain)
+• Cookie: 60 ngày (chính chủ)
+• Độ đầy đủ: 5/6
+
+Của 7t1.studio, đăng ký qua Lemon Squeezy nhận link ngay, tự trả hằng tháng khi trên $10. Thiếu Google Ads: điều khoản chung Lemon Squeezy yêu cầu duyệt trước mọi hình thức marketing kể cả search, nên anh hỏi chương trình (qua https://so-me-studio.lemonsqueezy.com/affiliates) về PPC và bid tên thương hiệu trước khi chạy.
+
+<b>AgentZap (agentzap.ai)</b>
+• Tính năng: Lễ tân AI nghe máy 24/7, đặt lịch và sàng lọc lead ngay trong cuộc gọi, cho doanh nghiệp dịch vụ (salon, nha khoa, HVAC, luật)
+• Giá bán: Starter $109/tháng; Professional $295/tháng; Business $899/tháng; Enterprise giá riêng; phí setup $499/lần (chính chủ)
+• Hoa hồng affiliate: 15% recurring trọn đời, lên 20% từ 51 khách (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; đã tra trang affiliate và Terms of Service)
+• Năm ra đời: 04/2025 (domain sản phẩm)
 • Cookie: 90 ngày (chính chủ)
 • Độ đầy đủ: 5/6
 
-Chạy trên Rewardful, cần duyệt, trả hằng tháng qua PayPal từ $50. Chính ProofWrite cũng chạy Google Ads (privacy policy có nhắc) nên bid tên "ProofWrite" dễ bị coi là cạnh tranh. Thiếu Google Ads: anh đăng ký https://proofwrite.getrewardful.com/signup rồi đọc điều khoản trong cổng, hoặc hỏi ProofWrite về PPC và bid tên thương hiệu trước khi chạy.
+Giá gói cao nên mỗi khách đáng tiền, trả hằng tháng qua PayPal/chuyển khoản, không ngưỡng rút. Lưu ý trang Press ghi công ty thành lập 2024, còn domain sản phẩm đăng ký 04/2025, em tính theo sản phẩm. Thiếu Google Ads: anh đăng ký tại https://agentzap.ai/partners/referral-affiliate-program rồi hỏi Affiliate Team về PPC và bid tên "AgentZap" trước khi chạy.
 
-<b>SecretSauce (trysecretsauce.ai)</b>
-• Tính năng: AI tạo ảnh, video UGC, quảng cáo và bài mạng xã hội đúng nhận diện thương hiệu, cho brand team, marketer và creator
-• Giá bán: Free 400 credit; Lite $10/tháng; Standard $20/tháng; Pro $50/tháng; Ultra $200/tháng; Team $500/tháng (chính chủ)
-• Hoa hồng affiliate: 25% recurring 12 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; đã tra Creator guidelines, docs, terms)
-• Năm ra đời: 04/2026 (open beta 08/04/2026, nguồn phụ)
-• Cookie: 90 ngày (mặc định Dub)
-• Độ đầy đủ: 5/6
+5 chương trình đạt chuẩn khác em không chọn (đã lưu đủ cột):
+- <b>Dashform (getaiform.com)</b>: 20% chỉ trong 3 tháng, trần $150/khách, điều khoản ads chỉ có trong dashboard.
+- <b>Customermates (customermates.com)</b>: 35% nhưng không công bố thời hạn recurring và cookie.
+- <b>Headshotsly (headshotsly.com)</b>: 40% lợi nhuận trên gói $0.99, gần như không có tiền.
+- <b>rankion.ai</b>: domain 03/2026 nhưng changelog có v2.3 từ 12/2025, chưa rõ ngày ra mắt.
+- <b>Nana Banana (nanaimage.ai)</b>: hub ảnh AI trùng ngách, tên nhái "Nano Banana" của Google, rủi ro nhãn hiệu.
 
-Của SecretSauce Labs (tách từ studio game Mighty Bear), ghi hỗ trợ hơn 8.000 brand; cần duyệt qua Dub, trả qua Stripe/PayPal, ngưỡng rút không công bố; cookie là mặc định Dub, hãng không ghi số riêng. Thiếu Google Ads: anh đăng ký https://partners.dub.co/trysecretsauce rồi xem Resource center trong dashboard, hoặc hỏi SecretSauce trước khi chạy.
+Bị loại (39):
+- Cấm bid tên thương hiệu (7): Superscribe, Kintsu, GoCrazyAI, Sorank, AI Angels, AIGROW, Gambler's Edge.
+- Ra mắt trước 2025 (24): vd Aragon AI, Ideogram, Rask AI, getimg.ai, OpenArt, Palabra.ai.
+- Không có chương trình affiliate công khai (5): Vidzoo, GAAbstract, UniMusic, PlotForge, BoTTube.
+- Chưa xác minh ngày ra mắt (2): Funy AI, automatic.chat. Trùng mẫu site với Nana Banana: Soar2 AI.
 
-<b>Pancake (getpancake.ai)</b> cũng qua vòng lọc nhưng em không báo lại: đây là domain cũ của pancake.ai, em đã báo anh ngày 29/09 (30% recurring trọn đời, thưởng $150/$500, Google Ads vẫn chưa xác minh).
-
-3 chương trình đạt chuẩn khác (đã lưu đủ 6 cột, Google Ads cũng chưa xác minh):
-- <b>Loucid (tryloucid.com)</b>: AI phân tích quảng cáo thắng/thua, 20% recurring trọn đời (mức early affiliate, sẽ giảm), cookie 90 ngày, nhưng ngày ra mắt chỉ suy từ domain 12/2025 và giá chỉ xem sau khi đăng ký.
-- <b>Hypeflare (hypeflare.ai)</b>: agent AI chạy ads, 20% trong 12 tháng, nhưng founder đang rao bán sản phẩm vì hết tiền, rủi ro chương trình đóng.
-- <b>Starchild (iamstarchild.com)</b>: agent AI cá nhân, 20% trong 12 tháng tính cả nạp credit, nhưng site không có trang affiliate riêng, chỉ có lander Dub.
-
-Bị loại (54):
-- Cấm bid tên thương hiệu (7): TradeDNA, Squad, Kai, Perisclaw, Omnia, Floowed, Willow (Squad, Perisclaw, Willow đã có trong lịch sử dưới domain khác).
-- Ra mắt trước 2025 (42): phần lớn từ danh sách aifilliate, vd Bolt.new, GPTZero, Arcads, Meshy, Final Round AI, Crayo.
-- Chưa xác minh ngày ra mắt (2): Sellerview, Emailchaser. Affiliate chưa mở: CommentKeyword. Thiếu dữ liệu: Square9. Không phải công cụ AI: 1Lookup.
-
-Em đã lưu lịch sử 60 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
+Em đã lưu lịch sử 47 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
