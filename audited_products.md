@@ -467,3 +467,4 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | recruitcrm.io | recruitcrm.io | 2026-10-08 | AR09770607641242894337 |
 | trancy.org | trancy.org | 2026-10-08 | AR09770607641242894337 |
 | udemy.com | udemy.com | 2026-10-08 | AR09770607641242894337 |
+| bandit.camp | bandit.camp | 2026-10-11 | PRODUCT-LINK |
