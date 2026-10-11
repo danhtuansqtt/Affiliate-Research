@@ -468,3 +468,107 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | trancy.org | trancy.org | 2026-10-08 | AR09770607641242894337 |
 | udemy.com | udemy.com | 2026-10-08 | AR09770607641242894337 |
 | bandit.camp | bandit.camp | 2026-10-11 | PRODUCT-LINK |
+| coderabbit.ai | CodeRabbit | 2026-10-11 | AR15863532213959131137 |
+| halloweencostumes.com | HalloweenCostumes.com | 2026-10-11 | AR15863532213959131137 |
+| toolsaday.com | Toolsaday | 2026-10-11 | AR15863532213959131137 |
+| getvoices.ai | Voices AI | 2026-10-11 | AR15863532213959131137 |
+| meshy.ai | Meshy | 2026-10-11 | AR15863532213959131137 |
+| coddy.tech | Coddy | 2026-10-11 | AR15863532213959131137 |
+| petpivot.com | PetPivot | 2026-10-11 | AR15863532213959131137 |
+| canvasbeautybrand.com | Canvas Beauty | 2026-10-11 | AR15863532213959131137 |
+| rainbet.com | Rainbet | 2026-10-11 | AR15863532213959131137 |
+| 11six24.com | 11SIX24 | 2026-10-11 | AR15863532213959131137 |
+| wondercraft.ai | Wondercraft | 2026-10-11 | AR15863532213959131137 |
+| fxreplay.com | FX Replay | 2026-10-11 | AR15863532213959131137 |
+| earningshub.com | Earnings Hub | 2026-10-11 | AR15863532213959131137 |
+| tradecopia.com | Tradecopia | 2026-10-11 | AR15863532213959131137 |
+| fnirsi.com | FNIRSI | 2026-10-11 | AR15863532213959131137 |
+| omnisend.com | Omnisend | 2026-10-11 | AR15863532213959131137 |
+| geelark.com | GeeLark | 2026-10-11 | AR15863532213959131137 |
+| c-in2.com | C-IN2 | 2026-10-11 | AR15863532213959131137 |
+| thelotter.com | theLotter | 2026-10-11 | AR15863532213959131137 |
+| metacopier.io | MetaCopier | 2026-10-11 | AR15863532213959131137 |
+| alpinestars.com | Alpinestars | 2026-10-11 | AR15863532213959131137 |
+| watchdives.com | Watchdives | 2026-10-11 | AR15863532213959131137 |
+| tailride.so | Tailride | 2026-10-11 | AR15863532213959131137 |
+| unraid.net | Unraid | 2026-10-11 | AR15863532213959131137 |
+| autel-us.com | Autel US | 2026-10-11 | AR15863532213959131137 |
+| tensorpix.ai | TensorPix | 2026-10-11 | AR15863532213959131137 |
+| tradevision.io | TradeVision | 2026-10-11 | AR15863532213959131137 |
+| artoftheroot.com | Art Of The Root | 2026-10-11 | AR15863532213959131137 |
+| videotour.ai | VideoTour.ai | 2026-10-11 | AR15863532213959131137 |
+| bullflow.io | Bullflow | 2026-10-11 | AR15863532213959131137 |
+| crocoblock.com | Crocoblock | 2026-10-11 | AR15863532213959131137 |
+| qikfoxlabs.com | qikfox | 2026-10-11 | AR15863532213959131137 |
+| heypoket.com | Pocket | 2026-10-11 | AR15863532213959131137 |
+| ocuralife.com | OcuraLife | 2026-10-11 | AR15863532213959131137 |
+| higgsfield.ai | Higgsfield | 2026-10-11 | AR15863532213959131137 |
+| secta.ai | Secta Labs | 2026-10-11 | AR15863532213959131137 |
+| whop.com | Whop | 2026-10-11 | AR15863532213959131137 |
+| nuelink.com | Nuelink | 2026-10-11 | AR15863532213959131137 |
+| licrown.ai | LiCrown | 2026-10-11 | AR15863532213959131137 |
+| eprintershoppe.com | ePrinterShoppe | 2026-10-11 | AR15863532213959131137 |
+| flipsky.net | Flipsky | 2026-10-11 | AR15863532213959131137 |
+| shuffle.us | Shuffle.us | 2026-10-11 | AR15863532213959131137 |
+| silveretteusa.com | Silverette | 2026-10-11 | AR15863532213959131137 |
+| 8xtrade.com | 8xtrade | 2026-10-11 | AR15863532213959131137 |
+| intacct.com | Sage Intacct | 2026-10-11 | AR15863532213959131137 |
+| lemlist.com | lemlist | 2026-10-11 | AR15863532213959131137 |
+| exchange-life.com | Exchange Life | 2026-10-11 | AR15863532213959131137 |
+| radioddity.com | Radioddity | 2026-10-11 | AR15863532213959131137 |
+| printguideexperts.com | Print Guide Experts | 2026-10-11 | AR15863532213959131137 |
+| vermontteddybear.com | Vermont Teddy Bear | 2026-10-11 | AR15863532213959131137 |
+| tradersconnect.com | TradersConnect | 2026-10-11 | AR15863532213959131137 |
+| agent-crm.com | Agent CRM | 2026-10-11 | AR15863532213959131137 |
+| waveapps.com | Wave | 2026-10-11 | AR15863532213959131137 |
+| printlogicpro.com | PrintLogicPro | 2026-10-11 | AR15863532213959131137 |
+| smrtalgo.com | SMRT Algo | 2026-10-11 | AR15863532213959131137 |
+| emax-usa.com | EMAX | 2026-10-11 | AR15863532213959131137 |
+| chartswatcher.com | ChartsWatcher | 2026-10-11 | AR15863532213959131137 |
+| otet.org | Otet Markets | 2026-10-11 | AR15863532213959131137 |
+| wisesheets.io | Wisesheets | 2026-10-11 | AR15863532213959131137 |
+| amazon.com/osight | Osight | 2026-10-11 | AR15863532213959131137 |
+| ouiheberg.com | OuiHeberg | 2026-10-11 | AR15863532213959131137 |
+| fastmail.com | Fastmail | 2026-10-11 | AR15863532213959131137 |
+| pjtrades.org | PJ Trades | 2026-10-11 | AR15863532213959131137 |
+| zenrows.com | ZenRows | 2026-10-11 | AR15863532213959131137 |
+| mmogah.com | MmoGah | 2026-10-11 | AR15863532213959131137 |
+| 945industries.com | 945 Industries | 2026-10-11 | AR15863532213959131137 |
+| mercor.com | Mercor | 2026-10-11 | AR15863532213959131137 |
+| pabbly.com | Pabbly | 2026-10-11 | AR15863532213959131137 |
+| iqcapital.io | IQ Capital | 2026-10-11 | AR15863532213959131137 |
+| gptzero.me | GPTZero | 2026-10-11 | AR15863532213959131137 |
+| betterstack.com | Better Stack | 2026-10-11 | AR15863532213959131137 |
+| playyourcourt.com | PlayYourCourt | 2026-10-11 | AR15863532213959131137 |
+| boderry.com | BODERRY | 2026-10-11 | AR15863532213959131137 |
+| trustedreviews.guide | Trusted Reviews Guide | 2026-10-11 | AR15863532213959131137 |
+| vidalytics.com | Vidalytics | 2026-10-11 | AR15863532213959131137 |
+| clickworker.com | clickworker | 2026-10-11 | AR15863532213959131137 |
+| handoff.ai | Handoff AI | 2026-10-11 | AR15863532213959131137 |
+| forexvps.net | Forex VPS | 2026-10-11 | AR15863532213959131137 |
+| kingbolentool.com | Kingbolen | 2026-10-11 | AR15863532213959131137 |
+| snapwidget.com | SnapWidget | 2026-10-11 | AR15863532213959131137 |
+| getfurlife.com | FurLife | 2026-10-11 | AR15863532213959131137 |
+| beautyhouse.com | Beauty House | 2026-10-11 | AR15863532213959131137 |
+| trezor.io | Trezor | 2026-10-11 | AR15863532213959131137 |
+| eryone3d.com | Eryone | 2026-10-11 | AR15863532213959131137 |
+| godaddy.com | GoDaddy | 2026-10-11 | AR15863532213959131137 |
+| tradezella.com | TradeZella | 2026-10-11 | AR15863532213959131137 |
+| resellersparadise.app | Resellers Paradise | 2026-10-11 | AR15863532213959131137 |
+| asterdex.com | Aster | 2026-10-11 | AR15863532213959131137 |
+| lagence.com | L'AGENCE | 2026-10-11 | AR15863532213959131137 |
+| bestqool.com | BestQool | 2026-10-11 | AR15863532213959131137 |
+| mellowsleep.com | Mellow Sleep | 2026-10-11 | AR15863532213959131137 |
+| theonemusic.com | The ONE Music | 2026-10-11 | AR15863532213959131137 |
+| waterdropfilter.com | Waterdrop | 2026-10-11 | AR15863532213959131137 |
+| babyquip.com | BabyQuip | 2026-10-11 | AR15863532213959131137 |
+| maxoptionstrading.com | Max Options Trading | 2026-10-11 | AR15863532213959131137 |
+| kittyspout.com | KittySpout | 2026-10-11 | AR15863532213959131137 |
+| thelegendstrading.com | Legends Trading | 2026-10-11 | AR15863532213959131137 |
+| gmass.co | GMass | 2026-10-11 | AR15863532213959131137 |
+| baofengradio.com | Baofeng | 2026-10-11 | AR15863532213959131137 |
+| scrimba.com | Scrimba | 2026-10-11 | AR15863532213959131137 |
+| pigeonstore.com | Pigeon | 2026-10-11 | AR15863532213959131137 |
+| olight.com | Olight | 2026-10-11 | AR15863532213959131137 |
+| joylink.io | JoyLink | 2026-10-11 | AR15863532213959131137 |
+| breezy.hr | Breezy HR | 2026-10-11 | AR15863532213959131137 |
