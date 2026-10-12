@@ -1,39 +1,16 @@
-Em gửi anh báo cáo scout affiliate hôm nay (11/10/2026) của đội agent, chủ đề Tài chính. Em đã rà 30 ứng viên mới và chọn 2 chương trình, đều là prop firm.
+Em gửi anh báo cáo scout affiliate hôm nay (12/10/2026) của đội agent, chủ đề Tài chính. Em đã rà 20 ứng viên mới và hôm nay không có chương trình nào đạt.
 
-<b>Dolvero (dolvero.com)</b>
-• Tính năng: Prop firm cấp tài khoản mô phỏng để trade forex/CFD, crypto perps và prediction market, cho trader cá nhân
-• Giá bán: 2-Step $5K $49/lần; 2-Step $25K $199/lần; 2-Step $100K $549/lần; 1-Step $5K $69/lần; Instant $3K $29/lần (chính chủ + nguồn phụ)
-• Hoa hồng affiliate: 10% recurring trọn đời, bậc Bronze, lên tới 20% ở Platinum (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký: partner agreement ký online trong app.dolvero.com)
-• Năm ra đời: 11/2025 (nguồn phụ)
-• Cookie: 30 ngày
-• Độ đầy đủ: 5/6
-Công ty DKZ ở Dubai, giấy phép UAE 2701441. Hoa hồng tính trên mọi đơn, kể cả reset và add-on, rút từ $10 bằng USDT. Em chốt theo trang /affiliates (trang riêng của chương trình, cập nhật 19/09/2026). Bài blog affiliate chính chủ (cập nhật 11/10/2026) vẫn ghi chỉ tính đơn đầu, cần duyệt, rút từ $50. Mâu thuẫn này chưa được giải quyết, nên anh hỏi lại affiliate manager khi đăng ký. Còn thiếu ô Google Ads: anh cần đăng ký tại app.dolvero.com rồi đọc partner agreement, hoặc hỏi affiliate manager. Dấu hiệu rủi ro: bài PR trên investingLive gắn nhãn "Sponsored", RDAP ẩn chủ domain.
+Hướng tìm hôm nay: danh mục Financial Services mới của FlexOffers, Affilitizer/affi.io, Fintel Connect, thẻ stablecoin và neobank crypto, perp DEX mới, vàng số UAE, bảo hiểm Úc, chợ Dub (FinTech). Em có tìm thêm bằng tiếng Việt, tiếng Tây Ban Nha và ở Đông Nam Á nhưng không ra sản phẩm nào ra mắt từ 2025 có affiliate mở cho marketer.
 
-<b>Core Funded (corefunded.io)</b>
-• Tính năng: Prop firm forex, chỉ số, hàng hóa, crypto trên Match-Trader, tài khoản mô phỏng $5K–$500K, cho trader cá nhân
-• Giá bán: 2-Step $10K 95€/lần; 2-Step $50K 305€/lần; 2-Step $100K 495€/lần; 1-Step $100K 735€/lần; Instant $100K 1,195€/lần (chính chủ)
-• Hoa hồng affiliate: 20% recurring trọn đời (chính chủ; cần duyệt)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; ToS mục 17 không nhắc PPC/brand bidding)
-• Năm ra đời: 09/2025 (nguồn phụ)
-• Cookie: 30 ngày
-• Độ đầy đủ: 5/6
-Muốn vào chương trình 20%, anh gửi email tới partnerships@team.corefunded.io. Hoa hồng trả hằng tháng khi số dư đạt $25. Lưu ý: khoản 30€/trader là coupon mua lại, không trả tiền mặt và tối đa 5 người. Còn thiếu ô Google Ads: anh cần đọc điều khoản campaign trên FirstPromoter sau khi được duyệt, hoặc hỏi affiliate manager. Dấu hiệu rủi ro: WHOIS ẩn, địa chỉ New York là hộp thư (#259).
+<b>Rizon (getrizon.com)</b> là ứng viên duy nhất em đào sâu. Đây là app stablecoin non-custodial kèm thẻ Visa (Lithuania), ra mắt 08/2025. Chương trình nhìn rất hấp dẫn: 20% một lần phí thẻ ảo, 15% thẻ vật lý, 25% kỳ đầu + 15% recurring trọn đời gói Gold ($3.99/tháng) và Emerald ($6.99/tháng), cookie 30 ngày, rút từ $50, tham gia là có Level 1 ngay. Nhưng điều khoản affiliate chính chủ (mục 5.1, cập nhật 01/06/2026) cấm "Running paid ads that use our brand name, trademarks, or logo without written permission", tức cấm bid từ khóa thương hiệu nên em loại (rejected_brand_bidding).
 
-Yêu cầu pháp lý và tuân thủ trước khi chạy ads:
-- Google Ads chỉ cho quảng cáo CFD/forex khi nhà quảng cáo là nhà cung cấp có giấy phép. Cả 2 prop firm đều không có giấy phép, nên quảng cáo có rủi ro cao bị từ chối.
-- Anh phải công bố quan hệ affiliate, không được hứa lợi nhuận hay payout, và nên ghi rõ đây là tài khoản mô phỏng.
-- Dolvero: GTC 22.1 cấm dùng tên thương hiệu Dolvero trong quảng cáo nếu chưa có văn bản đồng ý.
-- Dolvero có mảng prediction market. Chính sách Prediction Markets của Google chỉ cho DCM được CFTC cấp phép quảng cáo, nên đừng quảng cáo mảng này.
-- Core Funded: không nhận khách ở 27 vùng (Nga, Iran, Iraq, Venezuela…).
+Ngoài ra Rizon còn mấy rào tuân thủ anh cần biết: Google Ads cấm quảng cáo ví crypto không lưu ký (unhosted software wallets) ở mọi quốc gia, cấm cả landing page affiliate/review về crypto; quảng cáo ví/sàn có lưu ký thì chỉ nhà cung cấp có giấy phép mới xin được chứng nhận. Rizon chỉ mở tài khoản cho người có quốc tịch thuộc 44 nước (có Mỹ, Úc, Singapore, Philippines, Brazil, Mexico...; không có EU, UK, Canada, Ấn Độ, Việt Nam). Điều khoản cũng cấm che link giới thiệu. Domain scout tìm ra ban đầu là rizon.finance nhưng không phân giải DNS, website thật là getrizon.com.
 
-Bị loại:
-- <b>Cashed (cashed.fun)</b>: độ đầy đủ 4/6, rất ít nguồn độc lập. Payout không KYC, chỉ bằng crypto (cờ AML). Prediction market bị Google Ads hạn chế như cờ bạc. Công ty mới lập 06/2026.
-- Funding Predicts: điều khoản cấm Google Ads.
-- Ra mắt trước 2025: Jeff, Stables, QT Funded, Legends Trading (nhóm tín hiệu trading, domain 2020; khác prop firm thelegendstrading.com đã xét 27/09). Vikki trùng lịch sử.
-- Không phải mô hình affiliate: Deduction, AppealAlly, D360.
-- Không có affiliate: PolyFundr, 13F Insight, CertFuel, Euphoria, Kapitol.ai, Kill the Sub, Kollr, TaxLens, TaxMiles, UntilFire.
-- Không xác minh được ngày ra mắt: Fundex, Norte, SignalBoss, Evibe.
-- Site không đọc được: Hypernova, PropMarket, MyFinanceTools, CalcFi.
+Các ứng viên bị loại khác:
+• Ra mắt trước 2025: Myriad (2024), Butter Insurance (2022), Atlas Debt Relief (domain 2014), Extended (đổi tên từ X10), Mesa Homeowners Card (11/2024).
+• Chưa xác minh được ngày ra mắt: MAGNUM (magnum.bank), Settlemate, Range.
+• Không có affiliate cho marketer: StandX (chỉ thưởng điểm), JustGold (API B2B), Ready (thẻ đồng thương hiệu cho cộng đồng).
+• Không phù hợp: UR (đã chuyển sang hạ tầng B2B), CardSnacks (app thiệp điện tử), Decentralized Masters (dấu hiệu lừa đảo, hoa hồng 80%).
+• Lý do khác: Sling Money đã xét ngày 05/10 (nay là Morse); Kash chưa lên mainnet; Nado không công bố hoa hồng; OMNE trang chủ trả 402 và chương trình đã đóng; Exa App không có affiliate.
 
-Em đã lưu đủ 30 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md để các lượt sau không xét lại.
+Em đã lưu 20 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
