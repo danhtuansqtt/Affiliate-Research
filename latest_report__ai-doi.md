@@ -1,36 +1,48 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 11/10/2026: em quét khoảng 155 domain từ 8 nguồn launch (Fazier, Microlaunch, TinyLaunch, Open Launch, LaunchIgniter, BetaList, PeerPush, RSS Product Hunt) và WebSearch, xét kỹ 36 ứng viên mới, chọn 2 chương trình dưới đây.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 12/10/2026: em rà 56 domain từ Product Hunt, BetaList, Affonso Marketplace, revshare.so và aifilliate.com, bỏ 10 domain đã có trong lịch sử, xét 46 ứng viên mới, chọn 3 chương trình dưới đây.
 
-<b>Incredible (incredible.one)</b>
-• Tính năng: Trợ lý AI điều khiển bằng giọng nói trên Mac/Windows, tự click và gõ trong trình duyệt, file và app để làm việc thay người dùng
-• Giá bán: Trial Pro 7 ngày miễn phí; Pro $50/tháng/seat; Max $179/tháng/seat; Ultra $500/tháng/seat (chính chủ)
-• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký FirstPromoter: https://incredible.firstpromoter.com)
-• Năm ra đời: 09/2025 (chính chủ + Product Hunt)
-• Cookie: 60 ngày (mặc định FirstPromoter)
-• Độ đầy đủ: 5/6
+<b>Vidpal (vidpal.ai)</b>
+• Tính năng: AI tạo video ngắn faceless (Reels, Shorts, TikTok) từ chủ đề, script hoặc link, cắt clip, chèn caption và tự lên lịch đăng, cho creator
+• Giá bán: Free $0 (4 credits); Starter $12/tháng; Pro $23/tháng; Business $41/tháng; Enterprise liên hệ (chính chủ)
+• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
+• Google Ads: Không Cấm (Affonso ghi Brand Bidding và Search Engine Marketing là traffic được phép)
+• Năm ra đời: 06/2025
+• Cookie: 30 ngày (chính chủ)
+• Độ đầy đủ: 6/6
 
-Duyệt tự động, trả qua PayPal, ghi nhận bằng mã coupon riêng (khách được giảm 50% tháng đầu), vốn pre-seed khoảng $2.7M. Lưu ý: công ty Norditech AB (Thụy Điển) có từ 2020 với nguyên mẫu STELLA, nhưng sản phẩm mang tên Incredible ra 09/2025 nên em tính theo sản phẩm; cookie hãng không công bố riêng, 60 là mặc định FirstPromoter. Thiếu Google Ads: Program Terms chỉ mở được sau khi đăng nhập, anh đăng ký tại https://incredible.firstpromoter.com rồi đọc mục quảng cáo và bid tên "Incredible" trước khi chạy.
+Đây là chương trình duy nhất hôm nay mạng affiliate ghi rõ cho bid tên. Tự duyệt, trả PayPal hằng tháng từ $50, giữ 30 ngày, khách được giảm 10% trọn đời. Lưu ý: giá trên là giá trả năm đang giảm 50%, và ToS có câu cấm dùng trademark khi chưa xin phép, nên anh có thể hỏi support@vidpal.ai trước khi bid brand.
 
-<b>Agent UI (agentui.ai)</b>
-• Tính năng: AI tạo công cụ nội bộ (dashboard, CRM, quy trình duyệt, cổng khách) từ mô tả, có kỹ sư hỗ trợ, cho đội vận hành và tài chính SMB
-• Giá bán: Free $0/tháng ($0.30/credit); Solo $25/tháng; Builder $49.99/tháng; Team 10 người $99.99/tháng; Team 25 người $249.99/tháng; Enterprise liên hệ (chính chủ)
-• Hoa hồng affiliate: 20% recurring 6 tháng (chính chủ)
+<b>ShviiAI (shvii.ai)</b>
+• Tính năng: AI viết CV chuẩn ATS, thư xin việc, luyện phỏng vấn, tối ưu LinkedIn cho người đi xin việc, trả theo credit
+• Giá bán: Explorer $9/lần; Hunter $19/lần; Sniper $39/lần; Career Pass $69/lần (chính chủ)
+• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
 • Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 08/2025 (nguồn phụ)
-• Cookie: 180 ngày (chính chủ)
+• Năm ra đời: 11/2025
+• Cookie: 90 ngày (chính chủ)
 • Độ đầy đủ: 5/6
 
-Duyệt hồ sơ, trả PayPal hằng tháng từ $50, cookie dài 6 tháng. Rủi ro tuổi: ngày ra mắt 26/08/2025 chỉ có thông cáo báo chí trả tiền (ABNewswire), domain đã có chứng chỉ từ 11/2024 (trang giữ chỗ), hạ tầng sản phẩm từ 01/2025, nên sát mốc 1/1/2025. Thiếu Google Ads: đã tra trang affiliate, Terms và form đăng ký mà không có điều khoản quảng cáo, anh hỏi partners@agentui.ai về PPC và bid tên "Agent UI" trước khi chạy.
+Duyệt hồ sơ qua email, trả hằng tháng. Listing revshare.so của hãng ghi khác (25%, 12 tháng, cookie 30 ngày), em chốt theo trang chính chủ. Thiếu Google Ads: anh nộp đơn tại https://shvii.ai/affiliate rồi hỏi về PPC và bid tên "ShviiAI" trong email duyệt trước khi chạy.
 
-Chuyển sang loại vì cấm bid tên (2):
-- <b>Swokei (swokei.com)</b>: 30% trọn đời, nhưng Help Center cấm bid tên "Swokei" và cấm ads trỏ thẳng về site bằng link affiliate.
-- <b>RedShip (redship.io)</b>: 30% trọn đời, cookie 60 ngày, nhưng trang chương trình trên Affonso xếp Brand Bidding vào mục bị hạn chế.
+<b>Massblogger (massblogger.com)</b>
+• Tính năng: Tự động hóa SEO: AI viết bài, programmatic SEO, nghiên cứu từ khóa, internal link, đăng lên WordPress
+• Giá bán: Free $0 (20 credits/tháng); Discovery $59/tháng; Pro $99/tháng (chính chủ)
+• Hoa hồng affiliate: 35% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
+• Năm ra đời: 07/2025
+• Cookie: 60 ngày (chính chủ)
+• Độ đầy đủ: 5/6
 
-Bị loại khác (32):
-- Cấm bid tên (3): Applystead, Autonomyware, ZXN Studio.
-- Không có chương trình affiliate công khai (18): vd Renoise AI, EasyVeo, UnrealUGC, SendHeron, DreamAgent, Rimplo; PitchMonster chỉ thỏa thuận reseller riêng (1).
-- Ra mắt trước 2025 (5): E-Warmup, Quickchat AI, Bika.ai, YourGPT, Hunch.
-- Không phải công cụ AI (4): Screen Movie, MarketSync, ScrollToll, Press Whisper.
-- Chưa mở cửa (1): Skreno.
+Duyệt tức thì qua Revshare, trả PayPal/Wise. Rủi ro tuổi: domain được đăng ký lại 23/01/2026, mốc chứng chỉ 07/2025 có thể thuộc chủ cũ, nhưng cả hai mốc đều sau 1/1/2025. Thiếu Google Ads: trang "Affiliate terms" không có quy định, anh hỏi hãng về PPC và bid tên "Massblogger" trước khi chạy.
 
-Em đã lưu lịch sử 36 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
+Đạt tiêu chí nhưng chưa đưa vào hôm nay (ưu tiên thấp hơn, Google Ads chưa xác minh): <b>Social Undertone</b> (30% 5 lần đầu, cookie 60), <b>MagicGEO</b> (từ $8/khách/tháng trọn đời tùy gói, cookie 30), <b>Supablog</b> (20% 6 tháng, cookie 30).
+
+Chuyển sang loại vì cấm bid tên: <b>HawtAds (hawtads.com)</b>, blog chương trình ghi "Please don't bid on "HawtAds" branded keywords in Google Ads".
+
+Bị loại khác (39):
+- Cấm bid tên (8): Phrasora, MIDI Agent, Gadit, PopResume, tlooto, Kynzo, ByteSites, StoryTool.
+- Ra mắt trước 2025 (7): Fluentos, GenPage, Outrank, Acoust, OnModel, Askie, Video to Prompt.
+- Chưa xác minh ngày ra mắt (3): Answrr, Cyphr, PureBox.
+- Không phải công cụ AI (3): Contractiv8, Deepsel, Veilr.
+- Ngách trùng (2): SynapseAD AI, Anensemble. Thiếu dữ liệu (1): DermaLens AI.
+- Không có chương trình affiliate công khai (15): vd Attaché, Cashd, Spira, Onepin, Leakly, CitePrism.
+
+Em đã lưu lịch sử 46 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
