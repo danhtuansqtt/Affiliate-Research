@@ -1,48 +1,46 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 12/10/2026: em rà 56 domain từ Product Hunt, BetaList, Affonso Marketplace, revshare.so và aifilliate.com, bỏ 10 domain đã có trong lịch sử, xét 46 ứng viên mới, chọn 3 chương trình dưới đây.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 13/10/2026: em rà khoảng 85 domain từ affiliate.watch, Open Launch, Fazier, TinyLaunch, OpenHunts, Dang.ai, Microlaunch và RSS Product Hunt, bỏ 28 domain đã có trong lịch sử, xét 57 ứng viên mới, chọn 3 chương trình dưới đây.
 
-<b>Vidpal (vidpal.ai)</b>
-• Tính năng: AI tạo video ngắn faceless (Reels, Shorts, TikTok) từ chủ đề, script hoặc link, cắt clip, chèn caption và tự lên lịch đăng, cho creator
-• Giá bán: Free $0 (4 credits); Starter $12/tháng; Pro $23/tháng; Business $41/tháng; Enterprise liên hệ (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
-• Google Ads: Không Cấm (Affonso ghi Brand Bidding và Search Engine Marketing là traffic được phép)
-• Năm ra đời: 06/2025
-• Cookie: 30 ngày (chính chủ)
+<b>OpenClaw.Direct (openclaw.direct)</b>
+• Tính năng: Hosting được quản lý cho trợ lý AI mã nguồn mở OpenClaw, mỗi người một instance riêng, dùng qua Telegram/WhatsApp/Slack, cho cá nhân và team nhỏ
+• Giá bán: Basic $19/tháng; Advanced $29/tháng; Turbo $59/tháng (chính chủ)
+• Hoa hồng affiliate: 35% recurring 12 tháng (chính chủ)
+• Google Ads: Không Cấm (Program Terms không cấm bid từ khóa, chỉ cấm dùng tên OpenClaw trong tiêu đề quảng cáo ngụ ý kênh chính thức)
+• Năm ra đời: 02/2026
+• Cookie: 90 ngày (chính chủ)
 • Độ đầy đủ: 6/6
 
-Đây là chương trình duy nhất hôm nay mạng affiliate ghi rõ cho bid tên. Tự duyệt, trả PayPal hằng tháng từ $50, giữ 30 ngày, khách được giảm 10% trọn đời. Lưu ý: giá trên là giá trả năm đang giảm 50%, và ToS có câu cấm dùng trademark khi chưa xin phép, nên anh có thể hỏi support@vidpal.ai trước khi bid brand.
+Hoa hồng cao nhất hôm nay, điều khoản có nhắc quảng cáo trả phí mà không cấm (độ tin cậy trung bình). Duyệt tay trong 2 ngày (form hỏi kênh, anh ghi rõ Google Ads), giữ tiền 90 ngày, trả ngày 15 qua PayPal/Wise từ $50. Tiêu đề ads phải ghi rõ là review. Traffic rất thấp.
 
-<b>ShviiAI (shvii.ai)</b>
-• Tính năng: AI viết CV chuẩn ATS, thư xin việc, luyện phỏng vấn, tối ưu LinkedIn cho người đi xin việc, trả theo credit
-• Giá bán: Explorer $9/lần; Hunter $19/lần; Sniper $39/lần; Career Pass $69/lần (chính chủ)
+<b>Gojiberry AI (gojiberry.ai)</b>
+• Tính năng: AI agent tìm lead B2B có tín hiệu mua, chấm điểm rồi tự chạy outreach email và mạng xã hội, cho founder và team sales
+• Giá bán: Free trial; PRO $99/tháng; CUSTOM liên hệ (chính chủ)
 • Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
 • Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 11/2025
-• Cookie: 90 ngày (chính chủ)
+• Năm ra đời: 2025
+• Cookie: 30 ngày (chính chủ)
 • Độ đầy đủ: 5/6
 
-Duyệt hồ sơ qua email, trả hằng tháng. Listing revshare.so của hãng ghi khác (25%, 12 tháng, cookie 30 ngày), em chốt theo trang chính chủ. Thiếu Google Ads: anh nộp đơn tại https://shvii.ai/affiliate rồi hỏi về PPC và bid tên "ShviiAI" trong email duyệt trước khi chạy.
+Công ty YC, cổng Tolt, trả PayPal/Wire hằng tháng từ $50. Thiếu Google Ads (độ tin cậy thấp): anh tự kiểm tra Notion "Affiliate Resources Hub" và điều khoản trong cổng Tolt sau khi đăng ký, trước khi chi tiền ads.
 
-<b>Massblogger (massblogger.com)</b>
-• Tính năng: Tự động hóa SEO: AI viết bài, programmatic SEO, nghiên cứu từ khóa, internal link, đăng lên WordPress
-• Giá bán: Free $0 (20 credits/tháng); Discovery $59/tháng; Pro $99/tháng (chính chủ)
-• Hoa hồng affiliate: 35% recurring trọn đời (chính chủ)
+<b>Frontrunners (frontrunners.io)</b>
+• Tính năng: AI agent tìm hiring manager ở công ty sắp tuyển và tự gửi email cá nhân hóa kèm CV, cho người tìm việc
+• Giá bán: Trial 7 ngày $5.90; Starter $19.90/tháng; Success $29.80/tháng; Victory $49.60/tháng (chính chủ)
+• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
 • Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 07/2025
-• Cookie: 60 ngày (chính chủ)
+• Năm ra đời: 08/2026 (nguồn phụ)
+• Cookie: 30 ngày (affiliate.watch, nguồn phụ)
 • Độ đầy đủ: 5/6
 
-Duyệt tức thì qua Revshare, trả PayPal/Wise. Rủi ro tuổi: domain được đăng ký lại 23/01/2026, mốc chứng chỉ 07/2025 có thể thuộc chủ cũ, nhưng cả hai mốc đều sau 1/1/2025. Thiếu Google Ads: trang "Affiliate terms" không có quy định, anh hỏi hãng về PPC và bid tên "Massblogger" trước khi chạy.
+Sản phẩm mới nhất, cổng Rewardful, trả mỗi 30 ngày qua PayPal. Thiếu Google Ads (độ tin cậy thấp): anh tự kiểm tra trong cổng Rewardful hoặc hỏi hãng về PPC và bid tên "Frontrunners" trước khi chạy.
 
-Đạt tiêu chí nhưng chưa đưa vào hôm nay (ưu tiên thấp hơn, Google Ads chưa xác minh): <b>Social Undertone</b> (30% 5 lần đầu, cookie 60), <b>MagicGEO</b> (từ $8/khách/tháng trọn đời tùy gói, cookie 30), <b>Supablog</b> (20% 6 tháng, cookie 30).
+Đạt tiêu chí nhưng chưa đưa vào hôm nay: <b>MeltFlex AI</b> (30% recurring, thời hạn không công bố, cookie 90), <b>ClawHosters</b> (15% 12 tháng, cookie 60).
 
-Chuyển sang loại vì cấm bid tên: <b>HawtAds (hawtads.com)</b>, blog chương trình ghi "Please don't bid on "HawtAds" branded keywords in Google Ads".
+Chuyển sang loại vì cấm bid tên: <b>cloro (cloro.dev)</b>, terms 5.4 cấm bid "cloro" kể cả broad match và cấm ads trỏ thẳng về site; <b>SnapDub (snapdub.ai)</b>, terms PromoteKit cấm bid brand khi hãng chưa cho phép. <b>Pixo (pixo.video)</b> chỉ đủ 3/6 (không có cookie, thời hạn hoa hồng, đăng ký qua email).
 
-Bị loại khác (39):
-- Cấm bid tên (8): Phrasora, MIDI Agent, Gadit, PopResume, tlooto, Kynzo, ByteSites, StoryTool.
-- Ra mắt trước 2025 (7): Fluentos, GenPage, Outrank, Acoust, OnModel, Askie, Video to Prompt.
-- Chưa xác minh ngày ra mắt (3): Answrr, Cyphr, PureBox.
-- Không phải công cụ AI (3): Contractiv8, Deepsel, Veilr.
-- Ngách trùng (2): SynapseAD AI, Anensemble. Thiếu dữ liệu (1): DermaLens AI.
-- Không có chương trình affiliate công khai (15): vd Attaché, Cashd, Spira, Onepin, Leakly, CitePrism.
+Bị loại khác (49):
+- Cấm bid tên (8): AutomatedSEO, Lynote, Subclip, FaceJam, Stella, ImageConvertIt, Solvera, Bearconnect.
+- Ra mắt trước 2025 hoặc chưa xác minh (7): Katalist, Embeddable, LiftmyCV, Tagshop AI, Seele AI, Mujo AI, Fotto AI.
+- Site chặn/trống (4): Gobii, Ringzy, Remindme, DropPop. Khác (5): Surfeo, UnleashX, Elevale, Veline AI, Superapp (trùng).
+- Không có affiliate công khai (25).
 
-Em đã lưu lịch sử 46 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
+Em đã lưu lịch sử 57 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
