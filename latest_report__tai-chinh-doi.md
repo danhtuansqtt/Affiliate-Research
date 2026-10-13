@@ -1,16 +1,21 @@
-Em gửi anh báo cáo scout affiliate hôm nay (12/10/2026) của đội agent, chủ đề Tài chính. Em đã rà 20 ứng viên mới và hôm nay không có chương trình nào đạt.
+Em gửi anh báo cáo scout affiliate hôm nay (13/10/2026) của đội agent, chủ đề Tài chính. Em đã rà 16 ứng viên mới và hôm nay không có chương trình nào đạt.
 
-Hướng tìm hôm nay: danh mục Financial Services mới của FlexOffers, Affilitizer/affi.io, Fintel Connect, thẻ stablecoin và neobank crypto, perp DEX mới, vàng số UAE, bảo hiểm Úc, chợ Dub (FinTech). Em có tìm thêm bằng tiếng Việt, tiếng Tây Ban Nha và ở Đông Nam Á nhưng không ra sản phẩm nào ra mắt từ 2025 có affiliate mở cho marketer.
+Hướng tìm hôm nay: khoảng 45 truy vấn bằng tiếng Anh, Việt, Tây Ban Nha, trải Mỹ, Mỹ Latinh, Trung Đông, Đông Nam Á, Việt Nam, Canada, Anh; nguồn gồm FlexOffers (Newest Advertisers, Financial Services), BetaList, Product Hunt, TrustMRR, affililist, tin gọi vốn. BetaList và FlexOffers gần như đã được các lượt trước xét hết (khoảng 50 domain gặp lại đã có trong lịch sử). Sandbox bị proxy chặn khi gọi domain sản phẩm nên script tìm trang affiliate không chạy được, em đọc bằng WebFetch và RDAP.
 
-<b>Rizon (getrizon.com)</b> là ứng viên duy nhất em đào sâu. Đây là app stablecoin non-custodial kèm thẻ Visa (Lithuania), ra mắt 08/2025. Chương trình nhìn rất hấp dẫn: 20% một lần phí thẻ ảo, 15% thẻ vật lý, 25% kỳ đầu + 15% recurring trọn đời gói Gold ($3.99/tháng) và Emerald ($6.99/tháng), cookie 30 ngày, rút từ $50, tham gia là có Level 1 ngay. Nhưng điều khoản affiliate chính chủ (mục 5.1, cập nhật 01/06/2026) cấm "Running paid ads that use our brand name, trademarks, or logo without written permission", tức cấm bid từ khóa thương hiệu nên em loại (rejected_brand_bidding).
-
-Ngoài ra Rizon còn mấy rào tuân thủ anh cần biết: Google Ads cấm quảng cáo ví crypto không lưu ký (unhosted software wallets) ở mọi quốc gia, cấm cả landing page affiliate/review về crypto; quảng cáo ví/sàn có lưu ký thì chỉ nhà cung cấp có giấy phép mới xin được chứng nhận. Rizon chỉ mở tài khoản cho người có quốc tịch thuộc 44 nước (có Mỹ, Úc, Singapore, Philippines, Brazil, Mexico...; không có EU, UK, Canada, Ấn Độ, Việt Nam). Điều khoản cũng cấm che link giới thiệu. Domain scout tìm ra ban đầu là rizon.finance nhưng không phân giải DNS, website thật là getrizon.com.
+Các ứng viên đào sâu:
+• <b>TraderInsight (traderinsight.pro)</b>: nhật ký giao dịch, 20% recurring, cookie 60 ngày, nhưng domain đăng ký 10/2023 và trang affiliate ghi "do not run paid ads on our keywords or domains", tức cấm bid thương hiệu.
+• <b>Payday Loan Plus (paydayloanplus.ca)</b>: vay payday ở British Columbia, $17/khoản vay đầu tiên. Kỳ hạn 3–62 ngày nên vướng chính sách Google Ads cấm quảng cáo khoản vay cá nhân phải trả hết trong ≤60 ngày; mọi quảng cáo còn phải kèm công bố giấy phép Consumer Protection BC mà trang chủ không ghi số giấy phép.
+• <b>Halvestor (halvestor.com)</b>: app giao dịch giấy cổ phiếu halal, ra 07/2025, nhưng trang chủ trả 404 và không có affiliate.
+• <b>Econic (econic.pro)</b>: AI agent cho lệnh FX/cổ phiếu, còn beta riêng, chưa có affiliate.
 
 Các ứng viên bị loại khác:
-• Ra mắt trước 2025: Myriad (2024), Butter Insurance (2022), Atlas Debt Relief (domain 2014), Extended (đổi tên từ X10), Mesa Homeowners Card (11/2024).
-• Chưa xác minh được ngày ra mắt: MAGNUM (magnum.bank), Settlemate, Range.
-• Không có affiliate cho marketer: StandX (chỉ thưởng điểm), JustGold (API B2B), Ready (thẻ đồng thương hiệu cho cộng đồng).
-• Không phù hợp: UR (đã chuyển sang hạ tầng B2B), CardSnacks (app thiệp điện tử), Decentralized Masters (dấu hiệu lừa đảo, hoa hồng 80%).
-• Lý do khác: Sling Money đã xét ngày 05/10 (nay là Morse); Kash chưa lên mainnet; Nado không công bố hoa hồng; OMNE trang chủ trả 402 và chương trình đã đóng; Exa App không có affiliate.
+• Ra mắt trước 2025: Lendela (2016), MyUSA Bank Accounts (2021, trang lead-gen), Heron Copier (2023).
+• Chưa xác minh ngày ra mắt: Amal Invest (domain 2021, chỉ có referral cho người dùng).
+• Không đủ bằng chứng: Stocksift (domain không phân giải DNS).
+• Không phù hợp: Decentralized Masters/Native Markets (decentralized-m.com, dấu hiệu lừa đảo, cùng nhà quảng cáo với d-mstrs.com), MyData Security (an ninh mạng), BreadSync (công cụ cá cược thể thao).
+• Không có affiliate: Bloxley (chưa xác nhận ra mắt), Hunter Vault (app offline, không có website).
+• Chưa ra mắt: OpenReserve Bank (mới được OCC chấp thuận có điều kiện 03/09/2026), GRO (Doha, chưa có website).
 
-Em đã lưu 20 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
+Lưu ý tuân thủ cho các lượt sau: khoản vay ngắn hạn phải kiểm kỳ hạn so với ngưỡng 60 ngày của Google Ads và giấy phép cho vay theo từng tỉnh/bang; nếu xét broker CFD thì CySEC đang siết quản lý IB từ 01/08/2026, hạn nộp hồ sơ thẩm định từng IB 31/10/2026 (nguồn phụ Track360, em chưa đối chiếu văn bản CySEC).
+
+Em đã lưu 16 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
