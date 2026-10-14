@@ -1,46 +1,23 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 13/10/2026: em rà khoảng 85 domain từ affiliate.watch, Open Launch, Fazier, TinyLaunch, OpenHunts, Dang.ai, Microlaunch và RSS Product Hunt, bỏ 28 domain đã có trong lịch sử, xét 57 ứng viên mới, chọn 3 chương trình dưới đây.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 14/10/2026: em tìm qua Dub, Tolt, Rewardful, PromoteKit, Affonso, Reditus và Product Hunt Daily, bỏ 33 domain đã có trong lịch sử, xét 30 ứng viên mới, chọn 1 chương trình dưới đây.
 
-<b>OpenClaw.Direct (openclaw.direct)</b>
-• Tính năng: Hosting được quản lý cho trợ lý AI mã nguồn mở OpenClaw, mỗi người một instance riêng, dùng qua Telegram/WhatsApp/Slack, cho cá nhân và team nhỏ
-• Giá bán: Basic $19/tháng; Advanced $29/tháng; Turbo $59/tháng (chính chủ)
-• Hoa hồng affiliate: 35% recurring 12 tháng (chính chủ)
-• Google Ads: Không Cấm (Program Terms không cấm bid từ khóa, chỉ cấm dùng tên OpenClaw trong tiêu đề quảng cáo ngụ ý kênh chính thức)
-• Năm ra đời: 02/2026
-• Cookie: 90 ngày (chính chủ)
-• Độ đầy đủ: 6/6
-
-Hoa hồng cao nhất hôm nay, điều khoản có nhắc quảng cáo trả phí mà không cấm (độ tin cậy trung bình). Duyệt tay trong 2 ngày (form hỏi kênh, anh ghi rõ Google Ads), giữ tiền 90 ngày, trả ngày 15 qua PayPal/Wise từ $50. Tiêu đề ads phải ghi rõ là review. Traffic rất thấp.
-
-<b>Gojiberry AI (gojiberry.ai)</b>
-• Tính năng: AI agent tìm lead B2B có tín hiệu mua, chấm điểm rồi tự chạy outreach email và mạng xã hội, cho founder và team sales
-• Giá bán: Free trial; PRO $99/tháng; CUSTOM liên hệ (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 2025
-• Cookie: 30 ngày (chính chủ)
+<b>Ghosts (ghosts.app)</b>
+• Tính năng: AI viết và tối ưu bài SEO theo cấu trúc trang đang xếp hạng, có fact-check, cho agency, đội nội dung, founder
+• Giá bán: Individual $29/tháng (trial 7 ngày); Studio $79/tháng; Growth Site $129/tháng + $499 phí dựng; Pro Site $249/tháng + $499 phí dựng (chính chủ)
+• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Rewardful)
+• Năm ra đời: 2026 (chính chủ)
+• Cookie: 60 ngày (mặc định Rewardful)
 • Độ đầy đủ: 5/6
 
-Công ty YC, cổng Tolt, trả PayPal/Wire hằng tháng từ $50. Thiếu Google Ads (độ tin cậy thấp): anh tự kiểm tra Notion "Affiliate Resources Hub" và điều khoản trong cổng Tolt sau khi đăng ký, trước khi chi tiền ads.
+Sản phẩm rất mới (LinkedIn ghi Founded 2026, ToS hiệu lực 03/07/2026), cổng Rewardful, trả tự động qua PayPal/Wise khi số dư được duyệt, ngưỡng rút không công bố. Thiếu Google Ads (độ tin cậy thấp): trang /affiliates, trang đăng ký Rewardful và ToS ghosts.app không có điều khoản về PPC hay bid tên; nếu có Program Terms thì chỉ xem được trong dashboard sau khi đăng ký. Anh đăng ký tại ghosts-app.getrewardful.com/signup rồi xem (hoặc hỏi greg@ghosts.app) về PPC và bid tên "Ghosts" trước khi chi tiền ads. Cookie là mặc định Rewardful, hãng có thể đổi.
 
-<b>Frontrunners (frontrunners.io)</b>
-• Tính năng: AI agent tìm hiring manager ở công ty sắp tuyển và tự gửi email cá nhân hóa kèm CV, cho người tìm việc
-• Giá bán: Trial 7 ngày $5.90; Starter $19.90/tháng; Success $29.80/tháng; Victory $49.60/tháng (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 08/2026 (nguồn phụ)
-• Cookie: 30 ngày (affiliate.watch, nguồn phụ)
-• Độ đầy đủ: 5/6
+Chuyển sang loại vì cấm bid tên: <b>SEOPro AI (seoproai.co)</b>, Affiliate Terms của PromoteKit cấm bid từ khóa thương hiệu của merchant khi chưa được cho phép, hãng không công bố cho phép; thêm rủi ro chính sách vì listing mô tả kỹ thuật "Hidden AI Instructions".
 
-Sản phẩm mới nhất, cổng Rewardful, trả mỗi 30 ngày qua PayPal. Thiếu Google Ads (độ tin cậy thấp): anh tự kiểm tra trong cổng Rewardful hoặc hỏi hãng về PPC và bid tên "Frontrunners" trước khi chạy.
+Bị loại khác (28):
+- Cấm bid tên (1): Kromio.
+- Rủi ro chính sách/trademark (4): Interview Coder (gian lận phỏng vấn), Tome App AI và Gamma App (dùng thương hiệu người khác), Shemale AI (nội dung người lớn).
+- Ra mắt trước 2025 (16): Support AI, Verve AI, ExcelMaster AI, Aqua Voice, LearningStudioAI, APOB AI, MWM AI, Yomu AI, Winston AI, Originality.ai, Solo AI, Tutor AI, MyArchitectAI, AILYZE, WordRocket AI, BetaHub.
+- Không có hoặc đã đóng chương trình (3): Hyper AI, Zovoro AI, Aspirely AI.
+- Khác (4): JackHamr (chưa ra mắt), Vulm AI (site bị chặn), Response AI (không xác minh ngày ra mắt), ClearSERP (không phải công cụ AI).
 
-Đạt tiêu chí nhưng chưa đưa vào hôm nay: <b>MeltFlex AI</b> (30% recurring, thời hạn không công bố, cookie 90), <b>ClawHosters</b> (15% 12 tháng, cookie 60).
-
-Chuyển sang loại vì cấm bid tên: <b>cloro (cloro.dev)</b>, terms 5.4 cấm bid "cloro" kể cả broad match và cấm ads trỏ thẳng về site; <b>SnapDub (snapdub.ai)</b>, terms PromoteKit cấm bid brand khi hãng chưa cho phép. <b>Pixo (pixo.video)</b> chỉ đủ 3/6 (không có cookie, thời hạn hoa hồng, đăng ký qua email).
-
-Bị loại khác (49):
-- Cấm bid tên (8): AutomatedSEO, Lynote, Subclip, FaceJam, Stella, ImageConvertIt, Solvera, Bearconnect.
-- Ra mắt trước 2025 hoặc chưa xác minh (7): Katalist, Embeddable, LiftmyCV, Tagshop AI, Seele AI, Mujo AI, Fotto AI.
-- Site chặn/trống (4): Gobii, Ringzy, Remindme, DropPop. Khác (5): Surfeo, UnleashX, Elevale, Veline AI, Superapp (trùng).
-- Không có affiliate công khai (25).
-
-Em đã lưu lịch sử 57 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
+Em đã lưu lịch sử 30 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
