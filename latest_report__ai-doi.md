@@ -1,23 +1,20 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 14/10/2026: em tìm qua Dub, Tolt, Rewardful, PromoteKit, Affonso, Reditus và Product Hunt Daily, bỏ 33 domain đã có trong lịch sử, xét 30 ứng viên mới, chọn 1 chương trình dưới đây.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 15/10/2026: em quét thư mục Affonso, Open Launch, Tiny Startups và WebSearch, bỏ các domain đã có trong lịch sử, xét 19 ứng viên mới, chọn 1 chương trình dưới đây.
 
-<b>Ghosts (ghosts.app)</b>
-• Tính năng: AI viết và tối ưu bài SEO theo cấu trúc trang đang xếp hạng, có fact-check, cho agency, đội nội dung, founder
-• Giá bán: Individual $29/tháng (trial 7 ngày); Studio $79/tháng; Growth Site $129/tháng + $499 phí dựng; Pro Site $249/tháng + $499 phí dựng (chính chủ)
-• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Rewardful)
-• Năm ra đời: 2026 (chính chủ)
-• Cookie: 60 ngày (mặc định Rewardful)
+<b>Zoltra (zoltra.io)</b>
+• Tính năng: AI agent quét lỗ hổng app viết bằng AI, mở PR sửa lỗi trên GitHub và kiểm tra lại bản đang chạy, cho người làm app bằng AI coding
+• Giá bán: Trial 7 ngày (cần thẻ); Gói duy nhất $80/tháng (3 user); thêm $20/tháng mỗi user (chính chủ)
+• Hoa hồng affiliate: 30% recurring 12 tháng + $50/khách mới (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
+• Năm ra đời: 08/2026 (chính chủ)
+• Cookie: 90 ngày (chính chủ)
 • Độ đầy đủ: 5/6
 
-Sản phẩm rất mới (LinkedIn ghi Founded 2026, ToS hiệu lực 03/07/2026), cổng Rewardful, trả tự động qua PayPal/Wise khi số dư được duyệt, ngưỡng rút không công bố. Thiếu Google Ads (độ tin cậy thấp): trang /affiliates, trang đăng ký Rewardful và ToS ghosts.app không có điều khoản về PPC hay bid tên; nếu có Program Terms thì chỉ xem được trong dashboard sau khi đăng ký. Anh đăng ký tại ghosts-app.getrewardful.com/signup rồi xem (hoặc hỏi greg@ghosts.app) về PPC và bid tên "Ghosts" trước khi chi tiền ads. Cookie là mặc định Rewardful, hãng có thể đổi.
+Sản phẩm mới tinh (domain đăng ký 19/08/2026, changelog từ 20/08/2026), công ty Lunar Key Ventures LLC (Wyoming). Cổng Endorsely, đơn duyệt thủ công, trả hằng tháng qua PayPal theo Net-30, ngưỡng rút không công bố, traffic chưa có số liệu. Lưu ý mâu thuẫn hoa hồng: trang zoltra.io/partners ghi 30% mỗi thanh toán trong 12 tháng cộng $50 (khoảng $338/khách ở gói $80), còn lời chào trên cổng Endorsely ghi tháng đầu chỉ trả tổng $50 rồi 30% trong 11 tháng tiếp (khoảng $314/khách); em chốt theo trang chính chủ. Thiếu Google Ads (độ tin cậy thấp): partners, Terms và ToS Endorsely không có câu nào về PPC hay bid tên. Phần điều khoản riêng của chương trình trên cổng Endorsely (organizationTerms) cũng để trống, nên anh hỏi support@zoltra.io về PPC và bid tên "Zoltra" trước khi chi tiền ads. Thêm nữa, "Zoltra" trùng tên một thuốc cũ ở Úc nên từ khóa có thể kéo traffic lệch.
 
-Chuyển sang loại vì cấm bid tên: <b>SEOPro AI (seoproai.co)</b>, Affiliate Terms của PromoteKit cấm bid từ khóa thương hiệu của merchant khi chưa được cho phép, hãng không công bố cho phép; thêm rủi ro chính sách vì listing mô tả kỹ thuật "Hidden AI Instructions".
+Bị loại (18):
+- Cấm bid tên (13): GPT-Video, Molyin, Peloran (cấm trong FAQ/Partner Agreement); Holgo, Retokia, AI4HSE, Solmi, Duply, Ascendnce, Role.so, Scientio, Engage AI, Wiretrap (Affonso xếp Brand Bidding vào traffic bị hạn chế).
+- Không phải affiliate cho marketer (2): TODO for AI (hoa hồng thỏa thuận riêng), Novelmint (partner cho studio/nhà xuất bản).
+- Ra mắt trước 2025 (2): Chat Data (2023), Orshot (12/2024).
+- Không có chương trình (1): AutoMarketing AI.
 
-Bị loại khác (28):
-- Cấm bid tên (1): Kromio.
-- Rủi ro chính sách/trademark (4): Interview Coder (gian lận phỏng vấn), Tome App AI và Gamma App (dùng thương hiệu người khác), Shemale AI (nội dung người lớn).
-- Ra mắt trước 2025 (16): Support AI, Verve AI, ExcelMaster AI, Aqua Voice, LearningStudioAI, APOB AI, MWM AI, Yomu AI, Winston AI, Originality.ai, Solo AI, Tutor AI, MyArchitectAI, AILYZE, WordRocket AI, BetaHub.
-- Không có hoặc đã đóng chương trình (3): Hyper AI, Zovoro AI, Aspirely AI.
-- Khác (4): JackHamr (chưa ra mắt), Vulm AI (site bị chặn), Response AI (không xác minh ngày ra mắt), ClearSERP (không phải công cụ AI).
-
-Em đã lưu lịch sử 30 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
+Em đã lưu lịch sử 19 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
