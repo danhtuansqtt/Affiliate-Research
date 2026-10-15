@@ -1,18 +1,23 @@
-Em gửi anh báo cáo scout affiliate hôm nay (14/10/2026) của đội agent, chủ đề Tài chính. Em đã rà 24 ứng viên mới và hôm nay không có chương trình nào đạt.
+Em gửi anh báo cáo scout affiliate hôm nay (15/10/2026) của đội agent, chủ đề Tài chính. Em đã rà 29 ứng viên mới cùng 2 tên đã xét trước đó (YieldClub, Nook), và hôm nay không có chương trình nào đạt. Ứng viên duy nhất qua vòng đầu là WeReportYourRent, nhưng bị loại vì cấm bid từ khóa thương hiệu.
 
-Hướng tìm hôm nay: WebSearch bằng tiếng Anh, Việt, Tây Ban Nha, trải Mỹ, Mỹ Latinh, Trung Đông, Đông Nam Á, Việt Nam; nguồn gồm Product Hunt mục Finance (launch 10/2026), TrustMRR mục Fintech, FlexOffers (Financial Services/Insurance), Affilitizer, RDAP và trang chủ từng sản phẩm. FlexOffers chặn curl/Playwright bằng Cloudflare nên em đọc bằng WebFetch.
+Hướng tìm hôm nay: BetaList mục Fintech (trang 1–2), Hacker News "Show HN" từ 15/08 đến 15/10/2026, affi.io, FlexOffers, revshare.so, TrustMRR, WebSearch bằng tiếng Anh, Việt, Tây Ban Nha, Bồ Đào Nha (Mỹ, Mỹ Latinh, Trung Đông, Việt Nam/Accesstrade). Năm ra đời đối chiếu với ngày đăng ký domain trên RDAP. Em bỏ qua 26 tên đã có trong lịch sử.
 
 Ứng viên đào sâu:
-• <b>Zero-G Trading (zerogtrading.com)</b>: tự động giao dịch NQ futures cho tài khoản prop firm (Nebula Core $275/tháng), bản đồ GEX Titan, tín hiệu quyền chọn Helios; ra 09/2025, cổng PromoteKit, cookie 60 ngày (mặc định PromoteKit). Bị loại vì Program Terms riêng (mục 16) cấm bid từ khóa "Zero G Trading", "ZeroG Trading", tên Nebula/Titan/Helios và biến thể nếu chưa có văn bản chấp thuận. Hoa hồng cũng bất lợi cho ads: chỉ trả từ người thứ 5 đang trả phí (10%), 15% từ 10 người, trần 20% từ 20 người.
-• <b>Fresh Path Financial (freshpathfinancial.com)</b>: thực chất là giảm nợ, không phải cho vay; 80% CPS trên FlexOffers không rõ cơ sở tính; giảm nợ thuộc nhóm Google Ads hạn chế.
-• <b>Ethena Pay (ethena.fi)</b>: đã xét (pay.ethena.fi); chỉ có referral $30 bằng AVAX, điều khoản cấm quảng cáo trả phí.
+• <b>WeReportYourRent (wereportyourrent.com)</b>: báo cáo tiền thuê nhà trả đúng hạn lên Experian và TransUnion để người thuê ở Mỹ xây lịch sử tín dụng. Ra mắt 06/2026; giá Trial $1 (7 ngày), Basic $19.99/tháng, Premium $39.99/tháng; hoa hồng $10 một lần cho mỗi người đăng ký trả phí, cookie 90 ngày (mã nguồn trang chủ), ngưỡng rút $20, trả ngày 1 hằng tháng. Bị loại vì Program Terms riêng (/legal/affiliate-referral) cấm bid từ khóa thương hiệu và cấm dùng tên thương hiệu trong URL/quảng cáo khi chưa được phép; affi.io cũng ghi "NO TM+". Từ khóa chung vẫn được phép, chỉ target Mỹ, phải được duyệt.
+
+Lưu ý tuân thủ pháp lý nếu sau này anh vẫn muốn chạy từ khóa chung cho WeReportYourRent:
+• Google Ads cấm hẳn quảng cáo "credit repair", áp dụng cả với affiliate và lead-gen, không có chứng nhận mở khóa, vi phạm bị tính strike. Rent reporting không phải sửa tín dụng nhưng rủi ro bị gắn nhãn sai ở mức trung bình. Không dùng cụm "fix/repair/raise your credit score", "boost X points"; nên dùng "report rent to Experian &amp; TransUnion", và thử nhóm quảng cáo nhỏ trước.
+• Nếu bị xếp vào nhóm "Housing, employment, or credit" ở Mỹ thì không được target theo tuổi, giới tính, ZIP code.
+• Program Terms (theo CROA/FTC) cấm hứa tăng điểm tín dụng, cấm gọi đây là công ty sửa tín dụng, cấm testimonial giả; số liệu trên site lấy từ beta cohort nên không trích như kết quả điển hình.
+• Bắt buộc công bố có nhận hoa hồng ngay gần link (FTC Endorsement Guides).
+• Quảng cáo nhắc "$1 trial" phải nói rõ sau 7 ngày sẽ tự tính $19.99 hoặc $39.99 mỗi tháng (ROSCA, chính sách Misrepresentation).
 
 Các ứng viên bị loại khác:
-• Ra mắt trước 2025: MrFinan (2021, lead-gen vay), WealthFluent (2017), VIVA Finance (2019), Kudos (2023), Trillion (2024), OKX Money (tính năng của OKX, có từ 2017), Kwik.insure (2021).
-• Không phù hợp: Oddpool và Finbar (B2B cho tổ chức), TopDividendTools (thư mục), Zolos AI (lead-gen đa ngành), Claim Climbers (hỗ trợ trợ cấp cựu binh), HalalWallet (trang so sánh).
-• Không có affiliate: Supertake, Payflip, Stated, Vaultr, Wealthfolio, Subscrr, Stox AI.
-• Không đủ dữ liệu: Finloo MX (độc quyền LeadGid, không công bố hoa hồng/cookie).
+• Ra mắt trước 2025: Sterling Stock Picker (2016), Rocket Money (Truebill), CalendarBudget, PocketSmith, Undebt.it, UltraTrader (2021).
+• Chưa ra mắt: ACK card (chỉ có waitlist; quảng cáo APY 3–4% kèm "partner bank" FDIC mà không nêu tên ngân hàng).
+• Đã xét trước đó: YieldClub, Nook.
+• Không có affiliate cho marketer: Pulse Local, TallyMint, Credit Upside, CoreXTrader, Algomaya, TickerWhale, StockFly, KeepUp, ForexFin, Squidly, SignalHub, Finzot, Holder Dashboard, Oversold, TradeBo, Sentralis, Ifso, WeVest (chương trình FlexOffers đã đóng).
+• Không phù hợp: BellRun (game mô phỏng giao dịch).
+• Không đủ dữ liệu: Kasora, CoinsBucket (trang SPA không đọc được nội dung).
 
-Lưu ý tuân thủ cho mảng tín hiệu giao dịch: Google Ads cấm tuyên bố lợi nhuận phi thực tế (Misrepresentation, nhóm vi phạm nghiêm trọng, có thể khóa tài khoản ngay). Trang chủ Zero-G đăng P&amp;L thành viên (+$17,448/ngày), nên kể cả chạy từ khóa chung cũng không trỏ thẳng về trang chủ được, phải có landing page trung gian kèm disclaimer rủi ro và công bố affiliate. Một số nước (UK, Úc…) bắt xác minh dịch vụ tài chính, trong khi Zero-G không có giấy phép RIA/CTA. Với ví stablecoin như Payflip, Google Ads cũng hạn chế quảng cáo crypto.
-
-Em đã lưu 24 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
+Em đã lưu 31 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
