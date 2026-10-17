@@ -1,21 +1,31 @@
-Em gửi anh báo cáo scout affiliate hôm nay (16/10/2026) của đội agent, chủ đề Tài chính. Em đã xét 20 ứng viên (19 domain mới và 1 domain đã audit trước đó là Propr), và hôm nay không có chương trình nào đạt. Ứng viên duy nhất qua vòng đầu là Halfway, nhưng bị loại vì điều khoản liên quan đến bid từ khóa thương hiệu.
+Em gửi anh báo cáo scout affiliate hôm nay (17/10/2026) của đội agent, chủ đề Tài chính. Em đã rà khoảng 150 domain (Show HN, BetaList, PeerPush, TrustMRR, revshare.so, WebSearch EN/VI/ES/PT), bỏ qua khoảng 40 domain đã có trong lịch sử, mở trang chủ khoảng 110 domain mới và chọn được 2 chương trình. Cả hai đều là sản phẩm tài chính nên anh lưu ý yêu cầu tuân thủ pháp lý ở dưới.
 
-Hướng tìm hôm nay: BetaList (fintech, finance, personal-finance, budgeting, trading, banking, payments, insurance), Hacker News "Show HN" từ 16/09 đến 16/10/2026, Open Launch, TrustMRR, revshare.so, PeerPush, Product Hunt, Track360, PartnerStack, WebSearch bằng tiếng Anh, Việt, Tây Ban Nha, Bồ Đào Nha, Indonesia (prediction market, prop firm, thẻ crypto, Trung Đông, Mỹ Latinh, Accesstrade VN). Năm ra đời đối chiếu với ngày đăng ký domain trên RDAP. Em bỏ qua khoảng 25 tên đã có trong lịch sử.
+<b>Retirology (retirology.app)</b>
+• Tính năng: Phần mềm desktop offline lập kế hoạch nghỉ hưu/FIRE cho người Mỹ: Roth ladder, ACA, Monte Carlo, thuế 50 bang
+• Giá bán: Tối thiểu $19/lần; Gợi ý $65/lần; Generous $200/lần (chính chủ)
+• Hoa hồng affiliate: 20% một lần (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Lemon Squeezy: Rules of Engagement gửi riêng, Lemon Squeezy yêu cầu duyệt trước Marketing Efforts gồm search marketing)
+• Năm ra đời: 05/2026
+• Cookie: 30 ngày (mặc định Lemon Squeezy, nguồn phụ)
+• Độ đầy đủ: 5/6
+Ô thiếu là Google Ads: anh đăng ký tại https://retirology.lemonsqueezy.com/affiliates rồi đọc Rules of Engagement, hoặc hỏi contact@retirology.app trước khi bid từ khóa "Retirology". Ví dụ hoa hồng: khách trả $19 thì nhận $3.80, trả $200 thì nhận $40.00 (trang Lemon Squeezy ghi trần $40.00, trang chủ ghi "No cap", em chốt theo trang chủ). Ngưỡng rút $10.00, trả NET30 qua Lemon Squeezy. Tuân thủ: quảng cáo giữ câu miễn trừ "not financial, tax, or legal advice", không hứa kết quả nghỉ hưu hay lợi nhuận, không tự gọi là cố vấn tài chính; chỉ nhắm thị trường Mỹ, công bố quan hệ affiliate theo FTC; theo chính sách Financial services của Google Ads.
 
-Ứng viên đào sâu:
-• <b>Halfway (meethalfway.app)</b>: app ngân sách cho cặp đôi ở Mỹ/Canada, chia chi phí theo thu nhập, có trợ lý AI Penny. Ra mắt 2026; giá Free, Premium $11.99/tháng, Premium năm $89.99/năm; hoa hồng 25% một lần trên khoản thanh toán Premium đầu tiên của mỗi hộ, cookie 30 ngày, giữ hoa hồng 30 ngày, trả hằng tháng khi số dư trên $100. Bị loại vì Program Terms ghi có thể giữ lại hoa hồng có được "by paid search on our brand name", tức thực tế cấm bid từ khóa thương hiệu. Kết luận này do scout tự đọc điều khoản (modal "program terms" trên /affiliate-program), chưa qua bước kiểm tra của policy-checker.
-Lưu ý tuân thủ nếu sau này anh vẫn muốn chạy từ khóa chung cho Halfway: bắt buộc công bố rõ "paid link" theo yêu cầu FTC; chỉ tính hoa hồng với gói Premium mua trên web ở Mỹ/Canada; mã giảm giá chỉ áp dụng gói năm; gói Premium có tư vấn viên tài chính có giấy phép nên không quảng cáo như lời khuyên đầu tư.
+<b>CryptoYaan (cryptoyaan.com)</b>
+• Tính năng: Bot Telegram và web app AI phân tích crypto, chấm điểm rủi ro token on-chain, cho trader cá nhân
+• Giá bán: Free $0/tháng; Prime $29.99/tháng; Prime quý $80.97/quý; Prime năm $287.90/năm (chính chủ)
+• Hoa hồng affiliate: 15% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; rủi ro cao vì chính sách Cryptocurrencies của Google cấm trang đích "trading signals" và "affiliate sites")
+• Năm ra đời: 07/2026
+• Cookie: không công bố
+• Độ đầy đủ: 4/6
+Ô thiếu là Google Ads và Cookie: anh hỏi CryptoYaan sau khi nộp đơn tại https://cryptoyaan.com/affiliate.html (duyệt tay 1-2 ngày; ghi nhận first-touch qua link Telegram riêng, không nêu thời hạn). Em khuyên anh KHÔNG chi ngân sách Google Ads cho chương trình này khi chưa có xác nhận bằng văn bản từ CryptoYaan và chưa kiểm tra landing của mình không thuộc nhóm bị cấm; link affiliate là link t.me nên rất khó được duyệt. Tuân thủ: không gọi là "signal", không hứa lợi nhuận, giữ miễn trừ "not financial advice", chỉ người từ 18 tuổi; Terms của hãng còn là bản nháp chưa điền tên công ty, site có link giới thiệu sàn MEXC/Bybit chưa được cấp phép ở nhiều nước. Ưu tiên thấp hơn Retirology.
 
-• <b>WahooPredict (wahoopredict.com)</b>: sàn dự đoán Yes/No trên giá crypto 1 phút, thể thao, mạng xã hội; CPA $80/khách qua DoAff.net (nguồn phụ). Cảnh báo rủi ro cao: không có thông tin giấy phép, khán giả chủ yếu Nigeria, domain đăng ký 06/2023 và không xác minh được ngày ra mắt; Google Ads yêu cầu chứng nhận cho cờ bạc/prediction market nên rất dễ bị từ chối hoặc khóa tài khoản.
+Các ứng viên bị loại:
+• Cấm bid thương hiệu: Equibles (terms cấm "paid search using Equibles trademarks").
+• Thiếu dữ liệu hoặc đáng ngờ: Valura.Ai (hoa hồng sau đăng nhập), market-offers.com và MoneyOS (dấu hiệu lừa đảo).
+• Ra mắt trước 2025: Sharesight, EUROASIA Insurance, AlgoWay.
+• Không phải affiliate cho marketer hoặc không phù hợp: FinFam, CreditPilot USA, Hielda.
+• Không có chương trình affiliate: Quantive, Stoke Money, Torsalis, Foresight Planner, Futurez, Clarveo, Kellian, Pane, Vaulted, Ledgi, Driggsby, TallyHouse, Radish.
+• Chưa ra mắt: Giraffe Gold, Lorica, TerriFiX.
 
-• <b>Opinion (opinion.trade)</b>: sàn dự đoán on-chain trên BNB Chain. Không có affiliate, chỉ có mã mời người dùng gắn với mùa thưởng token OPN. Cần cảnh giác: có token OPN kèm chiến dịch airdrop với Binance Wallet, tức mang tính chất presale/token; app còn chặn theo khu vực vì "regulatory requirements".
-
-Các ứng viên bị loại khác:
-• Không có affiliate cho marketer: EchelonEdgeAI, GoHoardly, Lucky Friday, Skwad, Sats Terminal (DeFi tự lưu ký, không KYC), Faiyr, TagTally, CartPause, SpreadVector, My Financé.
-• Chương trình đối tác không phải affiliate: Terrapin (cho văn phòng kế toán), Knoott (cổng nhà cung cấp quà cưới).
-• Không phù hợp: Railbird Exchange (hạ tầng của DraftKings Predictions, không có chương trình riêng), Wismo (app Shopify, không phải tài chính).
-• Ra mắt trước 2025: FutureMoney (thành lập 01/2023, có trang affiliate nhưng không công bố hoa hồng).
-• Chưa ra mắt: Pace (đang beta TestFlight).
-• Đã audit trước đó: Propr (propr.xyz).
-
-Em đã lưu 20 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
+Em đã lưu 28 dòng (2 chọn, 26 loại) vào lịch sử reported_programs__tai-chinh-doi.md.
