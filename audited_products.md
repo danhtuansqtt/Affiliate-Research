@@ -572,3 +572,24 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | olight.com | Olight | 2026-10-11 | AR15863532213959131137 |
 | joylink.io | JoyLink | 2026-10-11 | AR15863532213959131137 |
 | breezy.hr | Breezy HR | 2026-10-11 | AR15863532213959131137 |
+| thailandbettafish.com | Thailand Betta Fish | 2026-10-17 | AR03117266518744760321 |
+| bartonwatchbands.com | Barton Watch Bands | 2026-10-17 | AR03117266518744760321 |
+| goli.com | Goli Nutrition | 2026-10-17 | AR03117266518744760321 |
+| proudpatriots.com | Proud Patriots | 2026-10-17 | AR03117266518744760321 |
+| guestinresidence.com | Guest In Residence | 2026-10-17 | AR03117266518744760321 |
+| livsndesigns.com | LIVSN Designs | 2026-10-17 | AR03117266518744760321 |
+| bekynd-beauty.com | BeKynd Beauty | 2026-10-17 | AR03117266518744760321 |
+| canmakeusa.com | CANMAKE USA | 2026-10-17 | AR03117266518744760321 |
+| zecdepot.com | ZEC Depot | 2026-10-17 | AR03117266518744760321 |
+| medterra.stanoofficial.shop | Medterra | 2026-10-17 | AR03117266518744760321 |
+| shophealthy-petz.com | Healthy Petz | 2026-10-17 | AR03117266518744760321 |
+| divoom.com | Divoom | 2026-10-17 | AR03117266518744760321 |
+| lacemade.com | LaceMade | 2026-10-17 | AR03117266518744760321 |
+| try-saphire.co | Saphire | 2026-10-17 | AR03117266518744760321 |
+| chompshop.com | Chompshop | 2026-10-17 | AR03117266518744760321 |
+| niimbots.com | NIIMBOT | 2026-10-17 | AR03117266518744760321 |
+| azure-boutique.co | Azure Boutique | 2026-10-17 | AR03117266518744760321 |
+| goatusa.com | GOAT USA | 2026-10-17 | AR03117266518744760321 |
+| thrivemarket.com | Thrive Market | 2026-10-17 | AR03117266518744760321 |
+| setactive.co | SET Active | 2026-10-17 | AR03117266518744760321 |
+| modaven (domain chưa xác định) | Modaven | 2026-10-17 | AR03117266518744760321 |
