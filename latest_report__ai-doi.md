@@ -1,44 +1,45 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 16/10/2026: em quét Fazier, Microlaunch, Smollaunch, LaunchIgniter, TapRefer và Refindie, xét 31 ứng viên mới, chọn 3 chương trình dưới đây.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 17/10/2026. Em quét Open Launch, Tiny Startups, Fazier, Uneed, PeerPush, Microlaunch, BetaList, TrustMRR và Refindie, xét chi tiết 25 ứng viên mới, giữ 4 và chọn 3 chương trình dưới đây.
 
-<b>Call Flow (callflow.dev)</b>
-• Tính năng: AI giả lập cuộc gọi khách hàng để đội sales/CSKH luyện role-play (cold call, phản đối), chấm điểm tức thì
-• Giá bán: Starter $9.97/tháng; Growth $19.97/tháng (trial 30 ngày); Scale $49.97/tháng (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 03/2026 (chính chủ)
-• Cookie: 30 ngày (chính chủ)
-• Độ đầy đủ: 5/6
-
-Sản phẩm mới (domain đăng ký 29/03/2026), rút từ $50, đơn duyệt trong 24-48 giờ, traffic chưa có số liệu. Thiếu Google Ads: trang affiliate, FAQ và Terms không có câu nào về PPC, chỉ có câu chung "trademarks may not be used without our prior written consent", nên anh hỏi Call Flow (hoặc hỏi khi đăng ký) có cho bid tên "Call Flow" không trước khi chạy ads.
-
-<b>Draft2Publish-AI (draft2publish.ai)</b>
-• Tính năng: Plugin WordPress dùng AI agent đi từ chủ đề tới bài đăng (research, viết, SEO, ảnh, đăng), cho blogger và agency
-• Giá bán: Free (WordPress.org); Pro $9.99/tháng; Pro+ $39.99/tháng; Agency $99.99/tháng (chính chủ)
-• Hoa hồng affiliate: 35% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 05/2026 (chính chủ)
-• Cookie: 180 ngày (chính chủ)
-• Độ đầy đủ: 5/6
-
-Hoa hồng và cookie tốt nhất lượt này. Trả qua PayPal từ $100, duyệt tay; plugin mới lên WordPress.org 05/2026 nên traffic còn nhỏ. Thiếu Google Ads: điều khoản affiliate chính thức chưa phát hành (form ghi "agree to the affiliate terms when finalized"), nên anh đừng chạy ads tên thương hiệu cho tới khi được duyệt và đọc bản điều khoản cuối.
-
-<b>RYPL (rypl.is)</b>
-• Tính năng: AI agent tự trả lời và kiểm duyệt bình luận, DM trên Facebook, Instagram và bình luận quảng cáo TikTok, cho brand và agency
-• Giá bán: Trial 7 ngày; Simple $19/tháng; Pro $49/tháng; Ultra $89/tháng (chính chủ)
+<b>Radarkit (radarkit.ai)</b>
+• Tính năng: Theo dõi thương hiệu xuất hiện trong ChatGPT, Google AI Overviews, Gemini, Perplexity ở 50+ quốc gia, kèm AI agent outreach, cho marketer
+• Giá bán: Trial 7 ngày; Lite $29/tháng; Growth $79/tháng; Pro $139/tháng (chính chủ)
 • Hoa hồng affiliate: 20% recurring trọn đời (chính chủ)
 • Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 04/2025 (chính chủ)
+• Năm ra đời: 2025 (chính chủ)
+• Cookie: 60 ngày (chính chủ)
+• Độ đầy đủ: 5/6
+
+Hoa hồng trọn đời, cookie dài, đối tác lớn được nâng lên 30%. Trả sau 60 ngày, rút từ $100 qua PayPal hoặc crypto, traffic chưa có số liệu. Thiếu Google Ads: trang affiliate và /terms không có câu nào về PPC, chương trình chạy trong app (đăng ký ở radarkit.ai/register), nên anh đăng ký rồi đọc điều khoản trong dashboard trước khi bid tên "Radarkit".
+
+<b>ReplyGain (replygain.com)</b>
+• Tính năng: AI tìm bài đang hỏi mua công cụ trên Reddit, Hacker News, Bluesky, X, chấm ý định mua và soạn câu trả lời, cho founder SaaS
+• Giá bán: Starter $29/tháng; Pro $79/tháng; Business $199/tháng; 7-Day Pass $9/lần (chính chủ)
+• Hoa hồng affiliate: 20% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
+• Năm ra đời: 05/2026 (nguồn phụ)
 • Cookie: 30 ngày (chính chủ)
 • Độ đầy đủ: 5/6
 
-Đăng ký trong app (Settings &gt; Affiliate Program), duyệt 24-48 giờ, giữ 14 ngày, trả bằng USDT từ $50, traffic chưa có số liệu. Thiếu Google Ads: docs affiliate và /terms không có quy định quảng cáo, trang app.rypl.is/affiliate chỉ xem sau khi đăng nhập, nên anh đăng ký rồi đọc điều khoản trong dashboard trước khi chi tiền ads.
+Chạy trên Creem, không cần duyệt nhưng phải KYC (giấy tờ + selfie), rút từ 50 USD, giữ tiền 7-12 ngày; gói 7-Day Pass và Add-on có hoa hồng 0%. Thiếu Google Ads: trang affiliate, /terms và API chương trình Creem không có quy định quảng cáo, Creem cũng không có affiliate terms chung, nên anh nhắn ReplyGain hỏi có cho bid tên thương hiệu không trước khi chạy ads.
 
-Bị loại (28):
-- Cấm bid tên (10): Decloak (điều khoản Endorsely), Create eBook (trang Legal), ShareSpeak (điều khoản mặc định PromoteKit), Orelon, TextSight, TransClipper, subba, MailKite, GMaps Lead Finder, OpenCreative.
-- Ra mắt trước 2025 (9): QuizMate, CodeDesign.ai, IACrea, Growfol, Hypertxt, HoldSpeak, Reachy, Verbatik AI, Astro.
-- Không có chương trình công khai (3): Vidgo AI, AI 3D Camera Pro, Zaro.
-- Không phải affiliate cho marketer (2): Clef, Free Gemini Omni.
-- Không phải tool AI (3): TellyPrompter, MentionFront, AnyAPI.
-- Ưu tiên thấp (1): Coloriboo (15% qua Refindie, Google Ads chưa xác minh).
+<b>JackSEO (jackseo.io)</b>
+• Tính năng: AI biến tin tức ngành thành bài blog và post chuẩn SEO/GEO để lên Google và được LLM trích dẫn, cho SME và agency
+• Giá bán: Trial miễn phí; Starter €9/tháng; Lite €39/tháng; Business €79/tháng (chính chủ)
+• Hoa hồng affiliate: tối đa €60 (~$67.43)/khách trả phí mới (mạng affiliate)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (Lemon Squeezy yêu cầu duyệt trước search marketing)
+• Năm ra đời: 2025 (chính chủ)
+• Cookie: 30 ngày (mặc định Lemon Squeezy)
+• Độ đầy đủ: 5/6
 
-Em đã lưu lịch sử 31 ứng viên vào reported_programs__ai-doi.md rồi anh nhé.
+Công ty Ba Lan, trả NET30 qua Lemon Squeezy, rút từ $22.48, traffic chưa có số liệu; % và thời hạn recurring không công bố, chi tiết chỉ xem sau khi đăng nhập Lemon Squeezy. Thiếu Google Ads: Affiliate Terms của Lemon Squeezy xếp search marketing vào nhóm quảng cáo phải được duyệt trước và có "Rules of Engagement" gửi riêng qua email, nên anh phải xin JackSEO duyệt trước khi chạy search ads.
+
+Thêm 1 chương trình em giữ nhưng không khuyên chạy: <b>Kinovi (kinovi.ai)</b>, studio và API tạo video/ảnh AI (Seedance, Kling, Midjourney), hoa hồng chỉ 5% trong 180 ngày, cookie 30 ngày, phải gửi form duyệt.
+
+Bị loại (21):
+- Cấm bid tên (5): SEOzapp, ProspectHalo, ViralHunt, VendBuddy, SkillAI.
+- Không có chương trình công khai (4): Azuqe, Emaki, Adamlead, MP4ToText.
+- Không trả hoa hồng tiền (2): SEOAgent, ReelDrop.
+- AI không phải lõi (4): IndexMachine, AlgoVesta, Improve My Page, ZelNum.
+- Ra mắt trước 2025 (6): ContentRadar, Leadlock, Saner.AI, Snowball, SyncSignature, WorkbookPDF.
+
+Em đã lưu cả 25 ứng viên vào lịch sử reported_programs__ai-doi.md.
