@@ -1,35 +1,44 @@
-Em gửi anh báo cáo scout affiliate hôm nay (19/10/2026) của đội agent, chủ đề Tài chính. Em đã rà 26 ứng viên mới (khoảng 70 domain khác đã có trong lịch sử nên bỏ qua), hướng mới là thư mục AffyList mục fintech cộng Show HN 15/09–19/10/2026; đào sâu 3 và chọn được 2 chương trình.
+Em gửi anh báo cáo scout affiliate hôm nay (20/10/2026) của đội agent, chủ đề Tài chính. Hướng mới: App Store mục Finance (29 nước), YC Fintech W25–F26, Uneed/Fazier, Daisycon Finance. Em xét kỹ 54 ứng viên, đào sâu 4 và chọn 3, cả 3 đều nhỏ.
 
-<b>MetisTrades (metistrades.com)</b>
-• Tính năng: Nhật ký và phân tích giao dịch quyền chọn cho nhà đầu tư cá nhân, tính P/L qua roll/wheel, đồng bộ Robinhood/Schwab/Fidelity/Tastytrade
-• Giá bán: Free $0/tháng; Pro $25/tháng; Pro $240/năm; trial Pro 7 ngày (chính chủ)
-• Hoa hồng affiliate: 33% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký PromoteKit; ToS chung không cấm)
-• Năm ra đời: 11/2025 (tên cũ Options4L)
-• Cookie: 365 ngày (chính chủ)
+<b>Safe Dividend Tracker (safedividendtracker.com)</b>
+• Tính năng: Theo dõi cổ tức, lịch ex-date, dự phóng DRIP và quyền chọn covered call/CSP, đồng bộ broker, cho nhà đầu tư cổ tức cá nhân
+• Giá bán: Free $0; Premium $7.99/tháng; Pro $11.99/tháng (chính chủ)
+• Hoa hồng affiliate: 25% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký)
+• Năm ra đời: 09/2025 (WHOIS)
+• Cookie: 60 ngày (chính chủ)
 • Độ đầy đủ: 5/6
-Ô thiếu là Google Ads: điều khoản affiliate riêng chỉ hiện khi đăng ký, anh đăng ký tại https://metistrades.promotekit.com/ rồi đọc trước khi chi tiền. Ưu tiên 1: cookie 365 ngày first-touch, Net 15 qua PayPal, không ngưỡng tối thiểu, deep-link mọi trang. Rủi ro: chủ đang tự chạy Google Ads trên từ khóa brand (MetisTrades/Options4L), bid brand sẽ đấu giá với chủ nên anh hỏi hãng bằng văn bản trước; comment trong trang affiliate (13/10) nói tracking chưa ghi sale, app đã gắn script mới nhưng chưa kiểm bằng giao dịch thật; sản phẩm của 1 người, đổi tên từ Options4L (domain mới đăng ký 07/09/2026), chưa có nguồn độc lập.
+Ô thiếu là Google Ads: anh đăng ký tại https://safedividendtracker.com/affiliates/apply rồi đọc điều khoản trong dashboard. Ưu tiên 1: duyệt 1–2 ngày, trả PayPal. Rủi ro: FAQ nói mức hoa hồng hiện sau khi duyệt và "tùy gói", nên 25% cần xác nhận lại; tên gần "Simply Safe Dividends", đừng bid tên đó; sản phẩm của 1 cá nhân.
 
-<b>metatraderVPS (metatrader-vps.com)</b>
-• Tính năng: Windows VPS cài sẵn MT4/MT5, chọn region gần server broker, để trader cá nhân chạy EA 24/7
-• Giá bán: Windows VPS thấp nhất $70/tháng; cao nhất $97/tháng tùy region và cấu hình; không có gói free (chính chủ)
-• Hoa hồng affiliate: 20% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký dashboard; Terms và AUP công khai không nói về paid ads)
-• Năm ra đời: 08/2026 (domain đăng ký 05/08/2026)
+<b>Prop Trading Stat (proptradingstat.com)</b>
+• Tính năng: Theo dõi phí challenge, payout, ROI và P/L theo từng prop firm, cho trader prop firm
+• Giá bán: Free $0; Pro $19.99/tháng; Pro $49.99/quý; Pro $149.99/năm (chính chủ)
+• Hoa hồng affiliate: 10% recurring trọn đời (chính chủ)
+• Google Ads: Không Cấm (Terms §14 chỉ cấm gian lận, self-referral)
+• Năm ra đời: 04/2026 (WHOIS)
+• Cookie: 30 ngày (chính chủ)
+• Độ đầy đủ: 6/6
+Ưu tiên 2: invite-only, anh tạo tài khoản free rồi email xin kích hoạt. Hoa hồng thấp: ví dụ trên trang chỉ $2/tháng, $15/năm; rút tối thiểu $100.
+
+<b>ExpenseSumo (expensesumo.com)</b>
+• Tính năng: Theo dõi chi tiêu và ngân sách cá nhân đa tiền tệ, nhập tay, không liên kết ngân hàng
+• Giá bán: Free $0; Pro $4.99/tháng; Pro $54.99/năm; Founding Member $79/lần (chính chủ)
+• Hoa hồng affiliate: 10% một lần (chính chủ)
+• Google Ads: Không Cấm (trang referral cho chia sẻ link "anywhere")
+• Năm ra đời: 02/2026 (chính chủ)
 • Cookie: không công bố
-• Độ đầy đủ: 4/6
-Ô thiếu: Google Ads, anh tạo tài khoản tại https://dashboard.metatrader-vps.com/signup, nộp đơn ở tab Affiliate rồi đọc điều khoản; Cookie, anh hỏi affiliate manager. Ưu tiên 2 vì là hạ tầng VPS hơn là sản phẩm tài chính; duyệt tay, xác minh thẻ $0, trả wire ngày 1 và 15. Rủi ro nhãn hiệu MetaTrader của MetaQuotes: dùng từ khóa chung kiểu "forex vps", "mt5 vps", tránh chữ MetaTrader trong ad text.
+• Độ đầy đủ: 5/6
+Ô thiếu là Cookie: anh hỏi chủ sản phẩm. Ưu tiên thấp: chỉ tính đơn Pro năm (~$4.40/đơn với tài khoản Free), giữ 45 ngày, rút tối thiểu $100 chuyển khoản; không cần duyệt.
 
 <b>Tuân thủ pháp lý</b>
-Google Ads áp Financial services policy: không quảng cáo lợi nhuận hay tín hiệu giao dịch, sản phẩm đầu cơ phức tạp (CFD, forex, perp) chỉ nhà cung cấp có giấy phép được chạy. Mọi bài/quảng cáo phải có disclosure affiliate rõ ràng ngay cạnh link (FTC), không hứa lợi nhuận hay tốc độ khớp lệnh, giữ miễn trừ "không phải tư vấn đầu tư". MetisTrades chỉ phục vụ người dùng Mỹ nên chỉ target Mỹ. Trong nhóm bị loại: MyFundedPerps bắt disclosure đặt trước nội dung, cấm claim lợi nhuận/tỷ lệ pass, có giới hạn quốc gia và OFAC; Polyman cấm hashtag/"link in bio" thay disclosure và cấm pump/presale; Zensei, Cruxlee, QuantParadox, Forex Sentiment cấm hứa lợi nhuận; Portfolio Matrix chỉ nhận creator ở Mỹ.
+Google Ads áp Financial services policy: sản phẩm giữ tiền/chuyển tiền phải qua Financial services verification ở nhiều nước (Anh, Úc, Ấn Độ, Đức, Pháp, Brazil, Singapore…), affiliate thường không đáp ứng được. Không hứa lợi nhuận, thu nhập cổ tức hay tỷ lệ pass; giữ câu "không phải tư vấn đầu tư". Với Prop Trading Stat, viết ad về "trading journal/tracker", tránh nhắc prop firm, CFD, funded account (Complex speculative financial products). Mọi bài/quảng cáo phải có disclosure affiliate rõ ràng ngay cạnh link (FTC).
 
 Các ứng viên bị loại:
-• <b>MyFundedPerps (myfundedperpetuals.com)</b>: Affiliate Terms chính chủ cấm mọi paid ads (Google Ads/PPC) và cấm brand bidding.
-• Cấm bid thương hiệu: Borderfolio, Hesper Atlas, Zensei, Cruxlee, Forex Sentiment, QuantParadox, Retirement Scenario Explorer, Shadower.
-• Không phù hợp: SaturnShift, ClearSpend AI, Validento (B2B); Polyman (crypto/prediction market vướng chính sách Google).
-• Không phải mô hình affiliate: Rebatly (rebate sàn crypto).
-• Chưa rõ ngày ra mắt: TraderPilot, Portfolio Matrix, ProfitCove.
-• Thiếu dữ liệu: WealthMaia (trang affiliate bắt đăng nhập).
-• Không có affiliate: Dividend Wealth, ETF Copilot, Quartermaster, StockDuty, HedgePick, BananaSplit.
+• <b>Munify (munify.ai)</b>: 3/6, hoa hồng và cookie nằm sau form; Terms §6.4 cấm ~70 nước gồm Việt Nam; ví stablecoin vướng chính sách crypto.
+• Cấm bid thương hiệu: Franklin AI, SyncFutures, Tradervana, Verify Trading, Profit AI, Monnetta, Nimbura, FalsifyLab.
+• Không phù hợp: crypto/perp (Kite, Cashi, Hyperbeat, Liquid, J Tools); vay/BĐS/B2B (Kredanta, Pearl Capital, Insify, Orla, Worth, MyTaxMate, HOC Terminal); 4 app vay giả tên ngân hàng VN.
+• Thiếu dữ liệu: OptiVault. Chưa rõ ngày ra mắt: ZZUPER.
+• Không mới: Ominimo, Stock Unlock, Blossom, Incard, Planned. Trùng: dollarwise.app.
+• Không có affiliate: 18 ứng viên (FundedNotes, Gravy, Arbital, Astor, PortView, CartLens…).
 
-Em đã lưu lịch sử 26 ứng viên vào reported_programs__tai-chinh-doi.md.
+Em đã lưu lịch sử 54 ứng viên vào reported_programs__tai-chinh-doi.md.
