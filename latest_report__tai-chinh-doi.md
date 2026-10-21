@@ -1,44 +1,32 @@
-Em gửi anh báo cáo scout affiliate hôm nay (20/10/2026) của đội agent, chủ đề Tài chính. Hướng mới: App Store mục Finance (29 nước), YC Fintech W25–F26, Uneed/Fazier, Daisycon Finance. Em xét kỹ 54 ứng viên, đào sâu 4 và chọn 3, cả 3 đều nhỏ.
+Em gửi anh báo cáo scout affiliate hôm nay (21/10/2026) của đội agent, chủ đề Tài chính. Hướng mới: affiliate.watch lọc sản phẩm ra mắt từ 2025, Product Hunt mục Budgeting, BetaList Finance, tìm tiếng Việt/Indonesia/Mỹ Latinh/UAE/Nigeria. Em xét 16 ứng viên mới, đào sâu 2 và chọn 2, cả hai là nhật ký giao dịch cho trader cá nhân, đều rủi ro khá cao.
 
-<b>Safe Dividend Tracker (safedividendtracker.com)</b>
-• Tính năng: Theo dõi cổ tức, lịch ex-date, dự phóng DRIP và quyền chọn covered call/CSP, đồng bộ broker, cho nhà đầu tư cổ tức cá nhân
-• Giá bán: Free $0; Premium $7.99/tháng; Pro $11.99/tháng (chính chủ)
-• Hoa hồng affiliate: 25% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký)
-• Năm ra đời: 09/2025 (WHOIS)
-• Cookie: 60 ngày (chính chủ)
-• Độ đầy đủ: 5/6
-Ô thiếu là Google Ads: anh đăng ký tại https://safedividendtracker.com/affiliates/apply rồi đọc điều khoản trong dashboard. Ưu tiên 1: duyệt 1–2 ngày, trả PayPal. Rủi ro: FAQ nói mức hoa hồng hiện sau khi duyệt và "tùy gói", nên 25% cần xác nhận lại; tên gần "Simply Safe Dividends", đừng bid tên đó; sản phẩm của 1 cá nhân.
-
-<b>Prop Trading Stat (proptradingstat.com)</b>
-• Tính năng: Theo dõi phí challenge, payout, ROI và P/L theo từng prop firm, cho trader prop firm
-• Giá bán: Free $0; Pro $19.99/tháng; Pro $49.99/quý; Pro $149.99/năm (chính chủ)
-• Hoa hồng affiliate: 10% recurring trọn đời (chính chủ)
-• Google Ads: Không Cấm (Terms §14 chỉ cấm gian lận, self-referral)
-• Năm ra đời: 04/2026 (WHOIS)
+<b>RizeTrade (rizetrade.com)</b>
+• Tính năng: Nhật ký giao dịch đồng bộ hơn 800 broker, theo dõi kỷ luật và cảm xúc, cho trader cá nhân
+• Giá bán: Free $0/tháng; Mentor AI $29/tháng (chính chủ)
+• Hoa hồng affiliate: 20% recurring trọn đời (mạng affiliate)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Affonso)
+• Năm ra đời: 12/2025 (chính chủ)
 • Cookie: 30 ngày (chính chủ)
-• Độ đầy đủ: 6/6
-Ưu tiên 2: invite-only, anh tạo tài khoản free rồi email xin kích hoạt. Hoa hồng thấp: ví dụ trên trang chỉ $2/tháng, $15/năm; rút tối thiểu $100.
-
-<b>ExpenseSumo (expensesumo.com)</b>
-• Tính năng: Theo dõi chi tiêu và ngân sách cá nhân đa tiền tệ, nhập tay, không liên kết ngân hàng
-• Giá bán: Free $0; Pro $4.99/tháng; Pro $54.99/năm; Founding Member $79/lần (chính chủ)
-• Hoa hồng affiliate: 10% một lần (chính chủ)
-• Google Ads: Không Cấm (trang referral cho chia sẻ link "anywhere")
-• Năm ra đời: 02/2026 (chính chủ)
-• Cookie: không công bố
 • Độ đầy đủ: 5/6
-Ô thiếu là Cookie: anh hỏi chủ sản phẩm. Ưu tiên thấp: chỉ tính đơn Pro năm (~$4.40/đơn với tài khoản Free), giữ 45 ngày, rút tối thiểu $100 chuyển khoản; không cần duyệt.
+Ô thiếu là Google Ads: anh đăng ký tại https://rize.affonso.io rồi đọc mục phương thức quảng bá được phép. Ưu tiên 1: site không link tới chương trình, nhưng cổng Affonso đã khớp mã chương trình, đăng ký mở công khai. Rủi ro: Affonso có chế độ chặn traffic trả phí, nếu bật thì hoa hồng từ Google Ads bị Declined; điểm 4.8/5 từ 1.794 đánh giá là tự khai (Capterra 0 đánh giá), đừng đưa vào ad copy; đừng bid tên broker khác; hoa hồng 20% của $29 khá thấp; thời hạn trọn đời mới chỉ thấy ở affiliate.watch, cookie lệch (pixel 30 ngày, affiliate.watch 60).
+
+<b>TradeLog Pro (tradelogpro.xyz)</b>
+• Tính năng: Nhật ký giao dịch có AI Coach phân tích hằng tuần, cho trader crypto, forex, cổ phiếu
+• Giá bán: Trial 4 ngày; Core $19/tháng; Pro $25/tháng; Elite $40/tháng (chính chủ)
+• Hoa hồng affiliate: 36% recurring 12 tháng (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (site không có Terms, trang affiliate không nhắc PPC)
+• Năm ra đời: 2026 (chính chủ)
+• Cookie: 30 ngày (nguồn phụ)
+• Độ đầy đủ: 5/6
+Ô thiếu là Google Ads: anh email founder hỏi bằng văn bản có được bid tên thương hiệu và chạy Search Ads không. Ưu tiên 2, rủi ro cao: yêu cầu 1.000+ follower nên người chỉ chạy Ads có thể không được duyệt; site không có Terms/Privacy/pháp nhân, WHOIS ẩn, dashboard demo là số mẫu. Duyệt trong 48 giờ.
 
 <b>Tuân thủ pháp lý</b>
-Google Ads áp Financial services policy: sản phẩm giữ tiền/chuyển tiền phải qua Financial services verification ở nhiều nước (Anh, Úc, Ấn Độ, Đức, Pháp, Brazil, Singapore…), affiliate thường không đáp ứng được. Không hứa lợi nhuận, thu nhập cổ tức hay tỷ lệ pass; giữ câu "không phải tư vấn đầu tư". Với Prop Trading Stat, viết ad về "trading journal/tracker", tránh nhắc prop firm, CFD, funded account (Complex speculative financial products). Mọi bài/quảng cáo phải có disclosure affiliate rõ ràng ngay cạnh link (FTC).
+Cả hai là phần mềm nhật ký nên ít khả năng cần chứng nhận sản phẩm đầu cơ, nhưng từ khóa/ad copy nhắc forex, crypto, CFD có thể bị Google gắn cờ (Complex speculative financial products); dùng từ khóa "trading journal". Ở nước bắt buộc Financial services verification (Anh, Úc, Ấn Độ, Singapore, Pháp, Đức…) quảng cáo có thể bị chặn. Không hứa lợi nhuận, giữ câu "không phải tư vấn tài chính" và công bố affiliate (FTC).
 
 Các ứng viên bị loại:
-• <b>Munify (munify.ai)</b>: 3/6, hoa hồng và cookie nằm sau form; Terms §6.4 cấm ~70 nước gồm Việt Nam; ví stablecoin vướng chính sách crypto.
-• Cấm bid thương hiệu: Franklin AI, SyncFutures, Tradervana, Verify Trading, Profit AI, Monnetta, Nimbura, FalsifyLab.
-• Không phù hợp: crypto/perp (Kite, Cashi, Hyperbeat, Liquid, J Tools); vay/BĐS/B2B (Kredanta, Pearl Capital, Insify, Orla, Worth, MyTaxMate, HOC Terminal); 4 app vay giả tên ngân hàng VN.
-• Thiếu dữ liệu: OptiVault. Chưa rõ ngày ra mắt: ZZUPER.
-• Không mới: Ominimo, Stock Unlock, Blossom, Incard, Planned. Trùng: dollarwise.app.
-• Không có affiliate: 18 ứng viên (FundedNotes, Gravy, Arbital, Astor, PortView, CartLens…).
+• <b>Timebook (usetimebook.com)</b>: affiliate tốt (50% trọn đời, cookie 30 ngày) nhưng là sổ sách cho freelancer, không phải tài chính tiêu dùng; anh muốn xét lại thì báo em.
+• Không phù hợp: Highwinds (lead vay payday), DipSway (bot crypto), TrustMRR, LinkToLender (B2B), Room Rental Manager.
+• Không có affiliate: TrackMyShares (chưa mở), CentryAI, Ask Linc, CardSavvy, Fathom.
+• Chưa ra mắt: Rat Race. Không mới: Canua (2022), Budget Hound (2023).
 
-Em đã lưu lịch sử 54 ứng viên vào reported_programs__tai-chinh-doi.md.
+Em đã lưu lịch sử 16 ứng viên vào reported_programs__tai-chinh-doi.md.
