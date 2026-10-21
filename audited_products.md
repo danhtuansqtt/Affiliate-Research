@@ -593,3 +593,10 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | thrivemarket.com | Thrive Market | 2026-10-17 | AR03117266518744760321 |
 | setactive.co | SET Active | 2026-10-17 | AR03117266518744760321 |
 | modaven (domain chưa xác định) | Modaven | 2026-10-17 | AR03117266518744760321 |
+| auphonic.com | Auphonic | 2026-10-21 | AR09770607641242894337 |
+| beatport.com | Beatport | 2026-10-21 | AR09770607641242894337 |
+| expandi.io | Expandi | 2026-10-21 | AR09770607641242894337 |
+| quicknode.com | QuickNode | 2026-10-21 | AR09770607641242894337 |
+| timetastic.co.uk | Timetastic | 2026-10-21 | AR09770607641242894337 |
+| saguaro.com | Saguaro | 2026-10-21 | AR09770607641242894337 |
+| soundcore.com | Soundcore | 2026-10-21 | AR09770607641242894337 |
