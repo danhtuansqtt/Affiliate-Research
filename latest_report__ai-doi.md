@@ -1,19 +1,20 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 21/10/2026. Em rà 46 domain từ BetaList, Open Launch, Tiny Startups, Show HN, Product Hunt RSS và WebSearch; 10 domain đã có trong lịch sử nên bỏ qua (kể cả GPT-Video, đã bị loại vì cấm bid thương hiệu từ 15/10), xét kỹ 36 ứng viên mới, chọn 1 và loại 35.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 22/10/2026. Em rà khoảng 60 domain có dấu hiệu affiliate từ Tolt, Dub, Rewardful, PromoteKit, Affonso Marketplace, BetaList, Open Launch, Tiny Startups và WebSearch; khoảng 110 domain đã có trong lịch sử nên bỏ qua. Em xét kỹ 43 ứng viên mới (thêm 1 dòng trùng), chọn 1 và loại 42. Dữ liệu chưa đủ: ứng viên được chọn mới đạt 4/6.
 
-<b>Gro (thegro.ai)</b>
-• Tính năng: AI sales co-pilot tìm, enrich lead và tự động outreach LinkedIn + email, cho đội sales B2B
-• Giá bán: Free 100 leads; Solo $49/tháng; Team $99/tháng; Enterprise $249/tháng (chính chủ)
-• Hoa hồng affiliate: 20% recurring 6 tháng (mạng affiliate)
+<b>Simulacrumai.io (simulacrumai.io)</b>
+• Tính năng: Đọc CV, mô phỏng thu nhập 24 tháng qua 5 tầng, chạy 49 AI agent, cho người đi làm
+• Giá bán: Bio Page $0; The Simulation $167/lần (chính chủ)
+• Hoa hồng affiliate: 20% recurring trọn đời trên mỗi Simulation khách mua, khoảng $33.40/lần (chính chủ)
 • Google Ads: Chưa xác minh — mặc định Không Cấm
-• Năm ra đời: 2025
-• Cookie: 30 ngày
-• Độ đầy đủ: 5/6
-Thiếu ô Google Ads: không công bố, Terms của Gro và cổng Endorsely không có câu nào về paid ads hay brand bidding. Anh tự kiểm tra điều khoản brand bidding trước khi chạy ads: đăng ký https://thegroai.endorsely.com (tự do, khoảng 10 giây, không thấy bước duyệt) rồi xem dashboard, hoặc hỏi hello@thegro.ai. Cookie 30 ngày tính first-click, payout Net-0 bằng USD; ngưỡng rút tối thiểu không công bố. Sản phẩm của GroundAI (Singapore), Product Hunt #2 ngày 12/02/2026; năm ra đời em chốt 2025 theo ToS và Wayback chính chủ (LinkedIn công ty ghi 2024). Chưa có số liệu traffic.
+• Năm ra đời: 05/2026
+• Cookie: không công bố
+• Độ đầy đủ: 4/6
+Thiếu 2 ô: Google Ads (không công bố: partner page và terms không có câu nào về paid ads, terms còn là bản nháp; anh hỏi simi@simulacrumai.io trước khi chi tiền ads) và Cookie (không công bố, hỏi cùng địa chỉ đó). Đăng ký bằng form tại https://simulacrumai.io/partners/apply (chưa rõ có duyệt hay không), trả qua Stripe Connect, ngưỡng rút không công bố. Chương trình tự host, hướng tới coach/cố vấn nhưng có lựa chọn "Other"; sản phẩm nhỏ, mới có từ 05/2026 (terms ghi ngày hiệu lực 05/2025, dù mốc nào cũng từ 2025). Giá sản phẩm là mua theo từng Simulation, nên hoa hồng tính trên mỗi lần khách mua. Chưa có số liệu traffic.
 
-Bị loại (35):
-- Cấm bid thương hiệu (2): <b>MairyAI (mairyai.com)</b>, 40% trọn đời nhưng partner agreement mục 7 cấm bid "MairyAI" và từ gần giống trên paid search nếu chưa được đồng ý bằng văn bản; Ads Bench.
-- Không phải mô hình affiliate (3): TryPitch (chỉ trả credit), UGCLive (referral trong app, chưa chạy), Melaya (ecosystem partner).
-- Thiếu chứng cứ (4): Nana Banana Pro (cổng affiliate trỏ sang brand khác), Takibi (502), PathwiseAI (503), MoneyLens AI (SPA, không thấy link affiliate).
-- Không có chương trình affiliate (26): Gemini Omni, FromKai, Voktik, Scrieb, ChatSweep, AIHairStyleChanger.AI, EzMaker AI, LoRA AI, SocialCannon, Outshot, BlockPoster.ai, AppScreen, Gatling, Coterie, Ida, Tenbri, Rocus, PopNow, SpicyAPI, TrustGrowth, AI Smut Writer, Osmia, todo.is, bonds, Praex, Point and Yap.
+Bị loại (42):
+- Cấm bid thương hiệu (18): <b>2pr (2pr.io)</b>, 33% trong 12 tháng nhưng điều khoản chung của Tolt cấm PPC trên từ khóa chứa thương hiệu; <b>Dynal.AI (dynal.ai)</b>, 40% trọn đời nhưng trang đăng ký cấm mọi Google Ads, kể cả từ khóa chung; Facecam, Inwista, ReachMCP, FireVibe và 12 chương trình trên Affonso (brand bidding bị hạn chế).
+- Không đủ mới / chưa xác minh ngày ra mắt (8): AI Finance Prep, Audioread, ReplyAI, Nova Echo, Taja, AI Workspace Pro, QuickAI Headshots, GoBuildMy.App.
+- Thiếu chứng cứ / dữ liệu (2): Repeto, VOSU.
+- Khác (2): BusinessPhoto AI (domain rao bán), AIJustBetter (thư mục công cụ). Interview Coder (.com) trùng .co đã loại nên chỉ ghi dòng trùng.
+- Không có chương trình affiliate (12): Pitchlo, Seedance 2.5 AI, Seedance 2.0 Pro, Qwen Image Layered, MeniPages, Botreon, TirionAI, Nivro, Rankdesk, see.io, Roger, Refine.
 
-Về mạng: Product Hunt trả 403 (em chỉ đọc được RSS), một số site trả 502/503, hn.algolia trả 400, Similarweb 403; các trang chính chủ em đọc trực tiếp được. Em đã lưu 36 ứng viên mới và 1 dòng trùng vào lịch sử reported_programs__ai-doi.md.
+Về mạng: Product Hunt chặn link ra web (em chỉ đọc được RSS), trang Rewardful của Dynal trả 403 với WebFetch nên em đọc bằng cách khác; ngày ra mắt một số domain chỉ dựa vào ngày đăng ký domain (nguồn phụ). Em đã lưu 44 dòng vào lịch sử reported_programs__ai-doi.md.
