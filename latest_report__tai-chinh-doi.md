@@ -1,32 +1,23 @@
-Em gửi anh báo cáo scout affiliate hôm nay (21/10/2026) của đội agent, chủ đề Tài chính. Hướng mới: affiliate.watch lọc sản phẩm ra mắt từ 2025, Product Hunt mục Budgeting, BetaList Finance, tìm tiếng Việt/Indonesia/Mỹ Latinh/UAE/Nigeria. Em xét 16 ứng viên mới, đào sâu 2 và chọn 2, cả hai là nhật ký giao dịch cho trader cá nhân, đều rủi ro khá cao.
+Em gửi anh báo cáo scout affiliate hôm nay (22/10/2026) của đội agent, chủ đề Tài chính. Hôm nay không có chương trình nào đạt: em xét 22 ứng viên mới, đào sâu 1 và loại cả 22.
 
-<b>RizeTrade (rizetrade.com)</b>
-• Tính năng: Nhật ký giao dịch đồng bộ hơn 800 broker, theo dõi kỷ luật và cảm xúc, cho trader cá nhân
-• Giá bán: Free $0/tháng; Mentor AI $29/tháng (chính chủ)
-• Hoa hồng affiliate: 20% recurring trọn đời (mạng affiliate)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Affonso)
-• Năm ra đời: 12/2025 (chính chủ)
-• Cookie: 30 ngày (chính chủ)
-• Độ đầy đủ: 5/6
-Ô thiếu là Google Ads: anh đăng ký tại https://rize.affonso.io rồi đọc mục phương thức quảng bá được phép. Ưu tiên 1: site không link tới chương trình, nhưng cổng Affonso đã khớp mã chương trình, đăng ký mở công khai. Rủi ro: Affonso có chế độ chặn traffic trả phí, nếu bật thì hoa hồng từ Google Ads bị Declined; điểm 4.8/5 từ 1.794 đánh giá là tự khai (Capterra 0 đánh giá), đừng đưa vào ad copy; đừng bid tên broker khác; hoa hồng 20% của $29 khá thấp; thời hạn trọn đời mới chỉ thấy ở affiliate.watch, cookie lệch (pixel 30 ngày, affiliate.watch 60).
+Hướng đã tìm: Affonso Marketplace (lọc finance), AffiliList (fintech/investing/trading/crypto), Dub Marketplace mục Finance, PeerPush (129 domain, dò trang affiliate/partners/referral), Referly, Partnero, affi.io; tìm theo thị trường Việt Nam (AccessTrade, MasOffer), Malaysia, Mexico, UAE/Saudi và châu Âu (financeads, Adtraction, Awin). 33 domain gặp lại đã có trong lịch sử nên bỏ qua.
 
-<b>TradeLog Pro (tradelogpro.xyz)</b>
-• Tính năng: Nhật ký giao dịch có AI Coach phân tích hằng tuần, cho trader crypto, forex, cổ phiếu
-• Giá bán: Trial 4 ngày; Core $19/tháng; Pro $25/tháng; Elite $40/tháng (chính chủ)
-• Hoa hồng affiliate: 36% recurring 12 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (site không có Terms, trang affiliate không nhắc PPC)
-• Năm ra đời: 2026 (chính chủ)
-• Cookie: 30 ngày (nguồn phụ)
-• Độ đầy đủ: 5/6
-Ô thiếu là Google Ads: anh email founder hỏi bằng văn bản có được bid tên thương hiệu và chạy Search Ads không. Ưu tiên 2, rủi ro cao: yêu cầu 1.000+ follower nên người chỉ chạy Ads có thể không được duyệt; site không có Terms/Privacy/pháp nhân, WHOIS ẩn, dashboard demo là số mẫu. Duyệt trong 48 giờ.
+<b>The Crypto Hub (thecryptohub.io)</b>
+Terminal crypto gom số dư, P&amp;L, báo cáo thuế từ 100+ sàn qua API chỉ đọc; Starter $29 đến Enterprise $299/tháng; affiliate 10% recurring 12 tháng, không cần duyệt; domain đăng ký 04/2026, ra mắt 07/2026 nên chắc chắn mới. Em loại (không phù hợp) vì dấu hiệu rủi ro cao: thông cáo ra mắt là PR trả tiền trên CoinTurk; địa chỉ Dover là địa chỉ registered agent; không có trang About/Contact, không nêu tên founder; raffle 43 giải bắt phải giữ gói trả phí suốt kỳ; hoa hồng chỉ trả bằng crypto sau KYC, tracking tự làm, không qua mạng affiliate nào. ToS cho nhận rebate từ order flow của sàn và site quảng bá sàn BloFin, nên dễ bị Google xếp vào nhóm sàn crypto cần chứng nhận Cryptocurrencies. Google Ads chưa xác minh vì điều khoản đầy đủ chỉ xem trong app sau khi đăng ký. Anh muốn xét lại thì cần thêm bằng chứng độc lập (review, tên đội ngũ, cổng affiliate bên thứ ba).
+
+Các ứng viên bị loại còn lại:
+• Cấm brand bidding: HexaTape (cấm bid tên, crypto), Stora Tax (Affonso hạn chế brand bidding).
+• Không phù hợp: Manage Bankroll, Pinnacle Odds Dropper (gần cờ bạc), Scamanot (an ninh mạng).
+• Không mới: Synci (2022), ArbitrageScanner (2023), dub.app (2024, không phải affiliate).
+• Chưa ra mắt: Forex Market Map (waitlist). Đã ngừng: Kinly.
+• Không có affiliate: tracked., StackedUp, Sonar, RivoCard, SoT Desk, Iceberg Capital, MatterOfStocks, Divido, Wealora, Debtox, Selfinance.
 
 <b>Tuân thủ pháp lý</b>
-Cả hai là phần mềm nhật ký nên ít khả năng cần chứng nhận sản phẩm đầu cơ, nhưng từ khóa/ad copy nhắc forex, crypto, CFD có thể bị Google gắn cờ (Complex speculative financial products); dùng từ khóa "trading journal". Ở nước bắt buộc Financial services verification (Anh, Úc, Ấn Độ, Singapore, Pháp, Đức…) quảng cáo có thể bị chặn. Không hứa lợi nhuận, giữ câu "không phải tư vấn tài chính" và công bố affiliate (FTC).
+• UAE: SCA cấp giấy phép Finfluencer, ai quảng bá sản phẩm đầu tư (kể cả crypto) ở UAE phải có.
+• Thụy Điển/Bắc Âu: từ 2026 môi giới khoản vay phải có giấy phép ngân hàng, ảnh hưởng offer vay tiêu dùng trên Adtraction.
+• Chính sách Google Ads: sàn, ví, tín hiệu crypto cần chứng nhận Cryptocurrencies; sản phẩm có định tuyến lệnh hoặc rebate từ sàn dễ bị xếp vào nhóm này.
+• Luôn công bố quan hệ affiliate theo FTC và không hứa lợi nhuận.
 
-Các ứng viên bị loại:
-• <b>Timebook (usetimebook.com)</b>: affiliate tốt (50% trọn đời, cookie 30 ngày) nhưng là sổ sách cho freelancer, không phải tài chính tiêu dùng; anh muốn xét lại thì báo em.
-• Không phù hợp: Highwinds (lead vay payday), DipSway (bot crypto), TrustMRR, LinkToLender (B2B), Room Rental Manager.
-• Không có affiliate: TrackMyShares (chưa mở), CentryAI, Ask Linc, CardSavvy, Fathom.
-• Chưa ra mắt: Rat Race. Không mới: Canua (2022), Budget Hound (2023).
+Lượt này mạng mở được trang bằng WebFetch/curl, nên thông tin của The Crypto Hub đọc trực tiếp từ site chính chủ; các ứng viên bị loại sớm chỉ được scout kiểm tra nhanh (trang affiliate, RDAP, listing marketplace), chưa đào sâu.
 
-Em đã lưu lịch sử 16 ứng viên vào reported_programs__tai-chinh-doi.md.
+Em đã lưu lịch sử 22 ứng viên vào reported_programs__tai-chinh-doi.md.
