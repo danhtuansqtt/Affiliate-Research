@@ -1,20 +1,30 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 22/10/2026. Em rà khoảng 60 domain có dấu hiệu affiliate từ Tolt, Dub, Rewardful, PromoteKit, Affonso Marketplace, BetaList, Open Launch, Tiny Startups và WebSearch; khoảng 110 domain đã có trong lịch sử nên bỏ qua. Em xét kỹ 43 ứng viên mới (thêm 1 dòng trùng), chọn 1 và loại 42. Dữ liệu chưa đủ: ứng viên được chọn mới đạt 4/6.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 23/10/2026. Em rà khoảng 95 domain từ Product Hunt, Open Launch, BetaList, Uneed, Tiny Startups, Dub, Tolt, PromoteKit, Rewardful, FirstPromoter và vài thư mục affiliate; khoảng 60 domain đã có trong lịch sử nên bỏ qua. Em xét kỹ 35 ứng viên mới, chọn 2 và loại 33. Dữ liệu chưa đủ ở Vivora AI (mới đạt 4/6); The Ad Bench đạt 5/6.
 
-<b>Simulacrumai.io (simulacrumai.io)</b>
-• Tính năng: Đọc CV, mô phỏng thu nhập 24 tháng qua 5 tầng, chạy 49 AI agent, cho người đi làm
-• Giá bán: Bio Page $0; The Simulation $167/lần (chính chủ)
-• Hoa hồng affiliate: 20% recurring trọn đời trên mỗi Simulation khách mua, khoảng $33.40/lần (chính chủ)
+<b>Vivora AI (vivora.ai)</b>
+• Tính năng: App học tập AI nối Canvas/Google Calendar/Gmail, nhắc deadline qua iMessage, tạo flashcard/quiz từ bài giảng, cho sinh viên
+• Giá bán: Free (không cần thẻ); gói trả phí không công bố (chính chủ)
+• Hoa hồng affiliate: 30% recurring trọn đời (mạng affiliate)
+• Google Ads: Chưa xác minh — mặc định Không Cấm
+• Năm ra đời: 02/2025
+• Cookie: 90 ngày (mặc định Dub)
+• Độ đầy đủ: 4/6
+Thiếu 2 ô: Giá bán (không công bố: trang chủ chỉ ghi dùng free rồi nâng cấp, /pricing trả 404; anh tạo tài khoản ở app.vivora.ai để xem giá gói trả phí) và Google Ads (không công bố: trang Dub không có Program Terms riêng, Terms chung của Dub và vivora.ai/terms không nhắc paid ads; anh hỏi Vivora trong dashboard Dub sau khi được duyệt, trước khi bid tên "Vivora"). Em chọn vì 30% trọn đời, kèm bounty làm video; phải nộp đơn qua https://partners.dub.co/vivora/apply (form hỏi website, Instagram, TikTok nên có duyệt), trả qua Dub (Stripe hoặc PayPal), ngưỡng rút không công bố. Năm ra đời chốt theo ngày đăng ký domain 02/2025 vì Framer gallery ghi trang đăng 05-06/2026; traffic không công bố.
+
+<b>The Ad Bench (theadbench.ai)</b>
+• Tính năng: AI chấm điểm quảng cáo TikTok/Reels/YouTube/Facebook và gợi ý sửa trước khi chi tiền, cho creator affiliate và agency
+• Giá bán: Free $0/tháng; Pro $49/tháng; Agency $199/tháng (chính chủ)
+• Hoa hồng affiliate: 20% recurring 12 tháng (chính chủ)
 • Google Ads: Chưa xác minh — mặc định Không Cấm
 • Năm ra đời: 05/2026
-• Cookie: không công bố
-• Độ đầy đủ: 4/6
-Thiếu 2 ô: Google Ads (không công bố: partner page và terms không có câu nào về paid ads, terms còn là bản nháp; anh hỏi simi@simulacrumai.io trước khi chi tiền ads) và Cookie (không công bố, hỏi cùng địa chỉ đó). Đăng ký bằng form tại https://simulacrumai.io/partners/apply (chưa rõ có duyệt hay không), trả qua Stripe Connect, ngưỡng rút không công bố. Chương trình tự host, hướng tới coach/cố vấn nhưng có lựa chọn "Other"; sản phẩm nhỏ, mới có từ 05/2026 (terms ghi ngày hiệu lực 05/2025, dù mốc nào cũng từ 2025). Giá sản phẩm là mua theo từng Simulation, nên hoa hồng tính trên mỗi lần khách mua. Chưa có số liệu traffic.
+• Cookie: 90 ngày (chính chủ)
+• Độ đầy đủ: 5/6
+Thiếu 1 ô: Google Ads (không công bố: trang affiliate và ToS không nhắc paid search, chỉ gợi ý dùng TikTok Spark Ads; anh hỏi qua form ở https://theadbench.ai/affiliate trước khi bid tên "The Ad Bench"). Đơn duyệt hằng tuần vào thứ Hai, không xét số follower; trả thủ công qua ACH (Stripe Connect sau khoảng 5 partner đầu), trần mềm $5,000/tháng mỗi partner, ngưỡng rút không công bố. Rủi ro: chương trình rất mới, sản phẩm vừa launch trên Uneed 22/10/2026 (domain 05/2026), chưa có traffic.
 
-Bị loại (42):
-- Cấm bid thương hiệu (18): <b>2pr (2pr.io)</b>, 33% trong 12 tháng nhưng điều khoản chung của Tolt cấm PPC trên từ khóa chứa thương hiệu; <b>Dynal.AI (dynal.ai)</b>, 40% trọn đời nhưng trang đăng ký cấm mọi Google Ads, kể cả từ khóa chung; Facecam, Inwista, ReachMCP, FireVibe và 12 chương trình trên Affonso (brand bidding bị hạn chế).
-- Không đủ mới / chưa xác minh ngày ra mắt (8): AI Finance Prep, Audioread, ReplyAI, Nova Echo, Taja, AI Workspace Pro, QuickAI Headshots, GoBuildMy.App.
-- Thiếu chứng cứ / dữ liệu (2): Repeto, VOSU.
-- Khác (2): BusinessPhoto AI (domain rao bán), AIJustBetter (thư mục công cụ). Interview Coder (.com) trùng .co đã loại nên chỉ ghi dòng trùng.
-- Không có chương trình affiliate (12): Pitchlo, Seedance 2.5 AI, Seedance 2.0 Pro, Qwen Image Layered, MeniPages, Botreon, TirionAI, Nivro, Rankdesk, see.io, Roger, Refine.
+Bị loại (33):
+- Thiếu chứng cứ (1): <b>Kestrel AI (usekestrel.ai)</b>, meta trang Dub ghi 25% trong 1 năm nhưng phần nội dung trả 404 và trang chính chủ không link tới chương trình, có thể đã tắt.
+- Cấm bid thương hiệu (3): Ads Uploader, AI Song Maker, Dadan.
+- Không đủ mới / chưa xác minh ngày ra mắt (8): Context.dev (rebrand của Brand.dev 2024), Postcrest, AI Video Cut, Supercut, Loman AI, Tracksy AI, Proxiuss, Humanizer AI.
+- Không phải mô hình affiliate (1): Trillet (chỉ có reseller/OEM theo từng thỏa thuận).
+- Không có hoặc đã đóng chương trình affiliate (20): Stable Commerce (đã đóng), Kyma API, Seodar, Voxelo, Causo, CutBay, DeepCell, UseIt Studio, Lorea, JanvAI, Audryo, Logo Animation AI, EngineForge, Ember AI, JuJuBit, Slloy AI, SourcingHQ, superbot, ScreenKite, Scanly.
 
-Về mạng: Product Hunt chặn link ra web (em chỉ đọc được RSS), trang Rewardful của Dynal trả 403 với WebFetch nên em đọc bằng cách khác; ngày ra mắt một số domain chỉ dựa vào ngày đăng ký domain (nguồn phụ). Em đã lưu 44 dòng vào lịch sử reported_programs__ai-doi.md.
+Về mạng: chỉ web.archive.org bị chặn; trang Dub render bằng JS nên em đọc qua HTML tĩnh, meta và ảnh OG. Em đã lưu 35 dòng vào lịch sử reported_programs__ai-doi.md.
