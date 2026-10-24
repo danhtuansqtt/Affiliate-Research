@@ -1,38 +1,25 @@
-Em gửi anh báo cáo scout affiliate hôm nay (23/10/2026) của đội agent, chủ đề Tài chính. Em xét kỹ 25 ứng viên mới, đào sâu 3 và chọn 2 chương trình; thêm 1 domain gặp lại đã có trong lịch sử. Hướng tìm hôm nay: Launch Igniter, Startup Fame, Microlaunch (mục finance/fintech), OpenAffiliate, PartnerStack, affiliate.watch, Cuelinks/INRDeals và tìm theo thị trường (VN, Mexico/Brazil, UAE, Ấn Độ, châu Phi); ngoài ra sàng lọc tự động khoảng 150 domain tài chính nhưng không thấy chương trình.
+Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 24/10/2026. Hôm nay em không chọn được chương trình nào. Em đã xét 122 ứng viên mới, đào sâu 2 nhưng cả 2 đều bị loại.
 
-<b>Guardfolio (guardfolio.ai)</b>
-• Tính năng: Theo dõi rủi ro danh mục (tập trung, trùng lặp ETF, lệch tỷ trọng) trên nhiều tài khoản broker, cho nhà đầu tư tự quản lý
-• Giá bán: Trial 7 ngày; Guardian Pro $19.99/tháng; Guardian Pro $149.99/năm; Guardian Elite $39.20/tháng; Guardian Elite $319.20/năm (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (trang affiliate và Terms không có điều khoản PPC/brand)
-• Năm ra đời: 01/2026 (nguồn phụ)
-• Cookie: 60 ngày (chính chủ)
-• Độ đầy đủ: 5/6
-B2C, kết nối chỉ đọc qua Plaid/SnapTrade, trả hằng tháng, duyệt trong 24 giờ, form ngay trên https://www.guardfolio.ai/affiliate. Thiếu ô Google Ads: anh ghi "Google Ads" ở ô Promotion channel khi đăng ký và xin xác nhận bằng văn bản có được bid brand không, trước đó đặt tên Guardfolio làm negative keyword. Rủi ro: con số "$9k+/tháng, 180+ partner" là tự công bố, Trustpilot mới 5 review, giá đang là khuyến mãi.
+Hướng tìm: Launch Igniter (finance, fintech, personal-finance, crypto, investing, web3), Startup Fame, PeerPush, Product Hunt (investing, budgeting), BetaList fintech, AffiliList (fintech, trading, crypto), PartnerStack marketplace (toàn B2B), FlexOffers, Revshare.so, cùng các lượt tìm theo thị trường Việt Nam, Ấn Độ, UAE/Saudi, Mỹ Latinh, Nam Phi. Các thư mục launch của indie maker cho kết quả rất thấp, vì gần như không sản phẩm nào có affiliate cho marketer.
 
-<b>Delphina Money (delphina.money)</b>
-• Tính năng: Gom tiết kiệm, lương hưu, khoản vay nhà vào một chỗ, dự báo net worth và kế hoạch nghỉ hưu cho người dân Anh
-• Giá bán: Free £0/tháng; Wealth Builder £9.99/tháng; Investor £19.99/tháng; Advisory Studio £499/năm (chính chủ)
-• Hoa hồng affiliate: 50% recurring 3 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (FAQ không nói về PPC, hướng dẫn chỉ gửi sau khi duyệt)
-• Năm ra đời: 02/2026 (chính chủ)
-• Cookie: 30 ngày (chính chủ)
-• Độ đầy đủ: 5/6
-Minith Labs Ltd (UK, thành lập 08/2025), chỉ nhận creator có audience UK; đăng ký qua email creators@delphina.money, ngưỡng rút £20, mỗi khách khoảng £15-£30. Thiếu ô Google Ads: anh email creators@delphina.money hỏi về PPC và brand bidding trước khi chi tiền. Rủi ro cao: Delphina không được FCA cấp phép nên ads ở UK về lương hưu, khoản vay nhà, đầu tư dễ bị Google chặn; CPC UK cao so với hoa hồng; Terms cho trả chậm tới 6 tháng (FAQ ghi 20 ngày làm việc).
+<b>Market Terminal (marketterminal.com)</b>: terminal chứng khoán cho trader cá nhân Mỹ, gồm cảnh báo breakout, dự báo AI, theo dõi insider và nghị sĩ. Giá từ $99/tháng, hoa hồng 30% recurring, cookie 90 ngày. Em loại vì cấm brand bidding: điều khoản affiliate chính chủ ghi rõ "No brand bidding", không chạy ads trên từ khóa "Market Terminal", và chính chủ cũng đang chạy Google Ads. Ngoài ra ngày ra mắt không xác minh được: Product Hunt ghi 07/01/2026, nhưng domain đăng ký từ 2015, subdomain dashboard/api có từ 2024.
 
-Các ứng viên bị loại:
-• Cấm brand bidding: OptionIncome (30% recurring, cookie 60 ngày mặc định PromoteKit, nhưng điều khoản chung PromoteKit cấm bid brand trừ khi merchant cho phép; xin được văn bản thì xét lại), FirmTape, Monetro, Openvest.
-• Thiếu bằng chứng: FX Radar (không rõ đơn vị vận hành, trả USDT).
-• Không phù hợp: Nummbas, VozQI (B2B), 1BitUP (cloud mining), Bank Statement to Excel Converter, RealMarketAPI.
-• Không có affiliate: Flicker, VESKALD, Braintrust, Tapetide, Supapoints, BuyXwithY.
-• Không mới: Coinrule, Pineify, PopaDex, Pro Stock Tracker, Coverage Cat, KIS Việt Nam. Chưa xác minh ngày ra mắt: Traderstats.
-• Trùng lịch sử: FuturoHoy.
+<b>Yieldseeker (yieldseeker.xyz)</b>: AI agent non-custodial đưa USDC trên Base vào các vault cho vay DeFi. Phí 10% trên lợi nhuận, creator nhận 50% phần phí đó chừng nào tiền còn đầu tư. Em loại vì không phù hợp: chính sách crypto của Google Ads cấm quảng cáo DeFi/lending, ví không lưu ký, kể cả landing page affiliate. Chương trình làm in-house và chỉ nhắm creator video; điều khoản chỉ gửi riêng qua email, cookie cũng không công bố. Pháp nhân là Token Page Ltd. ở BVI.
+
+Các ứng viên còn lại bị loại:
+• Không có affiliate (79): đa số là app ghi chi tiêu, chia hóa đơn, theo dõi net worth, nhật ký giao dịch miễn phí, hoặc site đi làm affiliate cho sàn/broker.
+• Không phù hợp (23 cái khác): site review prop firm/thẻ crypto, B2B (NAYA, ZeniGrowth, SiftingIO, Payflo…), không phải tài chính (Pokector, SPYCOST…).
+• Không mới (12): InvMon, Sumio, Lightsplit, Finzen, Sahi, Distilla AI, TradingPal…
+• Thiếu dữ liệu: finfol.io, Montezy. Chưa xác minh ngày ra mắt: Pattern Vista. Chưa ra mắt: tash. Đã ngừng: MyDataSecurity (domain đang rao bán).
+• Trùng lịch sử: Liquid Co-Invest (coinvest.ai, chuyển về liquid.trade).
 
 <b>Tuân thủ pháp lý</b>
-• UK: luật financial promotion (FSMA s21, FCA) và CAP/ASA: không mời đầu tư, không hứa lợi nhuận, không gọi là tư vấn, ghi #ad.
-• Google Ads Financial services: landing page phải ghi đơn vị vận hành, địa chỉ, giá, cách hủy; ở UK phải qua xác minh dịch vụ tài chính. Options/forex (OptionIncome, FirmTape, FX Radar) dễ bị gắn cờ sản phẩm đầu cơ phức tạp, chỉ nên quảng cáo dạng công cụ journal/dữ liệu.
-• FTC (Mỹ): công bố quan hệ affiliate, không hứa thu nhập; Guardfolio tự ghi không phải tư vấn đầu tư.
+• Google Financial Services Verification: áp dụng ở UK, Úc, Ấn Độ và toàn EU/EEA (từ 23/07/2026). Affiliate không có giấy phép nên không qua được, chỉ nên target Mỹ với công cụ dữ liệu/screener.
+• Chính sách crypto/DeFi của Google: cấm DeFi, crypto lending, dApp không được cấp phép và trang affiliate/so sánh. Chỉ sàn/ví có giấy phép và chứng nhận Google mới được quảng cáo.
+• FCA (UK): quảng bá crypto phải được đơn vị FCA phê duyệt, nên loại trừ UK. Tương tự, EU vướng MiCA.
+• Ghi #ad và công khai quan hệ affiliate (FTC). Không hứa lợi nhuận, APY hay tỷ lệ thắng, ghi rõ "not investment advice".
+• Nếu hiển thị backtest/mô phỏng thì kèm cảnh báo CFTC Rule 4.41.
 
-Lượt này mạng mở được trang bằng curl/WebFetch qua proxy, nên thông tin 3 ứng viên đào sâu đọc trực tiếp từ site chính chủ (kể cả JS bundle trang Delphina và cổng PromoteKit); các ứng viên bị loại sớm chỉ được scout kiểm tra nhanh (trang affiliate, RDAP, listing marketplace).
+Lượt này mạng không bị chặn, nên 2 ứng viên đào sâu em đọc trực tiếp từ site chính chủ: điều khoản affiliate của Market Terminal đọc qua JS bundle, của Yieldseeker qua trang /creators và ToS. Riêng Wayback Machine bị chặn. Các ứng viên bị loại sớm chỉ được scout kiểm tra nhanh (trang affiliate, RDAP, listing).
 
-Em đã lưu lịch sử 26 ứng viên vào reported_programs__tai-chinh-doi.md.
+Em đã lưu lịch sử 122 ứng viên vào reported_programs__tai-chinh-doi.md.
