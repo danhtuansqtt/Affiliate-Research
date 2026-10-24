@@ -1,0 +1,44 @@
+name: deletion-guard
+# Báo về Telegram khi một commit lên master xóa hơn 5 file.
+# Lý do: commit eb76fc7 (2026-10-17) xóa nhầm 56 file kể cả workflow, làm Telegram/Sheets im lặng 7 ngày.
+# Giới hạn: nếu chính commit đó cũng xóa file workflow này thì GitHub không chạy nó nữa,
+# nên các skill ghi vào repo phải tự kiểm tra trước khi push (xem skill ads-transparency-audit và affiliate-orchestrator).
+on:
+  push:
+    branches:
+      - master
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Cảnh báo nếu xóa hơn 5 file
+        env:
+          BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SHA: ${{ github.sha }}
+        run: |
+          DELETED=$(git diff --diff-filter=D --name-only HEAD~1 HEAD)
+          N=$(printf '%s' "$DELETED" | grep -c . || true)
+          echo "Số file bị xóa trong commit: $N"
+          if [ "$N" -le 5 ]; then exit 0; fi
+          SUBJECT=$(git log -1 --pretty=%s)
+          LIST=$(printf '%s\n' "$DELETED" | head -12)
+          MORE=""
+          if [ "$N" -gt 12 ]; then MORE="
+          ... và $((N - 12)) file nữa"; fi
+          WF=""
+          if printf '%s\n' "$DELETED" | grep -q '^\.github/workflows/'; then WF="
+          CÓ XÓA FILE WORKFLOW: Telegram/Sheets sẽ ngừng chạy cho tới khi khôi phục."; fi
+          TEXT="CẢNH BÁO: commit ${SHA:0:7} (\"$SUBJECT\") vừa xóa $N file khỏi repo Affiliate-Research.$WF
+
+          $LIST$MORE
+
+          Nếu không chủ ý: khôi phục bằng git checkout ${SHA:0:7}~1 -- <đường dẫn file>."
+          curl -sS -m 30 "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${CHAT_ID}" --data-urlencode "text=${TEXT}" \
+            --data-urlencode "disable_web_page_preview=true" > /dev/null
+          echo "Đã gửi cảnh báo."
+          exit 1

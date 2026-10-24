@@ -69,6 +69,7 @@ Gọi `Agent(subagent_type: "reporter", model: "opus")` kèm chế độ và dan
 ### Phase 6: Commit và báo cáo
 1. Chạy lại `python3 .claude/skills/report-format/scripts/check_outputs.py` trên các file đã đổi. Chỉ tiếp tục khi không còn ERROR.
 2. Tạo **đúng 1 commit** với message theo quy ước trong `report-format`, rồi push ngay.
+   Trước khi commit: chỉ `git add` đúng file đã sửa (không dùng `git add -A`), chạy `git diff --cached --diff-filter=D --name-only`; nếu có file bị xóa ngoài ý định thì DỪNG và báo người dùng. Từ 2026-10-24 workflow `deletion-guard` cũng báo Telegram khi một commit xóa hơn 5 file.
 3. Giữ nguyên `_workspace/` để có thể kiểm tra lại sau. Thư mục này nằm trong `.gitignore`.
 4. Tóm tắt cho người dùng: số ứng viên đã xét, được chọn, bị loại, và các cảnh báo còn lại. Sau đó hỏi ngắn: "Có điểm nào trong kết quả hay quy trình muốn chỉnh không?"
 
