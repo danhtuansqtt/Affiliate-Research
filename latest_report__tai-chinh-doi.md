@@ -1,25 +1,28 @@
-Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 24/10/2026. Hôm nay em không chọn được chương trình nào. Em đã xét 122 ứng viên mới, đào sâu 2 nhưng cả 2 đều bị loại.
+Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 25/10/2026. Em đã xét và ghi lại 51 ứng viên mới (danh sách Product Hunt 08–24/10 qua hunted.space, cùng 8 lượt WebSearch), đào sâu 3 và chọn được 1 chương trình.
 
-Hướng tìm: Launch Igniter (finance, fintech, personal-finance, crypto, investing, web3), Startup Fame, PeerPush, Product Hunt (investing, budgeting), BetaList fintech, AffiliList (fintech, trading, crypto), PartnerStack marketplace (toàn B2B), FlexOffers, Revshare.so, cùng các lượt tìm theo thị trường Việt Nam, Ấn Độ, UAE/Saudi, Mỹ Latinh, Nam Phi. Các thư mục launch của indie maker cho kết quả rất thấp, vì gần như không sản phẩm nào có affiliate cho marketer.
+<b>PensionHunter (pensionhunter.ai)</b>
+• Tính năng: Tra cứu lương hưu nhà nước và lương hưu công ty bị bỏ quên ở 41 nước, cho expat và gia đình xử lý di sản (chính chủ)
+• Giá bán: Free check; Country $99/lần; Enhanced $199/lần; Global $299/lần (chính chủ)
+• Hoa hồng affiliate: $20/khách, trả một lần cho mỗi lượt search trả tiền hoàn tất qua code (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (affiliate rules công khai không nhắc PPC/brand bidding; bản affiliate agreement đầy đủ không công bố)
+• Năm ra đời: 03/2026 (RDAP)
+• Cookie: không công bố
+• Độ đầy đủ: 4/6
 
-<b>Market Terminal (marketterminal.com)</b>: terminal chứng khoán cho trader cá nhân Mỹ, gồm cảnh báo breakout, dự báo AI, theo dõi insider và nghị sĩ. Giá từ $99/tháng, hoa hồng 30% recurring, cookie 90 ngày. Em loại vì cấm brand bidding: điều khoản affiliate chính chủ ghi rõ "No brand bidding", không chạy ads trên từ khóa "Market Terminal", và chính chủ cũng đang chạy Google Ads. Ngoài ra ngày ra mắt không xác minh được: Product Hunt ghi 07/01/2026, nhưng domain đăng ký từ 2015, subdomain dashboard/api có từ 2024.
+Em chọn vì đây là sản phẩm B2C mới (domain đăng ký 30/03/2026, do Battersea Park Capital Ltd ở UK vận hành), có form đăng ký công khai ngay trên https://pensionhunter.ai/affiliates, duyệt trong 5 ngày làm việc, không yêu cầu số lượng tối thiểu, trả hằng tháng qua chuyển khoản hoặc PayPal. Còn thiếu 2 ô: Cookie (không công bố) và Google Ads (chưa xác minh). Anh cần email hello@pensionhunter.ai xin bản affiliate agreement và hỏi rõ có cho chạy PPC/bid từ khóa thương hiệu không, cookie bao nhiêu ngày, trước khi chi ngân sách.
+Yêu cầu tuân thủ của chương trình: gắn nhãn #ad cho mọi nội dung có code, không được ngụ ý đây là dịch vụ nhà nước (UK có Pension Tracing Service miễn phí) hay dịch vụ được FCA quản lý, không cold call/SMS/email về lương hưu, không nói là tư vấn tài chính. Rủi ro: quảng cáo về pension ở UK có thể bị Google yêu cầu Financial services verification, mà sản phẩm không được FCA quản lý, nên cần kiểm tra trước khi target UK.
 
-<b>Yieldseeker (yieldseeker.xyz)</b>: AI agent non-custodial đưa USDC trên Base vào các vault cho vay DeFi. Phí 10% trên lợi nhuận, creator nhận 50% phần phí đó chừng nào tiền còn đầu tư. Em loại vì không phù hợp: chính sách crypto của Google Ads cấm quảng cáo DeFi/lending, ví không lưu ký, kể cả landing page affiliate. Chương trình làm in-house và chỉ nhắm creator video; điều khoản chỉ gửi riêng qua email, cookie cũng không công bố. Pháp nhân là Token Page Ltd. ở BVI.
+Các ứng viên đào sâu bị loại:
+• <b>Beyond Payday (beyondpayday.com)</b>: cấm brand bidding. Partner Agreement mục 11 cấm bid paid-search keyword chứa "Beyond Payday" hoặc "PiggySize" khi chưa có văn bản cho phép. Hoa hồng cũng thấp ($2/khách/tháng, chỉ tính tháng đạt tối thiểu $10), partner chỉ dành cho cư dân Mỹ.
+• <b>Algovex (algovex.app)</b>: cấm brand bidding. Partner terms mục 6 cấm bid thương hiệu Algovex trên search ads. Dashboard affiliate chỉ theo lời mời, mức % không xem được.
 
 Các ứng viên còn lại bị loại:
-• Không có affiliate (79): đa số là app ghi chi tiêu, chia hóa đơn, theo dõi net worth, nhật ký giao dịch miễn phí, hoặc site đi làm affiliate cho sàn/broker.
-• Không phù hợp (23 cái khác): site review prop firm/thẻ crypto, B2B (NAYA, ZeniGrowth, SiftingIO, Payflo…), không phải tài chính (Pokector, SPYCOST…).
-• Không mới (12): InvMon, Sumio, Lightsplit, Finzen, Sahi, Distilla AI, TradingPal…
-• Thiếu dữ liệu: finfol.io, Montezy. Chưa xác minh ngày ra mắt: Pattern Vista. Chưa ra mắt: tash. Đã ngừng: MyDataSecurity (domain đang rao bán).
-• Trùng lịch sử: Liquid Co-Invest (coinvest.ai, chuyển về liquid.trade).
+• Cấm brand bidding (3): OQRO, Arbiline, MacroSetup.
+• Không mới (4): Trade Echo (ra mắt 12/2024), RizPay, Analyse-Trading, CoinBoss.
+• Không phù hợp (4): Dream Panel (dấu hiệu lừa đảo, hứa 9–12% APY), FixMy.Money (credit repair B2B), ZySurveys, Averoic.
+• Chỉ có referral tặng tháng miễn phí: Optionscanner. Thiếu dữ liệu (site chặn theo vùng): TraderPath.
+• Không có affiliate (35): đa số là app ngân sách, theo dõi thuê bao/hóa đơn, scanner cổ phiếu và nhật ký giao dịch.
 
-<b>Tuân thủ pháp lý</b>
-• Google Financial Services Verification: áp dụng ở UK, Úc, Ấn Độ và toàn EU/EEA (từ 23/07/2026). Affiliate không có giấy phép nên không qua được, chỉ nên target Mỹ với công cụ dữ liệu/screener.
-• Chính sách crypto/DeFi của Google: cấm DeFi, crypto lending, dApp không được cấp phép và trang affiliate/so sánh. Chỉ sàn/ví có giấy phép và chứng nhận Google mới được quảng cáo.
-• FCA (UK): quảng bá crypto phải được đơn vị FCA phê duyệt, nên loại trừ UK. Tương tự, EU vướng MiCA.
-• Ghi #ad và công khai quan hệ affiliate (FTC). Không hứa lợi nhuận, APY hay tỷ lệ thắng, ghi rõ "not investment advice".
-• Nếu hiển thị backtest/mô phỏng thì kèm cảnh báo CFTC Rule 4.41.
+Lưu ý mạng và mức xác minh: lượt này 3 trang chủ đào sâu đều mở trực tiếp được, điều khoản đọc từ trang chính chủ; producthunt.com bị 403 nên em lấy danh sách qua hunted.space. Khoảng 280 domain chỉ được quét tự động, không thấy tín hiệu affiliate nên chưa ghi vào lịch sử. Các ứng viên bị loại sớm chỉ được scout kiểm tra nhanh (trang affiliate, RDAP). Riêng Google Ads của PensionHunter có độ tin cậy thấp.
 
-Lượt này mạng không bị chặn, nên 2 ứng viên đào sâu em đọc trực tiếp từ site chính chủ: điều khoản affiliate của Market Terminal đọc qua JS bundle, của Yieldseeker qua trang /creators và ToS. Riêng Wayback Machine bị chặn. Các ứng viên bị loại sớm chỉ được scout kiểm tra nhanh (trang affiliate, RDAP, listing).
-
-Em đã lưu lịch sử 122 ứng viên vào reported_programs__tai-chinh-doi.md.
+Em đã lưu lịch sử 51 ứng viên vào reported_programs__tai-chinh-doi.md.
