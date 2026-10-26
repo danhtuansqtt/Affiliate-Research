@@ -1,28 +1,38 @@
-Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 25/10/2026. Em đã xét và ghi lại 51 ứng viên mới (danh sách Product Hunt 08–24/10 qua hunted.space, cùng 8 lượt WebSearch), đào sâu 3 và chọn được 1 chương trình.
+Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 26/10/2026. Em đã xét kỹ và ghi lại 30 ứng viên mới (Product Hunt 01/09–26/10 qua hunted.space, cùng WebSearch EN/ES/VI), đào sâu 3 và chọn được 2 chương trình.
 
-<b>PensionHunter (pensionhunter.ai)</b>
-• Tính năng: Tra cứu lương hưu nhà nước và lương hưu công ty bị bỏ quên ở 41 nước, cho expat và gia đình xử lý di sản (chính chủ)
-• Giá bán: Free check; Country $99/lần; Enhanced $199/lần; Global $299/lần (chính chủ)
-• Hoa hồng affiliate: $20/khách, trả một lần cho mỗi lượt search trả tiền hoàn tất qua code (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (affiliate rules công khai không nhắc PPC/brand bidding; bản affiliate agreement đầy đủ không công bố)
+<b>Puthouse (puthouse.com)</b>
+• Tính năng: AI tự bán covered call và cash-secured put qua broker Webull, tastytrade, Alpaca, Moomoo cho nhà đầu tư cá nhân Mỹ (chính chủ)
+• Giá bán: Pro $20/tháng; Max $100/tháng; Ultra $200/tháng (chính chủ)
+• Hoa hồng affiliate: 40% recurring 12 tháng (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (Program Terms và Dub Partner ToS không nhắc PPC/brand bidding)
+• Năm ra đời: 01/2026 (chính chủ)
+• Cookie: 90 ngày
+• Độ đầy đủ: 5/6
+
+Em chọn vì hoa hồng cao. Đăng ký qua Dub (https://partners.dub.co/puthouse/apply, phải được duyệt), last click, khách dùng mã vẫn tính dù không bấm link; giữ 30 ngày rồi trả khi đủ $50. Ô thiếu là Google Ads: anh cần email hello@puthouse.com hỏi về PPC và bid từ khóa thương hiệu trước khi chi tiền. Tuân thủ: gắn #ad #PuthousePartner, không hứa lợi nhuận, không nói risk-free, không tư vấn đầu tư cá nhân, che mọi số lãi/lỗ. Rủi ro lớn: Puthouse tự nhận là dịch vụ tư vấn đầu tư tự động về quyền chọn, mà Google Financial Services Verification áp dụng ở Mỹ từ đầu 2027, affiliate không có giấy phép có thể bị từ chối quảng cáo.
+
+<b>Agents61 (agents61.com)</b>
+• Tính năng: Bàn nghiên cứu cổ phiếu Mỹ/ETF/crypto bằng 61 persona AI viết brief từ hồ sơ SEC, có red team phản biện (chính chủ)
+• Giá bán: Analyst $19/tháng; Associate $49/tháng; Principal $79/tháng; Committee $149/tháng; Partners $349/tháng; dùng thử 7 ngày (chính chủ)
+• Hoa hồng affiliate: 20% recurring 12 tháng (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (điều khoản affiliate chỉ gửi sau khi được duyệt)
 • Năm ra đời: 03/2026 (RDAP)
-• Cookie: không công bố
-• Độ đầy đủ: 4/6
+• Cookie: 60 ngày
+• Độ đầy đủ: 5/6
 
-Em chọn vì đây là sản phẩm B2C mới (domain đăng ký 30/03/2026, do Battersea Park Capital Ltd ở UK vận hành), có form đăng ký công khai ngay trên https://pensionhunter.ai/affiliates, duyệt trong 5 ngày làm việc, không yêu cầu số lượng tối thiểu, trả hằng tháng qua chuyển khoản hoặc PayPal. Còn thiếu 2 ô: Cookie (không công bố) và Google Ads (chưa xác minh). Anh cần email hello@pensionhunter.ai xin bản affiliate agreement và hỏi rõ có cho chạy PPC/bid từ khóa thương hiệu không, cookie bao nhiêu ngày, trước khi chi ngân sách.
-Yêu cầu tuân thủ của chương trình: gắn nhãn #ad cho mọi nội dung có code, không được ngụ ý đây là dịch vụ nhà nước (UK có Pension Tracing Service miễn phí) hay dịch vụ được FCA quản lý, không cold call/SMS/email về lương hưu, không nói là tư vấn tài chính. Rủi ro: quảng cáo về pension ở UK có thể bị Google yêu cầu Financial services verification, mà sản phẩm không được FCA quản lý, nên cần kiểm tra trước khi target UK.
+Không có cổng tự đăng ký: anh gửi khán giả, kênh và bài mẫu qua https://agents61.com/contact, họ duyệt hằng tháng, link theo dõi chỉ cấp sau khi duyệt. Không nhận nhóm tín hiệu trả phí. Trả hằng tháng sau 30 ngày clawback. Ô thiếu là Google Ads: anh cần hỏi về PPC và brand bidding ngay trong hồ sơ. Tuân thủ: gắn #ad, chỉ nói là "research simulation, not advice", không hứa lợi nhuận, không tư vấn cá nhân. Cũng có thể vướng Google Financial Services Verification, nhẹ hơn Puthouse vì không giao dịch.
 
-Các ứng viên đào sâu bị loại:
-• <b>Beyond Payday (beyondpayday.com)</b>: cấm brand bidding. Partner Agreement mục 11 cấm bid paid-search keyword chứa "Beyond Payday" hoặc "PiggySize" khi chưa có văn bản cho phép. Hoa hồng cũng thấp ($2/khách/tháng, chỉ tính tháng đạt tối thiểu $10), partner chỉ dành cho cư dân Mỹ.
-• <b>Algovex (algovex.app)</b>: cấm brand bidding. Partner terms mục 6 cấm bid thương hiệu Algovex trên search ads. Dashboard affiliate chỉ theo lời mời, mức % không xem được.
+Ứng viên đào sâu bị loại:
+• <b>Amanah Budget (amanahbudget.com)</b>: app ngân sách halal, chỉ ghi nhận bằng mã code khách tự nhập trong app, không có link theo dõi, chương trình nhắm creator/masjid và "trả cho quan hệ, không phải click", nên không hợp Google Ads.
 
 Các ứng viên còn lại bị loại:
-• Cấm brand bidding (3): OQRO, Arbiline, MacroSetup.
-• Không mới (4): Trade Echo (ra mắt 12/2024), RizPay, Analyse-Trading, CoinBoss.
-• Không phù hợp (4): Dream Panel (dấu hiệu lừa đảo, hứa 9–12% APY), FixMy.Money (credit repair B2B), ZySurveys, Averoic.
-• Chỉ có referral tặng tháng miễn phí: Optionscanner. Thiếu dữ liệu (site chặn theo vùng): TraderPath.
-• Không có affiliate (35): đa số là app ngân sách, theo dõi thuê bao/hóa đơn, scanner cổ phiếu và nhật ký giao dịch.
+• Cấm brand bidding (2): The Trading Terminal, Forex Fundamentals.
+• Không mới (2): Coveron (NordProtect đổi tên, ra mắt 11/2024), Tradematic.
+• Không phù hợp (2): AlgoBars (dấu hiệu thổi phồng), BaseAcross (dịch vụ lập công ty).
+• Không rõ ngày ra mắt: RichGoon (domain 2014).
+• Chỉ có partner B2B hoặc là affiliate của sàn (3): Charton, OptimistFi, loweef.
+• Không có affiliate (17): app ngân sách, scanner cổ phiếu, nhật ký giao dịch.
 
-Lưu ý mạng và mức xác minh: lượt này 3 trang chủ đào sâu đều mở trực tiếp được, điều khoản đọc từ trang chính chủ; producthunt.com bị 403 nên em lấy danh sách qua hunted.space. Khoảng 280 domain chỉ được quét tự động, không thấy tín hiệu affiliate nên chưa ghi vào lịch sử. Các ứng viên bị loại sớm chỉ được scout kiểm tra nhanh (trang affiliate, RDAP). Riêng Google Ads của PensionHunter có độ tin cậy thấp.
+Lưu ý: điều khoản 3 chương trình đào sâu đọc trực tiếp từ trang chính chủ; producthunt.com bị 403 nên domain được đoán từ tên.
 
-Em đã lưu lịch sử 51 ứng viên vào reported_programs__tai-chinh-doi.md.
+Em đã lưu lịch sử 30 ứng viên vào reported_programs__tai-chinh-doi.md.
