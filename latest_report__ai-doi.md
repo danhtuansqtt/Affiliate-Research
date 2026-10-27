@@ -1,44 +1,32 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 26/10/2026. Em quét khoảng 616 domain (BetaList, Hacker News, Uneed, Open Launch, Fazier, Microlaunch, gets.tools…), còn khoảng 486 domain mới, xét kỹ 37 ứng viên, giữ 5 và chọn 3.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 27/10/2026. Em gom khoảng 820 domain (Open Launch, Microlaunch, Fazier, Uneed, Product Hunt feed, thư mục Affonso và Aura++…), bỏ khoảng 220 domain đã có trong lịch sử, xét kỹ 41 ứng viên và chọn 2.
 
-<b>LinkedGrow (linkedgrow.ai)</b>
-• Tính năng: AI agent tìm khách hàng tiềm năng trên LinkedIn và tự mở hội thoại mỗi ngày, cho founder và đội sales
-• Giá bán: Dùng thử 7 ngày $0; Pro $59/tháng; Business $89/tháng (chính chủ)
+<b>Prolifik (getprolifik.com)</b>
+• Tính năng: AI tạo video ngắn từ URL website hoặc prompt rồi tự đăng lên Reels/TikTok/Shorts/X, cho thương hiệu và agency
+• Giá bán: Dùng thử 7 ngày €0; Lite €20/tháng; Starter €49/tháng; Pro €149/tháng; Enterprise liên hệ (chính chủ)
 • Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
 • Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 2025
-• Cookie: 30 ngày
-• Độ đầy đủ: 5/6
-Chọn vì hoa hồng trọn đời, duyệt trong 48 giờ, rút tối thiểu $50 qua PayPal hằng tháng. Giá chốt theo trang /pricing; máy tính hoa hồng trên /affiliate còn ghi Pro $99, Business $179 (chưa cập nhật). Ô thiếu: Google Ads, trang affiliate và /terms không nhắc paid ads; form đăng ký có hỏi kênh quảng bá nên anh ghi rõ Google Ads để họ xác nhận.
-
-<b>Zolt AI (getzolt.ai)</b>
-• Tính năng: AI học giọng thương hiệu từ website/tài liệu, viết và đăng nội dung lên 9 kênh mạng xã hội, cho agency và marketer
-• Giá bán: Free trial $0 (100 credits, 30 ngày); Creator $29/tháng; Pro $79/tháng; Studio $199/tháng (chính chủ)
-• Hoa hồng affiliate: 30% recurring 12 tháng gói Creator, 20% gói Pro/Studio (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 09/2026
+• Năm ra đời: 04/2026
 • Cookie: 60 ngày
 • Độ đầy đủ: 5/6
-Sản phẩm rất mới, giá gói cao; gói năm chỉ trả 1 lần (Creator 25%, Pro/Studio 10%), credit pack không tính. Duyệt tay, PayPal hằng tháng từ $50, cần form W-9/W-8BEN. Ô thiếu: Google Ads, "The honest small print" và /terms không nói về paid ads; anh hỏi thẳng khi nộp đơn.
+Chọn vì hoa hồng trọn đời, cookie 60 ngày, trả hằng tháng (ngưỡng rút không công bố), phải được duyệt hồ sơ. Ô thiếu: Google Ads, chương trình không có điều khoản affiliate riêng, /terms chỉ có câu trademark chung: "Prolifik" là thương hiệu của Plant science, MB, không được dùng khi chưa có văn bản đồng ý. Anh nên email info@getprolifik.com xin phép trước khi bid hoặc dùng chữ Prolifik trong ads.
 
-<b>Wisegrid (wisegrid.co)</b>
-• Tính năng: Bảng tính quản lý công việc có công thức AI, Gantt, automation và dashboard tự dựng, cho đội dự án
-• Giá bán: Dùng thử 7 ngày $0; Wisegrid $19/editor/tháng, người xem miễn phí (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
+<b>OmniVideo (omnivideo.net)</b>
+• Tính năng: AI tạo video và ảnh từ prompt hoặc ảnh tham chiếu (Seedance, Sora, Veo…), cho người làm video, marketer và SMB
+• Giá bán: Free (có watermark); Basic $29/tháng; Advanced từ $49/tháng; Professional $199/tháng; Basic $232/năm; Advanced từ $588/năm (chính chủ)
+• Hoa hồng affiliate: 30% mỗi giao dịch, thêm 10% cấp 2 và 5% cấp 3 (chính chủ)
 • Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 2026
-• Cookie: 60 ngày
-• Độ đầy đủ: 5/6
-Không cần duyệt, tạo tài khoản là có link ?ref=, Stripe hằng tháng, hoa hồng đủ điều kiện sau 30 ngày, khách được giảm 30% tháng đầu. AI là tính năng chứ không phải lõi sản phẩm. Ô thiếu: Google Ads, "Program terms" chỉ cấm self-referral; anh email founder ryan@wisegrid.co hỏi trước khi bid tên thương hiệu.
+• Năm ra đời: 11/2025
+• Cookie: không công bố
+• Độ đầy đủ: 4/6
+Chọn vì không cần duyệt, rút tối thiểu $10, hoa hồng giữ 30 ngày, duyệt rút trong ngày (FAQ hiện ghi trả bằng USDC trên Polygon). Trang không nói hoa hồng có lặp khi gia hạn hay không. Ô thiếu: Cookie và Google Ads, anh hỏi support@zoer.ai. Rủi ro lớn: site tự ghi "Powered by Google's Gemini Omni Video model" nhưng cũng ghi Google chưa ra mắt model này, nên ads dùng chữ Gemini/Google dễ bị từ chối vì Trademarks hoặc Misrepresentation, có thể treo cả tài khoản. Nếu chạy, anh chỉ dùng tên OmniVideo và trỏ về trang chủ hoặc /pricing, không trỏ về /model/gemini-omni-video.
 
-Giữ lại nhưng không chọn: <b>SignalTo</b> (đo hiển thị trong câu trả lời AI, recurring trọn đời nhưng tỷ lệ và Affiliate Terms chỉ xem sau khi đăng ký, 4/6), <b>aelívra</b> (AI sức khỏe, 35% trọn đời nhưng chưa ra mắt chính thức và ngách y tế dễ vướng chính sách Google Ads, 5/6).
+Bị loại (39):
+- Cấm bid thương hiệu: Inflowave, PromptWise, LaunchRanked, Intellemo, Off Camera, MakeCanvas, Codalio, CopyCat Cafe.
+- Trùng lịch sử: Port8.
+- Không đủ mới: SocialKit, DataFast, Features.Vote, Denser.ai, Image Prompt, Lovevoice, PiAPI, InfoLobby.
+- Chưa xác minh ngày ra mắt: Eddyter, Enginy.
+- Không có chương trình hoặc chỉ trả credit: OpenWorker, OutReign, Talk Kit, Create a Meme, Reason, SoarVid, Wan API, Dreamwork, Lyria 3, Kling 4.0, Seedance 2 Video, VoiceCite, VioEvo, MakePostAI, Aldena; SeedRouter chỉ trả credit.
+- Không phải công cụ AI: VaultlyKeep, tikklip, SEO Mode.
+- Không chạy Google Ads được: CornDude (nội dung người lớn).
 
-Bị loại (32):
-- Cấm bid thương hiệu (7): Scribiz, BrixCanvas, OIO, Rankpeak, SendNow, Spicy API, Tarotap.
-- Đã xét trước đó (3): Answrr, Robofy, Molyin.
-- Không đủ mới (8): SpeedyIndex, hProxy, BillingMart, Roamify, AI Checker Pro, AssignmentGPT, Crop.photo, Alphie.
-- Chưa xác minh ngày ra mắt (2): this+that, Angebotsmeister.
-- Không có hoặc đã đóng chương trình (3): TubeAnalytics, PosteAhora, Pragte.
-- Không phải affiliate SaaS (6): Raileon, Iron Gorilla, PopCam, Viravance, Uncloud, Gets.Tools.
-- Không phải công cụ AI (3): Kwill, AloOui, Submitator.
-
-Cả 5 chương trình giữ lại đều chưa xác minh Google Ads; anh nên hỏi hoặc đọc điều khoản trước khi chi ngân sách. Em đã lưu 37 dòng vào lịch sử reported_programs__ai-doi.md.
+Em đã lưu lịch sử 41 ứng viên vào reported_programs__ai-doi.md.
