@@ -1,3 +1,4 @@
 # Dòng kết thúc thống nhất giữa Windows và macOS
 * text=auto
 *.sh text eol=lf
+*.command text eol=lf

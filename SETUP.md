@@ -37,7 +37,7 @@ Sửa skill ở máy nào cũng được: commit và push, máy kia chạy `git 
 | Token bot Telegram, khóa Sheet cho GitHub Actions | GitHub Secrets | Không cần gì. Các workflow tự dùng. |
 | Bộ nhớ riêng của Claude (memory) | `~/.claude/projects/...` mỗi máy một bản | Không đồng bộ. Điều gì quan trọng thì ghi vào `CLAUDE.md` hoặc skill trong repo. |
 | `local-runner/` | Repo | Chỉ dùng cho Windows (PowerShell, hiện đã tắt). Trên Mac không cần. |
-| App Affiliate Viewer (`.exe`) | `E:\Claude\affiliate-viewer` | Chỉ chạy Windows. |
+| App Affiliate Viewer | `viewer/` trong repo | Chạy được trên Mac: `bash viewer/run-mac.command`. Lần đầu app hỏi file khóa Google và link Sheet, xem `viewer/README.md`. |
 
 ## Công cụ tùy chọn
 

@@ -14,3 +14,8 @@ __pycache__/
 *-sa-key.json
 *.pem
 .env
+
+# Viewer: bản build và môi trường
+viewer/dist/
+viewer/build/
+*.spec
