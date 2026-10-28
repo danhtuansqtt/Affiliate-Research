@@ -6,6 +6,8 @@
 
 **Kích hoạt:** Khi được yêu cầu làm việc affiliate (scout hằng ngày, audit advertiser Google Ads Transparency, tóm tắt marketplace, nghiên cứu domain, hoặc sửa/chạy lại các việc đó), dùng skill `affiliate-orchestrator`. Câu hỏi đơn giản về dữ liệu đã có thì trả lời trực tiếp.
 
+**Nhiều máy (Windows và macOS):** xem `SETUP.md`. Clone repo là có đủ skill/agent; luôn `git pull --rebase` trước khi làm và chỉ `git add` đúng file đã sửa.
+
 **Lịch sử thay đổi:**
 | Ngày | Thay đổi | Phạm vi | Lý do |
 |------|----------|---------|-------|
@@ -29,3 +31,4 @@
 | 2026-10-01 | `reported_programs*.md` thêm cột 12 `Link Đăng Ký Affiliate`; Google Sheet thay cột Status bằng Link Đăng Ký Affiliate (Status chỉ còn trong file repo); `find_affiliate_page.py --link` in 1 dòng link đăng ký; check_outputs.py kiểm tra cột link | .github/scripts/sync_sheet.py, report-format, find_affiliate_page.py, reported_programs__*-doi.md | Người dùng muốn Sheet có link đăng ký affiliate thay cho Status |
 | 2026-10-24 | Khôi phục toàn bộ `.github/`, `.claude/`, `CLAUDE.md`, `local-runner/`, `reported_programs.md`, `reported_programs__tai-chinh.md` và 20 file audit cũ (trừ 2 file latest_report cũ) từ commit 0e73057 | .github, .claude, local-runner, advertiser-audits | Commit eb76fc7 (17/10, "Add 5StarsDigital Limited audit") xóa nhầm 56 file kể cả 3 workflow nên Telegram và Google Sheet ngừng cập nhật từ 18/10 dù routine vẫn chạy |
 | 2026-10-24 | Thêm workflow `deletion-guard` (báo Telegram khi commit lên master xóa hơn 5 file); skill ads-transparency-audit và affiliate-orchestrator bắt buộc `git pull --rebase`, `git add` đúng file, kiểm tra `git diff --cached --diff-filter=D` trước khi commit; bù Sheet 559 dòng và gửi 2 tin Telegram bù cho 18-24/10 | .github/workflows, skill ads-transparency-audit, affiliate-orchestrator | Sau sự cố eb76fc7 người dùng yêu cầu bù dữ liệu và chặn tái diễn |
+| 2026-10-28 | Thêm `SETUP.md` (cài và quy tắc dùng hai máy Windows + macOS), `scripts/mac-setup.sh` (kiểm tra máy, không tự cài), `.gitattributes` (LF cho .sh), bổ sung `.gitignore` (.DS_Store, pycache, khóa bí mật) | SETUP.md, scripts, .gitattributes, .gitignore | Người dùng dùng thêm MacBook, muốn làm việc được trên cả hai máy |

@@ -4,3 +4,13 @@ _workspace_*/
 
 # Log của local-runner (chạy trên máy)
 local-runner/logs/
+
+# macOS / Python
+.DS_Store
+__pycache__/
+*.pyc
+
+# Khóa bí mật (không bao giờ commit)
+*-sa-key.json
+*.pem
+.env
