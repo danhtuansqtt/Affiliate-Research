@@ -1,25 +1,33 @@
-Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 27/10/2026. Em đã xét và ghi lại 30 ứng viên mới (sitemap Dub Partners, Show HN 14–26/10, Product Hunt, BetaList, Tolt, WebSearch nhiều ngôn ngữ), đào sâu 2 và chọn được 1 chương trình.
+Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 28/10/2026. Hôm nay em không chọn được chương trình nào: đã xét 16 ứng viên mới, cả 16 đều bị loại vì không có cái nào đạt đủ 3 điều kiện cùng lúc là ra mắt từ 1/1/2025, có affiliate/CPA công khai cho marketer và hướng người tiêu dùng.
 
-<b>CommonQuant (commonquant.ai)</b>
-• Tính năng: Tìm luận điểm đầu tư, backtest chiến lược và cảnh báo luận điểm cổ phiếu cho nhà đầu tư cá nhân, có kết nối MCP cho ChatGPT/Claude (chính chủ)
-• Giá bán: Free $0 (giới hạn reset hằng tuần); Max $49/tháng (chính chủ)
-• Hoa hồng affiliate: 35% recurring 24 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (affiliates, terms, partner guide và Dub không nhắc PPC/brand bidding)
-• Năm ra đời: 12/2025 (RDAP)
-• Cookie: 60 ngày
-• Độ đầy đủ: 5/6
+Hướng em đã tìm: BetaList (finance, banking, credit), hunted.space (top Fintech Product Hunt 06–10/2026, vì Product Hunt chặn Cloudflare 403), Show HN 26–28/10, partners.dub.co, Tolt, FirstPromoter, PartnerStack, Involve Asia, danh sách prop firm, latamfintech.co, fintechlaunches.com và WebSearch tiếng Anh, Việt, Tây Ban Nha. Em bỏ qua hơn 70 domain đã có trong lịch sử (vd driven.ai, tash.cards, liquid.trade, vikki.vn, tradezella.com).
 
-Em chọn vì hoa hồng 35% kéo dài 24 tháng, ai cũng đăng ký được qua Dub (https://partners.dub.co/common-quant/apply, phải được duyệt, không cần website). Hoa hồng tính trên tiền thực thu sau giảm giá, giữ 30 ngày, trả qua Stripe hoặc PayPal; ngưỡng rút và traffic không công bố. Ô thiếu là Google Ads: thỏa thuận partner chỉ có sau khi được duyệt, anh cần email partners@commonquant.ai hỏi có được bid từ khóa "CommonQuant" không trước khi chi tiền. Pháp lý: ToS ghi "NOT FINANCIAL ADVICE", Replikate Labs Pte Ltd (Singapore) không được MAS cấp phép, nên quảng cáo không được viết kiểu tư vấn đầu tư hay hứa lợi nhuận; ở một số nước (UK, AU, IN) Google có thể đòi Financial Services verification với nội dung chứng khoán. Sản phẩm mới, chưa thấy tin gọi vốn hay báo chí.
+Các ứng viên đã xét và lý do loại:
 
-Ứng viên đào sâu bị loại:
-• <b>Coinask (coinask.ai)</b>: Partner Program Terms mục 12 cấm bid "Coinask" và biến thể gần trên paid search nếu chưa được duyệt bằng văn bản; cấm nhắm người dùng UK, và crypto vướng chính sách hạn chế của Google Ads. Hoa hồng 20% recurring 12 tháng, cookie theo Terms là 45 ngày (trang partners ghi 60).
+Không mới (8):
+• <b>Base App (base.app)</b>: chỉ là đổi tên Coinbase Wallet (07/2025), tới 09/2026 lại đổi về; domain từ 2018. Affiliate Dub $5/lead, $30/đơn đầu, 25% trọn đời.
+• <b>Fiscal.ai (fiscal.ai)</b>: là FinChat đổi tên 06/2025, domain 2022; không công bố tỷ lệ affiliate.
+• <b>MBV (mbv.com.vn)</b>: OceanBank đổi tên 12/2024, không thấy chiến dịch affiliate.
+• <b>Ruya (ruyabank.ae)</b>: ngân hàng số UAE ra mắt 2024, chỉ có Refer &amp; Earn cho khách.
+• <b>Pine AI (19pine.ai)</b>: ra mắt 2024, chỉ có referral người dùng.
+• <b>stockinsights.ai (stockinsights.ai)</b>: domain 2023.
+• <b>Telegram Signal Copier (telegramsignalcopier.com)</b>: domain 2022, có affiliate FirstPromoter.
+• <b>DynaPro Trading (dynaprotrading.com)</b>: domain 2021, affiliate 20% định kỳ.
 
-Các ứng viên còn lại bị loại:
-• Chưa ra mắt, chỉ có waitlist (3): GexMap, Traderly, finent.
-• Không mới (7): The Credit Brothers, Finta, Aries, Horizon Trade, StockAnalysis.com, Babypips, Brrrr Loans.
-• Không phù hợp (4): Kick (B2B kế toán), Unjuiced và ForeGate (cá cược), Solana Tracker (hạ tầng dev crypto).
-• Không rõ ngày ra mắt (3): BankSync, Finkhoz, Financial Aha.
-• Chỉ hợp tác với nhà phát hành thẻ (1): CardSwipe.
-• Không có affiliate (10): Fere AI, Meet Warren, Rivaire, Basteon, Tenivel, BudgetFlow, KnowYourSpend, Stock Pickers' Game, Return Ledger, LP &amp; M Research.
+Không rõ ngày ra mắt (1):
+• <b>FunderPro Futures (funderprofutures.com)</b>: công bố waitlist 11/2024, nguồn ghi 12/2024 lẫn 07/2025; trang chủ không có link affiliate.
 
-Em đã lưu lịch sử 30 ứng viên vào reported_programs__tai-chinh-doi.md.
+Đã ngừng hoạt động (1):
+• <b>SeacrestFunded (seacrestfunded.com)</b>: MyFundedFX đổi tên, đã dừng prop trading, đóng tài khoản từ 02/2026.
+
+Không có affiliate (5):
+• <b>StoicCredit (stoiccredit.com)</b>: sửa tín dụng bằng AI (09/2025), /affiliate chỉ trả về trang chủ.
+• <b>1Strat (1strat.ai)</b>: chỉ báo crypto AI (12/2025), không có chương trình.
+• <b>Cardzen (cardzen.app)</b>: theo dõi quyền lợi thẻ tín dụng (07/2026), không có affiliate.
+• <b>Richify (richify.ai)</b>: app tài chính cá nhân AI, domain 05/2024, không có affiliate.
+• <b>trak-yo-dolla$ (trakyodollas.com)</b>: miễn phí (Show HN 27/10), không có affiliate.
+
+Thiếu dữ liệu (1):
+• <b>AriseAlpha (arisealpha.com)</b>: chỉ có thông cáo báo chí trả tiền, site lỗi 522, có dấu hiệu rủi ro (bot giao dịch crypto).
+
+Em đã lưu lịch sử 16 ứng viên vào reported_programs__tai-chinh-doi.md.
