@@ -600,3 +600,35 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | timetastic.co.uk | Timetastic | 2026-10-21 | AR09770607641242894337 |
 | saguaro.com | Saguaro | 2026-10-21 | AR09770607641242894337 |
 | soundcore.com | Soundcore | 2026-10-21 | AR09770607641242894337 |
+| manychat.com | ManyChat | 2026-10-28 | AR16387915955222609921 |
+| woodpecker.co | Woodpecker | 2026-10-28 | AR16387915955222609921 |
+| rockbrosbike.us | RockBros | 2026-10-28 | AR16387915955222609921 |
+| scarletdarkness.com | Scarlet Darkness | 2026-10-28 | AR16387915955222609921 |
+| decarba.com | Decarba | 2026-10-28 | AR16387915955222609921 |
+| appsumo.com | AppSumo | 2026-10-28 | AR16387915955222609921 |
+| ugritone.com | Ugritone | 2026-10-28 | AR16387915955222609921 |
+| rankscale.ai | Rankscale | 2026-10-28 | AR16387915955222609921 |
+| openart.ai | OpenArt | 2026-10-28 | AR16387915955222609921 |
+| bitfunded.com | BitFunded | 2026-10-28 | AR16387915955222609921 |
+| aiboo.net | Aiboo | 2026-10-28 | AR16387915955222609921 |
+| mindmanager.com | MindManager | 2026-10-28 | AR16387915955222609921 |
+| creao.ai | CREAO | 2026-10-28 | AR16387915955222609921 |
+| geprc.com | GEPRC | 2026-10-28 | AR16387915955222609921 |
+| cointracker.com | CoinTracker | 2026-10-28 | AR16387915955222609921 |
+| adoebike.com | ADOeBike | 2026-10-28 | AR16387915955222609921 |
+| wiimhome.com | WiiM | 2026-10-28 | AR16387915955222609921 |
+| meikeglobal.com | Meike Global | 2026-10-28 | AR16387915955222609921 |
+| mambobabyshop.com | Mambo Baby Shop | 2026-10-28 | AR16387915955222609921 |
+| craftclubco.com | Craft Club Co | 2026-10-28 | AR16387915955222609921 |
+| mokinglobal.com | MOKiN | 2026-10-28 | AR16387915955222609921 |
+| nikolatoy.com | Nikola Toy | 2026-10-28 | AR16387915955222609921 |
+| fytoo.com | FYTOO Optical | 2026-10-28 | AR16387915955222609921 |
+| natchlabs.com | Natch Labs | 2026-10-28 | AR16387915955222609921 |
+| humsienk.com | Humsienk | 2026-10-28 | AR16387915955222609921 |
+| onepage.io | Onepage | 2026-10-28 | AR16387915955222609921 |
+| silksilky.com | SilkSilky | 2026-10-28 | AR16387915955222609921 |
+| mothersearth.com | Mother's Earth | 2026-10-28 | AR16387915955222609921 |
+| viktor.com | Viktor | 2026-10-28 | AR16387915955222609921 |
+| veeam.com | Veeam | 2026-10-28 | AR16387915955222609921 |
+| dify.ai | Dify | 2026-10-28 | AR16387915955222609921 |
+| helium10.com | Helium 10 | 2026-10-28 | AR16387915955222609921 |
