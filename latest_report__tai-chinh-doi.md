@@ -1,33 +1,31 @@
-Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 28/10/2026. Hôm nay em không chọn được chương trình nào: đã xét 16 ứng viên mới, cả 16 đều bị loại vì không có cái nào đạt đủ 3 điều kiện cùng lúc là ra mắt từ 1/1/2025, có affiliate/CPA công khai cho marketer và hướng người tiêu dùng.
+Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 29/10/2026. Em đã rà 16 ứng viên mới, chọn được 1 chương trình nhưng rủi ro tuân thủ pháp lý cao, anh đọc kỹ phần cảnh báo trước khi chạy.
 
-Hướng em đã tìm: BetaList (finance, banking, credit), hunted.space (top Fintech Product Hunt 06–10/2026, vì Product Hunt chặn Cloudflare 403), Show HN 26–28/10, partners.dub.co, Tolt, FirstPromoter, PartnerStack, Involve Asia, danh sách prop firm, latamfintech.co, fintechlaunches.com và WebSearch tiếng Anh, Việt, Tây Ban Nha. Em bỏ qua hơn 70 domain đã có trong lịch sử (vd driven.ai, tash.cards, liquid.trade, vikki.vn, tradezella.com).
+<b>Amio – Đầu tư &amp; Tích lũy (amio.vn)</b>
+• Tính năng: App tích lũy sinh lời từ 50.000đ (không kỳ hạn, có kỳ hạn, theo mục tiêu) cho người Việt, rút trước hạn toàn phần
+• Giá bán: App miễn phí 0đ; tích lũy tối thiểu 50.000đ; lợi suất công bố 5,3%-11%/năm tùy gói (chính chủ)
+• Hoa hồng affiliate: 104.000 VND/khách một lần (mạng affiliate Dinos)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (KPI chiến dịch chỉ xem sau khi đăng ký Dinos)
+• Năm ra đời: 01/2026 (chính chủ)
+• Cookie: chỉ xem sau khi đăng ký (Dinos: https://account.dinos.vn/signup)
+• Độ đầy đủ: 4/6
 
-Các ứng viên đã xét và lý do loại:
+Em chọn vì app mới (App Store 23/01/2026, pháp nhân Công ty CP công nghệ DGX lập 22/10/2025), hướng người tiêu dùng, có CPA mở trên Dinos. User hợp lệ: ≥21 tuổi, eKYC, liên kết ngân hàng, nạp ≥200.000đ giữ ≥7 ngày; chỉ VN; ngưỡng rút Dinos 25 USD (nguồn phụ). Hai ô thiếu (Google Ads, Cookie) nằm trong KPI chiến dịch "Amio New User": anh đăng ký publisher tại account.dinos.vn rồi đọc. Bài ra mắt của Dinos chỉ nhắc Facebook, TikTok, free traffic.
 
-Không mới (8):
-• <b>Base App (base.app)</b>: chỉ là đổi tên Coinbase Wallet (07/2025), tới 09/2026 lại đổi về; domain từ 2018. Affiliate Dub $5/lead, $30/đơn đầu, 25% trọn đời.
-• <b>Fiscal.ai (fiscal.ai)</b>: là FinChat đổi tên 06/2025, domain 2022; không công bố tỷ lệ affiliate.
-• <b>MBV (mbv.com.vn)</b>: OceanBank đổi tên 12/2024, không thấy chiến dịch affiliate.
-• <b>Ruya (ruyabank.ae)</b>: ngân hàng số UAE ra mắt 2024, chỉ có Refer &amp; Earn cho khách.
-• <b>Pine AI (19pine.ai)</b>: ra mắt 2024, chỉ có referral người dùng.
-• <b>stockinsights.ai (stockinsights.ai)</b>: domain 2023.
-• <b>Telegram Signal Copier (telegramsignalcopier.com)</b>: domain 2022, có affiliate FirstPromoter.
-• <b>DynaPro Trading (dynaprotrading.com)</b>: domain 2021, affiliate 20% định kỳ.
+Rủi ro tuân thủ pháp lý:
+• Mô hình giống Topi/Buff: DGX không phải ngân hàng, tiền khách ủy thác cho Amber Capital, đơn vị từng ký kiểu tương tự với Topi. 3/2026 UBCKNN cảnh báo Topi và Buff vì huy động vốn qua hợp đồng hợp tác đầu tư không được UBCKNN cấp phép. Cảnh báo chưa nêu tên Amio nhưng cấu trúc tương tự; nếu bị mở rộng anh có thể mất chiến dịch.
+• Disclaimer: luôn ghi "lên tới 11%/năm, theo điều kiện chương trình" kèm nguyên câu của Amio: "Mức sinh lời lên tới 11%/năm không đồng nghĩa với mức sinh lời áp dụng cho mọi khoản tích lũy..."
+• Từ không nên dùng: "lãi suất", "tiết kiệm", "gửi tiết kiệm", "an toàn tuyệt đối", "cam kết lợi nhuận", "bảo đảm"; không dùng logo BIDV/EVF như thể ngân hàng bảo lãnh.
+• Xác minh dịch vụ tài chính của Google: danh sách nước bắt buộc em đọc hôm nay chưa có VN, một blog nói VN đã thêm từ 04/2026 (chưa xác minh). Ads vẫn phải qua chính sách Financial services và Unreliable claims; "sinh lời 11%" không kèm điều kiện dễ bị từ chối. Cần landing page riêng (Dinos cấm tự chuyển hướng).
 
-Không rõ ngày ra mắt (1):
-• <b>FunderPro Futures (funderprofutures.com)</b>: công bố waitlist 11/2024, nguồn ghi 12/2024 lẫn 07/2025; trang chủ không có link affiliate.
+Em khuyên anh hỏi quản lý chiến dịch Dinos bằng văn bản trước khi chi tiền: (a) có cho chạy Google Search không, (b) có cho bid từ khóa "Amio" không, (c) bộ disclaimer bắt buộc là gì.
 
-Đã ngừng hoạt động (1):
-• <b>SeacrestFunded (seacrestfunded.com)</b>: MyFundedFX đổi tên, đã dừng prop trading, đóng tài khoản từ 02/2026.
-
-Không có affiliate (5):
-• <b>StoicCredit (stoiccredit.com)</b>: sửa tín dụng bằng AI (09/2025), /affiliate chỉ trả về trang chủ.
-• <b>1Strat (1strat.ai)</b>: chỉ báo crypto AI (12/2025), không có chương trình.
-• <b>Cardzen (cardzen.app)</b>: theo dõi quyền lợi thẻ tín dụng (07/2026), không có affiliate.
-• <b>Richify (richify.ai)</b>: app tài chính cá nhân AI, domain 05/2024, không có affiliate.
-• <b>trak-yo-dolla$ (trakyodollas.com)</b>: miễn phí (Show HN 27/10), không có affiliate.
-
-Thiếu dữ liệu (1):
-• <b>AriseAlpha (arisealpha.com)</b>: chỉ có thông cáo báo chí trả tiền, site lỗi 522, có dấu hiệu rủi ro (bot giao dịch crypto).
+Bị loại:
+• <b>Turbine (turbinefi.com)</b>: bot thị trường dự đoán, nhóm cờ bạc.
+• <b>InsiderPrint (insiderprint.com)</b>: Cloudflare chặn, không xác minh được affiliate.
+• <b>Minara (minara.ai)</b>: chỉ referral trong app, crypto.
+• Không có affiliate: <b>Spendify (spendify.money)</b>, <b>Chord Finance (chordfi.aquaflamingolabs.com)</b>, <b>Marx Finance (marx.finance)</b>, <b>Candlestick (candlestick.ai)</b>, <b>FinancialData.net (financialdata.net)</b>.
+• Không mới: <b>Koody (koody.com)</b>, <b>Godel Terminal (godelterminal.com)</b>, <b>LendSwap (lendswap.mx)</b>, <b>Receipt AI (receipt-ai.com)</b>.
+• Không rõ ngày ra mắt: <b>Tieno (tieno.vn)</b>, <b>Cây Vàng (cayvang.vn)</b>.
+• Trùng: <b>AI Finance Prep (aifinanceprep.com)</b>.
 
 Em đã lưu lịch sử 16 ứng viên vào reported_programs__tai-chinh-doi.md.
