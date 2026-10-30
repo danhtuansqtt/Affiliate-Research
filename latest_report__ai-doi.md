@@ -1,17 +1,30 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 29/10/2026: hôm nay không có chương trình nào đạt. Hai ứng viên tốt nhất (Centripe, PulseVane) đều cấm bid từ khóa thương hiệu, còn ServiceAgent chỉ đang mở waitlist, chưa bán.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 30/10/2026: hôm nay có 1 chương trình đạt là Okou (vm0.ai).
 
-Em quét AffiliationList (trang 1-2, mới nhất), Affonso marketplace (168 chương trình), Open Launch, Tiny Startups, RSS Product Hunt và WebSearch, bỏ các domain đã có trong lịch sử (109/168 của Affonso là domain cũ), xét 64 domain mới, giữ 3 để đào sâu.
+Em quét Affonso directory (168 trang marketplace), Open Launch, Tiny Startups, Uneed, PeerPush, BetaList mục AI và WebSearch (Tolt, Dub, FlexOffers, affi.io), bỏ khoảng 30 domain đã có trong lịch sử, xét chi tiết 47 ứng viên, giữ 5 để đào sâu.
 
-<b>Centripe (centripe.ai)</b>: CRM + marketing all-in-one có AI, white-label cho agency, Essentials $99/tháng, Unlimited $299/tháng, hoa hồng 40% recurring trọn đời, cookie 60 ngày. Loại vì Affiliate Program Agreement (nằm trong trang /privacy-policy) cấm mua quảng cáo cạnh tranh với quảng cáo của Centripe "including our branded keywords" và cấm dùng tên Centripe trong nội dung PPC. Ngoài ra sản phẩm có dấu hiệu không mới: app iOS phát hành 08/2024, LinkedIn ghi thành lập 2024.
+<b>Okou (vm0.ai)</b>
+• Tính năng: AI teammate chạy workflow agent, làm báo cáo, slide, website, nối 100+ công cụ trong Slack/Web, cho freelancer, SMB, agency
+• Giá bán: Free $0 (1,000 credits/30 ngày); Pro từ $20/tháng; Team từ $180/tháng; Enterprise liên hệ (chính chủ)
+• Hoa hồng affiliate: 30% một lần mỗi đơn subscription/top-up (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Impact: app.impact.com/campaign-promo-signup/Okou.brand)
+• Năm ra đời: 11/2025
+• Cookie: 30 ngày
+• Độ đầy đủ: 5/6
 
-<b>PulseVane (pulsevane.com)</b>: terminal chấm điểm tin tức thị trường bằng language model, Pro $14.99/tháng hoặc $149/năm, 30% recurring trọn đời, cookie 30 ngày, ra mắt 03/2026. Loại vì trang chương trình trên Affonso xếp Brand Bidding vào nhóm traffic bị hạn chế (Paid Search nói chung vẫn được phép). Độ tin cậy trung bình vì điều khoản trong cổng pulsevane.affonso.io render bằng JS, em chưa đọc được. Thêm rủi ro: sản phẩm thông tin trading/forex/crypto dễ bị Google Ads xếp vào dịch vụ tài chính, cần Financial Services Verification ở UK, EU và một số nước.
+VM0 đã đổi tên thành Okou, vm0.ai chuyển hướng sang okou.ai. Ô còn thiếu là Google Ads: trang affiliate không có câu cấm bid nhưng yêu cầu khai báo trước mọi paid traffic để duyệt kênh, nên anh cần ghi rõ Google Ads vào đơn đăng ký Impact và đọc hợp đồng Impact sau khi được duyệt rồi mới chi tiền ads. Hồ sơ được duyệt theo audience, đơn khóa 27 ngày sau cuối tháng và trả 20 ngày sau đó (đơn tháng 1 trả 20/3), trả bằng USD. Mức 30% dành cho creator, content network chỉ được 10% và coupon 5%.
 
-<b>ServiceAgent (serviceagent.ai)</b>: AI nghe gọi 24/7, đặt lịch, CRM cho doanh nghiệp dịch vụ tại nhà, 20% recurring qua FirstPromoter. Loại vì mọi nút đăng ký và mua đều dẫn tới waitlist ("ServiceAgent launches soon"), bản hiện tại chưa mở bán. Điều khoản quảng cáo cũng chỉ xem được sau khi đăng ký FirstPromoter.
+Bốn ứng viên đào sâu còn lại bị loại:
+- <b>Protoface (protoface.com)</b>: Affiliate Terms mục 7 cấm bid thương hiệu, tên sản phẩm và lỗi chính tả trong paid ads (hoa hồng thật là 50% đơn đầu + 25% recurring 12 tháng, không phải 100% như tiêu đề trang).
+- <b>Claudify (claudify.tech)</b>: Program terms ghi "No bidding on Claudify branded keywords in paid ads" ($10/khách, cookie 30 ngày).
+- <b>MuleRun (mulerun.com)</b>: affi.io ghi "Brand bidding is prohibited", Cuelinks cấm cả SEM từ khóa chung; thương hiệu đã gộp vào QwenWork (Alibaba).
+- <b>SJinn (sjinn.ai)</b>: chỉ đạt 3/6, hoa hồng và cookie nằm trên sjinn.getrewardful.com bị Cloudflare chặn từ mạng cloud, Google Ads chưa xác minh. Anh mở link đó từ máy thật để xem tỷ lệ.
 
-Bị loại ở bước scout (61):
-- Không phải công cụ AI (31), ví dụ 99tools, LaunchSpy, SherGuard, RJALPHA, Kismana.
-- Không đủ mới (17), ví dụ Pickaxe, SuperX, Picmim, MultiLipi, Two Minute Reports.
-- Không có chương trình affiliate (11), ví dụ SoraVideo, Luo, OpenBot, keep.md.
-- Thiếu dữ liệu (2): BoomBye (site không tồn tại), Danian (Cloudflare chặn).
+Bị loại ở bước scout (42):
+- Không có chương trình affiliate (14), ví dụ Opennote, CompeteScan, Mailotte, Actium.
+- Không đủ mới (13), ví dụ Promptus, Listnr, Relevance AI, MagicShot.
+- Không phải công cụ AI (9), ví dụ ROOPON, AfterLid, BoardUI.
+- Cấm bid thương hiệu (3): ExtraBrain, Exabase, Knolo.
+- Không phải mô hình affiliate (2): Receptri, AnveVoice (reseller white-label).
+- Thiếu dữ liệu (1): Influto (domain đang rao bán).
 
-Em đã lưu lịch sử 64 ứng viên vào reported_programs__ai-doi.md.
+Em đã lưu lịch sử 47 ứng viên vào reported_programs__ai-doi.md.
