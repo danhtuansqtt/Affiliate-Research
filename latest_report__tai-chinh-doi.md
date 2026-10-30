@@ -1,31 +1,24 @@
-Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 29/10/2026. Em đã rà 16 ứng viên mới, chọn được 1 chương trình nhưng rủi ro tuân thủ pháp lý cao, anh đọc kỹ phần cảnh báo trước khi chạy.
+Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 30/10/2026. Hôm nay không có chương trình nào đạt: em đã đối chiếu khoảng 230 domain với lịch sử, hơn 200 domain đã xét ở các lượt trước, còn 22 domain mới thì loại cả 22.
 
-<b>Amio – Đầu tư &amp; Tích lũy (amio.vn)</b>
-• Tính năng: App tích lũy sinh lời từ 50.000đ (không kỳ hạn, có kỳ hạn, theo mục tiêu) cho người Việt, rút trước hạn toàn phần
-• Giá bán: App miễn phí 0đ; tích lũy tối thiểu 50.000đ; lợi suất công bố 5,3%-11%/năm tùy gói (chính chủ)
-• Hoa hồng affiliate: 104.000 VND/khách một lần (mạng affiliate Dinos)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (KPI chiến dịch chỉ xem sau khi đăng ký Dinos)
-• Năm ra đời: 01/2026 (chính chủ)
-• Cookie: chỉ xem sau khi đăng ký (Dinos: https://account.dinos.vn/signup)
-• Độ đầy đủ: 4/6
+Các hướng em đã tìm:
+• Show HN 16-30/10/2026 (HN Algolia), danh mục YC (consumer-finance, fintech, banking, credit-lending, asset-management, insurance, payments), các chủ đề tài chính trên BetaList.
+• PropFirmMap (firm mới Q2/2026), Referly mục finance (chỉ có thương hiệu lâu năm), Affilitizer newest (bản miễn phí không có chương trình tài chính).
+• WebSearch tiếng Anh, Việt, Tây Ban Nha: Dinos/Accesstrade/Ecomobi, LATAM, UAE/Saudi, SEA, Ấn Độ.
+• Product Hunt trả 403, hunted.space không lấy được domain sản phẩm.
 
-Em chọn vì app mới (App Store 23/01/2026, pháp nhân Công ty CP công nghệ DGX lập 22/10/2025), hướng người tiêu dùng, có CPA mở trên Dinos. User hợp lệ: ≥21 tuổi, eKYC, liên kết ngân hàng, nạp ≥200.000đ giữ ≥7 ngày; chỉ VN; ngưỡng rút Dinos 25 USD (nguồn phụ). Hai ô thiếu (Google Ads, Cookie) nằm trong KPI chiến dịch "Amio New User": anh đăng ký publisher tại account.dinos.vn rồi đọc. Bài ra mắt của Dinos chỉ nhắc Facebook, TikTok, free traffic.
+Nhận xét: sản phẩm tài chính tiêu dùng ra mắt từ 2025 có affiliate công khai gần như đã được xét hết ở các nguồn trên. Ứng viên mới chủ yếu là app indie miễn phí, startup YC còn waitlist, hoặc chỉ có referral nhận credit trong app. Em không chọn ứng viên yếu cho đủ số.
 
-Rủi ro tuân thủ pháp lý:
-• Mô hình giống Topi/Buff: DGX không phải ngân hàng, tiền khách ủy thác cho Amber Capital, đơn vị từng ký kiểu tương tự với Topi. 3/2026 UBCKNN cảnh báo Topi và Buff vì huy động vốn qua hợp đồng hợp tác đầu tư không được UBCKNN cấp phép. Cảnh báo chưa nêu tên Amio nhưng cấu trúc tương tự; nếu bị mở rộng anh có thể mất chiến dịch.
-• Disclaimer: luôn ghi "lên tới 11%/năm, theo điều kiện chương trình" kèm nguyên câu của Amio: "Mức sinh lời lên tới 11%/năm không đồng nghĩa với mức sinh lời áp dụng cho mọi khoản tích lũy..."
-• Từ không nên dùng: "lãi suất", "tiết kiệm", "gửi tiết kiệm", "an toàn tuyệt đối", "cam kết lợi nhuận", "bảo đảm"; không dùng logo BIDV/EVF như thể ngân hàng bảo lãnh.
-• Xác minh dịch vụ tài chính của Google: danh sách nước bắt buộc em đọc hôm nay chưa có VN, một blog nói VN đã thêm từ 04/2026 (chưa xác minh). Ads vẫn phải qua chính sách Financial services và Unreliable claims; "sinh lời 11%" không kèm điều kiện dễ bị từ chối. Cần landing page riêng (Dinos cấm tự chuyển hướng).
+Ứng viên đáng chú ý và lý do loại:
+• <b>Volaren (volaren.ai)</b>: agent AI đầu tư cá nhân (YC F2026), nhưng chỉ có referral thưởng credit trong app, tối đa 10 lượt/30 ngày; các đường dẫn /affiliate đều chuyển về form đăng ký.
+• <b>Tradeify (tradeify.co)</b>: prop firm futures có trang /become-an-affiliate, nhưng thành lập 2022-2024 (nguồn phụ mâu thuẫn), mảng crypto 02/2026 dùng chung thương hiệu nên không tính là sản phẩm mới.
+• <b>Toya AI (usetoya.com)</b>: app lập kế hoạch trả nợ thẻ tín dụng, giá 8,99 USD/tháng, nhưng /affiliate trả 404.
+• <b>Freeport Markets (freeportmarkets.com)</b>: chỉ có email partners, sản phẩm perpetual onchain thuộc nhóm crypto bị Google Ads hạn chế.
+• <b>MoatRadar (moatradar.com)</b>: chỉ có mã khuyến mãi nhận credit, không có affiliate.
+• <b>Stocks365 (stocks365.com)</b>: không có affiliate, tín hiệu forex/crypto dễ vướng chính sách dịch vụ tài chính của Google Ads.
+• <b>Fey (fey.com)</b>: đã sáp nhập vào Wealthsimple, không còn hoạt động độc lập.
 
-Em khuyên anh hỏi quản lý chiến dịch Dinos bằng văn bản trước khi chi tiền: (a) có cho chạy Google Search không, (b) có cho bid từ khóa "Amio" không, (c) bộ disclaimer bắt buộc là gì.
+Các ứng viên khác:
+• Chưa ra mắt (waitlist/early access): <b>Instinct (instinct.xyz)</b>, <b>Vouch (vouchwealth.com)</b>, <b>Replica (usereplica.finance)</b>.
+• Không có affiliate: <b>AnyAlpha (anyalpha.ai)</b>, <b>Uno Wallet (myunowallet.com)</b>, <b>Autonomous (becomeautonomous.com)</b>, <b>Scalar Field (scalarfield.io)</b>, <b>Ascend (ascendwealth.app)</b>, <b>Aureli (aureli.app)</b>, <b>Savenello (savenello.com)</b>, <b>Financial Intelligence Service (financialintelligenceservice.com.au)</b>, <b>Compountr (compountr.app)</b>, <b>GloriamInsights (gloriaminsights.com)</b>, <b>NewsStocks.live (newsstocks.live)</b>, <b>GetTaxNomad (gettaxnomad.com)</b>.
 
-Bị loại:
-• <b>Turbine (turbinefi.com)</b>: bot thị trường dự đoán, nhóm cờ bạc.
-• <b>InsiderPrint (insiderprint.com)</b>: Cloudflare chặn, không xác minh được affiliate.
-• <b>Minara (minara.ai)</b>: chỉ referral trong app, crypto.
-• Không có affiliate: <b>Spendify (spendify.money)</b>, <b>Chord Finance (chordfi.aquaflamingolabs.com)</b>, <b>Marx Finance (marx.finance)</b>, <b>Candlestick (candlestick.ai)</b>, <b>FinancialData.net (financialdata.net)</b>.
-• Không mới: <b>Koody (koody.com)</b>, <b>Godel Terminal (godelterminal.com)</b>, <b>LendSwap (lendswap.mx)</b>, <b>Receipt AI (receipt-ai.com)</b>.
-• Không rõ ngày ra mắt: <b>Tieno (tieno.vn)</b>, <b>Cây Vàng (cayvang.vn)</b>.
-• Trùng: <b>AI Finance Prep (aifinanceprep.com)</b>.
-
-Em đã lưu lịch sử 16 ứng viên vào reported_programs__tai-chinh-doi.md.
+Em đã lưu lịch sử 22 ứng viên vào reported_programs__tai-chinh-doi.md.
