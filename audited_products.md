@@ -654,3 +654,34 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | rcawd.com | RCAWD | 2026-10-31 | AR14002065152757727233 |
 | chilkey.com | Chilkey | 2026-10-31 | AR14002065152757727233 |
 | viwoods.com | Viwoods | 2026-10-31 | AR14002065152757727233 |
+| fastmoss.com | FastMoss | 2026-10-31 | AR02195075751110246401 |
+| loopcv.pro | LoopCV | 2026-10-31 | AR02195075751110246401 |
+| echotik.live | EchoTik | 2026-10-31 | AR02195075751110246401 |
+| customgpt.ai | CustomGPT.ai | 2026-10-31 | AR02195075751110246401 |
+| epochbatteries.com | Epoch Batteries | 2026-10-31 | AR02195075751110246401 |
+| pecron.com | Pecron | 2026-10-31 | AR02195075751110246401 |
+| localo.com | Localo | 2026-10-31 | AR02195075751110246401 |
+| finseo.ai | Finseo | 2026-10-31 | AR02195075751110246401 |
+| trtc.io | Tencent RTC / TRTC | 2026-10-31 | AR02195075751110246401 |
+| tubelab.net | TubeLab | 2026-10-31 | AR02195075751110246401 |
+| wattcycle.com | WattCycle | 2026-10-31 | AR02195075751110246401 |
+| wpbeaverbuilder.com | Beaver Builder | 2026-10-31 | AR02195075751110246401 |
+| santansolar.com | SanTan Solar | 2026-10-31 | AR02195075751110246401 |
+| clearout.io | Clearout | 2026-10-31 | AR02195075751110246401 |
+| seojuice.com | SEOJuice | 2026-10-31 | AR02195075751110246401 |
+| snov.io | Snov.io | 2026-10-31 | AR02195075751110246401 |
+| joinvalley.co | Valley | 2026-10-31 | AR02195075751110246401 |
+| algrow.online | Algrow | 2026-10-31 | AR02195075751110246401 |
+| seobotai.com | SEObot | 2026-10-31 | AR02195075751110246401 |
+| bigbattery.com | BigBattery | 2026-10-31 | AR02195075751110246401 |
+| scrapingant.com | ScrapingAnt | 2026-10-31 | AR02195075751110246401 |
+| vatrerpower.com | Vatrer Power | 2026-10-31 | AR02195075751110246401 |
+| prosp.ai | Prosp | 2026-10-31 | AR02195075751110246401 |
+| sunstore.co.uk | Sunstore | 2026-10-31 | AR02195075751110246401 |
+| hikeseo.co | HikeSEO | 2026-10-31 | AR02195075751110246401 |
+| sellersprite.com | SellerSprite | 2026-10-31 | AR02195075751110246401 |
+| hypernatural.ai | Hypernatural | 2026-10-31 | AR02195075751110246401 |
+| qima.com | QIMA | 2026-10-31 | AR02195075751110246401 |
+| watermelon.ai | Watermelon | 2026-10-31 | AR02195075751110246401 |
+| hellorep.ai | Rep AI | 2026-10-31 | AR02195075751110246401 |
+| makeugc.ai | MakeUGC | 2026-10-31 | AR02195075751110246401 |
