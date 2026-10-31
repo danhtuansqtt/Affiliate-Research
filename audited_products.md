@@ -632,3 +632,4 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | veeam.com | Veeam | 2026-10-28 | AR16387915955222609921 |
 | dify.ai | Dify | 2026-10-28 | AR16387915955222609921 |
 | helium10.com | Helium 10 | 2026-10-28 | AR16387915955222609921 |
+| postmarkapp.com | Postmark | 2026-10-31 | AR09770607641242894337 |
