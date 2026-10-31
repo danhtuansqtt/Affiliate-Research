@@ -633,3 +633,19 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | dify.ai | Dify | 2026-10-28 | AR16387915955222609921 |
 | helium10.com | Helium 10 | 2026-10-28 | AR16387915955222609921 |
 | postmarkapp.com | Postmark | 2026-10-31 | AR09770607641242894337 |
+| dropmagic.ai | DropMagic | 2026-10-31 | AR09577058023835172865 |
+| brightinstar.us | Brightinstar | 2026-10-31 | AR09577058023835172865 |
+| stuhrling.com | Stuhrling Original | 2026-10-31 | AR09577058023835172865 |
+| opus.pro | OpusClip | 2026-10-31 | AR09577058023835172865 |
+| fotor.com | Fotor | 2026-10-31 | AR09577058023835172865 |
+| everbee.io | EverBee | 2026-10-31 | AR09577058023835172865 |
+| 4proptrader.com | 4PropTrader | 2026-10-31 | AR09577058023835172865 |
+| emergent.sh | Emergent | 2026-10-31 | AR09577058023835172865 |
+| tc2000.com | TC2000 | 2026-10-31 | AR09577058023835172865 |
+| newtralchair.com | Newtral Chair | 2026-10-31 | AR09577058023835172865 |
+| hardnheavy.style | Hard'N'Heavy | 2026-10-31 | AR09577058023835172865 |
+| ahaslides.com | AhaSlides | 2026-10-31 | AR09577058023835172865 |
+| bitkey.world | Bitkey | 2026-10-31 | AR09577058023835172865 |
+| magnific.ai | Magnific | 2026-10-31 | AR09577058023835172865 |
+| spocket.co | Spocket | 2026-10-31 | AR09577058023835172865 |
+| adspower.com | AdsPower | 2026-10-31 | AR09577058023835172865 |
