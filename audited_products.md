@@ -649,3 +649,8 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | magnific.ai | Magnific | 2026-10-31 | AR09577058023835172865 |
 | spocket.co | Spocket | 2026-10-31 | AR09577058023835172865 |
 | adspower.com | AdsPower | 2026-10-31 | AR09577058023835172865 |
+| zasuwasportswear.com | Zasuwa Sportswear | 2026-10-31 | AR14002065152757727233 |
+| koruraclub.com | Koruraclub | 2026-10-31 | AR14002065152757727233 |
+| rcawd.com | RCAWD | 2026-10-31 | AR14002065152757727233 |
+| chilkey.com | Chilkey | 2026-10-31 | AR14002065152757727233 |
+| viwoods.com | Viwoods | 2026-10-31 | AR14002065152757727233 |
