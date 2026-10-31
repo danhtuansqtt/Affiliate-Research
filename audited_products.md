@@ -685,3 +685,62 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | watermelon.ai | Watermelon | 2026-10-31 | AR02195075751110246401 |
 | hellorep.ai | Rep AI | 2026-10-31 | AR02195075751110246401 |
 | makeugc.ai | MakeUGC | 2026-10-31 | AR02195075751110246401 |
+| thomasblonde.com | Thomas Blonde | 2026-10-31 | AR05842767664304357377 |
+| deliveredcold.com | Delivered Cold | 2026-10-31 | AR05842767664304357377 |
+| phomemo.com | Phomemo | 2026-10-31 | AR05842767664304357377 |
+| cicybell.com | Cicy Bell | 2026-10-31 | AR05842767664304357377 |
+| esrtech.com | ESR | 2026-10-31 | AR05842767664304357377 |
+| micargibike.com | Micargi Bike | 2026-10-31 | AR05842767664304357377 |
+| blkflg.com | BLK FLG | 2026-10-31 | AR05842767664304357377 |
+| theocdplug.com | The OCD Plug | 2026-10-31 | AR05842767664304357377 |
+| scorchmarker.com | Scorch Marker | 2026-10-31 | AR05842767664304357377 |
+| emmafy.com | Emmafy | 2026-10-31 | AR05842767664304357377 |
+| jacobsregeneration.com | Jacob's ReGENEration | 2026-10-31 | AR05842767664304357377 |
+| sacelady.com | SACE LADY | 2026-10-31 | AR05842767664304357377 |
+| dallasdesignerhandbags.com | Dallas Designer Handbags | 2026-10-31 | AR05842767664304357377 |
+| 1of10.com | 1of10 | 2026-10-31 | AR05842767664304357377 |
+| exyhair.com | Exyhair | 2026-10-31 | AR05842767664304357377 |
+| stickersbox.site | Stickerbox | 2026-10-31 | AR05842767664304357377 |
+| kokorosastudio.com | Kokorosa Studio | 2026-10-31 | AR05842767664304357377 |
+| olovshop.com | OLOV | 2026-10-31 | AR05842767664304357377 |
+| rosecjewels.com | Rose C Jewels | 2026-10-31 | AR05842767664304357377 |
+| botslab.com | Botslab | 2026-10-31 | AR05842767664304357377 |
+| pacificabeauty.com | Pacifica Beauty | 2026-10-31 | AR05842767664304357377 |
+| jessicasimpson.com | Jessica Simpson | 2026-10-31 | AR05842767664304357377 |
+| promgirl.com | PromGirl | 2026-10-31 | AR05842767664304357377 |
+| backmusclesolutions.com | Back Muscle Solutions | 2026-10-31 | AR05842767664304357377 |
+| trycloudy.com | Cloudy | 2026-10-31 | AR05842767664304357377 |
+| bornofshadows.co | Born of Shadows | 2026-10-31 | AR05842767664304357377 |
+| tvactivationhub.site | TV Activation Hub | 2026-10-31 | AR05842767664304357377 |
+| baseballism.com | Baseballism | 2026-10-31 | AR05842767664304357377 |
+| masterbooks.com | Master Books | 2026-10-31 | AR05842767664304357377 |
+| betterguards.com | Betterguards | 2026-10-31 | AR05842767664304357377 |
+| getreviv.com | Reviv | 2026-10-31 | AR05842767664304357377 |
+| everstridesock.com | Everstride | 2026-10-31 | AR05842767664304357377 |
+| davessweettooth.com | Dave's Sweet Tooth | 2026-10-31 | AR05842767664304357377 |
+| renoise.ai | Renoise AI | 2026-10-31 | AR05842767664304357377 |
+| makeitcutekids.com | Make It Cute | 2026-10-31 | AR05842767664304357377 |
+| movespeed.com | MOVESPEED | 2026-10-31 | AR05842767664304357377 |
+| sealdwellness.com | Seald Wellness | 2026-10-31 | AR05842767664304357377 |
+| reworkgear.com | Rework Gear | 2026-10-31 | AR05842767664304357377 |
+| amazesearchhub.site | amazesearchhub.site | 2026-10-31 | AR05842767664304357377 |
+| pso-rite.com | Pso-Rite | 2026-10-31 | AR05842767664304357377 |
+| greengeeks.com | GreenGeeks | 2026-10-31 | AR05842767664304357377 |
+| neosoftball.com | Neo Softball | 2026-10-31 | AR05842767664304357377 |
+| diamondartpaintin.com | Diamond Art Paintin | 2026-10-31 | AR05842767664304357377 |
+| mahjongbysi.com | Mahjong by SI | 2026-10-31 | AR05842767664304357377 |
+| anki.bot | Anki / Digital Dream Labs | 2026-10-31 | AR05842767664304357377 |
+| generalwaxcandlemaking.com | General Wax & Candle Co | 2026-10-31 | AR05842767664304357377 |
+| lucyd.co | Lucyd Eyewear | 2026-10-31 | AR05842767664304357377 |
+| 6sigmasimracing.com | 6 Sigma Sim Racing | 2026-10-31 | AR05842767664304357377 |
+| especiallyyours.com | Especially Yours | 2026-10-31 | AR05842767664304357377 |
+| tennisexpress.com | Tennis Express | 2026-10-31 | AR05842767664304357377 |
+| binkmade.com | Bink | 2026-10-31 | AR05842767664304357377 |
+| freedomfunnelusa.com | Freedom Funnel / Well Served | 2026-10-31 | AR05842767664304357377 |
+| focallure.com | Focallure | 2026-10-31 | AR05842767664304357377 |
+| nesugarlife.com | Nesugar | 2026-10-31 | AR05842767664304357377 |
+| printxsolution.online | Printx Solution | 2026-10-31 | AR05842767664304357377 |
+| nicheessence.com | Niche Essence | 2026-10-31 | AR05842767664304357377 |
+| spotailori.com | SpotAilori | 2026-10-31 | AR05842767664304357377 |
+| dresora.net | Dresora | 2026-10-31 | AR05842767664304357377 |
+| rivantaus.com | Rivantaus | 2026-10-31 | AR05842767664304357377 |
