@@ -1,24 +1,25 @@
-Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 30/10/2026. Hôm nay không có chương trình nào đạt: em đã đối chiếu khoảng 230 domain với lịch sử, hơn 200 domain đã xét ở các lượt trước, còn 22 domain mới thì loại cả 22.
+Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 01/11/2026. Hôm nay không có chương trình nào đạt: em đã đối chiếu khoảng 100 domain với lịch sử, khoảng 80 domain đã xét ở các lượt trước, còn 20 ứng viên thì loại cả 20.
 
 Các hướng em đã tìm:
-• Show HN 16-30/10/2026 (HN Algolia), danh mục YC (consumer-finance, fintech, banking, credit-lending, asset-management, insurance, payments), các chủ đề tài chính trên BetaList.
-• PropFirmMap (firm mới Q2/2026), Referly mục finance (chỉ có thương hiệu lâu năm), Affilitizer newest (bản miễn phí không có chương trình tài chính).
-• WebSearch tiếng Anh, Việt, Tây Ban Nha: Dinos/Accesstrade/Ecomobi, LATAM, UAE/Saudi, SEA, Ấn Độ.
-• Product Hunt trả 403, hunted.space không lấy được domain sản phẩm.
+• Danh bạ và tin TheGodFunded, PropFirmMap Q2/2026, ProptradingVibes, NexusFi (qua WebSearch vì site trả 403).
+• BetaList mục fintech, finance, personal-finance; thông cáo GlobeNewswire/PRNewswire, TradeInformer, FXNewsGroup.
+• Tin Trung Đông (Khaleej Times, Gulf News), tìm tiếng Việt (Accesstrade, KIS, KBSV) và tiếng Tây Ban Nha (prop firm Mỹ Latinh).
 
-Nhận xét: sản phẩm tài chính tiêu dùng ra mắt từ 2025 có affiliate công khai gần như đã được xét hết ở các nguồn trên. Ứng viên mới chủ yếu là app indie miễn phí, startup YC còn waitlist, hoặc chỉ có referral nhận credit trong app. Em không chọn ứng viên yếu cho đủ số.
-
-Ứng viên đáng chú ý và lý do loại:
-• <b>Volaren (volaren.ai)</b>: agent AI đầu tư cá nhân (YC F2026), nhưng chỉ có referral thưởng credit trong app, tối đa 10 lượt/30 ngày; các đường dẫn /affiliate đều chuyển về form đăng ký.
-• <b>Tradeify (tradeify.co)</b>: prop firm futures có trang /become-an-affiliate, nhưng thành lập 2022-2024 (nguồn phụ mâu thuẫn), mảng crypto 02/2026 dùng chung thương hiệu nên không tính là sản phẩm mới.
-• <b>Toya AI (usetoya.com)</b>: app lập kế hoạch trả nợ thẻ tín dụng, giá 8,99 USD/tháng, nhưng /affiliate trả 404.
-• <b>Freeport Markets (freeportmarkets.com)</b>: chỉ có email partners, sản phẩm perpetual onchain thuộc nhóm crypto bị Google Ads hạn chế.
-• <b>MoatRadar (moatradar.com)</b>: chỉ có mã khuyến mãi nhận credit, không có affiliate.
-• <b>Stocks365 (stocks365.com)</b>: không có affiliate, tín hiệu forex/crypto dễ vướng chính sách dịch vụ tài chính của Google Ads.
-• <b>Fey (fey.com)</b>: đã sáp nhập vào Wealthsimple, không còn hoạt động độc lập.
+Ứng viên em đào sâu:
+• <b>FunderBlu (funderblu.com)</b>: prop firm forex/CFD bán challenge trên tài khoản mô phỏng MT5, ra mắt 01/2026. Dữ liệu đủ 5/6: hoa hồng 10% một lần mỗi đơn, lên 12%/15%/18% theo số sale/tháng; cookie 60 ngày; giá từ 35,70 USD/lần (Turbo, cộng phí kích hoạt trả sau) hoặc 43,31 USD/lần (Gen Z 2 Step 5K) đến 2.299 USD/lần (Instant Live 50K); tự đăng ký tại funderblu.tracknow.io, rút mỗi 30 ngày. Em vẫn loại (rejected_insufficient_evidence) vì nhiều dấu hiệu rủi ro cộng dồn:
+ - Site ghi Trustpilot 4.8/5 với 1187 review, nhưng Trustpilot thật chỉ 2.6/5 với 70 review, 60% 1 sao, nhiều review 09-10/2026 tố bị từ chối payout (có khoản 2.564 USD và 1.100 USD).
+ - Thông cáo ra mắt 14/01/2026 là PR trả tiền; WHOIS ẩn chủ; địa chỉ Glenealy Tower Hồng Kông có dạng văn phòng ảo; feed "Live Rewards" trên trang chủ dựng sẵn (giờ "00:90"); con số "$1M+ rewards" không có nguồn độc lập.
+ - Brand bidding chưa xác minh: cổng Tracknow chưa đăng điều khoản affiliate, /affiliate và /terms không nhắc PPC.
+ Yêu cầu tuân thủ nếu sau này anh vẫn muốn chạy: quảng cáo phải ghi rõ quỹ là mô phỏng (simulated), FunderBlu không phải broker, không phải lời khuyên đầu tư, không gọi phí challenge là "đầu tư"; loại các nước bị cấm vận (Terms không có danh sách cụ thể) và cân nhắc EU/UK/Úc vì dịch vụ không theo MiFID II/SEC; Google xếp CFD/forex vào "complex speculative financial products", chỉ nhà cung cấp có giấy phép và được chứng nhận mới chạy được, nên affiliate rất dễ bị từ chối quảng cáo.
 
 Các ứng viên khác:
-• Chưa ra mắt (waitlist/early access): <b>Instinct (instinct.xyz)</b>, <b>Vouch (vouchwealth.com)</b>, <b>Replica (usereplica.finance)</b>.
-• Không có affiliate: <b>AnyAlpha (anyalpha.ai)</b>, <b>Uno Wallet (myunowallet.com)</b>, <b>Autonomous (becomeautonomous.com)</b>, <b>Scalar Field (scalarfield.io)</b>, <b>Ascend (ascendwealth.app)</b>, <b>Aureli (aureli.app)</b>, <b>Savenello (savenello.com)</b>, <b>Financial Intelligence Service (financialintelligenceservice.com.au)</b>, <b>Compountr (compountr.app)</b>, <b>GloriamInsights (gloriaminsights.com)</b>, <b>NewsStocks.live (newsstocks.live)</b>, <b>GetTaxNomad (gettaxnomad.com)</b>.
+• Cấm bid thương hiệu: <b>Boxcar Trading (boxcartrading.com)</b> (15%, cookie 90 ngày), <b>Doji Funding (dojifunding.com)</b> (15%–25%), <b>GOAT Funded Predictions (goatfundedpredictions.com)</b> (Terms cấm keyword advertisements).
+• Thiếu chương trình công khai: <b>Papaya Funding (papayafunding.com)</b> ra mắt 10/2026 nhưng chưa có trang affiliate, đáng xét lại; <b>WSF Markets (wsfmarkets.com)</b> điều khoản chỉ gửi qua WhatsApp; <b>Campus Fund (campus.fund)</b> invite-only, không có affiliate.
+• Ra mắt trước 2025: <b>thePropTrade</b>, <b>Bulenox</b>, <b>AquaFunded</b>, <b>BrightFunded</b>, <b>BullRush</b>, <b>The Futures Desk</b>.
+• Chỉ có referral cho người dùng: <b>O Gold (ogold.app)</b>, <b>Save In Gold (saveingold.ae)</b>.
+• Không phải sản phẩm tài chính tiêu dùng: <b>CardOS</b> (B2B), <b>InvestBeacon</b> (trang so sánh broker), <b>Save Genie</b> (app theo dõi giá).
+• Đã xét trước đây: <b>Velotrade (velotrade.com)</b>, <b>Kraken Prop (kraken.com)</b>.
 
-Em đã lưu lịch sử 22 ứng viên vào reported_programs__tai-chinh-doi.md.
+Nhận xét: lịch sử đã phủ gần hết prop firm 2025; firm mới 2026 có affiliate công khai thì hoặc cấm brand bidding, hoặc có dấu hiệu rủi ro. Em không chọn ứng viên yếu cho đủ số.
+
+Em đã lưu lịch sử 20 ứng viên vào reported_programs__tai-chinh-doi.md.
