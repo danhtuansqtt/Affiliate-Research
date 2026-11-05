@@ -1,42 +1,42 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 04/11/2026: hôm nay có 3 chương trình đạt là GapCite (gapcite.com), Alenta AI (alenta.ai) và AtAt (atatapp.com).
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 05/11/2026: hôm nay có 3 chương trình đạt là Zocotev (zocotev.com), Biotadex (biotadex.app) và Chatity (chatity.io).
 
-Em quét Tiny Startups, Open Launch, BetaList, HN Show, Fazier, Microlaunch, TinyLaunch, Dang.ai, FutureTools, Aixploria, Insidr, OpenAffiliate và Affonso Marketplace (Product Hunt, TAAFT, Toolify trả 403 qua proxy): khoảng 1.070 domain thô, còn ~840 domain mới, xét kỹ 37 ứng viên, đào sâu 4. Lưu ý chung: cả 3 chương trình đều chưa xác minh được điều khoản Google Ads.
+Nguồn: AffiliationList, AffiliateOtter, Uneed, MicroLaunch. Em xét 30 domain mới, đào sâu 4. Cả 3 chương trình đạt đều chưa có điều khoản Google Ads rõ ràng.
 
-<b>GapCite (gapcite.com)</b>
-• Tính năng: Theo dõi mức độ thương hiệu được ChatGPT, Claude, Gemini, Perplexity nhắc tới, kèm agent AI viết bài, cho marketer và SaaS
-• Giá bán: Free scan; Starter $29/tháng; Growth $79/tháng; Pro $139/tháng; Scale $289/tháng (chính chủ)
-• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; /affiliates và /terms không nhắc paid ads)
+<b>Zocotev (zocotev.com)</b>
+• Tính năng: App Windows tạo phụ đề, dịch và lồng tiếng video bằng AI, render trên máy, cho creator YouTube/TikTok/Bilibili
+• Giá bán: Trial $0 (10 lần xuất); Pro $9.99/tháng; Pro $89.99/năm; Unlimited $15.99/tháng; Unlimited $143.99/năm (chính chủ)
+• Hoa hồng affiliate: 20% recurring 12 tháng (gói tháng; gói 3/6/12 tháng được 25/30/35%) (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; điều khoản chỉ cấm re-upload phim bản quyền và spam)
 • Năm ra đời: 09/2026
-• Cookie: 60 ngày
+• Cookie: 180 ngày
 • Độ đầy đủ: 5/6
 
-Chương trình tự quản, phải gửi link kênh qua trang liên hệ để được duyệt; trả hằng tháng qua chuyển khoản hoặc crypto, không nêu ngưỡng rút; affiliate được 1 tháng gói Growth miễn phí. Sản phẩm rất mới, chưa có traffic hay đánh giá đáng kể. Ô thiếu là Google Ads: anh nên email hi@gapcite.com hỏi có cho bid tên "GapCite" không trước khi chạy ads.
+App của một cá nhân ở TP.HCM, rất mới (bản 0.1.3), traffic và ngưỡng rút không công bố; hoa hồng USD do Creem trả, đơn trong nước trả VNĐ. Ô thiếu là Google Ads: anh hỏi chủ chương trình có cho bid tên "Zocotev" không trước khi chạy ads.
 
-<b>Alenta AI (alenta.ai)</b>
-• Tính năng: AI agent trên website trả lời khách 24/7, thu lead, đặt lịch, nghe điện thoại, cho doanh nghiệp dịch vụ và agency
-• Giá bán: Free trial; Analyze $39/tháng (trả năm); Core, Flow, Reseller không công bố (chính chủ)
+<b>Biotadex (biotadex.app)</b>
+• Tính năng: App iOS/Android chụp ảnh nhận dạng loài bằng AI, biến đi bộ ngoài trời thành game sưu tầm, cho gia đình và người yêu thiên nhiên
+• Giá bán: Free (10 lượt scan/tuần); gói scan từ $0.99; Biotadex Pro $39.99/năm (chính chủ)
+• Hoa hồng affiliate: 20% recurring 3 tháng (mọi giao dịch trong 90 ngày đầu, gồm năm đầu Pro) (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; Creator Terms không nhắc paid search)
+• Năm ra đời: 10/2026
+• Cookie: không công bố (ghi nhận bằng mã mời trong app)
+• Độ đầy đủ: 4/6
+
+Chương trình ghi nhận bằng mã mời nhập trong app, không có link tracking hay cookie, nên Google Ads rất khó gắn hoa hồng; hợp kênh nội dung hơn. Duyệt thủ công, trả PayPal/Venmo từ $20; mỗi gói Pro năm chỉ được khoảng $6.80. Ô thiếu là Cookie (không dùng cookie) và Google Ads: anh hỏi trực tiếp Biotadex nếu muốn chạy ads.
+
+<b>Chatity (chatity.io)</b>
+• Tính năng: Lễ tân AI cho salon, clinic, studio: trả lời và đặt lịch qua Instagram, WhatsApp, điện thoại, website, kèm CRM
+• Giá bán: Free €0/tháng (CRM); Starter €39/tháng; Voice €59/tháng; Autopilot €129/tháng (chính chủ)
 • Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký FirstPromoter: alenta.firstpromoter.com)
-• Năm ra đời: 2025
-• Cookie: 60 ngày
-• Độ đầy đủ: 5/6
-
-Thành lập 2025, ra mắt Product Hunt 14/02/2026, có NVIDIA Inception và AWS Activate. Hoa hồng trọn đời là điểm mạnh nhất hôm nay; ngưỡng rút và lịch trả chỉ xem trong FirstPromoter (portal vẫn mang tên cũ "WebRep"). Ô thiếu là Google Ads: anh đăng ký rồi đọc điều khoản trong portal, hoặc hỏi affiliates@alenta.ai.
-
-<b>AtAt (atatapp.com)</b>
-• Tính năng: Trợ lý AI cho Mac: gõ @@ trong mọi ô nhập văn bản để hỏi AI, câu trả lời chèn tại chỗ, cho người dùng Mac
-• Giá bán: Trial 14 ngày; AtAt One $9/tháng hoặc $59/năm; Lifetime $119/lần (chính chủ)
-• Hoa hồng affiliate: 30% mỗi đơn hàng (mạng affiliate)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Affonso: atat.affonso.io)
-• Năm ra đời: 08/2026
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; form nhắc "affiliate program terms" nhưng không có trang điều khoản)
+• Năm ra đời: 11/2025
 • Cookie: 30 ngày
 • Độ đầy đủ: 5/6
 
-Bài giới thiệu trên X ngày 20/08/2026 đạt khoảng 192K lượt xem. Thời hạn recurring (một lần hay lặp lại) và ngưỡng rút bị ẩn đến khi đăng ký Affonso; giá thấp nên hoa hồng mỗi khách nhỏ. Ô thiếu là Google Ads: sau khi đăng ký anh xem mục kênh của chương trình, nếu "Brand Bidding" hoặc "Paid Search" màu đỏ thì bỏ.
+Ra mắt đã xác minh 11/2025 (blog chính chủ 28/11/2025). Không cần duyệt, nhận link ngay; trả từ €20/$25. Ô thiếu là Google Ads: anh email hello@chatity.io xin điều khoản affiliate trước khi chạy ads.
 
-Không chọn dù đạt 4/6 (1): <b>Fabricate AI (fabricate.build)</b> hoa hồng 30% recurring 12 tháng (cổng Tolt), nhưng cookie và điều khoản quảng cáo chỉ xem sau khi đăng ký Tolt, nên xếp sau 3 chương trình trên.
+Loại sau khi đọc điều khoản: <b>BrandMotion Lab (brandmotionlab.com)</b>, điều 12 và 14 cấm mua từ khóa thương hiệu nếu không có văn bản cho phép.
 
-Bị loại ở bước scout (33): 8 cấm bid thương hiệu (Conecto, Zanta, LeadShark, Workatool, Octopus Prime, RFPG, Squario, iWrity trên Affitor), 16 không có chương trình affiliate, 6 ra mắt trước 2025 (Room AI, BasicOps, AIKTP, Neurith Tools, Pikzels, Postiz), 1 không phải công cụ AI (Aura++), 1 không áp dụng (WalletFinder), 1 không phải mô hình affiliate (Prostir).
+Loại ở bước scout (26): 5 cấm bid thương hiệu (AigoPilot, MapScout SEO, GlideRail, Sciwand, Apogee), 9 không có affiliate, 4 ra mắt trước 2025, 7 không phải công cụ AI, 1 không áp dụng (CatWatchful, stalkerware).
 
-Em đã lưu 37 dòng vào lịch sử reported_programs__ai-doi.md.
+Em đã lưu 30 dòng vào lịch sử reported_programs__ai-doi.md.
