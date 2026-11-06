@@ -1,42 +1,42 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 05/11/2026: hôm nay có 3 chương trình đạt là Zocotev (zocotev.com), Biotadex (biotadex.app) và Chatity (chatity.io).
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 06/11/2026: hôm nay có 3 chương trình đạt là UGCfy AI (ugcfy.ai), Rank Up List (rankuplist.com) và Rankahead AI (rankahead.ai), cả 3 đều đủ 5/6 thông tin.
 
-Nguồn: AffiliationList, AffiliateOtter, Uneed, MicroLaunch. Em xét 30 domain mới, đào sâu 4. Cả 3 chương trình đạt đều chưa có điều khoản Google Ads rõ ràng.
+Em xét kỹ 27 ứng viên, đào sâu 6. Cả 3 chương trình đạt đều chưa có điều khoản Google Ads rõ ràng.
 
-<b>Zocotev (zocotev.com)</b>
-• Tính năng: App Windows tạo phụ đề, dịch và lồng tiếng video bằng AI, render trên máy, cho creator YouTube/TikTok/Bilibili
-• Giá bán: Trial $0 (10 lần xuất); Pro $9.99/tháng; Pro $89.99/năm; Unlimited $15.99/tháng; Unlimited $143.99/năm (chính chủ)
-• Hoa hồng affiliate: 20% recurring 12 tháng (gói tháng; gói 3/6/12 tháng được 25/30/35%) (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; điều khoản chỉ cấm re-upload phim bản quyền và spam)
-• Năm ra đời: 09/2026
-• Cookie: 180 ngày
-• Độ đầy đủ: 5/6
-
-App của một cá nhân ở TP.HCM, rất mới (bản 0.1.3), traffic và ngưỡng rút không công bố; hoa hồng USD do Creem trả, đơn trong nước trả VNĐ. Ô thiếu là Google Ads: anh hỏi chủ chương trình có cho bid tên "Zocotev" không trước khi chạy ads.
-
-<b>Biotadex (biotadex.app)</b>
-• Tính năng: App iOS/Android chụp ảnh nhận dạng loài bằng AI, biến đi bộ ngoài trời thành game sưu tầm, cho gia đình và người yêu thiên nhiên
-• Giá bán: Free (10 lượt scan/tuần); gói scan từ $0.99; Biotadex Pro $39.99/năm (chính chủ)
-• Hoa hồng affiliate: 20% recurring 3 tháng (mọi giao dịch trong 90 ngày đầu, gồm năm đầu Pro) (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; Creator Terms không nhắc paid search)
-• Năm ra đời: 10/2026
-• Cookie: không công bố (ghi nhận bằng mã mời trong app)
-• Độ đầy đủ: 4/6
-
-Chương trình ghi nhận bằng mã mời nhập trong app, không có link tracking hay cookie, nên Google Ads rất khó gắn hoa hồng; hợp kênh nội dung hơn. Duyệt thủ công, trả PayPal/Venmo từ $20; mỗi gói Pro năm chỉ được khoảng $6.80. Ô thiếu là Cookie (không dùng cookie) và Google Ads: anh hỏi trực tiếp Biotadex nếu muốn chạy ads.
-
-<b>Chatity (chatity.io)</b>
-• Tính năng: Lễ tân AI cho salon, clinic, studio: trả lời và đặt lịch qua Instagram, WhatsApp, điện thoại, website, kèm CRM
-• Giá bán: Free €0/tháng (CRM); Starter €39/tháng; Voice €59/tháng; Autopilot €129/tháng (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; form nhắc "affiliate program terms" nhưng không có trang điều khoản)
-• Năm ra đời: 11/2025
+<b>UGCfy AI (ugcfy.ai)</b>
+• Tính năng: AI biến link sản phẩm thành video quảng cáo kiểu UGC (hook, kịch bản, AI actor, phụ đề) cho brand ecommerce và media buyer
+• Giá bán: Starter $59/tháng; Growth $99/tháng; trả năm tặng 2 tháng (chính chủ)
+• Hoa hồng affiliate: 40% recurring 12 tháng (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; trang affiliate, Terms, Refund không nhắc paid ads)
+• Năm ra đời: 07/2026
 • Cookie: 30 ngày
 • Độ đầy đủ: 5/6
 
-Ra mắt đã xác minh 11/2025 (blog chính chủ 28/11/2025). Không cần duyệt, nhận link ngay; trả từ €20/$25. Ô thiếu là Google Ads: anh email hello@chatity.io xin điều khoản affiliate trước khi chạy ads.
+Duyệt ngay bằng tài khoản UGCfy, trả PayPal hằng tháng, mỗi khoản giữ 14 ngày, không ghi ngưỡng rút. Trang affiliate tự mâu thuẫn (bảng ví dụ tính 25%, headline và FAQ ghi 40%), em chốt 40%. Ô thiếu là Google Ads: anh hỏi UGCfy có cho bid tên "UGCfy" không trước khi chạy ads.
 
-Loại sau khi đọc điều khoản: <b>BrandMotion Lab (brandmotionlab.com)</b>, điều 12 và 14 cấm mua từ khóa thương hiệu nếu không có văn bản cho phép.
+<b>Rank Up List (rankuplist.com)</b>
+• Tính năng: AI viết tiêu đề, mô tả, tag SEO cho listing Etsy, Amazon, eBay, Shopify, Redbubble, cho người bán nhỏ
+• Giá bán: Free $0/tháng (3 lượt); Pro $16.99/tháng; Studio $44.99/tháng; trả năm giảm 17% (chính chủ)
+• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký: Promotional Guidelines nằm trong Program Info Sheet)
+• Năm ra đời: 07/2026
+• Cookie: 30 ngày
+• Độ đầy đủ: 5/6
 
-Loại ở bước scout (26): 5 cấm bid thương hiệu (AigoPilot, MapScout SEO, GlideRail, Sciwand, Apogee), 9 không có affiliate, 4 ra mắt trước 2025, 7 không phải công cụ AI, 1 không áp dụng (CatWatchful, stalkerware).
+Duyệt trong 48 giờ, trả Net 30 qua Payoneer từ $30. Terms cấm chiến dịch quảng cáo dễ nhầm với kênh chính thức của RankUpList, nên rủi ro bid thương hiệu khá cao. Ô thiếu là Google Ads: anh đăng ký rồi đọc Info Sheet, hoặc hỏi chủ chương trình trước khi bid tên "RankUpList".
 
-Em đã lưu 30 dòng vào lịch sử reported_programs__ai-doi.md.
+<b>Rankahead AI (rankahead.ai)</b>
+• Tính năng: theo dõi thương hiệu xuất hiện trong câu trả lời ChatGPT, Claude, Gemini, Perplexity (GEO) và tự đăng bài AEO, cho marketer, agency
+• Giá bán: Solo €39/tháng; Growth BYOK €99/tháng; Pro €149/tháng (sắp ra); trả năm giảm 20% (chính chủ)
+• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (mạng cloud bị chặn — cần đọc lại rankahead.partneroapp.com/program; cổng Partnero render JS)
+• Năm ra đời: 04/2026
+• Cookie: 90 ngày
+• Độ đầy đủ: 5/6
+
+Công ty Hà Lan, năm ra đời lấy theo ngày đăng ký domain. Trả hằng tháng khi vượt ngưỡng, nhưng số tiền ngưỡng chưa đọc được trên cổng Partnero. Ô thiếu là Google Ads: anh mở rankahead.partneroapp.com/program bằng trình duyệt đọc điều khoản (nếu chỉ hiện form thì đăng ký) trước khi chạy ads.
+
+Loại sau khi đọc điều khoản và cổng đăng ký (3): <b>Overrank (overrank.ai)</b> cấm "bid on the overrank brand name or close variants in paid search"; <b>EaseClaw (easeclaw.com)</b> cổng Affonso báo chương trình đã ngừng; <b>ReelMuse.ai (reelmuse.ai)</b> cổng Trackdesk 404, site còn nhiều công cụ nội dung người lớn.
+
+Loại ở bước scout (21): 11 cấm bid thương hiệu (Rankizz, LaunchRepo, Flypost, HumanizeMyAI, MeteGPT, AutoRev, Superdraft, Zidi, Shay, Postminion, NoShame), 8 ra mắt trước 2025, 1 không xác minh được ngày ra mắt (Trooper), 1 trả bằng credit (TalkPix).
+
+Em đã lưu 27 dòng vào lịch sử.
