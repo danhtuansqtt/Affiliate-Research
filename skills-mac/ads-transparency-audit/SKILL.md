@@ -6,9 +6,11 @@ description: Từ 1 link Google Ads Transparency Center của một advertiser (
 # Skill: Ads Transparency Audit — bản macOS
 
 Bản này là bản gộp của skill gốc trên Windows + các bài học thực tế đến
-2026-10-28. Khác biệt chính so với bản Windows: clipboard dùng `pbcopy`, phím
-tắt Sheets dùng `cmd`, đường dẫn kiểu Unix, và đã gộp sẵn các cảnh báo / mẹo
-trước đây chỉ nằm trong memory.
+2026-11-07. Khác biệt chính so với bản Windows: đường dẫn kiểu Unix, và đã gộp sẵn
+các cảnh báo / mẹo trước đây chỉ nằm trong memory. Riêng việc ghi nối tiếp vào tab
+"Advertiser Audit" của Sheet (mục 2b) dùng sự kiện `paste` tổng hợp qua
+`javascript_tool` kèm checksum, vì clipboard của Chrome khác clipboard của shell
+(`pbcopy` + `cmd+v` KHÔNG hoạt động).
 
 ## 0. Chuẩn bị 1 lần trên Mac
 
@@ -100,43 +102,68 @@ Link: `https://docs.google.com/spreadsheets/d/1IMHB8rfG-vN1zezTkBftk2AYszqg5FMRr
 `Ngày Tóm Tắt | Advertiser ID | Advertiser Name | STT | Domain | Tính Năng | Điểm Nổi Bật | Giá Bán | Hoa Hồng Affiliate | Link Đăng Ký Affiliate | Thời Gian Cookie | Năm Ra Đời | Google Ads`
 (cột E là **domain** thuần, ví dụ `coderabbit.ai` — không phải "Tên (domain)").
 
-Cách nhập (đã kiểm chứng):
-1. Ghi toàn bộ dòng (KHÔNG header) ra file `.tsv` UTF-8, tab-separated, đúng 13
-   cột/dòng, bằng Python `open(path,'w',encoding='utf-8',newline='\n')`.
-   Kiểm tra: `awk -F'\t' '{print NF}' file.tsv | sort | uniq -c` → chỉ ra `13`.
-2. Nạp clipboard Mac: `pbcopy < /tmp/ads-audit/rows.tsv`. Kiểm tra ngay trước
-   khi dán: `pbpaste | head -c 110` phải thấy đúng dòng đầu. Nếu thao tác khác
-   chen vào, nạp lại (clipboard có thể bị ghi đè — đã từng dán nhầm URL vào A465).
-3. **LUÔN GHI NỐI TIẾP, KHÔNG BAO GIỜ chèn đầu hay ghi đè.** Tìm dòng cuối thật:
-   - Click 1 ô trong cột A (ô dữ liệu), rồi nhấn `cmd+Up` về đầu cột A.
-   - Nhấn `cmd+Down` lặp đến khi Hộp tên không đổi nữa / nhảy xuống ô `A1000`
-     (hết trang). Sau đó `cmd+Up` 1 lần → dừng ở **dòng dữ liệu cuối cùng**
-     (vd `A597`). Nhấn `Down` 1 lần → ô trống đầu tiên (vd `A598`).
-   - Đọc Hộp tên (Name Box) để xác nhận; ô đó phải trống.
-   - Phím tắt trên Mac có thể khác Windows (Windows dùng `ctrl+Home`,
-     `ctrl+Down`); lần đầu chạy, kiểm tra Hộp tên sau mỗi phím trước khi dán.
-4. `cmd+v` để dán. Sau khi dán, Google Sheets tự chọn vùng vừa dán: Hộp tên
-   hiện `A{đầu}:M{cuối}` và thanh trạng thái "Đếm: N" phải = số dòng × 13. Rồi
-   kiểm tra ô ngay dưới dải vừa dán TRỐNG.
-5. Đóng tab Chrome đã mở khi xong.
+Cách nhập (đã kiểm chứng ngày 2026-10-28 → 2026-11-07, 7 lần ghi, tổng gần 300 dòng):
+
+**KHÔNG dùng `pbcopy` + `cmd+v` / `ctrl+v`.** Clipboard của Chrome KHÁC clipboard của
+shell: `pbcopy` không tới được Chrome, `cmd+v` qua công cụ không kích hoạt dán, còn
+`ctrl+v` dán nội dung CŨ có sẵn (từng dán nhầm một lệnh `mkdir...` vào A598, phải
+`ctrl+z`). Thay vào đó đưa chuỗi TSV vào trang bằng `javascript_tool` rồi bắn sự kiện
+`paste` tổng hợp, có kiểm tra checksum trước khi dán.
+
+1. **Dựng TSV** (KHÔNG header) bằng Python `open(path,'w',encoding='utf-8',newline='\n')`,
+   đúng 13 cột/dòng. Kiểm tra: `awk -F'\t' '{print NF}' file.tsv | sort | uniq -c` → chỉ
+   ra `13`. Mỗi ô không chứa `|`, tab, xuống dòng.
+2. **Tính checksum** bằng Python trên UTF-16: `h=(h*31+code_unit) % 1000000007` cho từng
+   code unit; ghi lại độ dài (số code unit) và `h` của toàn file. Nếu file quá ~10KB
+   (khoảng 10 dòng) thì chia khối ~10 dòng: mỗi khối `json.dump(chunk, ensure_ascii=False)`
+   ra `chunkN.json` và ghi độ dài + `h` từng khối.
+3. **Mở Sheet**: nạp tool Chrome bằng ToolSearch (một lần, gom hết), `tabs_context_mcp`
+   (createIfEmpty) → `navigate` tới link Sheet → chờ 5 giây. Khung nhìn mỗi lần mở có thể
+   khác nhau, nên KHÔNG click theo toạ độ cố định vào Hộp tên (từng click trượt và mở nhầm
+   hộp thoại). Focus Hộp tên bằng JS: `const n=document.getElementById('t-name-box');
+   n.focus(); n.select()` rồi `computer type` + `key Return`.
+4. **Nạp dữ liệu vào trang** (mỗi khối một lần `javascript_tool`): Read `chunkN.json`
+   (bỏ tiền tố số dòng `1<tab>` do Read thêm), rồi gán `window.__cN="<chuỗi>"`. Chuỗi mở
+   bằng dấu nháy kép THƯỜNG (không phải `\"`), tab là `\t`, xuống dòng là `\n`, dấu nháy
+   kép bên trong là `\"`. Định nghĩa một lần
+   `window.__h=s=>{let h=0;for(let i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))%1000000007;return h}`
+   và trả về `{len, h}` kèm giá trị mong đợi; lệch → sửa lại khối đó, KHÔNG dán. Xong hết
+   thì `window.__tsv = __c1+__c2+...` và so độ dài + `h` của cả khối tổng. Dữ liệu ít
+   (một dòng) thì không cần chia khối.
+5. **Tìm dòng trống đầu tiên**, luôn GHI NỐI TIẾP: Hộp tên → `A1000` (type + Return), rồi
+   nhấn `ctrl+ArrowUp` (KHÔNG phải `cmd+Up`; `cmd+Up`/`cmd+Down` không chạy đúng trong
+   vùng Bảng_1). Phím đầu tiên sau khi gõ Hộp tên đôi khi bị bỏ qua: đọc lại Hộp tên bằng
+   `document.getElementById('t-name-box').value`, nếu vẫn `A1000` thì nhấn lại. Ô dừng lại
+   là **dòng dữ liệu cuối** (vd `A682`); nhấn thêm lần nữa sẽ nhảy lên `A1`, đừng dùng.
+   Rồi Hộp tên → ô kế tiếp (vd `A683`) bằng cách gõ địa chỉ, và chụp màn hình xác nhận:
+   dòng ngay trên là domain của lần chạy trước, ô đang chọn trống.
+6. **Dán**: một lần `javascript_tool` kiểm tra điều kiện rồi mới dán — độ dài và `h` khớp,
+   Hộp tên đúng ô dự kiến, đủ số dòng, mọi dòng đúng 13 cột; sai điều kiện nào thì `throw`.
+   Sau đó:
+   `const dt=new DataTransfer(); dt.setData('text/plain', window.__tsv);
+   document.activeElement.dispatchEvent(new ClipboardEvent('paste',{clipboardData:dt,bubbles:true,cancelable:true}))`
+   rồi chờ 3-5 giây và đọc Hộp tên (phải là `A{đầu}:M{cuối}`) và thanh trạng thái
+   `Đếm: N` (phải = số dòng × 13).
+7. **Xác nhận**: cuộn xuống chụp màn hình — dòng cuối vùng dán đúng là domain cuối của
+   lô, các ô bên dưới trống, dòng cuối của lần trước còn nguyên. Đóng tab Chrome đã mở.
 
 Cảnh báo:
-- **Bảng_1**: tab này từng là một Bảng (Table) phạm vi cố định, làm `Ctrl/Cmd+End`
-  báo sai và dán đè dữ liệu cũ (sự cố 2026-09-05, phải khôi phục bằng Nhật ký
-  phiên bản). Dùng cách `…A1000 → cmd+Up` ở trên thay vì tin `End`. Nếu thấy chip
-  "Bảng_1" cạnh A1 thì mở "Điều chỉnh dải ô của bảng" → đặt `A1:M1000`.
-- Dán nhầm vào A1 sẽ đè header: nếu xảy ra, `cmd+z` ngay, nạp lại clipboard, dán lại.
-- Nếu paste đưa chuỗi lạ (vd chữ địa chỉ ô, URL): `cmd+z`, nạp lại clipboard.
-- TUYỆT ĐỐI KHÔNG gõ tay base64 rồi `atob()` để bơm clipboard qua JS (từng làm
-  tab thành vertical-tab, lệch cột âm thầm).
-- Không gõ địa chỉ vào Hộp tên rồi `cmd+c` ngay (có thể copy ra chữ địa chỉ).
-- **Ảnh chụp màn hình bị đơ** (`Page.captureScreenshot timed out`): vẫn dùng
-  được phím + `javascript_tool` để đọc Hộp tên:
+- **Bảng_1**: tab này từng là một Bảng (Table) phạm vi cố định, làm `End` báo sai và dán
+  đè dữ liệu cũ (sự cố 2026-09-05, phải khôi phục bằng Nhật ký phiên bản). Dùng cách
+  `A1000 → ctrl+ArrowUp` ở trên thay vì tin `End`. Nếu thấy chip "Bảng_1" cạnh A1 thì mở
+  "Điều chỉnh dải ô của bảng" → đặt `A1:M1000`.
+- Dán nhầm vào A1 sẽ đè header: `ctrl+z` ngay rồi dán lại vào đúng ô.
+- Nếu dán ra chuỗi lạ (chữ địa chỉ ô, URL, lệnh shell): `ctrl+z`, kiểm tra ô đó trống rồi
+  làm lại bằng sự kiện `paste` tổng hợp.
+- Không dùng base64 + `atob()` để bơm dữ liệu (từng làm tab thành vertical-tab, lệch cột
+  âm thầm). Chuỗi literal có `\t` + checksum như trên mới an toàn.
+- Không thử mở server localhost cho trang tải TSV: Sheets chặn (CSP), `fetch` báo lỗi.
+- **Ảnh chụp màn hình bị đơ** (`Page.captureScreenshot timed out`): vẫn dùng được phím +
+  `javascript_tool` để đọc Hộp tên:
   `document.getElementById('t-name-box').value` và đếm
-  `document.body.innerText.match(/(Đếm|Count)[:\s]*[\d.,]+/)`. Nếu tab đơ hẳn,
-  đóng tab, mở tab mới.
-- Nếu Claude in Chrome không khả dụng/chưa đăng nhập: báo rõ cho anh, đừng bỏ
-  qua âm thầm.
+  `document.body.innerText.match(/(Đếm|Count)[:\s]*[\d.,]+/)`. Nếu tab đơ hẳn, đóng tab,
+  mở tab mới.
+- Nếu Claude in Chrome không khả dụng/chưa đăng nhập: báo rõ cho anh, đừng bỏ qua âm thầm.
 
 ## 3. Quy trình
 
