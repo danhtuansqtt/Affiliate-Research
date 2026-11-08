@@ -1,30 +1,47 @@
-Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 07/11/2026: có 1 chương trình đạt. Em đã đưa khoảng 115 domain qua bộ lọc trùng, bỏ qua khoảng 45 domain đã có trong lịch sử, xét 20 ứng viên mới, giữ 1 và loại 19.
+Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 08/11/2026: có 3 chương trình đạt, cả 3 là prop firm. Em bỏ qua khoảng 60 domain đã có trong lịch sử, xét 61 ứng viên mới, giữ 3, loại 58.
 
-<b>TerraTrade (terratrade.app)</b>
-• Tính năng: Nhật ký giao dịch và backtest có AI cho trader cá nhân (cổ phiếu, quyền chọn, futures, forex, crypto), tự đồng bộ 7 broker
-• Giá bán: Essential $29/tháng; Pro $49/tháng; Ultra $89/tháng; Pro $528/năm; không có gói free hay trial (chính chủ)
-• Hoa hồng affiliate: 25% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (mạng cloud bị chặn — cần đọc lại https://terratrade.getrewardful.com/terms)
-• Năm ra đời: 04/2025 (nguồn phụ)
-• Cookie: 60 ngày (mặc định Rewardful)
+<b>Fundora (fundora-trading.com)</b>
+• Tính năng: Prop firm đánh giá CFD/vàng trên tài khoản demo cTrader, cho trader cá nhân Nhật và quốc tế
+• Giá bán: Entry $177/lần; Lite $244/lần; Growth $444/lần; Standard $666/lần; Professional $1,666/lần; Master $2,999/lần (chính chủ)
+• Hoa hồng affiliate: 10% recurring trọn đời, lên 15% ở bậc Platinum (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký)
+• Năm ra đời: 03/2025 (nguồn phụ)
+• Cookie: chỉ xem sau khi đăng ký (https://fundora-trading.com/en/affiliate/apply)
+• Độ đầy đủ: 4/6
+
+Pháp nhân Nhật ở Tokyo, chạy từ 04/2025. Người giới thiệu đầu tiên hưởng cả lần khách mua lại. Phải chờ duyệt form, trả ngày 10 tháng sau. Thiếu Cookie và Google Ads: anh nộp form rồi đọc hợp đồng partner. Không nhận khách ở Mỹ, Ấn Độ, Nga, Belarus, Triều Tiên.
+
+<b>ProPips (propips.uk)</b>
+• Tính năng: Prop firm CFD mô phỏng (1 Step, 2 Step, ProPass, Instant Funding), tài khoản $5k–$200k
+• Giá bán: 2 Step 5k $25/lần; 1 Step 5k $35/lần; Instant 5k $40/lần; 1 Step 200k $1,500/lần; ProPass $10 trả trước (chính chủ)
+• Hoa hồng affiliate: 10% một lần mỗi đơn, 15% sau $20,000 doanh số, 20% sau $50,000 (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
+• Năm ra đời: 2025 (nguồn phụ)
+• Cookie: chỉ xem sau khi đăng ký (https://dashboard.propips.uk)
+• Độ đầy đủ: 4/6
+
+Cảnh báo: "ProPips Group Limited" không có hồ sơ trên Companies House, Terms chép mẫu của Propsuite (Dubai), không nêu founder. Không phục vụ cư dân Nga và Việt Nam. Thiếu Cookie và Google Ads: anh đăng ký dashboard để đọc, hoặc hỏi support về PPC/brand bidding. Ưu tiên thấp.
+
+<b>OnePass Trader Funding (onepasstraderfunding.com)</b>
+• Tính năng: Prop firm một bước mô phỏng, trả phí một lần, đạt mục tiêu thì nhận thưởng cố định
+• Giá bán: Mini Pass $20/lần; First Pass $49/lần; Quick Hit $99/lần; Daily 600 $199/lần; Daily 900 $299/lần; Wide Stop $439/lần; Daily 1.5K $499/lần; Elite 3K $999/lần (chính chủ)
+• Hoa hồng affiliate: 5% một lần mỗi đơn, 6% từ đơn thứ 10 trong tháng, 7% từ đơn thứ 30 (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
+• Năm ra đời: 10/2026 (chính chủ)
+• Cookie: 30 ngày (chính chủ)
 • Độ đầy đủ: 5/6
 
-Em chọn TerraTrade vì sản phẩm ra mắt trên Product Hunt ngày 19/04/2025, trang /affiliates công khai 25% trên mọi khoản thanh toán suốt thời gian khách còn đăng ký, khách được giảm 10%, ai cũng tự đăng ký được qua Rewardful (https://terratrade.getrewardful.com/signup), không cần thuê bao; trang affiliate không nhắc việc duyệt. Gói nạp AI credit không tính hoa hồng. Ngưỡng rút và lịch trả chỉ xem sau khi đăng ký (Rewardful thường trả qua PayPal hoặc Wise vào đầu tháng). Traffic không công bố.
+Tự đăng ký, trả ngày 1 hằng tháng, ngưỡng rút $50. Cảnh báo: quá mới (domain 27/10/2026), chưa có payout nào, địa chỉ pháp nhân còn "pending publication". Chặn Việt Nam. Thiếu Google Ads: anh email hỏi OnePass có cho bid từ khóa thương hiệu không.
 
-Ô còn thiếu là Google Ads: trang /affiliates, Terms và form đăng ký không có câu nào về PPC hay bid thương hiệu, còn Affiliate Agreement riêng trên Rewardful bị Cloudflare chặn từ mạng cloud. Anh đăng ký rồi đọc https://terratrade.getrewardful.com/terms, hoặc hỏi support@terratrade.app về Google Ads và brand bidding trước khi chi tiền. Trong lúc chờ, anh nên thêm negative keyword "terratrade".
+Tuân thủ chung: nói rõ là tài khoản mô phỏng, không gọi là vốn thật hay đầu tư, không hứa thu nhập, ghi #ad, chỉ nhắm từ 18 tuổi, loại nước bị chặn. Google Ads xếp prop firm vào dịch vụ tài chính (có nước bắt xác minh nhà quảng cáo), dễ bị từ chối; anh nên thêm negative keyword tên thương hiệu.
 
-Yêu cầu tuân thủ khi quảng cáo (theo ToS TerraTrade):
-• Không giới thiệu là tư vấn đầu tư. TerraTrade không đặt lệnh, không phải broker hay investment adviser, không đăng ký với SEC, FINRA, CFTC.
-• Không hứa lợi nhuận, không dùng kết quả backtest làm bằng chứng. Tránh các cụm "kiếm lời", "win rate", "đảm bảo lợi nhuận".
-• Chỉ nhắm người từ 18 tuổi.
-• Không quảng cáo "miễn phí" hay "free trial" vì sản phẩm không có gói free hay trial.
-• Trên Google Ads nên mô tả là "trading journal / analytics". Nhắc tới forex, crypto hay options dễ bị gắn cờ theo chính sách Financial services và Cryptocurrencies.
+Bị loại:
+• Cấm bid thương hiệu: UZO, Volt Funded, CMC Markets Funded, Iceberg Funding, TradeSport, FundedRight, Journalit, BlockViz.
+• Thiếu bằng chứng: FundedForge (chép điều khoản Ment Funding, không có pháp nhân), Yodoya.
+• Không có affiliate: TraderFunder, Trader Funding Program, Paragon, Axiqon, FundedTick, Gemscend, Alpha Forex Capital, CryptoStreet, Trading Risk Lab, SecurePutCalls, Mudra, ProJournX, Toukan, KeepBudget, Stock Expert AI, InsiderPulse, ValueScreener, Quantzee, QuantGold AI, WorthCay, Toozi, Sentryfolio, ProDesk Apps, Know Your Dosh.
+• Thiếu số liệu: Wilson Blanc, LivingOff4x, PropTime USA, Nudge, TradingMMT, ChaffChing, Weallty, Robotaxinode.
+• Trước 2025 hoặc không rõ ngày: Funded Trader Network, FX2, ATS Capital, Jasper Forex, FLI Capital, BudgetSheet, finban, Awaken Tax.
+• Không phù hợp: Investiqa, Redbark, OpenData Finance, TrueProfit, Financer.com, MyPrize.
+• Ngừng hoạt động: Traidies, JournFX.
 
-Các ứng viên bị loại:
-• <b>Hunter Vault (huntervault.app)</b>, <b>BalanceWise (balancewise.ca)</b>, <b>Budget Card (budgetcard.lovable.app)</b>, <b>SaveSage Club (savesage.club)</b>, <b>Pocket Portfolio (pocketportfolio.app)</b>, <b>TradePilot (tradepolit.vercel.app)</b>, <b>ReSubs (resubs.app)</b>, <b>RecurDash (recurdash.com)</b>: không có chương trình affiliate.
-• <b>RewardTide (rewards.xtide.io)</b>, <b>FolioTrack (folio-track.com)</b>, <b>TradeMates (trademates.co)</b>, <b>Subvia (subvia.app)</b>: trang chủ không đọc được hoặc không mở được, không nguồn nào nhắc affiliate.
-• <b>Budget Forward App (clarity.riff.works)</b>: trang nay chuyển tới app-not-found. <b>Gifted Credit (giftedcredit.com)</b>: domain nay là site tiếng Trung không liên quan.
-• <b>Dovly AI (dovly.com)</b> (2018), <b>AllInvestView (allinvestview.com)</b> (2023, còn cấm bid thương hiệu), <b>Manzil (manzil.ca)</b> và <b>WhiteBIT US (whitebit.us)</b> (thương hiệu có từ trước 2025): ra mắt trước 2025.
-• <b>Alexfitax (alexfitax.com)</b>: thuộc nhóm thể thao, không phải tài chính.
-
-Em đã lưu lịch sử 20 ứng viên vào reported_programs__tai-chinh-doi.md.
+Em đã lưu lịch sử 61 ứng viên vào reported_programs__tai-chinh-doi.md.
