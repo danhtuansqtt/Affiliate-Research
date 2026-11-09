@@ -1,0 +1,30 @@
+name: build-mac-dmg
+# Dựng Affiliate Viewer thành file .dmg cho MacBook (chip Apple Silicon) trên máy macOS của GitHub.
+# Tải file: GitHub > tab Actions > lần chạy mới nhất > mục Artifacts > AffiliateViewer-mac-arm64.
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - 'viewer/**'
+      - '.github/workflows/build-mac-dmg.yml'
+jobs:
+  dmg:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build .app và .dmg
+        run: bash viewer/build-dmg.sh
+      - name: Kiểm tra file .dmg
+        run: |
+          ls -la viewer/dist/AffiliateViewer.dmg
+          hdiutil imageinfo viewer/dist/AffiliateViewer.dmg | head -5
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AffiliateViewer-mac-arm64
+          path: viewer/dist/AffiliateViewer.dmg
+          retention-days: 30
