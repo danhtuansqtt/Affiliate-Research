@@ -21,6 +21,17 @@ Muốn có ứng dụng `.app` để kéo vào Applications (phải build TRÊN 
 bash viewer/build-mac.sh           # ra viewer/dist/AffiliateViewer.app
 ```
 
+## Cài bằng file .dmg (MacBook chip M1/M2/M3/M4)
+
+GitHub tự dựng file `.dmg` trên máy macOS mỗi khi thư mục `viewer/` đổi:
+
+1. Mở https://github.com/danhtuansqtt/Affiliate-Research/actions/workflows/build-mac-dmg.yml (đăng nhập GitHub).
+2. Chọn lần chạy mới nhất có dấu tích xanh, kéo xuống mục **Artifacts**, tải `AffiliateViewer-mac-arm64` (file .zip, giải nén ra `AffiliateViewer.dmg`). File được giữ 30 ngày; hết hạn thì vào tab Actions bấm **Run workflow** để dựng lại.
+3. Mở `.dmg`, kéo **Affiliate Viewer** vào **Applications**.
+4. Lần đầu mở: macOS báo "không xác minh được nhà phát triển" vì app chưa ký bằng tài khoản Apple Developer. Bấm chuột phải vào app > **Open** > **Open**, hoặc vào System Settings > Privacy & Security > **Open Anyway**. Chỉ cần làm một lần.
+
+Mac đời Intel: chưa có bản `.dmg` (workflow dựng cho chip Apple). Dùng `bash viewer/run-mac.command` ở trên, hoặc tự dựng bằng `bash viewer/build-dmg.sh` trên chính máy đó.
+
 ## Chạy trên Windows
 
 `viewer\dist\AffiliateViewer.exe` (build bằng `python -m PyInstaller --noconfirm --onefile --windowed --name AffiliateViewer --add-data "index.html;." app.py`). Hoặc chạy thẳng `python app.py`.
