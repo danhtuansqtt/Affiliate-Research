@@ -17,6 +17,7 @@ import time
 import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
+import gauth
 import platform_util as pu
 import sheets
 import vip
@@ -31,6 +32,7 @@ APP_DIR = pu.app_dir()
 CONFIG = os.path.join(APP_DIR, "config.json")
 CACHE = os.path.join(APP_DIR, "data.json")
 VIP_FILE = os.path.join(APP_DIR, "vip.json")
+GTOKEN = os.path.join(APP_DIR, "google_token.json")
 os.makedirs(APP_DIR, exist_ok=True)
 
 
@@ -103,22 +105,38 @@ def vip_status():
     return {"job": {k: JOB[k] for k in ("running", "done", "total", "current")}, "results": VIPDB}
 
 
+def find_client():
+    p = load_json(CONFIG, {}).get("client_path", "")
+    return p if p and os.path.isfile(p) else ""
+
+
+def auth_info():
+    """Trạng thái hai cách xác thực: đăng nhập Google (ưu tiên) và file khóa service account."""
+    return {"key": find_key(), "client": find_client(), "google": gauth.status(GTOKEN)}
+
+
 def refresh():
-    key = find_key()
-    if not key:
-        raise RuntimeError("Chưa có file khóa Google (service account). Bấm 'Chọn file khóa…' ở màn hình cài đặt.")
     sid = parse_sheet_id(os.environ.get("AV_SHEET_ID") or load_json(CONFIG, {}).get("sheet_id", ""))
     if not sid:
         raise RuntimeError("Chưa có link Google Sheet. Dán link Sheet vào ô bên dưới (chỉ cần làm một lần).")
     sheets.SHEET_ID = sid
-    data = {"fetched_at": time.strftime("%Y-%m-%d %H:%M:%S"), "tabs": sheets.fetch_all(key)}
+    client = find_client()
+    if client and gauth.status(GTOKEN):
+        tabs = sheets.fetch_all(tok=gauth.access_token(client, GTOKEN))
+    else:
+        key = find_key()
+        if not key:
+            raise RuntimeError("Chưa đăng nhập Google. Chọn file OAuth rồi bấm 'Đăng nhập Google' "
+                               "(hoặc chọn file khóa service account).")
+        tabs = sheets.fetch_all(key)
+    data = {"fetched_at": time.strftime("%Y-%m-%d %H:%M:%S"), "tabs": tabs}
     save_json(CACHE, data)
     return data
 
 
-def pick_key_file():
+def pick_key_file(prompt="Chọn file khóa Google (.json)"):
     if sys.platform == "darwin":  # Python của Homebrew thường không có tkinter: dùng hộp thoại của macOS
-        r = subprocess.run(["osascript", "-e", 'POSIX path of (choose file with prompt "Chọn file khóa Google (.json)")'],
+        r = subprocess.run(["osascript", "-e", f'POSIX path of (choose file with prompt "{prompt}")'],
                            capture_output=True, text=True)
         return r.stdout.strip() if r.returncode == 0 else ""
     import tkinter as tk
@@ -126,7 +144,7 @@ def pick_key_file():
     root = tk.Tk()
     root.withdraw()
     root.attributes("-topmost", True)
-    path = filedialog.askopenfilename(title="Chọn file khóa Google (.json)", filetypes=[("JSON", "*.json")])
+    path = filedialog.askopenfilename(title=prompt, filetypes=[("JSON", "*.json")])
     root.destroy()
     return path
 
@@ -159,8 +177,8 @@ class Handler(BaseHTTPRequestHandler):
                 try:
                     data = refresh()
                 except Exception as e:  # noqa: BLE001
-                    return self._send(200, json.dumps({"error": str(e), "key": find_key()}, ensure_ascii=False))
-            data["key"] = find_key()
+                    return self._send(200, json.dumps({"error": str(e), **auth_info()}, ensure_ascii=False))
+            data.update(auth_info())
             return self._send(200, json.dumps(data, ensure_ascii=False))
         self._send(404, "{}")
 
@@ -170,10 +188,10 @@ class Handler(BaseHTTPRequestHandler):
         if self.path == "/api/refresh":
             try:
                 data = refresh()
-                data["key"] = find_key()
+                data.update(auth_info())
                 return self._send(200, json.dumps(data, ensure_ascii=False))
             except Exception as e:  # noqa: BLE001
-                return self._send(200, json.dumps({"error": str(e), "key": find_key()}, ensure_ascii=False))
+                return self._send(200, json.dumps({"error": str(e), **auth_info()}, ensure_ascii=False))
         if self.path == "/api/vip/start":
             with JOB_LOCK:
                 if JOB["running"]:
@@ -194,13 +212,36 @@ class Handler(BaseHTTPRequestHandler):
             cfg["sheet_id"] = sid
             save_json(CONFIG, cfg)
             return self._send(200, json.dumps({"ok": True}))
+        if self.path == "/api/pick-client":
+            path = pick_key_file("Chọn file OAuth của Google (client_secret_….json)")
+            if path:
+                try:
+                    gauth.load_client(path)
+                except Exception as e:  # noqa: BLE001
+                    return self._send(200, json.dumps({"error": str(e)}, ensure_ascii=False))
+                cfg = load_json(CONFIG, {})
+                cfg["client_path"] = path
+                save_json(CONFIG, cfg)
+            return self._send(200, json.dumps(auth_info(), ensure_ascii=False))
+        if self.path == "/api/google-login":
+            client = find_client()
+            if not client:
+                return self._send(200, json.dumps({"error": "Chưa chọn file OAuth. Bấm 'Chọn file OAuth…' trước."}, ensure_ascii=False))
+            try:
+                gauth.login(client, GTOKEN)
+            except Exception as e:  # noqa: BLE001
+                return self._send(200, json.dumps({"error": str(e)}, ensure_ascii=False))
+            return self._send(200, json.dumps(auth_info(), ensure_ascii=False))
+        if self.path == "/api/google-logout":
+            gauth.logout(GTOKEN)
+            return self._send(200, json.dumps(auth_info(), ensure_ascii=False))
         if self.path == "/api/pick-key":
             path = pick_key_file()
             if path:
                 cfg = load_json(CONFIG, {})
                 cfg["key_path"] = path
                 save_json(CONFIG, cfg)
-            return self._send(200, json.dumps({"key": find_key()}))
+            return self._send(200, json.dumps(auth_info(), ensure_ascii=False))
         self._send(404, "{}")
 
 

@@ -4,7 +4,6 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-from google.oauth2.service_account import Credentials
 
 SHEET_ID = ""  # app.py gán từ cấu hình người dùng (không ghi ID vào mã nguồn công khai)
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
@@ -26,6 +25,7 @@ class _Resp:
 
 
 def token(key_path):
+    from google.oauth2.service_account import Credentials  # chỉ cần khi dùng file khóa
     creds = Credentials.from_service_account_file(key_path, scopes=SCOPES)
     creds.refresh(_Req())
     return creds.token
@@ -34,13 +34,20 @@ def token(key_path):
 def get(tok, path):
     req = urllib.request.Request(f"https://sheets.googleapis.com/v4/spreadsheets/{SHEET_ID}{path}",
                                  headers={"Authorization": f"Bearer {tok}"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return json.loads(r.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            return json.loads(r.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        if e.code in (401, 403, 404):
+            raise RuntimeError(f"Google trả lỗi {e.code}: tài khoản đang dùng chưa có quyền xem Sheet này "
+                               "(hoặc chưa bật Google Sheets API cho dự án). Kiểm tra bằng cách mở Sheet "
+                               "trên trình duyệt với đúng tài khoản đó.") from None
+        raise
 
 
-def fetch_all(key_path):
-    """Trả {tên_tab: {"header": [...], "rows": [[...]]}} cho mọi tab."""
-    tok = token(key_path)
+def fetch_all(key_path=None, tok=None):
+    """Trả {tên_tab: {"header": [...], "rows": [[...]]}} cho mọi tab. Dùng tok (đăng nhập Google) hoặc file khóa."""
+    tok = tok or token(key_path)
     titles = [s["properties"]["title"] for s in get(tok, "?fields=sheets.properties.title")["sheets"]]
     out = {}
     for t in titles:

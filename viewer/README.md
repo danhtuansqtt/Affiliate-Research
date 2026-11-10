@@ -44,6 +44,13 @@ App hỏi 2 thứ, chỉ một lần, vì chúng không nằm trong mã nguồn 
 
 Cấu hình và cache lưu ở: Windows `%APPDATA%\AffiliateViewer`, macOS `~/Library/Application Support/AffiliateViewer` (`config.json`, `data.json` cache Sheet, `vip.json` kết quả Check VIP). Mỗi máy một bản, bấm "Làm mới từ Google Sheet" để lấy dữ liệu mới.
 
+## Đăng nhập bằng tài khoản Google (cho Sheet ở chế độ hạn chế)
+Cách này thay cho file khóa service account: app đọc Sheet bằng chính tài khoản Google của anh (tài khoản đó phải được cấp quyền xem Sheet).
+1. Một lần, trên [Google Cloud Console](https://console.cloud.google.com/): tạo dự án, bật **Google Sheets API**, vào *APIs & Services > OAuth consent screen* (loại External, thêm email của anh vào Test users), rồi *Credentials > Create credentials > OAuth client ID > Desktop app*. Tải file `client_secret_….json` về.
+2. Trong app: dán link Sheet, bấm **Chọn file OAuth…** (chọn file vừa tải), bấm **Đăng nhập Google**, chọn tài khoản trên trình duyệt và đồng ý quyền "xem Google Sheets".
+3. Bấm "Làm mới từ Google Sheet". Từ lần sau app tự dùng lại phiên đăng nhập; nút **Đăng xuất** ở thanh trên cùng để thoát.
+Token lưu ở `google_token.json` trong thư mục dữ liệu của app (quyền 600), chỉ có quyền đọc Sheet. File OAuth không commit vào repo.
+
 ## Check VIP
 Nút vàng trên thanh trên cùng: chọn phạm vi (các dòng đang lọc, tối đa N) và nguồn, chạy nền.
 - Nguồn (không cần khóa API): Google Trends 30 ngày, Trustpilot (qua Chrome/Edge chạy ẩn vì trang chặn đọc thông thường), Google News (30/7 ngày), Hacker News (30 ngày), tuổi domain (RDAP, dự phòng Wayback).
