@@ -1,42 +1,29 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 09/11/2026: hôm nay có 3 chương trình đạt là Charlie Chat (multifamilyos.ai), Spokenly (spokenly.app) và Jiro Build (jiro.build).
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 10/11/2026: hôm nay có 2 chương trình đạt là VidBump (vidbump.com) và AdStellar (adstellar.ai).
 
-Em rà 29 ứng viên mới từ Affonso, Partnero, Revshare, Referly, Reditus và các bài tổng hợp AI affiliate 2026, đào sâu 6. Charlie Chat và Jiro đều cho chạy Google Ads rõ ràng, Spokenly thì phải đăng ký mới đọc được luật quảng cáo.
+Em rà 31 ứng viên mới từ Dub marketplace, Affonso, Open Launch, Uneed và tin ra mắt chương trình affiliate, đào sâu 4. Cả 2 chương trình được chọn đều chưa đọc được luật quảng cáo trả phí, anh xem kỹ trước khi chi ngân sách.
 
-<b>Charlie Chat (multifamilyos.ai)</b>
-• Tính năng: Hệ điều hành AI cho đầu tư bất động sản multifamily Mỹ: tìm nhà, phân tích deal, soạn LOI và thư chủ nhà
-• Giá bán: Core $0 miễn phí; Plus $39/tháng; Plus $399/năm (chính chủ)
-• Hoa hồng affiliate: 20% recurring 12 tháng (mạng affiliate)
-• Google Ads: Không Cấm (Reditus: paid ads policy "allow", được bid tên thương hiệu)
-• Năm ra đời: 11/2025
-• Cookie: 30 ngày
-• Độ đầy đủ: 6/6
-
-Qua Reditus, cần duyệt, ngưỡng rút $50. Lưu ý: brand MultifamilyOS (khóa coaching của Charles Dobens) có từ 2021, nhưng phần mềm AI dùng domain đăng ký 04/2025 và ra mắt chính thức 18/11/2025. Link điều khoản đầy đủ multifamilyos.com/tos đang 404, anh xem lại policy trong dashboard Reditus sau khi được duyệt.
-
-<b>Spokenly (spokenly.app)</b>
-• Tính năng: App đọc chính tả bằng AI cho macOS, Windows, Linux, iOS, gõ chữ tại con trỏ, có model offline và MCP
-• Giá bán: Free $0; Local+ $29/lần; Pro $15/tháng; Pro $144/năm (chính chủ)
+<b>VidBump (vidbump.com)</b>
+• Tính năng: AI tạo video và ảnh (text-to-video, animate ảnh, hơn 300 hiệu ứng, face swap, upscale 4K) cho creator và marketer
+• Giá bán: Free 20 credits; Lite $9.99/tháng; Pro $19.99/tháng (chính chủ)
 • Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký: spokenly.app/affiliate)
-• Năm ra đời: 08/2025
-• Cookie: trọn đời (lifetime attribution, chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
+• Năm ra đời: 10/2025
+• Cookie: 60 ngày
 • Độ đầy đủ: 5/6
 
-Hoa hồng trọn đời và ghi nhận trọn đời, duyệt tay, trả qua PayPal, chuyển khoản hoặc Wise. Ô thiếu là Google Ads: trang affiliate và Terms không nhắc quảng cáo, luật và ngưỡng rút chỉ hiện sau khi được duyệt, anh đăng ký ở spokenly.app/affiliate rồi đọc trước khi chạy ads.
+Hoa hồng lên 32% khi có 20 ref active, 35% khi có 50; trả hằng tháng qua PayPal hoặc chuyển khoản, ngưỡng rút $50. Ô thiếu là Google Ads: trang affiliate và Terms không nhắc PPC hay brand bidding, còn cổng đăng ký affiliate.vidbump.com/sign-up lúc em kiểm tra không phân giải được tên miền, anh mở thử link này xem còn hoạt động không rồi đọc luật trong dashboard. Rủi ro lớn hơn: trang chủ có hiệu ứng "Bikini Up" và "Pole Dance" (biến ảnh người thật thành video mặc bikini hoặc múa cột), dễ bị Google Ads gắn cờ nội dung gợi dục và có thể khóa tài khoản không kháng nghị được. Nếu chạy, anh chỉ dùng từ khóa trung tính (AI video generator, photo to video), tránh trang đích hiện 2 thẻ này và thử ngân sách nhỏ trước.
 
-<b>Jiro Build (jiro.build)</b>
-• Tính năng: Thư viện prompt, component và template cho vibe-code website bằng Bolt, Lovable, v0, Cursor, kèm MCP server
-• Giá bán: 3-month $48/3 tháng; Yearly $99/năm; Lifetime $179/lần (chính chủ)
+<b>AdStellar (adstellar.ai)</b>
+• Tính năng: AI tạo và launch quảng cáo Meta (ảnh, video, UGC avatar, bulk launch, AI media buyer agent) cho người chạy ads
+• Giá bán: Trial 7 ngày kèm $100 credits; gói theo credit từ $100/tháng, tối đa $10,000/tháng (chính chủ)
 • Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
-• Google Ads: Không Cấm (Terms cho phép "online ads (including search ads)"; cấm giả danh Jiro)
-• Năm ra đời: 01/2026
-• Cookie: 90 ngày
-• Độ đầy đủ: 6/6
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký FirstPromoter: affiliates.adstellar.ai/signup)
+• Năm ra đời: 2025
+• Cookie: 365 ngày
+• Độ đầy đủ: 5/6
 
-Không phải AI builder mà là thư viện prompt/MCP phục vụ AI coding. Mọi đơn đều được duyệt, gói Lifetime trả 1 lần $53.70, ngưỡng rút $50 chuyển khoản USD. Được bid từ khóa "Jiro" nhưng quảng cáo phải ghi rõ là review/affiliate, không trông như kênh chính thức.
+Không có ngưỡng rút, trả hằng tháng qua FirstPromoter. Ngày ra mắt đã xác nhận: trang AI Info ghi "Founded: 2025", domain đăng ký 09/2025. Ô thiếu là Google Ads: trang /affiliates và Terms không có điều khoản affiliate, trang terms của cổng trả 404, anh đăng ký ở affiliates.adstellar.ai/signup rồi đọc luật trong dashboard trước khi chạy ads. Lưu ý dailyaitools.io ghi giá $49/tháng, em chốt theo giá chính chủ $100/tháng.
 
-Thêm 2 chương trình em lưu lịch sử là đạt nhưng không chọn: <b>Moderando (moderando.com)</b> 15% recurring 6 tháng, cổng đăng ký Partnero đang 404 và Google Ads chưa xác minh; <b>IvaBot (ivabot.xyz)</b> 50% một lần trên gói credit nhỏ, site không có trang affiliate, Google Ads chưa xác minh.
+Loại (21): <b>Riverflow (riverflow.ai)</b> và <b>bytemail (bytemailapp.com)</b> cấm bid từ khóa thương hiệu (Riverflow còn chỉ nhận partner ở 10 nước, không có VN); 9 ra mắt trước 2025 (Maple, Chipp, Kite, Dex, Olostep, Omneky, Subscribr, Hyperleap, Entergram); Heyy không xác minh được ngày ra mắt; 5 không có chương trình affiliate (Clarity Search, College Essay Grader, Beautyface, ImageTranslate, JoyFun); 4 không phải công cụ AI (Kiwiform, Fonable, Tidix, Proovyt). Thêm 8 tool trên Affonso (ZodQR, TubeArchiver, Sendtric…) em chưa mở trang nên chưa ghi lịch sử.
 
-Loại (24): <b>Tell Olivia (tellolivia.com)</b> chính site ghi chương trình 20% chưa hoạt động, form bắt tích "not commercially active", trái với 80% trên Revshare; 3 cấm bid thương hiệu (Ownbox, Olhary, FirstQuote); 12 ra mắt trước 2025 (Hubfluence, PodcastAI, AdManage, Niural, Bizgrow, Algomo, AltText, Buzz, Kosmic, Omnimind, Superads, Pythago); 2 không phải công cụ AI (WeLead Lab, Story Wizard); Formalini chỉ trả bằng credit; 3 không có chương trình affiliate (Earlyn, ReplySync, Discrofy); Bloomomo thiếu dữ liệu, có thể đã đóng; Ring Leader AI chưa đủ bằng chứng.
-
-Em đã lưu 29 dòng vào lịch sử.
+Em đã lưu 23 dòng vào lịch sử.
