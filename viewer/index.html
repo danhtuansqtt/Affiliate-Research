@@ -251,12 +251,13 @@ function adsCell(o, m) {
 function render() {
   const app = $("#app");
   if (!DATA) return;
+  stopWatch();
   showAcct();
-  if (DATA.need === "login" || (DATA.error && !(DATA.google && DATA.google.email) && !DATA.key)) { loginScreen(); return; }
+  if (DATA.need === "login") { loginScreen(); return; }
   if (DATA.need === "sheet") { pickerScreen(); return; }
   if (DATA.error) {
     app.innerHTML = `<div class="center"><h2>Chưa đọc được Google Sheet</h2><p class="err">${esc(DATA.error)}</p>
-    <p class="sub">File: ${esc((DATA.sheet && DATA.sheet.name) || "(không tên)")} · Tài khoản: ${esc((DATA.google && DATA.google.email) || "")}</p>
+    <p class="sub">File: ${esc((DATA.sheet && DATA.sheet.name) || "(không tên)")}</p>
     <p><button class="btn primary" id="retry">Thử lại</button> <button class="btn" id="chfile">Chọn file khác</button></p></div>`;
     $("#retry").onclick = refresh; $("#chfile").onclick = () => { DATA.need = "sheet"; render(); };
     return;
@@ -534,56 +535,49 @@ async function checkUpdate() {
   } catch (e) { /* không có mạng: bỏ qua */ }
 }
 checkUpdate();
+let WATCH_T = null;
+function stopWatch() { if (WATCH_T) { clearInterval(WATCH_T); WATCH_T = null; } }
+function startWatch(fn) { stopWatch(); fn(); WATCH_T = setInterval(fn, 2000); }
+const openDrive = () => fetch("/api/open-drive", {method: "POST", body: "{}"});
 function loginScreen() {
-  $("#app").innerHTML = `<div class="center"><h2>Affiliate Viewer</h2>
-    <p class="sub">Đăng nhập Google để xem các file Google Sheet của anh.</p>
-    <p><button class="btn primary" id="glogin" style="padding:12px 22px;font-size:16px">Đăng nhập Google</button></p>
-    <p class="err" id="lerr"></p></div>`;
-  $("#glogin").onclick = googleLogin;
-}
-async function googleLogin() {
-  const b = $("#glogin"), er = $("#lerr");
-  b.disabled = true; b.textContent = "Đang chờ đăng nhập ở trình duyệt…"; er.textContent = "";
-  try {
-    const r = await (await fetch("/api/google-login", {method: "POST", body: "{}"})).json();
-    if (r.error) { er.textContent = r.error; b.disabled = false; b.textContent = "Đăng nhập Google"; return; }
-    DATA = Object.assign(DATA || {}, r); DATA.error = null;
-    r.need === "sheet" ? pickerScreen() : refresh();
-  } catch (e) { er.textContent = "Không đăng nhập được: " + e; b.disabled = false; b.textContent = "Đăng nhập Google"; }
-}
-let PICK_T = null;
-async function loadFiles(q) {
-  const box = $("#flist"); box.innerHTML = '<p class="sub">Đang tải danh sách…</p>';
-  const r = await (await fetch("/api/drive-list?q=" + encodeURIComponent(q || ""))).json();
-  if (r.error) { box.innerHTML = `<p class="err">${esc(r.error)}</p>`; return; }
-  if (!r.files.length) { box.innerHTML = '<p class="sub">Không thấy file Google Sheet nào.</p>'; return; }
-  box.innerHTML = r.files.map(f => `<button class="btn" style="display:block;width:100%;text-align:left;margin:6px 0;padding:10px 12px" data-id="${esc(f.id)}" data-name="${esc(f.name)}">
-    <b>${esc(f.name)}</b><div class="sub">${esc((f.owners && f.owners[0] && f.owners[0].displayName) || "")} · sửa ${esc((f.modifiedTime || "").slice(0, 10))}</div></button>`).join("");
-  box.querySelectorAll("button").forEach(b => b.onclick = async () => {
-    const r2 = await (await fetch("/api/set-sheet", {method: "POST", body: JSON.stringify({value: b.dataset.id, name: b.dataset.name})})).json();
-    if (r2.error) { alert(r2.error); return; }
-    DATA = Object.assign(DATA || {}, {need: "", sheet: {id: b.dataset.id, name: b.dataset.name}}); TAB = null; refresh();
+  $("#app").innerHTML = `<div class="center"><h2>Bước 1: Đăng nhập Google</h2>
+    <p class="sub">Bấm nút bên dưới để mở Google Drive trong cửa sổ mới, rồi đăng nhập tài khoản Google của anh ở đó.</p>
+    <p><button class="btn primary" id="odrive" style="padding:12px 22px;font-size:16px">Mở Google Drive và đăng nhập</button></p>
+    <p class="sub" id="wstat">Đang chờ anh đăng nhập…</p></div>`;
+  $("#odrive").onclick = openDrive;
+  startWatch(async () => {
+    let w; try { w = await (await fetch("/api/watch")).json(); } catch (e) { return; }
+    if (w.signed_in) { stopWatch(); DATA = Object.assign(DATA || {}, w); w.need === "" ? refresh() : pickerScreen(); return; }
+    const s = $("#wstat"); if (s) s.textContent = w.logging_in ? "Đang đăng nhập ở cửa sổ Google…" : "Đang chờ anh đăng nhập…";
   });
 }
+async function useFile(id, name) {
+  const r = await (await fetch("/api/set-sheet", {method: "POST", body: JSON.stringify({value: id, name: name || ""})})).json();
+  if (r.error) { alert(r.error); return; }
+  DATA = Object.assign(DATA || {}, {need: "", sheet: {id: id, name: name || ""}}); TAB = null; stopWatch(); refresh();
+}
 function pickerScreen() {
-  $("#app").innerHTML = `<div class="center" style="max-width:640px;margin:0 auto;text-align:left"><h2 style="text-align:center">Chọn file Google Sheet</h2>
-    <p class="sub" style="text-align:center">Tài khoản: ${esc((DATA.google && DATA.google.email) || "")}</p>
-    <p><input type="text" id="fsearch" placeholder="Gõ để tìm theo tên file…" style="width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit"></p>
-    <div id="flist"></div></div>`;
-  $("#fsearch").oninput = e => { clearTimeout(PICK_T); PICK_T = setTimeout(() => loadFiles(e.target.value), 300); };
-  loadFiles("");
+  $("#app").innerHTML = `<div class="center" style="max-width:640px;margin:0 auto;text-align:left"><h2 style="text-align:center">Bước 2: Chọn file Google Sheet</h2>
+    <p class="sub" style="text-align:center">Trong cửa sổ Google Drive, bấm đúp để mở file Google Sheet muốn xem. File đó sẽ hiện ở đây để anh xác nhận.</p>
+    <p style="text-align:center"><button class="btn" id="odrive">Mở lại Google Drive</button></p>
+    <div id="flist"><p class="sub" style="text-align:center">Chưa thấy file nào đang mở…</p></div>
+    <p class="sub" style="text-align:center;margin-top:18px">Hoặc dán link Google Sheet:</p>
+    <p style="text-align:center"><input type="text" id="sheetlink" placeholder="docs.google.com/spreadsheets/d/…" style="width:min(420px,90%);padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit"> <button class="btn" id="savesheet">Dùng link</button></p></div>`;
+  $("#odrive").onclick = openDrive;
+  $("#savesheet").onclick = () => useFile($("#sheetlink").value, "");
+  startWatch(async () => {
+    let w; try { w = await (await fetch("/api/watch")).json(); } catch (e) { return; }
+    if (!w.signed_in) { stopWatch(); DATA = Object.assign(DATA || {}, w); loginScreen(); return; }
+    const box = $("#flist"); if (!box) return;
+    if (!w.files.length) { box.innerHTML = '<p class="sub" style="text-align:center">Chưa thấy file nào đang mở…</p>'; return; }
+    box.innerHTML = w.files.map(f => `<button class="btn primary" style="display:block;width:100%;text-align:left;margin:6px 0;padding:10px 12px" data-id="${esc(f.id)}" data-name="${esc(f.name)}">Dùng file: <b>${esc(f.name)}</b></button>`).join("");
+    box.querySelectorAll("button").forEach(b => b.onclick = () => useFile(b.dataset.id, b.dataset.name));
+  });
 }
 function showAcct() {
-  const b = $("#acct"), c = $("#chg"), g = DATA && DATA.google;
-  const on = !!(g && g.email);
-  b.style.display = on ? "" : "none"; b.textContent = on ? "Đăng xuất " + g.email : "";
-  c.style.display = on && DATA.need === "" ? "" : "none";
-  c.onclick = () => { DATA.need = "sheet"; render(); };
-  b.onclick = async () => {
-    if (!confirm("Đăng xuất tài khoản Google khỏi app?")) return;
-    DATA = Object.assign(DATA || {}, await (await fetch("/api/google-logout", {method: "POST", body: "{}"})).json(), {tabs: {}, error: null});
-    render();
-  };
+  const c = $("#chg"); $("#acct").style.display = "none";
+  c.style.display = DATA && DATA.need === "" ? "" : "none";
+  c.onclick = () => { DATA.need = "sheet"; pickerScreen(); openDrive(); };
 }
 $("#refresh").onclick = refresh;
 $("#theme").onclick = () => {

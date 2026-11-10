@@ -1,60 +1,108 @@
-"""Đọc Google Sheet (chỉ đọc) bằng service account, không cần thư viện requests."""
-import json
+"""Đọc Google Sheet (chỉ đọc) bằng phiên đăng nhập Google của người dùng trong trình duyệt của app.
+
+Tải bản xuất "Trang web (.zip)" của Sheet: mỗi tab là một file .html, ta đọc bảng trong đó.
+Cách này dùng đúng quyền xem của tài khoản đã đăng nhập, không cần dự án Google Cloud hay file khóa.
+"""
+import io
+import re
 import urllib.error
-import urllib.parse
 import urllib.request
+import zipfile
+from html.parser import HTMLParser
+
+import cdp
 
 
-SHEET_ID = ""  # app.py gán từ cấu hình người dùng (không ghi ID vào mã nguồn công khai)
-SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"]
+class _Redirect(urllib.request.HTTPRedirectHandler):
+    """Khi chuyển hướng sang miền khác (vd doc-xx.googleusercontent.com), gắn lại đúng cookie của miền đó."""
+
+    def __init__(self, cookies):
+        self.cookies = cookies
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        new = super().redirect_request(req, fp, code, msg, headers, newurl)
+        if new is not None:
+            host = urllib.request.urlparse(newurl).hostname or ""
+            new.headers.pop("Cookie", None)
+            new.remove_header("Cookie")
+            ck = cdp.cookie_header(self.cookies, host)
+            if ck:
+                new.add_header("Cookie", ck)
+        return new
 
 
-class _Req:
-    def __call__(self, url, method="GET", body=None, headers=None, timeout=None, **kw):
-        req = urllib.request.Request(url, data=body, method=method, headers=headers or {})
-        try:
-            with urllib.request.urlopen(req, timeout=timeout or 30) as r:
-                return _Resp(r.status, r.read())
-        except urllib.error.HTTPError as e:
-            return _Resp(e.code, e.read())
-
-
-class _Resp:
-    def __init__(self, status, data):
-        self.status, self.data = status, data
-
-
-def token(key_path):
-    from google.oauth2.service_account import Credentials  # chỉ cần khi dùng file khóa
-    creds = Credentials.from_service_account_file(key_path, scopes=SCOPES)
-    creds.refresh(_Req())
-    return creds.token
-
-
-def get(tok, path):
-    req = urllib.request.Request(f"https://sheets.googleapis.com/v4/spreadsheets/{SHEET_ID}{path}",
-                                 headers={"Authorization": f"Bearer {tok}"})
+def download_zip(sheet_id, cookies):
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=zip"
+    req = urllib.request.Request(url, headers={"Cookie": cdp.cookie_header(cookies, "docs.google.com"),
+                                                "User-Agent": "Mozilla/5.0"})
+    opener = urllib.request.build_opener(_Redirect(cookies))
     try:
-        with urllib.request.urlopen(req, timeout=60) as r:
-            return json.loads(r.read().decode("utf-8"))
+        with opener.open(req, timeout=120) as r:
+            data = r.read()
+            ctype = r.headers.get("Content-Type", "")
     except urllib.error.HTTPError as e:
         if e.code in (401, 403, 404):
-            raise RuntimeError(f"Google trả lỗi {e.code}: tài khoản đang dùng chưa có quyền xem Sheet này "
-                               "(hoặc chưa bật Google Sheets API cho dự án). Kiểm tra bằng cách mở Sheet "
-                               "trên trình duyệt với đúng tài khoản đó.") from None
+            raise RuntimeError(f"Google trả lỗi {e.code}: tài khoản đang đăng nhập chưa có quyền xem file này "
+                               "(hoặc chủ file tắt quyền tải xuống). Mở file trong cửa sổ Drive để kiểm tra.") from None
         raise
+    if "zip" not in ctype and not data.startswith(b"PK"):
+        raise RuntimeError("Google không trả file tải xuống (có thể phiên đăng nhập đã hết hạn). Bấm 'Đăng nhập Google' lại.")
+    return data
 
 
-def fetch_all(key_path=None, tok=None):
-    """Trả {tên_tab: {"header": [...], "rows": [[...]]}} cho mọi tab. Dùng tok (đăng nhập Google) hoặc file khóa."""
-    tok = tok or token(key_path)
-    titles = [s["properties"]["title"] for s in get(tok, "?fields=sheets.properties.title")["sheets"]]
+class _Table(HTMLParser):
+    """Lấy các hàng của bảng 'waffle' mà Google xuất ra: bỏ hàng tiêu đề chữ cái, cột số dòng, ô freezebar."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.rows, self._row, self._cell = [], None, None
+        self._in_thead = False
+
+    def handle_starttag(self, tag, attrs):
+        cls = dict(attrs).get("class", "") or ""
+        if tag == "thead":
+            self._in_thead = True
+        elif tag == "tr" and not self._in_thead:
+            self._row = []
+        elif tag == "td" and self._row is not None:
+            self._cell = None if "freezebar" in cls else []
+            self._skip = "freezebar" in cls
+        elif tag == "br" and self._cell is not None:
+            self._cell.append("\n")
+
+    def handle_endtag(self, tag):
+        if tag == "thead":
+            self._in_thead = False
+        elif tag == "td" and self._row is not None:
+            if self._cell is not None:
+                self._row.append("".join(self._cell).strip())
+            self._cell = None
+        elif tag == "tr" and self._row is not None:
+            if any(c for c in self._row):
+                self.rows.append(self._row)
+            self._row = None
+
+    def handle_data(self, data):
+        if self._cell is not None:
+            self._cell.append(data)
+
+
+def parse_zip(data):
+    """Trả {tên_tab: {"header": [...], "rows": [[...]]}} như bản đọc bằng API trước đây."""
     out = {}
-    for t in titles:
-        rng = urllib.parse.quote(f"'{t}'", safe="")
-        vals = get(tok, f"/values/{rng}?majorDimension=ROWS").get("values", [])
-        if not vals:
-            continue
-        w = len(vals[0])
-        out[t] = {"header": vals[0], "rows": [r + [""] * (w - len(r)) for r in vals[1:] if any(c.strip() for c in r)]}
+    with zipfile.ZipFile(io.BytesIO(data)) as z:
+        for info in z.infolist():
+            if not info.filename.lower().endswith(".html") or "/" in info.filename.strip("/"):
+                continue
+            name = re.sub(r"\.html$", "", info.filename, flags=re.I)
+            p = _Table()
+            p.feed(z.read(info).decode("utf-8", "replace"))
+            if not p.rows:
+                continue
+            w = len(p.rows[0])
+            out[name] = {"header": p.rows[0], "rows": [r + [""] * (w - len(r)) for r in p.rows[1:]]}
     return out
+
+
+def fetch_all(sheet_id, cookies):
+    return parse_zip(download_zip(sheet_id, cookies))
