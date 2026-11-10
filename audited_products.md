@@ -744,3 +744,7 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | spotailori.com | SpotAilori | 2026-10-31 | AR05842767664304357377 |
 | dresora.net | Dresora | 2026-10-31 | AR05842767664304357377 |
 | rivantaus.com | Rivantaus | 2026-10-31 | AR05842767664304357377 |
+| easysmx.com | EasySMX | 2026-11-10 | AR12831867915296833537 |
+| markets4you.com | Markets4you | 2026-11-10 | AR12831867915296833537 |
+| ausomstore.com | Ausom | 2026-11-10 | AR12831867915296833537 |
+| olymptrade.com | Olymp Trade | 2026-11-10 | AR12831867915296833537 |
