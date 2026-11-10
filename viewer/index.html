@@ -151,6 +151,7 @@ aside.open.fs dd{font-size:15px}
   <h1>Affiliate Viewer</h1>
   <div class="tabs" id="tabs" role="tablist"></div>
   <div class="spacer"></div>
+  <span class="meta" id="ver" style="opacity:.8"></span>
   <span class="meta" id="meta"></span>
   <button class="vipbtn" id="vipbtn">⭐ Check VIP</button>
   <button class="btn" id="theme" title="Đổi sáng/tối">◐</button>
@@ -535,24 +536,36 @@ async function refresh() {
   try { DATA = await (await fetch("/api/refresh", {method: "POST", body: "{}"})).json(); render(); }
   finally { b.disabled = false; b.textContent = "Làm mới từ Google Sheet"; }
 }
-async function checkUpdate() {
+async function installUpdate(bar) {
+  bar.style.display = "flex";
+  bar.innerHTML = "<span>Đang tải và cài bản mới, app sẽ tự mở lại sau vài giây…</span>";
+  const r = await (await fetch("/api/update-install", {method: "POST", body: "{}"})).json();
+  if (r.error) {
+    bar.innerHTML = `<span>Không tự cập nhật được: ${esc(r.error)}</span> <button class="btn primary" id="doupd">Thử lại</button>`;
+    $("#doupd").onclick = () => installUpdate(bar);
+  }
+}
+// auto=true (lúc mở app): có bản mới thì tự cài luôn; kiểm tra định kỳ khi đang dùng thì chỉ hiện thanh báo để không ngắt việc anh đang làm.
+async function checkUpdate(auto) {
+  const bar = $("#updbar"), ver = $("#ver");
   try {
     const u = await (await fetch("/api/update-check")).json();
-    const bar = $("#updbar");
+    ver.textContent = "Bản " + u.current + (u.error && !u.available ? " · không kiểm tra được bản mới" : "");
+    ver.title = u.error ? "Lỗi kiểm tra bản mới: " + u.error : "Bản mới nhất: " + (u.latest || u.current);
     if (!u.available) return;
+    if (!u.can_install) {
+      bar.style.display = "flex";
+      bar.innerHTML = `<span>Có bản mới (bản ${u.latest}, đang dùng ${u.current}). Tải bản mới ở trang Releases của repo.</span>`;
+      return;
+    }
+    if (auto) { installUpdate(bar); return; }
     bar.style.display = "flex";
-    bar.innerHTML = `<span>Có bản mới (bản ${u.latest}, đang dùng ${u.current}).</span>` +
-      (u.can_install ? `<button class="btn primary" id="doupd">Cập nhật ngay</button>` : `<span>Tải bản mới ở trang Releases của repo.</span>`);
-    const b = $("#doupd");
-    if (b) b.onclick = async () => {
-      b.disabled = true; b.textContent = "Đang tải bản mới…";
-      const r = await (await fetch("/api/update-install", {method: "POST", body: "{}"})).json();
-      if (r.error) { alert(r.error); b.disabled = false; b.textContent = "Cập nhật ngay"; return; }
-      bar.innerHTML = "<span>Đang cài bản mới, app sẽ tự mở lại sau vài giây…</span>";
-    };
-  } catch (e) { /* không có mạng: bỏ qua */ }
+    bar.innerHTML = `<span>Có bản mới (bản ${u.latest}, đang dùng ${u.current}).</span> <button class="btn primary" id="doupd">Cập nhật ngay</button>`;
+    $("#doupd").onclick = () => installUpdate(bar);
+  } catch (e) { ver.textContent = "Không kiểm tra được bản mới"; }
 }
-checkUpdate();
+checkUpdate(true);
+setInterval(() => checkUpdate(false), 30 * 60 * 1000);
 let WATCH_T = null;
 function stopWatch() { if (WATCH_T) { clearInterval(WATCH_T); WATCH_T = null; } }
 function startWatch(fn) { stopWatch(); fn(); WATCH_T = setInterval(fn, 2000); }
