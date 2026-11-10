@@ -257,6 +257,7 @@ function adsCell(o, m) {
 function render() {
   const app = $("#app");
   if (!DATA) return;
+  syncWin();
   stopWatch();
   showAcct();
   if (DATA.need === "login") { loginScreen(); return; }
@@ -346,7 +347,7 @@ function render() {
   $("#more").innerHTML = rows.length > LIMIT ? `<div class="more"><button class="btn" id="showmore">Hiện thêm (${rows.length - LIMIT} dòng nữa)</button></div>` : (rows.length ? "" : `<div class="more sub">Không có dòng nào khớp bộ lọc.</div>`);
   if ($("#showmore")) $("#showmore").onclick = () => { LIMIT += 300; render(); };
   document.querySelectorAll("a[data-stop]").forEach(a => a.onclick = e => e.stopPropagation());
-  document.querySelectorAll("tr.r").forEach(tr => tr.onclick = () => { SEL = +tr.dataset.k; side(tab, m); $("#side").scrollTop = 0; document.querySelectorAll("tr.r").forEach(x => x.classList.toggle("sel", x === tr)); });
+  document.querySelectorAll("tr.r").forEach(tr => tr.onclick = () => { SEL = +tr.dataset.k; side(tab, m); $("#side").scrollTop = 0; syncWin(); document.querySelectorAll("tr.r").forEach(x => x.classList.toggle("sel", x === tr)); });
   document.querySelectorAll(".card.click").forEach(c => c.onclick = () => { F.ads = F.ads === c.dataset.f ? "" : c.dataset.f; render(); });
 
   const q = $("#q"); q.oninput = () => { F.q = q.value; LIMIT = 300; const pos = q.selectionStart; render(); const n = $("#q"); n.focus(); n.setSelectionRange(pos, pos); };
@@ -377,7 +378,14 @@ function side(tab, m) {
   const one = $("#vipone"); if (one) one.onclick = () => startVip([vipItem(m, r)], ALL_CHECKS);
   $("#close").onclick = closeSide;
 }
-function closeSide() { SEL = null; $("#side").classList.remove("open"); document.querySelectorAll("tr.sel").forEach(x => x.classList.remove("sel")); }
+let WIN_MAX = false;
+function syncWin() {
+  const want = SEL !== null;
+  if (want === WIN_MAX) return;
+  WIN_MAX = want;
+  fetch("/api/window", {method: "POST", body: JSON.stringify({state: want ? "maximized" : "normal"})}).catch(() => {});
+}
+function closeSide() { SEL = null; $("#side").classList.remove("open"); document.querySelectorAll("tr.sel").forEach(x => x.classList.remove("sel")); syncWin(); }
 document.addEventListener("keydown", e => { if (e.key === "Escape" && SEL !== null) closeSide(); });
 function exportCsv(tab, rows) {
   const q = v => `"${String(v ?? "").replace(/"/g, '""')}"`;

@@ -115,3 +115,16 @@ def cookie_header(cookies, host):
         if host == d or host.endswith("." + d):
             parts.append(f"{c['name']}={c['value']}")
     return "; ".join(parts)
+
+
+def set_window_state(port, page_url_prefix, state, prev=None):
+    """Phóng to ('maximized') hoặc trả về cỡ cũ ('normal') cho cửa sổ chứa trang của app (vẫn là cửa sổ có viền).
+    Trả về trạng thái cửa sổ trước khi đổi, để lần sau khôi phục đúng."""
+    tid = next((t["id"] for t in targets(port) if t.get("type") == "page" and t.get("url", "").startswith(page_url_prefix)), None)
+    if not tid:
+        raise RuntimeError("Không tìm thấy cửa sổ của app.")
+    ws = browser_ws(port)
+    info = call(ws, "Browser.getWindowForTarget", {"targetId": tid})
+    before = info.get("bounds", {}).get("windowState", "normal")
+    call(ws, "Browser.setWindowBounds", {"windowId": info["windowId"], "bounds": {"windowState": state}})
+    return before
