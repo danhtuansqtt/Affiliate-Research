@@ -9,6 +9,8 @@ on:
     paths:
       - 'viewer/**'
       - '.github/workflows/build-mac-dmg.yml'
+permissions:
+  contents: write   # để đăng DMG lên GitHub Releases cho tính năng tự cập nhật
 jobs:
   dmg:
     runs-on: macos-latest
@@ -17,6 +19,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Ghi số build (app so số này với Release mới nhất để biết có bản mới)
+        run: echo '${{ github.run_number }}' > viewer/version.txt
       - name: Build .app và .dmg
         run: bash viewer/build-dmg.sh
       - name: Kiểm tra file .dmg
@@ -28,3 +32,11 @@ jobs:
           name: AffiliateViewer-mac-arm64
           path: viewer/dist/AffiliateViewer.dmg
           retention-days: 30
+      - name: Đăng lên GitHub Releases (app tự cập nhật từ đây)
+        if: github.ref == 'refs/heads/master'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "v${{ github.run_number }}" viewer/dist/AffiliateViewer.dmg \
+            --title "Affiliate Viewer bản ${{ github.run_number }}" \
+            --notes "Commit ${GITHUB_SHA::7}: $(git log -1 --pretty=%s)" --latest

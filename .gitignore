@@ -19,3 +19,4 @@ __pycache__/
 viewer/dist/
 viewer/build/
 *.spec
+viewer/version.txt

@@ -20,6 +20,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import gauth
 import platform_util as pu
 import sheets
+import updater
 import vip
 
 try:  # macOS (Python cài từ python.org) hay thiếu chứng chỉ gốc: dùng bộ của certifi nếu có
@@ -67,7 +68,7 @@ def find_key():
     return ""
 
 
-STATE = {"last_ping": time.time(), "seen_ping": False}
+STATE = {"last_ping": time.time(), "seen_ping": False, "quit": False}
 
 
 def parse_sheet_id(text):
@@ -168,6 +169,8 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send(200, f.read(), "text/html; charset=utf-8")
         if self.path == "/api/vip":
             return self._send(200, json.dumps(vip_status(), ensure_ascii=False))
+        if self.path == "/api/update-check":
+            return self._send(200, json.dumps(updater.check(resource), ensure_ascii=False))
         if self.path == "/api/ping":
             STATE["last_ping"], STATE["seen_ping"] = time.time(), True
             return self._send(200, "{}")
@@ -212,6 +215,15 @@ class Handler(BaseHTTPRequestHandler):
             cfg["sheet_id"] = sid
             save_json(CONFIG, cfg)
             return self._send(200, json.dumps({"ok": True}))
+        if self.path == "/api/update-install":
+            try:
+                script = updater.install()
+            except Exception as e:  # noqa: BLE001
+                return self._send(200, json.dumps({"error": str(e)[:300]}, ensure_ascii=False))
+            self._send(200, json.dumps({"ok": True}))
+            updater.run_swap(script)
+            STATE["quit"] = True
+            return
         if self.path == "/api/pick-client":
             path = pick_key_file("Chọn file OAuth của Google (client_secret_….json)")
             if path:
@@ -262,6 +274,10 @@ def main():
             if proc is not None and proc.poll() is not None:
                 break
             if STATE["seen_ping"] and time.time() - STATE["last_ping"] > 20:
+                break
+            if STATE["quit"]:
+                if proc is not None and proc.poll() is None:
+                    proc.terminate()
                 break
     except KeyboardInterrupt:
         pass
