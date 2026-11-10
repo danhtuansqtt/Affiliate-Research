@@ -44,12 +44,14 @@ App hỏi 2 thứ, chỉ một lần, vì chúng không nằm trong mã nguồn 
 
 Cấu hình và cache lưu ở: Windows `%APPDATA%\AffiliateViewer`, macOS `~/Library/Application Support/AffiliateViewer` (`config.json`, `data.json` cache Sheet, `vip.json` kết quả Check VIP). Mỗi máy một bản, bấm "Làm mới từ Google Sheet" để lấy dữ liệu mới.
 
-## Đăng nhập bằng tài khoản Google (cho Sheet ở chế độ hạn chế)
-Cách này thay cho file khóa service account: app đọc Sheet bằng chính tài khoản Google của anh (tài khoản đó phải được cấp quyền xem Sheet).
-1. Một lần, trên [Google Cloud Console](https://console.cloud.google.com/): tạo dự án, bật **Google Sheets API**, vào *APIs & Services > OAuth consent screen* (loại External, thêm email của anh vào Test users), rồi *Credentials > Create credentials > OAuth client ID > Desktop app*. Tải file `client_secret_….json` về.
-2. Trong app: dán link Sheet, bấm **Chọn file OAuth…** (chọn file vừa tải), bấm **Đăng nhập Google**, chọn tài khoản trên trình duyệt và đồng ý quyền "xem Google Sheets".
-3. Bấm "Làm mới từ Google Sheet". Từ lần sau app tự dùng lại phiên đăng nhập; nút **Đăng xuất** ở thanh trên cùng để thoát.
-Token lưu ở `google_token.json` trong thư mục dữ liệu của app (quyền 600), chỉ có quyền đọc Sheet. File OAuth không commit vào repo.
+## Đăng nhập Google và chọn file từ Drive
+App chỉ có hai bước: bấm **Đăng nhập Google**, rồi chọn một file Google Sheet trong danh sách Drive của anh (gồm file của mình và file được chia sẻ; có ô tìm theo tên). Nút **Đổi file** ở thanh trên cùng để chọn file khác, **Đăng xuất** để thoát tài khoản.
+Một lần duy nhất, trên [Google Cloud Console](https://console.cloud.google.com/):
+1. Tạo dự án, bật **Google Sheets API** và **Google Drive API**.
+2. *OAuth consent screen*: loại External, thêm email của anh vào Test users.
+3. *Credentials > Create credentials > OAuth client ID > Desktop app*, tải file `client_secret_….json`. Để file này trong `~/Downloads` (app tự tìm); nếu không thấy, lần đăng nhập đầu app sẽ hỏi chọn file.
+App xin quyền xem Google Sheets và xem tên/danh sách file Drive (chỉ đọc, không sửa, không đọc nội dung file khác). Token lưu ở `google_token.json` trong thư mục dữ liệu của app (quyền 600). Không commit file OAuth vào repo.
+(Cách file khóa service account cũ vẫn chạy ngầm nếu máy đã có file khóa, nhưng không còn hiện trên giao diện.)
 
 ## Check VIP
 Nút vàng trên thanh trên cùng: chọn phạm vi (các dòng đang lọc, tối đa N) và nguồn, chạy nền.

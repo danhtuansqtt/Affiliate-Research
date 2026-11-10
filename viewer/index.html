@@ -144,6 +144,7 @@ background:linear-gradient(100deg,#ffd45a,#ff9f1c);box-shadow:0 0 0 0 rgba(255,1
   <span class="meta" id="meta"></span>
   <button class="vipbtn" id="vipbtn">⭐ Check VIP</button>
   <button class="btn" id="theme" title="Đổi sáng/tối">◐</button>
+  <button class="btn" id="chg" style="display:none">Đổi file</button>
   <button class="btn" id="acct" style="display:none"></button>
   <button class="btn primary" id="refresh">Làm mới từ Google Sheet</button>
 </header>
@@ -251,24 +252,20 @@ function render() {
   const app = $("#app");
   if (!DATA) return;
   showAcct();
+  if (DATA.need === "login" || (DATA.error && !(DATA.google && DATA.google.email) && !DATA.key)) { loginScreen(); return; }
+  if (DATA.need === "sheet") { pickerScreen(); return; }
   if (DATA.error) {
     app.innerHTML = `<div class="center"><h2>Chưa đọc được Google Sheet</h2><p class="err">${esc(DATA.error)}</p>
-    <p class="sub">Tài khoản Google: ${esc((DATA.google && DATA.google.email) || "(chưa đăng nhập)")}</p>
-    <p><input type="text" id="sheetlink" placeholder="Dán link Google Sheet (docs.google.com/spreadsheets/d/…)" style="width:min(420px,90%);padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit"> <button class="btn" id="savesheet">Lưu link</button></p>
-    <p class="sub">Cách 1 (cho Sheet đang ở chế độ hạn chế): đăng nhập bằng tài khoản Google được cấp quyền xem.<br>File OAuth đang dùng: ${esc(DATA.client || "(chưa chọn)")}</p>
-    <p><button class="btn" id="pickclient">Chọn file OAuth…</button> <button class="btn primary" id="glogin">Đăng nhập Google</button></p>
-    <p class="sub">Cách 2: file khóa service account. Đang dùng: ${esc(DATA.key || "(chưa có)")}</p>
-    <p><button class="btn" id="pick">Chọn file khóa…</button> <button class="btn" id="retry">Thử lại</button></p></div>`;
-    $("#pickclient").onclick = pickClient; $("#glogin").onclick = googleLogin;
-    $("#pick").onclick = pickKey; $("#retry").onclick = refresh;
-    $("#savesheet").onclick = async () => { const r = await (await fetch("/api/set-sheet", {method: "POST", body: JSON.stringify({value: $("#sheetlink").value})})).json(); if (r.error) { alert(r.error); return; } refresh(); };
+    <p class="sub">File: ${esc((DATA.sheet && DATA.sheet.name) || "(không tên)")} · Tài khoản: ${esc((DATA.google && DATA.google.email) || "")}</p>
+    <p><button class="btn primary" id="retry">Thử lại</button> <button class="btn" id="chfile">Chọn file khác</button></p></div>`;
+    $("#retry").onclick = refresh; $("#chfile").onclick = () => { DATA.need = "sheet"; render(); };
     return;
   }
   const names = Object.keys(DATA.tabs);
   if (!TAB || !DATA.tabs[TAB]) TAB = names.includes("Affiliate Research") ? "Affiliate Research" : names[0];
   $("#tabs").innerHTML = names.map(n => `<button class="tab" role="tab" aria-selected="${n === TAB}" data-t="${esc(n)}">${esc(n)} <span class="sub">${DATA.tabs[n].rows.length}</span></button>`).join("");
   document.querySelectorAll(".tab").forEach(b => b.onclick = () => { TAB = b.dataset.t; SORT = {col: null, dir: 1}; SEL = null; LIMIT = 300; F.ads = ""; F.topic = ""; render(); });
-  $("#meta").textContent = "Cập nhật: " + DATA.fetched_at;
+  $("#meta").textContent = ((DATA.sheet && DATA.sheet.name) ? DATA.sheet.name + " · " : "") + "Cập nhật: " + DATA.fetched_at;
 
   const tab = DATA.tabs[TAB], p = prepared(tab), m = p.m, every = p.rows, all = every.filter(o => inRange(m, o)), rows = filtered(p, all);
   LAST = {tab, m, rows};
@@ -537,27 +534,57 @@ async function checkUpdate() {
   } catch (e) { /* không có mạng: bỏ qua */ }
 }
 checkUpdate();
-async function pickClient() {
-  const r = await (await fetch("/api/pick-client", {method: "POST", body: "{}"})).json();
-  if (r.error) { alert(r.error); return; }
-  DATA = Object.assign(DATA || {}, r); render();
+function loginScreen() {
+  $("#app").innerHTML = `<div class="center"><h2>Affiliate Viewer</h2>
+    <p class="sub">Đăng nhập Google để xem các file Google Sheet của anh.</p>
+    <p><button class="btn primary" id="glogin" style="padding:12px 22px;font-size:16px">Đăng nhập Google</button></p>
+    <p class="err" id="lerr"></p></div>`;
+  $("#glogin").onclick = googleLogin;
 }
 async function googleLogin() {
-  const b = $("#glogin"); if (b) { b.disabled = true; b.textContent = "Đang chờ đăng nhập ở trình duyệt…"; }
+  const b = $("#glogin"), er = $("#lerr");
+  b.disabled = true; b.textContent = "Đang chờ đăng nhập ở trình duyệt…"; er.textContent = "";
   try {
     const r = await (await fetch("/api/google-login", {method: "POST", body: "{}"})).json();
-    if (r.error) { alert(r.error); if (b) { b.disabled = false; b.textContent = "Đăng nhập Google"; } return; }
-    await refresh();
-  } catch (e) { if (b) { b.disabled = false; b.textContent = "Đăng nhập Google"; } }
+    if (r.error) { er.textContent = r.error; b.disabled = false; b.textContent = "Đăng nhập Google"; return; }
+    DATA = Object.assign(DATA || {}, r); DATA.error = null;
+    r.need === "sheet" ? pickerScreen() : refresh();
+  } catch (e) { er.textContent = "Không đăng nhập được: " + e; b.disabled = false; b.textContent = "Đăng nhập Google"; }
+}
+let PICK_T = null;
+async function loadFiles(q) {
+  const box = $("#flist"); box.innerHTML = '<p class="sub">Đang tải danh sách…</p>';
+  const r = await (await fetch("/api/drive-list?q=" + encodeURIComponent(q || ""))).json();
+  if (r.error) { box.innerHTML = `<p class="err">${esc(r.error)}</p>`; return; }
+  if (!r.files.length) { box.innerHTML = '<p class="sub">Không thấy file Google Sheet nào.</p>'; return; }
+  box.innerHTML = r.files.map(f => `<button class="btn" style="display:block;width:100%;text-align:left;margin:6px 0;padding:10px 12px" data-id="${esc(f.id)}" data-name="${esc(f.name)}">
+    <b>${esc(f.name)}</b><div class="sub">${esc((f.owners && f.owners[0] && f.owners[0].displayName) || "")} · sửa ${esc((f.modifiedTime || "").slice(0, 10))}</div></button>`).join("");
+  box.querySelectorAll("button").forEach(b => b.onclick = async () => {
+    const r2 = await (await fetch("/api/set-sheet", {method: "POST", body: JSON.stringify({value: b.dataset.id, name: b.dataset.name})})).json();
+    if (r2.error) { alert(r2.error); return; }
+    DATA = Object.assign(DATA || {}, {need: "", sheet: {id: b.dataset.id, name: b.dataset.name}}); TAB = null; refresh();
+  });
+}
+function pickerScreen() {
+  $("#app").innerHTML = `<div class="center" style="max-width:640px;margin:0 auto;text-align:left"><h2 style="text-align:center">Chọn file Google Sheet</h2>
+    <p class="sub" style="text-align:center">Tài khoản: ${esc((DATA.google && DATA.google.email) || "")}</p>
+    <p><input type="text" id="fsearch" placeholder="Gõ để tìm theo tên file…" style="width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit"></p>
+    <div id="flist"></div></div>`;
+  $("#fsearch").oninput = e => { clearTimeout(PICK_T); PICK_T = setTimeout(() => loadFiles(e.target.value), 300); };
+  loadFiles("");
 }
 function showAcct() {
-  const b = $("#acct"), g = DATA && DATA.google;
-  if (!b) return;
-  b.style.display = g && g.email ? "" : "none";
-  b.textContent = g && g.email ? "Đăng xuất " + g.email : "";
-  b.onclick = async () => { if (!confirm("Đăng xuất tài khoản Google khỏi app?")) return; DATA = Object.assign(DATA, await (await fetch("/api/google-logout", {method: "POST", body: "{}"})).json()); showAcct(); };
+  const b = $("#acct"), c = $("#chg"), g = DATA && DATA.google;
+  const on = !!(g && g.email);
+  b.style.display = on ? "" : "none"; b.textContent = on ? "Đăng xuất " + g.email : "";
+  c.style.display = on && DATA.need === "" ? "" : "none";
+  c.onclick = () => { DATA.need = "sheet"; render(); };
+  b.onclick = async () => {
+    if (!confirm("Đăng xuất tài khoản Google khỏi app?")) return;
+    DATA = Object.assign(DATA || {}, await (await fetch("/api/google-logout", {method: "POST", body: "{}"})).json(), {tabs: {}, error: null});
+    render();
+  };
 }
-async function pickKey() { await fetch("/api/pick-key", {method: "POST", body: "{}"}); await refresh(); }
 $("#refresh").onclick = refresh;
 $("#theme").onclick = () => {
   const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light");

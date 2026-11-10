@@ -14,6 +14,9 @@ import subprocess
 import sys
 import threading
 import time
+import urllib.error
+import urllib.parse
+import urllib.request
 import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
@@ -108,18 +111,66 @@ def vip_status():
 
 def find_client():
     p = load_json(CONFIG, {}).get("client_path", "")
-    return p if p and os.path.isfile(p) else ""
+    if p and os.path.isfile(p):
+        return p
+    for pat in (os.path.expanduser("~/Downloads/client_secret*.json"), os.path.expanduser("~/.config/affiliate-viewer/client_secret*.json")):
+        for hit in sorted(glob.glob(pat), key=os.path.getmtime, reverse=True):
+            try:
+                gauth.load_client(hit)
+            except Exception:  # noqa: BLE001
+                continue
+            cfg = load_json(CONFIG, {})
+            cfg["client_path"] = hit
+            save_json(CONFIG, cfg)
+            return hit
+    return ""
+
+
+def current_sheet():
+    cfg = load_json(CONFIG, {})
+    return {"id": parse_sheet_id(os.environ.get("AV_SHEET_ID") or cfg.get("sheet_id", "")), "name": cfg.get("sheet_name", "")}
+
+
+def need_state():
+    """Màn hình cần hiện: 'login' (chưa đăng nhập), 'sheet' (chưa chọn file), '' (đủ)."""
+    if not gauth.status(GTOKEN) and not find_key():
+        return "login"
+    return "" if current_sheet()["id"] else "sheet"
+
+
+def drive_list(query):
+    """Danh sách Google Sheet mà tài khoản đang đăng nhập xem được (của mình + được chia sẻ), mới sửa trước."""
+    client = find_client()
+    if not client or not gauth.status(GTOKEN):
+        raise RuntimeError("Chưa đăng nhập Google.")
+    tok = gauth.access_token(client, GTOKEN)
+    q = "mimeType='application/vnd.google-apps.spreadsheet' and trashed=false"
+    if query.strip():
+        q += " and name contains '" + query.strip().replace("\\", "\\\\").replace("'", "\\'") + "'"
+    params = {"q": q, "orderBy": "modifiedTime desc", "pageSize": "50", "supportsAllDrives": "true",
+              "includeItemsFromAllDrives": "true", "fields": "files(id,name,modifiedTime,owners(displayName))"}
+    req = urllib.request.Request("https://www.googleapis.com/drive/v3/files?" + urllib.parse.urlencode(params),
+                                 headers={"Authorization": f"Bearer {tok}"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            return json.loads(r.read().decode("utf-8")).get("files", [])
+    except urllib.error.HTTPError as e:
+        if e.code in (401, 403):
+            raise RuntimeError("Google từ chối liệt kê file (lỗi %d). Kiểm tra đã bật Google Drive API cho dự án, "
+                               "và đăng xuất rồi đăng nhập lại để cấp quyền xem danh sách file." % e.code) from None
+        raise
 
 
 def auth_info():
     """Trạng thái hai cách xác thực: đăng nhập Google (ưu tiên) và file khóa service account."""
-    return {"key": find_key(), "client": find_client(), "google": gauth.status(GTOKEN)}
+    return {"key": find_key(), "client": find_client(), "google": gauth.status(GTOKEN), "need": need_state(),
+            "sheet": current_sheet()}
 
 
 def refresh():
-    sid = parse_sheet_id(os.environ.get("AV_SHEET_ID") or load_json(CONFIG, {}).get("sheet_id", ""))
+    sid = current_sheet()["id"]
     if not sid:
-        raise RuntimeError("Chưa có link Google Sheet. Dán link Sheet vào ô bên dưới (chỉ cần làm một lần).")
+        raise RuntimeError("Chưa chọn file Google Sheet.")
     sheets.SHEET_ID = sid
     client = find_client()
     if client and gauth.status(GTOKEN):
@@ -127,8 +178,7 @@ def refresh():
     else:
         key = find_key()
         if not key:
-            raise RuntimeError("Chưa đăng nhập Google. Chọn file OAuth rồi bấm 'Đăng nhập Google' "
-                               "(hoặc chọn file khóa service account).")
+            raise RuntimeError("Chưa đăng nhập Google.")
         tabs = sheets.fetch_all(key)
     data = {"fetched_at": time.strftime("%Y-%m-%d %H:%M:%S"), "tabs": tabs}
     save_json(CACHE, data)
@@ -164,6 +214,12 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(raw)
 
     def do_GET(self):
+        if self.path.startswith("/api/drive-list"):
+            q = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query).get("q", [""])[0]
+            try:
+                return self._send(200, json.dumps({"files": drive_list(q)}, ensure_ascii=False))
+            except Exception as e:  # noqa: BLE001
+                return self._send(200, json.dumps({"error": str(e)[:300]}, ensure_ascii=False))
         if self.path in ("/", "/index.html"):
             with open(resource("index.html"), "rb") as f:
                 return self._send(200, f.read(), "text/html; charset=utf-8")
@@ -175,7 +231,7 @@ class Handler(BaseHTTPRequestHandler):
             STATE["last_ping"], STATE["seen_ping"] = time.time(), True
             return self._send(200, "{}")
         if self.path == "/api/data":
-            data = load_json(CACHE, None)
+            data = load_json(CACHE, None) if need_state() == "" else None
             if data is None:
                 try:
                     data = refresh()
@@ -213,7 +269,12 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send(200, json.dumps({"error": "Không nhận ra link hoặc ID Google Sheet."}))
             cfg = load_json(CONFIG, {})
             cfg["sheet_id"] = sid
+            cfg["sheet_name"] = str(body.get("name", ""))[:200]
             save_json(CONFIG, cfg)
+            try:
+                os.remove(CACHE)  # đổi file thì bỏ dữ liệu cũ
+            except OSError:
+                pass
             return self._send(200, json.dumps({"ok": True}))
         if self.path == "/api/update-install":
             try:
@@ -237,8 +298,17 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(200, json.dumps(auth_info(), ensure_ascii=False))
         if self.path == "/api/google-login":
             client = find_client()
-            if not client:
-                return self._send(200, json.dumps({"error": "Chưa chọn file OAuth. Bấm 'Chọn file OAuth…' trước."}, ensure_ascii=False))
+            if not client:  # lần đầu: hỏi file OAuth một lần rồi đăng nhập luôn
+                path = pick_key_file("Chọn file OAuth của Google (client_secret_….json)")
+                if not path:
+                    return self._send(200, json.dumps({"error": "Cần file OAuth (client_secret_….json) để đăng nhập. Xem hướng dẫn trong README."}, ensure_ascii=False))
+                try:
+                    gauth.load_client(path)
+                except Exception as e:  # noqa: BLE001
+                    return self._send(200, json.dumps({"error": str(e)}, ensure_ascii=False))
+                cfg = load_json(CONFIG, {})
+                cfg["client_path"] = client = path
+                save_json(CONFIG, cfg)
             try:
                 gauth.login(client, GTOKEN)
             except Exception as e:  # noqa: BLE001
@@ -246,6 +316,11 @@ class Handler(BaseHTTPRequestHandler):
             return self._send(200, json.dumps(auth_info(), ensure_ascii=False))
         if self.path == "/api/google-logout":
             gauth.logout(GTOKEN)
+            for p in (CACHE,):
+                try:
+                    os.remove(p)
+                except OSError:
+                    pass
             return self._send(200, json.dumps(auth_info(), ensure_ascii=False))
         if self.path == "/api/pick-key":
             path = pick_key_file()

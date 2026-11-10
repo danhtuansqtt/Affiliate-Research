@@ -17,7 +17,8 @@ import urllib.request
 import webbrowser
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
-SCOPES = "openid email https://www.googleapis.com/auth/spreadsheets.readonly"
+SCOPES = ("openid email https://www.googleapis.com/auth/spreadsheets.readonly "
+          "https://www.googleapis.com/auth/drive.metadata.readonly")  # drive.metadata: chỉ để liệt kê tên file Sheet
 AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth"
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 LOGIN_TIMEOUT = 180  # giây chờ người dùng bấm đồng ý trên trình duyệt
