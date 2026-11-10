@@ -21,7 +21,6 @@ import cdp
 import platform_util as pu
 import sheets
 import updater
-import vip
 
 try:  # macOS (Python cài từ python.org) hay thiếu chứng chỉ gốc: dùng bộ của certifi nếu có
     import certifi
@@ -32,7 +31,6 @@ except ImportError:
 APP_DIR = pu.app_dir()
 CONFIG = os.path.join(APP_DIR, "config.json")
 CACHE = os.path.join(APP_DIR, "data.json")
-VIP_FILE = os.path.join(APP_DIR, "vip.json")
 os.makedirs(APP_DIR, exist_ok=True)
 
 
@@ -64,33 +62,6 @@ def parse_sheet_id(text):
         return m.group(1)
     t = (text or "").strip()
     return t if re.fullmatch(r"[A-Za-z0-9_-]{20,}", t) else ""
-
-# ---- Check VIP: chạy nền, kết quả lưu lại để lần sau không phải check lại ----
-VIPDB = load_json(VIP_FILE, {})
-JOB = {"running": False, "done": 0, "total": 0, "current": "", "stop": False}
-JOB_LOCK = threading.Lock()
-
-
-def vip_worker(items, which):
-    try:
-        for it in items:
-            if JOB["stop"]:
-                break
-            JOB["current"] = it.get("product", "")
-            try:
-                VIPDB[it["key"]] = vip.check(it.get("product", ""), it.get("domain", ""), which)
-            except Exception as e:  # noqa: BLE001
-                VIPDB[it["key"]] = {"at": time.strftime("%Y-%m-%d %H:%M"), "error": str(e)[:120]}
-            JOB["done"] += 1
-            save_json(VIP_FILE, VIPDB)
-    finally:
-        JOB["running"] = False
-        JOB["current"] = ""
-
-
-def vip_status():
-    return {"job": {k: JOB[k] for k in ("running", "done", "total", "current")}, "results": VIPDB}
-
 
 BROWSER = {"path": "", "port": 0}
 DRIVE_HOME = "https://drive.google.com/drive/home"
@@ -182,8 +153,6 @@ class Handler(BaseHTTPRequestHandler):
         if self.path in ("/", "/index.html"):
             with open(resource("index.html"), "rb") as f:
                 return self._send(200, f.read(), "text/html; charset=utf-8")
-        if self.path == "/api/vip":
-            return self._send(200, json.dumps(vip_status(), ensure_ascii=False))
         if self.path == "/api/update-check":
             return self._send(200, json.dumps(updater.check(resource), ensure_ascii=False))
         if self.path == "/api/ping":
@@ -210,18 +179,6 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send(200, json.dumps(data, ensure_ascii=False))
             except Exception as e:  # noqa: BLE001
                 return self._send(200, json.dumps({"error": str(e), **auth_info()}, ensure_ascii=False))
-        if self.path == "/api/vip/start":
-            with JOB_LOCK:
-                if JOB["running"]:
-                    return self._send(200, json.dumps({"error": "Đang có lượt check chạy."}))
-                items = [i for i in body.get("items", []) if i.get("key")][:300]
-                which = [w for w in body.get("checks", []) if w in vip.CHECKS] or list(vip.CHECKS)
-                JOB.update(running=True, done=0, total=len(items), current="", stop=False)
-                threading.Thread(target=vip_worker, args=(items, which), daemon=True).start()
-            return self._send(200, json.dumps(vip_status(), ensure_ascii=False))
-        if self.path == "/api/vip/stop":
-            JOB["stop"] = True
-            return self._send(200, "{}")
         if self.path == "/api/set-sheet":
             sid = parse_sheet_id(body.get("value", ""))
             if not sid:

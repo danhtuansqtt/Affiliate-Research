@@ -106,30 +106,16 @@ a.link{background:var(--info-bg);padding:3px 9px;border-radius:999px;font-weight
 a.link:hover{background:var(--accent);color:#fff;text-decoration:none}
 aside{border-top:4px solid var(--accent)}
 
-.vipbtn{border:0;cursor:pointer;font:inherit;font-weight:800;font-size:15px;letter-spacing:.3px;padding:10px 20px;border-radius:999px;color:#4a2c00;
 background:linear-gradient(100deg,#ffd45a,#ff9f1c);box-shadow:0 0 0 0 rgba(255,184,28,.6),0 4px 14px rgba(255,159,28,.45);animation:glow 2.2s infinite}
-.vipbtn:hover{filter:brightness(1.07);transform:translateY(-1px)}
-.vipbtn.run{animation:none;background:linear-gradient(100deg,#fff,#ffe7b0)}
 @keyframes glow{0%{box-shadow:0 0 0 0 rgba(255,184,28,.55),0 4px 14px rgba(255,159,28,.45)}70%{box-shadow:0 0 0 12px rgba(255,184,28,0),0 4px 14px rgba(255,159,28,.45)}100%{box-shadow:0 0 0 0 rgba(255,184,28,0),0 4px 14px rgba(255,159,28,.45)}}
 .vs{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:999px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
 .t-hot{background:linear-gradient(100deg,#ff7a18,#ff3d6e);color:#fff}.t-good{background:var(--ok-bg);color:var(--ok)}
 .t-mid{background:var(--warn-bg);color:var(--warn)}.t-cold{background:var(--info-bg);color:var(--mute)}
 .spark{vertical-align:middle;margin-right:4px}
 .up{color:var(--ok);font-weight:700}.down{color:var(--bad);font-weight:700}
-.modalbg{position:fixed;inset:0;background:rgba(8,10,25,.55);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
-.modalbg.open{display:flex}
-.modal{background:var(--panel);border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.45);width:min(560px,100%);max-height:92vh;overflow:auto;padding:20px 22px;border-top:5px solid #ffb81c}
-.modal h2{margin:0 0 4px;font-size:20px}
-.modal .grp{margin:14px 0 0}.modal .grp>b{display:block;margin-bottom:6px}
-.modal label{display:flex;gap:8px;align-items:flex-start;padding:5px 0;cursor:pointer}
-.modal label small{display:block;color:var(--mute)}
-.modal input[type=number]{width:70px;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:4px 8px;border-radius:8px;font:inherit}
 .prog{height:12px;border-radius:99px;background:var(--info-bg);overflow:hidden;margin:10px 0 6px}
 .prog i{display:block;height:100%;background:linear-gradient(90deg,#ffd45a,#ff9f1c);transition:width .4s}
 .mfoot{display:flex;gap:8px;justify-content:flex-end;margin-top:18px}
-.mfoot .vipbtn{animation:none}
-.vipbox{margin:12px 0;padding:12px;border-radius:12px;background:var(--info-bg)}
-.vipbox .big{font-size:30px;font-weight:800;line-height:1}
 .pt{display:grid;grid-template-columns:96px 1fr 58px;gap:8px;align-items:center;margin-top:7px;font-size:12px}
 .pt .bar{height:7px;border-radius:99px;background:var(--panel);overflow:hidden}.pt .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2))}
 .pt span:last-child{text-align:right;color:var(--mute)}
@@ -153,7 +139,6 @@ aside.open.fs dd{font-size:15px}
   <div class="spacer"></div>
   <span class="meta" id="ver" style="opacity:.8"></span>
   <span class="meta" id="meta"></span>
-  <button class="vipbtn" id="vipbtn">⭐ Check VIP</button>
   <button class="btn" id="theme" title="Đổi sáng/tối">◐</button>
   <button class="btn" id="chg" style="display:none">Đổi file</button>
   <button class="btn" id="acct" style="display:none"></button>
@@ -161,7 +146,6 @@ aside.open.fs dd{font-size:15px}
 </header>
 <div id="updbar" style="display:none;padding:8px 16px;background:#ffd24a;color:#222;font-size:14px;align-items:center;gap:10px"></div>
 <div id="app"></div>
-<div class="modalbg" id="modal"></div>
 
 <script>
 "use strict";
@@ -170,7 +154,7 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;
 const MISSING = /^(-|—|)$|^(chỉ xem sau khi đăng ký|site chặn truy cập|mạng cloud bị chặn|không công bố|không tìm thấy|không có)/i;
 
 let DATA = null, TAB = null, SORT = {col: null, dir: 1}, SEL = null, LIMIT = 300;
-const F = {q: "", ads: "", vip: "", topic: "", dedupe: true, from: "", to: "", preset: "all"};
+const F = {q: "", ads: "", topic: "", dedupe: true, from: "", to: "", preset: "all"};
 const iso = d => new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
 function setPreset(p) {
   const t = new Date(), day = n => { const d = new Date(t); d.setDate(d.getDate() - n); return iso(d); };
@@ -229,20 +213,18 @@ function prepared(tab) {
     }
     rows = rows.filter(o => best.get((o.r[m.domain] || "").toLowerCase()) === o);
   }
-  for (const o of rows) { o.vk = vkey(m, o.r); o.v = VIP[o.vk]; o.vs = o.v ? vipScore(o.v, o, m).total : null; }
   return {m, rows};
 }
 function filtered(p, base) {
   const q = F.q.trim().toLowerCase();
   let rows = base.filter(o =>
     (!F.ads || o.ac === F.ads) &&
-    (!F.vip || (F.vip === "none" ? o.vs === null : o.vs !== null && o.vs >= +F.vip)) &&
     (!F.topic || (o.r[p.m.topic] === F.topic)) &&
     (!q || o.r.some(c => (c || "").toLowerCase().includes(q))));
   if (SORT.col !== null) {
     const c = SORT.col;
     rows = rows.slice().sort((a, b) => {
-      const sv = (o) => c === "x" ? o.x : c === "vip" ? (o.vs ?? -1) : c === "trend" ? (o.v?.trends?.change ?? -9999) : c === "tp" ? (o.v?.trustpilot?.score ?? -1) : (o.r[c] || "");
+      const sv = (o) => c === "x" ? o.x : (o.r[c] || "");
       const va = sv(a), vb = sv(b);
       const na = parseFloat(va), nb = parseFloat(vb);
       const cmp = (!isNaN(na) && !isNaN(nb) && String(na) === String(va).trim()) ? na - nb : String(va).localeCompare(String(vb), "vi");
@@ -281,9 +263,7 @@ function render() {
   $("#meta").textContent = ((DATA.sheet && DATA.sheet.name) ? DATA.sheet.name + " · " : "") + "Cập nhật: " + DATA.fetched_at;
 
   const tab = DATA.tabs[TAB], p = prepared(tab), m = p.m, every = p.rows, all = every.filter(o => inRange(m, o)), rows = filtered(p, all);
-  LAST = {tab, m, rows};
   const cnt = c => all.filter(o => o.ac === c).length;
-  const nVip = all.filter(o => o.vs !== null).length, nHot = all.filter(o => o.vs >= 70).length;
   const topics = [...new Set(all.map(o => o.r[m.topic]).filter(Boolean))].sort();
   const dates = {}; every.forEach(o => { const d = o.r[m.date]; if (d) dates[d] = (dates[d] || 0) + 1; });
   const dk = Object.keys(dates).sort().slice(-30), dmax = Math.max(1, ...dk.map(d => dates[d]));
@@ -298,7 +278,6 @@ function render() {
     <div class="card click ${F.ads === "bad" ? "active" : ""}" data-f="bad" style="--c:var(--bad)"><span class="ic">⛔</span><div class="n" style="color:var(--bad)">${cnt("bad")}</div><div class="l">Bị cấm</div></div>
     <div class="card click ${F.ads === "warn" ? "active" : ""}" data-f="warn" style="--c:var(--warn)"><span class="ic">❓</span><div class="n" style="color:var(--warn)">${cnt("warn")}</div><div class="l">Chưa xác minh</div></div>
     <div class="card" style="--c:var(--accent)"><span class="ic">🎯</span><div class="n">${avg}<span class="sub">/6</span></div><div class="l">độ đầy đủ trung bình</div></div>
-    <div class="card click ${F.vip === "70" ? "active" : ""}" data-v="70" style="--c:#ff9f1c"><span class="ic">🔥</span><div class="n" style="color:#ff9f1c">${nHot}</div><div class="l">HOT (VIP ≥ 70) · đã check ${nVip}/${all.length}</div></div>
     <div class="card" style="--c:var(--accent2);grid-column:span 2"><div class="l">Số dòng theo ngày · bấm cột để lọc</div><div class="bars">${dk.map(d => `<i data-d="${d}" class="${(!F.from || d >= F.from) && (!F.to || d <= F.to) ? "in" : ""}" title="${d}: ${dates[d]} dòng (bấm để lọc ngày này)" style="height:${Math.max(8, dates[d] / dmax * 100)}%"></i>`).join("")}</div></div>
   </div>
   <div class="bar2">
@@ -310,7 +289,6 @@ function render() {
   <div class="filters">
     <input type="search" id="q" placeholder="Tìm tên, domain, hoa hồng, ghi chú…" value="${esc(F.q)}">
     <select id="ads"><option value="">Google Ads: tất cả</option>${["ok", "bad", "warn", "na"].map(c => `<option value="${c}" ${F.ads === c ? "selected" : ""}>${ADS_LABEL[c]} (${cnt(c)})</option>`).join("")}</select>
-    <select id="vipf"><option value="">VIP: tất cả</option><option value="70" ${F.vip === "70" ? "selected" : ""}>🔥 HOT (≥ 70)</option><option value="50" ${F.vip === "50" ? "selected" : ""}>👍 Từ 50 trở lên</option><option value="none" ${F.vip === "none" ? "selected" : ""}>Chưa check VIP</option></select>
     ${topics.length ? `<select id="topic"><option value="">Chủ đề: tất cả</option>${topics.map(t => `<option ${F.topic === t ? "selected" : ""}>${esc(t)}</option>`).join("")}</select>` : ""}
     ${m.isAudit ? "" : `<label class="chk"><input type="checkbox" id="dd" ${F.dedupe ? "checked" : ""}> Gộp dòng trùng domain</label>`}
     <span class="sub">${rows.length} kết quả</span>
@@ -323,8 +301,8 @@ function render() {
   </main>`;
 
   const cols = m.isAudit
-    ? [["Ngày", m.date], ["Sản phẩm", m.name], ["VIP", "vip"], ["Trends 30d", "trend"], ["Trustpilot", "tp"], ["Advertiser", m.adv], ["Google Ads", m.ads], ["Hoa hồng", m.comm], ["Cookie", m.cookie], ["Năm", m.year], ["Đăng ký", m.link]]
-    : [["Ngày", m.date], ["Sản phẩm", m.name], ["VIP", "vip"], ["Trends 30d", "trend"], ["Trustpilot", "tp"], ["Google Ads", m.ads], ["Hoa hồng", m.comm], ["Giá bán", m.price], ["Cookie", m.cookie], ["Năm", m.year], ["Đủ", "x"], ["Đăng ký", m.link]];
+    ? [["Ngày", m.date], ["Sản phẩm", m.name], ["Advertiser", m.adv], ["Google Ads", m.ads], ["Hoa hồng", m.comm], ["Cookie", m.cookie], ["Năm", m.year], ["Đăng ký", m.link]]
+    : [["Ngày", m.date], ["Sản phẩm", m.name], ["Google Ads", m.ads], ["Hoa hồng", m.comm], ["Giá bán", m.price], ["Cookie", m.cookie], ["Năm", m.year], ["Đủ", "x"], ["Đăng ký", m.link]];
   $("#thead").innerHTML = cols.map(([l, c]) => `<th data-c="${c}">${l}${SORT.col == c ? ` <span class="ar">${SORT.dir > 0 ? "▲" : "▼"}</span>` : ""}</th>`).join("");
   document.querySelectorAll("th").forEach(th => th.onclick = () => { const c = isNaN(+th.dataset.c) ? th.dataset.c : +th.dataset.c; SORT = SORT.col === c ? {col: c, dir: -SORT.dir} : {col: c, dir: 1}; render(); });
 
@@ -332,9 +310,6 @@ function render() {
     const r = o.r, g = i => i >= 0 ? r[i] : "";
     const cell = ([l]) => {
       switch (l) {
-        case "VIP": return o.vs === null ? `<td class="sub">—</td>` : `<td>${vipBadge(o.vs)}</td>`;
-        case "Trends 30d": return `<td>${trendCell(o.v)}</td>`;
-        case "Trustpilot": return `<td>${tpCell(o.v)}</td>`;
         case "Ngày": return `<td class="num">${esc(g(m.date))}</td>`;
         case "Sản phẩm": return `<td><b class="clip">${esc(g(m.name))}</b>${m.domain >= 0 ? `<div class="sub">${esc(g(m.domain))}</div>` : ""}</td>`;
         case "Advertiser": return `<td><div class="clip">${esc(g(m.adv))}</div></td>`;
@@ -356,8 +331,6 @@ function render() {
   document.querySelectorAll(".card.click").forEach(c => c.onclick = () => { F.ads = F.ads === c.dataset.f ? "" : c.dataset.f; render(); });
 
   const q = $("#q"); q.oninput = () => { F.q = q.value; LIMIT = 300; const pos = q.selectionStart; render(); const n = $("#q"); n.focus(); n.setSelectionRange(pos, pos); };
-  $("#vipf").onchange = e => { F.vip = e.target.value; LIMIT = 300; render(); };
-  document.querySelectorAll(".card[data-v]").forEach(c => c.onclick = () => { F.vip = F.vip === c.dataset.v ? "" : c.dataset.v; render(); });
   $("#ads").onchange = e => { F.ads = e.target.value; LIMIT = 300; render(); };
   if ($("#topic")) $("#topic").onchange = e => { F.topic = e.target.value; LIMIT = 300; render(); };
   if ($("#dd")) $("#dd").onchange = e => { F.dedupe = e.target.checked; render(); };
@@ -379,9 +352,7 @@ function side(tab, m) {
     <h2>${esc(r[m.name])}</h2><div class="sub">${esc(m.domain >= 0 ? r[m.domain] : r[m.adv])} · ${esc(r[m.date])}</div>
     <p>${badge(ac, ADS_LABEL[ac])} <span class="badge b-na">Đủ ${completeness(r, m)}/6</span></p>
     ${/^https?:\/\//.test(u) ? `<p><a class="link" href="${esc(u)}" target="_blank" rel="noopener">Mở link đăng ký affiliate ↗</a></p>` : ""}
-    ${vipPanel(r, m)}
     <dl>${tab.header.map((h, i) => r[i] && r[i] !== "-" ? `<dt>${esc(h)}</dt><dd>${/^https?:\/\/\S+$/.test(r[i]) ? `<a class="link" target="_blank" rel="noopener" href="${esc(r[i])}">${esc(r[i])}</a>` : esc(r[i])}</dd>` : "").join("")}</dl>`;
-  const one = $("#vipone"); if (one) one.onclick = () => startVip([vipItem(m, r)], ALL_CHECKS);
   $("#close").onclick = closeSide;
 }
 // Chi tiết sản phẩm theo chế độ cửa sổ: cửa sổ thường -> khung nổi giữa màn hình; app đang toàn màn hình -> phủ toàn màn hình
@@ -398,136 +369,6 @@ function exportCsv(tab, rows) {
   a.download = TAB.replace(/\W+/g, "_") + ".csv"; a.click();
 }
 
-
-// ================= CHECK VIP =================
-let VIP = {}, JOB = {running: false, done: 0, total: 0, current: ""}, LAST = null, POLL = null;
-const ALL_CHECKS = ["trends", "trustpilot", "news", "hn", "age"];
-function guessDomain(d, name) {
-  d = (d || "").trim().toLowerCase();
-  if (d && d !== "-" && d.includes(".")) return d.replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, "");
-  const mm = (name || "").toLowerCase().match(/\b([a-z0-9-]+(?:\.[a-z0-9-]+)*\.[a-z]{2,})\b/);
-  return mm ? mm[1] : "";
-}
-function cleanName(p) { return ((p || "").split(/\s+[–—-]\s+|\s*[(\[]/)[0] || "").trim(); }
-function vkey(m, r) { const d = guessDomain(m.domain >= 0 ? r[m.domain] : "", r[m.name]); return d || "n:" + cleanName(r[m.name]).toLowerCase(); }
-function vipItem(m, r) { return {key: vkey(m, r), product: r[m.name], domain: guessDomain(m.domain >= 0 ? r[m.domain] : "", r[m.name])}; }
-const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
-
-// Điểm VIP 0-100 = tổng điểm các phần CÓ dữ liệu, quy về thang 100 (nguồn lỗi thì bỏ qua, không bị trừ điểm).
-function vipScore(v, o, m) {
-  const parts = [];
-  const t = v.trends;
-  if (t && !t.error) {
-    parts.push({l: "Độ quan tâm", max: 25, pts: 25 * t.avg / 100, note: `Trends TB ${t.avg}/100`});
-    parts.push({l: "Đà tăng 30 ngày", max: 20, pts: t.change === null ? 0 : 20 * clamp((t.change + 50) / 150, 0, 1), note: t.change === null ? "chưa đủ dữ liệu" : (t.change >= 0 ? "+" : "") + t.change + "%"});
-  }
-  const tp = v.trustpilot;
-  if (tp && !tp.error) {
-    parts.push(tp.found ? {l: "Uy tín Trustpilot", max: 20, pts: 15 * tp.score / 5 + 5 * Math.min(tp.reviews, 500) / 500, note: `★${tp.score} · ${tp.reviews} đánh giá`}
-      : {l: "Uy tín Trustpilot", max: 20, pts: 0, note: "chưa có trang"});
-  }
-  const n = v.news, h = v.hn;
-  if ((n && !n.error) || (h && !h.error)) {
-    const np = n && !n.error ? 10 * Math.min(n.d30, 50) / 50 : 0, hp = h && !h.error ? 5 * Math.min(h.posts, 10) / 10 : 0;
-    parts.push({l: "Truyền thông", max: 15, pts: np + hp, note: `${n && !n.error ? n.d30 + " tin" : "?"} · ${h && !h.error ? h.posts + " bài HN" : "?"}`});
-  }
-  const ads = o.ac === "ok" ? 10 : o.ac === "warn" ? 6 : o.ac === "bad" ? 0 : 3;
-  const link = /^https?:\/\//.test(o.r[m.link] || "") ? 5 : 0;
-  parts.push({l: "Phù hợp chạy ads", max: 20, pts: ads + 5 * o.x / 6 + link, note: `Ads ${ADS_LABEL[o.ac]} · đủ ${o.x}/6`});
-  const mx = parts.reduce((a, p) => a + p.max, 0), got = parts.reduce((a, p) => a + p.pts, 0);
-  return {total: Math.round(got / mx * 100), parts};
-}
-function tier(s) { return s >= 70 ? ["t-hot", "🔥"] : s >= 50 ? ["t-good", "👍"] : s >= 30 ? ["t-mid", "😐"] : ["t-cold", "❄️"]; }
-function vipBadge(s) { const [c, e] = tier(s); return `<span class="vs ${c}">${e} ${s}</span>`; }
-function spark(series, w = 64, h = 22) {
-  if (!series || series.length < 2) return "";
-  const mx = Math.max(1, ...series), pts = series.map((v, i) => `${(i / (series.length - 1) * w).toFixed(1)},${(h - 2 - v / mx * (h - 4)).toFixed(1)}`).join(" ");
-  return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}"><polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linejoin="round"/></svg>`;
-}
-function trendCell(v) {
-  const t = v && v.trends; if (!t) return `<span class="sub">—</span>`;
-  if (t.error) return `<span class="sub" title="${esc(t.error)}">⚠ lỗi</span>`;
-  const c = t.change; return spark(t.series) + (c === null ? "" : `<span class="${c >= 0 ? "up" : "down"}">${c >= 0 ? "▲" : "▼"}${Math.abs(c)}%</span>`);
-}
-function tpCell(v) {
-  const t = v && v.trustpilot; if (!t) return `<span class="sub">—</span>`;
-  if (t.error) return `<span class="sub" title="${esc(t.error)}">⚠ lỗi</span>`;
-  if (!t.found) return `<span class="sub">chưa có</span>`;
-  return `<b class="${t.score >= 4 ? "up" : t.score >= 3 ? "" : "down"}">★ ${t.score}</b> <span class="sub">(${t.reviews})</span>`;
-}
-function vipPanel(r, m) {
-  const it = vipItem(m, r), v = VIP[it.key], kw = cleanName(r[m.name]);
-  const links = `<div class="links"><a class="link" target="_blank" rel="noopener" href="https://trends.google.com/trends/explore?date=today%201-m&q=${encodeURIComponent(kw)}">Google Trends ↗</a>` +
-    (it.domain ? `<a class="link" target="_blank" rel="noopener" href="https://www.trustpilot.com/review/${esc(it.domain)}">Trustpilot ↗</a>` : "") +
-    `<a class="link" target="_blank" rel="noopener" href="https://news.google.com/search?q=${encodeURIComponent('"' + kw + '"')}%20when%3A30d">Tin tức ↗</a></div>`;
-  if (!v) return `<div class="vipbox"><b>⭐ VIP</b> · chưa check <button class="btn" id="vipone" style="float:right">Check VIP dòng này</button>${links}</div>`;
-  const o = {r, x: completeness(r, m), ac: adsClass(r[m.ads])}, sc = vipScore(v, o, m);
-  const errs = ALL_CHECKS.filter(k => v[k] && v[k].error).map(k => `${k}: ${v[k].error}`);
-  return `<div class="vipbox"><div style="display:flex;align-items:center;gap:12px"><div class="big">${sc.total}</div><div>${vipBadge(sc.total)}<div class="sub">từ khóa “${esc(v.keyword || kw)}” · check ${esc(v.at || "")}</div></div>
-    <button class="btn" id="vipone" style="margin-left:auto">Check lại</button></div>
-    ${sc.parts.map(p => `<div class="pt"><span>${p.l}</span><div class="bar"><i style="width:${p.pts / p.max * 100}%"></i></div><span>${p.pts.toFixed(1)}/${p.max}</span></div><div class="sub" style="margin-left:104px;margin-top:-4px">${esc(p.note)}</div>`).join("")}
-    ${v.trends && v.trends.series ? `<div style="margin-top:10px">${spark(v.trends.series, 300, 44)}<div class="sub">Google Trends 30 ngày qua</div></div>` : ""}
-    ${v.age && v.age.since ? `<div class="sub" style="margin-top:6px">Domain tồn tại từ ${esc(v.age.since)} (${esc(v.age.src)})</div>` : ""}
-    ${errs.length ? `<div class="sub err" style="margin-top:6px">⚠ ${esc(errs.join(" | "))}</div>` : ""}${links}</div>`;
-}
-
-// ---- chạy check ----
-async function startVip(items, checks) {
-  const d = await (await fetch("/api/vip/start", {method: "POST", body: JSON.stringify({items, checks})})).json();
-  if (d.error) { alert(d.error); return; }
-  VIP = d.results; JOB = d.job; pollVip(); updVipBtn(); renderModal();
-}
-function pollVip() {
-  if (POLL) return;
-  POLL = setInterval(async () => {
-    const d = await (await fetch("/api/vip")).json();
-    VIP = d.results; JOB = d.job; updVipBtn(); renderModal(); render();
-    if (!JOB.running) { clearInterval(POLL); POLL = null; }
-  }, 2000);
-}
-function updVipBtn() {
-  const b = $("#vipbtn");
-  b.classList.toggle("run", JOB.running);
-  b.textContent = JOB.running ? `⏳ Đang check ${JOB.done}/${JOB.total}…` : "⭐ Check VIP";
-}
-const SECS = {trends: 5, trustpilot: 9, news: 3, hn: 1.5, age: 2};
-const CHK_LABEL = {trends: ["Google Trends 30 ngày", "mức quan tâm trung bình và xu hướng tăng/giảm"], trustpilot: ["Điểm Trustpilot", "sao và số lượt đánh giá (mở Edge ẩn, chậm nhất)"],
-  news: ["Tin tức Google News", "số bài báo nhắc tới trong 30 và 7 ngày"], hn: ["Hacker News", "số bài thảo luận trong 30 ngày"], age: ["Tuổi domain", "domain đã tồn tại từ năm nào"]};
-const MS = {n: 20, recent: true, checks: new Set(ALL_CHECKS)};
-function openVip() { $("#modal").classList.add("open"); renderModal(); }
-function closeVip() { $("#modal").classList.remove("open"); }
-function vipTargets() {
-  if (!LAST) return [];
-  const cut = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10).replace(/-/g, "-");
-  return LAST.rows.filter(o => !(MS.recent && o.v && (o.v.at || "") >= cut)).map(o => vipItem(LAST.m, o.r)).filter(i => i.key).slice(0, MS.n);
-}
-function renderModal() {
-  const el = $("#modal"); if (!el.classList.contains("open")) return;
-  if (JOB.running) {
-    const pct = JOB.total ? Math.round(JOB.done / JOB.total * 100) : 0;
-    el.innerHTML = `<div class="modal"><h2>⏳ Đang check VIP…</h2><div class="sub">Có thể đóng cửa sổ này, việc check vẫn chạy nền.</div>
-      <div class="prog"><i style="width:${pct}%"></i></div><div>${JOB.done}/${JOB.total} sản phẩm${JOB.current ? " · đang xử lý: <b>" + esc(JOB.current) + "</b>" : ""}</div>
-      <div class="mfoot"><button class="btn" id="mstop">Dừng</button><button class="btn primary" id="mclose">Ẩn cửa sổ</button></div></div>`;
-    $("#mstop").onclick = () => fetch("/api/vip/stop", {method: "POST", body: "{}"});
-    $("#mclose").onclick = closeVip; return;
-  }
-  const tg = vipTargets(), secs = tg.length * [...MS.checks].reduce((a, k) => a + SECS[k], 0), mins = Math.max(1, Math.round(secs / 60));
-  const last = JOB.total && !JOB.running ? `<div class="sub" style="margin-top:6px">Lượt trước: đã check ${JOB.done}/${JOB.total} sản phẩm.</div>` : "";
-  el.innerHTML = `<div class="modal"><h2>⭐ Check VIP</h2><div class="sub">Tìm sản phẩm đang hot để ưu tiên chạy affiliate. Dữ liệu từ nguồn công khai, cần mạng.</div>${last}
-    <div class="grp"><b>Kiểm tra gì?</b>${ALL_CHECKS.map(k => `<label><input type="checkbox" data-c="${k}" ${MS.checks.has(k) ? "checked" : ""}><span>${CHK_LABEL[k][0]}<small>${CHK_LABEL[k][1]}</small></span></label>`).join("")}</div>
-    <div class="grp"><b>Phạm vi</b>
-      <label><span>Các dòng đang hiển thị (theo bộ lọc và thứ tự sắp xếp hiện tại), tối đa <input type="number" id="mn" min="1" max="300" value="${MS.n}"> sản phẩm</span></label>
-      <label><input type="checkbox" id="mrecent" ${MS.recent ? "checked" : ""}><span>Bỏ qua sản phẩm đã check trong 7 ngày qua</span></label></div>
-    <div class="grp sub">Sẽ check <b>${tg.length}</b> sản phẩm · ước tính ~${mins} phút. Google Trends có thể tạm chặn nếu check quá dồn dập.</div>
-    <div class="mfoot"><button class="btn" id="mclose">Đóng</button><button class="vipbtn" id="mgo" ${tg.length && MS.checks.size ? "" : "disabled"}>⭐ Bắt đầu check</button></div></div>`;
-  el.querySelectorAll("input[data-c]").forEach(i => i.onchange = () => { i.checked ? MS.checks.add(i.dataset.c) : MS.checks.delete(i.dataset.c); renderModal(); });
-  $("#mn").onchange = e => { MS.n = clamp(+e.target.value || 1, 1, 300); renderModal(); };
-  $("#mrecent").onchange = e => { MS.recent = e.target.checked; renderModal(); };
-  $("#mclose").onclick = closeVip;
-  $("#mgo").onclick = () => startVip(tg, [...MS.checks]);
-}
-$("#vipbtn").onclick = openVip;
-$("#modal").onclick = e => { if (e.target.id === "modal") closeVip(); };
 
 // ---- tải dữ liệu ----
 async function reload() { $("#app").innerHTML = `<div class="center sub">Đang tải…</div>`; DATA = await (await fetch("/api/data")).json(); render(); }
@@ -618,7 +459,7 @@ $("#theme").onclick = () => {
 };
 try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
 setInterval(() => fetch("/api/ping").catch(() => {}), 5000); fetch("/api/ping").catch(() => {});
-fetch("/api/vip").then(r => r.json()).then(d => { VIP = d.results; JOB = d.job; updVipBtn(); if (JOB.running) pollVip(); }).catch(() => {}).finally(reload);
+reload();
 </script>
 </body>
 </html>
