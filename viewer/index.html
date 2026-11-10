@@ -134,6 +134,12 @@ background:linear-gradient(100deg,#ffd45a,#ff9f1c);box-shadow:0 0 0 0 rgba(255,1
 .pt .bar{height:7px;border-radius:99px;background:var(--panel);overflow:hidden}.pt .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2))}
 .pt span:last-child{text-align:right;color:var(--mute)}
 .links{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+/* Chi tiết sản phẩm: mở toàn màn hình cho dễ xem (Esc hoặc nút Đóng để thoát) */
+aside.open{position:fixed;inset:0;width:auto;max-width:none;z-index:40;border-radius:0;border:0;padding:20px max(20px,6vw) 40px;box-shadow:none}
+aside.open #close{position:sticky;top:0;float:right;z-index:2;padding:9px 18px;font-weight:600}
+aside.open h2{font-size:26px;margin-bottom:4px}
+aside.open dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:0 28px}
+aside.open dd{font-size:15px;line-height:1.5}
 </style>
 </head>
 <body>
@@ -340,7 +346,7 @@ function render() {
   $("#more").innerHTML = rows.length > LIMIT ? `<div class="more"><button class="btn" id="showmore">Hiện thêm (${rows.length - LIMIT} dòng nữa)</button></div>` : (rows.length ? "" : `<div class="more sub">Không có dòng nào khớp bộ lọc.</div>`);
   if ($("#showmore")) $("#showmore").onclick = () => { LIMIT += 300; render(); };
   document.querySelectorAll("a[data-stop]").forEach(a => a.onclick = e => e.stopPropagation());
-  document.querySelectorAll("tr.r").forEach(tr => tr.onclick = () => { SEL = +tr.dataset.k; side(tab, m); document.querySelectorAll("tr.r").forEach(x => x.classList.toggle("sel", x === tr)); });
+  document.querySelectorAll("tr.r").forEach(tr => tr.onclick = () => { SEL = +tr.dataset.k; side(tab, m); $("#side").scrollTop = 0; document.querySelectorAll("tr.r").forEach(x => x.classList.toggle("sel", x === tr)); });
   document.querySelectorAll(".card.click").forEach(c => c.onclick = () => { F.ads = F.ads === c.dataset.f ? "" : c.dataset.f; render(); });
 
   const q = $("#q"); q.oninput = () => { F.q = q.value; LIMIT = 300; const pos = q.selectionStart; render(); const n = $("#q"); n.focus(); n.setSelectionRange(pos, pos); };
@@ -369,8 +375,10 @@ function side(tab, m) {
     ${vipPanel(r, m)}
     <dl>${tab.header.map((h, i) => r[i] && r[i] !== "-" ? `<dt>${esc(h)}</dt><dd>${/^https?:\/\/\S+$/.test(r[i]) ? `<a class="link" target="_blank" rel="noopener" href="${esc(r[i])}">${esc(r[i])}</a>` : esc(r[i])}</dd>` : "").join("")}</dl>`;
   const one = $("#vipone"); if (one) one.onclick = () => startVip([vipItem(m, r)], ALL_CHECKS);
-  $("#close").onclick = () => { SEL = null; el.classList.remove("open"); document.querySelectorAll("tr.sel").forEach(x => x.classList.remove("sel")); };
+  $("#close").onclick = closeSide;
 }
+function closeSide() { SEL = null; $("#side").classList.remove("open"); document.querySelectorAll("tr.sel").forEach(x => x.classList.remove("sel")); }
+document.addEventListener("keydown", e => { if (e.key === "Escape" && SEL !== null) closeSide(); });
 function exportCsv(tab, rows) {
   const q = v => `"${String(v ?? "").replace(/"/g, '""')}"`;
   const csv = "﻿" + [tab.header, ...rows.map(o => o.r)].map(r => r.map(q).join(",")).join("\r\n");
