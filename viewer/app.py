@@ -54,7 +54,7 @@ def save_json(path, obj):
         json.dump(obj, f, ensure_ascii=False)
 
 
-STATE = {"last_ping": time.time(), "seen_ping": False, "quit": False, "srv_port": 0, "prev_win": None}
+STATE = {"last_ping": time.time(), "seen_ping": False, "quit": False}
 
 
 def parse_sheet_id(text):
@@ -120,21 +120,6 @@ def auth_info():
     ok = signed_in()
     sh = current_sheet()
     return {"signed_in": ok, "sheet": sh, "need": "login" if not ok else ("" if sh["id"] else "sheet")}
-
-
-def set_window(state):
-    """Chi tiết sản phẩm mở thì phóng to cửa sổ app (có viền), đóng thì trả về cỡ cũ nếu trước đó chưa phóng to."""
-    if not BROWSER["port"]:
-        return
-    prefix = f"http://127.0.0.1:{STATE['srv_port']}/"
-    if state == "maximized":
-        before = cdp.set_window_state(BROWSER["port"], prefix, "maximized")
-        if STATE["prev_win"] is None:
-            STATE["prev_win"] = before
-    else:
-        prev, STATE["prev_win"] = STATE["prev_win"], None
-        if prev == "normal":
-            cdp.set_window_state(BROWSER["port"], prefix, "normal")
 
 
 def open_drive():
@@ -259,12 +244,6 @@ class Handler(BaseHTTPRequestHandler):
             updater.run_swap(script)
             STATE["quit"] = True
             return
-        if self.path == "/api/window":
-            try:
-                set_window("maximized" if body.get("state") == "maximized" else "normal")
-            except Exception:  # noqa: BLE001  (không phóng to được thì thôi, khung chi tiết vẫn phủ kín cửa sổ)
-                pass
-            return self._send(200, "{}")
         if self.path == "/api/open-drive":
             open_drive()
             return self._send(200, "{}")
@@ -273,7 +252,6 @@ class Handler(BaseHTTPRequestHandler):
 
 def main():
     srv = ThreadingHTTPServer(("127.0.0.1", int(os.environ.get("AV_PORT", "0"))), Handler)
-    STATE["srv_port"] = srv.server_address[1]
     url = f"http://127.0.0.1:{srv.server_address[1]}/"
     threading.Thread(target=srv.serve_forever, daemon=True).start()
     browser = "" if os.environ.get("AV_NOBROWSER") else pu.find_browser()

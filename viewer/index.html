@@ -134,12 +134,16 @@ background:linear-gradient(100deg,#ffd45a,#ff9f1c);box-shadow:0 0 0 0 rgba(255,1
 .pt .bar{height:7px;border-radius:99px;background:var(--panel);overflow:hidden}.pt .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2))}
 .pt span:last-child{text-align:right;color:var(--mute)}
 .links{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
-/* Chi tiết sản phẩm: mở toàn màn hình cho dễ xem (Esc hoặc nút Đóng để thoát) */
-aside.open{position:fixed;inset:0;width:auto;max-width:none;z-index:40;border-radius:0;border:0;padding:20px max(20px,6vw) 40px;box-shadow:none}
-aside.open #close{position:sticky;top:0;float:right;z-index:2;padding:9px 18px;font-weight:600}
-aside.open h2{font-size:26px;margin-bottom:4px}
-aside.open dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:0 28px}
-aside.open dd{font-size:15px;line-height:1.5}
+/* Chi tiết sản phẩm: cửa sổ nổi giữa màn hình; khi app toàn màn hình (class .fs) thì phủ kín (Esc hoặc nút Đóng để thoát) */
+aside.open{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:min(920px,92vw);max-width:none;max-height:90vh;z-index:40;border-radius:14px;padding:18px 22px 24px;box-shadow:0 0 0 100vmax rgba(8,10,25,.55),0 20px 60px rgba(0,0,0,.45)}
+aside.open #close{position:sticky;top:0;float:right;z-index:2;padding:7px 14px;font-weight:600}
+aside.open h2{font-size:22px;margin-bottom:4px}
+aside.open dl{display:grid;grid-template-columns:minmax(120px,200px) 1fr;gap:0 18px}
+aside.open dd{line-height:1.5}
+aside.open.fs{inset:0;transform:none;width:auto;max-height:none;border-radius:0;border:0;padding:20px max(20px,6vw) 40px;box-shadow:none}
+aside.open.fs h2{font-size:26px}
+aside.open.fs dl{grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))}
+aside.open.fs dd{font-size:15px}
 </style>
 </head>
 <body>
@@ -257,7 +261,7 @@ function adsCell(o, m) {
 function render() {
   const app = $("#app");
   if (!DATA) return;
-  syncWin();
+ 
   stopWatch();
   showAcct();
   if (DATA.need === "login") { loginScreen(); return; }
@@ -347,7 +351,7 @@ function render() {
   $("#more").innerHTML = rows.length > LIMIT ? `<div class="more"><button class="btn" id="showmore">Hiện thêm (${rows.length - LIMIT} dòng nữa)</button></div>` : (rows.length ? "" : `<div class="more sub">Không có dòng nào khớp bộ lọc.</div>`);
   if ($("#showmore")) $("#showmore").onclick = () => { LIMIT += 300; render(); };
   document.querySelectorAll("a[data-stop]").forEach(a => a.onclick = e => e.stopPropagation());
-  document.querySelectorAll("tr.r").forEach(tr => tr.onclick = () => { SEL = +tr.dataset.k; side(tab, m); $("#side").scrollTop = 0; syncWin(); document.querySelectorAll("tr.r").forEach(x => x.classList.toggle("sel", x === tr)); });
+  document.querySelectorAll("tr.r").forEach(tr => tr.onclick = () => { SEL = +tr.dataset.k; side(tab, m); $("#side").scrollTop = 0; document.querySelectorAll("tr.r").forEach(x => x.classList.toggle("sel", x === tr)); });
   document.querySelectorAll(".card.click").forEach(c => c.onclick = () => { F.ads = F.ads === c.dataset.f ? "" : c.dataset.f; render(); });
 
   const q = $("#q"); q.oninput = () => { F.q = q.value; LIMIT = 300; const pos = q.selectionStart; render(); const n = $("#q"); n.focus(); n.setSelectionRange(pos, pos); };
@@ -369,6 +373,7 @@ function side(tab, m) {
   if (!r) { el.classList.remove("open"); return; }
   const ac = adsClass(r[m.ads]), u = r[m.link];
   el.classList.add("open");
+  syncMode();
   el.innerHTML = `<button class="btn" id="close" style="float:right">Đóng ✕</button>
     <h2>${esc(r[m.name])}</h2><div class="sub">${esc(m.domain >= 0 ? r[m.domain] : r[m.adv])} · ${esc(r[m.date])}</div>
     <p>${badge(ac, ADS_LABEL[ac])} <span class="badge b-na">Đủ ${completeness(r, m)}/6</span></p>
@@ -378,14 +383,11 @@ function side(tab, m) {
   const one = $("#vipone"); if (one) one.onclick = () => startVip([vipItem(m, r)], ALL_CHECKS);
   $("#close").onclick = closeSide;
 }
-let WIN_MAX = false;
-function syncWin() {
-  const want = SEL !== null;
-  if (want === WIN_MAX) return;
-  WIN_MAX = want;
-  fetch("/api/window", {method: "POST", body: JSON.stringify({state: want ? "maximized" : "normal"})}).catch(() => {});
-}
-function closeSide() { SEL = null; $("#side").classList.remove("open"); document.querySelectorAll("tr.sel").forEach(x => x.classList.remove("sel")); syncWin(); }
+// Chi tiết sản phẩm theo chế độ cửa sổ: cửa sổ thường -> khung nổi giữa màn hình; app đang toàn màn hình -> phủ toàn màn hình
+const isFullscreen = () => !!document.fullscreenElement || (innerWidth >= screen.width - 2 && innerHeight >= screen.height - 2);
+function syncMode() { $("#side").classList.toggle("fs", isFullscreen()); }
+addEventListener("resize", syncMode);
+function closeSide() { SEL = null; $("#side").classList.remove("open"); document.querySelectorAll("tr.sel").forEach(x => x.classList.remove("sel"));}
 document.addEventListener("keydown", e => { if (e.key === "Escape" && SEL !== null) closeSide(); });
 function exportCsv(tab, rows) {
   const q = v => `"${String(v ?? "").replace(/"/g, '""')}"`;
