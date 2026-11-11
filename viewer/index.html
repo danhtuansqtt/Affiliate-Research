@@ -250,7 +250,7 @@ function filtered(p, base) {
   if (SORT.col !== null) {
     const c = SORT.col;
     rows = rows.slice().sort((a, b) => {
-      const sv = (o) => c === "x" ? o.x : c === "gem" ? (o.ev && o.ev.score != null ? o.ev.score : -1) : (o.r[c] || "");
+      const sv = (o) => c === "x" ? o.x : c === "gem" ? (o.ev && o.ev.score != null ? o.ev.score : -1) : c === "traf" ? (o.ev && o.ev.traffic && o.ev.traffic.mid != null ? o.ev.traffic.mid : -1) : (o.r[c] || "");
       const va = sv(a), vb = sv(b);
       const na = parseFloat(va), nb = parseFloat(vb);
       const cmp = (!isNaN(na) && !isNaN(nb) && String(na) === String(va).trim()) ? na - nb : String(va).localeCompare(String(vb), "vi");
@@ -331,8 +331,8 @@ function render() {
   </main>`;
 
   const cols = m.isAudit
-    ? [["Ngày", m.date], ["Sản phẩm", m.name], ["Gemini", "gem"], ["Advertiser", m.adv], ["Google Ads", m.ads], ["Hoa hồng", m.comm], ["Cookie", m.cookie], ["Năm", m.year], ["Đăng ký", m.link]]
-    : [["Ngày", m.date], ["Sản phẩm", m.name], ["Gemini", "gem"], ["Google Ads", m.ads], ["Hoa hồng", m.comm], ["Giá bán", m.price], ["Cookie", m.cookie], ["Năm", m.year], ["Đủ", "x"], ["Đăng ký", m.link]];
+    ? [["Ngày", m.date], ["Sản phẩm", m.name], ["Traffic/tháng", "traf"], ["Gemini", "gem"], ["Advertiser", m.adv], ["Google Ads", m.ads], ["Hoa hồng", m.comm], ["Cookie", m.cookie], ["Năm", m.year], ["Đăng ký", m.link]]
+    : [["Ngày", m.date], ["Sản phẩm", m.name], ["Traffic/tháng", "traf"], ["Gemini", "gem"], ["Google Ads", m.ads], ["Hoa hồng", m.comm], ["Giá bán", m.price], ["Cookie", m.cookie], ["Năm", m.year], ["Đủ", "x"], ["Đăng ký", m.link]];
   $("#thead").innerHTML = cols.map(([l, c]) => `<th data-c="${c}">${l}${SORT.col == c ? ` <span class="ar">${SORT.dir > 0 ? "▲" : "▼"}</span>` : ""}</th>`).join("");
   document.querySelectorAll("th").forEach(th => th.onclick = () => { const c = isNaN(+th.dataset.c) ? th.dataset.c : +th.dataset.c; SORT = SORT.col === c ? {col: c, dir: -SORT.dir} : {col: c, dir: 1}; render(); });
 
@@ -340,6 +340,7 @@ function render() {
     const r = o.r, g = i => i >= 0 ? r[i] : "";
     const cell = ([l]) => {
       switch (l) {
+        case "Traffic/tháng": return o.ev && o.ev.traffic ? `<td class="num" title="${esc(trafTip(o.ev.traffic))}">${esc(o.ev.traffic.label)}</td>` : `<td class="sub">—</td>`;
         case "Gemini": return o.ev ? `<td>${gemBadge(o.ev)}</td>` : `<td class="sub">—</td>`;
         case "Ngày": return `<td class="num">${esc(g(m.date))}</td>`;
         case "Sản phẩm": return `<td><b class="clip">${esc(g(m.name))}</b>${m.domain >= 0 ? `<div class="sub">${esc(g(m.domain))}</div>` : ""}</td>`;
@@ -468,6 +469,12 @@ const GM = {n: 20, skipDone: true, search: false};
 function gemBadge(ev) {
   const t = (ev.tier || "").match(/^Tier ([123])/);
   return `<span class="gtag gt-${t ? t[1] : 0}" title="${esc(ev.tier || "")}">${ev.score != null ? ev.score : "?"}${t ? " · T" + t[1] : ""}</span>`;
+}
+function trafTip(t) {
+  let s = "Ước tính lượt truy cập mỗi tháng, quy từ xếp hạng Tranco (không phải số đo)";
+  if (t.rank) s += ` · hạng #${t.rank.toLocaleString("vi-VN")}`;
+  if (t.trend != null) s += ` · ${t.trend >= 0 ? "tốt lên" : "xấu đi"} ${Math.abs(t.trend)}%`;
+  return s;
 }
 function gemItems() {
   if (!LAST) return [];
