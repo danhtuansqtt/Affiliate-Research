@@ -1,16 +1,26 @@
-Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 10/11/2026: hôm nay chưa có chương trình nào đạt. Em xét 25 ứng viên mới (khoảng 40 domain khác đã có trong lịch sử nên bỏ qua), đào sâu 3 cái: Moola Pro và LemurTrade cấm bid thương hiệu rõ ràng; Dealing em xếp cấm theo điều 9.1 của hợp đồng (độ tin cậy trung bình), nên em loại cả 3.
+Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 11/11/2026: em xét 31 ứng viên (30 mới, 1 trùng; khoảng 60 domain khác đã có trong lịch sử nên bỏ qua) và chọn được 1 chương trình.
 
-<b>Moola Pro – Moola Money (moola-money.com)</b>: app lập kế hoạch tài chính AI cho người Anh, giá £10.99/tháng hoặc £99.99/năm, chạy trên Awin với bounty £6–£8 (gói tháng) và £22–£30 (gói năm), cookie 30 ngày. Program Terms trên Awin cấm bid Moola, Moola Money, Moola Pro, moola-money cùng biến thể, kể cả cụm login/reviews/promo code/voucher/coupon. Chỉ nhận khách Anh (UK only), mọi quảng cáo phải tuân thủ FCA, không được hứa lợi nhuận. PPC từ khóa không chứa thương hiệu vẫn có hoa hồng.
+<b>Helious (helious.io)</b>
+• Tính năng: Tin vĩ mô Mỹ thời gian thực cho trader cá nhân: chấm điểm số liệu kinh tế, kết quả đấu giá Kho bạc, squawk, API/MCP
+• Giá bán: Free $0; Squawk $99/năm; Starter $14.99/tháng hoặc $135/năm; Pro $39.99/tháng hoặc $360/năm; Ultimate $99/tháng hoặc $891/năm (chính chủ)
+• Hoa hồng affiliate: 20% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (quy tắc affiliate và Terms không nhắc PPC/brand bidding; ToS §10 cấm dùng tên/trade mark Helious khi chưa có văn bản đồng ý)
+• Năm ra đời: 07/2026
+• Cookie: không công bố
+• Độ đầy đủ: 4/6
 
-<b>Dealing (dealing.com)</b>: nền tảng đầu tư đa tài sản (cổ phiếu lẻ, ETF, phái sinh) của Finvasia Group, ra mắt 02/2026, CPA $5–$4,500 theo first net deposit. Affiliate Agreement cấm dùng thương hiệu và tên miền Dealing khi chưa có văn bản cho phép (độ tin cậy trung bình, suy từ điều 9.1), và mọi quảng cáo tài chính phải được duyệt trước. Dealing không phục vụ khách Mỹ, Anh, British Columbia; giấy phép CySEC/FSC Mauritius nên quảng cáo cần cảnh báo rủi ro CFD và Google Ads yêu cầu xác minh dịch vụ tài chính. Hợp đồng không nhắc đích danh PPC, nên nếu anh vẫn muốn chạy thì cần xin Dealing văn bản cho phép.
+Còn thiếu 2 ô: Google Ads thì anh nên email support@helious.news xin xác nhận bằng văn bản trước khi bid từ khóa "Helious" (Helious tự chạy Google Ads nên dễ bị coi là cạnh tranh thương hiệu); Cookie thì chương trình không công bố số ngày, anh hỏi trực tiếp Helious. Em chọn vì hoa hồng 20% trọn đời, đăng ký miễn phí tại https://helious.io/affiliate-signup, trả hằng tháng qua Wise (cần tài khoản Wise; ngưỡng rút không công bố). Sản phẩm ra mắt khoảng 07/2026 (domain đăng ký 29/06/2026, sitemap sớm nhất 02/07/2026); TradeIQ Ltd lập công ty từ 12/2024 nhưng đó không phải ngày ra mắt sản phẩm. Lưu ý: /affiliate-signup ghi đăng ký tức thì còn trang help ghi phải hỏi qua contact; traffic không công bố.
 
-<b>LemurTrade (lemurtrade.com)</b>: nền tảng đầu tư AI (screener, dự đoán giá, paper trading), Investor $9/tháng, Professional $19/tháng, Awin trả 10% recurring trọn đời, cookie 30 ngày. Program Terms trên Awin cấm bid "LemurTrade" và biến thể trên mọi mạng PPC, và paid search không được hưởng hoa hồng đầy đủ. Kênh /partners 3 tầng riêng chưa công bố điều khoản quảng cáo. Sản phẩm này cũng không được quảng cáo theo kiểu hứa lợi nhuận.
+Yêu cầu tuân thủ khi quảng cáo Helious: TradeIQ không được FCA cấp phép, sản phẩm chỉ là tin tức và dữ liệu, không phải lời khuyên đầu tư. Ad copy và landing page không được hứa lợi nhuận hay gọi là "tín hiệu sinh lời", cần kèm disclaimer rủi ro, không nhắm người dưới 18 tuổi; quảng bá gây hiểu lầm là trái quy tắc affiliate.
 
-Các ứng viên còn lại bị loại vì:
-• Cấm bid thương hiệu: Cubrik (cubrik.ai), RideOrFade (rideorfade.ai).
-• Không có affiliate cho marketer: NAVRA, FOLO, Capsafa, MoneyNotes+, V-Wealth/BVF Mobile.
-• B2B hoặc không phải sản phẩm tài chính: MIZAN, CosmosTune.
-• Ra mắt trước 2025: StellarFi, Hantec Markets, For Traders, DolarApp, VPBank NEO, MFast.
-• Thiếu dữ liệu (không mở được trang chủ hoặc trang render JS): Spring Street, Insight Helix, FinSavr, FinisAI, Nanci, Migratum, Eaglon Prime (Eaglon chỉ có PR trả tiền nên cần cảnh giác).
+Các ứng viên bị loại:
+• Cấm bid thương hiệu: FlashAlpha (flashalpha.com) cấm paid search trên "FlashAlpha" và biến thể; YeNo Markets (yeno.market) cấm bid "YeNo" trên cả search lẫn social, lại là prediction market.
+• Không có affiliate cho marketer: Startale Card (chỉ có referral waitlist), Rev One Trading, Stonky, FN2, Invest101 Copilot, InvestNous, Freeboard, Critivest, MeebleAI, Withholdwise, Cash Book, GU Analyser, Flexible Airlines, Ora, Exenro, SimpleFinances, DebtWise.
+• B2B hoặc không phải sản phẩm tài chính: Propinder, QuantLink, Pocket Accountant, Anuma.
+• Chưa xác minh được ngày ra mắt: QPOS (domain từ 2002).
+• Thiếu dữ liệu (trang render JS hoặc không mở được): MyFinch, Hera Wallet, Secmast, Exit Line, WallStreetStocks (chỉ có App Store).
+• Trùng: WealthWise OS bản blog (wealthwiseos.pages.dev), đã báo ngày 05/11.
 
-Em đã lưu lịch sử 25 ứng viên vào file.
+Ghi chú tuân thủ Google Ads cho nhóm trading/prop firm: sản phẩm dữ liệu thị trường như Helious, FlashAlpha không nên dùng lời hứa lợi nhuận và phải theo chính sách dịch vụ tài chính của Google; prediction market (YeNo) và prop firm (Rev One) dễ bị Google xếp vào nhóm sản phẩm đầu cơ phức tạp hoặc cờ bạc, cần chứng nhận riêng.
+
+Em đã lưu lịch sử 31 ứng viên vào file.
