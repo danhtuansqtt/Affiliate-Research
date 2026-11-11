@@ -133,6 +133,25 @@ aside.open.fs dd{font-size:15px}
 .gembox{margin:12px 0;padding:12px;border-radius:12px;background:var(--info-bg)}
 .gres{margin-top:8px}.gres h3{font-size:15px;margin:12px 0 4px}.gres p{margin:4px 0}.gres ul{margin:4px 0 4px 18px;padding:0}
 .gchip{display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;font-weight:700}.g-ok{background:var(--ok-bg);color:var(--ok)}.g-bad{background:var(--bad-bg);color:var(--bad)}.g-warn{background:var(--warn-bg);color:var(--warn)}
+.gembtn{border:0;cursor:pointer;font:inherit;font-weight:800;font-size:15px;letter-spacing:.3px;padding:10px 20px;border-radius:999px;color:#4a2c00;
+background:linear-gradient(100deg,#ffd45a,#ff9f1c);box-shadow:0 0 0 0 rgba(255,184,28,.6),0 4px 14px rgba(255,159,28,.45);animation:glow 2.2s infinite}
+.gembtn:hover{filter:brightness(1.07);transform:translateY(-1px)}
+.gembtn.run{animation:none;background:linear-gradient(100deg,#fff,#ffe7b0)}
+@keyframes glow{0%{box-shadow:0 0 0 0 rgba(255,184,28,.55),0 4px 14px rgba(255,159,28,.45)}70%{box-shadow:0 0 0 12px rgba(255,184,28,0),0 4px 14px rgba(255,159,28,.45)}100%{box-shadow:0 0 0 0 rgba(255,184,28,0),0 4px 14px rgba(255,159,28,.45)}}
+.gtag{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:999px;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.gt-1{background:var(--ok-bg);color:var(--ok)}.gt-2{background:var(--warn-bg);color:var(--warn)}.gt-3{background:var(--bad-bg);color:var(--bad)}.gt-0{background:var(--info-bg);color:var(--mute)}
+.modalbg{position:fixed;inset:0;background:rgba(8,10,25,.55);backdrop-filter:blur(3px);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
+.modalbg.open{display:flex}
+.modal{background:var(--panel);border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.45);width:min(560px,100%);max-height:92vh;overflow:auto;padding:20px 22px;border-top:5px solid #ffb81c}
+.modal h2{margin:0 0 4px;font-size:20px}
+.modal .grp{margin:14px 0 0}
+.modal label{display:flex;gap:8px;align-items:flex-start;padding:5px 0;cursor:pointer}
+.modal label small{display:block;color:var(--mute)}
+.modal input[type=number]{width:70px;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:4px 8px;border-radius:8px;font:inherit}
+.mfoot{display:flex;gap:8px;justify-content:flex-end;margin-top:18px}
+.mfoot .gembtn{animation:none}
+.prog{height:12px;border-radius:99px;background:var(--info-bg);overflow:hidden;margin:10px 0 6px}
+.prog i{display:block;height:100%;background:linear-gradient(90deg,#ffd45a,#ff9f1c);transition:width .4s}
 </style>
 </head>
 <body>
@@ -142,6 +161,7 @@ aside.open.fs dd{font-size:15px}
   <div class="spacer"></div>
   <span class="meta" id="ver" style="opacity:.8"></span>
   <span class="meta" id="meta"></span>
+  <button class="gembtn" id="gembtn">🤖 Đánh giá Gemini</button>
   <button class="btn" id="theme" title="Đổi sáng/tối">◐</button>
   <button class="btn" id="chg" style="display:none">Đổi file</button>
   <button class="btn" id="acct" style="display:none"></button>
@@ -149,6 +169,7 @@ aside.open.fs dd{font-size:15px}
 </header>
 <div id="updbar" style="display:none;padding:8px 16px;background:#ffd24a;color:#222;font-size:14px;align-items:center;gap:10px"></div>
 <div id="app"></div>
+<div class="modalbg" id="modal"></div>
 
 <script>
 "use strict";
@@ -157,7 +178,7 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;
 const MISSING = /^(-|—|)$|^(chỉ xem sau khi đăng ký|site chặn truy cập|mạng cloud bị chặn|không công bố|không tìm thấy|không có)/i;
 
 let DATA = null, TAB = null, SORT = {col: null, dir: 1}, SEL = null, LIMIT = 300;
-const F = {q: "", ads: "", topic: "", dedupe: true, from: "", to: "", preset: "all"};
+const F = {q: "", ads: "", gem: "", topic: "", dedupe: true, from: "", to: "", preset: "all"};
 const iso = d => new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
 function setPreset(p) {
   const t = new Date(), day = n => { const d = new Date(t); d.setDate(d.getDate() - n); return iso(d); };
@@ -216,18 +237,20 @@ function prepared(tab) {
     }
     rows = rows.filter(o => best.get((o.r[m.domain] || "").toLowerCase()) === o);
   }
+  for (const o of rows) o.ev = EVALS[gid(o.r, m)] || null;
   return {m, rows};
 }
 function filtered(p, base) {
   const q = F.q.trim().toLowerCase();
   let rows = base.filter(o =>
     (!F.ads || o.ac === F.ads) &&
+    (!F.gem || (F.gem === "none" ? !o.ev : !!(o.ev && o.ev.tier && o.ev.tier.startsWith("Tier " + F.gem)))) &&
     (!F.topic || (o.r[p.m.topic] === F.topic)) &&
     (!q || o.r.some(c => (c || "").toLowerCase().includes(q))));
   if (SORT.col !== null) {
     const c = SORT.col;
     rows = rows.slice().sort((a, b) => {
-      const sv = (o) => c === "x" ? o.x : (o.r[c] || "");
+      const sv = (o) => c === "x" ? o.x : c === "gem" ? (o.ev && o.ev.score != null ? o.ev.score : -1) : (o.r[c] || "");
       const va = sv(a), vb = sv(b);
       const na = parseFloat(va), nb = parseFloat(vb);
       const cmp = (!isNaN(na) && !isNaN(nb) && String(na) === String(va).trim()) ? na - nb : String(va).localeCompare(String(vb), "vi");
@@ -266,7 +289,9 @@ function render() {
   $("#meta").textContent = ((DATA.sheet && DATA.sheet.name) ? DATA.sheet.name + " · " : "") + "Cập nhật: " + DATA.fetched_at;
 
   const tab = DATA.tabs[TAB], p = prepared(tab), m = p.m, every = p.rows, all = every.filter(o => inRange(m, o)), rows = filtered(p, all);
+  LAST = {tab, m, rows};
   const cnt = c => all.filter(o => o.ac === c).length;
+  const nGem = all.filter(o => o.ev).length, nT1 = all.filter(o => o.ev && /^Tier 1/.test(o.ev.tier || "")).length;
   const topics = [...new Set(all.map(o => o.r[m.topic]).filter(Boolean))].sort();
   const dates = {}; every.forEach(o => { const d = o.r[m.date]; if (d) dates[d] = (dates[d] || 0) + 1; });
   const dk = Object.keys(dates).sort().slice(-30), dmax = Math.max(1, ...dk.map(d => dates[d]));
@@ -281,6 +306,7 @@ function render() {
     <div class="card click ${F.ads === "bad" ? "active" : ""}" data-f="bad" style="--c:var(--bad)"><span class="ic">⛔</span><div class="n" style="color:var(--bad)">${cnt("bad")}</div><div class="l">Bị cấm</div></div>
     <div class="card click ${F.ads === "warn" ? "active" : ""}" data-f="warn" style="--c:var(--warn)"><span class="ic">❓</span><div class="n" style="color:var(--warn)">${cnt("warn")}</div><div class="l">Chưa xác minh</div></div>
     <div class="card" style="--c:var(--accent)"><span class="ic">🎯</span><div class="n">${avg}<span class="sub">/6</span></div><div class="l">độ đầy đủ trung bình</div></div>
+    <div class="card click ${F.gem === "1" ? "active" : ""}" data-g="1" style="--c:#ff9f1c"><span class="ic">🏆</span><div class="n" style="color:#ff9f1c">${nT1}</div><div class="l">Tier 1 · đã chấm ${nGem}/${all.length}</div></div>
     <div class="card" style="--c:var(--accent2);grid-column:span 2"><div class="l">Số dòng theo ngày · bấm cột để lọc</div><div class="bars">${dk.map(d => `<i data-d="${d}" class="${(!F.from || d >= F.from) && (!F.to || d <= F.to) ? "in" : ""}" title="${d}: ${dates[d]} dòng (bấm để lọc ngày này)" style="height:${Math.max(8, dates[d] / dmax * 100)}%"></i>`).join("")}</div></div>
   </div>
   <div class="bar2">
@@ -292,6 +318,7 @@ function render() {
   <div class="filters">
     <input type="search" id="q" placeholder="Tìm tên, domain, hoa hồng, ghi chú…" value="${esc(F.q)}">
     <select id="ads"><option value="">Google Ads: tất cả</option>${["ok", "bad", "warn", "na"].map(c => `<option value="${c}" ${F.ads === c ? "selected" : ""}>${ADS_LABEL[c]} (${cnt(c)})</option>`).join("")}</select>
+    <select id="gemf"><option value="">Gemini: tất cả</option>${[["1", "🏆 Tier 1"], ["2", "Tier 2"], ["3", "Tier 3"], ["none", "Chưa đánh giá"]].map(([v, l]) => `<option value="${v}" ${F.gem === v ? "selected" : ""}>${l}</option>`).join("")}</select>
     ${topics.length ? `<select id="topic"><option value="">Chủ đề: tất cả</option>${topics.map(t => `<option ${F.topic === t ? "selected" : ""}>${esc(t)}</option>`).join("")}</select>` : ""}
     ${m.isAudit ? "" : `<label class="chk"><input type="checkbox" id="dd" ${F.dedupe ? "checked" : ""}> Gộp dòng trùng domain</label>`}
     <span class="sub">${rows.length} kết quả</span>
@@ -304,8 +331,8 @@ function render() {
   </main>`;
 
   const cols = m.isAudit
-    ? [["Ngày", m.date], ["Sản phẩm", m.name], ["Advertiser", m.adv], ["Google Ads", m.ads], ["Hoa hồng", m.comm], ["Cookie", m.cookie], ["Năm", m.year], ["Đăng ký", m.link]]
-    : [["Ngày", m.date], ["Sản phẩm", m.name], ["Google Ads", m.ads], ["Hoa hồng", m.comm], ["Giá bán", m.price], ["Cookie", m.cookie], ["Năm", m.year], ["Đủ", "x"], ["Đăng ký", m.link]];
+    ? [["Ngày", m.date], ["Sản phẩm", m.name], ["Gemini", "gem"], ["Advertiser", m.adv], ["Google Ads", m.ads], ["Hoa hồng", m.comm], ["Cookie", m.cookie], ["Năm", m.year], ["Đăng ký", m.link]]
+    : [["Ngày", m.date], ["Sản phẩm", m.name], ["Gemini", "gem"], ["Google Ads", m.ads], ["Hoa hồng", m.comm], ["Giá bán", m.price], ["Cookie", m.cookie], ["Năm", m.year], ["Đủ", "x"], ["Đăng ký", m.link]];
   $("#thead").innerHTML = cols.map(([l, c]) => `<th data-c="${c}">${l}${SORT.col == c ? ` <span class="ar">${SORT.dir > 0 ? "▲" : "▼"}</span>` : ""}</th>`).join("");
   document.querySelectorAll("th").forEach(th => th.onclick = () => { const c = isNaN(+th.dataset.c) ? th.dataset.c : +th.dataset.c; SORT = SORT.col === c ? {col: c, dir: -SORT.dir} : {col: c, dir: 1}; render(); });
 
@@ -313,6 +340,7 @@ function render() {
     const r = o.r, g = i => i >= 0 ? r[i] : "";
     const cell = ([l]) => {
       switch (l) {
+        case "Gemini": return o.ev ? `<td>${gemBadge(o.ev)}</td>` : `<td class="sub">—</td>`;
         case "Ngày": return `<td class="num">${esc(g(m.date))}</td>`;
         case "Sản phẩm": return `<td><b class="clip">${esc(g(m.name))}</b>${m.domain >= 0 ? `<div class="sub">${esc(g(m.domain))}</div>` : ""}</td>`;
         case "Advertiser": return `<td><div class="clip">${esc(g(m.adv))}</div></td>`;
@@ -334,6 +362,8 @@ function render() {
   document.querySelectorAll(".card.click").forEach(c => c.onclick = () => { F.ads = F.ads === c.dataset.f ? "" : c.dataset.f; render(); });
 
   const q = $("#q"); q.oninput = () => { F.q = q.value; LIMIT = 300; const pos = q.selectionStart; render(); const n = $("#q"); n.focus(); n.setSelectionRange(pos, pos); };
+  $("#gemf").onchange = e => { F.gem = e.target.value; LIMIT = 300; render(); };
+  document.querySelectorAll(".card[data-g]").forEach(c => c.onclick = () => { F.gem = F.gem === c.dataset.g ? "" : c.dataset.g; render(); });
   $("#ads").onchange = e => { F.ads = e.target.value; LIMIT = 300; render(); };
   if ($("#topic")) $("#topic").onchange = e => { F.topic = e.target.value; LIMIT = 300; render(); };
   if ($("#dd")) $("#dd").onchange = e => { F.dedupe = e.target.checked; render(); };
@@ -418,11 +448,11 @@ function renderGem(tab, r, m) {
     let d; try { d = await (await fetch("/api/gemini-eval", {method: "POST", body: JSON.stringify({id, name: r[m.name] || "", domain: m.domain >= 0 ? (r[m.domain] || "") : "", row, search: GSEARCH, force: !!ev})})).json(); } catch (e) { d = {error: "Không kết nối được: " + e}; }
     if (d.error) { if ($("#gerr")) { $("#gerr").textContent = d.error; b.disabled = false; b.textContent = ev ? "Đánh giá lại" : "Đánh giá bằng Gemini"; } return; }
     EVALS[id] = d;
-    if ($("#gem") && SEL !== null && tab.rows[SEL] === r) renderGem(tab, r, m);
+    if ($("#gem") && SEL !== null && tab.rows[SEL] === r) render();  // vẽ lại cả bảng để cột Gemini cập nhật; chi tiết vẽ lại theo
   };
 }
 function closeSide() { SEL = null; $("#side").classList.remove("open"); document.querySelectorAll("tr.sel").forEach(x => x.classList.remove("sel"));}
-document.addEventListener("keydown", e => { if (e.key === "Escape" && SEL !== null) closeSide(); });
+document.addEventListener("keydown", e => { if (e.key !== "Escape") return; if ($("#modal").classList.contains("open")) closeGem(); else if (SEL !== null) closeSide(); });
 function exportCsv(tab, rows) {
   const q = v => `"${String(v ?? "").replace(/"/g, '""')}"`;
   const csv = "﻿" + [tab.header, ...rows.map(o => o.r)].map(r => r.map(q).join(",")).join("\r\n");
@@ -431,6 +461,82 @@ function exportCsv(tab, rows) {
   a.download = TAB.replace(/\W+/g, "_") + ".csv"; a.click();
 }
 
+
+// ================= ĐÁNH GIÁ GEMINI HÀNG LOẠT (nút ngoài thanh trên) =================
+let LAST = null, GJOB = {running: false, done: 0, total: 0, current: "", ok: 0, fail: 0, skipped: 0, error: "", last_error: ""}, GPOLL = null;
+const GM = {n: 20, skipDone: true, search: false};
+function gemBadge(ev) {
+  const t = (ev.tier || "").match(/^Tier ([123])/);
+  return `<span class="gtag gt-${t ? t[1] : 0}" title="${esc(ev.tier || "")}">${ev.score != null ? ev.score : "?"}${t ? " · T" + t[1] : ""}</span>`;
+}
+function gemItems() {
+  if (!LAST) return [];
+  const {tab, m, rows} = LAST, seen = new Set(), out = [];
+  for (const o of rows) {
+    const id = gid(o.r, m);
+    if (!id || seen.has(id) || (GM.skipDone && o.ev)) continue;
+    seen.add(id);
+    const row = {}; tab.header.forEach((h, i) => { if (o.r[i] && o.r[i] !== "-") row[h] = o.r[i]; });
+    out.push({id, name: o.r[m.name] || "", domain: m.domain >= 0 ? (o.r[m.domain] || "") : "", row});
+    if (out.length >= GM.n) break;
+  }
+  return out;
+}
+function updGemBtn() {
+  const b = $("#gembtn");
+  b.classList.toggle("run", GJOB.running);
+  b.textContent = GJOB.running ? `⏳ Đang đánh giá ${GJOB.done}/${GJOB.total}…` : "🤖 Đánh giá Gemini";
+}
+function openGem() { $("#modal").classList.add("open"); renderGemModal(); }
+function closeGem() { $("#modal").classList.remove("open"); }
+function renderGemModal() {
+  const el = $("#modal"); if (!el.classList.contains("open")) return;
+  if (GJOB.running) {
+    const pct = GJOB.total ? Math.round(GJOB.done / GJOB.total * 100) : 0;
+    el.innerHTML = `<div class="modal"><h2>⏳ Đang đánh giá bằng Gemini…</h2>
+      <div class="sub">Có thể đóng cửa sổ này, việc đánh giá vẫn chạy nền. Kết quả hiện dần ở cột Gemini.</div>
+      <div class="prog"><i style="width:${pct}%"></i></div>
+      <div>${GJOB.done}/${GJOB.total} · xong ${GJOB.ok} · bỏ qua ${GJOB.skipped} · lỗi ${GJOB.fail}</div>
+      <div class="sub">Đang làm: ${esc(GJOB.current || "…")}</div>
+      <div class="mfoot"><button class="btn" id="mclose">Đóng</button><button class="btn" id="mstop">Dừng</button></div></div>`;
+    $("#mclose").onclick = closeGem; $("#mstop").onclick = () => fetch("/api/gemini-batch/stop", {method: "POST", body: "{}"});
+    return;
+  }
+  const tg = gemItems(), mins = Math.max(1, Math.round(tg.length * 25 / 60));
+  const last = GJOB.total ? `<p class="sub">Lượt trước: xong ${GJOB.ok}, bỏ qua ${GJOB.skipped}, lỗi ${GJOB.fail}.</p>` : "";
+  const err = GJOB.error ? `<p class="err">${esc(GJOB.error)}</p>` : "";
+  el.innerHTML = `<div class="modal"><h2>🤖 Đánh giá Gemini hàng loạt</h2>
+    <div class="sub">Chấm điểm theo skill 6 trụ cột (thang 100, Tier 1/2/3) cho các sản phẩm đang hiện trong bảng, theo thứ tự trên xuống. Kết quả lưu lại, mở sản phẩm là xem được chi tiết.</div>
+    <div class="grp">Số sản phẩm tối đa: <input type="number" id="gn" min="1" max="100" value="${GM.n}"></div>
+    <div class="grp"><label><input type="checkbox" id="gskip" ${GM.skipDone ? "checked" : ""}><span>Bỏ qua sản phẩm đã có điểm<small>Không tốn lượt Gemini cho sản phẩm đã đánh giá.</small></span></label>
+      <label><input type="checkbox" id="gsrch" ${GM.search ? "checked" : ""}><span>Tra cứu web<small>Chậm hơn và tốn hạn mức hơn; có thể chạm giới hạn gói miễn phí.</small></span></label></div>
+    <p>Sẽ đánh giá <b>${tg.length}</b> sản phẩm, ước tính khoảng <b>${mins}</b> phút. Gói Gemini miễn phí có giới hạn lượt mỗi phút; app tự chờ rồi thử lại, và tự dừng nếu lỗi liên tiếp.</p>${last}${err}
+    <div class="mfoot"><button class="btn" id="mclose">Đóng</button><button class="gembtn" id="mgo" ${tg.length ? "" : "disabled"}>Bắt đầu</button></div></div>`;
+  $("#gn").onchange = e => { GM.n = Math.max(1, Math.min(100, +e.target.value || 20)); renderGemModal(); };
+  $("#gskip").onchange = e => { GM.skipDone = e.target.checked; renderGemModal(); };
+  $("#gsrch").onchange = e => { GM.search = e.target.checked; };
+  $("#mclose").onclick = closeGem; $("#mgo").onclick = startGem;
+}
+async function startGem() {
+  const items = gemItems(); if (!items.length) return;
+  const d = await (await fetch("/api/gemini-batch/start", {method: "POST", body: JSON.stringify({items, search: GM.search})})).json();
+  if (d.error) { alert(d.error); return; }
+  GJOB = d.job; pollGem(); updGemBtn(); renderGemModal();
+}
+function pollGem() {
+  if (GPOLL) return;
+  GPOLL = setInterval(async () => {
+    let d; try { d = await (await fetch("/api/gemini-batch")).json(); } catch (e) { return; }
+    const grew = Object.keys(d.brief).some(k => !EVALS[k] || EVALS[k].at !== d.brief[k].at);
+    GJOB = d.job;
+    if (grew) { try { EVALS = (await (await fetch("/api/gemini-evals")).json()).evals || EVALS; } catch (e) {} if (DATA && !DATA.error) render(); }
+    updGemBtn(); renderGemModal();
+    if (!GJOB.running) { clearInterval(GPOLL); GPOLL = null; }
+  }, 2000);
+}
+$("#gembtn").onclick = openGem;
+$("#modal").onclick = e => { if (e.target.id === "modal") closeGem(); };
+fetch("/api/gemini-batch").then(r => r.json()).then(d => { GJOB = d.job; updGemBtn(); if (GJOB.running) pollGem(); }).catch(() => {});
 
 // ---- tải dữ liệu ----
 async function reload() { $("#app").innerHTML = `<div class="center sub">Đang tải…</div>`; DATA = await (await fetch("/api/data")).json(); render(); }

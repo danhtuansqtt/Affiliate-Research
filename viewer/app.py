@@ -37,6 +37,7 @@ CACHE = os.path.join(APP_DIR, "data.json")
 PENDING = os.path.join(APP_DIR, "views_pending.jsonl")
 GKEY = os.path.join(APP_DIR, "gemini_key.txt")
 EVALS = os.path.join(APP_DIR, "evals.json")
+gemini.SKILL_OVERRIDE = os.path.join(APP_DIR, "skill.md")  # có file này thì dùng thay skill có sẵn
 os.makedirs(APP_DIR, exist_ok=True)
 
 
@@ -158,6 +159,64 @@ def gemini_eval(eid, row, search, force, name="", domain=""):
     return res
 
 
+# ---- Đánh giá Gemini hàng loạt: chạy nền, kết quả lưu vào evals.json như đánh giá từng sản phẩm ----
+BATCH = {"running": False, "done": 0, "total": 0, "current": "", "stop": False, "ok": 0, "fail": 0, "skipped": 0, "error": "", "last_error": ""}
+BATCH_LOCK = threading.Lock()
+
+
+def _wait(seconds):
+    for _ in range(seconds):
+        if BATCH["stop"]:
+            return
+        time.sleep(1)
+
+
+def batch_worker(items, search):
+    fails_in_row = 0
+    try:
+        for it in items:
+            if BATCH["stop"]:
+                break
+            BATCH["current"] = it["name"]
+            if it["id"] in load_json(EVALS, {}):  # đã có kết quả thì bỏ qua, không tốn lượt
+                BATCH["skipped"] += 1
+                BATCH["done"] += 1
+                continue
+            for attempt in (1, 2):
+                try:
+                    gemini_eval(it["id"], it["row"], search, False, it["name"], it["domain"])
+                    BATCH["ok"] += 1
+                    fails_in_row = 0
+                    break
+                except Exception as e:  # noqa: BLE001
+                    msg = str(e)
+                    BATCH["last_error"] = msg[:200]
+                    if "không hợp lệ" in msg or "Chưa có khóa" in msg:  # sai khóa thì dừng cả lượt
+                        BATCH["error"], BATCH["stop"] = msg, True
+                        break
+                    if "Hết hạn mức" in msg and attempt == 1:  # chạm giới hạn lượt/phút: chờ 60 giây thử lại một lần
+                        BATCH["current"] = it["name"] + " (chờ hạn mức…)"
+                        _wait(60)
+                        continue
+                    BATCH["fail"] += 1
+                    fails_in_row += 1
+                    break
+            BATCH["done"] += 1
+            if fails_in_row >= 3:  # liên tục lỗi: dừng để không đốt hạn mức vô ích
+                BATCH["error"] = "Dừng vì 3 sản phẩm liên tiếp bị lỗi. Lỗi gần nhất: " + BATCH["last_error"]
+                break
+            _wait(2)  # giãn cách để Google Trends và Gemini không chặn
+    finally:
+        BATCH["running"] = False
+        BATCH["current"] = ""
+
+
+def batch_status():
+    evals = load_json(EVALS, {})
+    return {"job": {k: BATCH[k] for k in ("running", "done", "total", "current", "ok", "fail", "skipped", "error", "last_error")},
+            "brief": {k: {"score": v.get("score"), "tier": v.get("tier"), "at": v.get("at")} for k, v in evals.items()}}
+
+
 def open_drive():
     """Mở Google Drive trong cửa sổ trình duyệt thường của chính hồ sơ app (cùng phiên với cổng điều khiển)."""
     if BROWSER["path"]:
@@ -213,6 +272,8 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(raw)
 
     def do_GET(self):
+        if self.path == "/api/gemini-batch":
+            return self._send(200, json.dumps(batch_status(), ensure_ascii=False))
         if self.path == "/api/gemini-evals":
             return self._send(200, json.dumps({"evals": load_json(EVALS, {})}, ensure_ascii=False))
         if self.path == "/api/watch":
@@ -271,6 +332,25 @@ class Handler(BaseHTTPRequestHandler):
         if self.path == "/api/view":
             if view_form():  # chỉ ghi khi quản lý đã bật; chạy nền để không làm chậm giao diện
                 threading.Thread(target=track_view, args=(str(body.get("product", "")), str(body.get("domain", ""))), daemon=True).start()
+            return self._send(200, "{}")
+        if self.path == "/api/gemini-batch/start":
+            if not gemini.load_key(GKEY):
+                return self._send(200, json.dumps({"error": "Chưa có khóa Gemini. Dán khóa trong khung Đánh giá Gemini của một sản phẩm."}, ensure_ascii=False))
+            items, seen = [], set()
+            for it in (body.get("items") or [])[:100]:
+                eid = str(it.get("id", ""))[:200]
+                if eid and eid not in seen:
+                    seen.add(eid)
+                    items.append({"id": eid, "name": str(it.get("name", ""))[:200], "domain": str(it.get("domain", ""))[:200],
+                                  "row": {str(k)[:80]: str(v)[:600] for k, v in (it.get("row") or {}).items()}})
+            with BATCH_LOCK:
+                if BATCH["running"]:
+                    return self._send(200, json.dumps({"error": "Đang có lượt đánh giá chạy."}, ensure_ascii=False))
+                BATCH.update(running=True, done=0, total=len(items), current="", stop=False, ok=0, fail=0, skipped=0, error="", last_error="")
+                threading.Thread(target=batch_worker, args=(items, bool(body.get("search"))), daemon=True).start()
+            return self._send(200, json.dumps(batch_status(), ensure_ascii=False))
+        if self.path == "/api/gemini-batch/stop":
+            BATCH["stop"] = True
             return self._send(200, "{}")
         if self.path == "/api/gemini-key":
             try:
