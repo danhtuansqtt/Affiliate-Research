@@ -7,6 +7,7 @@ Bật tra cứu web: SDK chưa chắc cho dùng đồng thời công cụ Search
 import os
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor
 from typing import Literal
 
 from google import genai
@@ -112,8 +113,8 @@ def save_key(path, key):
         f.write(key)
 
 
-def _client(key):
-    opts = types.HttpOptions(api_version="v1beta", timeout=TIMEOUT_MS, **({"base_url": BASE} if BASE else {}))
+def _client(key, timeout_ms=None):
+    opts = types.HttpOptions(api_version="v1beta", timeout=timeout_ms or TIMEOUT_MS, **({"base_url": BASE} if BASE else {}))
     return genai.Client(api_key=key, http_options=opts)
 
 
@@ -131,19 +132,77 @@ def _friendly(e):
     return out
 
 
-def pick_model(key):
-    """Chọn bản Flash ổn định mới nhất mà khóa này gọi được; không tra được thì dùng mặc định."""
-    best, best_v = DEFAULT_MODEL, 0.0
+def candidates(key):
+    """Các model Flash ổn định (kể cả -lite) mà khóa gọi được, mới nhất trước, Flash trước Flash-Lite cùng đời."""
+    found = []
     try:
-        client = _client(key)  # giữ biến: Client tạm bị dọn thì kết nối đóng giữa chừng
+        client = _client(key, 30_000)  # giữ biến: Client tạm bị dọn thì kết nối đóng giữa chừng
         for m in client.models.list():
             name = (m.name or "").replace("models/", "")
-            mm = re.fullmatch(r"gemini-(\d+(?:\.\d+)?)-flash", name)
-            if mm and "generateContent" in (m.supported_actions or []) and float(mm.group(1)) > best_v:
-                best, best_v = name, float(mm.group(1))
+            mm = re.fullmatch(r"gemini-(\d+(?:\.\d+)?)-flash(-lite)?", name)
+            if mm and "generateContent" in (m.supported_actions or []):
+                found.append((-float(mm.group(1)), 1 if mm.group(2) else 0, name))
     except Exception:  # noqa: BLE001
-        return DEFAULT_MODEL
-    return best
+        pass
+    return [n for _, _, n in sorted(found)] or [DEFAULT_MODEL]
+
+
+def pick_model(key):
+    return candidates(key)[0]
+
+
+RETRYABLE = (0, 404, 500, 502, 503, 504)  # model treo/quá tải/không còn: thử model khác. 400/401/403/429 thì dừng ngay.
+
+
+def _probe(key, model):
+    """Một yêu cầu rất nhỏ để biết model có đang phản hồi không (không treo, không quá tải)."""
+    try:
+        client = _client(key, 10_000)  # giữ biến: Client tạm bị dọn thì kết nối đóng giữa chừng
+        client.models.generate_content(model=model, contents="Trả lời ngắn: ok",
+                                       config=types.GenerateContentConfig(max_output_tokens=16))
+        return True
+    except Exception:  # noqa: BLE001
+        return False
+
+
+def healthy_models(key, cands, limit=8):
+    """Kiểm tra song song các model, trả những model đang khỏe theo đúng thứ tự ưu tiên (mất tối đa khoảng 10 giây)."""
+    cands = cands[:limit]
+    if not cands:
+        return []
+    with ThreadPoolExecutor(max_workers=len(cands)) as ex:
+        ok = list(ex.map(lambda m: _probe(key, m), cands))
+    return [m for m, good in zip(cands, ok) if good]
+
+
+def evaluate_auto(key, preferred, row, search=False, market=None, timeout_ms=60_000, max_real_attempts=3):
+    """Model Flash mới ra hay treo (504) hoặc quá tải (503). Thứ tự: model đã chạy tốt gần đây; nếu hỏng thì kiểm tra
+    nhanh song song mọi model và chỉ dùng model đang khỏe (mới nhất trước), thử tối đa vài model."""
+    tried = []
+
+    def attempt(model):
+        try:
+            return evaluate(key, model, row, search, market, timeout_ms)
+        except RuntimeError as e:
+            code = getattr(e, "code", 0)
+            if code not in RETRYABLE:
+                raise
+            tried.append(f"{model} ({code or 'lỗi kết nối'})")
+            return None
+
+    if preferred:
+        res = attempt(preferred)
+        if res:
+            return res
+    cands = [m for m in candidates(key) if m != preferred]
+    for model in healthy_models(key, cands)[:max_real_attempts]:
+        res = attempt(model)
+        if res:
+            return res
+    out = RuntimeError("Gemini không phản hồi" + (": đã thử " + ", ".join(tried) if tried else " (mọi model đều không trả lời)")
+                       + ". Thường do Google đang quá tải, thử lại sau vài phút.")
+    out.code = 504
+    raise out
 
 
 def _market_text(market):
@@ -157,7 +216,7 @@ def _market_text(market):
     return "\n".join(lines)
 
 
-def evaluate(key, model, row, search=False, market=None):
+def evaluate(key, model, row, search=False, market=None, timeout_ms=None):
     """row: {tên_cột: giá_trị}; market: kết quả market.collect(). Trả {'text','model','sources','score' (0-100),'tier','scale':100}."""
     lines = [f"- {k}: {str(v)[:600]}" for k, v in row.items() if str(v).strip() not in ("", "-")]
     prompt = ("Hãy đánh giá sản phẩm Affiliate sau cho chiến dịch Google Ads Search.\n<du_lieu_san_pham>\n"
@@ -168,11 +227,16 @@ def evaluate(key, model, row, search=False, market=None):
     else:
         cfg = types.GenerateContentConfig(system_instruction=RUBRIC + RULES, temperature=0.2,
                                           response_mime_type="application/json", response_schema=KetQuaDanhGiaAffiliate)
-    client = _client(key)  # giữ biến: Client tạm bị dọn thì kết nối đóng giữa chừng
+    client = _client(key, timeout_ms)  # giữ biến: Client tạm bị dọn thì kết nối đóng giữa chừng
     try:
         resp = client.models.generate_content(model=model, contents=prompt, config=cfg)
     except errors.APIError as e:
         raise _friendly(e) from None
+    except Exception as e:  # noqa: BLE001  (hết thời gian chờ, mất mạng...)
+        name = type(e).__name__
+        out = RuntimeError("Gemini không phản hồi kịp (quá thời gian chờ)." if "Timeout" in name else f"Không kết nối được Gemini ({name}).")
+        out.code = 504 if "Timeout" in name else 0
+        raise out from None
     cands = resp.candidates or []
     if not cands:
         why = getattr(getattr(resp, "prompt_feedback", None), "block_reason", None) or "không rõ lý do"

@@ -144,16 +144,11 @@ def gemini_eval(eid, row, search, force, name="", domain=""):
     if eid in evals and not force:
         return evals[eid]
     cfg = load_json(CONFIG, {})
-    model = cfg.get("gemini_model") or gemini.pick_model(key)
+    # Dùng lại model đã chạy tốt (trong 24 giờ); quá hạn thì thử lại từ model mới nhất
+    preferred = cfg.get("gemini_model") if time.time() - cfg.get("gemini_model_ts", 0) < 86400 else None
     mk = market.collect(name or eid, domain)  # Google Trends 90 ngày + link Trustpilot (không đo được thì ghi rõ là thiếu dữ liệu)
-    try:
-        res = gemini.evaluate(key, model, row, search, mk)
-    except RuntimeError as e:
-        if getattr(e, "code", 0) != 404:
-            raise
-        model = gemini.pick_model(key)  # model cũ không còn: chọn lại một lần
-        res = gemini.evaluate(key, model, row, search, mk)
-    cfg["gemini_model"] = model
+    res = gemini.evaluate_auto(key, preferred, row, search, mk)  # model treo/quá tải/không còn thì tự thử model khác
+    cfg["gemini_model"], cfg["gemini_model_ts"] = res["model"], time.time()
     save_json(CONFIG, cfg)
     res.update(at=gemini.now(), search=bool(search))
     with EVAL_LOCK:
