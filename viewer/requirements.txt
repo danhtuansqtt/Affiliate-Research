@@ -1,1 +1,3 @@
 certifi
+google-genai
+pydantic

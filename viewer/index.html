@@ -132,6 +132,7 @@ aside.open.fs dl{grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1f
 aside.open.fs dd{font-size:15px}
 .gembox{margin:12px 0;padding:12px;border-radius:12px;background:var(--info-bg)}
 .gres{margin-top:8px}.gres h3{font-size:15px;margin:12px 0 4px}.gres p{margin:4px 0}.gres ul{margin:4px 0 4px 18px;padding:0}
+.gchip{display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;font-weight:700}.g-ok{background:var(--ok-bg);color:var(--ok)}.g-bad{background:var(--bad-bg);color:var(--bad)}.g-warn{background:var(--warn-bg);color:var(--warn)}
 </style>
 </head>
 <body>
@@ -385,7 +386,9 @@ function md(s) {
 }
 function gemResult(ev) {
   const src = (ev.sources || []).filter(s => /^https:\/\//.test(s.uri)).map(s => `<a class="link" target="_blank" rel="noopener" href="${esc(s.uri)}">${esc(s.title)}</a>`).join(" · ");
-  return `<div class="gres">${md(ev.text)}</div><div class="sub">Gemini (${esc(ev.model)}) · ${esc(ev.at)}${ev.search ? " · có tra cứu web" : ""}</div>${src ? `<div class="sub">Nguồn: ${src}</div>` : ""}`;
+  const chip = ev.tier ? `<div class="gchip g-${/^Tier 1/.test(ev.tier) ? "ok" : /^Tier 3/.test(ev.tier) ? "bad" : "warn"}">Điểm ${ev.score}/100 · ${esc(ev.tier)}</div>`
+    : ev.score != null ? `<div class="gchip g-warn">Điểm ${ev.score}/10${ev.verdict ? " · " + esc(ev.verdict) : ""}</div>` : "";
+  return `${chip}<div class="gres">${md(ev.text)}</div><div class="sub">Gemini (${esc(ev.model)}) · ${esc(ev.at)}${ev.search ? " · có tra cứu web" : ""}</div>${src ? `<div class="sub">Nguồn: ${src}</div>` : ""}`;
 }
 function renderGem(tab, r, m) {
   const box = $("#gem"); if (!box) return;
