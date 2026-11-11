@@ -39,10 +39,21 @@ def load_key(path):
         return ""
 
 
+def clean_key(raw):
+    """Bỏ khoảng trắng, xuống dòng, dấu nháy và tiền tố 'key=' do copy thừa."""
+    k = (raw or "").strip().strip("\"'`").strip()
+    if k.lower().startswith("key="):
+        k = k[4:].strip()
+    return k
+
+
 def save_key(path, key):
-    key = key.strip()
-    if not re.fullmatch(r"[A-Za-z0-9_\-]{20,}", key):
-        raise RuntimeError("Khóa không đúng dạng (khóa Gemini thường bắt đầu bằng AIza và dài khoảng 39 ký tự).")
+    key = clean_key(key)
+    # Dạng cũ: AIzaSy + 33 ký tự (39 ký tự). Dạng mới của Google AI Studio có thể bắt đầu bằng AQ. và chứa dấu chấm.
+    # Chỉ chặn những gì chắc chắn sai (rỗng, quá ngắn, có khoảng trắng/ký tự lạ); đúng hay không do Gemini quyết định khi gọi.
+    if len(key) < 20 or not re.fullmatch(r"[A-Za-z0-9_\-.~+/=]+", key):
+        raise RuntimeError("Khóa chưa đúng. Hãy bấm Copy ở trang aistudio.google.com/apikey rồi dán lại, không thêm dấu cách hay dấu nháy. "
+                           "Khóa dạng cũ bắt đầu bằng AIza (39 ký tự), dạng mới có thể bắt đầu bằng AQ. và có dấu chấm.")
     fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
     with os.fdopen(fd, "w", encoding="utf-8") as f:
         f.write(key)

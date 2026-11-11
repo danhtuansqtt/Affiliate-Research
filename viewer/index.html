@@ -392,8 +392,8 @@ function renderGem(tab, r, m) {
   const id = gid(r, m), ev = EVALS[id];
   if (!DATA.gemini) {
     box.innerHTML = `<div class="gembox"><b>🤖 Đánh giá bằng Gemini</b>
-      <p class="sub">Dán khóa Gemini API của anh (lấy miễn phí ở aistudio.google.com/apikey). Khóa chỉ lưu trên máy này.</p>
-      <input type="password" id="gkey" placeholder="AIza…" autocomplete="off" style="width:min(320px,70%);padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit"> <button class="btn primary" id="gsave">Lưu khóa</button>
+      <p class="sub">Dán khóa Gemini API của anh (lấy miễn phí ở aistudio.google.com/apikey, bấm Copy rồi dán nguyên văn). Khóa chỉ lưu trên máy này.</p>
+      <input type="password" id="gkey" placeholder="AIza… hoặc AQ.…" autocomplete="off" style="width:min(320px,70%);padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit"> <button class="btn primary" id="gsave">Lưu khóa</button>
       <p class="err" id="gerr"></p></div>`;
     $("#gsave").onclick = async () => {
       const d = await (await fetch("/api/gemini-key", {method: "POST", body: JSON.stringify({key: $("#gkey").value})})).json();
