@@ -18,6 +18,7 @@ import webbrowser
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 import cdp
+import gemini
 import platform_util as pu
 import sheets
 import updater
@@ -33,6 +34,8 @@ APP_DIR = pu.app_dir()
 CONFIG = os.path.join(APP_DIR, "config.json")
 CACHE = os.path.join(APP_DIR, "data.json")
 PENDING = os.path.join(APP_DIR, "views_pending.jsonl")
+GKEY = os.path.join(APP_DIR, "gemini_key.txt")
+EVALS = os.path.join(APP_DIR, "evals.json")
 os.makedirs(APP_DIR, exist_ok=True)
 
 
@@ -92,7 +95,7 @@ def auth_info():
     """need: 'login' (chưa đăng nhập Google), 'sheet' (chưa chọn file), '' (đủ)."""
     ok = signed_in()
     sh = current_sheet()
-    return {"signed_in": ok, "sheet": sh, "tracking": view_form() is not None, "viewer": STATE["email"] or load_json(CONFIG, {}).get("email", ""), "need": "login" if not ok else ("" if sh["id"] else "sheet")}
+    return {"signed_in": ok, "sheet": sh, "tracking": view_form() is not None, "gemini": bool(gemini.load_key(GKEY)), "viewer": STATE["email"] or load_json(CONFIG, {}).get("email", ""), "need": "login" if not ok else ("" if sh["id"] else "sheet")}
 
 
 def view_form():
@@ -127,6 +130,35 @@ def track_view(product, domain):
         return
     user = viewer_email() or "(không rõ)"
     views.record(PENDING, form, user, product[:300], domain[:200])
+
+
+EVAL_LOCK = threading.Lock()
+
+
+def gemini_eval(eid, row, search, force):
+    key = gemini.load_key(GKEY)
+    if not key:
+        raise RuntimeError("Chưa có khóa Gemini.")
+    evals = load_json(EVALS, {})
+    if eid in evals and not force:
+        return evals[eid]
+    cfg = load_json(CONFIG, {})
+    model = cfg.get("gemini_model") or gemini.pick_model(key)
+    try:
+        res = gemini.evaluate(key, model, row, search)
+    except RuntimeError as e:
+        if getattr(e, "code", 0) != 404:
+            raise
+        model = gemini.pick_model(key)  # model cũ không còn: chọn lại một lần
+        res = gemini.evaluate(key, model, row, search)
+    cfg["gemini_model"] = model
+    save_json(CONFIG, cfg)
+    res.update(at=gemini.now(), search=bool(search))
+    with EVAL_LOCK:
+        evals = load_json(EVALS, {})
+        evals[eid] = res
+        save_json(EVALS, evals)
+    return res
 
 
 def open_drive():
@@ -184,6 +216,8 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(raw)
 
     def do_GET(self):
+        if self.path == "/api/gemini-evals":
+            return self._send(200, json.dumps({"evals": load_json(EVALS, {})}, ensure_ascii=False))
         if self.path == "/api/watch":
             return self._send(200, json.dumps(watch(), ensure_ascii=False))
         if self.path in ("/", "/index.html"):
@@ -241,6 +275,22 @@ class Handler(BaseHTTPRequestHandler):
             if view_form():  # chỉ ghi khi quản lý đã bật; chạy nền để không làm chậm giao diện
                 threading.Thread(target=track_view, args=(str(body.get("product", "")), str(body.get("domain", ""))), daemon=True).start()
             return self._send(200, "{}")
+        if self.path == "/api/gemini-key":
+            try:
+                if body.get("remove"):
+                    os.remove(GKEY) if os.path.exists(GKEY) else None
+                else:
+                    gemini.save_key(GKEY, str(body.get("key", "")))
+            except Exception as e:  # noqa: BLE001
+                return self._send(200, json.dumps({"error": str(e)}, ensure_ascii=False))
+            return self._send(200, json.dumps({"gemini": bool(gemini.load_key(GKEY))}))
+        if self.path == "/api/gemini-eval":
+            try:
+                row = {str(k)[:80]: str(v)[:600] for k, v in (body.get("row") or {}).items()}
+                res = gemini_eval(str(body.get("id", ""))[:200], row, bool(body.get("search")), bool(body.get("force")))
+                return self._send(200, json.dumps(res, ensure_ascii=False))
+            except Exception as e:  # noqa: BLE001
+                return self._send(200, json.dumps({"error": str(e)[:300]}, ensure_ascii=False))
         if self.path == "/api/open-drive":
             open_drive()
             return self._send(200, "{}")

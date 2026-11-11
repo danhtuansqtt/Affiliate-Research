@@ -47,6 +47,9 @@ Cấu hình và cache lưu ở: Windows `%APPDATA%\AffiliateViewer`, macOS `~/Li
 2. **Bước 2:** trong cửa sổ Drive, bấm đúp để mở file Google Sheet muốn xem. App thấy tab đó đang mở và hiện nút **Dùng file: …**; bấm là xem được. Nút **Đổi file** ở thanh trên cùng để chọn file khác.
 Cách hoạt động: app điều khiển cửa sổ trình duyệt của chính nó qua cổng gỡ lỗi chỉ mở ở `127.0.0.1` (để đọc danh sách tab và cookie phiên Google), rồi tải bản xuất "Trang web (.zip)" của Sheet bằng quyền của tài khoản đã đăng nhập. Chỉ ĐỌC. Tài khoản phải có quyền xem file, và chủ file không được tắt quyền tải xuống. Phiên đăng nhập nằm trong hồ sơ `profile/` của app; xóa thư mục này là đăng xuất.
 
+## Đánh giá bằng Gemini
+Trong chi tiết sản phẩm có khung **Đánh giá Gemini**. Lần đầu dán khóa Gemini API của riêng mình (lấy miễn phí ở aistudio.google.com/apikey); khóa lưu ở `gemini_key.txt` trong thư mục dữ liệu của app (quyền 600), không nằm trong mã nguồn hay DMG. Bấm **Đánh giá bằng Gemini** để nhận điểm tiềm năng, điểm mạnh, rủi ro, góc quảng cáo và kết luận. Tùy chọn **Tra cứu web** cho Gemini tìm thêm trên Google Search (chậm hơn, tốn hạn mức hơn). Kết quả lưu ở `evals.json` để không gọi lại; bấm "Đánh giá lại" để làm mới. Dữ liệu dòng sản phẩm được gửi tới Google để Gemini xử lý. App tự chọn bản Gemini Flash mới nhất mà khóa gọi được.
+
 ## Phát triển
 - Chạy thử không mở cửa sổ: `AV_NOBROWSER=1 AV_PORT=8765 python3 app.py`, mở http://127.0.0.1:8765/
 - Biến môi trường tùy chọn: `AV_SHEET_ID` (ghi đè link Sheet trong cấu hình).

@@ -130,6 +130,8 @@ aside.open.fs{inset:0;transform:none;width:auto;max-height:none;border-radius:0;
 aside.open.fs h2{font-size:26px}
 aside.open.fs dl{grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))}
 aside.open.fs dd{font-size:15px}
+.gembox{margin:12px 0;padding:12px;border-radius:12px;background:var(--info-bg)}
+.gres{margin-top:8px}.gres h3{font-size:15px;margin:12px 0 4px}.gres p{margin:4px 0}.gres ul{margin:4px 0 4px 18px;padding:0}
 </style>
 </head>
 <body>
@@ -352,9 +354,11 @@ function side(tab, m) {
     <h2>${esc(r[m.name])}</h2><div class="sub">${esc(m.domain >= 0 ? r[m.domain] : r[m.adv])} · ${esc(r[m.date])}</div>
     <p>${badge(ac, ADS_LABEL[ac])} <span class="badge b-na">Đủ ${completeness(r, m)}/6</span></p>
     ${/^https?:\/\//.test(u) ? `<p><a class="link" href="${esc(u)}" target="_blank" rel="noopener">Mở link đăng ký affiliate ↗</a></p>` : ""}
+    <div id="gem"></div>
     ${DATA.tracking ? `<p class="sub">Lượt xem sản phẩm được ghi lại cho quản lý${DATA.viewer ? " (" + esc(DATA.viewer) + ")" : ""}.</p>` : ""}
     <dl>${tab.header.map((h, i) => r[i] && r[i] !== "-" ? `<dt>${esc(h)}</dt><dd>${/^https?:\/\/\S+$/.test(r[i]) ? `<a class="link" target="_blank" rel="noopener" href="${esc(r[i])}">${esc(r[i])}</a>` : esc(r[i])}</dd>` : "").join("")}</dl>`;
   $("#close").onclick = closeSide;
+  renderGem(tab, r, m);
 }
 // Chi tiết sản phẩm theo chế độ cửa sổ: cửa sổ thường -> khung nổi giữa màn hình; app đang toàn màn hình -> phủ toàn màn hình
 const isFullscreen = () => !!document.fullscreenElement || (innerWidth >= screen.width - 2 && innerHeight >= screen.height - 2);
@@ -363,6 +367,56 @@ addEventListener("resize", syncMode);
 function trackView(r, m) {
   if (!DATA || !DATA.tracking || !r) return;
   fetch("/api/view", {method: "POST", body: JSON.stringify({product: r[m.name] || "", domain: m.domain >= 0 ? (r[m.domain] || "") : ""})}).catch(() => {});
+}
+// ---- Đánh giá bằng Gemini (khóa của từng người, lưu trên máy) ----
+let EVALS = {}, GSEARCH = false;
+fetch("/api/gemini-evals").then(r => r.json()).then(d => { EVALS = d.evals || {}; }).catch(() => {});
+const gid = (r, m) => ((m.domain >= 0 && r[m.domain]) || r[m.name] || "").trim().toLowerCase();
+function md(s) {
+  let out = "", inList = false;
+  for (let l of esc(s).split("\n")) {
+    l = l.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+    const li = l.match(/^\s*[-*•]\s+(.*)/), hd = l.match(/^#{1,4}\s+(.*)/);
+    if (li) { if (!inList) { out += "<ul>"; inList = true; } out += "<li>" + li[1] + "</li>"; continue; }
+    if (inList) { out += "</ul>"; inList = false; }
+    if (hd) out += "<h3>" + hd[1] + "</h3>"; else if (l.trim()) out += "<p>" + l + "</p>";
+  }
+  return out + (inList ? "</ul>" : "");
+}
+function gemResult(ev) {
+  const src = (ev.sources || []).filter(s => /^https:\/\//.test(s.uri)).map(s => `<a class="link" target="_blank" rel="noopener" href="${esc(s.uri)}">${esc(s.title)}</a>`).join(" · ");
+  return `<div class="gres">${md(ev.text)}</div><div class="sub">Gemini (${esc(ev.model)}) · ${esc(ev.at)}${ev.search ? " · có tra cứu web" : ""}</div>${src ? `<div class="sub">Nguồn: ${src}</div>` : ""}`;
+}
+function renderGem(tab, r, m) {
+  const box = $("#gem"); if (!box) return;
+  const id = gid(r, m), ev = EVALS[id];
+  if (!DATA.gemini) {
+    box.innerHTML = `<div class="gembox"><b>🤖 Đánh giá bằng Gemini</b>
+      <p class="sub">Dán khóa Gemini API của anh (lấy miễn phí ở aistudio.google.com/apikey). Khóa chỉ lưu trên máy này.</p>
+      <input type="password" id="gkey" placeholder="AIza…" autocomplete="off" style="width:min(320px,70%);padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);font:inherit"> <button class="btn primary" id="gsave">Lưu khóa</button>
+      <p class="err" id="gerr"></p></div>`;
+    $("#gsave").onclick = async () => {
+      const d = await (await fetch("/api/gemini-key", {method: "POST", body: JSON.stringify({key: $("#gkey").value})})).json();
+      if (d.error) { $("#gerr").textContent = d.error; return; }
+      DATA.gemini = true; renderGem(tab, r, m);
+    };
+    return;
+  }
+  box.innerHTML = `<div class="gembox"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><b>🤖 Đánh giá Gemini</b>
+      <button class="btn primary" id="geval">${ev ? "Đánh giá lại" : "Đánh giá bằng Gemini"}</button>
+      <label class="chk"><input type="checkbox" id="gsearch" ${GSEARCH ? "checked" : ""}> Tra cứu web</label>
+      <button class="btn" id="gdel" style="margin-left:auto">Đổi khóa</button></div>
+      <div id="gres">${ev ? gemResult(ev) : ""}</div><p class="err" id="gerr"></p></div>`;
+  $("#gsearch").onchange = e => { GSEARCH = e.target.checked; };
+  $("#gdel").onclick = async () => { if (!confirm("Xóa khóa Gemini khỏi máy này?")) return; await fetch("/api/gemini-key", {method: "POST", body: JSON.stringify({remove: true})}); DATA.gemini = false; renderGem(tab, r, m); };
+  $("#geval").onclick = async () => {
+    const b = $("#geval"); b.disabled = true; b.textContent = "Gemini đang đánh giá…"; $("#gerr").textContent = "";
+    const row = {}; tab.header.forEach((h, i) => { if (r[i] && r[i] !== "-") row[h] = r[i]; });
+    let d; try { d = await (await fetch("/api/gemini-eval", {method: "POST", body: JSON.stringify({id, row, search: GSEARCH, force: !!ev})})).json(); } catch (e) { d = {error: "Không kết nối được: " + e}; }
+    if (d.error) { if ($("#gerr")) { $("#gerr").textContent = d.error; b.disabled = false; b.textContent = ev ? "Đánh giá lại" : "Đánh giá bằng Gemini"; } return; }
+    EVALS[id] = d;
+    if ($("#gem") && SEL !== null && tab.rows[SEL] === r) renderGem(tab, r, m);
+  };
 }
 function closeSide() { SEL = null; $("#side").classList.remove("open"); document.querySelectorAll("tr.sel").forEach(x => x.classList.remove("sel"));}
 document.addEventListener("keydown", e => { if (e.key === "Escape" && SEL !== null) closeSide(); });
