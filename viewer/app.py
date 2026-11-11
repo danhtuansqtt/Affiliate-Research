@@ -300,6 +300,19 @@ class Handler(BaseHTTPRequestHandler):
         self._send(404, "{}")
 
 
+PING_TIMEOUT = float(os.environ.get("AV_PING_TIMEOUT", "20"))
+
+
+def window_alive(url):
+    """True/False: cửa sổ app còn mở hay không (hỏi trình duyệt qua cổng điều khiển); None: không hỏi được."""
+    if not BROWSER["port"]:
+        return None
+    try:
+        return any(t.get("type") == "page" and t.get("url", "").startswith(url) for t in cdp.targets(BROWSER["port"]))
+    except Exception:  # noqa: BLE001
+        return None
+
+
 def main():
     srv = ThreadingHTTPServer(("127.0.0.1", int(os.environ.get("AV_PORT", "0"))), Handler)
     url = f"http://127.0.0.1:{srv.server_address[1]}/"
@@ -313,7 +326,10 @@ def main():
         BROWSER.update(path=browser, port=port)
         proc = subprocess.Popen([browser, f"--app={url}", f"--user-data-dir={os.path.join(APP_DIR, 'profile')}",
                                  f"--remote-debugging-port={port}", "--remote-debugging-address=127.0.0.1",
-                                 "--window-size=1400,900", "--no-first-run", "--no-default-browser-check"])
+                                 "--window-size=1400,900", "--no-first-run", "--no-default-browser-check",
+                                 # cửa sổ nền/bị che không được làm chậm bộ đếm giờ, nếu không tín hiệu "còn sống" của trang bị trễ
+                                 "--disable-background-timer-throttling", "--disable-renderer-backgrounding",
+                                 "--disable-backgrounding-occluded-windows"])
     elif not os.environ.get("AV_NOBROWSER"):
         webbrowser.open(url)
     try:
@@ -321,8 +337,12 @@ def main():
             time.sleep(1)
             if proc is not None and proc.poll() is not None:
                 break
-            if STATE["seen_ping"] and time.time() - STATE["last_ping"] > 20:
-                break
+            if STATE["seen_ping"] and time.time() - STATE["last_ping"] > PING_TIMEOUT:
+                alive = window_alive(url)
+                if alive:  # trang không gọi kịp (cửa sổ nền bị Chrome làm chậm) nhưng cửa sổ vẫn mở: không thoát
+                    STATE["last_ping"] = time.time()
+                elif alive is False or time.time() - STATE["last_ping"] > 300:
+                    break
             if STATE["quit"]:
                 if proc is not None and proc.poll() is None:
                     proc.terminate()
