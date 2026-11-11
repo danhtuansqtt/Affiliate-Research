@@ -19,6 +19,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 import cdp
 import gemini
+import market
 import platform_util as pu
 import sheets
 import updater
@@ -135,7 +136,7 @@ def track_view(product, domain):
 EVAL_LOCK = threading.Lock()
 
 
-def gemini_eval(eid, row, search, force):
+def gemini_eval(eid, row, search, force, name="", domain=""):
     key = gemini.load_key(GKEY)
     if not key:
         raise RuntimeError("Chưa có khóa Gemini.")
@@ -144,13 +145,14 @@ def gemini_eval(eid, row, search, force):
         return evals[eid]
     cfg = load_json(CONFIG, {})
     model = cfg.get("gemini_model") or gemini.pick_model(key)
+    mk = market.collect(name or eid, domain)  # Google Trends 90 ngày + link Trustpilot (không đo được thì ghi rõ là thiếu dữ liệu)
     try:
-        res = gemini.evaluate(key, model, row, search)
+        res = gemini.evaluate(key, model, row, search, mk)
     except RuntimeError as e:
         if getattr(e, "code", 0) != 404:
             raise
         model = gemini.pick_model(key)  # model cũ không còn: chọn lại một lần
-        res = gemini.evaluate(key, model, row, search)
+        res = gemini.evaluate(key, model, row, search, mk)
     cfg["gemini_model"] = model
     save_json(CONFIG, cfg)
     res.update(at=gemini.now(), search=bool(search))
@@ -287,7 +289,8 @@ class Handler(BaseHTTPRequestHandler):
         if self.path == "/api/gemini-eval":
             try:
                 row = {str(k)[:80]: str(v)[:600] for k, v in (body.get("row") or {}).items()}
-                res = gemini_eval(str(body.get("id", ""))[:200], row, bool(body.get("search")), bool(body.get("force")))
+                res = gemini_eval(str(body.get("id", ""))[:200], row, bool(body.get("search")), bool(body.get("force")),
+                                  str(body.get("name", ""))[:200], str(body.get("domain", ""))[:200])
                 return self._send(200, json.dumps(res, ensure_ascii=False))
             except Exception as e:  # noqa: BLE001
                 return self._send(200, json.dumps({"error": str(e)[:300]}, ensure_ascii=False))

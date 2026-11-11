@@ -376,7 +376,7 @@ const gid = (r, m) => ((m.domain >= 0 && r[m.domain]) || r[m.name] || "").trim()
 function md(s) {
   let out = "", inList = false;
   for (let l of esc(s).split("\n")) {
-    l = l.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+    l = l.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/(https:\/\/[^\s<]+)/g, '<a class="link" target="_blank" rel="noopener" href="$1">$1</a>');
     const li = l.match(/^\s*[-*•]\s+(.*)/), hd = l.match(/^#{1,4}\s+(.*)/);
     if (li) { if (!inList) { out += "<ul>"; inList = true; } out += "<li>" + li[1] + "</li>"; continue; }
     if (inList) { out += "</ul>"; inList = false; }
@@ -413,9 +413,9 @@ function renderGem(tab, r, m) {
   $("#gsearch").onchange = e => { GSEARCH = e.target.checked; };
   $("#gdel").onclick = async () => { if (!confirm("Xóa khóa Gemini khỏi máy này?")) return; await fetch("/api/gemini-key", {method: "POST", body: JSON.stringify({remove: true})}); DATA.gemini = false; renderGem(tab, r, m); };
   $("#geval").onclick = async () => {
-    const b = $("#geval"); b.disabled = true; b.textContent = "Gemini đang đánh giá…"; $("#gerr").textContent = "";
+    const b = $("#geval"); b.disabled = true; b.textContent = "Đang tra Google Trends và hỏi Gemini…"; $("#gerr").textContent = "";
     const row = {}; tab.header.forEach((h, i) => { if (r[i] && r[i] !== "-") row[h] = r[i]; });
-    let d; try { d = await (await fetch("/api/gemini-eval", {method: "POST", body: JSON.stringify({id, row, search: GSEARCH, force: !!ev})})).json(); } catch (e) { d = {error: "Không kết nối được: " + e}; }
+    let d; try { d = await (await fetch("/api/gemini-eval", {method: "POST", body: JSON.stringify({id, name: r[m.name] || "", domain: m.domain >= 0 ? (r[m.domain] || "") : "", row, search: GSEARCH, force: !!ev})})).json(); } catch (e) { d = {error: "Không kết nối được: " + e}; }
     if (d.error) { if ($("#gerr")) { $("#gerr").textContent = d.error; b.disabled = false; b.textContent = ev ? "Đánh giá lại" : "Đánh giá bằng Gemini"; } return; }
     EVALS[id] = d;
     if ($("#gem") && SEL !== null && tab.rows[SEL] === r) renderGem(tab, r, m);

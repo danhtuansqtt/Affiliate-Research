@@ -49,8 +49,10 @@ Cách hoạt động: app điều khiển cửa sổ trình duyệt của chính
 
 ## Đánh giá bằng Gemini
 Trong chi tiết sản phẩm có khung **Đánh giá Gemini** (SDK `google-genai`, kết quả có cấu trúc bằng `pydantic`). Lần đầu dán khóa Gemini API của riêng mình (lấy miễn phí ở aistudio.google.com/apikey); khóa lưu ở `gemini_key.txt` trong thư mục dữ liệu của app (quyền 600), không nằm trong mã nguồn hay DMG.
-Bấm **Đánh giá bằng Gemini** để nhận: **điểm trên thang 100**, **phân tầng** (Tier 1 Test ngay / Tier 2 Qua Pre-lander / Tier 3 Bỏ qua), **payout ước tính** và **chiến lược Google Ads**. Tiêu chí chấm (sửa ở `RUBRIC` trong `gemini.py`): Unit Economics 35%, Chính sách Google Ads 25%, USP 20%, Ngách và Năm ra đời 10%, Cookie 10%; ngách ưu tiên AI và Tài chính; temperature 0.2.
-Tùy chọn **Tra cứu web** cho Gemini tìm thêm trên Google Search (chậm hơn, tốn hạn mức hơn; kết quả là văn bản theo mẫu, app đọc điểm và tier từ đó). Kết quả lưu ở `evals.json` để không gọi lại; bấm "Đánh giá lại" để làm mới. Toàn bộ cột của dòng sản phẩm được gửi tới Google để Gemini xử lý. Mặc định app chọn bản Gemini Flash mới nhất mà khóa gọi được; muốn cố định một bản thì đặt `gemini_model` trong `config.json`.
+Bấm **Đánh giá bằng Gemini** để nhận: tổng điểm trên thang 100 và phân tầng (Tier 1 Ưu tiên chạy ngay / Tier 2 Chạy qua Pre-lander / Tier 3 Loại bỏ), ngách, payout ước tính, **Google Trends** (kèm link), **Trustpilot**, chiến lược Google Ads và cảnh báo rủi ro. Chấm theo 6 trụ cột (sửa ở `RUBRIC` trong `gemini.py`): Unit Economics 30%, Chính sách Google Ads 20%, Google Trends và thời điểm ra mắt 15%, Trustpilot 15%, Tính năng và điểm nổi bật 12%, Cookie 8%. temperature 0.2.
+- **Google Trends** (90 ngày, toàn cầu) do app tự đọc từ Google rồi đưa vào đánh giá (`market.py`). Google đôi khi giới hạn truy vấn; khi đó ghi rõ là không đo được.
+- **Trustpilot** chặn truy cập tự động (HTTP 403) nên app **không tự đọc điểm** và không cố vượt cơ chế chống bot. Đánh giá chỉ kèm link Trustpilot và ghi "chưa đo được"; Gemini được dặn coi đó là thiếu dữ liệu, không phải điểm thấp. Bật **Tra cứu web** thì Gemini thử tìm điểm Trustpilot qua Google Search.
+Kết quả lưu ở `evals.json` để không gọi lại; bấm "Đánh giá lại" để làm mới. Toàn bộ cột của dòng sản phẩm được gửi tới Google để Gemini xử lý. Mặc định app chọn bản Gemini Flash mới nhất mà khóa gọi được; muốn cố định một bản thì đặt `gemini_model` trong `config.json`.
 
 ## Phát triển
 - Chạy thử không mở cửa sổ: `AV_NOBROWSER=1 AV_PORT=8765 python3 app.py`, mở http://127.0.0.1:8765/
