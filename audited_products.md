@@ -748,3 +748,84 @@ Dùng chung cho mọi lần chạy skill "tóm tắt" — domain đã có ở đ
 | markets4you.com | Markets4you | 2026-11-10 | AR12831867915296833537 |
 | ausomstore.com | Ausom | 2026-11-10 | AR12831867915296833537 |
 | olymptrade.com | Olymp Trade | 2026-11-10 | AR12831867915296833537 |
+| thewateridgegroup.com | The Wateridge Group | 2026-11-11 | AR14567350391567024129 |
+| lofty.com | Lofty | 2026-11-11 | AR14567350391567024129 |
+| gaileyenterprises.com | Gailey Enterprises Real Estate | 2026-11-11 | AR14567350391567024129 |
+| frankwhibley.com | Frank Whibley (Round Table Realty) | 2026-11-11 | AR14567350391567024129 |
+| soldinmn.com | Sold in MN | 2026-11-11 | AR14567350391567024129 |
+| mlsinatlanta.com | The Zac Team | 2026-11-11 | AR14567350391567024129 |
+| wizstar.com | Wizstar | 2026-11-11 | AR14567350391567024129 |
+| bestmovealaska.com | Heidi Sagen Team - Elite Real Estate Group | 2026-11-11 | AR14567350391567024129 |
+| willardhometeam.com | Willard Home Team (Charles Rutenberg Realty) | 2026-11-11 | AR14567350391567024129 |
+| nellisgrouprealestate.com | Nellis Group | 2026-11-11 | AR14567350391567024129 |
+| houston-homes4sale.com | Houston-Homes4Sale | 2026-11-11 | AR14567350391567024129 |
+| destinationhavasu.com | Destination Havasu | 2026-11-11 | AR14567350391567024129 |
+| travisbriggs.ca | Travis Briggs | 2026-11-11 | AR14567350391567024129 |
+| tanikadonnellhomes.com | Tanika Donnell Homes | 2026-11-11 | AR14567350391567024129 |
+| trishnash.com | Trish Nash Team | 2026-11-11 | AR14567350391567024129 |
+| kelownarealestatesearch.com | Kelowna Real Estate Search | 2026-11-11 | AR14567350391567024129 |
+| localrent.com | Localrent | 2026-11-11 | AR14567350391567024129 |
+| getimg.ai | getimg.ai | 2026-11-11 | AR14567350391567024129 |
+| quiltnest.com | Quiltnest | 2026-11-11 | AR14567350391567024129 |
+| finprotect.help | FinProtect Advisory | 2026-11-11 | AR14567350391567024129 |
+| bethanydreamhomes.com | Bethany Dream Homes - Marian Campo / Iron Valley Real Estate at the Beach | 2026-11-11 | AR14567350391567024129 |
+| retro-stage.com | Retro Stage | 2026-11-11 | AR14567350391567024129 |
+| myidahorealestate.com | MyIdahoRealEstate | 2026-11-11 | AR14567350391567024129 |
+| twincitiesrealestategroup.com | Twin Cities Real Estate Group - Sonali Vora / Coldwell Banker | 2026-11-11 | AR14567350391567024129 |
+| depositphotos.com | Depositphotos | 2026-11-11 | AR14567350391567024129 |
+| kelownabchomesearch.com | Kelowna BC Home Search - Jeremy Engstad / Oakwyn Realty | 2026-11-11 | AR14567350391567024129 |
+| binghatti-skyterraces.com | Binghatti Sky Terraces | 2026-11-11 | AR14567350391567024129 |
+| themarkowskiteam.com | The Markowski Team | 2026-11-11 | AR14567350391567024129 |
+| utahcasasforsale.com | Utah Casas For Sale | 2026-11-11 | AR14567350391567024129 |
+| boblucidoteam.com | Bob Lucido Team | 2026-11-11 | AR14567350391567024129 |
+| dkny.com | DKNY | 2026-11-11 | AR14567350391567024129 |
+| internationalopenacademy.com | International Open Academy | 2026-11-11 | AR14567350391567024129 |
+| livesbuy.com | Livesbuy | 2026-11-11 | AR14567350391567024129 |
+| jelmox.com | Jelmox | 2026-11-11 | AR14567350391567024129 |
+| getbackhelp.one | GetBack Help | 2026-11-11 | AR14567350391567024129 |
+| franerty.com | Franerty | 2026-11-11 | AR14567350391567024129 |
+| bestoptions.live | Best Options | 2026-11-11 | AR14567350391567024129 |
+| himora.net | Himora | 2026-11-11 | AR14567350391567024129 |
+| lucidoglobal.com | Lucido Global | 2026-11-11 | AR14567350391567024129 |
+| sotion.so | Sotion | 2026-11-11 | AR14567350391567024129 |
+| homefindersouthflorida.com | James Glik - Beachfront Realty | 2026-11-11 | AR14567350391567024129 |
+| myminnesotahomesearch.com | Joe Mack - RE/MAX (My Minnesota Home Search) | 2026-11-11 | AR14567350391567024129 |
+| hrtsold.com | Holly Ritchie Team (hrtsold.com) | 2026-11-11 | AR14567350391567024129 |
+| ntxpropertysearch.com | The Kimberly Davis Group (ntxpropertysearch.com) | 2026-11-11 | AR14567350391567024129 |
+| ryanreynoldsteam.com | Ryan Reynolds Team (ryanreynoldsteam.com) | 2026-11-11 | AR14567350391567024129 |
+| theanchorway.com | The Anchor Team - Kevin Bernhardt | 2026-11-11 | AR14567350391567024129 |
+| stonehausrealty.com | Stonehaus Realty | 2026-11-11 | AR14567350391567024129 |
+| bdpcarolinas.com | Bulldog Properties - NextHome Reliance | 2026-11-11 | AR14567350391567024129 |
+| epomaker.com | Epomaker | 2026-11-11 | AR14567350391567024129 |
+| theapexbroker.com | The Apex Broker | 2026-11-11 | AR14567350391567024129 |
+| brickwith.com | Brickwith - Gobricks Official Shop | 2026-11-11 | AR14567350391567024129 |
+| roundtablerealty.com | Round Table Realty | 2026-11-11 | AR14567350391567024129 |
+| yvyamp.com | Yvyamp | 2026-11-11 | AR14567350391567024129 |
+| akusoli-shop.com | Akusoli | 2026-11-11 | AR14567350391567024129 |
+| diamondhomecollective.com | Diamond Home Collective | 2026-11-11 | AR14567350391567024129 |
+| viverealtytx.com | Vive Realty | 2026-11-11 | AR14567350391567024129 |
+| lettoria.com | Lettoria | 2026-11-11 | AR14567350391567024129 |
+| ghasrangroup.com | Ghasran Group | 2026-11-11 | AR14567350391567024129 |
+| unimarto.shop | Unimarto | 2026-11-11 | AR14567350391567024129 |
+| naisiaoilong.com | Naisiaoilong | 2026-11-11 | AR14567350391567024129 |
+| lalal.ai | LALAL.AI | 2026-11-11 | AR14567350391567024129 |
+| interserver.net | InterServer | 2026-11-11 | AR14567350391567024129 |
+| grailcart.com | GrailCart | 2026-11-11 | AR14567350391567024129 |
+| theshipyardsf.com | The Shipyard SF | 2026-11-11 | AR14567350391567024129 |
+| joshuadanielhomes.ca | Joshua Homes & Estates | 2026-11-11 | AR14567350391567024129 |
+| nexgoglobal.com | NEXGO | 2026-11-11 | AR14567350391567024129 |
+| speed-mods.com | Speed Mods | 2026-11-11 | AR14567350391567024129 |
+| boyengateam.com | Boyenga Team - Compass | 2026-11-11 | AR14567350391567024129 |
+| coloradohomesre.com | Colorado Homes RE - Marc Johnson | 2026-11-11 | AR14567350391567024129 |
+| chrismovesthecarolinas.com | Chris Moves the Carolinas | 2026-11-11 | AR14567350391567024129 |
+| errante.com | Errante | 2026-11-11 | AR14567350391567024129 |
+| openhouseaustin.co | Open House Austin | 2026-11-11 | AR14567350391567024129 |
+| nuviocasa.com | Nuvio Casa | 2026-11-11 | AR14567350391567024129 |
+| vancouverislandnorthrealestate.com | Vancouver Island North Real Estate | 2026-11-11 | AR14567350391567024129 |
+| mihmansho.com | Mihmansho | 2026-11-11 | AR14567350391567024129 |
+| mandoly.shop | Mandoly | 2026-11-11 | AR14567350391567024129 |
+| proxy001.com | Proxy001 | 2026-11-11 | AR14567350391567024129 |
+| captocoastnc.com | Cap to Coast NC | 2026-11-11 | AR14567350391567024129 |
+| leiferss.com | Leiferss | 2026-11-11 | AR14567350391567024129 |
+| biemmaoiy.com | Biemmaoiy | 2026-11-11 | AR14567350391567024129 |
+| cefoody.com | Cefoody | 2026-11-11 | AR14567350391567024129 |
