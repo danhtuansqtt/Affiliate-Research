@@ -327,7 +327,7 @@ function render() {
   $("#more").innerHTML = rows.length > LIMIT ? `<div class="more"><button class="btn" id="showmore">Hiện thêm (${rows.length - LIMIT} dòng nữa)</button></div>` : (rows.length ? "" : `<div class="more sub">Không có dòng nào khớp bộ lọc.</div>`);
   if ($("#showmore")) $("#showmore").onclick = () => { LIMIT += 300; render(); };
   document.querySelectorAll("a[data-stop]").forEach(a => a.onclick = e => e.stopPropagation());
-  document.querySelectorAll("tr.r").forEach(tr => tr.onclick = () => { SEL = +tr.dataset.k; side(tab, m); $("#side").scrollTop = 0; document.querySelectorAll("tr.r").forEach(x => x.classList.toggle("sel", x === tr)); });
+  document.querySelectorAll("tr.r").forEach(tr => tr.onclick = () => { SEL = +tr.dataset.k; side(tab, m); $("#side").scrollTop = 0; trackView(tab.rows[SEL], m); document.querySelectorAll("tr.r").forEach(x => x.classList.toggle("sel", x === tr)); });
   document.querySelectorAll(".card.click").forEach(c => c.onclick = () => { F.ads = F.ads === c.dataset.f ? "" : c.dataset.f; render(); });
 
   const q = $("#q"); q.oninput = () => { F.q = q.value; LIMIT = 300; const pos = q.selectionStart; render(); const n = $("#q"); n.focus(); n.setSelectionRange(pos, pos); };
@@ -352,6 +352,7 @@ function side(tab, m) {
     <h2>${esc(r[m.name])}</h2><div class="sub">${esc(m.domain >= 0 ? r[m.domain] : r[m.adv])} · ${esc(r[m.date])}</div>
     <p>${badge(ac, ADS_LABEL[ac])} <span class="badge b-na">Đủ ${completeness(r, m)}/6</span></p>
     ${/^https?:\/\//.test(u) ? `<p><a class="link" href="${esc(u)}" target="_blank" rel="noopener">Mở link đăng ký affiliate ↗</a></p>` : ""}
+    ${DATA.tracking ? `<p class="sub">Lượt xem sản phẩm được ghi lại cho quản lý${DATA.viewer ? " (" + esc(DATA.viewer) + ")" : ""}.</p>` : ""}
     <dl>${tab.header.map((h, i) => r[i] && r[i] !== "-" ? `<dt>${esc(h)}</dt><dd>${/^https?:\/\/\S+$/.test(r[i]) ? `<a class="link" target="_blank" rel="noopener" href="${esc(r[i])}">${esc(r[i])}</a>` : esc(r[i])}</dd>` : "").join("")}</dl>`;
   $("#close").onclick = closeSide;
 }
@@ -359,6 +360,10 @@ function side(tab, m) {
 const isFullscreen = () => !!document.fullscreenElement || (innerWidth >= screen.width - 2 && innerHeight >= screen.height - 2);
 function syncMode() { $("#side").classList.toggle("fs", isFullscreen()); }
 addEventListener("resize", syncMode);
+function trackView(r, m) {
+  if (!DATA || !DATA.tracking || !r) return;
+  fetch("/api/view", {method: "POST", body: JSON.stringify({product: r[m.name] || "", domain: m.domain >= 0 ? (r[m.domain] || "") : ""})}).catch(() => {});
+}
 function closeSide() { SEL = null; $("#side").classList.remove("open"); document.querySelectorAll("tr.sel").forEach(x => x.classList.remove("sel"));}
 document.addEventListener("keydown", e => { if (e.key === "Escape" && SEL !== null) closeSide(); });
 function exportCsv(tab, rows) {

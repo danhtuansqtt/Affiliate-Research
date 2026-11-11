@@ -11,6 +11,7 @@ import json
 import os
 import socket
 import struct
+import time
 import urllib.request
 from urllib.parse import urlparse
 
@@ -116,3 +117,32 @@ def cookie_header(cookies, host):
             parts.append(f"{c['name']}={c['value']}")
     return "; ".join(parts)
 
+
+
+_EMAIL_JS = r"""(() => { for (const e of document.querySelectorAll('[aria-label]')) {
+  const m = e.getAttribute('aria-label').match(/\(([^()\s]+@[^()\s]+)\)/); if (m) return m[1]; } return ''; })()"""
+
+
+def account_email(port, timeout=20):
+    """Email của tài khoản Google đang đăng nhập trong hồ sơ app (mở một tab nền tới trang tài khoản rồi đóng ngay)."""
+    bws = browser_ws(port)
+    tid = call(bws, "Target.createTarget", {"url": "about:blank", "background": True})["targetId"]
+    try:
+        page_ws = next(t["webSocketDebuggerUrl"] for t in targets(port) if t["id"] == tid)
+        call(page_ws, "Page.navigate", {"url": "https://myaccount.google.com/personal-info"})
+        end = time.time() + timeout
+        while time.time() < end:
+            time.sleep(1.5)
+            try:
+                v = call(page_ws, "Runtime.evaluate", {"expression": _EMAIL_JS, "returnByValue": True}, timeout=10)
+                email = (v.get("result", {}).get("value") or "").strip().lower()
+            except Exception:  # noqa: BLE001  (trang đang chuyển hướng)
+                continue
+            if email:
+                return email
+        return ""
+    finally:
+        try:
+            call(bws, "Target.closeTarget", {"targetId": tid})
+        except Exception:  # noqa: BLE001
+            pass

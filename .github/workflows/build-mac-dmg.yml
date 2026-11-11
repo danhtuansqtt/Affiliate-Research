@@ -21,6 +21,10 @@ jobs:
           python-version: '3.12'
       - name: Ghi số build (app so số này với Release mới nhất để biết có bản mới)
         run: echo '${{ github.run_number }}' > viewer/version.txt
+      - name: Ghi link Google Form ghi lượt xem (secret VIEW_FORM_URL; chưa đặt thì để trống = tắt tính năng)
+        env:
+          VIEW_FORM_URL: ${{ secrets.VIEW_FORM_URL }}
+        run: printf '%s' "$VIEW_FORM_URL" > viewer/form.txt
       - name: Build .app và .dmg
         run: bash viewer/build-dmg.sh
       - name: Kiểm tra file .dmg

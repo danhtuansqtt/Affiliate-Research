@@ -20,3 +20,4 @@ viewer/dist/
 viewer/build/
 *.spec
 viewer/version.txt
+viewer/form.txt

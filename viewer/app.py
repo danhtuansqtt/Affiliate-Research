@@ -21,6 +21,7 @@ import cdp
 import platform_util as pu
 import sheets
 import updater
+import views
 
 try:  # macOS (Python cài từ python.org) hay thiếu chứng chỉ gốc: dùng bộ của certifi nếu có
     import certifi
@@ -31,6 +32,7 @@ except ImportError:
 APP_DIR = pu.app_dir()
 CONFIG = os.path.join(APP_DIR, "config.json")
 CACHE = os.path.join(APP_DIR, "data.json")
+PENDING = os.path.join(APP_DIR, "views_pending.jsonl")
 os.makedirs(APP_DIR, exist_ok=True)
 
 
@@ -52,7 +54,7 @@ def save_json(path, obj):
         json.dump(obj, f, ensure_ascii=False)
 
 
-STATE = {"last_ping": time.time(), "seen_ping": False, "quit": False}
+STATE = {"last_ping": time.time(), "seen_ping": False, "quit": False, "email": ""}
 
 
 def parse_sheet_id(text):
@@ -90,7 +92,41 @@ def auth_info():
     """need: 'login' (chưa đăng nhập Google), 'sheet' (chưa chọn file), '' (đủ)."""
     ok = signed_in()
     sh = current_sheet()
-    return {"signed_in": ok, "sheet": sh, "need": "login" if not ok else ("" if sh["id"] else "sheet")}
+    return {"signed_in": ok, "sheet": sh, "tracking": view_form() is not None, "viewer": STATE["email"] or load_json(CONFIG, {}).get("email", ""), "need": "login" if not ok else ("" if sh["id"] else "sheet")}
+
+
+def view_form():
+    """Cấu hình Google Form ghi lượt xem (None = tắt): env AV_VIEW_FORM > config.json > form.txt đóng gói cùng app."""
+    url = os.environ.get("AV_VIEW_FORM") or load_json(CONFIG, {}).get("view_form", "")
+    if not url:
+        try:
+            with open(resource("form.txt"), encoding="utf-8") as f:
+                url = f.read().strip()
+        except OSError:
+            url = ""
+    return views.parse_form(url)
+
+
+def viewer_email():
+    """Email Google của người đang dùng app (tra một lần mỗi lần mở app, nhớ lại để lần sau dùng khi chưa tra được)."""
+    if not STATE["email"] and BROWSER["port"]:
+        try:
+            STATE["email"] = cdp.account_email(BROWSER["port"])
+        except Exception:  # noqa: BLE001
+            pass
+        cfg = load_json(CONFIG, {})
+        if STATE["email"]:
+            cfg["email"] = STATE["email"]
+            save_json(CONFIG, cfg)
+    return STATE["email"] or load_json(CONFIG, {}).get("email", "")
+
+
+def track_view(product, domain):
+    form = view_form()
+    if not form or not product:
+        return
+    user = viewer_email() or "(không rõ)"
+    views.record(PENDING, form, user, product[:300], domain[:200])
 
 
 def open_drive():
@@ -201,6 +237,10 @@ class Handler(BaseHTTPRequestHandler):
             updater.run_swap(script)
             STATE["quit"] = True
             return
+        if self.path == "/api/view":
+            if view_form():  # chỉ ghi khi quản lý đã bật; chạy nền để không làm chậm giao diện
+                threading.Thread(target=track_view, args=(str(body.get("product", "")), str(body.get("domain", ""))), daemon=True).start()
+            return self._send(200, "{}")
         if self.path == "/api/open-drive":
             open_drive()
             return self._send(200, "{}")
