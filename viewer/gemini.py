@@ -284,14 +284,24 @@ def evaluate_auto(key, preferred, row, search=False, market=None, timeout_ms=60_
     """Model Flash mới ra hay treo (504) hoặc quá tải (503). Thứ tự: model đã chạy tốt gần đây; nếu hỏng thì kiểm tra
     nhanh song song mọi model và chỉ dùng model đang khỏe, thử tối đa vài model. Lỗi 503 thường chỉ là đợt tăng tải
     ngắn nên thử lại cùng model một lần sau vài giây trước khi đổi model. Chế độ nhanh ưu tiên model lite (nhanh hơn nhiều)."""
-    tried = []
+    tried, quota = [], []
 
     def attempt(model):
-        for n in (1, 2):
+        """429 (chạm hạn mức/phút): chờ 15s, 30s, 45s rồi mới bỏ model này. 503: thử lại một lần sau 4s."""
+        n429 = 0
+        for n in (1, 2, 3, 4):
             try:
                 return evaluate(key, model, row, search, market, timeout_ms, fast)
             except RuntimeError as e:
                 code = getattr(e, "code", 0)
+                if code == 429:
+                    if n429 >= 3:
+                        tried.append(f"{model} (429)")
+                        quota.append(model)
+                        return None
+                    n429 += 1
+                    time.sleep(15 * n429)
+                    continue
                 if code not in RETRYABLE:
                     raise
                 if code == 503 and n == 1:
@@ -299,6 +309,7 @@ def evaluate_auto(key, preferred, row, search=False, market=None, timeout_ms=60_
                     continue
                 tried.append(f"{model} ({code or 'lỗi kết nối'})")
                 return None
+        return None
 
     if preferred:
         res = attempt(preferred)
@@ -307,10 +318,16 @@ def evaluate_auto(key, preferred, row, search=False, market=None, timeout_ms=60_
     cands = [m for m in candidates(key) if m != preferred]
     if fast:  # lite trước (mới nhất trước), rồi các model còn lại
         cands = [m for m in cands if "lite" in m] + [m for m in cands if "lite" not in m]
-    for model in healthy_models(key, cands)[:max_real_attempts]:
+    # hạn mức tính riêng từng model: model khác có thể còn lượt. Probe cũng tốn lượt nên khi đã bị 429 thì thử thẳng.
+    order = cands[:max_real_attempts] if quota else healthy_models(key, cands)[:max_real_attempts]
+    for model in order:
         res = attempt(model)
         if res:
             return res
+    if quota and len(quota) == len(tried):  # mọi model đều chạm hạn mức
+        out = RuntimeError("Hết hạn mức Gemini ở mọi model đã thử (" + ", ".join(quota) + "). Chờ một lúc rồi thử lại.")
+        out.code = 429
+        raise out
     out = RuntimeError("Gemini không phản hồi" + (": đã thử " + ", ".join(tried) if tried else " (mọi model đều không trả lời)")
                        + ". Thường do Google đang quá tải, thử lại sau vài phút.")
     out.code = 504
