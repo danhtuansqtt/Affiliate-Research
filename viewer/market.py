@@ -123,7 +123,7 @@ def traffic(domain, product=""):
     with _traffic_lock:
         data = None
         for attempt in range(3):
-            wait = 1.6 - (time.time() - _traffic_last[0])
+            wait = 1.2 - (time.time() - _traffic_last[0])
             if wait > 0:
                 time.sleep(wait)
             _traffic_last[0] = time.time()

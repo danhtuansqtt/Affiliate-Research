@@ -401,7 +401,7 @@ function trackView(r, m) {
   fetch("/api/view", {method: "POST", body: JSON.stringify({product: r[m.name] || "", domain: m.domain >= 0 ? (r[m.domain] || "") : ""})}).catch(() => {});
 }
 // ---- Đánh giá bằng Gemini (khóa của từng người, lưu trên máy) ----
-let EVALS = {}, GSEARCH = false;
+let EVALS = {}, GSEARCH = false, GFAST = false;
 fetch("/api/gemini-evals").then(r => r.json()).then(d => { EVALS = d.evals || {}; }).catch(() => {});
 const gid = (r, m) => ((m.domain >= 0 && r[m.domain]) || r[m.name] || "").trim().toLowerCase();
 function md(s) {
@@ -419,7 +419,7 @@ function gemResult(ev) {
   const src = (ev.sources || []).filter(s => /^https:\/\//.test(s.uri)).map(s => `<a class="link" target="_blank" rel="noopener" href="${esc(s.uri)}">${esc(s.title)}</a>`).join(" · ");
   const chip = ev.tier ? `<div class="gchip g-${/^Tier 1/.test(ev.tier) ? "ok" : /^Tier 3/.test(ev.tier) ? "bad" : "warn"}">Điểm ${ev.score}/100 · ${esc(ev.tier)}</div>`
     : ev.score != null ? `<div class="gchip g-warn">Điểm ${ev.score}/10${ev.verdict ? " · " + esc(ev.verdict) : ""}</div>` : "";
-  return `${chip}<div class="gres">${md(ev.text)}</div><div class="sub">Gemini (${esc(ev.model)}) · ${esc(ev.at)}${ev.search ? " · có tra cứu web" : ""}</div>${src ? `<div class="sub">Nguồn: ${src}</div>` : ""}`;
+  return `${chip}<div class="gres">${md(ev.text)}</div><div class="sub">Gemini (${esc(ev.model)}) · ${esc(ev.at)}${ev.search ? " · có tra cứu web" : ""}${ev.fast ? " · chế độ nhanh" : ""}</div>${src ? `<div class="sub">Nguồn: ${src}</div>` : ""}`;
 }
 function renderGem(tab, r, m) {
   const box = $("#gem"); if (!box) return;
@@ -439,14 +439,16 @@ function renderGem(tab, r, m) {
   box.innerHTML = `<div class="gembox"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><b>🤖 Đánh giá Gemini</b>
       <button class="btn primary" id="geval">${ev ? "Đánh giá lại" : "Đánh giá bằng Gemini"}</button>
       <label class="chk"><input type="checkbox" id="gsearch" ${GSEARCH ? "checked" : ""}> Tra cứu web</label>
+      <label class="chk" title="Dùng model lite và ít suy nghĩ: nhanh hơn nhiều, nhận xét có thể ngắn hơn"><input type="checkbox" id="gfast" ${GFAST ? "checked" : ""}> ⚡ Nhanh</label>
       <button class="btn" id="gdel" style="margin-left:auto">Đổi khóa</button></div>
       <div id="gres">${ev ? gemResult(ev) : ""}</div><p class="err" id="gerr"></p></div>`;
   $("#gsearch").onchange = e => { GSEARCH = e.target.checked; };
+  $("#gfast").onchange = e => { GFAST = e.target.checked; };
   $("#gdel").onclick = async () => { if (!confirm("Xóa khóa Gemini khỏi máy này?")) return; await fetch("/api/gemini-key", {method: "POST", body: JSON.stringify({remove: true})}); DATA.gemini = false; renderGem(tab, r, m); };
   $("#geval").onclick = async () => {
     const b = $("#geval"); b.disabled = true; b.textContent = "Đang tra Google Trends và hỏi Gemini…"; $("#gerr").textContent = "";
     const row = {}; tab.header.forEach((h, i) => { if (r[i] && r[i] !== "-") row[h] = r[i]; });
-    let d; try { d = await (await fetch("/api/gemini-eval", {method: "POST", body: JSON.stringify({id, name: r[m.name] || "", domain: m.domain >= 0 ? (r[m.domain] || "") : "", row, search: GSEARCH, force: !!ev})})).json(); } catch (e) { d = {error: "Không kết nối được: " + e}; }
+    let d; try { d = await (await fetch("/api/gemini-eval", {method: "POST", body: JSON.stringify({id, name: r[m.name] || "", domain: m.domain >= 0 ? (r[m.domain] || "") : "", row, search: GSEARCH, fast: GFAST, force: !!ev})})).json(); } catch (e) { d = {error: "Không kết nối được: " + e}; }
     if (d.error) { if ($("#gerr")) { $("#gerr").textContent = d.error; b.disabled = false; b.textContent = ev ? "Đánh giá lại" : "Đánh giá bằng Gemini"; } return; }
     EVALS[id] = d;
     if ($("#gem") && SEL !== null && tab.rows[SEL] === r) render();  // vẽ lại cả bảng để cột Gemini cập nhật; chi tiết vẽ lại theo
@@ -465,7 +467,7 @@ function exportCsv(tab, rows) {
 
 // ================= ĐÁNH GIÁ GEMINI HÀNG LOẠT (nút ngoài thanh trên) =================
 let LAST = null, GJOB = {running: false, done: 0, total: 0, current: "", ok: 0, fail: 0, skipped: 0, error: "", last_error: ""}, GPOLL = null;
-const GM = {n: 20, skipDone: true, search: false};
+const GM = {n: 20, skipDone: true, search: false, fast: false};
 function gemBadge(ev) {
   const t = (ev.tier || "").match(/^Tier ([123])/);
   return `<span class="gtag gt-${t ? t[1] : 0}" title="${esc(ev.tier || "")}">${ev.score != null ? ev.score : "?"}${t ? " · T" + t[1] : ""}</span>`;
@@ -509,24 +511,26 @@ function renderGemModal() {
     $("#mclose").onclick = closeGem; $("#mstop").onclick = () => fetch("/api/gemini-batch/stop", {method: "POST", body: "{}"});
     return;
   }
-  const tg = gemItems(), mins = Math.max(1, Math.round(tg.length * 25 / 60));
+  const tg = gemItems(), mins = Math.max(1, Math.ceil(tg.length * (GM.fast ? 8 : 25) / 3 / 60));  // 3 sản phẩm chạy cùng lúc
   const last = GJOB.total ? `<p class="sub">Lượt trước: xong ${GJOB.ok}, bỏ qua ${GJOB.skipped}, lỗi ${GJOB.fail}.</p>` : "";
   const err = GJOB.error ? `<p class="err">${esc(GJOB.error)}</p>` : "";
   el.innerHTML = `<div class="modal"><h2>🤖 Đánh giá Gemini hàng loạt</h2>
     <div class="sub">Chấm điểm theo skill 6 trụ cột (thang 100, Tier 1/2/3) cho các sản phẩm đang hiện trong bảng, theo thứ tự trên xuống. Kết quả lưu lại, mở sản phẩm là xem được chi tiết.</div>
     <div class="grp">Số sản phẩm tối đa: <input type="number" id="gn" min="1" max="100" value="${GM.n}"></div>
     <div class="grp"><label><input type="checkbox" id="gskip" ${GM.skipDone ? "checked" : ""}><span>Bỏ qua sản phẩm đã có điểm<small>Không tốn lượt Gemini cho sản phẩm đã đánh giá.</small></span></label>
+      <label><input type="checkbox" id="gfst" ${GM.fast ? "checked" : ""}><span>⚡ Chế độ nhanh<small>Dùng model lite, ít suy nghĩ: mỗi sản phẩm chỉ vài giây thay vì 10 đến 30 giây. Nhận xét có thể ngắn hơn một chút.</small></span></label>
       <label><input type="checkbox" id="gsrch" ${GM.search ? "checked" : ""}><span>Tra cứu web<small>Chậm hơn và tốn hạn mức hơn; có thể chạm giới hạn gói miễn phí.</small></span></label></div>
-    <p>Sẽ đánh giá <b>${tg.length}</b> sản phẩm, ước tính khoảng <b>${mins}</b> phút. Gói Gemini miễn phí có giới hạn lượt mỗi phút; app tự chờ rồi thử lại, và tự dừng nếu lỗi liên tiếp.</p>${last}${err}
+    <p>Sẽ đánh giá <b>${tg.length}</b> sản phẩm, 3 sản phẩm cùng lúc, ước tính khoảng <b>${mins}</b> phút. Gói Gemini miễn phí có giới hạn lượt mỗi phút; app tự chờ rồi thử lại, và tự dừng nếu lỗi liên tiếp.</p>${last}${err}
     <div class="mfoot"><button class="btn" id="mclose">Đóng</button><button class="gembtn" id="mgo" ${tg.length ? "" : "disabled"}>Bắt đầu</button></div></div>`;
   $("#gn").onchange = e => { GM.n = Math.max(1, Math.min(100, +e.target.value || 20)); renderGemModal(); };
   $("#gskip").onchange = e => { GM.skipDone = e.target.checked; renderGemModal(); };
   $("#gsrch").onchange = e => { GM.search = e.target.checked; };
+  $("#gfst").onchange = e => { GM.fast = e.target.checked; renderGemModal(); };
   $("#mclose").onclick = closeGem; $("#mgo").onclick = startGem;
 }
 async function startGem() {
   const items = gemItems(); if (!items.length) return;
-  const d = await (await fetch("/api/gemini-batch/start", {method: "POST", body: JSON.stringify({items, search: GM.search})})).json();
+  const d = await (await fetch("/api/gemini-batch/start", {method: "POST", body: JSON.stringify({items, search: GM.search, fast: GM.fast})})).json();
   if (d.error) { alert(d.error); return; }
   GJOB = d.job; pollGem(); updGemBtn(); renderGemModal();
 }

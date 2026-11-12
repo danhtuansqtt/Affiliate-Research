@@ -12,6 +12,7 @@ import re
 import subprocess
 import sys
 import threading
+from concurrent.futures import ThreadPoolExecutor
 import time
 import socket
 import webbrowser
@@ -137,7 +138,10 @@ def track_view(product, domain):
 EVAL_LOCK = threading.Lock()
 
 
-def gemini_eval(eid, row, search, force, name="", domain=""):
+CFG_LOCK = threading.Lock()
+
+
+def gemini_eval(eid, row, search, force, name="", domain="", fast=False):
     key = gemini.load_key(GKEY)
     if not key:
         raise RuntimeError("Chưa có khóa Gemini.")
@@ -146,11 +150,14 @@ def gemini_eval(eid, row, search, force, name="", domain=""):
         return evals[eid]
     cfg = load_json(CONFIG, {})
     # Dùng lại model đã chạy tốt (trong 24 giờ); quá hạn thì thử lại từ model mới nhất
-    preferred = cfg.get("gemini_model") if time.time() - cfg.get("gemini_model_ts", 0) < 86400 else None
+    mk_, ts_ = ("gemini_model_fast", "gemini_model_fast_ts") if fast else ("gemini_model", "gemini_model_ts")  # mỗi chế độ nhớ model riêng
+    preferred = cfg.get(mk_) if time.time() - cfg.get(ts_, 0) < 86400 else None
     mk = market.collect(name or eid, domain)  # Google Trends 90 ngày + link Trustpilot (không đo được thì ghi rõ là thiếu dữ liệu)
-    res = gemini.evaluate_auto(key, preferred, row, search, mk)  # model treo/quá tải/không còn thì tự thử model khác
-    cfg["gemini_model"], cfg["gemini_model_ts"] = res["model"], time.time()
-    save_json(CONFIG, cfg)
+    res = gemini.evaluate_auto(key, preferred, row, search, mk, fast=fast)  # model treo/quá tải/không còn thì tự thử model khác
+    with CFG_LOCK:
+        cfg = load_json(CONFIG, {})
+        cfg[mk_], cfg[ts_] = res["model"], time.time()
+        save_json(CONFIG, cfg)
     res.update(at=gemini.now(), search=bool(search))
     with EVAL_LOCK:
         evals = load_json(EVALS, {})
@@ -171,41 +178,54 @@ def _wait(seconds):
         time.sleep(1)
 
 
-def batch_worker(items, search):
-    fails_in_row = 0
-    try:
-        for it in items:
-            if BATCH["stop"]:
-                break
-            BATCH["current"] = it["name"]
-            if it["id"] in load_json(EVALS, {}):  # đã có kết quả thì bỏ qua, không tốn lượt
+BATCH_WORKERS = 3  # số sản phẩm đánh giá cùng lúc
+
+
+def batch_worker(items, search, fast=False):
+    lock = threading.Lock()
+    state = {"fails_in_row": 0}
+
+    def one(it):
+        if BATCH["stop"]:
+            return
+        BATCH["current"] = it["name"]
+        if it["id"] in load_json(EVALS, {}):  # đã có kết quả thì bỏ qua, không tốn lượt
+            with lock:
                 BATCH["skipped"] += 1
                 BATCH["done"] += 1
-                continue
-            for attempt in (1, 2):
-                try:
-                    gemini_eval(it["id"], it["row"], search, False, it["name"], it["domain"])
+            return
+        for attempt in (1, 2):
+            try:
+                gemini_eval(it["id"], it["row"], search, False, it["name"], it["domain"], fast)
+                with lock:
                     BATCH["ok"] += 1
-                    fails_in_row = 0
-                    break
-                except Exception as e:  # noqa: BLE001
-                    msg = str(e)
-                    BATCH["last_error"] = msg[:200]
-                    if "không hợp lệ" in msg or "Chưa có khóa" in msg:  # sai khóa thì dừng cả lượt
-                        BATCH["error"], BATCH["stop"] = msg, True
-                        break
-                    if "Hết hạn mức" in msg and attempt == 1:  # chạm giới hạn lượt/phút: chờ 60 giây thử lại một lần
-                        BATCH["current"] = it["name"] + " (chờ hạn mức…)"
-                        _wait(60)
-                        continue
-                    BATCH["fail"] += 1
-                    fails_in_row += 1
-                    break
-            BATCH["done"] += 1
-            if fails_in_row >= 3:  # liên tục lỗi: dừng để không đốt hạn mức vô ích
-                BATCH["error"] = "Dừng vì 3 sản phẩm liên tiếp bị lỗi. Lỗi gần nhất: " + BATCH["last_error"]
+                    state["fails_in_row"] = 0
                 break
-            _wait(2)  # giãn cách để Google Trends và Gemini không chặn
+            except Exception as e:  # noqa: BLE001
+                msg = str(e)
+                with lock:
+                    BATCH["last_error"] = msg[:200]
+                if "không hợp lệ" in msg or "Chưa có khóa" in msg:  # sai khóa thì dừng cả lượt
+                    BATCH["error"], BATCH["stop"] = msg, True
+                    break
+                if "Hết hạn mức" in msg and attempt == 1:  # chạm giới hạn lượt/phút: chờ 60 giây thử lại một lần
+                    BATCH["current"] = it["name"] + " (chờ hạn mức…)"
+                    _wait(60)
+                    continue
+                with lock:
+                    BATCH["fail"] += 1
+                    state["fails_in_row"] += 1
+                break
+        with lock:
+            BATCH["done"] += 1
+            if state["fails_in_row"] >= 3 and not BATCH["error"]:  # liên tục lỗi: dừng để không đốt hạn mức vô ích
+                BATCH["error"] = "Dừng vì 3 sản phẩm liên tiếp bị lỗi. Lỗi gần nhất: " + BATCH["last_error"]
+                BATCH["stop"] = True
+        _wait(1)  # giãn cách nhẹ để Google Trends và Gemini không chặn
+
+    try:
+        with ThreadPoolExecutor(max_workers=BATCH_WORKERS) as ex:
+            list(ex.map(one, items))
     finally:
         BATCH["running"] = False
         BATCH["current"] = ""
@@ -347,7 +367,7 @@ class Handler(BaseHTTPRequestHandler):
                 if BATCH["running"]:
                     return self._send(200, json.dumps({"error": "Đang có lượt đánh giá chạy."}, ensure_ascii=False))
                 BATCH.update(running=True, done=0, total=len(items), current="", stop=False, ok=0, fail=0, skipped=0, error="", last_error="")
-                threading.Thread(target=batch_worker, args=(items, bool(body.get("search"))), daemon=True).start()
+                threading.Thread(target=batch_worker, args=(items, bool(body.get("search")), bool(body.get("fast"))), daemon=True).start()
             return self._send(200, json.dumps(batch_status(), ensure_ascii=False))
         if self.path == "/api/gemini-batch/stop":
             BATCH["stop"] = True
@@ -365,7 +385,7 @@ class Handler(BaseHTTPRequestHandler):
             try:
                 row = {str(k)[:80]: str(v)[:600] for k, v in (body.get("row") or {}).items()}
                 res = gemini_eval(str(body.get("id", ""))[:200], row, bool(body.get("search")), bool(body.get("force")),
-                                  str(body.get("name", ""))[:200], str(body.get("domain", ""))[:200])
+                                  str(body.get("name", ""))[:200], str(body.get("domain", ""))[:200], bool(body.get("fast")))
                 return self._send(200, json.dumps(res, ensure_ascii=False))
             except Exception as e:  # noqa: BLE001
                 return self._send(200, json.dumps({"error": str(e)[:300]}, ensure_ascii=False))

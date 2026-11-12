@@ -255,35 +255,58 @@ def _probe(key, model):
 
 
 def healthy_models(key, cands, limit=8):
-    """Kiểm tra song song các model, trả những model đang khỏe theo đúng thứ tự ưu tiên (mất tối đa khoảng 10 giây)."""
+    """Kiểm tra song song các model, trả những model đang khỏe theo đúng thứ tự ưu tiên. Dừng chờ ngay khi model ưu tiên cao
+    nhất đã khỏe và mọi model xếp trên nó đã có kết quả (không chờ các model đang treo hết 10 giây)."""
     cands = cands[:limit]
     if not cands:
         return []
-    with ThreadPoolExecutor(max_workers=len(cands)) as ex:
-        ok = list(ex.map(lambda m: _probe(key, m), cands))
-    return [m for m, good in zip(cands, ok) if good]
+    ex = ThreadPoolExecutor(max_workers=len(cands))
+    try:
+        futs = [ex.submit(_probe, key, m) for m in cands]
+        pending = set(futs)
+        while pending:
+            done_now = {f for f in pending if f.done()}
+            pending -= done_now
+            for i, f in enumerate(futs):  # model tốt nhất đã khỏe và không còn model nào xếp trên đang chờ?
+                if not f.done():
+                    break
+                if f.result():
+                    return [m for m, g in zip(cands, futs) if g.done() and g.result()]
+            else:
+                break  # tất cả đã xong mà không model nào khỏe
+            time.sleep(0.05)
+        return [m for m, f in zip(cands, futs) if f.done() and f.result()]
+    finally:
+        ex.shutdown(wait=False, cancel_futures=True)  # không chờ các yêu cầu probe còn treo
 
 
-def evaluate_auto(key, preferred, row, search=False, market=None, timeout_ms=60_000, max_real_attempts=3):
+def evaluate_auto(key, preferred, row, search=False, market=None, timeout_ms=60_000, max_real_attempts=3, fast=False):
     """Model Flash mới ra hay treo (504) hoặc quá tải (503). Thứ tự: model đã chạy tốt gần đây; nếu hỏng thì kiểm tra
-    nhanh song song mọi model và chỉ dùng model đang khỏe (mới nhất trước), thử tối đa vài model."""
+    nhanh song song mọi model và chỉ dùng model đang khỏe, thử tối đa vài model. Lỗi 503 thường chỉ là đợt tăng tải
+    ngắn nên thử lại cùng model một lần sau vài giây trước khi đổi model. Chế độ nhanh ưu tiên model lite (nhanh hơn nhiều)."""
     tried = []
 
     def attempt(model):
-        try:
-            return evaluate(key, model, row, search, market, timeout_ms)
-        except RuntimeError as e:
-            code = getattr(e, "code", 0)
-            if code not in RETRYABLE:
-                raise
-            tried.append(f"{model} ({code or 'lỗi kết nối'})")
-            return None
+        for n in (1, 2):
+            try:
+                return evaluate(key, model, row, search, market, timeout_ms, fast)
+            except RuntimeError as e:
+                code = getattr(e, "code", 0)
+                if code not in RETRYABLE:
+                    raise
+                if code == 503 and n == 1:
+                    time.sleep(4)
+                    continue
+                tried.append(f"{model} ({code or 'lỗi kết nối'})")
+                return None
 
     if preferred:
         res = attempt(preferred)
         if res:
             return res
     cands = [m for m in candidates(key) if m != preferred]
+    if fast:  # lite trước (mới nhất trước), rồi các model còn lại
+        cands = [m for m in cands if "lite" in m] + [m for m in cands if "lite" not in m]
     for model in healthy_models(key, cands)[:max_real_attempts]:
         res = attempt(model)
         if res:
@@ -306,7 +329,7 @@ def _market_text(market):
     return "\n".join(lines)
 
 
-def evaluate(key, model, row, search=False, market=None, timeout_ms=None):
+def evaluate(key, model, row, search=False, market=None, timeout_ms=None, fast=False):
     """row: {tên_cột: giá_trị}; market: kết quả market.collect(). Trả {'text','model','sources','score' (0-100),'tier','scale':100}."""
     lines = [f"- {k}: {str(v)[:600]}" for k, v in row.items() if str(v).strip() not in ("", "-")]
     prompt = ("Hãy đánh giá sản phẩm Affiliate sau cho chiến dịch Google Ads Search.\n<du_lieu_san_pham>\n"
@@ -319,7 +342,17 @@ def evaluate(key, model, row, search=False, market=None, timeout_ms=None):
                                           response_mime_type="application/json", response_schema=KetQuaDanhGiaAffiliate)
     client = _client(key, timeout_ms)  # giữ biến: Client tạm bị dọn thì kết nối đóng giữa chừng
     try:
-        resp = client.models.generate_content(model=model, contents=prompt, config=cfg)
+        if fast:  # chế độ nhanh: giảm mức suy nghĩ; model không nhận thì gọi lại như thường
+            try:
+                cfg.thinking_config = types.ThinkingConfig(thinking_level="low")
+                resp = client.models.generate_content(model=model, contents=prompt, config=cfg)
+            except errors.APIError as e:
+                if getattr(e, "code", 0) != 400:
+                    raise
+                cfg.thinking_config = None
+                resp = client.models.generate_content(model=model, contents=prompt, config=cfg)
+        else:
+            resp = client.models.generate_content(model=model, contents=prompt, config=cfg)
     except errors.APIError as e:
         raise _friendly(e) from None
     except Exception as e:  # noqa: BLE001  (hết thời gian chờ, mất mạng...)
@@ -331,7 +364,7 @@ def evaluate(key, model, row, search=False, market=None, timeout_ms=None):
     if not cands:
         why = getattr(getattr(resp, "prompt_feedback", None), "block_reason", None) or "không rõ lý do"
         raise RuntimeError(f"Gemini không trả kết quả ({why}).")
-    out = {"model": model, "sources": []}
+    out = {"model": model, "sources": [], "fast": bool(fast)}
     parsed = resp.parsed if not search else None
     turl = ((market or {}).get("trends") or {}).get("url", "")
     tf = (market or {}).get("traffic") or {}
