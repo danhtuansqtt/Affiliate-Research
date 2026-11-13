@@ -1,40 +1,18 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 12/11/2026: hôm nay có 3 chương trình đạt là Zaraftis (zaraftis.com), Clutvi (clutvi.com) và LinkBunny (getlinkbunny.com).
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 13/11/2026: hôm nay có 1 chương trình đạt là Modellix (modellix.ai).
 
-Em rà 46 domain từ Uneed, thư mục Klibon, Open Launch, TinyLaunch và BetaList, bỏ 11 domain đã xét trước đó, đào sâu 24 ứng viên. Cả 3 chương trình đều chạy trên Klibon: điều khoản chung của Klibon chỉ cấm bid thương hiệu khi chương trình cấm, và merchant được đổi luật bất kỳ lúc nào, nên anh mở lại trang Klibon (mục Promotion rules) trước khi bid brand.
+Em rà 66 ứng viên mới từ Klibon, Affonso Marketplace, Uneed, Open Launch, TinyLaunch và PeerPush, bỏ 9 domain đã xét trước đó.
 
-<b>Zaraftis (zaraftis.com)</b>
-• Tính năng: Theo dõi thương hiệu trên ChatGPT, Gemini, Copilot, AI Mode, Claude, so với đối thủ và chỉ ra nguồn AI trích dẫn, cho marketer/agency
-• Giá bán: Trial 7 ngày; Starter $49/tháng; Growth $129/tháng; Scale $279/tháng (chính chủ)
-• Hoa hồng affiliate: 20% recurring 12 tháng (mạng affiliate)
-• Google Ads: Không Cấm (Klibon chỉ cấm bid brand khi chương trình cấm; trang Klibon của Zaraftis không có Promotion rules)
-• Năm ra đời: 05/2026
-• Cookie: 60 ngày
-• Độ đầy đủ: 6/6
+<b>Modellix (modellix.ai)</b>
+• Tính năng: Một API key gọi hơn 170 model tạo ảnh, video, giọng nói và LLM, cho developer và creator
+• Giá bán: Pay-as-you-go nạp trước, không thuê bao; ảnh từ $0.0054/ảnh; text-to-video từ $0.02/giây; text-to-speech từ $12.125/1M ký tự (chính chủ)
+• Hoa hồng affiliate: 20% recurring mọi lần nạp, thời hạn chỉ xem sau khi đăng ký (Tolt: https://modellix.tolt.io/) (mạng affiliate)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; cổng Tolt để trống terms_url, cấu hình Tolt không chặn nền tảng ads hay từ khóa nào)
+• Năm ra đời: 04/2026
+• Cookie: 30 ngày (mạng affiliate: cấu hình Tolt)
+• Độ đầy đủ: 5/6
 
-Duyệt tự động, có link ngay; giữ hoa hồng 20 ngày, rút từ $50 hằng tháng. Trả năm còn $41/$108/$233 mỗi tháng. Rủi ro: ngách AI visibility đã đông (Citevant báo cáo hôm qua), và site có cookie riêng zaraftis_ref 30 ngày khác với 60 ngày của Klibon.
+Sản phẩm của Aurora Mobile (NASDAQ: JG), ra mắt chính thức 09/04/2026; chương trình Tolt mới tạo 15/10/2026, rút từ $20 qua PayPal, partner ở VN phải KYC. Thiếu Google Ads: chương trình chưa có văn bản điều khoản nào về brand bidding hay PPC, anh nên email support@modellix.ai hỏi có được bid từ khóa "Modellix" không trước khi chi ngân sách. Rủi ro: con số 20% lấy từ cấu hình công khai của cổng Tolt ("Earn 20% on all paid customers", chưa có văn bản điều khoản), thời hạn recurring chỉ xem sau khi đăng ký; khách là developer nạp theo lượt nên giá trị mỗi khách khó đoán, traffic không công bố.
 
-<b>Clutvi (clutvi.com)</b>
-• Tính năng: Chấm điểm ý tưởng video TikTok/Reels trên thang 100 trước khi quay, kèm 10 công cụ AI viết caption, CTA, kế hoạch đăng, cho creator ở UK
-• Giá bán: Trial 3 ngày; Gói tháng £9.99/tháng; Gói năm £79/năm (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời (mạng affiliate)
-• Google Ads: Không Cấm (Klibon chỉ cấm bid brand khi chương trình cấm; trang Klibon của Clutvi không có Promotion rules)
-• Năm ra đời: 07/2026
-• Cookie: 60 ngày
-• Độ đầy đủ: 6/6
+Loại 65: 11 cấm bid thương hiệu (KaiCalls, SceneMixer, SEOmatic, Yotei, Blumeo, Krumzi, Fast Digital Product, Zipic, Cozy Watch, Threat Road, WAppoint); 19 không phải AI tool (TubeArchiver, Supastack, Phare, Writizzy, Uneed…); 2 không phải mô hình affiliate (Ofox AI rev-share API, AEO Engine phí agency $1,500); 4 không mới (Wiro, MarketOwl, AI Undetectable, FlowPrompter); 28 không có chương trình affiliate (Get MCP Ads, Kling4Pro, Zambo, MusicGenerate…); 1 không đủ dữ liệu (NoCrash, site không mở được từ mạng cloud).
 
-Phải nộp đơn và nêu kênh quảng bá; giữ hoa hồng 30 ngày, rút từ £50. Mỗi khách gói tháng chỉ được khoảng £3/tháng. Rủi ro: sản phẩm rất nhỏ và chỉ nhắm creator ở UK (giá bằng £), nên ads ngoài UK có thể chuyển đổi kém.
-
-<b>LinkBunny (getlinkbunny.com)</b>
-• Tính năng: Marketplace đổi backlink nofollow do coding agent của người dùng (Claude Code, Codex) vận hành qua Skill và MCP
-• Giá bán: Free lần trao đổi đầu (1 site); Founding $20/tháng; Founding $210/năm (chính chủ)
-• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
-• Google Ads: Không Cấm (trang affiliate chính chủ: "no additional coupon or brand-search restrictions")
-• Năm ra đời: 09/2026
-• Cookie: 60 ngày
-• Độ đầy đủ: 6/6
-
-Duyệt thủ công; giữ hoa hồng 30 ngày, rút từ $50, mỗi khách khoảng $6/tháng. Rủi ro "gần AI": lõi sản phẩm là mạng trao đổi backlink, AI chỉ là agent của khách, nên đây không hẳn là AI tool; ads không được hứa tăng thứ hạng hay DR (terms cấm).
-
-Không chọn: <b>DistroChef (distrochef.com)</b> đủ điều kiện nhưng hoa hồng chỉ trả một lần, khoảng $3-6 mỗi đơn, rút từ $100. Loại 20: CiteWing gần như bản sao Citevant; 5 cấm bid thương hiệu (ShipDocs, CV Ajuste, Phoenix Upscaler, IndexCyborg, Supadrop); 6 không có chương trình affiliate (Verbo, Holp, SpeedUp AI, Vitri, QuietSpeech, Kareops AI); 6 không phải AI tool (FactStable, OnyxMetric, Monytra, Wafler, Globie, Folicle); Lunary chỉ nhận creator mạng xã hội; FAII chỉ có white-label.
-
-Em đã lưu 24 dòng vào lịch sử.
+Em đã lưu 66 dòng vào lịch sử.
