@@ -1,22 +1,23 @@
-Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 13/11/2026: em rà khoảng 95 tên/domain (khoảng 60 đã có trong lịch sử nên bỏ qua), còn 32 ứng viên mới, chọn được 1 chương trình và loại 31.
+Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 14/11/2026: em rà khoảng 75 tên/domain (khoảng 45 đã có trong lịch sử nên bỏ qua), còn 32 ứng viên mới, chọn được 1 chương trình và loại 31.
 
-<b>MindVest (mind-vest.io)</b>
-• Tính năng: AI theo dõi thị trường, chạy kế hoạch và tự giao dịch qua broker người dùng (Atlas), kèm app tự dựng công cụ tài chính, cho nhà đầu tư cá nhân
-• Giá bán: Free $0/tháng (50 requests, 10 alerts); Pro $29.99/tháng; Premium $49.99/tháng; Max $99.99/tháng (chính chủ)
-• Hoa hồng affiliate: 30% recurring, thời hạn chỉ xem sau khi đăng ký (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (Terms mục 9 chỉ cấm fraud, spam, misleading promotion)
-• Năm ra đời: 09/2025 (chính chủ)
-• Cookie: chỉ xem sau khi đăng ký (Affiliate Dashboard: https://www.mind-vest.io/affiliate/dashboard)
-• Độ đầy đủ: 4/6
+<b>Tradecovex (tradecovex.com)</b>
+• Tính năng: Sao chép lệnh NinjaTrader sang nhiều tài khoản kèm nhật ký giao dịch AI, cho trader futures và prop firm
+• Giá bán: Free $0/tháng (chỉ copier, tối đa 40 tài khoản); Starter $9/tháng; Pro $19/tháng; Elite $29/tháng (chính chủ)
+• Hoa hồng affiliate: $9/khách Starter; $19/khách Pro; $29/khách Elite, trả một lần (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không có câu nào về brand bidding/PPC trên trang affiliate, Terms và cổng Lemon Squeezy)
+• Năm ra đời: 2026 (chính chủ)
+• Cookie: 30 ngày (mặc định Lemon Squeezy)
+• Độ đầy đủ: 5/6
 
-Còn thiếu 2 ô: Google Ads (Terms không nhắc PPC hay brand bidding, anh nên email accesspoint@finmanagerai.com hỏi có được bid từ khóa "MindVest"/"Atlas" không, hoặc đọc điều khoản trong Affiliate Dashboard sau khi đăng ký) và Cookie (anh đăng ký tại https://www.mind-vest.io/affiliate/dashboard rồi xem số ngày cookie cùng thời hạn recurring). Em chọn MindVest vì sản phẩm ra mắt 2025 (Product Hunt 08/09/2025, LinkedIn ghi Founded 2025), bán cho nhà đầu tư cá nhân và có affiliate công khai tự vận hành, trả tự động qua Stripe Connect; ngưỡng rút, lịch trả và traffic không công bố.
+Còn thiếu 1 ô: Google Ads. Lemon Squeezy đòi duyệt trước hoạt động marketing theo "Rules of Engagement" chỉ gửi sau khi đăng ký, nên sau khi được duyệt anh email support@tradecovex.com hỏi có được bid từ khóa "Tradecovex" trên Google Ads không rồi mới chi ngân sách. Lưu ý giá: scout ghi $20/tháng nhưng đó là giá dịch vụ đối tác Liquivue trên trang chủ, giá thật là Free/$9/$19/$29 mỗi tháng (gói năm $84/$168/$252). Em chọn vì sản phẩm ra mắt 2026 (LinkedIn Founded 2026, Terms 04/2026), affiliate mở công khai qua Lemon Squeezy, duyệt tay; hoa hồng chỉ trả khi khách chuyển từ trial 14 ngày sang tháng trả phí đầu tiên, ngưỡng rút $50, NET30; traffic không công bố.
 
-Rủi ro pháp lý: Terms ghi MindVest không phải cố vấn đầu tư hay broker-dealer đã đăng ký, quảng cáo phải ghi rõ có nhận hoa hồng và không được hứa lợi nhuận hay kết quả giao dịch. Atlas có auto trading qua broker nên Google Ads xếp vào nhóm dịch vụ tài chính, có thể cần chứng nhận Financial services tùy quốc gia anh nhắm tới. Chữ "spam, misleading promotion" khá chung chung, hãng có thể áp vào brand bidding và được quyền đổi hoặc dừng chương trình bất cứ lúc nào.
+Pháp lý: site có công bố rủi ro CFTC Rule 4.41 và ghi rõ IVAAN INC không phải cố vấn đầu tư đã đăng ký (OSC/CIRO/SEC), nên quảng cáo không được hứa lợi nhuận hay kết quả giao dịch.
 
 Ứng viên bị loại (31):
-Sản phẩm có trước 2025 (12): <b>EarningsWatcher</b> (2023, còn cấm bid thương hiệu), <b>Refillarena</b>, <b>Coinstancy</b>, <b>Nectaro</b>, <b>Prosperr.io</b>, <b>Dispute Beast</b>, <b>SpendLight</b>, <b>BudgetBloom</b>, <b>Budg</b>, <b>Balance</b>, <b>LemFi</b>, <b>Taxfyle</b>.
-Mới nhưng không có affiliate (9): <b>8udget</b>, <b>BudgetHub</b>, <b>Budgetist</b>, <b>FinVise AI</b>, <b>Allocate</b>, <b>Pipta</b>, <b>Spentify</b>, <b>Lulo</b> (chỉ có referral cho user), <b>FamBudget</b> (chỉ có repo GitHub).
-Không phù hợp (2): <b>Accountable Advisor</b> (B2B cho RIA), <b>Moneko</b> (công cụ HR, không phải tài chính).
-Thiếu dữ liệu (8): <b>TradersQuant</b>, <b>FinStocks AI</b>, <b>StockSignal.io</b>, <b>Tyger AI</b>, <b>MyFinances</b>, <b>Wayspend</b>, <b>LumaCredit</b> (trang render bằng JS hoặc không mở được), <b>X-QUO</b> (domain chỉ là trang chờ).
+Cấm bid thương hiệu (3): <b>Cheers (cheers.credit)</b> (FlexOffers cấm bid từ khóa thương hiệu, điều khoản Impact chỉ xem sau khi đăng ký; ngoài ra trang chủ đang tạm dừng nhận khoản vay mới), <b>StockIntent</b>, <b>Deblock</b> (cấm PPC/Google Ads, chương trình đang tạm dừng).
+Sản phẩm có trước 2025 (5): <b>SensaMarket</b>, <b>LuxAlgo</b>, <b>PropEdge Trading</b>, <b>Onuu</b>, <b>Sumeria</b>.
+Mới nhưng không có affiliate (20): <b>Journali</b> (affiliate "Coming Soon"), <b>TakeJournal</b>, <b>Afterly Vault</b>, <b>Cash Flow Calendar</b>, <b>Figmetric</b>, <b>Lunda</b>, <b>Nimblewit</b>, <b>Zenith Flow</b>, <b>StockRip</b>, <b>Pure Prophet</b>, <b>Orus</b>, <b>Beanvest</b>, <b>Subscriptrack</b>, <b>Gyro Autopilot</b>, <b>Mindspend</b>, <b>employkids</b>, <b>Scout Program</b>, <b>Walme</b>, <b>Monifi</b>, <b>KOSH Money</b>.
+Chưa ra mắt (1): <b>Parroli</b> (mới có waitlist).
+Thiếu dữ liệu (2): <b>SubSplitHQ</b> (trang chủ trả 403), <b>Confluence Checklist Coach</b> (chưa có domain riêng).
 
 Em đã lưu 32 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md.
