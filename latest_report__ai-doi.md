@@ -1,18 +1,42 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 13/11/2026: hôm nay có 1 chương trình đạt là Modellix (modellix.ai).
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 14/11/2026: hôm nay em chọn 3 chương trình là ScreenMake, MemoTune và Sales Montana.
 
-Em rà 66 ứng viên mới từ Klibon, Affonso Marketplace, Uneed, Open Launch, TinyLaunch và PeerPush, bỏ 9 domain đã xét trước đó.
+Em rà 121 ứng viên mới từ Affonso Marketplace, Dub Marketplace, Klibon, TinyLaunch và WebSearch, bỏ 7 domain đã xét trước đó. 11 ứng viên qua vòng đầu, sau khi soát điều khoản còn 10 đạt.
 
-<b>Modellix (modellix.ai)</b>
-• Tính năng: Một API key gọi hơn 170 model tạo ảnh, video, giọng nói và LLM, cho developer và creator
-• Giá bán: Pay-as-you-go nạp trước, không thuê bao; ảnh từ $0.0054/ảnh; text-to-video từ $0.02/giây; text-to-speech từ $12.125/1M ký tự (chính chủ)
-• Hoa hồng affiliate: 20% recurring mọi lần nạp, thời hạn chỉ xem sau khi đăng ký (Tolt: https://modellix.tolt.io/) (mạng affiliate)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; cổng Tolt để trống terms_url, cấu hình Tolt không chặn nền tảng ads hay từ khóa nào)
-• Năm ra đời: 04/2026
-• Cookie: 30 ngày (mạng affiliate: cấu hình Tolt)
-• Độ đầy đủ: 5/6
+<b>ScreenMake (screenmake.com)</b>
+• Tính năng: Thiết kế ảnh chụp App Store/Google Play bằng AI, dịch 39 ngôn ngữ, đăng thẳng lên App Store Connect, cho dev app
+• Giá bán: Free (xuất có watermark); Pro $19/tháng hoặc $204/năm; Studio $69/tháng hoặc $708/năm (chính chủ)
+• Hoa hồng affiliate: 30% recurring 12 tháng, lên 40% sau 25 khách trả tiền (chính chủ)
+• Google Ads: Không Cấm (partner terms chỉ cấm spam và nói sai về tính năng/giá)
+• Năm ra đời: 09/2026
+• Cookie: 60 ngày (chính chủ)
+• Độ đầy đủ: 6/6
 
-Sản phẩm của Aurora Mobile (NASDAQ: JG), ra mắt chính thức 09/04/2026; chương trình Tolt mới tạo 15/10/2026, rút từ $20 qua PayPal, partner ở VN phải KYC. Thiếu Google Ads: chương trình chưa có văn bản điều khoản nào về brand bidding hay PPC, anh nên email support@modellix.ai hỏi có được bid từ khóa "Modellix" không trước khi chi ngân sách. Rủi ro: con số 20% lấy từ cấu hình công khai của cổng Tolt ("Earn 20% on all paid customers", chưa có văn bản điều khoản), thời hạn recurring chỉ xem sau khi đăng ký; khách là developer nạp theo lượt nên giá trị mỗi khách khó đoán, traffic không công bố.
+Chọn vì đã đọc đủ terms riêng của chương trình, không có câu nào về PPC hay bid thương hiệu. Cần duyệt tay; giữ 30 ngày, trả hằng tháng qua PayPal/Wise từ $50; khách được giảm 20% lần đầu. Traffic không công bố.
 
-Loại 65: 11 cấm bid thương hiệu (KaiCalls, SceneMixer, SEOmatic, Yotei, Blumeo, Krumzi, Fast Digital Product, Zipic, Cozy Watch, Threat Road, WAppoint); 19 không phải AI tool (TubeArchiver, Supastack, Phare, Writizzy, Uneed…); 2 không phải mô hình affiliate (Ofox AI rev-share API, AEO Engine phí agency $1,500); 4 không mới (Wiro, MarketOwl, AI Undetectable, FlowPrompter); 28 không có chương trình affiliate (Get MCP Ads, Kling4Pro, Zambo, MusicGenerate…); 1 không đủ dữ liệu (NoCrash, site không mở được từ mạng cloud).
+<b>MemoTune (memotune.com)</b>
+• Tính năng: Tạo bài hát AI có vocal hoặc nhạc không lời từ prompt, lời, câu chuyện, ảnh, kèm video nhạc AI, cho creator
+• Giá bán: Basic $9.9/tháng; Creator $19.9/tháng; Premium $39.9/tháng; Ultra $119.9/tháng (chính chủ)
+• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
+• Google Ads: Không Cấm (FAQ: "Google Ads and Facebook Ads promotion is allowed"; không nhắc bid thương hiệu)
+• Năm ra đời: 12/2025
+• Cookie: 60 ngày (chính chủ, last-click)
+• Độ đầy đủ: 6/6
 
-Em đã lưu 66 dòng vào lịch sử.
+Đây là chương trình duy nhất ghi rõ cho chạy Google Ads, chỉ cấm mạo danh MemoTune; việc bid đúng từ khóa "MemoTune" không được nhắc. Theo dõi qua Affonso, giữ 30 ngày, trả PayPal từ $50 vào ngày 1. Domain đăng ký mới 12/2025 (chứng chỉ từ 2023 là của chủ cũ).
+
+<b>Sales Montana (salesmontana.com)</b>
+• Tính năng: Power dialer kèm CRM cho đội sales B2B, có AI head of sales tìm lead, chấm điểm cuộc gọi và viết brief cho rep
+• Giá bán: Trial 7 ngày 100 credits; Solo $49.99/tháng; Team $99/tháng; Organization $297/tháng (chính chủ)
+• Hoa hồng affiliate: 20% recurring trọn đời (chính chủ)
+• Google Ads: Không Cấm (trang affiliate chỉ có 4 luật: first link wins, 1 lần/workspace, chỉ signup mới, cấm tự giới thiệu)
+• Năm ra đời: 08/2026
+• Cookie: 60 ngày (chính chủ, first-click)
+• Độ đầy đủ: 6/6
+
+Hoa hồng trọn đời trên gói giá cao. Cảnh báo: link quảng cáo phải trỏ app.salesmontana.com/start?ref=… mới ghi nhận referral, link về site marketing kèm mã không được tính. Payout trả tay, không công bố ngưỡng rút; terms trong trang Referrals của app em chưa xem.
+
+Còn lại đạt nhưng chưa chọn lần này: SnapVibr (50% trọn đời), AutoContent.Live (30% 12 tháng), Tracck (30% 12 tháng, cookie không công bố), Ember (30% 36 tháng), Poko Motion (10% trọn đời), Posteady (30% trọn đời), OutX (20% trọn đời, cookie không công bố, paid ads phải dùng creative được duyệt). Google Ads chưa xác minh ở SnapVibr, AutoContent.Live, Ember, Poko Motion, Posteady.
+
+Loại 111: 26 cấm bid thương hiệu (Polar, Run My Social, Leadsets, Narva, KDPTop, Refract…; riêng Polar cấm bid "Polar"/"Polar Browser" trong Program Terms); 36 không phải AI tool (CatProxies, Superpower, Wanderly…); 33 không mới (Buffer, Chatbase, Framer…); 5 không có chương trình; 5 không phải mô hình affiliate; 3 thiếu dữ liệu; 2 chưa xác minh ngày ra mắt; 1 chương trình đã đóng (Instafill).
+
+Em đã lưu 121 dòng vào lịch sử.
