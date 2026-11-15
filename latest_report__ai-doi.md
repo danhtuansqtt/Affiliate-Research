@@ -1,42 +1,42 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 14/11/2026: hôm nay em chọn 3 chương trình là ScreenMake, MemoTune và Sales Montana.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 15/11/2026: hôm nay em chọn 3 chương trình là FixAEO, AIclicks và Dageno AI, cả 3 đều chưa xác minh được cột Google Ads.
 
-Em rà 121 ứng viên mới từ Affonso Marketplace, Dub Marketplace, Klibon, TinyLaunch và WebSearch, bỏ 7 domain đã xét trước đó. 11 ứng viên qua vòng đầu, sau khi soát điều khoản còn 10 đạt.
+Em rà 51 domain từ Product Hunt tuần 46, BetaList, revshare.so, zplatform.ai, stork.ai và WebSearch, bỏ 41 domain đã xét trước đó. Còn 10 ứng viên mới, 4 qua vòng đầu (cùng ngách theo dõi thương hiệu trên AI search/GEO), soát điều khoản không có cái nào bị cấm.
 
-<b>ScreenMake (screenmake.com)</b>
-• Tính năng: Thiết kế ảnh chụp App Store/Google Play bằng AI, dịch 39 ngôn ngữ, đăng thẳng lên App Store Connect, cho dev app
-• Giá bán: Free (xuất có watermark); Pro $19/tháng hoặc $204/năm; Studio $69/tháng hoặc $708/năm (chính chủ)
-• Hoa hồng affiliate: 30% recurring 12 tháng, lên 40% sau 25 khách trả tiền (chính chủ)
-• Google Ads: Không Cấm (partner terms chỉ cấm spam và nói sai về tính năng/giá)
-• Năm ra đời: 09/2026
+<b>FixAEO (fixaeo.com)</b>
+• Tính năng: Theo dõi thương hiệu trong câu trả lời ChatGPT, Gemini, Perplexity, AI Overviews, kèm agent AI soạn nội dung khắc phục, cho brand và agency
+• Giá bán: Trial 3 ngày (cần thẻ); Lite $29/tháng hoặc $300/năm; Growth $79/tháng hoặc $815/năm; Enterprise báo giá (chính chủ)
+• Hoa hồng affiliate: 25% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; trang affiliate và ToS không nhắc PPC hay bid thương hiệu)
+• Năm ra đời: 05/2026
 • Cookie: 60 ngày (chính chủ)
-• Độ đầy đủ: 6/6
+• Độ đầy đủ: 5/6
 
-Chọn vì đã đọc đủ terms riêng của chương trình, không có câu nào về PPC hay bid thương hiệu. Cần duyệt tay; giữ 30 ngày, trả hằng tháng qua PayPal/Wise từ $50; khách được giảm 20% lần đầu. Traffic không công bố.
+Chọn vì mới nhất (changelog sớm nhất 22/05/2026) và hoa hồng trọn đời. Duyệt hồ sơ nhanh, cấm tự giới thiệu, rút từ $100 qua PayPal/chuyển khoản. Thiếu Google Ads: không có Program Terms riêng, anh hỏi thẳng FixAEO khi điền form "Become an affiliate" xem có được chạy Google Ads và bid từ khóa "FixAEO" không.
 
-<b>MemoTune (memotune.com)</b>
-• Tính năng: Tạo bài hát AI có vocal hoặc nhạc không lời từ prompt, lời, câu chuyện, ảnh, kèm video nhạc AI, cho creator
-• Giá bán: Basic $9.9/tháng; Creator $19.9/tháng; Premium $39.9/tháng; Ultra $119.9/tháng (chính chủ)
-• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
-• Google Ads: Không Cấm (FAQ: "Google Ads and Facebook Ads promotion is allowed"; không nhắc bid thương hiệu)
-• Năm ra đời: 12/2025
-• Cookie: 60 ngày (chính chủ, last-click)
-• Độ đầy đủ: 6/6
+<b>AIclicks (aiclicks.io)</b>
+• Tính năng: Nền tảng GEO theo dõi thương hiệu trên 10+ nền tảng AI, phân tích nguồn trích dẫn, kèm agent viết bài tối ưu, cho brand và agency
+• Giá bán: Trial 3 ngày; Starter $59/tháng; Pro $189/tháng; Business $499/tháng; Enterprise báo giá (chính chủ)
+• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (mạng cloud bị chặn — cần đọc lại https://aiclicks.getrewardful.com/terms)
+• Năm ra đời: 10/2025
+• Cookie: 60 ngày (chính chủ)
+• Độ đầy đủ: 5/6
 
-Đây là chương trình duy nhất ghi rõ cho chạy Google Ads, chỉ cấm mạo danh MemoTune; việc bid đúng từ khóa "MemoTune" không được nhắc. Theo dõi qua Affonso, giữ 30 ngày, trả PayPal từ $50 vào ngày 1. Domain đăng ký mới 12/2025 (chứng chỉ từ 2023 là của chủ cũ).
+Giá gói cao nhất trong 3 cái, chạy trên Rewardful, duyệt trong 48 giờ, giữ 30 ngày, trả hằng tháng từ $100. Cookie trang ghi lệch 60/90 ngày, em chốt 60. Thiếu Google Ads: anh phải tự mở trang terms Rewardful ở trên bằng trình duyệt thật trước khi chi tiền ads. Rủi ro cao hơn 2 cái kia vì AIclicks tự bán dịch vụ ChatGPT Ads, khả năng cấm bid "AIclicks" không thấp.
 
-<b>Sales Montana (salesmontana.com)</b>
-• Tính năng: Power dialer kèm CRM cho đội sales B2B, có AI head of sales tìm lead, chấm điểm cuộc gọi và viết brief cho rep
-• Giá bán: Trial 7 ngày 100 credits; Solo $49.99/tháng; Team $99/tháng; Organization $297/tháng (chính chủ)
-• Hoa hồng affiliate: 20% recurring trọn đời (chính chủ)
-• Google Ads: Không Cấm (trang affiliate chỉ có 4 luật: first link wins, 1 lần/workspace, chỉ signup mới, cấm tự giới thiệu)
-• Năm ra đời: 08/2026
-• Cookie: 60 ngày (chính chủ, first-click)
-• Độ đầy đủ: 6/6
+<b>Dageno AI (dageno.ai)</b>
+• Tính năng: Nền tảng AEO/GEO theo dõi thương hiệu, đối thủ, trích dẫn trong câu trả lời AI search, cho đội marketing/SEO và agency
+• Giá bán: Free (kiểm tra thương hiệu); Starter $49/tháng (trial 7 ngày); Growth $199/tháng; Scale $410/tháng; Custom báo giá (chính chủ)
+• Hoa hồng affiliate: 30% lần thanh toán đầu + 10% recurring trọn đời khi gia hạn (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; đã tra trang affiliate, Terms of use và cổng affiliate.dageno.ai)
+• Năm ra đời: 03/2026
+• Cookie: không hết hạn (chính chủ)
+• Độ đầy đủ: 5/6
 
-Hoa hồng trọn đời trên gói giá cao. Cảnh báo: link quảng cáo phải trỏ app.salesmontana.com/start?ref=… mới ghi nhận referral, link về site marketing kèm mã không được tính. Payout trả tay, không công bố ngưỡng rút; terms trong trang Referrals của app em chưa xem.
+Link ref không hết hạn, mức gia hạn có thể lên tới 30% (điều kiện phải hỏi team). Rút từ $80 qua Alipay, ngân hàng, Stripe hoặc Wise; khách hủy trong 31 ngày không tính. Starter $49 đang kèm giá gạch $89, có thể là khuyến mãi. Thiếu Google Ads: ở bước "Talk to our team" anh hỏi luôn việc chạy Google Ads và bid từ khóa "Dageno".
 
-Còn lại đạt nhưng chưa chọn lần này: SnapVibr (50% trọn đời), AutoContent.Live (30% 12 tháng), Tracck (30% 12 tháng, cookie không công bố), Ember (30% 36 tháng), Poko Motion (10% trọn đời), Posteady (30% trọn đời), OutX (20% trọn đời, cookie không công bố, paid ads phải dùng creative được duyệt). Google Ads chưa xác minh ở SnapVibr, AutoContent.Live, Ember, Poko Motion, Posteady.
+Đạt nhưng chưa chọn: Airefs (getairefs.com), 30% recurring trọn đời, cookie không công bố, đăng ký qua form Tally không có terms quảng cáo.
 
-Loại 111: 26 cấm bid thương hiệu (Polar, Run My Social, Leadsets, Narva, KDPTop, Refract…; riêng Polar cấm bid "Polar"/"Polar Browser" trong Program Terms); 36 không phải AI tool (CatProxies, Superpower, Wanderly…); 33 không mới (Buffer, Chatbase, Framer…); 5 không có chương trình; 5 không phải mô hình affiliate; 3 thiếu dữ liệu; 2 chưa xác minh ngày ra mắt; 1 chương trình đã đóng (Instafill).
+Loại 6: Maxma, Clyper (không có chương trình affiliate); Templify, SEOcrawl AI, Storywizard.ai (ra mắt trước 2025); Videotto (chương trình theo lời mời, thiếu dữ liệu).
 
-Em đã lưu 121 dòng vào lịch sử.
+Em đã lưu 10 dòng vào lịch sử.
