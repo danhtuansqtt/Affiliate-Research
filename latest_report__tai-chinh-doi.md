@@ -1,19 +1,17 @@
-Em gửi anh báo cáo scout affiliate của đội agent, chủ đề Tài chính, hôm nay 15/11/2026: hôm nay không có chương trình nào đạt. Em rà 21 ứng viên mới (khoảng 60 domain khác tìm được đã có trong lịch sử nên bỏ qua) và loại cả 21.
+Anh ơi, đây là báo cáo của đội agent, chủ đề Tài chính, ngày 16/11/2026: hôm nay <b>không có chương trình nào đạt</b>. Em đã rà khoảng 260 domain, bỏ khoảng 70 domain đã có trong lịch sử và các trang không thuộc lĩnh vực tài chính, còn 48 ứng viên để xét kỹ, cuối cùng loại cả 48.
 
-Hướng đã tìm: WebSearch tiếng Anh, Việt, Tây Ban Nha cho các thị trường Mỹ, Mỹ Latinh, UAE/Saudi, Đông Nam Á, Việt Nam; thư mục Affonso (finance, crypto-trading, accounting), AffiliateRoll (finance-fintech, newest), Referly marketplace; Product Hunt 11/2026 qua hunted.space, Show HN; tin báo chí (FF News, Fintel Connect, GlobeNewswire). Em chạy find_affiliate_page.py trên 16 domain. Các thương hiệu lớn trong thư mục (Chime, SoFi, Revolut, Wise, eToro, Acorns...) không xét vì ra mắt trước 2025.
+Hướng đã tìm (khác lượt 15/11 vốn chủ yếu dùng Product Hunt và Show HN): danh mục Personal Finance, FinTech, Finance trên PeerPush (116 sản phẩm), Partnero List mục Financial Management, Dub Marketplace mục FinTech và Consumer, các tag stockmarket, finance, trading, crypto, investing trên AffiliList, tin gọi vốn và ra mắt fintech 2026 (TechCrunch, tech.eu, Business Wire), thông cáo chương trình affiliate mới, thị trường LATAM, MENA, Đông Nam Á và tìm kiếm tiếng Việt (Accesstrade, Ecomobi, MFast). Phía VN chỉ ra chiến dịch CPA của ngân hàng lâu đời, không có sản phẩm nào ra mắt từ 2025.
 
-Ứng viên đào sâu và lý do loại:
-<b>NOYACK (wearenoyack.com)</b>: có affiliate qua Everflow, nhưng Terms of Service mục 8.3 cấm dùng thương hiệu trong keywords, domain, meta tags khi chưa có văn bản cho phép, tức không bid được từ khóa thương hiệu; chỉ phục vụ cư dân Mỹ.
-<b>KOT.CASH (kot.cash)</b>: trang /partners cấm brand bidding tên KOT.CASH. Anh cần cảnh giác với site này: sàn đổi crypto khớp lệnh qua EasyBit, chỉ trả hoa hồng bằng USDT TRC20, không công bố pháp nhân.
-<b>TraderWaves (traderwaves.com)</b>: có affiliate 20% gói Pro 12 tháng, nhưng thành lập 2024, trước mốc 2025.
-<b>Vixr (vixr.ai)</b>: chương trình Founding Partner chỉ trả khi có gói trả phí, hiện chưa có; site trả lỗi 402.
-<b>PILVI (meetpilvi.com)</b>: vẫn chỉ có form early access, chưa ra mắt, không có affiliate.
-<b>RK Mint (rkmint.tech)</b>: công cụ tạo token Solana, hoa hồng 20% mỗi lần ra token; thuộc nhóm presale/memecoin cần tránh nên em loại.
-<b>StockIntel AI (stockintel.app)</b>: Privacy Policy ghi chương trình affiliate đã đóng.
-<b>CardStack (cardstack.money)</b>, <b>AlphaVue (alphavue.ai)</b>, <b>BudgiTrack (budgitrack-website.pages.dev)</b>: sản phẩm mới 2026 nhưng đã đọc trang chủ và pricing (CardStack, AlphaVue đọc thêm about) đều không có affiliate.
-<b>Latch.ai (latch.ai)</b>: B2B, agent kế toán cho doanh nghiệp, không hướng người tiêu dùng.
-<b>Rolly: AI Money Tracker</b>: app ra mắt 08/2024.
+Các ứng viên em đào sâu:
+<b>Charts (chartsgg.com)</b>: phần mềm biểu đồ và cảnh báo giá cho trader, ra mắt 11/2026, hoa hồng 30% recurring trọn đời, cookie 60 ngày, giá Plus $25/tháng, Premium $50/tháng, điều khoản partner không có câu nào về PPC hay brand bidding. Nhìn số thì hấp dẫn nhưng em loại (thiếu bằng chứng tin cậy) vì: không công bố pháp nhân, địa chỉ hay quốc gia, ToS chỉ ghi "operated by the GG team"; WHOIS ẩn; chỉ trả hoa hồng bằng USDT TRC20; đăng nhập chỉ bằng Telegram; gói Free bắt buộc vào kênh tín hiệu t.me/ggshot, GG-Shot quảng cáo tín hiệu Long/Short kèm lời hứa lợi nhuận; mọi thanh toán không hoàn tiền. Chạy ads cho sản phẩm này dễ bị Google từ chối hoặc khóa tài khoản.
+<b>FxBacktest (fxbacktest.app)</b>: backtest forex, 30% recurring trọn đời, nhưng affiliate terms cấm bid tên thương hiệu và biến thể "fxbacktest" trên paid search nếu chưa có văn bản cho phép.
+<b>Century VTU (centuryvtu.com)</b>: ví nạp cước tại Nigeria, chỉ có giới thiệu người dùng 1% tiền nạp, không phải affiliate cho marketer.
+<b>TidePay (tidepay.cc)</b> và <b>AceChange (acechange.io)</b>: hạ tầng stablecoin B2B và sàn swap crypto không KYC, rủi ro tuân thủ cao.
+<b>Capvant</b>, <b>Montty</b>, <b>Taxomate</b>, <b>ProfitBooks</b>, <b>Fiskl</b>: B2B, không hợp affiliate tiêu dùng.
+<b>amalan</b>, <b>B9</b>, <b>Global66</b>, <b>Wallester</b>: có affiliate nhưng sản phẩm có từ trước 2025.
+<b>Quartz (quartz.money)</b>: trang render bằng JS, không kiểm tra được affiliate.
+Khoảng 30 app ngân sách, theo dõi chi tiêu, cổ tức, prediction market còn lại (Rivo, EasAly, Stoa, Arrel, DivTrkr, Gruv, Hover…) đều không có chương trình affiliate; Auspex còn đang private beta.
 
-Thiếu dữ liệu (9): <b>FinSculp (finsculp.com)</b> render bằng JS nên không đọc được; <b>Investpilot.ai (investpilot.ai)</b> không mở được trang chủ; <b>Omnistock</b>, <b>ZenPnL</b>, <b>PnLVault</b>, <b>Trackm</b>, <b>Wealth Curve</b> chưa xác minh được domain chính thức; <b>AlphaConsensus</b> và <b>ernd</b> mới chỉ có trang Product Hunt.
+Lưu ý tuân thủ pháp lý anh nên nhớ: theo Techcombank, từ 1/7/2026 người làm affiliate trên sàn TMĐT tại VN phải xác thực danh tính điện tử. Còn chính sách Google Ads cấm đích đến là "cryptocurrency trading signals" và trang affiliate chứa nội dung liên quan, nên mọi sản phẩm gắn kênh tín hiệu crypto em sẽ tiếp tục loại.
 
-Em đã lưu 21 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md.
+Em đã lưu đủ 48 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md.
