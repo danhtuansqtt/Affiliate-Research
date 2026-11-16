@@ -1,42 +1,29 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 15/11/2026: hôm nay em chọn 3 chương trình là FixAEO, AIclicks và Dageno AI, cả 3 đều chưa xác minh được cột Google Ads.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 16/11/2026: hôm nay em chọn 2 chương trình là Rakazo và Polylane, cả 2 đều chưa xác minh được cột Google Ads (mặc định Không Cấm).
 
-Em rà 51 domain từ Product Hunt tuần 46, BetaList, revshare.so, zplatform.ai, stork.ai và WebSearch, bỏ 41 domain đã xét trước đó. Còn 10 ứng viên mới, 4 qua vòng đầu (cùng ngách theo dõi thương hiệu trên AI search/GEO), soát điều khoản không có cái nào bị cấm.
+Em rà 51 domain từ BetaList, Product Hunt 11/11–15/11/2026 và WebSearch, bỏ 6 domain đã xét trước đó. Còn 45 ứng viên mới, 2 đạt, 43 bị loại. Soát điều khoản 2 chương trình được chọn: không cái nào bị cấm, nhưng cũng không cái nào có điều khoản riêng nói về quảng cáo trả phí.
 
-<b>FixAEO (fixaeo.com)</b>
-• Tính năng: Theo dõi thương hiệu trong câu trả lời ChatGPT, Gemini, Perplexity, AI Overviews, kèm agent AI soạn nội dung khắc phục, cho brand và agency
-• Giá bán: Trial 3 ngày (cần thẻ); Lite $29/tháng hoặc $300/năm; Growth $79/tháng hoặc $815/năm; Enterprise báo giá (chính chủ)
-• Hoa hồng affiliate: 25% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; trang affiliate và ToS không nhắc PPC hay bid thương hiệu)
+<b>Rakazo (rakazo.com)</b>
+• Tính năng: Nền tảng AI bot mã nguồn mở tự host hoặc host sẵn, bot có máy tính, trình duyệt, routine, cho người làm vận hành và solo founder
+• Giá bán: Self-hosted Free; Standard $15/tháng ($12/tháng nếu trả năm); Pro $49/tháng; Max $99/tháng; credits từ $20/tháng; trial 7 ngày (chính chủ)
+• Hoa hồng affiliate: 25% recurring 12 tháng (mạng affiliate)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; link "Program Terms ↗" trên form Dub trỏ nhầm sang getinboxzero.com/privacy)
+• Năm ra đời: 08/2026 (nguồn phụ)
+• Cookie: 90 ngày (mặc định Dub)
+• Độ đầy đủ: 5/6
+
+Chọn vì rất mới (domain 08/2026, #1 Product Hunt ngày 15/11/2026), mã nguồn mở khoảng 8.6k sao GitHub, do Inbox Zero Inc. làm. Chương trình chạy trên Dub, có bước duyệt, không có ngưỡng rút, không giữ tiền; nhóm Rakazo mới tạo 15/11/2026. Thiếu Google Ads: chương trình không có điều khoản affiliate riêng, mà Dub cho chủ chương trình gắn cờ traffic Google Ads, nên anh hỏi đội Inbox Zero (support) hoặc đọc điều khoản trong dashboard Dub sau khi được duyệt, trước khi chạy ads và bid từ khóa "Rakazo".
+
+<b>Polylane (polylane.com)</b>
+• Tính năng: AI agent theo dõi cloud và telemetry, tự điều tra sự cố production rồi mở pull request sửa, cho đội engineering/SRE
+• Giá bán: Free $0/tháng; Starter $80/tháng; Team $200/tháng; Business $500/tháng; Scale $800/tháng; Premium $2,000/tháng; Ultimate $5,000/tháng; trả năm giảm 20% (chính chủ)
+• Hoa hồng affiliate: 15% recurring 12 tháng (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; chương trình Dub không gắn Program Terms riêng)
 • Năm ra đời: 05/2026
-• Cookie: 60 ngày (chính chủ)
+• Cookie: 90 ngày (mặc định Dub)
 • Độ đầy đủ: 5/6
 
-Chọn vì mới nhất (changelog sớm nhất 22/05/2026) và hoa hồng trọn đời. Duyệt hồ sơ nhanh, cấm tự giới thiệu, rút từ $100 qua PayPal/chuyển khoản. Thiếu Google Ads: không có Program Terms riêng, anh hỏi thẳng FixAEO khi điền form "Become an affiliate" xem có được chạy Google Ads và bid từ khóa "FixAEO" không.
+Chọn vì giá gói cao (tới $5,000/tháng) nên 15% vẫn đáng, founder Boris Tane từng bán Baselime cho Cloudflare. Domain đăng ký từ 2020 là domain có sẵn, sản phẩm ra mắt theo changelog 05/2026. Trả qua Dub vào Stripe/PayPal, giữ 30 ngày, không có ngưỡng rút, có bước duyệt. Thiếu Google Ads: anh email support@polylane.com hỏi có được chạy Google Ads và bid từ khóa "Polylane" không trước khi chi tiền ads.
 
-<b>AIclicks (aiclicks.io)</b>
-• Tính năng: Nền tảng GEO theo dõi thương hiệu trên 10+ nền tảng AI, phân tích nguồn trích dẫn, kèm agent viết bài tối ưu, cho brand và agency
-• Giá bán: Trial 3 ngày; Starter $59/tháng; Pro $189/tháng; Business $499/tháng; Enterprise báo giá (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (mạng cloud bị chặn — cần đọc lại https://aiclicks.getrewardful.com/terms)
-• Năm ra đời: 10/2025
-• Cookie: 60 ngày (chính chủ)
-• Độ đầy đủ: 5/6
+Loại 43: XMagnet (cấm bid thương hiệu trên paid search); Invoice Crowd (chưa xác minh ngày ra mắt, domain 2017); Trainn, Plurai Simulation, Spacefast, Remindly (ra mắt trước 2025); Kelbado LMS (chỉ referral nhận credit); Perit Marketplace (không phù hợp); 35 domain còn lại không có chương trình affiliate (TransVoix, ZeroDesk, HiringNow, Talyn, CALL-E, Skillbox...).
 
-Giá gói cao nhất trong 3 cái, chạy trên Rewardful, duyệt trong 48 giờ, giữ 30 ngày, trả hằng tháng từ $100. Cookie trang ghi lệch 60/90 ngày, em chốt 60. Thiếu Google Ads: anh phải tự mở trang terms Rewardful ở trên bằng trình duyệt thật trước khi chi tiền ads. Rủi ro cao hơn 2 cái kia vì AIclicks tự bán dịch vụ ChatGPT Ads, khả năng cấm bid "AIclicks" không thấp.
-
-<b>Dageno AI (dageno.ai)</b>
-• Tính năng: Nền tảng AEO/GEO theo dõi thương hiệu, đối thủ, trích dẫn trong câu trả lời AI search, cho đội marketing/SEO và agency
-• Giá bán: Free (kiểm tra thương hiệu); Starter $49/tháng (trial 7 ngày); Growth $199/tháng; Scale $410/tháng; Custom báo giá (chính chủ)
-• Hoa hồng affiliate: 30% lần thanh toán đầu + 10% recurring trọn đời khi gia hạn (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; đã tra trang affiliate, Terms of use và cổng affiliate.dageno.ai)
-• Năm ra đời: 03/2026
-• Cookie: không hết hạn (chính chủ)
-• Độ đầy đủ: 5/6
-
-Link ref không hết hạn, mức gia hạn có thể lên tới 30% (điều kiện phải hỏi team). Rút từ $80 qua Alipay, ngân hàng, Stripe hoặc Wise; khách hủy trong 31 ngày không tính. Starter $49 đang kèm giá gạch $89, có thể là khuyến mãi. Thiếu Google Ads: ở bước "Talk to our team" anh hỏi luôn việc chạy Google Ads và bid từ khóa "Dageno".
-
-Đạt nhưng chưa chọn: Airefs (getairefs.com), 30% recurring trọn đời, cookie không công bố, đăng ký qua form Tally không có terms quảng cáo.
-
-Loại 6: Maxma, Clyper (không có chương trình affiliate); Templify, SEOcrawl AI, Storywizard.ai (ra mắt trước 2025); Videotto (chương trình theo lời mời, thiếu dữ liệu).
-
-Em đã lưu 10 dòng vào lịch sử.
+Em đã lưu 45 dòng vào lịch sử.
