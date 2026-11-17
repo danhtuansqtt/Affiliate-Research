@@ -1,17 +1,22 @@
-Anh ơi, đây là báo cáo của đội agent, chủ đề Tài chính, ngày 16/11/2026: hôm nay <b>không có chương trình nào đạt</b>. Em đã rà khoảng 260 domain, bỏ khoảng 70 domain đã có trong lịch sử và các trang không thuộc lĩnh vực tài chính, còn 48 ứng viên để xét kỹ, cuối cùng loại cả 48.
+Anh ơi, đây là báo cáo của đội agent, chủ đề Tài chính, ngày 17/11/2026: hôm nay <b>không có chương trình nào đạt</b>. Em đã rà khoảng 150 domain từ 30 hướng tìm, hơn 100 domain đã có trong lịch sử nên bỏ qua, còn 15 domain mới để xét kỹ, cuối cùng loại cả 15.
 
-Hướng đã tìm (khác lượt 15/11 vốn chủ yếu dùng Product Hunt và Show HN): danh mục Personal Finance, FinTech, Finance trên PeerPush (116 sản phẩm), Partnero List mục Financial Management, Dub Marketplace mục FinTech và Consumer, các tag stockmarket, finance, trading, crypto, investing trên AffiliList, tin gọi vốn và ra mắt fintech 2026 (TechCrunch, tech.eu, Business Wire), thông cáo chương trình affiliate mới, thị trường LATAM, MENA, Đông Nam Á và tìm kiếm tiếng Việt (Accesstrade, Ecomobi, MFast). Phía VN chỉ ra chiến dịch CPA của ngân hàng lâu đời, không có sản phẩm nào ra mắt từ 2025.
+Hướng đã tìm (khác lượt 15-16/11): tin prop firm (FinanceMagnates, FXStreet, PropFirmMap, merchant Awin), mạng Fintel Connect, Involve Asia, Ecomobi, thị trường LATAM (Brazil, Mexico, tìm bằng tiếng Bồ và tiếng Tây Ban Nha), Đông Nam Á (Indonesia, Philippines), UAE, halal investing, chuyển tiền quốc tế, token hóa bất động sản, vàng số, bot prediction market, trả nợ, options analytics và thư mục Referly, Affonso.
 
-Các ứng viên em đào sâu:
-<b>Charts (chartsgg.com)</b>: phần mềm biểu đồ và cảnh báo giá cho trader, ra mắt 11/2026, hoa hồng 30% recurring trọn đời, cookie 60 ngày, giá Plus $25/tháng, Premium $50/tháng, điều khoản partner không có câu nào về PPC hay brand bidding. Nhìn số thì hấp dẫn nhưng em loại (thiếu bằng chứng tin cậy) vì: không công bố pháp nhân, địa chỉ hay quốc gia, ToS chỉ ghi "operated by the GG team"; WHOIS ẩn; chỉ trả hoa hồng bằng USDT TRC20; đăng nhập chỉ bằng Telegram; gói Free bắt buộc vào kênh tín hiệu t.me/ggshot, GG-Shot quảng cáo tín hiệu Long/Short kèm lời hứa lợi nhuận; mọi thanh toán không hoàn tiền. Chạy ads cho sản phẩm này dễ bị Google từ chối hoặc khóa tài khoản.
-<b>FxBacktest (fxbacktest.app)</b>: backtest forex, 30% recurring trọn đời, nhưng affiliate terms cấm bid tên thương hiệu và biến thể "fxbacktest" trên paid search nếu chưa có văn bản cho phép.
-<b>Century VTU (centuryvtu.com)</b>: ví nạp cước tại Nigeria, chỉ có giới thiệu người dùng 1% tiền nạp, không phải affiliate cho marketer.
-<b>TidePay (tidepay.cc)</b> và <b>AceChange (acechange.io)</b>: hạ tầng stablecoin B2B và sàn swap crypto không KYC, rủi ro tuân thủ cao.
-<b>Capvant</b>, <b>Montty</b>, <b>Taxomate</b>, <b>ProfitBooks</b>, <b>Fiskl</b>: B2B, không hợp affiliate tiêu dùng.
-<b>amalan</b>, <b>B9</b>, <b>Global66</b>, <b>Wallester</b>: có affiliate nhưng sản phẩm có từ trước 2025.
-<b>Quartz (quartz.money)</b>: trang render bằng JS, không kiểm tra được affiliate.
-Khoảng 30 app ngân sách, theo dõi chi tiêu, cổ tức, prediction market còn lại (Rivo, EasAly, Stoa, Arrel, DivTrkr, Gruv, Hover…) đều không có chương trình affiliate; Auspex còn đang private beta.
+Ứng viên em đào sâu nhất:
+<b>TakeCap FT (takecapft.com)</b>: prop firm CFD mô phỏng trên TradeLocker, nhắm trader Brazil và LATAM, ra mắt 01/2025, hoa hồng 8%–20% mỗi đơn challenge theo bậc 30 ngày, đăng ký miễn phí trên dashboard. Ban đầu em giữ lại, nhưng khi soát điều khoản thì thấy bài Affiliate Program chính chủ (cập nhật 18/05/2026) ghi "Only organic promotion methods are allowed", muốn chạy quảng cáo trả phí nhắm từ khóa TakeCap FT phải xin duyệt trước. Nên em loại vì cấm brand bidding. Kể cả nếu được duyệt, anh lưu ý các yêu cầu tuân thủ: GTC §4.2 không phục vụ khoảng 80 nước gồm Mỹ, Úc, Ấn Độ, Indonesia, Nga, Venezuela và cấm dùng VPN lách; toàn bộ giao dịch là mô phỏng, công ty tự nhận "not a broker" và không được cấp phép, nên quảng cáo không được nói là tiền thật hay đầu tư; Google Ads có thể xếp vào nhóm sản phẩm tài chính đầu cơ phức tạp, phải có chứng nhận theo từng nước. Hoa hồng chỉ trả bằng USDT TRC20, tối thiểu $100.
 
-Lưu ý tuân thủ pháp lý anh nên nhớ: theo Techcombank, từ 1/7/2026 người làm affiliate trên sàn TMĐT tại VN phải xác thực danh tính điện tử. Còn chính sách Google Ads cấm đích đến là "cryptocurrency trading signals" và trang affiliate chứa nội dung liên quan, nên mọi sản phẩm gắn kênh tín hiệu crypto em sẽ tiếp tục loại.
+Các ứng viên còn lại:
+<b>Xpert Funding (xpertfunding.com)</b>: help center cấm quảng cáo trả phí dùng tên thương hiệu.
+<b>Funding Traders (fundingtraders.com)</b>: ra mắt 2023, partner terms còn cấm bid từ khóa thương hiệu và direct linking.
+<b>Forge of Traders (forgeoftraders.com)</b>: có chương trình trên Awin nhưng nguồn mâu thuẫn về ngày ra mắt ("since 2023"), PropFirmMap chấm 3,3/10.
+<b>PolyCop (polycopbot.com)</b>: bot Telegram copy trade Polymarket, thuộc nhóm crypto/prediction market, Google Ads hạn chế mạnh, rủi ro cao.
+<b>AInvest (ainvest.com)</b>: có từ 2019.
+<b>The Investors Pool (theinvestorspool.com)</b>: token hóa bất động sản, không có affiliate.
+<b>RealSplit (realsplit.com)</b>: chỉ nhận nhà đầu tư accredited.
+<b>BookurGold (bookurgold.com)</b>: site lỗi TLS, không đọc được, không thấy affiliate.
+<b>Money Map Navigator (moneymapnavigator.com)</b>: có affiliate trên Refersion nhưng trang chủ trả 502, chưa xác minh được ngày ra mắt.
+<b>Topremit (topremit.com)</b> và <b>Zro Bank (zrobank.com.br)</b>: sản phẩm có từ 2009 và 2020.
+<b>firmup.com</b>: phần mềm quản lý tồn kho, không phải tài chính.
+<b>dnero.app</b> và <b>fundingperpetuals.com</b>: chuyển hướng về dneroapp.com và myfundedperpetuals.com, đã xét trước đó.
 
-Em đã lưu đủ 48 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md.
+Thị trường prop firm và app tài chính đã được các lượt trước khai thác rất sâu, ứng viên mới hợp lệ ngày càng hiếm. Em đã lưu đủ 15 ứng viên vào lịch sử reported_programs__tai-chinh-doi.md.
