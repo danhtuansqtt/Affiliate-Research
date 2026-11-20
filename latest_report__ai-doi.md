@@ -1,42 +1,46 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 19/11/2026: hôm nay em chọn 3 chương trình là Nivon AI (nivon.ai), Meryl by ENOVAI (enovaigroup.com) và EchoCall (echocall.de).
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 20/11/2026: hôm nay em chọn 3 chương trình là Nutrinixy (nutrinixy.com), PrivateClawd (privateclawd.com) và Tell Pastell (tellpastell.ai).
 
-Em quét Affonso directory (596 chương trình), Dub Marketplace, Partnero List, Open Launch, BetaList, Product Hunt và WebSearch, hơn 80 domain đã xét trước đó nên bỏ qua. Đào sâu 21 ứng viên mới: chọn 3, loại 18.
+Hướng mới hôm nay là quét dải ID merchant mới nhất trên Awin (đọc được 1.027 profile), thêm WebSearch theo ngách (bất động sản, giáo dục, dinh dưỡng, nhạc) và các trang ra mắt; khoảng 45 domain đã xét trước đó nên bỏ qua. Đào sâu 24 ứng viên mới: chọn 3, loại 21.
 
-<b>Nivon AI (nivon.ai)</b>
-• Tính năng: Chatbot AI chăm sóc khách hàng trên website, học từ site, PDF, Notion, Drive, cho SMB và SaaS
-• Giá bán: Free $0/tháng; Starter $12/tháng; Growth $39/tháng; Business $79/tháng (chính chủ)
-• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; /affiliates, ToS, cổng Partnero không có điều khoản quảng cáo)
-• Năm ra đời: 02/2026 (domain và TLS)
-• Cookie: 90 ngày
-• Độ đầy đủ: 5/6
-
-Chọn vì sản phẩm mới của Pimjo (Bangladesh), không cần duyệt, tối đa $284.40/khách. Ngưỡng rút chỉ hiện trong dashboard. Thiếu Google Ads, độ tin cậy thấp: ToS cấm dùng tên Nivon khi chưa có văn bản đồng ý, nên anh email hello@nivon.ai hỏi có được bid "Nivon" không trước khi chi tiền ads.
-
-<b>Meryl by ENOVAI (enovaigroup.com)</b>
-• Tính năng: Nhân viên bán hàng AI trong khung chat cửa hàng Shopify, tư vấn và tìm sản phẩm theo catalog
-• Giá bán: Trial 14 ngày; Launch $49/tháng; Accelerate $99/tháng; Performance $189/tháng (chính chủ)
-• Hoa hồng affiliate: 20% recurring 24 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; /affiliate, Help Center, GTU không có điều khoản quảng cáo)
-• Năm ra đời: 04/2026 (Shopify App Store)
-• Cookie: 90 ngày
-• Độ đầy đủ: 5/6
-
-Chọn vì giá gói cao, cookie 90 ngày last-click, lên 25-30% khi có 50+ khách active. Trả hằng tháng qua PayPal, tối thiểu $100. App mới có 1 đánh giá trên Shopify. Thiếu Google Ads, độ tin cậy thấp: affiliate agreement có thể chỉ hiện trong dashboard, anh email affiliate@enovaigroup.com hỏi về brand bidding trước khi chạy ads.
-
-<b>EchoCall (echocall.de)</b>
-• Tính năng: Voice agent và chat agent AI (tổng đài, đặt lịch, chat web và WhatsApp), hơn 70 ngôn ngữ, cho doanh nghiệp DACH
-• Giá bán: Trial 14 ngày; Voice Agent €0.18/phút; Chat Agent €0.05/phiên; Presence Start €149/tháng; Presence Pro €399/tháng; Presence Business €899/tháng; Enterprise liên hệ (chính chủ)
-• Hoa hồng affiliate: 20% recurring trọn đời (chính chủ)
-• Google Ads: Không Cấm (chỉ cấm quảng bá EchoCall cạnh đối thủ trực tiếp trong quảng cáo trả phí)
-• Năm ra đời: 03/2025 (chứng chỉ TLS đầu tiên)
+<b>Nutrinixy - AI Calorie Tracker (nutrinixy.com)</b>
+• Tính năng: App iOS đếm calo bằng AI qua ảnh, giọng nói, mã vạch, theo dõi macro và cân nặng, cho người giảm cân
+• Giá bán: Free; Premium Monthly $14.99/tháng; Premium Annual $69.99/năm (chính chủ)
+• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Awin: ui.awin.com/merchant-profile-terms/126881)
+• Năm ra đời: 04/2026 (App Store)
 • Cookie: 30 ngày
-• Độ đầy đủ: 6/6
+• Độ đầy đủ: 5/6
 
-Chọn vì trọn đời, không cần duyệt, trả PayPal từ €50 sau 30 ngày kiểm tra. Lưu ý tuổi: trang /about ghi công ty thành lập 11/2024, nhưng sản phẩm xuất hiện công khai từ 03/2025 (TLS) và SaaSCity ghi launch 05/2026, nên em tính theo ngày ra mắt sản phẩm. Google Ads không cấm bid brand, chỉ cấm đặt EchoCall cạnh đối thủ trực tiếp, nên anh tránh quảng cáo so sánh hoặc bid từ khóa đối thủ; muốn chắc thì email team@echocall.de. Cookie 30 ngày em suy từ mã theo dõi trên site (last-click), trang affiliate không ghi.
+Chọn vì 30% trọn đời trên cả lần gia hạn, GEO toàn cầu, qua Awin nên cần được duyệt, ngưỡng rút theo chính sách Awin. Thiếu Google Ads: anh đăng nhập Awin, đọc tab Terms &gt; PPC trước khi bid "Nutrinixy". Cuelinks ghi cấm PPC nhưng đó là khuôn mẫu chiến dịch CPC của Cuelinks, không phải điều khoản Awin.
 
-Loại vì cấm bid thương hiệu: RankSpot, Apphaven, SmoothStay, WiFi Weave, Marketing Guppy, Rangy, EasyViral.ai (cấm trong điều khoản), Key.Art, Formstep (Affonso ghi Brand Bidding bị hạn chế).
+<b>PrivateClawd (privateclawd.com)</b>
+• Tính năng: Cloud riêng chạy agent AI 24/7 (OpenClaw, Claude Code, Codex) với Telegram, tự động hóa trình duyệt, cho founder và dev
+• Giá bán: 10 GB $30/tháng; 25 GB $50/tháng; 50 GB $70/tháng (chính chủ)
+• Hoa hồng affiliate: 20% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; Terms 8.2 không nhắc PPC/brand bidding)
+• Năm ra đời: 02/2026 (domain)
+• Cookie: không công bố
+• Độ đầy đủ: 4/6
 
-Loại khác: Noctyq (gian lận học thuật, Google Ads không cho), Lagom Media AI (agency dịch vụ), LaunchSpot, AIDD (không phải công cụ AI), Architect Render (từ 2023), Gaeilgeoir AI, SupaBird (chưa xác minh ngày ra mắt), Teamily AI (chương trình chưa mở), Astrolab Meeting Maker (không có trang affiliate).
+Chọn vì trọn đời trên cả thuê bao lẫn mua token, duyệt trong 24 giờ, rút từ $50 qua crypto hoặc PayPal. Thiếu Cookie (trang chỉ ghi user "permanently attributed") và Google Ads: anh hỏi PrivateClawd qua dashboard affiliate số ngày cookie và có được bid "PrivateClawd" không trước khi chạy ads.
 
-Em đã lưu 21 dòng vào lịch sử.
+<b>Tell Pastell (tellpastell.ai)</b>
+• Tính năng: AI phỏng vấn ghi ký ức gia đình rồi viết và minh họa thành sách truyện in bìa cứng, cho cha mẹ và ông bà
+• Giá bán: Tạo sách Free; 1 Printed Book $59/lần; 3 Printed Books $159/lần; 6 Printed Books $299/lần (chính chủ)
+• Hoa hồng affiliate: 10% một lần (mạng affiliate)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Awin: ui.awin.com/merchant-profile-terms/131818)
+• Năm ra đời: 10/2025 (domain)
+• Cookie: 30 ngày
+• Độ đầy đủ: 5/6
+
+Chọn vì sản phẩm quà tặng giá đơn cao ($59-$299), nhưng hoa hồng 10% một lần là mức thấp, anh cân nhắc biên lợi nhuận trước khi chi ads. Chương trình bản US trên Awin, cần duyệt. Thiếu Google Ads: anh đăng nhập Awin đọc Terms &gt; PPC trước khi bid "Tell Pastell".
+
+Loại vì ngày ra mắt chưa xác minh: AceFace (LinkedIn và chân trang ghi 2023, domain 08/2025, nguồn mâu thuẫn), Milugar, Kindred Press, Yours Theo, Amplifiles.
+
+Loại vì cấm bid thương hiệu: AEO Action.
+
+Loại vì không mới (trước 2025): Yaps, idea.ai, PixaSocial, Brandify, Welling AI, WorkoutGen, AutoReel, Hunch.
+
+Loại khác: AgentFabrica (chỉ cho influencer Thổ Nhĩ Kỳ), SerpKite (chương trình chưa mở), Mirai, Kling 5.0 (không có affiliate), Realstage (site không chạy), MindDo AI, inAmber (không phải công cụ AI).
+
+Em đã lưu 24 dòng vào lịch sử.
