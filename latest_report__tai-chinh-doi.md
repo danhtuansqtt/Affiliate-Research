@@ -1,21 +1,22 @@
-Anh ơi, đây là báo cáo của đội agent, chủ đề Tài chính, ngày 19/11/2026: em đã rà 27 ứng viên mới nhưng hôm nay không có chương trình nào đạt.
+Anh ơi, đây là báo cáo của đội agent, chủ đề Tài chính, ngày 20/11/2026: em đã xét kỹ 23 ứng viên mới nhưng hôm nay không có chương trình nào đạt.
 
-Hướng đã tìm: lần đầu khai thác danh bạ chương trình Tradedoubler (lọc Finance + Insurance, sắp theo ngày bắt đầu) và quét các hồ sơ merchant mới trên Awin (ID 125000–131999). Em cũng tìm thêm các ngách ít xét: bảo hiểm thú cưng, du lịch, đám cưới, bảo hành xe, sửa điểm tín dụng, IRA, thuế, halal, LATAM, UAE, Đông Nam Á, và feed Product Hunt về fintech. Tuổi sản phẩm em kiểm qua Companies House, RDAP và iTunes lookup.
+Hướng đã tìm: em quét hồ sơ merchant Awin ID 131500–132600 (khoảng 1.100 ID), thư mục Tradedoubler 407800–410500 (khoảng 235 chương trình còn chạy), mục Finance và Crypto &amp; Trading của Affonso Marketplace, mục Finance của Dub và Referly, Product Hunt (app ngân sách, AI trading/quyền chọn 2026), tin prop firm tháng 10–11/2026 trên FXStreet, Chainwire, PR Newswire, và tìm theo thị trường Việt Nam, Mỹ Latinh, Brazil, Trung Đông, Đông Nam Á, Ấn Độ. Khoảng 55 domain đã có trong lịch sử nên em bỏ qua.
 
 Ứng viên đào sâu:
-<b>National Warranties (nationalwarranties.co.uk)</b>: bảo hành xe cũ ở UK, công ty thành lập 17/03/2026, trả 15% mỗi hợp đồng (trung bình £67.50), cookie 45 ngày. Loại vì cấm bid brand: chương trình để "Keyword policy: None", mà Code of Conduct Tradedoubler điều 7 nói chương trình không có chính sách riêng thì coi là closed policy, không được bid từ khóa thương hiệu nếu chưa xin phép. Paid Search từ khóa chung vẫn được phép, chỉ UK.
-<b>ShieldMy Wedding Insurance (shieldmy.com)</b>: bảo hiểm đám cưới UK, pháp nhân từ 02/2025, 15% mỗi hợp đồng, cookie 45 ngày. Loại cùng căn cứ Tradedoubler điều 7. Thêm nữa, quảng cáo tự viết phải gửi ShieldMy duyệt trước, còn listing Cuelinks cấm hẳn PPC/Google Ads.
-<b>MegPrime Pay (megprimepay.com)</b>: app trả hóa đơn ở Mỹ bằng token MPP, ra mắt 04/2026. Loại vì không đủ căn cứ chạy ads: trang chủ có nút "Buy $MPP Token" dẫn tới Uniswap/Coinbase DEX. Google không cho quảng cáo mua bán crypto, và affiliate không xin được chứng nhận crypto của Google (SEC no-action letter không thay được). Sản phẩm chỉ cho Mỹ, hoa hồng chỉ xem được sau khi đăng ký Awin.
-<b>Paybacker (paybacker.co.uk)</b>: trợ lý AI hủy subscription cho người UK, ra mắt 03/2026. Loại vì không phải mô hình affiliate cho marketer: chính Paybacker là bên nhận hoa hồng từ nhà cung cấp năng lượng/broadband (ToS mục 7), không trả hoa hồng khi giới thiệu subscription.
+<b>Coinhub Funded (coinhubfunded.com)</b>: prop firm crypto/forex, tài khoản tới $200K, hoa hồng 10–15% phí challenge, cookie 30 ngày. Loại vì Affiliate Terms §8 cấm bid "Coinhub Funded", "Coinhub" và lỗi chính tả. Cảnh báo lừa đảo: pháp nhân ở Nevis (Block Entertainment Operating LLC), ra mắt 02/11/2026 bằng thông cáo Chainwire trả tiền, domain mới đăng ký 05/2026. Anh nên tránh dù sau này họ có nới điều khoản.
+<b>BillGoose (billgoose.com)</b>: so sánh hóa đơn ở UK, domain 07/2026, Mobile £10, Motor insurance £15 mỗi đơn, cookie 30 ngày. Loại vì cấm bid brand, và đây chủ yếu là viễn thông chứ không hẳn tài chính.
+<b>Jetcredit (jetcredit.it)</b>: vay cá nhân online ở Ý, €24 mỗi khoản giải ngân, cookie 15 ngày. Loại vì cấm bid brand, chưa xác minh ngày ra mắt, lại cần chứng nhận dịch vụ tài chính của Google.
+<b>Ominimo PL (ominimo.pl)</b>: bảo hiểm ô tô online ở Ba Lan. Loại vì hồ sơ Awin 131728 ghi "Paid search brand bidding is not permitted".
+<b>StockResearch AI (stockresearch.ai)</b>: nghiên cứu cổ phiếu bằng AI, ra mắt 08/2026. Loại vì trang affiliate chỉ thưởng 5% khi giới thiệu publisher cho mạng MarketLeverage, không trả hoa hồng khi bán gói.
+<b>DojoTraders (dojotraders.com)</b>: prop firm 5 thị trường, ra mắt 07/2026. Loại vì chương trình affiliate mới ghi "launching soon", FAQ còn chữ lorem ipsum.
 
-Lưu ý tuân thủ cho ngách này: bảo hiểm ở UK do FCA quản lý, Google UK đòi Financial Services Verification, affiliate phải nhờ chính firm được FCA cấp phép bảo lãnh mới chạy được. Hai chương trình Tradedoubler trên chỉ nhận traffic UK. Sản phẩm crypto thì cần chứng nhận crypto của Google, affiliate gần như không có. Với Tradedoubler, anh có thể xin account manager cho phép bid brand bằng văn bản (Code of Conduct cho phép nếu có thỏa thuận trước), nếu anh muốn em xem lại National Warranties.
+Lưu ý Tradedoubler: chương trình để "Keyword policy: None" thì Code of Conduct Tradedoubler điều 7 coi là closed, tức cấm bid từ khóa thương hiệu nếu chưa có thỏa thuận bằng văn bản, dù mục Paid Search vẫn ghi Allowed. Vì vậy em xếp BillGoose, Jetcredit, Qualitas Auto, ConTe.it, Guardify, Good Life Sorted vào nhóm Bị Cấm. Nếu anh muốn chạy, có thể xin account manager cho phép bid brand trước.
 
 Ứng viên bị loại khác:
-<b>Guldbrev, Quotenest</b>: cấm bid từ khóa thương hiệu.
-<b>MoneyCapp, Gohipoteca, TomoBoost, Stock Estate, Gibraltar IRA, Tony's Credit Repair, Waddle Insurance, Cashback Remortgages, Home Heat UK, Monefit, Hypoteket, Northmill, HelloSafe Atlas, BforBank</b>: ra mắt trước 2025.
-<b>adoro Pet Insurance</b>: chỉ có hợp tác doanh nghiệp, không có affiliate.
-<b>Pawdarling, Athenic AI, AppealSeal</b>: không có chương trình affiliate.
-<b>EasyBrise, Jibreel</b>: không phải sản phẩm tài chính tiêu dùng.
-<b>Mis-sold Expert</b>: claims management không ghi pháp nhân hay số FCA.
+<b>GammVault, DeFiTax, Sprout Budget, MyBudgy, OptionsPilot, AlgoVistra, WallStreetStocks, SpaceFinance.AI, Finio</b>: không có chương trình affiliate.
+<b>Boost Money (Upgrade), Qualitas Auto, ConTe.it, Eversure</b>: thương hiệu ra mắt trước 2025.
+<b>Money Atlas, Bene Finance, Guardify, Good Life Sorted</b>: là publisher, B2B hoặc không phải sản phẩm tài chính.
 
-Em đã lưu 27 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
+Một số ứng viên chưa xác minh được domain hoặc chưa đọc được trang (iPulse AI, BlockViz, Ulys, LucidStocks, Stock2Trend, PocketWise AI, BudgetNest) nên em chưa ghi vào lịch sử.
+
+Em đã lưu 23 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
