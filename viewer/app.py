@@ -419,6 +419,11 @@ def main():
             s.bind(("127.0.0.1", 0))
             port = s.getsockname()[1]
         BROWSER.update(path=browser, port=port)
+        # cửa sổ cũ còn sót (sau khi tự cập nhật) giữ hồ sơ này: Chrome mới sẽ chuyển giao rồi thoát ngay và app tắt theo,
+        # để lại cửa sổ chết không bấm được gì. Đóng cửa sổ cũ trước khi mở.
+        subprocess.run(["pkill", "-f", "--", f"--user-data-dir={os.path.join(APP_DIR, 'profile')}"],
+                       stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        time.sleep(1.5)
         proc = subprocess.Popen([browser, f"--app={url}", f"--user-data-dir={os.path.join(APP_DIR, 'profile')}",
                                  f"--remote-debugging-port={port}", "--remote-debugging-address=127.0.0.1",
                                  "--window-size=1400,900", "--no-first-run", "--no-default-browser-check",
