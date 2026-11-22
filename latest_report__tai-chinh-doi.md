@@ -1,23 +1,26 @@
-Anh ơi, đây là báo cáo của đội agent, chủ đề Tài chính, ngày 21/11/2026: em đã xét kỹ 19 ứng viên mới nhưng hôm nay không có chương trình nào đạt.
+Anh ơi, đây là báo cáo của đội agent, chủ đề Tài chính, ngày 22/11/2026: em đã xét kỹ 21 ứng viên (bỏ qua 86 domain đã có trong lịch sử; trong 21 có Fierce hóa ra trùng sản phẩm đã xét 12/11), chọn được 1 chương trình, loại 20.
 
-Hướng đã tìm: em quét hồ sơ merchant Awin 130300–132150 (dải 131729–132150 lần đầu quét, không có chương trình tài chính mới), Tradedoubler 408856–409400, Daisycon 20900–22700 mục Finance, blog tài chính Involve Asia, Ecomobi VN, Fintel Connect, mục Finance của Dub và Referly, Rewardful, tin tức fintech tháng 10–11/2026 và WebSearch nhiều ngôn ngữ (tín dụng, thuế, tài chính Hồi giáo, prop firm, stablecoin, ngân hàng số Đông Nam Á, Trung Đông, Mỹ Latinh). Hơn 120 domain gợi ý đã có trong lịch sử nên em bỏ qua.
+<b>Firewood Funded (firewoodfunded.com)</b>
+• Tính năng: Prop firm Forex, Vàng, Nasdaq, Crypto: trader mua challenge 1 bước, 2 bước hoặc Instant rồi giao dịch tài khoản mô phỏng, chia lợi nhuận tới 80%
+• Giá bán: 2-Phase $20/lần (tài khoản $2,000); FastTrack 1-Phase $29/lần ($2,000); Instant $20/lần ($1,000); gói lớn nhất FastTrack 1-Phase $699/lần ($100,000); không có gói free (chính chủ)
+• Hoa hồng affiliate: 10% recurring theo bậc, tới 18% ở bậc Diamond (81+ referral), thời hạn không công bố; hoặc CPA $20/khách (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; site không có affiliate terms riêng, điều khoản chi tiết chỉ trong dashboard sau khi đăng ký)
+• Năm ra đời: 04/2026 (nguồn phụ: Finance Magnates 13/04/2026, domain đăng ký 21/02/2026)
+• Cookie: không công bố (referral khóa vào tài khoản khi trader đăng ký qua link)
+• Độ đầy đủ: 4/6
 
-Hôm nay vướng đúng một chỗ: sản phẩm mới thì chưa có affiliate, còn sản phẩm có affiliate thì cũ hoặc chưa xác minh được ngày ra mắt.
+Còn thiếu 2 ô: Google Ads và Cookie, chủ chương trình không công khai. Anh đăng ký tại https://firewoodfunded.com/en/sign-up để đọc dashboard Affiliates, hoặc hỏi support@firewoodfunded.com về cấm bid brand/PPC và số ngày cookie. Em chọn vì sản phẩm mới (04/2026), đăng ký affiliate công khai, không thấy bước duyệt. Ngưỡng rút chỉ xem sau khi đăng ký, lịch trả không công bố. Bậc 10%→18% lấy từ dữ liệu cấu hình của trang (dải "Up to 10%" trên trang không khớp). Mã FIREWOOD30 giảm 30% tới 30/11/2026.
 
-Ứng viên đào sâu:
-<b>Zoya (zoya.finance)</b>: app sàng lọc cổ phiếu halal, trang /affiliate trả 30% mọi khoản thanh toán trong 12 tháng đầu, cookie 30 ngày. Loại vì chưa xác minh được năm ra mắt, và footer trang ghi © 2023 (Investroo Inc.) nên nhiều khả năng sản phẩm đã có từ 2023, không đạt mốc 2025.
-<b>Luva (luva.com)</b>: so sánh bảo hiểm ô tô bằng trợ lý AI của EverQuote, ra mắt 27/10/2026. Loại vì không có chương trình affiliate, trang marketing-partners chỉ là danh sách hãng bảo hiểm mua lead.
-<b>Cent Capital (cent.capital)</b>: app AI quản lý nợ và chi tiêu ở Anh, lên Product Hunt 09/2025. Loại vì /partnerships chỉ dành cho doanh nghiệp, không có affiliate cho marketer.
-<b>FFN Perps (ffnperps.com)</b>: prop firm perpetual 24/7, ra mắt 10/2026, phí đánh giá $35–$679. Loại vì không có affiliate; tài khoản đều mô phỏng, đòn bẩy tới 100x, không nêu giấy phép nên anh cảnh giác.
-<b>InsureMatch.ai (insurematch.ai)</b>: so sánh bảo hiểm ô tô và nhà, ra mắt 05/2026. Loại vì không có affiliate; pháp nhân đặt ở Wyoming, liên hệ qua Prime Intent LLC.
-<b>CUB Vietnam Digital (cathaybk.com.tw)</b>: app vay tiêu dùng của Cathay United Bank trên Ecomobi, CPA 400.000–560.000₫/lead đã duyệt, cookie 7 ngày. Loại vì ra mắt tại Việt Nam năm 2024.
-<b>JW Verzekeringen (jw.nl)</b>: bảo hiểm xe online ở Hà Lan, tối đa €173.60 trên Daisycon. Loại vì chưa xác minh được năm ra mắt hãng, có dấu hiệu là hãng cũ.
+Cảnh báo offshore: Firewood Global Ltd đăng ký ở St. Vincent &amp; the Grenadines, giấy phép môi giới Comoros, một pháp nhân LFSA ở Labuan. Prop trading tự nhận không được quản lý, không công bố thời gian payout. Khách chỉ trả bằng USDT hoặc cổng nội địa IDR, NGN, KES, GHS. Anh chạy thử ngân sách nhỏ và rút thử hoa hồng trước khi tăng.
 
-Ứng viên bị loại khác:
-<b>Spring (spring-savings.co.uk)</b>: app tiết kiệm của Paragon Bank (06/2025), không có affiliate.
-<b>Zopa Biscuit, Community Tax, NAGA, Bondora, MyForexFunds Evolution</b>: thương hiệu có từ trước 2025.
-<b>Wirex One (wirexapp.com)</b>: cùng thương hiệu Wirex đã loại ngày 02/11.
-<b>UtterlyCovered, Samlino DK, Finmerkado</b>: trang so sánh (publisher), không phải sản phẩm tài chính.
-<b>Beezme, Geldhelden</b>: membership trúng thưởng và khóa học, không phải sản phẩm tài chính.
+Tuân thủ Google Ads: dịch vụ tài chính (forex/CFD/crypto) ở nhiều nước (Anh, EU, Úc…) cần financial services verification, có thể kèm giấy phép, nên quảng cáo của affiliate dễ bị từ chối; anh kiểm tra chính sách từng nước trước. Không gọi phí challenge là đầu tư, không hứa lợi nhuận, kèm cảnh báo rủi ro. Loại Iran, Nga, Belarus, Triều Tiên, Myanmar khỏi chiến dịch.
 
-Em đã lưu 19 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
+Ứng viên bị loại:
+<b>Finotive Funding, Funded Trader Markets, FundingFutures, Fierce</b>: ra mắt trước 2025 (2021–2024; Fierce ra mắt 02/2023, đã xét 12/11 với getfierce.com).
+<b>RZR Funded, OnlyFundsFX, Stradger, TradersFlow</b>: prop firm có affiliate nhưng chưa xác minh được năm ra mắt (RZR Funded là Hantec Trader đổi tên).
+<b>InvidiaTrade</b>: thiếu bằng chứng, broker offshore (Saint Lucia), nhiều review 1 sao về nạp và rút tiền, tin affiliate là PR trả tiền.
+<b>Supertrade</b>: thiếu bằng chứng, prop firm ra mắt qua PR trả tiền, chương trình partnership lúc đó chỉ "sẽ ra mắt", site bị chặn từ mạng cloud.
+<b>MavenPanel, Kredit.Pe, HeyApril AI, Marygold &amp; Co, X Money (money.x.com), Fizz, Axal, Curie Money, Niwish</b>: không có chương trình affiliate.
+<b>x.tax</b>: khai thuế B2B cho pháp nhân, không hợp mô hình affiliate.
+
+Em đã lưu 21 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
