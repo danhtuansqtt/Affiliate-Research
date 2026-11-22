@@ -1,46 +1,46 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 21/11/2026: hôm nay em chọn 3 chương trình là Quibbly (quibbly.co), MemCell (memcell.ai) và Chat AI 5 (chatai5.com).
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 22/11/2026: hôm nay em chọn 3 chương trình là Yila AI (yila.ai), Cutonce (cutonce.ai) và Contral (contral.ai).
 
-Hướng mới hôm nay là thư mục Dub Partners (417 chương trình, đọc dữ liệu nhúng từng trang). Em lọc ra 40 ứng viên AI: 9 đạt, 31 loại. Cả 9 chương trình đạt đều 5/6 và đều thiếu Google Ads, vì Dub không có điều khoản chung về PPC và các hãng không công bố. Em chọn 3 cái có hoa hồng recurring cao và dài nhất.
+Hướng mới hôm nay là Show HN (01/10–22/11) cộng thư mục zplatform.ai và các bài về Rewardful/Tolt/FirstPromoter. Em xét 37 ứng viên mới: 9 đạt vòng đầu, sau khi đọc điều khoản riêng thì loại thêm 2, còn 7 đạt. Cả 3 chương trình được chọn đều 5/6, chỉ thiếu Google Ads.
 
-<b>Quibbly (quibbly.co)</b>
-• Tính năng: Tiện ích Chrome cho LinkedIn: voice note và video trong DM, nhắc follow-up, kết nối Claude/ChatGPT qua MCP, cho sales B2B
-• Giá bán: Dùng thử 3 ngày; Solo $19/tháng; Solo Pro $39/tháng; Team $35/seat/tháng (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời (mạng affiliate)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 2025 (nguồn phụ)
-• Cookie: 90 ngày
-• Độ đầy đủ: 5/6
-
-Em chọn vì đây là mức trọn đời duy nhất trong các chương trình đạt, tính cả upgrade, và được duyệt tự động ngay. Hoa hồng giữ 30 ngày, trả qua Dub (ngân hàng hoặc PayPal). Rủi ro: AI chỉ là một phần tính năng, extension mới khoảng 265 người dùng. Năm ra mắt tin cậy trung bình: site ghi foundingDate 2024 nhưng đó là năm của công ty Scriptify, còn sản phẩm chỉ xuất hiện công khai từ 05/2025 (chứng chỉ TLS, bản lưu Chrome Web Store 07/2025). Thiếu Google Ads: anh hỏi Quibbly qua dashboard Dub xem có được bid "Quibbly" không.
-
-<b>MemCell (memcell.ai)</b>
-• Tính năng: Engine bộ nhớ lâu dài cho agent AI, có SDK, MCP và CLI, cho dev và đội nhóm
-• Giá bán: Free $0; Pro $19/tháng; Team $19/seat/tháng; Enterprise liên hệ (chính chủ)
-• Hoa hồng affiliate: 30% recurring 12 tháng (mạng affiliate)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
+<b>Yila AI (yila.ai)</b>
+• Tính năng: Agent AI nghiên cứu học thuật: tìm tài liệu, viết tổng quan, phân tích dữ liệu, poster, slide, cho nhà nghiên cứu và lab
+• Giá bán: Free; Starter $20/tháng; Pro $49/tháng; Flagship $99/tháng; Lifetime Starter $249/lần; Lifetime Flagship $1,999/lần (chính chủ)
+• Hoa hồng affiliate: 30% recurring trọn đời, tính cả gia hạn và gói lifetime (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Affonso: yila.affonso.io)
 • Năm ra đời: 2026 (chính chủ)
-• Cookie: 90 ngày (mặc định Dub)
+• Cookie: 30 ngày
 • Độ đầy đủ: 5/6
 
-Em chọn vì sản phẩm rất mới (TLS đầu tiên 30/06/2026, gói npm 07/2026) và hoa hồng 30% cả năm. Hoa hồng giữ 30 ngày. Giá gói thấp nên mỗi khách không mang lại nhiều. Thiếu Google Ads (đã tra 5 truy vấn, không có câu cấm): anh email team@memcell.ai hỏi trước khi bid "MemCell".
+Em chọn vì 30% trọn đời trên cả gói lifetime đến $1,999, duyệt tự động. Ngưỡng rút chỉ thấy trong cổng. Thiếu Google Ads: anh đăng ký rồi xem mục Channel Restrictions (Paid Search, Brand Bidding) trong cổng Affonso trước khi chi tiền ads.
 
-<b>Chat AI 5 (chatai5.com)</b>
-• Tính năng: App chat đa model (GPT, Gemini, Claude, Grok, DeepSeek) kèm tạo ảnh và video AI trên iPhone và web
-• Giá bán: Free; Pro $59.99/năm; Max 5x $249.99/năm; Pro $9.99/tuần; Lifetime Pro $99.99/lần (chính chủ)
-• Hoa hồng affiliate: 30% recurring 12 tháng (mạng affiliate)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 02/2025 (nguồn phụ)
+<b>Cutonce (cutonce.ai)</b>
+• Tính năng: Dựng pipeline nghiên cứu cổ phiếu bằng AI trên canvas (screener, 10-K, earnings call), cho analyst, RIA, nhà đầu tư
+• Giá bán: Free 500 credits; Pro $29/tháng; Pro $243/năm; Enterprise liên hệ (chính chủ)
+• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Lemon Squeezy: cutonce.lemonsqueezy.com/affiliates)
+• Năm ra đời: 2026 (chính chủ)
 • Cookie: 90 ngày
 • Độ đầy đủ: 5/6
 
-Em chọn vì sản phẩm phổ thông dễ chạy ads, duyệt tự động, giữ 30 ngày. Lưu ý chỉ tính đơn trên web, đơn qua App Store không được tính. Tên công ty trên web và App Store khác nhau. Thiếu Google Ads: anh email support@chataivoice.com hỏi về bid thương hiệu.
+Em chọn vì 30% suốt thời gian khách còn thuê bao, cookie 90 ngày, duyệt ngay, ngưỡng rút $50, trả NET30 qua PayPal hoặc chuyển khoản; khách được giảm 25%. Thiếu Google Ads: trang affiliate, Terms và hub Lemon Squeezy không có câu nào về quảng cáo, anh đăng ký rồi xem điều khoản trong dashboard hoặc email hỏi Cutonce có được bid "Cutonce" không trước khi chạy.
 
-Đạt nhưng không chọn (giới hạn 3): Clinet AI (20%/12 tháng, lễ tân AI phòng khám, gói $199-$349), Lanesra AI (20%/12 tháng), Astorie, tên cũ MartiniArt (20%/6 tháng, không nhận partner ở Indonesia, Ấn Độ, Trung Quốc), Paraspeech (25%/12 tháng), Hacktron (25%/3 tháng), Obsero (10%/12 tháng).
+<b>Contral (contral.ai)</b>
+• Tính năng: Lớp dạy học cho AI coding agent, giải thích code agent viết; extension VS Code/Cursor/Windsurf, cho developer
+• Giá bán: Free $0; Pro $14.99/tháng; Pro+ $59.99/tháng; AppSumo lifetime $79/lần (chính chủ)
+• Hoa hồng affiliate: 20% recurring trọn đời, lên 40% từ 200 sale (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; điều khoản affiliate chỉ hiện ở checkbox khi đăng ký)
+• Năm ra đời: 2026 (chính chủ)
+• Cookie: 90 ngày
+• Độ đầy đủ: 5/6
 
-Loại vì cấm bid thương hiệu: Vervox, Reduck, Soro, hyreflow, Monumental, Rivvi, RichAPI, VirtualStagingFlow, OpenSEO, Yodoo.
+Em chọn vì bậc hoa hồng tăng dần đến 40%, cookie 90 ngày, lên Product Hunt 05/2026. Phải nộp đơn chờ duyệt, giữ tiền 14 ngày, trả chuyển khoản hoặc UPI; đơn AppSumo không tính hoa hồng. Thiếu Google Ads: anh đăng ký, đọc bản "affiliate program terms" trong form và dashboard, hoặc hỏi Contral về bid "Contral" trước khi chi tiền ads.
 
-Loại vì không mới (trước 2025): Pletor (đổi tên từ Lasqo AI 2024), Jaicob, Hyre, IntelligentVideos.ai, Brandwise, xFigura, Shilo, Kolo, Guidejar, Run Wild.
+Đạt nhưng không chọn: JobEasyApply (30% trọn đời nhưng trang affiliate có số liệu trông dựng, rủi ro ToS LinkedIn), PatentFig AI (20%, cookie 30 ngày), Mallary.ai (40%/12 tháng, lõi là API mạng xã hội), Applora (20%/12 tháng, điều khoản sau đăng nhập).
 
-Loại khác: Morse (có chế độ NSFW), FanPro Studio AI (rủi ro nhãn hiệu), Olanna (bằng chứng chương trình và năm ra mắt mâu thuẫn), GEO Metrics, Neon Blue (chưa xác minh ngày ra mắt), Perplexa Labs, Warmbly, Posts.Design (không phải công cụ AI), ViralDrop (trả theo lượt xem), Nod AI (chương trình chưa mở), Upfirst (đã xét 29/09).
+Loại vì cấm bid thương hiệu: Kin (kinlab.ai, Program Terms 13.4), Flowova (FAQ cấm PPC bid brand, chỉ 30% một lần), AI Videos UGC, UnslopAI, Prospectio, Vaquill, Webmatik, Canvora, Raq.com, Toffu.
 
-Em đã lưu 40 dòng vào lịch sử.
+Loại vì không mới (trước 2025): Figr, God Mode AI, Shorz, Presentia, LongStories, Shareables, ResumeUp, Virlo, Fudge, Gondola, JointJS, Kapwing.
+
+Loại khác: Aircad, Reyn (không có affiliate), AnyMusic (chỉ thưởng credit), Atli eSIM, grai (không phải công cụ AI), AIPPT.APP, Sleek, remio (chưa xác minh ngày ra mắt).
+
+Em đã lưu 37 dòng vào lịch sử.
