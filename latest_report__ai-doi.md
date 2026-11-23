@@ -1,46 +1,44 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 22/11/2026: hôm nay em chọn 3 chương trình là Yila AI (yila.ai), Cutonce (cutonce.ai) và Contral (contral.ai).
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 23/11/2026: hôm nay em chọn 3 chương trình là Tiquiz (tiquiz.io), AgentTeams (agentteams.com) và 1stContact.ai (1stcontact.ai).
 
-Hướng mới hôm nay là Show HN (01/10–22/11) cộng thư mục zplatform.ai và các bài về Rewardful/Tolt/FirstPromoter. Em xét 37 ứng viên mới: 9 đạt vòng đầu, sau khi đọc điều khoản riêng thì loại thêm 2, còn 7 đạt. Cả 3 chương trình được chọn đều 5/6, chỉ thiếu Google Ads.
+Nguồn: BetaList, Uneed, Tiny Startups, Dub Partners, openaffiliate.dev, Affitor, WebSearch. Em xét 55 ứng viên mới, 4 đạt vòng đầu; sau khi soát điều khoản thì loại thêm Riley, còn 3. Cả 3 đều 5/6, chỉ thiếu Google Ads.
 
-<b>Yila AI (yila.ai)</b>
-• Tính năng: Agent AI nghiên cứu học thuật: tìm tài liệu, viết tổng quan, phân tích dữ liệu, poster, slide, cho nhà nghiên cứu và lab
-• Giá bán: Free; Starter $20/tháng; Pro $49/tháng; Flagship $99/tháng; Lifetime Starter $249/lần; Lifetime Flagship $1,999/lần (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời, tính cả gia hạn và gói lifetime (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Affonso: yila.affonso.io)
-• Năm ra đời: 2026 (chính chủ)
-• Cookie: 30 ngày
+<b>Tiquiz (tiquiz.io)</b>
+• Tính năng: AI tạo quiz funnel (câu hỏi, profile kết quả, email follow-up), đẩy lead vào Systeme.io/GoHighLevel/Brevo, cho coach, solopreneur, agency
+• Giá bán: Free $0; Tiquiz $17/tháng; Tiquiz PLUS $29/tháng; trả năm $170/$290 (chính chủ)
+• Hoa hồng affiliate: 40% recurring trọn đời, +5% mỗi 10 referral, trần 70% (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; 14 điều khoản affiliate không nhắc PPC/brand)
+• Năm ra đời: 2025 (nguồn phụ)
+• Cookie: 365 ngày
 • Độ đầy đủ: 5/6
 
-Em chọn vì 30% trọn đời trên cả gói lifetime đến $1,999, duyệt tự động. Ngưỡng rút chỉ thấy trong cổng. Thiếu Google Ads: anh đăng ký rồi xem mục Channel Restrictions (Paid Search, Brand Bidding) trong cổng Affonso trước khi chi tiền ads.
+Em chọn vì 40% trọn đời có bậc lên 70%, cookie 12 tháng, ngưỡng $20, trả sau 30 ngày qua PayPal/Wise/SEPA; cần duyệt. Thiếu Google Ads: anh email hello@tiquiz.io hỏi có được bid "Tiquiz" không trước khi chạy (Điều 9 về thương hiệu có thể bị hiểu rộng).
 
-<b>Cutonce (cutonce.ai)</b>
-• Tính năng: Dựng pipeline nghiên cứu cổ phiếu bằng AI trên canvas (screener, 10-K, earnings call), cho analyst, RIA, nhà đầu tư
-• Giá bán: Free 500 credits; Pro $29/tháng; Pro $243/năm; Enterprise liên hệ (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Lemon Squeezy: cutonce.lemonsqueezy.com/affiliates)
-• Năm ra đời: 2026 (chính chủ)
+<b>AgentTeams (agentteams.com)</b>
+• Tính năng: Nền tảng tạo đội AI agent làm việc như nhân viên trong Slack, Google Workspace, HubSpot, không cần code, cho SMB
+• Giá bán: Free $0/tháng; Starter $29/tháng; Business $199/tháng; Enterprise liên hệ (chính chủ)
+• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký PromoteKit: agentteams.promotekit.com)
+• Năm ra đời: 03/2026 (chính chủ)
+• Cookie: 60 ngày (mặc định PromoteKit)
+• Độ đầy đủ: 5/6
+
+Em chọn vì tối đa $716 mỗi khách Business, tính cả khách đi từ gói Free lên. Ngưỡng rút không công bố; tên miền 2019 là mua lại, sản phẩm ra mắt 03/2026. Thiếu Google Ads: /partners ghi có "additional partner program terms" nhưng không có link, anh đăng ký PromoteKit rồi đọc trong portal trước khi chạy ads.
+
+<b>1stContact.ai (1stcontact.ai)</b>
+• Tính năng: CRM AI white-label trên HighLevel cho SMB và agency: AI trả lời gọi/SMS/chat 24/7, pipeline, email, đặt lịch
+• Giá bán: Launch $197/tháng; Pro $397/tháng; Agency $997/tháng; dùng thử 14 ngày (chính chủ)
+• Hoa hồng affiliate: 25% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký: Program Policies chưa công bố)
+• Năm ra đời: 07/2025 (chính chủ)
 • Cookie: 90 ngày
 • Độ đầy đủ: 5/6
 
-Em chọn vì 30% suốt thời gian khách còn thuê bao, cookie 90 ngày, duyệt ngay, ngưỡng rút $50, trả NET30 qua PayPal hoặc chuyển khoản; khách được giảm 25%. Thiếu Google Ads: trang affiliate, Terms và hub Lemon Squeezy không có câu nào về quảng cáo, anh đăng ký rồi xem điều khoản trong dashboard hoặc email hỏi Cutonce có được bid "Cutonce" không trước khi chạy.
+Em chọn vì giá gói cao nên 25% trọn đời ra $49-$249/tháng mỗi khách. Trang affiliate-terms ghi 40% + 5% tầng 2 nhưng dùng tên gói của HighLevel, nên em coi là điều khoản chép từ HighLevel và chốt 25% theo trang đăng ký. Ngưỡng $50, mất nếu không đạt trong 120 ngày; cần duyệt. Thiếu Google Ads: anh hỏi affiliates@1stcontact.ai hoặc đọc Program Policies trong portal, vì bản gốc HighLevel cấm bid brand.
 
-<b>Contral (contral.ai)</b>
-• Tính năng: Lớp dạy học cho AI coding agent, giải thích code agent viết; extension VS Code/Cursor/Windsurf, cho developer
-• Giá bán: Free $0; Pro $14.99/tháng; Pro+ $59.99/tháng; AppSumo lifetime $79/lần (chính chủ)
-• Hoa hồng affiliate: 20% recurring trọn đời, lên 40% từ 200 sale (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; điều khoản affiliate chỉ hiện ở checkbox khi đăng ký)
-• Năm ra đời: 2026 (chính chủ)
-• Cookie: 90 ngày
-• Độ đầy đủ: 5/6
+Loại vì cấm bid thương hiệu (26): Riley (rileyai.app) có chương trình riêng $75/$300 trên site không có câu cấm, nhưng site cũng chạy kênh Affitor 1176 cấm bid "Riley" trên paid search. 15 chương trình chỉ chạy trên Affitor (Eziclip, Makebook, Velorafy, Veqen, Cookbook Social, Citeflow, Brandora AI, Notroa, wagcoder, Owtrue, Banoffee, RENTANEO, SafePass, menuora, krot.io) đều bị Affitor Terms §7.1 cấm bid brand khi chưa có văn bản cho phép. 10 cái còn lại tự ghi cấm: Aderra, ForAgent, MyClawn, Pricely, Report To Santa, SimilarTube, Snap→Sell→Go!, Waltrack, wetracked.io, Pippy.
 
-Em chọn vì bậc hoa hồng tăng dần đến 40%, cookie 90 ngày, lên Product Hunt 05/2026. Phải nộp đơn chờ duyệt, giữ tiền 14 ngày, trả chuyển khoản hoặc UPI; đơn AppSumo không tính hoa hồng. Thiếu Google Ads: anh đăng ký, đọc bản "affiliate program terms" trong form và dashboard, hoặc hỏi Contral về bid "Contral" trước khi chi tiền ads.
+Loại vì không mới (4): Checkin360, SellerCenter, Autumn, GetFacade. Không có affiliate (19): Dizy AI, ServeUs, Mova, Sales Senpai, VibeTwin, Monmo, Candor, Snovi, PicNext… Khác: RouteStack.ai (rev-share cho developer), RankLoop và Facefam (không phải công cụ AI).
 
-Đạt nhưng không chọn: JobEasyApply (30% trọn đời nhưng trang affiliate có số liệu trông dựng, rủi ro ToS LinkedIn), PatentFig AI (20%, cookie 30 ngày), Mallary.ai (40%/12 tháng, lõi là API mạng xã hội), Applora (20%/12 tháng, điều khoản sau đăng nhập).
+Lưu ý mạng: producthunt.com và peerlist.io trả 403, open-launch.com 502, affonso.io 503, RDAP .ai/.io bị 429 nên một số năm ra đời lấy từ Wayback.
 
-Loại vì cấm bid thương hiệu: Kin (kinlab.ai, Program Terms 13.4), Flowova (FAQ cấm PPC bid brand, chỉ 30% một lần), AI Videos UGC, UnslopAI, Prospectio, Vaquill, Webmatik, Canvora, Raq.com, Toffu.
-
-Loại vì không mới (trước 2025): Figr, God Mode AI, Shorz, Presentia, LongStories, Shareables, ResumeUp, Virlo, Fudge, Gondola, JointJS, Kapwing.
-
-Loại khác: Aircad, Reyn (không có affiliate), AnyMusic (chỉ thưởng credit), Atli eSIM, grai (không phải công cụ AI), AIPPT.APP, Sleek, remio (chưa xác minh ngày ra mắt).
-
-Em đã lưu 37 dòng vào lịch sử.
+Em đã lưu 55 dòng vào lịch sử.
