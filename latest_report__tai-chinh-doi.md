@@ -1,19 +1,22 @@
-Anh ơi, đây là báo cáo của đội agent, chủ đề Tài chính, ngày 23/11/2026: hôm nay không có chương trình nào đạt. Em đã rà khoảng 220 domain từ 35 truy vấn (Anh, Việt, Bồ Đào Nha, Tây Ban Nha, Đức; Mỹ, Mỹ Latinh, EU, GCC, Đông Nam Á, Úc), bỏ qua 88 domain đã có trong lịch sử, xét kỹ 27 ứng viên mới và loại cả 27.
+Anh ơi, đây là báo cáo của đội agent, chủ đề Tài chính, ngày 24/11/2026: hôm nay không có chương trình nào đạt. Em đã chạy khoảng 35 truy vấn (Anh, Việt, Tây Ban Nha), rà khoảng 220 domain, bỏ qua khoảng 100 domain đã có trong lịch sử, xét kỹ 16 ứng viên mới và loại cả 16.
 
-Các nguồn chung (Product Hunt, Dub, Referly, FF News, Finance Magnates, Fintel, Involve Asia, Ecomobi, Accesstrade) gần như đã khai thác hết ở các lượt trước. Nguồn mới hôm nay là danh sách "Newest Programs" của Affilitizer (Finance &amp; Insurance), nhưng phần lớn là lead-gen vay và bảo hiểm của Paysale, LeadGid. Daisycon render bằng JS nên em không lấy được danh sách chiến dịch.
+Hướng đã tìm hôm nay: toàn bộ 79 chương trình trên Dub marketplace, lô YC Consumer Finance 2025-2026, Affilitizer Finance &amp; Insurance, affiliateroll, affiliatebay, Show HN, BetaList, Indie Hackers và affiliateprogramterms.com. Ngách mới: credit builder, rent reporting, thẻ cho trẻ em/teen, subscription tracker, đầu tư halal, tiết kiệm stablecoin, vàng số, thuế crypto, thuế AI, trading journal, chuyển tiền quốc tế, prediction market. Lịch sử đã khai thác rất sâu: ở hầu hết các ngách, 60-100% domain tìm được đã có sẵn. Affilitizer vẫn chưa có chương trình mới sau 20/11.
 
 Ứng viên đáng chú ý:
-<b>TBM Funded (tbmfunded.com)</b>: prop firm forex/CFD mới, tự ghi ra mắt 2026, hoa hồng 10% lên 20% theo bậc, nhưng Partner Terms mục 7 cấm bid "TBM", "TBM Funded" trên paid search, nên không chạy Google Ads được. Pháp nhân offshore (Saint Lucia, vận hành từ Dubai), không có giấy phép FSRA, không có nguồn độc lập nào về hãng.
-<b>SDB Wallet (sdbwallet.com)</b>: ví đa tiền tệ cho UAE, ra mắt 09/06/2026, nhưng trang /partners mới ghi "Coming soon", chỉ có waitlist. Em đề xuất xét lại khi chương trình mở.
-<b>MarketCrunch AI (marketcrunch.ai)</b>: dự báo cổ phiếu bằng AI, lên Product Hunt 30/01/2026, nhưng trang chủ, sitemap và tìm kiếm đều không thấy chương trình affiliate.
-<b>Openbank México (openbank.mx)</b>: mở web từ 19/11/2024, là thương hiệu cũ của Santander, và Awin không cho kênh Search/SEM.
+<b>Fynory (fynory.com)</b>: app xây lịch sử tín dụng Mỹ cho người nhập cư không cần SSN, ra mắt 2026, nhưng chưa thấy chương trình affiliate (trang chủ render bằng JS, các đường dẫn affiliate không mở được).
+<b>Versine (versine.com)</b>: ngân hàng tiêu dùng "agent-first" thuộc YC F2026, chuyển tiền qua AI agent, nhưng mới chỉ có ưu đãi $100 cho người dùng mới, chưa có affiliate.
+<b>CreditVana (creditvana.com)</b>: điểm tín dụng 3 bureau miễn phí, Premium $3.99/tháng, có affiliate trên Impact.com/Sale Gains (cookie 30 ngày theo affi.io), nhưng không xác minh được năm ra đời: PR trả tiền 2025 gọi là "new app" trong khi ID App Store có vẻ từ 2023 và site tự nhận hơn 5 triệu người dùng.
+<b>Varntix (varntix.com)</b>: hứa lãi cố định 20-24% APY trên stablecoin, pháp nhân BVI, không thấy giấy phép hay kiểm toán, phủ sóng gần như toàn PR trả tiền. Em loại vì có dấu hiệu lừa đảo.
+<b>QuantVue (quantvue.io)</b>: hoa hồng tốt (40% recurring trọn đời) nhưng đã hoạt động từ 2024 trở về trước.
 
 Các ứng viên còn lại:
-<b>Gainium, Cleo, N26, Tide, Finanzguru, Lightyear, Option Alpha, AltSignals, BYDFi</b>: ra đời trước 2025 (2007–2022), dù vài cái có affiliate tốt (Gainium 30% recurring, BYDFi tới 70% phí giao dịch).
-<b>ReadySet Travel Insurance (readysetinsurance.com.au)</b>: mới lên Commission Factory 19/11/2026 nhưng site không nêu năm ra mắt thương hiệu.
-<b>MarketAlerts.ai</b>: trang chủ trả HTTP 503, không đủ dữ liệu.
-<b>RateZip, Balanced Lending, DVM BorrowMoney, My Lending Wallet, TapinLoan, American Emergency Fund, 5k Fund, Simacash</b>: lead-gen vay của Paysale, không phải sản phẩm; payday vướng chính sách khoản vay ngắn hạn của Google Ads, BorrowMoney chỉ cho traffic social.
-<b>Moneynauts, AndaCrédito</b>: trung gian ghép khoản vay, thiếu pháp nhân rõ ràng hoặc thông tin mâu thuẫn, cần cảnh giác.
-<b>Bright Saver, Shuffle Wallet</b>: xếp nhóm tài chính trên Affilitizer nhưng thực chất là bộ điện mặt trời ban công và ví da vật lý.
+<b>Kachinga (kachinga.com), Uome (myuome.com)</b>: ra đời trước 2025 (2018 và 2022).
+<b>Truth Predict (truthpredict.com)</b>: công bố 10/2025 nhưng đến 07/2026 vẫn chưa live, không có affiliate, lại vướng chính sách prediction market của Google Ads.
+<b>journl. (journl.online), WolfySight (wolfysight.com)</b>: trading journal mới (08/2025 và 12/2025) nhưng không có affiliate.
+<b>Budg (budg.app), Canopy Wealth (canopywealth.com), BudgetTrek (budgettrek.com), AltIndex (altindex.com)</b>: không thấy chương trình affiliate.
+<b>8udget (8udget.com)</b>: trang chủ không mở được, không đủ dữ liệu.
+<b>Kredo (kredo.dev)</b>: nền tảng affiliate du lịch, không phải sản phẩm tài chính.
 
-Em đã lưu 27 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
+Đề xuất: nên xét lại <b>fynory.com</b> và <b>versine.com</b> khi hai bên mở chương trình affiliate. Còn 8 domain lead-gen của Paysale/LeadGid chưa xét (kviku.in, zaim-kz.kz, credito-365.mx, bestmoney.com, thequotehero.com, provide-insurance.com, autoinsurefree.com, axa.life5.es); đây là lead-gen vay/bảo hiểm nên ít khả năng đạt, em để lượt sau nếu cần.
+
+Em đã lưu 16 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
