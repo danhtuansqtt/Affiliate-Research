@@ -1,47 +1,35 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 25/11/2026: hôm nay em chọn 3 chương trình là Orty, SEOLadders và Admiral.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 26/11/2026: hôm nay em chọn 2 chương trình là dar-ion và Backdoor AI.
 
-Nguồn: TinyLaunch, Open Launch, BetaList, HN Show (20 ngày), WebSearch. Em quét khoảng 1.422 domain, 1.304 domain chưa xét, đào sâu 22 ứng viên AI: chọn 3, giữ thêm 3, loại 16.
+Nguồn: Product Hunt 16-25/11, Open Launch, thư mục Affonso, OpenAffiliate, Tolt/Dub/PromoteKit, EIN Presswire. Em xét chi tiết 66 domain mới (48 domain khác đã có trong lịch sử nên bỏ qua): chọn 2, loại 64.
 
-<b>Orty (getorty.work)</b>
-• Tính năng: AI đọc profile khách từ ảnh chụp màn hình, chấm điểm cơ hội và viết email chào hàng đầu tiên cho freelancer
-• Giá bán: Scout Free $0 (5 credits/tháng); Signal $5/tháng; Pro $19.99/tháng (chính chủ)
-• Hoa hồng affiliate: 30% recurring trọn đời (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (Orty không công bố quy định ads)
-• Năm ra đời: 07/2026 (nguồn phụ)
-• Cookie: 30 ngày (mặc định Whop)
+<b>dar-ion (dar-ion.com)</b>
+• Tính năng: Web app AI gộp chat, tạo ảnh, tạo video, phân tích file và dựng website, trả bằng credit không hết hạn
+• Giá bán: Dùng thử miễn phí; 100 credits $10/lần; 250 credits $25/lần; 500 credits $45/lần (chính chủ)
+• Hoa hồng affiliate: 15% recurring 12 tháng (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; referral terms chỉ cấm self-referral, spam, misleading claims)
+• Năm ra đời: 2026 (domain đăng ký 04/10/2026)
+• Cookie: 30 ngày (chính chủ)
 • Độ đầy đủ: 5/6
 
-Em chọn vì 30% trọn đời. Trả qua Whop (pending 60 ngày), Orty duyệt tay từng người và ghi "a recommendation, not an ad", nên đơn ghi kênh Google Ads có thể bị từ chối. Cảnh báo: điều khoản Whop cấm chạy Google Ads với từ khóa "Whop", "Whop discount", "Whop coupon". Thiếu Google Ads: anh email hello@getorty.work hỏi có được bid "Orty" không.
+Em chọn vì sản phẩm rất mới, điều khoản không có câu nào về ads. Không cần duyệt, chỉ cần tài khoản đã xác minh; giữ hoa hồng 30 ngày, rút từ $25 qua PayPal, trả tay mỗi tháng. Hoa hồng thấp ($1.50 đến $6.75 mỗi gói). Thiếu Google Ads: trước khi chi tiền quảng cáo, anh email bộ phận hỗ trợ dar-ion hỏi có được chạy Google Ads và bid từ khóa "dar-ion" không.
 
-<b>SEOLadders (seoladders.com)</b>
-• Tính năng: AI SEO agent tự nghiên cứu từ khóa, đăng bài mỗi ngày, xây backlink, theo dõi AI visibility cho chủ doanh nghiệp
-• Giá bán: Trial 3 ngày; Pro $97/tháng mỗi website (chính chủ)
-• Hoa hồng affiliate: 20% recurring 12 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký Affonso)
-• Năm ra đời: 2026 (nguồn phụ)
-• Cookie: 60 ngày
-• Độ đầy đủ: 5/6
-
-Gói $97/tháng nên hoa hồng tốt; lên 25% khi có 5 khách, 30% từ 10 khách. Tự đăng ký, rút từ $50 qua PayPal/Wise/Payoneer. Domain từng có chủ cũ (2011-2023), nhưng sản phẩm hiện tại ra mắt 2026 theo Product Hunt, đúng founder trên /about. Thiếu Google Ads: anh đăng ký https://seoladders.affonso.io/signup rồi xem tab Channel Restrictions, "Paid Search" hoặc "Brand bidding" màu đỏ thì coi như cấm.
-
-<b>Admiral (meetadmiral.com)</b>
-• Tính năng: AI làm video quảng cáo từ website và mỗi sáng soát tài khoản Google Ads/Meta, cho doanh nghiệp, agency
-• Giá bán: Trial 3 ngày; Make từ $10/lần; Check $29/tháng; Check Pro $99/tháng; Run $49/tháng; Run Pro $149/tháng; Check Agency $349/tháng; Run Scale $399/tháng (chính chủ)
-• Hoa hồng affiliate: 30% recurring 12 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố)
-• Năm ra đời: 08/2026 (chính chủ)
+<b>Backdoor AI (backdoorai.app)</b>
+• Tính năng: Agent AI tìm startup phù hợp và gửi email cá nhân hóa tới founder từ Gmail của người tìm việc
+• Giá bán: Free (trợ giúp tìm việc); Pass 7 ngày $29/lần; Pass 30 ngày $59/lần; Pass 90 ngày $79/lần (giá giới thiệu, niêm yết $159) (chính chủ)
+• Hoa hồng affiliate: 25% recurring 12 tháng (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; /affiliate và /terms không có điều khoản quảng cáo)
+• Năm ra đời: 04/2026 (chính chủ)
 • Cookie: không công bố
 • Độ đầy đủ: 4/6
 
-Sản phẩm rất mới, khách là người chạy ads nên hợp traffic Google Ads; gói tới $399/tháng. Nhận mã qua email, trả hằng tháng, không công bố ngưỡng rút. Thiếu Google Ads và Cookie: anh email support@meetadmiral.com, khai kênh Google Ads, hỏi có được bid "Admiral" không và link ghi nhận bao nhiêu ngày.
+Lên Product Hunt 25/11 với tên "Hiring Right Now", tự công bố 26.000+ người dùng. Giá trên trang chủ ($29/$59/$79) lệch với /terms ($29/$79/$99), em chốt theo trang chủ. Nhập email là nhận link ngay, không duyệt; rút qua UPI, ngân hàng hoặc PayPal trong 3 ngày làm việc, không công bố ngưỡng rút. Chương trình viết theo kiểu giới thiệu bạn bè, có thể có luật hiện ra sau khi nhận link. Thiếu Google Ads và Cookie: trước khi chi tiền quảng cáo, anh email founders@backdoorai.app hỏi có được bid "Backdoor AI" không và link ghi nhận bao nhiêu ngày (trang chỉ ghi khách mua sau vài tuần vẫn được tính).
 
-Giữ trong lịch sử, không chọn (3): MCPize (hoa hồng chỉ 2-5% sau tháng đầu, Agreement PDF 404), joonoo.art (20% theo đơn sách, không recurring), Modelflare (tỷ lệ chỉ xem sau khi duyệt; cấm dùng tên "Modelflare" khi chưa xin phép, không được bid tên này).
+Loại Seonix (seonix.ai): 50% recurring 12 tháng nhưng trang luật partners.seonix.ai/terms cấm chạy paid ads trên từ khóa "Seonix" và biến thể.
 
-Thiếu dữ liệu (1): Daydream (hoa hồng và cookie không công bố).
-Cấm bid thương hiệu (6): Dayora, LiftMend, RemoteAtlas, Scrape.ly, VI Engine, WowFlō.
-Không phải affiliate (5): A11, TeamOnly (mô hình khác), Codend (chưa mở), PassCited, PortalKinetic.
-Chưa xác minh ngày ra mắt (2): BillDog, Bindler. Không mới: QuantumLayers. Không phù hợp: Smut Writer (nội dung người lớn).
+Cấm bid thương hiệu hoặc paid ads (10): Seonix, Revfer, PaidSync, Gabreel, SupaSEO, Color Survey, CreatVid, Rankvia, speaking.app, Suitenote.
+Không phù hợp (3): OfferWoo (nhắc bài khi phỏng vấn), ISEKAI ZERO (nội dung 18+), LeverSolo (blog).
+Không mới (6): Fieldy, Guestbook.tv, Easy-Peasy.AI, aiWriter, 1min.AI, Success.ai.
+Không phải công cụ AI: Podifai. Chỉ có reseller: Pitch Avatar.
+Không có chương trình affiliate công khai (43), ví dụ Mermaid Flow, VINC, Clam AI, Motionflare, Spellar, Adside, CocoClip.
 
-Lưu ý mạng: Product Hunt trả 403 (em đọc qua snippet WebSearch), Wayback CDX bị chặn, chỉ dùng được API wayback/available.
-
-Em đã lưu 22 dòng vào lịch sử.
+Em đã lưu 66 dòng vào lịch sử.
