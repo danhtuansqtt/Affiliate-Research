@@ -1,30 +1,28 @@
-Anh ơi, đây là báo cáo của đội agent, chủ đề Tài chính, ngày 25/11/2026: hôm nay có 1 chương trình đạt. Em đã rà khoảng 150 domain, xét kỹ 19 ứng viên (18 mới, 1 trùng), giữ 1. Hướng mới: thẻ tín dụng ngách 2025-2026 (thú cưng, ô tô, gamified), gold IRA/kim loại quý, app thuế AI, mạng Fintel Connect, cùng tìm kiếm tiếng Việt, Tây Ban Nha, Bồ Đào Nha. Affililist "finance creators" có 59 chương trình tài chính chưa xét nhưng toàn thương hiệu lâu năm hoặc B2B (Wise, KuCoin, Exness...).
+Anh ơi, đây là báo cáo của đội agent, chủ đề Tài chính, ngày 26/11/2026: hôm nay có 1 chương trình được chọn nhưng dữ liệu chưa đủ (3/6). Em đã rà khoảng 110 domain (neobank, thẻ, crypto card, BNPL, robo, thuế, bảo hiểm, LATAM, MENA, SEA, Úc, Anh, Nhật, prop firm 2025-2026), khoảng 90 domain đã có trong lịch sử, xét kỹ 15 ứng viên mới, giữ 1. Sản phẩm tài chính tiêu dùng mới hầu như chỉ có referral cho người dùng, nên ứng viên còn lại là prop firm.
 
-<b>Nibbles Pet Rewards Credit Card (nibbles.com)</b>
-• Tính năng: Thẻ tín dụng Mastercard (Lead Bank) cho chủ thú cưng ở Mỹ, tặng bảo hiểm thú cưng cơ bản, thưởng 3 điểm/$1 ở thú y và cửa hàng thú cưng
-• Giá bán: Thẻ Nibbles $0/năm, APR US Prime + 17.74% (hiện 24.74%, tối đa 29.99%) (chính chủ)
-• Hoa hồng affiliate: $25/đơn pre-qual được duyệt, trả một lần (mạng affiliate, Impact)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (điều khoản PPC nằm trong Affiliate Agreement PDF sau đăng nhập Impact)
-• Năm ra đời: 04/2025 (chính chủ, PRWeb 02/04/2025)
-• Cookie: 30 ngày (mạng affiliate, last click)
-• Độ đầy đủ: 5/6
+<b>Livox Capital (livoxcapital.com)</b>
+• Tính năng: Prop firm futures CME cho trader LATAM nói tiếng Tây Ban Nha: evaluation 1 phase 20K–1M, Easy Pass, tài khoản LIVE trực tiếp, giữ tới 90% lợi nhuận
+• Giá bán: Evaluation từ 20K $99/tháng; 50K $167/tháng; 100K $225/tháng; 500K $497/tháng; 1M $797/tháng; phí kích hoạt $150/lần; Easy Pass 100K $147/lần; LIVE 500K $697/lần (chính chủ)
+• Hoa hồng affiliate: chỉ xem sau khi đăng ký (Livox Partners, YITH: livoxcapital.com/my-account/?affiliate-account-settings=1)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (site không có trang Terms công khai, điều kiện nằm trong khu affiliate)
+• Năm ra đời: 2025 (chính chủ, domain 05/05/2025)
+• Cookie: chỉ xem sau khi đăng ký (Livox Partners, YITH)
+• Độ đầy đủ: 3/6
 
-Em chọn vì đây là thẻ tín dụng tiêu dùng mới ra 2025, công ty PBC ở Austin có đội sáng lập công khai, chương trình đang chạy trên Impact (chương trình ShareASale cũ đã đóng). Thanh toán theo Impact: chốt giao dịch 27 ngày sau cuối tháng, trả 20 ngày sau đó, bằng USD. Traffic không công bố.
+Em chọn vì đây là prop firm mới giữa 2025 cho thị trường LATAM, có trang "Livox Partners" công khai và không thấy câu nào cấm paid ads (LIVOX CAPITAL, LLC, Albuquerque, Mỹ). Payout cho trader hằng tuần; ngưỡng rút, lịch trả hoa hồng và traffic đều không công bố.
 
-Ô còn thiếu là Google Ads: điều khoản PPC/brand bidding nằm trong file Affiliate Agreement PDF, chỉ xem được sau khi đăng nhập Impact. Trang Partnerships chỉ liệt kê kênh được duyệt là email, website, newsletter, tài liệu tại phòng khám và QR, không nhắc paid search, cũng không ghi cấm. Anh đăng ký tại app.impact.com/campaign-promo-signup/Nibbles.brand rồi đọc mục Promotional Methods trong PDF, hoặc hỏi partnerships@nibbles.com, trước khi chi ngân sách.
+Ô còn thiếu và việc anh cần làm:
+- Hoa hồng và Cookie: anh đăng ký tại livoxcapital.com/my-account/?affiliate-account-settings=1 rồi đọc mức hoa hồng, điều kiện ghi nhận và thanh toán trong khu affiliate YITH.
+- Google Ads: chưa có văn bản nào về brand bidding hay PPC. Anh hỏi support@livoxcapital.com xem có cấm bid từ khóa "Livox" và cấm PPC không, trước khi chi ngân sách ads.
 
-Lưu ý nguồn chưa khớp: researcher đọc được Contract Terms trên Impact bằng phiên đăng ký ($25 CPA cho pre-qual approved, cookie 30 ngày), còn policy-checker mở cùng trang thì chỉ thấy khung trống. Phí thường niên: PRWeb 04/2025 ghi $249/năm, trang chủ hiện ghi không phí, em lấy theo trang chủ.
-
-Yêu cầu tuân thủ khi chạy ads: quảng cáo nêu phí, ưu đãi hay APR thì phải công bố kèm APR và điều khoản theo Truth in Lending Act / Reg Z, không hứa duyệt chắc chắn; nhắc "free pet insurance" phải kèm điều kiện (1 thú cưng, sau khi kích hoạt thẻ, khác theo bang; Kanguro/Cimarron); công bố quan hệ affiliate theo FTC; creative có thể phải gửi Nibbles và ngân hàng duyệt. Google Ads xếp thẻ tín dụng vào "Financial products and services", và đầu 2027 Google mở rộng Financial Services Verification sang Mỹ, affiliate không có giấy phép tài chính có thể không qua. Chỉ nhắm Mỹ, loại trừ CO, CT, HI, NY, PR, ME, MA, MN, WA (thẻ chưa mở ở đây, theo FAQ).
+Rủi ro tuân thủ: quảng cáo phải giữ disclaimer hiệu suất giả định (tài khoản là mô phỏng, không bảo đảm lợi nhuận, tương đương CFTC Rule 4.41), ghi rõ quan hệ affiliate, không hứa lợi nhuận, và nói rõ phí evaluation chưa gồm phí dữ liệu và kích hoạt. Trang chủ tự ghi "đã rút hơn 9.000.000 USD", em chưa kiểm chứng được, anh không nên dùng con số này trong ads. Mã giảm giá đang lệch: trang chủ ghi LIVOX90, FAQ ghi LIVOX70. Trustpilot 4.6/5 nhưng có cảnh báo công ty dùng nội dung Trustpilot sai quy định. Google Ads xếp prop firm vào nhóm Financial services, một số nước có thể đòi xác minh. Lưu ý Day One Funded và Prop Account bị cấm bid là thương hiệu khác, không liên quan Livox.
 
 Ứng viên bị loại:
-<b>Fasten (fasten.cc), Coverd (getcoverd.com)</b>: thẻ mới 2025 nhưng chưa có affiliate (Fasten còn waitlist).
-<b>Atlas Reserve (atlasreserve.global)</b>: gold IRA 05/2026, chỉ PR trả tiền, LLC Wyoming, không có affiliate công khai.
-<b>Red State Gold, Honorable Gold Group</b>: không rõ năm ra mắt, không có affiliate.
-<b>Truth.Fi (truth.fi)</b>: không có affiliate.
-<b>Unifimoney, Kaldi, Crew, Debbie, Gold Depot, GoldenCrest, Preserve Gold, BOSS Money</b>: ra đời trước 2025 (BOSS có $35 CPA trên Awin).
-<b>Plastk (plastk.ca)</b>: CPA CAD$25 nhưng không xác minh được năm ra mắt.
-<b>TaxFlux</b>: phục vụ CPA (B2B). <b>TaxClear (taxclear.ca)</b>: site đòi đăng nhập ChatGPT (401), chưa mở công khai.
-<b>Neu Money</b>: đã xét ngày 12/11.
+<b>Day One Funded (dayonefunded.com)</b>: affiliate tối đa 10% nhưng chạy trên hạ tầng Prop Account, client terms cấm dùng thương hiệu trong keyword advertisements (thương hiệu thứ ba sau TradeSport, FundedRight).
+<b>Midgard Trading, Wildfunded</b>: cấm bid thương hiệu / cấm mọi PPC kể cả Google Ads.
+<b>E8 Futures, Ylos Trading</b>: không mới (E8 Markets khoảng 2021, Ylos 09/2024).
+<b>Alpha Funded, Elevate X Futures</b>: site SPA rỗng, không đọc được điều khoản.
+<b>Vest Markets, TradeFundrr, Ryt Bank</b>: không có affiliate.
+<b>GloraFi, Swipe Again, Rivox, Xestando</b>: phần mềm B2B, listing cấm brand bidding.
 
-Em đã lưu 19 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
+Em đã lưu 15 dòng vào lịch sử reported_programs__tai-chinh-doi.md.
