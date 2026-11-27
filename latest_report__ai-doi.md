@@ -1,35 +1,57 @@
-Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 26/11/2026: hôm nay em chọn 2 chương trình là dar-ion và Backdoor AI.
+Em gửi anh báo cáo scout affiliate của đội agent (routine tự động), chủ đề AI, ngày 27/11/2026: em chọn 4 chương trình là Lisorto, Buildy, CiteRoute và CoverKit.
 
-Nguồn: Product Hunt 16-25/11, Open Launch, thư mục Affonso, OpenAffiliate, Tolt/Dub/PromoteKit, EIN Presswire. Em xét chi tiết 66 domain mới (48 domain khác đã có trong lịch sử nên bỏ qua): chọn 2, loại 64.
+Nguồn: 23 thư mục launch, Show HN 24-27/11, Affonso, Affililist, Refgrow, Referly. Em xét chi tiết 47 domain mới: chọn 4, loại 43.
 
-<b>dar-ion (dar-ion.com)</b>
-• Tính năng: Web app AI gộp chat, tạo ảnh, tạo video, phân tích file và dựng website, trả bằng credit không hết hạn
-• Giá bán: Dùng thử miễn phí; 100 credits $10/lần; 250 credits $25/lần; 500 credits $45/lần (chính chủ)
-• Hoa hồng affiliate: 15% recurring 12 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; referral terms chỉ cấm self-referral, spam, misleading claims)
-• Năm ra đời: 2026 (domain đăng ký 04/10/2026)
-• Cookie: 30 ngày (chính chủ)
+<b>Lisorto (lisorto.app)</b>
+• Tính năng: App Mac sắp xếp, đặt tên và tìm file bằng AI chạy trên máy, cho người dùng Mac và freelancer
+• Giá bán: Free $0; Pro trọn đời $29/lần; Pro $4.99/tháng; Pro $29/năm; Business $9/tháng (chính chủ)
+• Hoa hồng affiliate: 50% recurring 12 tháng (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; Refgrow và terms không có điều khoản quảng cáo)
+• Năm ra đời: 09/2026 (chính chủ)
+• Cookie: 30 ngày (mặc định Refgrow)
 • Độ đầy đủ: 5/6
 
-Em chọn vì sản phẩm rất mới, điều khoản không có câu nào về ads. Không cần duyệt, chỉ cần tài khoản đã xác minh; giữ hoa hồng 30 ngày, rút từ $25 qua PayPal, trả tay mỗi tháng. Hoa hồng thấp ($1.50 đến $6.75 mỗi gói). Thiếu Google Ads: trước khi chi tiền quảng cáo, anh email bộ phận hỗ trợ dar-ion hỏi có được chạy Google Ads và bid từ khóa "dar-ion" không.
+Hoa hồng cao nhất hôm nay. Duyệt tay, rút từ $50. Bản trọn đời đang Black Friday $9.99 đến 1/12 nên hoa hồng đơn đầu thấp. Thiếu Google Ads: anh hỏi chủ chương trình qua lisorto.refgrow.com có được bid "Lisorto" không.
 
-<b>Backdoor AI (backdoorai.app)</b>
-• Tính năng: Agent AI tìm startup phù hợp và gửi email cá nhân hóa tới founder từ Gmail của người tìm việc
-• Giá bán: Free (trợ giúp tìm việc); Pass 7 ngày $29/lần; Pass 30 ngày $59/lần; Pass 90 ngày $79/lần (giá giới thiệu, niêm yết $159) (chính chủ)
-• Hoa hồng affiliate: 25% recurring 12 tháng (chính chủ)
-• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; /affiliate và /terms không có điều khoản quảng cáo)
+<b>Buildy (buildy.ai)</b>
+• Tính năng: Đội 7 AI agent dựng doanh nghiệp qua hội thoại (website, app, thanh toán, email, automation), cho người khởi nghiệp và agency
+• Giá bán: Pro dùng thử 10 ngày; Starter $24/tháng; Business $49/tháng; Pro $99/tháng; Max $199/tháng (chính chủ)
+• Hoa hồng affiliate: 100% tháng đầu, sau đó 15% recurring trọn đời (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; FAQ, docs, terms không nói về PPC hay brand)
+• Năm ra đời: 10/2025 (nguồn phụ)
+• Cookie: 30 ngày (nguồn phụ)
+• Độ đầy đủ: 5/6
+
+Duyệt ngay, có sẵn email kit, ảnh, video. Ra mắt theo podcast 28/10/2025 và thông cáo 10/11/2025; domain có snapshot 04/2024 em chưa đọc được. Ngưỡng rút chỉ xem sau khi đăng ký. Thiếu Google Ads: anh hỏi Buildy trong portal trước khi bid "Buildy".
+
+<b>CiteRoute (citeroute.com)</b>
+• Tính năng: Theo dõi mức thương hiệu được trích dẫn trong ChatGPT, Perplexity, Claude, Gemini (GEO), cho marketer và agency
+• Giá bán: Free $0; Pro $79/tháng; Agency $249/tháng (chính chủ)
+• Hoa hồng affiliate: tối đa $62.25/đơn (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (không công bố; terms CiteRoute và Lemon Squeezy không nói về PPC hay brand)
+• Năm ra đời: 2026 (chính chủ)
+• Cookie: 30 ngày (mặc định Lemon Squeezy)
+• Độ đầy đủ: 5/6
+
+Rủi ro: Lemon Squeezy đóng cửa 31/03/2027, chương trình có thể dừng hoặc chuyển nền tảng. Rút từ $50, NET30. Thiếu Google Ads: anh hỏi CiteRoute trước khi chạy.
+
+<b>CoverKit (coverkit.app)</b>
+• Tính năng: Sách bìa cứng kinh điển cá nhân hóa, AI vẽ khuôn mặt bé vào tranh bìa, làm quà cho phụ huynh ở Mỹ
+• Giá bán: Classic Hardcover $82.95/cuốn; Color $126.95/cuốn; Christmas Premium $166.95/cuốn (chính chủ)
+• Hoa hồng affiliate: 35% mỗi đơn, cả đơn mua lại (chính chủ)
+• Google Ads: Chưa xác minh — mặc định Không Cấm (chỉ xem sau khi đăng ký FirstPromoter: coverkit.firstpromoter.com)
 • Năm ra đời: 04/2026 (chính chủ)
-• Cookie: không công bố
-• Độ đầy đủ: 4/6
+• Cookie: 90 ngày (chính chủ)
+• Độ đầy đủ: 5/6
 
-Lên Product Hunt 25/11 với tên "Hiring Right Now", tự công bố 26.000+ người dùng. Giá trên trang chủ ($29/$59/$79) lệch với /terms ($29/$79/$99), em chốt theo trang chủ. Nhập email là nhận link ngay, không duyệt; rút qua UPI, ngân hàng hoặc PayPal trong 3 ngày làm việc, không công bố ngưỡng rút. Chương trình viết theo kiểu giới thiệu bạn bè, có thể có luật hiện ra sau khi nhận link. Thiếu Google Ads và Cookie: trước khi chi tiền quảng cáo, anh email founders@backdoorai.app hỏi có được bid "Backdoor AI" không và link ghi nhận bao nhiêu ngày (trang chỉ ghi khách mua sau vài tuần vẫn được tính).
+Chỉ bán khách ở Mỹ trừ Illinois, chiến dịch phải nhắm US và loại Illinois. Mỗi cuốn được $23.23 đến $46.75, PayPal NET-30 từ $20. Thiếu Google Ads: anh đăng ký FirstPromoter, đọc agreement rồi mới bid "CoverKit".
 
-Loại Seonix (seonix.ai): 50% recurring 12 tháng nhưng trang luật partners.seonix.ai/terms cấm chạy paid ads trên từ khóa "Seonix" và biến thể.
+Loại Workscribe (workscribe.co.uk): terms Endorsely cấm PPC nhắm tên thương hiệu và biến thể.
 
-Cấm bid thương hiệu hoặc paid ads (10): Seonix, Revfer, PaidSync, Gabreel, SupaSEO, Color Survey, CreatVid, Rankvia, speaking.app, Suitenote.
-Không phù hợp (3): OfferWoo (nhắc bài khi phỏng vấn), ISEKAI ZERO (nội dung 18+), LeverSolo (blog).
-Không mới (6): Fieldy, Guestbook.tv, Easy-Peasy.AI, aiWriter, 1min.AI, Success.ai.
-Không phải công cụ AI: Podifai. Chỉ có reseller: Pitch Avatar.
-Không có chương trình affiliate công khai (43), ví dụ Mermaid Flow, VINC, Clam AI, Motionflare, Spellar, Adside, CocoClip.
+Cấm bid thương hiệu (9): Workscribe, Structura, Konshus, Kliv, RapidStart AI, Tunsource, TextBuilt, SantaClaus.now, AutoTeamBuilder.
+Không phải công cụ AI (19), ví dụ Heyo, ReachBoost, MacWall, Wordify, Sheetany.
+Không mới (6): PromptDC, Synup, Flowlu, MarketInOut, Luvvoice, SEOJuice.
+Chỉ thưởng credit hoặc reseller: TTAPI, AI Animation Video, VillaBit AI.
+Không rõ ngày ra mắt: ImgPilot. Thiếu dữ liệu: Soro2 AI, Proofable. Không có affiliate: TypePart, ObjectRemover, AltHunt.
 
-Em đã lưu 66 dòng vào lịch sử.
+Em đã lưu 47 dòng vào lịch sử.
